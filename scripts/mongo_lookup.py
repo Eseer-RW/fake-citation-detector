@@ -1,0 +1,245 @@
+import re
+from dataclasses import dataclass
+from difflib import SequenceMatcher
+from enum import Enum
+from typing import Optional
+
+from pymongo import MongoClient, TEXT
+from pymongo.errors import OperationFailure, ServerSelectionTimeoutError
+
+
+# config
+
+MONGO_URI = (
+    "mongodb://rwang:4d2ceLf8vnra4kasdfgtyu"
+    "@jupiter2:27017/crs"
+    "?authSource=crs"
+)
+DB_NAME = "crs"
+COLLECTION_NAME = "crossref"
+
+
+class MatchMethod(str, Enum):
+    DOI        = "doi"
+    TITLE_YEAR = "title_year"
+    TITLE_ONLY = "title_only"
+    NOT_FOUND  = "not_found"
+
+
+@dataclass
+class LookupResult:
+    found: bool
+    method: MatchMethod
+    record: Optional[dict] = None
+    confidence: float = 0.0
+
+
+# helpers
+
+_DOI_PREFIX_RE = re.compile(
+    r'^(?:https?://(?:dx\.)?doi\.org/|doi:)',
+    re.IGNORECASE
+)
+
+def normalize_doi(doi: str) -> str:
+    return _DOI_PREFIX_RE.sub('', doi.strip()).lower()
+
+
+def extract_title_text(record: dict) -> Optional[str]:
+    """
+    Crossref stores title as ["The Title"].
+    Returns the first entry as a plain string.
+    """
+    title = record.get("title")
+    if not title:
+        return None
+    if isinstance(title, list) and title:
+        return title[0]
+    if isinstance(title, str):
+        return title
+    return None
+
+
+def extract_year(record: dict) -> Optional[int]:
+    """
+    Crossref stores year inside issued.date-parts: [[2020, 1, 15]]
+    Falls back to published-print if issued is missing.
+    """
+    for field in ("issued", "published", "published-print"):
+        try:
+            return record[field]["date-parts"][0][0]
+        except (KeyError, IndexError, TypeError):
+            continue
+    return None
+
+
+def extract_journal(record: dict) -> Optional[str]:
+    """Crossref stores journal name as container-title: ["Journal Name"]"""
+    ct = record.get("container-title")
+    if isinstance(ct, list) and ct:
+        return ct[0]
+    if isinstance(ct, str):
+        return ct
+    return None
+
+
+def title_similarity(a: str, b: str) -> float:
+    return SequenceMatcher(None, a.lower().strip(), b.lower().strip()).ratio()
+
+
+# mongo lookup
+
+_PROJECTION = {
+    "_id": 0,
+    "DOI": 1,
+    "title": 1,
+    "author": 1,
+    "issued": 1,
+    "published": 1,
+    "published-print": 1,
+    "container-title": 1,
+    "publisher": 1,
+    "type": 1,
+    "volume": 1,
+    "issue": 1,
+    "page": 1,
+}
+
+
+class MongoLookup:
+
+    def __init__(
+        self,
+        uri: str = MONGO_URI,
+        db_name: str = DB_NAME,
+        collection_name: str = COLLECTION_NAME,
+        similarity_threshold: float = 0.85,
+    ):
+        self.client = MongoClient(uri, serverSelectionTimeoutMS=3000)
+        self.collection = self.client[db_name][collection_name]
+        self.threshold = similarity_threshold
+        self._check_connection()
+
+    def _check_connection(self):
+        try:
+            self.client[DB_NAME].command("ping")
+        except ServerSelectionTimeoutError:
+            raise RuntimeError(
+                "\nCannot connect to MongoDB at jupiter2:27017.\n"
+                "Check that you are on the right network and the server is running.\n"
+            ) from None
+        except OperationFailure:
+            raise RuntimeError(
+                "\nMongoDB authentication failed.\n"
+                "Check the username and password in MONGO_URI.\n"
+            ) from None
+
+    def by_doi(self, doi: str) -> LookupResult:
+        record = self.collection.find_one(
+            {"DOI": normalize_doi(doi)},
+            _PROJECTION,
+        )
+        if record:
+            return LookupResult(
+                found=True,
+                method=MatchMethod.DOI,
+                record=record,
+                confidence=1.0,
+            )
+        return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def by_title(
+        self,
+        title: str,
+        year: Optional[int] = None,
+        candidates: int = 5,
+    ) -> LookupResult:
+        query: dict = {"$text": {"$search": title}}
+        if year:
+            query["issued.date-parts.0.0"] = year
+
+        projection = {**_PROJECTION, "score": {"$meta": "textScore"}}
+
+        try:
+            hits = list(
+                self.collection
+                .find(query, projection)
+                .sort([("score", {"$meta": "textScore"})])
+                .limit(candidates)
+            )
+        except OperationFailure:
+            print("Text index not ready. Run: python mongo_lookup.py --setup")
+            return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+        best_record, best_score = None, 0.0
+        for hit in hits:
+            candidate_title = extract_title_text(hit)
+            if not candidate_title:
+                continue
+            score = title_similarity(title, candidate_title)
+            if score > best_score:
+                best_score = score
+                best_record = hit
+
+        if best_record and best_score >= self.threshold:
+            return LookupResult(
+                found=True,
+                method=MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY,
+                record=best_record,
+                confidence=round(best_score, 4),
+            )
+        return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def by_citation(self, parsed) -> LookupResult:
+        if parsed.doi:
+            result = self.by_doi(parsed.doi)
+            if result.found:
+                return result
+        if parsed.title and parsed.year:
+            result = self.by_title(parsed.title, year=parsed.year)
+            if result.found:
+                return result
+        if parsed.title:
+            result = self.by_title(parsed.title)
+            if result.found:
+                return result
+        return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def close(self):
+        self.client.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_):
+        self.close()
+
+
+# entry point
+
+if __name__ == "__main__":
+    import sys
+
+    if "--setup" in sys.argv:
+        client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=3000)
+        collection = client[DB_NAME][COLLECTION_NAME]
+        print("Building text index... (run once only)")
+        try:
+            collection.create_index(
+                [("title", TEXT), ("container-title", TEXT)],
+                default_language="english",
+            )
+            print("Done.")
+        except OperationFailure as e:
+            print(f"Skipped: {e}")
+        client.close()
+
+    else:
+        with MongoLookup() as lookup:
+            result = lookup.by_doi("10.1038/s41586-020-2649-2")
+            print(f"found={result.found}  method={result.method}  confidence={result.confidence}")
+            if result.record:
+                print(f"title:     {extract_title_text(result.record)}")
+                print(f"journal:   {extract_journal(result.record)}")
+                print(f"year:      {extract_year(result.record)}")
+                print(f"publisher: {result.record.get('publisher')}")
