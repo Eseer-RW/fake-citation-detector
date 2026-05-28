@@ -4,17 +4,18 @@ from difflib import SequenceMatcher
 from enum import Enum
 from typing import Optional
 
-from pymongo import MongoClient, TEXT
+from pymongo import MongoClient
+from pymongo import TEXT
 from pymongo.errors import OperationFailure, ServerSelectionTimeoutError
 
+from dotenv import load_dotenv
+import os
 
 # config
+from pathlib import Path
+load_dotenv(Path(__file__).parent.parent / ".env")
 
-MONGO_URI = (
-    "mongodb://rwang:4d2ceLf8vnra4kasdfgtyu"
-    "@jupiter2:27017/crs"
-    "?authSource=crs"
-)
+MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = "crs"
 COLLECTION_NAME = "crossref"
 
