@@ -10,6 +10,7 @@ class CitationStyle(str, Enum):
     CHICAGO = "chicago"
     VANCOUVER = "vancouver"
     IEEE = "ieee"
+    NLM       = "nlm"
     UNKNOWN = "unknown"
 
 
@@ -36,7 +37,7 @@ _VOL_RE = re.compile(r'\bvol(?:ume)?\.?\s*(\d+)', re.IGNORECASE)
 _ISSUE_RE = re.compile(r'\bno\.?\s*(\d+)', re.IGNORECASE)
 
 # matches straight and curly quotes
-_QUOTED_TITLE_RE = re.compile(r'["\u201c](.+?)["\u201d]')
+_QUOTED_TITLE_RE = re.compile(r'["“](.+?)["”]')
 
 
 def _doi(text: str) -> Optional[str]:
@@ -73,6 +74,7 @@ def _quoted_title(text: str) -> Optional[str]:
 
 def _detect_style(citation: str) -> CitationStyle:
     # IEEE: author list starts with initials  "J. A. Smith and ..."
+    
     if re.match(r'^[A-Z]\.\s+[A-Z]?\.?\s*\w+', citation):
         return CitationStyle.IEEE
 
@@ -83,6 +85,10 @@ def _detect_style(citation: str) -> CitationStyle:
     # APA: year in parentheses immediately after authors "(2020)."
     if re.search(r'\((?:19|20)\d{2}\)\.', citation):
         return CitationStyle.APA
+
+    # NLM: year in parens followed by space then capital letter or digit (no period after year)
+    if re.search(r'\((?:19|20)\d{2}\)\s+[A-Z0-9]', citation):
+        return CitationStyle.NLM
 
     # Chicago: "Journal Vol, no. X (Year): pages"
     if re.search(r'no\.\s*\d+\s*\((?:19|20)\d{2}\)\s*:', citation, re.IGNORECASE):
@@ -99,7 +105,7 @@ def _detect_style(citation: str) -> CitationStyle:
     return CitationStyle.UNKNOWN
 
 
-# style specific paper
+# style specific parsers
 
 def _parse_apa(citation: str) -> dict:
     result = {}
@@ -140,7 +146,7 @@ def _parse_mla(citation: str) -> dict:
     result = {}
 
     # Authors: everything before the opening quote
-    m = re.match(r'^(.*?)\s*["\u201c]', citation, re.DOTALL)
+    m = re.match(r'^(.*?)\s*["“]', citation, re.DOTALL)
     if m:
         raw = m.group(1).strip().rstrip('.')
         result['authors'] = [
@@ -151,7 +157,7 @@ def _parse_mla(citation: str) -> dict:
 
     # Journal: after closing quote and punctuation, before ", vol."
     m = re.search(
-        r'["\u201d]\s*[.,]?\s+([^,]+?),\s+vol\.', citation, re.IGNORECASE
+        r'["”]\s*[.,]?\s+([^,]+?),\s+vol\.', citation, re.IGNORECASE
     )
     if m:
         result['journal'] = m.group(1).strip()
@@ -162,7 +168,7 @@ def _parse_mla(citation: str) -> dict:
 def _parse_chicago(citation: str) -> dict:
     result = {}
 
-    m = re.match(r'^(.*?)\s*["\u201c]', citation, re.DOTALL)
+    m = re.match(r'^(.*?)\s*["“]', citation, re.DOTALL)
     if m:
         raw = m.group(1).strip().rstrip('.')
         result['authors'] = [
@@ -173,7 +179,7 @@ def _parse_chicago(citation: str) -> dict:
 
     # Journal: after closing quote, before "Vol, no. X (Year)"
     m = re.search(
-        r'["\u201d]\s*[.,]?\s+([A-Za-z][^"]+?)\s+\d+,\s+no\.', citation, re.IGNORECASE
+        r'["”]\s*[.,]?\s+([A-Za-z][^"]+?)\s+\d+,\s+no\.', citation, re.IGNORECASE
     )
     if m:
         result['journal'] = m.group(1).strip().rstrip('.')
@@ -218,7 +224,7 @@ def _parse_ieee(citation: str) -> dict:
     result = {}
 
     # Authors: everything before the opening quote, strip trailing comma
-    m = re.match(r'^(.*?),\s*["\u201c]', citation, re.DOTALL)
+    m = re.match(r'^(.*?),\s*["“]', citation, re.DOTALL)
     if m:
         result['authors'] = [
             a.strip() for a in re.split(r'\s+and\s+', m.group(1)) if a.strip()
@@ -228,10 +234,65 @@ def _parse_ieee(citation: str) -> dict:
 
     # Journal: after closing quote and comma, before ", vol."
     m = re.search(
-        r'["\u201d],\s*([^,]+),\s*vol\.', citation, re.IGNORECASE
+        r'["”],\s*([^,]+),\s*vol\.', citation, re.IGNORECASE
     )
     if m:
         result['journal'] = m.group(1).strip()
+
+    return result
+
+_BRACKET_TAG_RE = re.compile(r'\s*\[[^\]]+\]')
+
+def _parse_nlm(citation: str) -> dict:
+    result = {}
+
+    # Strip [DOI], [PubMed], [Google Scholar], [PMC free article] etc.
+    clean = _BRACKET_TAG_RE.sub('', citation).strip()
+
+    # Authors: everything before (YEAR)
+    m = re.match(r'^(.*?)\s*\((?:19|20)\d{2}\)', clean)
+    if m:
+        result['authors'] = [a.strip() for a in m.group(1).split(',') if a.strip()]
+
+    # Find where the year ends so we can get the text after it
+    year_m = re.search(r'\((?:19|20)\d{2}\)\s+', clean)
+    if not year_m:
+        return result
+
+    after_year = clean[year_m.end():]
+
+    # Book chapter: has "In:" — title is everything before ". In:"
+    if re.search(r'\bIn:', after_year):
+        bm = re.search(r'^(.+?)\.\s+In:', after_year)
+        if bm:
+            result['title'] = bm.group(1).strip()
+        return result
+
+    # Find volume:page pattern — e.g. "2:100081", "16(1):456", "32:1713-1723"
+    vol_m = re.search(r'\s(\d+(?:\(\d+\))?):[\w–—-]+', after_year)
+    if vol_m:
+        before_vol = after_year[:vol_m.start()].strip()
+
+        # Parse volume and issue from "16(1)" or "32"
+        vi_m = re.match(r'(\d+)(?:\((\d+)\))?', vol_m.group(1))
+        if vi_m:
+            result['volume'] = vi_m.group(1)
+            if vi_m.group(2):
+                result['issue'] = vi_m.group(2)
+
+        # Pages
+        result['pages'] = vol_m.group(0).split(':')[-1].strip()
+
+        # Split "Title. Journal Name" at last ". "
+        last_dot = before_vol.rfind('. ')
+        if last_dot > 0:
+            result['title']   = before_vol[:last_dot].strip()
+            result['journal'] = before_vol[last_dot + 2:].strip()
+        else:
+            result['title'] = before_vol.strip()
+    else:
+        # No volume:page — just take the whole thing as the title
+        result['title'] = after_year.strip().rstrip('.')
 
     return result
 
@@ -249,6 +310,7 @@ _PARSERS = {
     CitationStyle.VANCOUVER: _parse_vancouver,
     CitationStyle.IEEE: _parse_ieee,
     CitationStyle.UNKNOWN: _parse_unknown,
+    CitationStyle.NLM:       _parse_nlm
 }
 
 
@@ -275,12 +337,82 @@ def parse_citation(citation: str) -> ParsedCitation:
     )
 
 
+# =====================================================
+# BLOCK SPLITTING
+# =====================================================
+
+# Matches numbered citation list markers at the start of a line: [1], 1., 1), 1:
+_NUM_MARKER_RE = re.compile(r'(?m)^[ \t]*(?:\[\d+\]|\d+[.):])[ \t]+')
+
+
+def split_citations(text: str) -> list[str]:
+    """Split a block of text into individual citation strings.
+
+    Handles three common formats automatically:
+
+    1. Numbered references  — lines starting with [1], 1., 1) etc.
+    2. Blank-line separated — paragraphs divided by one or more blank lines.
+    3. One citation per line — each non-empty line is one citation.
+
+    Multi-line citations (a single citation wrapped across several lines) are
+    joined with spaces so the downstream parser sees a clean, flat string.
+    """
+    text = text.strip()
+    if not text:
+        return []
+
+    # --- Strategy 1: numbered markers ([1], 1., 1), 1:) ---
+    num_matches = list(_NUM_MARKER_RE.finditer(text))
+    if num_matches:
+        chunks = []
+        for i, m in enumerate(num_matches):
+            start = m.end()  # content starts after the "1. " prefix
+            end   = num_matches[i + 1].start() if i + 1 < len(num_matches) else len(text)
+            chunk = text[start:end].strip().replace('\n', ' ')
+            if chunk:
+                chunks.append(chunk)
+        return chunks
+
+    # --- Strategy 2: blank-line separated paragraphs ---
+    paragraphs = re.split(r'\n[ \t]*\n+', text)
+    if len(paragraphs) > 1:
+        return [p.strip().replace('\n', ' ') for p in paragraphs if p.strip()]
+
+    # --- Strategy 3: one citation per line ---
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    return lines if lines else [text]
+
+
+def parse_all_citations(text: str) -> list[ParsedCitation]:
+    """Parse every citation in a block of text.
+
+    Automatically splits the block into individual citations (numbered list,
+    blank-line paragraphs, or one-per-line), then parses each one.
+
+    Returns a list of ParsedCitation objects in the same order they appear.
+
+    Example::
+
+        block = open("references.txt").read()
+        results = parse_all_citations(block)
+        for r in results:
+            print(r.title, r.year, r.doi)
+    """
+    return [parse_citation(c) for c in split_citations(text)]
+
+
 class CitationParser:
     def parse(self, citation: str) -> ParsedCitation:
+        """Parse a single citation string."""
         return parse_citation(citation)
 
     def parse_many(self, citations: list[str]) -> list[ParsedCitation]:
+        """Parse a list of already-split citation strings."""
         return [parse_citation(c) for c in citations]
+
+    def parse_block(self, text: str) -> list[ParsedCitation]:
+        """Parse all citations from a raw block of text (e.g. a reference section)."""
+        return parse_all_citations(text)
 
 
 # test

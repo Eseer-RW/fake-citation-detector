@@ -33,7 +33,7 @@ TEST_FILES = [
     "March_2026_Public_Data_File_from_Crossref/28275.jsonl.gz",
 ]
 
-RECORDS_PER_FILE = 1   # how many records to sample from each file
+RECORDS_PER_FILE = 3   # how many records to sample from each file
 STYLES = cycle(["apa", "mla", "chicago", "vancouver", "ieee"])
 
 # produce plain-text citation from raw Crossref record
@@ -308,13 +308,7 @@ def run():
         for member_name in TEST_FILES:
             records = all_records[member_name]
             file_label = Path(member_name).name
-            # rest stays the same...
-
-    with MongoLookup() as lookup:
-        for member_name in TEST_FILES:
-            records = sample_all_records(TAR_PATH, member_name, RECORDS_PER_FILE)
-            file_label = Path(member_name).name
-
+            
             if not records:
                 print(f"\n[{file_label}] No usable records found, skipping.")
                 continue
@@ -334,11 +328,10 @@ def run():
                 parsed = parse_citation(citation_str)
                 result = lookup.by_citation(parsed)
 
-                # Checks
-                doi_ok    = parsed.doi == doi
-                year_ok   = str(parsed.year) == expected_year
-                found_ok  = result.found
-                title_ok  = (
+                doi_ok   = parsed.doi == doi
+                year_ok  = str(parsed.year) == expected_year
+                found_ok = result.found
+                title_ok = (
                     extract_title_text(result.record) == expected_title
                     if result.record else False
                 )

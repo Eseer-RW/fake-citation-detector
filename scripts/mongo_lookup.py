@@ -168,8 +168,8 @@ class MongoLookup:
                 .sort([("score", {"$meta": "textScore"})])
                 .limit(candidates)
             )
-        except OperationFailure:
-            print("Text index not ready. Run: python mongo_lookup.py --setup")
+        except OperationFailure as e:
+            print(f"Lookup failed: {e}")
             return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
 
         best_record, best_score = None, 0.0
