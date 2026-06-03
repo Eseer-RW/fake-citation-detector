@@ -1,0 +1,1023 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Brain Sci</journal-id><journal-id journal-id-type="iso-abbrev">Brain Sci</journal-id><journal-id journal-id-type="publisher-id">brainsci</journal-id><journal-title-group><journal-title>Brain Sciences</journal-title></journal-title-group><issn pub-type="epub">2076-3425</issn><publisher><publisher-name>MDPI</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC11118841</article-id><article-id pub-id-type="doi">10.3390/brainsci14050514</article-id><article-id pub-id-type="publisher-id">brainsci-14-00514</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>Neuroinflammation and Dyskinesia: A Possible Causative Relationship?</article-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-3185-1006</contrib-id><name><surname>Cardinale</surname><given-names>Antonella</given-names></name><xref rid="af1-brainsci-14-00514" ref-type="aff">1</xref><xref rid="af2-brainsci-14-00514" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>de Iure</surname><given-names>Antonio</given-names></name><xref rid="af1-brainsci-14-00514" ref-type="aff">1</xref><xref rid="af2-brainsci-14-00514" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0001-6020-1021</contrib-id><name><surname>Picconi</surname><given-names>Barbara</given-names></name><xref rid="af1-brainsci-14-00514" ref-type="aff">1</xref><xref rid="af2-brainsci-14-00514" ref-type="aff">2</xref><xref rid="c1-brainsci-14-00514" ref-type="corresp">*</xref></contrib></contrib-group><contrib-group><contrib contrib-type="editor"><name><surname>Maguire-Zeiss</surname><given-names>Kathy</given-names></name><role>Academic Editor</role></contrib><contrib contrib-type="editor"><name><surname>Faria</surname><given-names>Christina Danielli Coelho De Morais</given-names></name><role>Academic Editor</role></contrib></contrib-group><aff id="af1-brainsci-14-00514"><label>1</label>Experimental Neurophysiology Laboratory, IRCCS San Raffaele Roma, 00166 Rome, Italy; <email>antonella.cardinale@sanraffaele.it</email> (A.C.); <email>antonio.deiure@uniroma5.it</email> (A.d.I.)</aff><aff id="af2-brainsci-14-00514"><label>2</label>Department of Human Sciences and Quality of Life Promotion, Universit&#x000e0; Telematica San Raffaele, 00166 Rome, Italy</aff><author-notes><corresp id="c1-brainsci-14-00514"><label>*</label>Correspondence: <email>barbara.picconi@uniroma5.it</email>; Tel.: +39-06-52-25-22-58</corresp></author-notes><pub-date pub-type="epub"><day>20</day><month>5</month><year>2024</year></pub-date><pub-date pub-type="collection"><month>5</month><year>2024</year></pub-date><volume>14</volume><issue>5</issue><elocation-id>514</elocation-id><history><date date-type="received"><day>25</day><month>3</month><year>2024</year></date><date date-type="rev-recd"><day>14</day><month>5</month><year>2024</year></date><date date-type="accepted"><day>18</day><month>5</month><year>2024</year></date></history><permissions><copyright-statement>&#x000a9; 2024 by the authors.</copyright-statement><copyright-year>2024</copyright-year><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><abstract><p>Levodopa (L-DOPA) treatment represents the gold standard therapy for Parkinson&#x02019;s disease (PD) patients. L-DOPA therapy shows many side effects, among them, L-DOPA-induced dyskinesias (LIDs) remain the most problematic. Several are the mechanisms underlying these processes: abnormal corticostriatal neurotransmission, pre- and post-synaptic neuronal events, changes in gene expression, and altered plasticity. In recent years, researchers have also suggested non-neuronal mechanisms as a possible cause for LIDs. We reviewed recent clinical and pre-clinical studies on neuroinflammation contribution to LIDs. Microglia and astrocytes seem to play a strategic role in LIDs phenomenon. In particular, their inflammatory response affects neuron-glia communication, synaptic activity and neuroplasticity, contributing to LIDs development. Finally, we describe possible new therapeutic interventions for dyskinesia prevention targeting glia cells.</p></abstract><kwd-group><kwd>Parkinson&#x02019;s disease</kwd><kwd>levodopa (L-DOPA)</kwd><kwd>L-DOPA-induced dyskinesias (LIDs)</kwd><kwd>non-neuronal mechanism</kwd><kwd>neuroinflammation</kwd></kwd-group><funding-group><award-group><funding-source>#NEXTGENERATIONEU (NGEU)</funding-source></award-group><award-group><funding-source>Ministry of University and Research (MUR), National Recovery and Resilience Plan (NRRP)</funding-source><award-id>PE0000006</award-id></award-group><award-group><funding-source>Italian Ministry of Health, Ricerca Corrente</funding-source></award-group><award-group><funding-source>NYU Grossman School of Medicine and The Marlene and Paolo Fresco Institute for Parkinson&#x02019;s and Movement Disorders</funding-source></award-group><funding-statement>This work was supported by #NEXTGENERATIONEU (NGEU) and funded by the Ministry of University and Research (MUR), National Recovery and Resilience Plan (NRRP), project MNESYS (PE0000006)&#x02014;A multiscale integrated approach to the study of the nervous system in health and disease (DN. 1553 11.10.2022) (BP), by the Italian Ministry of Health, Ricerca Corrente (A.d.I.), and by a grant from NYU Grossman School of Medicine and The Marlene and Paolo Fresco Institute for Parkinson&#x02019;s and Movement Disorders, which was made possible with support from Marlene and Paolo Fresco (A.C.).</funding-statement></funding-group></article-meta></front><body><sec sec-type="intro" id="sec1-brainsci-14-00514"><title>1. Introduction</title><p>Parkinson&#x02019;s disease (PD) is the second most common neurodegenerative disease, characterized by progressive dopaminergic neuron loss and &#x003b1;-synuclein aggregated clusters, which affect movement circuits [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>,<xref rid="B3-brainsci-14-00514" ref-type="bibr">3</xref>]. In recent years the prevalence and incidence of PD has been increasing significantly, leading to an increase in disability and therefore increasing costs for national health systems [<xref rid="B4-brainsci-14-00514" ref-type="bibr">4</xref>,<xref rid="B5-brainsci-14-00514" ref-type="bibr">5</xref>]. PD is a multifactorial disease caused both by genetic modification and different environmental factors [<xref rid="B6-brainsci-14-00514" ref-type="bibr">6</xref>]. Moreover, PD is a disorder characterized by a combination of motor symptoms (including tremor, rigidity, gait abnormality, and bradykinesia) and non-motor symptoms [<xref rid="B7-brainsci-14-00514" ref-type="bibr">7</xref>].</p><p>The dopamine (DA) precursor l-3,4-dihydroxyphenylalanine (L-DOPA) remains the most successful treatment, prescribed in conjunction with carbidopa [<xref rid="B7-brainsci-14-00514" ref-type="bibr">7</xref>,<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>]. Unfortunately, the lifelong treatment needed involves several adverse reactions and side effects, among which levodopa-induced dyskinesias (LIDs) are the most urgent problem to be solved. LIDs are characterized by abnormal involuntary movements, such as stereotypic, choreiform, and throwing movements, as well as dystonia [<xref rid="B9-brainsci-14-00514" ref-type="bibr">9</xref>,<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>] involving the head, neck, trunk, and limbs [<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>,<xref rid="B11-brainsci-14-00514" ref-type="bibr">11</xref>]. About 80% of patients suffer from this inconvenience, which worsens their disability and their quality of life [<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>], after an average of 6.5 years of L-DOPA treatment [<xref rid="B9-brainsci-14-00514" ref-type="bibr">9</xref>,<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>]. However, in rodent PD models, exemplars did not manifest LID after 6-OHDA lesion and L-DOPA treatment [<xref rid="B12-brainsci-14-00514" ref-type="bibr">12</xref>], and about 6&#x02013;22% of PD patients did not ever suffer LID [<xref rid="B9-brainsci-14-00514" ref-type="bibr">9</xref>,<xref rid="B13-brainsci-14-00514" ref-type="bibr">13</xref>,<xref rid="B14-brainsci-14-00514" ref-type="bibr">14</xref>,<xref rid="B15-brainsci-14-00514" ref-type="bibr">15</xref>,<xref rid="B16-brainsci-14-00514" ref-type="bibr">16</xref>,<xref rid="B17-brainsci-14-00514" ref-type="bibr">17</xref>]. </p><p>Thus far, research in dopamine-lesioned animals has discovered several mechanisms underlying these processes, such as abnormal corticostriatal neurotransmission, pre- and post-synaptic neuronal events, changes in gene expression, altered synaptic plasticity [<xref rid="B18-brainsci-14-00514" ref-type="bibr">18</xref>], and dendritic spine reshaping [<xref rid="B19-brainsci-14-00514" ref-type="bibr">19</xref>]. </p><p>In recent years, researchers have also suggested non-neuronal mechanisms as a possible cause of LIDs [<xref rid="B20-brainsci-14-00514" ref-type="bibr">20</xref>]. Here, we review recent clinical and pre-clinical studies on neuroinflammation contribution to LIDs. Microglia and astrocytes seem to play a crucial role in LIDs phenomenon. In particular, their inflammatory response affects neuron&#x02013;glia communication, synaptic activity, and neuroplasticity, contributing to LID development. Finally, we describe possible new therapeutic interventions for dyskinesia prevention targeting glia cells.</p></sec><sec id="sec2-brainsci-14-00514"><title>2. Pathophysiology of LIDs</title><sec id="sec2dot1-brainsci-14-00514"><title>2.1. General Features</title><p>LIDs are characterized as three different types: &#x0201c;peak-dose dyskinesia or improvement-dyskinesia-improvement&#x0201d; (IDI) dyskinesia, diphasic dyskinesia or &#x0201c;dyskinesia-improvement dyskinesia&#x0201d; (DID) dyskinesia, and early-morning dystonia or off-period dyskinesia (<xref rid="brainsci-14-00514-f001" ref-type="fig">Figure 1</xref>) [<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>,<xref rid="B21-brainsci-14-00514" ref-type="bibr">21</xref>]. The most frequent dyskinesia kind is peak-dose dyskinesia IDI dyskinesia (about 75&#x02013;80% of patients experienced it), occurring during the so-called &#x0201c;on&#x0201d; time when the L-DOPA blood levels reached the peak [<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>,<xref rid="B21-brainsci-14-00514" ref-type="bibr">21</xref>,<xref rid="B22-brainsci-14-00514" ref-type="bibr">22</xref>].</p><p>Dopaminergic system and motor circuits depend on a correct equilibrium between direct and indirect pathways through DA binding to dopaminergic D1 or D2 receptors, respectively [<xref rid="B23-brainsci-14-00514" ref-type="bibr">23</xref>]. The alteration of direct and indirect pathways leads to a PD condition in which overstimulation of the internal globus pallidus (GPi) occurs with the consequent inhibition of the motor thalamus and the limitation of the activity of the corresponding motor area [<xref rid="B24-brainsci-14-00514" ref-type="bibr">24</xref>,<xref rid="B25-brainsci-14-00514" ref-type="bibr">25</xref>]. As described above, L-DOPA represents the main treatment for PD patients, which has different consequences depending on disease stage (early or late stages). In particular, during the earlier stages of PD when dopaminergic denervation is lower, DA, obtained from L-DOPA oral administration, is stored in the presynaptic vesicles, maintaining stable levels in these patients [<xref rid="B26-brainsci-14-00514" ref-type="bibr">26</xref>]. In contrast, when the majority of dopaminergic terminals on striatal brain region are lost, dopaminergic transporters are not able to store exogenous DA, resulting in the overstimulation of receptors due the high synaptic DA levels [<xref rid="B27-brainsci-14-00514" ref-type="bibr">27</xref>]. In fact, LID phenomena are associated with plasma L-DOPA concentration fluctuations [<xref rid="B28-brainsci-14-00514" ref-type="bibr">28</xref>] due to the short half-life of this drug [<xref rid="B29-brainsci-14-00514" ref-type="bibr">29</xref>,<xref rid="B30-brainsci-14-00514" ref-type="bibr">30</xref>].</p></sec><sec id="sec2dot2-brainsci-14-00514"><title>2.2. Principal Mechanisms Involved</title><p>Many other factors are involved in the LID mechanisms [<xref rid="B8-brainsci-14-00514" ref-type="bibr">8</xref>,<xref rid="B20-brainsci-14-00514" ref-type="bibr">20</xref>]. Indeed, L-DOPA is usually processed by the enzyme aromatic L-amino acid decarboxylase (AADC), and decarboxylated to DA in the nigrostriatal dopaminergic fibers [<xref rid="B31-brainsci-14-00514" ref-type="bibr">31</xref>,<xref rid="B32-brainsci-14-00514" ref-type="bibr">32</xref>]. However, exogenous L-DOPA metabolism can occur both in serotonergic and noradrenergic terminals, due to their expression of the enzyme aromatic L-amino acid decarboxylase (AADC) [<xref rid="B26-brainsci-14-00514" ref-type="bibr">26</xref>,<xref rid="B33-brainsci-14-00514" ref-type="bibr">33</xref>]. Striatal synaptic plasticity is regulated by the interaction between dopaminergic and serotonergic systems [<xref rid="B34-brainsci-14-00514" ref-type="bibr">34</xref>]. Moreover, as described previously, the serotoninergic system contributes to L-DOPA metabolism. Unfortunately, serotoninergic 5-HT fibers do not show the capacity to regulate DA release due to the deficiency of D2 autoreceptors and DA transporters [<xref rid="B33-brainsci-14-00514" ref-type="bibr">33</xref>]. Thus, the effect is the fluctuations of DA levels in the synaptic cleft and an aberrant stimulation of striatal projection neurons (SPNs) [<xref rid="B35-brainsci-14-00514" ref-type="bibr">35</xref>,<xref rid="B36-brainsci-14-00514" ref-type="bibr">36</xref>,<xref rid="B37-brainsci-14-00514" ref-type="bibr">37</xref>,<xref rid="B38-brainsci-14-00514" ref-type="bibr">38</xref>]. A similar phenomenon happens in the noradrenergic terminals with the synthesis of L-DOPA into DA thanks to the AADC enzyme, also causing variable DA levels in the striatum [<xref rid="B39-brainsci-14-00514" ref-type="bibr">39</xref>].</p><p>Additionally, during the period of L-DOPA intake, D1 receptors are overstimulated with overactivity of the direct pathway [<xref rid="B40-brainsci-14-00514" ref-type="bibr">40</xref>,<xref rid="B41-brainsci-14-00514" ref-type="bibr">41</xref>] and strong activation of the cyclic adenosine monophosphate (cAMP) signaling pathway [<xref rid="B18-brainsci-14-00514" ref-type="bibr">18</xref>,<xref rid="B42-brainsci-14-00514" ref-type="bibr">42</xref>,<xref rid="B43-brainsci-14-00514" ref-type="bibr">43</xref>]. This activation in turn involves the stimulation of other downstream factors, such as cAMP-dependent protein kinase A (PKA), the dopamine- and cAMP-regulated protein 32 kDa (DARPP-32), the extracellular signal-regulated kinases (ERK), and the mammalian target of rapamycin (mTOR) pathways [<xref rid="B33-brainsci-14-00514" ref-type="bibr">33</xref>,<xref rid="B42-brainsci-14-00514" ref-type="bibr">42</xref>,<xref rid="B43-brainsci-14-00514" ref-type="bibr">43</xref>,<xref rid="B44-brainsci-14-00514" ref-type="bibr">44</xref>]. Moreover, phosphodiesterase 10 (PDE10) is involved in DA signaling, controlling PKA/DARPP-32 and cAMP signaling cascades [<xref rid="B45-brainsci-14-00514" ref-type="bibr">45</xref>]. PDE10A levels in the caudate putamen striatal region of PD patients are reduced, confirming their possible role into LID symptoms&#x02019; onset [<xref rid="B46-brainsci-14-00514" ref-type="bibr">46</xref>].</p><p>Additionally, increased glutamatergic neurotransmission, from the cortex to the striatum, occurs after dopaminergic cell loss and DA replacement therapy. Indeed, the NMDA (n-methyl-d-aspartate) and AMPA (&#x003b1;-amino-3-hydroxy-5-methyl-4-isoxazole propionic acid) receptors undergo cellular changes such as localization, post-translational modifications and changes to the subunit structure, contributing to LIDs&#x02019; progress [<xref rid="B47-brainsci-14-00514" ref-type="bibr">47</xref>,<xref rid="B48-brainsci-14-00514" ref-type="bibr">48</xref>,<xref rid="B49-brainsci-14-00514" ref-type="bibr">49</xref>,<xref rid="B50-brainsci-14-00514" ref-type="bibr">50</xref>,<xref rid="B51-brainsci-14-00514" ref-type="bibr">51</xref>,<xref rid="B52-brainsci-14-00514" ref-type="bibr">52</xref>]. NMDAR is an ionotropic glutamate receptor that is specifically involved in synaptic and neuroinflammatory processes. As a voltage- and ligand-gated cation channel, NMDAR presents a composition with different subunits. GluN1 and GluN2 are the most available isoforms, although we can also find GluN2A, GluN2B, GluN2C, and GluN2D [<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>,<xref rid="B53-brainsci-14-00514" ref-type="bibr">53</xref>,<xref rid="B54-brainsci-14-00514" ref-type="bibr">54</xref>,<xref rid="B55-brainsci-14-00514" ref-type="bibr">55</xref>]. These subunits will affect channel functions through their composition, distribution, and phosphorylation. Experience-generated neural activity can alter brain function by modifying synaptic transmission, known as synaptic plasticity. Altered synaptic plasticity is frequently observed in neurodegenerative diseases and can contribute to neurophysiological disorders. Synaptic plasticity can exist in several forms, both short- and long-term, and can have a depressor or potentiating effect. Synaptic plasticity is the mechanism that allows the realization of learning and memory processes. It is closely dependent on glutamatergic excitatory transmission through the modulation of NMDA receptors, which are controlled by dopaminergic pathways via binding to D1 and D2 receptors. The forms of synaptic plasticity that will be evaluated here are LTP (long-term potentiation) and LTD (long-term depression), which can be directly altered by inflammatory processes [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>]. Indeed, synaptic plasticity and the induction of LTP and LTD are controlled by the phosphorylation grade of NMDAR isoforms, which in turn trigger learning and memory processes [<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>,<xref rid="B18-brainsci-14-00514" ref-type="bibr">18</xref>,<xref rid="B56-brainsci-14-00514" ref-type="bibr">56</xref>,<xref rid="B57-brainsci-14-00514" ref-type="bibr">57</xref>]. Motor signals, which reach the basal ganglia from the cortex, depend on the bidirectional control of synaptic plasticity by LTP and LTD. In the PD condition, even if the cortex sends information to the basal ganglia, the striatum loses the capacity to export appropriate signals; this phenomenon is amplified during LID onset [<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>,<xref rid="B58-brainsci-14-00514" ref-type="bibr">58</xref>]. In LID pathology, NMDAR can induce an overactivation of LTP which, with the contemporary lack of LTD, leads to redundant movements due to the abnormal motor information, as demonstrated in rat models [<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>]. </p><p>Ultimately, it seems that not only drug factors are involved in LID onset but also PD patients&#x02019; own characteristics, such as oxidative-inflammatory marker genetic panels [<xref rid="B59-brainsci-14-00514" ref-type="bibr">59</xref>,<xref rid="B60-brainsci-14-00514" ref-type="bibr">60</xref>,<xref rid="B61-brainsci-14-00514" ref-type="bibr">61</xref>]. </p></sec></sec><sec id="sec3-brainsci-14-00514"><title>3. Neuroinflammation and Its Role in LID Development</title><p>As recently reviewed by our group, neuroinflammation contributes actively to the pathophysiology of PD [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>,<xref rid="B62-brainsci-14-00514" ref-type="bibr">62</xref>]. As noted above, PD is a multifactorial disorder, characterized by synaptic damage, dopaminergic neuronal death, misfolded &#x003b1;-syn aggregation, and an altered immune response [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>]. In summary, gradual dopaminergic cell death prompts the alteration of long-term potentiation (LTP) modifying the excitability of SPNs. While the degeneration continues, other processes affect it, producing a vicious cycle. Among the symptoms is the well-known inflammatory response present in the brain of PD patients by means of microglia and astrocyte reactions, the gene expression of pro-inflammatory species, and the activation of adaptive immune factors from the periphery [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>,<xref rid="B63-brainsci-14-00514" ref-type="bibr">63</xref>,<xref rid="B64-brainsci-14-00514" ref-type="bibr">64</xref>,<xref rid="B65-brainsci-14-00514" ref-type="bibr">65</xref>,<xref rid="B66-brainsci-14-00514" ref-type="bibr">66</xref>,<xref rid="B67-brainsci-14-00514" ref-type="bibr">67</xref>]. Indeed, cytokines, when secreted in excess by microglia, are involved in LID development, affecting corticostriatal synaptic plasticity and glutamatergic transmission [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B69-brainsci-14-00514" ref-type="bibr">69</xref>,<xref rid="B70-brainsci-14-00514" ref-type="bibr">70</xref>]. Interestingly, the activation of inflammation already occurs when dopaminergic terminal death and plasticity alteration arise, but long before the death of dopaminergic neurons [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>,<xref rid="B71-brainsci-14-00514" ref-type="bibr">71</xref>,<xref rid="B72-brainsci-14-00514" ref-type="bibr">72</xref>]. Moreover, as previously described by our group, extracellular &#x003b1;-syn, acting as damaged-associated molecular patterns (DAMPs), elicits an inflammatory cascade inducing chemokine and cytokine production from microglia [<xref rid="B1-brainsci-14-00514" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-14-00514" ref-type="bibr">2</xref>]. Indeed, a number of studies have indicated that the dorsal striatum of dyskinetic rats has a higher rate of glia cell reactions [<xref rid="B73-brainsci-14-00514" ref-type="bibr">73</xref>]. </p><p>Thus, neuroinflammation represents a well-known altered process in PD pathology. Numerous pre-clinical studies have identified the quality and quantity changes of microglial and astrocytes&#x02019; population with releasing of immune system agents such as interleukin-1&#x003b2; (IL-1&#x003b2;), inducible nitric oxide (NO), nitric oxide synthase (iNOS), tumor necrosis factor-a (TNF-a), cyclooxygenase-2 (COX-2) enzyme, and chemokines. Indeed, treatment with anti-inflammatory drugs, such as ibuprofen (a non-selective COX inhibitor) or glucocorticoid corticosterone [<xref rid="B74-brainsci-14-00514" ref-type="bibr">74</xref>], seems to be able to fight the immune response and to decrease dyskinesia symptoms in PD animal models, significantly enhancing the efficiency and tolerance of L-DOPA treatment [<xref rid="B73-brainsci-14-00514" ref-type="bibr">73</xref>,<xref rid="B75-brainsci-14-00514" ref-type="bibr">75</xref>,<xref rid="B76-brainsci-14-00514" ref-type="bibr">76</xref>,<xref rid="B77-brainsci-14-00514" ref-type="bibr">77</xref>]. </p><p>In the past decade, studies have focused on a possible role for inflammatory outbreaks in the LID pathological mechanism. The inflammatory response caused by daily treatment with L-DOPA and LIDs can be attributed to a variety of reasons, which are listed below (<xref rid="brainsci-14-00514-f002" ref-type="fig">Figure 2</xref>).</p><p>First of all, neuroinflammation seems to affect NMDAR function and expression, even during the LID phenomenon. Importantly, cytokines (TNF-&#x003b1;, IL-1&#x003b2;, NO, iNOS) and chemokines control the release of glutamic acid (Glu) from presynaptic neurons and the expression of Glu receptors in postsynaptic neurons [<xref rid="B10-brainsci-14-00514" ref-type="bibr">10</xref>,<xref rid="B78-brainsci-14-00514" ref-type="bibr">78</xref>,<xref rid="B79-brainsci-14-00514" ref-type="bibr">79</xref>]. As noted above in this review, GluN1 and GluN2 are the most expressed subunits of the NMDAR, whose phosphorylation contributes to dysregulation of synaptic plasticity and the trigger of LIDs.</p><p>Second, astroglia seems to transport and distribute L-DOPA from the blood to brain tissues. As is well-known, the blood&#x02013;brain barrier (BBB) is composed of astrocytic end-feet [<xref rid="B20-brainsci-14-00514" ref-type="bibr">20</xref>,<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B80-brainsci-14-00514" ref-type="bibr">80</xref>,<xref rid="B81-brainsci-14-00514" ref-type="bibr">81</xref>]. Indeed, astrocytes take up L-DOPA through an amino acid transporter, named L-type amino acid transporter 1 or sodium-independent neutral amino acid transporter (LAT1) [<xref rid="B82-brainsci-14-00514" ref-type="bibr">82</xref>]. Astrocytes appear to act as a DA storage facility and to release it only based on its extracellular concentration [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B83-brainsci-14-00514" ref-type="bibr">83</xref>]. Additionally, astroglia presents as a DA transporter, able to internalize DA derived from L-DOPA metabolism [<xref rid="B84-brainsci-14-00514" ref-type="bibr">84</xref>]. Indeed, astrocytes also possess monoamine oxidase (MAO-B) and catechol-<italic toggle="yes">O</italic>-methyltransferase (COMT) and thus participate in L-DOPA metabolism [<xref rid="B85-brainsci-14-00514" ref-type="bibr">85</xref>].</p><fig position="anchor" id="brainsci-14-00514-f002"><label>Figure 2</label><caption><p>The involvement of neuroinflammation in LID. LIDs are abnormal involuntary movements due to the daily treatment with L-DOPA. Several are the mechanisms underlying these processes: abnormal corticostriatal neurotransmission, pre- and post-synaptic neuronal events, changes in gene expression, and altered plasticity. In recent years, researchers have also suggested non-neuronal mechanisms as a possible cause for LID. Indeed, cytokines, when secreted in excess by microglia, are involved in LID development affecting corticostriatal synaptic plasticity and glutamatergic transmission [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B69-brainsci-14-00514" ref-type="bibr">69</xref>,<xref rid="B70-brainsci-14-00514" ref-type="bibr">70</xref>]. Among the causes of the inflammatory response are the increased oxidation due to excessive DA concentration, and astroglia transport and distribution of L-DOPA from the blood to brain tissues. Indeed, astrocytes take up L-DOPA through an amino acid transporter, named L-type amino acid transporter 1 or sodium-independent neutral amino acid transporter (LAT1). Astrocytes appear to act as a DA storage facility and to release it only based on its extracellular concentration. Additionally, astroglia presents as a DA transporter, able to internalize DA derived from L-DOPA metabolism. Indeed, astrocytes also possess monoamine oxidase (MAO-B) and catechol-O-methyltransferase (COMT) and thus participate in L-DOPA metabolism [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B82-brainsci-14-00514" ref-type="bibr">82</xref>,<xref rid="B83-brainsci-14-00514" ref-type="bibr">83</xref>,<xref rid="B84-brainsci-14-00514" ref-type="bibr">84</xref>,<xref rid="B85-brainsci-14-00514" ref-type="bibr">85</xref>] (Figure created in BioRender.com). GLU: glutamatergic neuron and glutamate; SPNs: striatal projection neurons.</p></caption><graphic xlink:href="brainsci-14-00514-g002" position="float"/></fig><p>Accumulating research evidence has demonstrated the inflammatory response contribution to LIDs by the contribution of microglia and soluble pro-inflammatory cytokines (TNF-&#x003b1;, Il-1&#x003b2;, iNOS) [<xref rid="B20-brainsci-14-00514" ref-type="bibr">20</xref>,<xref rid="B86-brainsci-14-00514" ref-type="bibr">86</xref>]. As demonstrated by Mulas and co-workers in 2016, a dyskinetic L-DOPA treatment also induced microglial reactivity with increased TNF-&#x003b1; expression in contrast to a different L-DOPA administration, defined non-dyskinetic, through continuous subcutaneous infusion [<xref rid="B20-brainsci-14-00514" ref-type="bibr">20</xref>,<xref rid="B87-brainsci-14-00514" ref-type="bibr">87</xref>]. Recently, Morissette and collaborators have demonstrated the correlation between increased inflammatory markers and LID scores in dyskinetic monkeys compared to that of vehicle-treated MPTP monkeys, not only in the basal ganglia but also in other downstream basal ganglia nuclei including the GPe and GPi. Moreover, treatment with MPEP (a metabotropic glutamate receptor 5 antagonist) reduced both the development of LID in de novo MPTP-lesioned monkeys and the inflammatory reaction measured by means of IBA1, CD68, and GFAP markers [<xref rid="B88-brainsci-14-00514" ref-type="bibr">88</xref>]. As is well known, PD is closely associated with advancing age and at the same time also affects the LID onset. In particular, there is an increased risk of developing LIDs when juvenile PD onset occurs [<xref rid="B89-brainsci-14-00514" ref-type="bibr">89</xref>,<xref rid="B90-brainsci-14-00514" ref-type="bibr">90</xref>,<xref rid="B91-brainsci-14-00514" ref-type="bibr">91</xref>]. A recent work has demonstrated this issue, by conducting experiments in both adult (3 months) and juvenile (18 month) male Fischer rats, bearing unilateral 6-hydroxydopamine (6-OHDA)-lesions of the medial forebrain bundle. The animals were treated acutely with a vehicle or L-DOPA (6 mg/kg) [<xref rid="B89-brainsci-14-00514" ref-type="bibr">89</xref>]. The research group has investigated the relationship between LIDs and aging-derived neuroinflammation. The outcome of this study showed the increase of IL-1&#x003b2; gene expression in the striatum ipsilateral and lesions only in the group of 18-month-old rats, confirming a previous study in mice [<xref rid="B89-brainsci-14-00514" ref-type="bibr">89</xref>,<xref rid="B92-brainsci-14-00514" ref-type="bibr">92</xref>]. Indeed, an IL-1&#x003b2; receptor antagonist infusion in the striatum effectively decreased LIDs in the 6-OHDA model [<xref rid="B75-brainsci-14-00514" ref-type="bibr">75</xref>]. Recently, a study in a rodent model of PD, chronically treated with L-DOPA to provoke abnormal involuntary movements (AIMs), revealed via transcriptomic analyses the involvement of the following factors as key molecular mediators of LID advancement: transforming growth factor beta type 1 (TGF&#x003b2;1), interleukin 1 beta (IL1&#x003b2;), and tumor necrosis factor alpha (TNF&#x003b1;) cytokines as key mediators of chronic inflammation [<xref rid="B93-brainsci-14-00514" ref-type="bibr">93</xref>]. Additionally, TGF&#x003b2;1, IL-1-&#x003b2;, and TNF&#x003b1; alterations were found in cerebrospinal fluid (CSF) and cerebral tissues of PD patients [<xref rid="B93-brainsci-14-00514" ref-type="bibr">93</xref>].</p><p>Indeed, TNF-&#x003b1; represents another proinflammatory cytokine that affects dyskinesia pathophysiologic machinery [<xref rid="B94-brainsci-14-00514" ref-type="bibr">94</xref>,<xref rid="B95-brainsci-14-00514" ref-type="bibr">95</xref>]. In particular, TNF-&#x003b1; is an effective activator of resting microglia and a modulator of LTP by the modulation of AMPA glutamate receptor subunit 1 (GLUR1) expression, which is implicated in LIDs [<xref rid="B96-brainsci-14-00514" ref-type="bibr">96</xref>,<xref rid="B97-brainsci-14-00514" ref-type="bibr">97</xref>,<xref rid="B98-brainsci-14-00514" ref-type="bibr">98</xref>,<xref rid="B99-brainsci-14-00514" ref-type="bibr">99</xref>]. Furthermore, TNF-&#x003b1; controls neuronal excitability and synaptic plasticity, through TNF receptor 1 and 2 (TNR1 and TNFR2) [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B96-brainsci-14-00514" ref-type="bibr">96</xref>,<xref rid="B100-brainsci-14-00514" ref-type="bibr">100</xref>,<xref rid="B101-brainsci-14-00514" ref-type="bibr">101</xref>]. In addition, TNF-&#x003b1; affects the synaptic activity altering AMPA receptor [<xref rid="B68-brainsci-14-00514" ref-type="bibr">68</xref>,<xref rid="B100-brainsci-14-00514" ref-type="bibr">100</xref>]. The inhibition of TNF-&#x003b1; through thalidomide (TLD) and its derivative 3,6&#x02019;-dithiothalidomide (DTT) in the 6-OHDA rat model of PD attenuated LID scores via an anti-angiogenic activity in basal ganglia and an overexpression of GLUR1 [<xref rid="B102-brainsci-14-00514" ref-type="bibr">102</xref>,<xref rid="B103-brainsci-14-00514" ref-type="bibr">103</xref>,<xref rid="B104-brainsci-14-00514" ref-type="bibr">104</xref>,<xref rid="B105-brainsci-14-00514" ref-type="bibr">105</xref>,<xref rid="B106-brainsci-14-00514" ref-type="bibr">106</xref>,<xref rid="B107-brainsci-14-00514" ref-type="bibr">107</xref>,<xref rid="B108-brainsci-14-00514" ref-type="bibr">108</xref>,<xref rid="B109-brainsci-14-00514" ref-type="bibr">109</xref>].</p><p>Another important player in the molecular inflammatory mechanisms is represented by IFN-&#x003b3;, a pro-inflammatory cytokine involved in the iNOS transcription [<xref rid="B110-brainsci-14-00514" ref-type="bibr">110</xref>]. Moreover, IFN-&#x003b3; stimulates glial cells, and PD patients present augmented levels in the brain and in the plasma; thus, this cytokine could have a key role in the PD pathology [<xref rid="B111-brainsci-14-00514" ref-type="bibr">111</xref>]. Investigators showed astrocyte and iNOS reactivity in IFN-&#x003b3;/KO parkinsonian mice without affecting the dopaminergic cells death or LID onset, suggesting that neuroinflammation could be arising by L-DOPA in a different pathway, aside from IFN-&#x003b3; signaling [<xref rid="B111-brainsci-14-00514" ref-type="bibr">111</xref>].</p><p>Another key role in the neuroinflammation could be that of increased oxidation due to excessive concentration and metabolism of DA, following the long-term use of the L-DOPA drug. Interestingly, L-DOPA, as the chemical precursor of dopamine, prompts the production of free radicals, which worsens the oxidative damage and alteration characteristic of Parkinson&#x02019;s disease pathology. Indeed, some authors support the idea that some L-DOPA quantity is converted into dopamine, despite the medical prescription of DOPA-decarboxylase inhibitors. The increment of free radicals and the consequent oxidative stress could be able to induce the occurrence of dyskinesia pathology. In addition, specific experimental studies have drawn attention to the potential effects of synthetic anti-oxidants on the amelioration of hyperkinetic movements in LID animal models. In the context of inflammatory oxidative pathophysiology of PD, Sarkar and his collaborators have conducted a study on PD patients presenting or not with dyskinesia, compared to healthy-matched people [<xref rid="B112-brainsci-14-00514" ref-type="bibr">112</xref>]. They found a different oxidative profile and inflammatory response in PD with or without LID. In particular, reduction of antioxidant activity, and TOLLIP (toll interacting protein) and IL-1&#x003b2; upregulation were found in LID patients compared to controls. TOLLIP is an inhibitory adaptor protein of the TRL pathway, involved in the endo-lysosomal degradation of IL-1R, and its overexpression inhibits inflammatory processes. Other investigations have highlighted the involvement of the nitric oxide (NO) signaling pathway. NO is a neurotransmitter synthesized from its precursor L-arginine. Furthermore, NO seems to be involved in inflammatory events of PD. Indeed, neuronal NOS (nNOS) mRna [<xref rid="B113-brainsci-14-00514" ref-type="bibr">113</xref>], nNOS, and inducible NOS (iNOS) protein [<xref rid="B76-brainsci-14-00514" ref-type="bibr">76</xref>,<xref rid="B114-brainsci-14-00514" ref-type="bibr">114</xref>] presented an increased concentration level in L-DOPA-induced dyskinesia model rats. Of note, the nNOS inhibitors were effective in preventing dyskinesia manifestation and COX2 increased expression, which is also involved in LID development [<xref rid="B112-brainsci-14-00514" ref-type="bibr">112</xref>]. </p></sec><sec id="sec4-brainsci-14-00514"><title>4. Therapeutic Interventions</title><p>As previously mentioned, LIDs represent the most frequent adverse effect of daily treatment with L-DOPA. As is known, PD prevalence is increasing due to many factors and in particular the aging world population. Furthermore, all these lead to an increase in socioeconomic costs and deterioration in the quality of life of PD-affected people, impairing daily activities (such as eating and drinking) and enhancing anxiety and depression as well as the risk of falling [<xref rid="B115-brainsci-14-00514" ref-type="bibr">115</xref>,<xref rid="B116-brainsci-14-00514" ref-type="bibr">116</xref>,<xref rid="B117-brainsci-14-00514" ref-type="bibr">117</xref>,<xref rid="B118-brainsci-14-00514" ref-type="bibr">118</xref>,<xref rid="B119-brainsci-14-00514" ref-type="bibr">119</xref>]. Currently, the only treatment approved and the most efficient drug for the management of LIDs is Amantadine, a low-affinity non-competitive NMDA receptor antagonist, as reported by several clinical studies [<xref rid="B7-brainsci-14-00514" ref-type="bibr">7</xref>,<xref rid="B11-brainsci-14-00514" ref-type="bibr">11</xref>,<xref rid="B115-brainsci-14-00514" ref-type="bibr">115</xref>,<xref rid="B120-brainsci-14-00514" ref-type="bibr">120</xref>]. Amantadine is available in two formulations, only one approved, and one used off label [<xref rid="B121-brainsci-14-00514" ref-type="bibr">121</xref>]. The latter formulation of Amantadine was approved by the FDA in 2017 and presents an extended release [<xref rid="B115-brainsci-14-00514" ref-type="bibr">115</xref>]. However, Amantadine presents side effects such as confusion and hallucinations [<xref rid="B122-brainsci-14-00514" ref-type="bibr">122</xref>]. Indeed, Amantadine acts by reducing the inflammatory response induced by microglia [<xref rid="B93-brainsci-14-00514" ref-type="bibr">93</xref>,<xref rid="B123-brainsci-14-00514" ref-type="bibr">123</xref>]. This supports the role of neuroinflammation and its use as a therapeutic target in the fight against LIDs. In this way, corticosterone, a hormone with potent immunomodulatory properties, seemed to reduce LIDs development when administered prior to L-DOPA treatment [<xref rid="B75-brainsci-14-00514" ref-type="bibr">75</xref>]. As described above, treatment with MPEP (a metabotropic glutamate receptor 5 antagonist) reduced the onset of LIDs in de novo MPTP-lesioned monkeys through decrease of inflammatory reaction by means of IBA1, GFAP, and CD68 in the basal ganglia without effects in the nucleus accumbens and motor cortex M1 [<xref rid="B88-brainsci-14-00514" ref-type="bibr">88</xref>]. An alternative treatment for LIDs in PD could be the use of doxycycline (doxy), a semisynthetic tetracycline antibiotic with anti-inflammatory characteristics able to pass the BBB [<xref rid="B124-brainsci-14-00514" ref-type="bibr">124</xref>]. Doxycycline triggered the reduction of LIDs in L-DOPA-treated dyskinetic mice by decreasing Fos-B and COX-2 expression and lowering PGE<sub>2</sub>, TNF-&#x003b1;, and IL-1&#x003b2; levels in the dorsolateral striatum [<xref rid="B124-brainsci-14-00514" ref-type="bibr">124</xref>,<xref rid="B125-brainsci-14-00514" ref-type="bibr">125</xref>].</p><p>Among anti-inflammatory compounds, there is methylene blue (MB), a non-selective inhibitor of the soluble enzyme guanylyl cyclase (sGC) involved in the signaling pathway for nitric oxide (NO) transmission [<xref rid="B98-brainsci-14-00514" ref-type="bibr">98</xref>,<xref rid="B126-brainsci-14-00514" ref-type="bibr">126</xref>,<xref rid="B127-brainsci-14-00514" ref-type="bibr">127</xref>]. Bariotto-Dos-Santos and collaborators have demonstrated that co-administration of MB with L-DOPA reduced the risk of LID development, probably due to its anti-inflammatory properties, leading to a decrease in microglia reaction and expressions of pro-inflammatory cytokines [<xref rid="B125-brainsci-14-00514" ref-type="bibr">125</xref>,<xref rid="B128-brainsci-14-00514" ref-type="bibr">128</xref>,<xref rid="B129-brainsci-14-00514" ref-type="bibr">129</xref>,<xref rid="B130-brainsci-14-00514" ref-type="bibr">130</xref>].</p><p>From the point of view of prevention, in this review, we should mention nutraceutical products tested in animal models to support pharmacological therapy. Among them, resveratrol (trans-3, 4, 5-trihydroxystilbene, RES) seems to have many beneficial effects. In fact, it has anti-oxidative, anti-aging, anti-inflammatory, anti-cancer, and anti-microbial properties, and the ability to cross the blood&#x02013;brain barrier (BBB), acting on the central nervous system. Moreover, research on PD animal models has demonstrated that RES could rescue Da neurons and reduce L-DOPA side effect, such as severity of dyskinesia, probably due to its anti-inflammatory characteristics [<xref rid="B131-brainsci-14-00514" ref-type="bibr">131</xref>]. Ultimately, preclinical studies have shown that cholecalciferol (VD3) treatment ameliorates motor impairments and diminished IL-1&#x003b2; and CD11b inflammatory expression [<xref rid="B132-brainsci-14-00514" ref-type="bibr">132</xref>]. Indeed, VD3 deficiency has been found in various neurological disorders [<xref rid="B133-brainsci-14-00514" ref-type="bibr">133</xref>], including PD. VD3 is a steroid involved in gene expression, whose receptor is largely concentrated in striatum [<xref rid="B134-brainsci-14-00514" ref-type="bibr">134</xref>]. Moreover, VD3 demonstrated anti-dyskinetic properties by mitigation of dyskinetic abnormal involuntary movements (AIMs), due to its ability to modulate the microglia reaction, generation of ROS, inflammation, and apoptotic pathways, not involving dopaminergic modulation. All treatments are noted in <xref rid="brainsci-14-00514-t001" ref-type="table">Table 1</xref>.</p><p>The current presented review supports the urgent need for further studies to deepen understanding of the inflammatory mechanism in LIDs. Drug repurposing could be a crucial strategy to investigate various drugs available for LID treatment.</p></sec><sec sec-type="conclusions" id="sec5-brainsci-14-00514"><title>5. Conclusions</title><p>Currently, treatment with L-DOPA remains the gold standard therapy for PD patients due to its efficacy. However, it is important to note that this treatment can lead to disabling side effects, including motor and cognitive complications, which may contribute to the onset of LID. This article reviews recent literature that highlights the correlation between PD and neuroinflammation and how inflammatory processes are closely linked to the onset of LID. It is clear that a potential area for research is the expansion of pharmacological methods to delay the onset of LID or limit its impact, particularly in relation to neuroinflammation. The multifactorial nature of PD requires the evaluation of new pharmacological strategies, bearing in mind the potential risk of developing levodopa-induced dyskinesias (LID). Therefore, we suggest that the reduction of side effects due to the activation of inflammatory processes during the progress of PD should not be neglected, as they are likely to be involved both in neurodegeneration itself and in the development of LIDs. As such, neuroinflammation represents a new field of research and could be an excellent therapy target both to slow down the progression of PD and to reduce LIDs, bettering the quality of life of PD patients.</p></sec><sec id="sec6-brainsci-14-00514"><title>6. Limitations of the Studies</title><p>In this review, we wanted to analyze the literature on the non-neuronal mechanisms involved in the dyskinesia onset. In this context, we also analyzed the possible drug targets or treatments that could be used. However, there are several limitations in the use of these novel drugs for several reasons:<list list-type="simple"><list-item><label>-</label><p>Could have serious adverse reactions;</p></list-item><list-item><label>-</label><p>Could reduce the effectiveness of L-dopa;</p></list-item><list-item><label>-</label><p>Have excellent results in pre-clinical practice but no evidence in medical use due to the lack of clinical trials.</p></list-item></list></p><p>Therefore, in particular, it is urgent to link the pre-clinical studies to human trials on anti-inflammatory protocols to assess evidence of beneficial effects for PD patients and to associate them with the LID pharmacological treatments. Obviously, this urgency must also be applied to the other non-neuronal mechanisms involved to amplify the effectiveness of treatments.</p></sec></body><back><fn-group><fn><p><bold>Disclaimer/Publisher&#x02019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p></fn></fn-group><notes><title>Author Contributions</title><p>Conceptualization and supervision, A.C.; writing&#x02014;original draft preparation, A.C.; writing&#x02014;review and editing, A.C., B.P., and A.d.I. All authors have read and agreed to the published version of the manuscript.</p></notes><notes notes-type="COI-statement"><title>Conflicts of Interest</title><p>No conflicts of interest, financial or otherwise, are declared by the authors.</p></notes><glossary><title>Abbreviations</title><array><tbody><tr><td align="left" valign="middle" rowspan="1" colspan="1">AADC</td><td align="left" valign="middle" rowspan="1" colspan="1">Aromatic L-Amino Acid Decarboxylase</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">AIMs</td><td align="left" valign="middle" rowspan="1" colspan="1">Abnormal Involuntary Movements</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">BBB</td><td align="left" valign="middle" rowspan="1" colspan="1">Blood&#x02013;Brain Barrier</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">cAMP</td><td align="left" valign="middle" rowspan="1" colspan="1">Cyclic Adenosine Monophosphate</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">CD68</td><td align="left" valign="middle" rowspan="1" colspan="1">Cluster of Differentiation 68</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">CSF</td><td align="left" valign="middle" rowspan="1" colspan="1">Cerebrospinal Fluid</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">COMT</td><td align="left" valign="middle" rowspan="1" colspan="1">Catechol-<italic toggle="yes">O</italic>-Methyltransferase</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">DA</td><td align="left" valign="middle" rowspan="1" colspan="1">Dopamine</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">DARPP-32</td><td align="left" valign="middle" rowspan="1" colspan="1">Dopamine and Camp-Regulated Protein of 32 kDa</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">DAT</td><td align="left" valign="middle" rowspan="1" colspan="1">Dopamine Transporter</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">DID</td><td align="left" valign="middle" rowspan="1" colspan="1">Dyskinesia-Improvement Dyskinesia</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">ERK</td><td align="left" valign="middle" rowspan="1" colspan="1">Extracellular Signal-Regulated Kinases</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">IBA1</td><td align="left" valign="middle" rowspan="1" colspan="1">Ionized Calcium Binding Adaptor Molecule 1</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">IDI</td><td align="left" valign="middle" rowspan="1" colspan="1">Improvement-Dyskinesia-Improvement</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">GFAP</td><td align="left" valign="middle" rowspan="1" colspan="1">Glial Fibrillary Acidic Protein</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">GPi</td><td align="left" valign="middle" rowspan="1" colspan="1">Internal Globus Pallidus</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">Il-1&#x003b2;</td><td align="left" valign="middle" rowspan="1" colspan="1"><italic toggle="yes">Interleukin-1</italic> beta</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">iNOS</td><td align="left" valign="middle" rowspan="1" colspan="1">Inducible NO Synthase</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">IFN-&#x003b3;</td><td align="left" valign="middle" rowspan="1" colspan="1">Interferon Gamma</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">LAT1</td><td align="left" valign="middle" rowspan="1" colspan="1">L-Type Amino Acid Transporter 1</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">LID</td><td align="left" valign="middle" rowspan="1" colspan="1">L-DOPA-Induced Dyskinesia</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">L-DOPA</td><td align="left" valign="middle" rowspan="1" colspan="1">l-3,4-Dihydroxyphenylalanine Levodopa</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">LTD</td><td align="left" valign="middle" rowspan="1" colspan="1">Long-Term Depression</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">LTP</td><td align="left" valign="middle" rowspan="1" colspan="1">Long-Term Potentiation</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">MAO-B</td><td align="left" valign="middle" rowspan="1" colspan="1">Monoamine Oxidase</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">MPEP</td><td align="left" valign="middle" rowspan="1" colspan="1">Metabotropic Glutamate Receptor 5 Antagonist</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">MPTP</td><td align="left" valign="middle" rowspan="1" colspan="1">1-Metil 4-Fenil 1,2,3,6-Tetraidro-Piridina</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">mTOR</td><td align="left" valign="middle" rowspan="1" colspan="1">Mammalian Target of Rapamycin</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">SPNs</td><td align="left" valign="middle" rowspan="1" colspan="1">Striatal Projection Neurons</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">PDE10</td><td align="left" valign="middle" rowspan="1" colspan="1">Phosphodiesterase 10</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">PKA</td><td align="left" valign="middle" rowspan="1" colspan="1">cAMP-dependent Protein Kinase A</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">PD</td><td align="left" valign="middle" rowspan="1" colspan="1">Parkinson&#x02019;s Disease</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">TGF&#x003b2;1</td><td align="left" valign="middle" rowspan="1" colspan="1">Transforming Growth Factor beta type 1</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">TNF-&#x003b1;</td><td align="left" valign="middle" rowspan="1" colspan="1">Tumor Necrosis Factor</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">TNFR2</td><td align="left" valign="middle" rowspan="1" colspan="1">TNF Receptor 2</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">TNR1</td><td align="left" valign="middle" rowspan="1" colspan="1">TNF Receptor 1</td></tr></tbody></array></glossary><ref-list><title>References</title><ref id="B1-brainsci-14-00514"><label>1.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cardinale</surname><given-names>A.</given-names></name>
+<name><surname>Calabrese</surname><given-names>V.</given-names></name>
+</person-group><article-title>The intricate debate on neurodegeneration and neuroinflammation in Parkinson&#x02019;s disease: Which came first?</article-title><source>Neural Regen. Res.</source><year>2023</year><volume>18</volume><fpage>125</fpage><lpage>126</lpage><pub-id pub-id-type="doi">10.4103/1673-5374.343895</pub-id><pub-id pub-id-type="pmid">35799526</pub-id>
+</element-citation></ref><ref id="B2-brainsci-14-00514"><label>2.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cardinale</surname><given-names>A.</given-names></name>
+<name><surname>Calabrese</surname><given-names>V.</given-names></name>
+<name><surname>de Iure</surname><given-names>A.</given-names></name>
+<name><surname>Picconi</surname><given-names>B.</given-names></name>
+</person-group><article-title>Alpha-Synuclein as a Prominent Actor in the Inflammatory Synaptopathy of Parkinson&#x02019;s Disease</article-title><source>Int. J. Mol. Sci.</source><year>2021</year><volume>22</volume><elocation-id>6517</elocation-id><pub-id pub-id-type="doi">10.3390/ijms22126517</pub-id><pub-id pub-id-type="pmid">34204581</pub-id>
+</element-citation></ref><ref id="B3-brainsci-14-00514"><label>3.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Poewe</surname><given-names>W.</given-names></name>
+<name><surname>Seppi</surname><given-names>K.</given-names></name>
+<name><surname>Tanner</surname><given-names>C.M.</given-names></name>
+<name><surname>Halliday</surname><given-names>G.M.</given-names></name>
+<name><surname>Brundin</surname><given-names>P.</given-names></name>
+<name><surname>Volkmann</surname><given-names>J.</given-names></name>
+<name><surname>Schrag</surname><given-names>A.E.</given-names></name>
+<name><surname>Lang</surname><given-names>A.E.</given-names></name>
+</person-group><article-title>Parkinson disease</article-title><source>Nat. Rev. Dis. Primers</source><year>2017</year><volume>3</volume><fpage>17013</fpage><pub-id pub-id-type="doi">10.1038/nrdp.2017.13</pub-id><pub-id pub-id-type="pmid">28332488</pub-id>
+</element-citation></ref><ref id="B4-brainsci-14-00514"><label>4.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ou</surname><given-names>Z.</given-names></name>
+<name><surname>Pan</surname><given-names>J.</given-names></name>
+<name><surname>Tang</surname><given-names>S.</given-names></name>
+<name><surname>Duan</surname><given-names>D.</given-names></name>
+<name><surname>Yu</surname><given-names>D.</given-names></name>
+<name><surname>Nong</surname><given-names>H.</given-names></name>
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+</person-group><article-title>Global Trends in the Incidence, Prevalence, and Years Lived with Disability of Parkinson&#x02019;s Disease in 204 Countries/Territories From 1990 to 2019</article-title><source>Front. Public Health</source><year>2021</year><volume>9</volume><fpage>776847</fpage><pub-id pub-id-type="doi">10.3389/fpubh.2021.776847</pub-id><pub-id pub-id-type="pmid">34950630</pub-id>
+</element-citation></ref><ref id="B5-brainsci-14-00514"><label>5.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Group</surname><given-names>G.B.D.N.D.C.</given-names></name>
+</person-group><article-title>Global, regional, and national burden of neurological disorders during 1990-2015: A systematic analysis for the Global Burden of Disease Study 2015</article-title><source>Lancet Neurol.</source><year>2017</year><volume>16</volume><fpage>877</fpage><lpage>897</lpage><pub-id pub-id-type="pmid">28931491</pub-id>
+</element-citation></ref><ref id="B6-brainsci-14-00514"><label>6.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tysnes</surname><given-names>O.B.</given-names></name>
+<name><surname>Storstein</surname><given-names>A.</given-names></name>
+</person-group><article-title>Epidemiology of Parkinson&#x02019;s disease</article-title><source>J. Neural Transm. (Vienna)</source><year>2017</year><volume>124</volume><fpage>901</fpage><lpage>905</lpage><pub-id pub-id-type="doi">10.1007/s00702-017-1686-y</pub-id><pub-id pub-id-type="pmid">28150045</pub-id>
+</element-citation></ref><ref id="B7-brainsci-14-00514"><label>7.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>AlShimemeri</surname><given-names>S.</given-names></name>
+<name><surname>Fox</surname><given-names>S.H.</given-names></name>
+<name><surname>Visanji</surname><given-names>N.P.</given-names></name>
+</person-group><article-title>Emerging drugs for the treatment of L-DOPA-induced dyskinesia: An update</article-title><source>Expert Opin. Emerg. Drugs</source><year>2020</year><volume>25</volume><fpage>131</fpage><lpage>144</lpage><pub-id pub-id-type="doi">10.1080/14728214.2020.1763954</pub-id><pub-id pub-id-type="pmid">32366130</pub-id>
+</element-citation></ref><ref id="B8-brainsci-14-00514"><label>8.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kwon</surname><given-names>D.K.</given-names></name>
+<name><surname>Kwatra</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Ko</surname><given-names>H.S.</given-names></name>
+</person-group><article-title>Levodopa-Induced Dyskinesia in Parkinson&#x02019;s Disease: Pathogenesis and Emerging Treatment Strategies</article-title><source>Cells</source><year>2022</year><volume>11</volume><elocation-id>3736</elocation-id><pub-id pub-id-type="doi">10.3390/cells11233736</pub-id><pub-id pub-id-type="pmid">36496996</pub-id>
+</element-citation></ref><ref id="B9-brainsci-14-00514"><label>9.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tran</surname><given-names>T.N.</given-names></name>
+<name><surname>Vo</surname><given-names>T.N.N.</given-names></name>
+<name><surname>Frei</surname><given-names>K.</given-names></name>
+<name><surname>Truong</surname><given-names>D.D.</given-names></name>
+</person-group><article-title>Levodopa-induced dyskinesia: Clinical features, incidence, and risk factors</article-title><source>J. Neural Transm. (Vienna)</source><year>2018</year><volume>125</volume><fpage>1109</fpage><lpage>1117</lpage><pub-id pub-id-type="doi">10.1007/s00702-018-1900-6</pub-id><pub-id pub-id-type="pmid">29971495</pub-id>
+</element-citation></ref><ref id="B10-brainsci-14-00514"><label>10.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>F.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+<name><surname>Tuo</surname><given-names>J.</given-names></name>
+<name><surname>Zhang</surname><given-names>L.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Yu</surname><given-names>C.</given-names></name>
+<name><surname>Xu</surname><given-names>Z.</given-names></name>
+</person-group><article-title>Levodopa-induced dyskinesia: Interplay between the N-methyl-D-aspartic acid receptor and neuroinflammation</article-title><source>Front. Immunol.</source><year>2023</year><volume>14</volume><fpage>1253273</fpage><pub-id pub-id-type="doi">10.3389/fimmu.2023.1253273</pub-id><pub-id pub-id-type="pmid">37860013</pub-id>
+</element-citation></ref><ref id="B11-brainsci-14-00514"><label>11.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cesaroni</surname><given-names>V.</given-names></name>
+<name><surname>Blandini</surname><given-names>F.</given-names></name>
+<name><surname>Cerri</surname><given-names>S.</given-names></name>
+</person-group><article-title>Dyskinesia and Parkinson&#x02019;s disease: Animal model, drug targets, and agents in preclinical testing</article-title><source>Expert Opin. Ther. Targets</source><year>2022</year><volume>26</volume><fpage>837</fpage><lpage>851</lpage><pub-id pub-id-type="doi">10.1080/14728222.2022.2153036</pub-id><pub-id pub-id-type="pmid">36469635</pub-id>
+</element-citation></ref><ref id="B12-brainsci-14-00514"><label>12.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+<name><surname>Lundblad</surname><given-names>M.</given-names></name>
+</person-group><article-title>Ratings of L-DOPA-induced dyskinesia in the unilateral 6-OHDA lesion model of Parkinson&#x02019;s disease in rats and mice</article-title><source>Curr. Protoc. Neurosci.</source><year>2007</year><volume>41</volume><fpage>9</fpage><lpage>25</lpage><pub-id pub-id-type="doi">10.1002/0471142301.ns0925s41</pub-id><pub-id pub-id-type="pmid">18428668</pub-id>
+</element-citation></ref><ref id="B13-brainsci-14-00514"><label>13.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ahlskog</surname><given-names>J.E.</given-names></name>
+<name><surname>Muenter</surname><given-names>M.D.</given-names></name>
+</person-group><article-title>Frequency of levodopa-related dyskinesias and motor fluctuations as estimated from the cumulative literature</article-title><source>Mov. Disord.</source><year>2001</year><volume>16</volume><fpage>448</fpage><lpage>458</lpage><pub-id pub-id-type="doi">10.1002/mds.1090</pub-id><pub-id pub-id-type="pmid">11391738</pub-id>
+</element-citation></ref><ref id="B14-brainsci-14-00514"><label>14.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hauser</surname><given-names>R.A.</given-names></name>
+<name><surname>Rascol</surname><given-names>O.</given-names></name>
+<name><surname>Korczyn</surname><given-names>A.D.</given-names></name>
+<name><surname>Jon Stoessl</surname><given-names>A.</given-names></name>
+<name><surname>Watts</surname><given-names>R.L.</given-names></name>
+<name><surname>Poewe</surname><given-names>W.</given-names></name>
+<name><surname>De Deyn</surname><given-names>P.P.</given-names></name>
+<name><surname>Lang</surname><given-names>A.E.</given-names></name>
+</person-group><article-title>Ten-year follow-up of Parkinson&#x02019;s disease patients randomized to initial therapy with ropinirole or levodopa</article-title><source>Mov. Disord.</source><year>2007</year><volume>22</volume><fpage>2409</fpage><lpage>2417</lpage><pub-id pub-id-type="doi">10.1002/mds.21743</pub-id><pub-id pub-id-type="pmid">17894339</pub-id>
+</element-citation></ref><ref id="B15-brainsci-14-00514"><label>15.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hely</surname><given-names>M.A.</given-names></name>
+<name><surname>Morris</surname><given-names>J.G.</given-names></name>
+<name><surname>Reid</surname><given-names>W.G.</given-names></name>
+<name><surname>Trafficante</surname><given-names>R.</given-names></name>
+</person-group><article-title>Sydney Multicenter Study of Parkinson&#x02019;s disease: Non-L-dopa-responsive problems dominate at 15 years</article-title><source>Mov. Disord</source><year>2005</year><volume>20</volume><fpage>190</fpage><lpage>199</lpage><pub-id pub-id-type="doi">10.1002/mds.20324</pub-id><pub-id pub-id-type="pmid">15551331</pub-id>
+</element-citation></ref><ref id="B16-brainsci-14-00514"><label>16.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lopez</surname><given-names>I.C.</given-names></name>
+<name><surname>Ruiz</surname><given-names>P.J.</given-names></name>
+<name><surname>Del Pozo</surname><given-names>S.V.</given-names></name>
+<name><surname>Bernardos</surname><given-names>V.S.</given-names></name>
+</person-group><article-title>Motor complications in Parkinson&#x02019;s disease: Ten year follow-up study</article-title><source>Mov. Disord.</source><year>2010</year><volume>25</volume><fpage>2735</fpage><lpage>2739</lpage><pub-id pub-id-type="doi">10.1002/mds.23219</pub-id><pub-id pub-id-type="pmid">20931632</pub-id>
+</element-citation></ref><ref id="B17-brainsci-14-00514"><label>17.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rentsch</surname><given-names>P.</given-names></name>
+<name><surname>Egan</surname><given-names>T.</given-names></name>
+<name><surname>Kuriakose</surname><given-names>A.</given-names></name>
+<name><surname>Stayte</surname><given-names>S.</given-names></name>
+<name><surname>Vissel</surname><given-names>B.</given-names></name>
+</person-group><article-title>The ratio of M1 to M2 microglia in the striatum determines the severity of L-Dopa-induced dyskinesias</article-title><source>J. Neurochem.</source><year>2023</year><volume>167</volume><fpage>633</fpage><lpage>647</lpage><pub-id pub-id-type="doi">10.1111/jnc.15993</pub-id><pub-id pub-id-type="pmid">37916541</pub-id>
+</element-citation></ref><ref id="B18-brainsci-14-00514"><label>18.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Picconi</surname><given-names>B.</given-names></name>
+<name><surname>Centonze</surname><given-names>D.</given-names></name>
+<name><surname>Hakansson</surname><given-names>K.</given-names></name>
+<name><surname>Bernardi</surname><given-names>G.</given-names></name>
+<name><surname>Greengard</surname><given-names>P.</given-names></name>
+<name><surname>Fisone</surname><given-names>G.</given-names></name>
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+</person-group><article-title>Loss of bidirectional striatal synaptic plasticity in L-DOPA-induced dyskinesia</article-title><source>Nat. Neurosci.</source><year>2003</year><volume>6</volume><fpage>501</fpage><lpage>506</lpage><pub-id pub-id-type="doi">10.1038/nn1040</pub-id><pub-id pub-id-type="pmid">12665799</pub-id>
+</element-citation></ref><ref id="B19-brainsci-14-00514"><label>19.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Meredith</surname><given-names>G.E.</given-names></name>
+<name><surname>Mendoza-Elias</surname><given-names>N.</given-names></name>
+<name><surname>Rademacher</surname><given-names>D.J.</given-names></name>
+<name><surname>Tseng</surname><given-names>K.Y.</given-names></name>
+<name><surname>Steece-Collier</surname><given-names>K.</given-names></name>
+</person-group><article-title>Aberrant restoration of spines and their synapses in L-DOPA-induced dyskinesia: Involvement of corticostriatal but not thalamostriatal synapses</article-title><source>J. Neurosci.</source><year>2013</year><volume>33</volume><fpage>11655</fpage><lpage>11667</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.0288-13.2013</pub-id><pub-id pub-id-type="pmid">23843533</pub-id>
+</element-citation></ref><ref id="B20-brainsci-14-00514"><label>20.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Carta</surname><given-names>A.R.</given-names></name>
+<name><surname>Mulas</surname><given-names>G.</given-names></name>
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Duarte</surname><given-names>T.</given-names></name>
+<name><surname>Pillai</surname><given-names>E.</given-names></name>
+<name><surname>Fisone</surname><given-names>G.</given-names></name>
+<name><surname>Vozari</surname><given-names>R.R.</given-names></name>
+<name><surname>Del-Bel</surname><given-names>E.</given-names></name>
+</person-group><article-title>l-DOPA-induced dyskinesia and neuroinflammation: Do microglia and astrocytes play a role?</article-title><source>Eur. J. Neurosci.</source><year>2017</year><volume>45</volume><fpage>73</fpage><lpage>91</lpage><pub-id pub-id-type="doi">10.1111/ejn.13482</pub-id><pub-id pub-id-type="pmid">27859864</pub-id>
+</element-citation></ref><ref id="B21-brainsci-14-00514"><label>21.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zesiewicz</surname><given-names>T.A.</given-names></name>
+<name><surname>Sullivan</surname><given-names>K.L.</given-names></name>
+<name><surname>Hauser</surname><given-names>R.A.</given-names></name>
+</person-group><article-title>Levodopa-induced dyskinesia in Parkinson&#x02019;s disease: Epidemiology, etiology, and treatment</article-title><source>Curr. Neurol. Neurosci. Rep.</source><year>2007</year><volume>7</volume><fpage>302</fpage><lpage>310</lpage><pub-id pub-id-type="doi">10.1007/s11910-007-0046-y</pub-id><pub-id pub-id-type="pmid">17618536</pub-id>
+</element-citation></ref><ref id="B22-brainsci-14-00514"><label>22.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pandey</surname><given-names>S.</given-names></name>
+<name><surname>Srivanitchapoom</surname><given-names>P.</given-names></name>
+</person-group><article-title>Levodopa-induced Dyskinesia: Clinical Features, Pathophysiology, and Medical Management</article-title><source>Ann. Indian Acad. Neurol.</source><year>2017</year><volume>20</volume><fpage>190</fpage><lpage>198</lpage><pub-id pub-id-type="doi">10.4103/aian.AIAN_239_17</pub-id><pub-id pub-id-type="pmid">28904447</pub-id>
+</element-citation></ref><ref id="B23-brainsci-14-00514"><label>23.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+<name><surname>Picconi</surname><given-names>B.</given-names></name>
+<name><surname>Tozzi</surname><given-names>A.</given-names></name>
+<name><surname>Ghiglieri</surname><given-names>V.</given-names></name>
+<name><surname>Di Filippo</surname><given-names>M.</given-names></name>
+</person-group><article-title>Direct and indirect pathways of basal ganglia: A critical reappraisal</article-title><source>Nat. Neurosci.</source><year>2014</year><volume>17</volume><fpage>1022</fpage><lpage>1030</lpage><pub-id pub-id-type="doi">10.1038/nn.3743</pub-id><pub-id pub-id-type="pmid">25065439</pub-id>
+</element-citation></ref><ref id="B24-brainsci-14-00514"><label>24.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McGregor</surname><given-names>M.M.</given-names></name>
+<name><surname>Nelson</surname><given-names>A.B.</given-names></name>
+</person-group><article-title>Circuit Mechanisms of Parkinson&#x02019;s Disease</article-title><source>Neuron</source><year>2019</year><volume>101</volume><fpage>1042</fpage><lpage>1056</lpage><pub-id pub-id-type="doi">10.1016/j.neuron.2019.03.004</pub-id><pub-id pub-id-type="pmid">30897356</pub-id>
+</element-citation></ref><ref id="B25-brainsci-14-00514"><label>25.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bezard</surname><given-names>E.</given-names></name>
+</person-group><article-title>Experimental reappraisal of continuous dopaminergic stimulation against L-dopa-induced dyskinesia</article-title><source>Mov. Disord.</source><year>2013</year><volume>28</volume><fpage>1021</fpage><lpage>1022</lpage><pub-id pub-id-type="doi">10.1002/mds.25251</pub-id><pub-id pub-id-type="pmid">23143999</pub-id>
+</element-citation></ref><ref id="B26-brainsci-14-00514"><label>26.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pagano</surname><given-names>G.</given-names></name>
+<name><surname>Yousaf</surname><given-names>T.</given-names></name>
+<name><surname>Politis</surname><given-names>M.</given-names></name>
+</person-group><article-title>PET Molecular Imaging Research of Levodopa-Induced Dyskinesias in Parkinson&#x02019;s Disease</article-title><source>Curr. Neurol. Neurosci. Rep.</source><year>2017</year><volume>17</volume><fpage>90</fpage><pub-id pub-id-type="doi">10.1007/s11910-017-0794-2</pub-id><pub-id pub-id-type="pmid">28975571</pub-id>
+</element-citation></ref><ref id="B27-brainsci-14-00514"><label>27.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lindgren</surname><given-names>H.S.</given-names></name>
+<name><surname>Andersson</surname><given-names>D.R.</given-names></name>
+<name><surname>Lagerkvist</surname><given-names>S.</given-names></name>
+<name><surname>Nissbrandt</surname><given-names>H.</given-names></name>
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+</person-group><article-title>L-DOPA-induced dopamine efflux in the striatum and the substantia nigra in a rat model of Parkinson&#x02019;s disease: Temporal and quantitative relationship to the expression of dyskinesia</article-title><source>J. Neurochem.</source><year>2010</year><volume>112</volume><fpage>1465</fpage><lpage>1476</lpage><pub-id pub-id-type="doi">10.1111/j.1471-4159.2009.06556.x</pub-id><pub-id pub-id-type="pmid">20050978</pub-id>
+</element-citation></ref><ref id="B28-brainsci-14-00514"><label>28.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Contin</surname><given-names>M.</given-names></name>
+<name><surname>Martinelli</surname><given-names>P.</given-names></name>
+</person-group><article-title>Pharmacokinetics of levodopa</article-title><source>J. Neurol.</source><year>2010</year><volume>257</volume><issue>(Suppl. S2)</issue><fpage>S253</fpage><lpage>S261</lpage><pub-id pub-id-type="doi">10.1007/s00415-010-5728-8</pub-id><pub-id pub-id-type="pmid">21080186</pub-id>
+</element-citation></ref><ref id="B29-brainsci-14-00514"><label>29.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Olanow</surname><given-names>C.W.</given-names></name>
+<name><surname>Obeso</surname><given-names>J.A.</given-names></name>
+<name><surname>Stocchi</surname><given-names>F.</given-names></name>
+</person-group><article-title>Continuous dopamine-receptor treatment of Parkinson&#x02019;s disease: Scientific rationale and clinical implications</article-title><source>Lancet Neurol.</source><year>2006</year><volume>5</volume><fpage>677</fpage><lpage>687</lpage><pub-id pub-id-type="doi">10.1016/S1474-4422(06)70521-X</pub-id><pub-id pub-id-type="pmid">16857573</pub-id>
+</element-citation></ref><ref id="B30-brainsci-14-00514"><label>30.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nutt</surname><given-names>J.G.</given-names></name>
+<name><surname>Obeso</surname><given-names>J.A.</given-names></name>
+<name><surname>Stocchi</surname><given-names>F.</given-names></name>
+</person-group><article-title>Continuous dopamine-receptor stimulation in advanced Parkinson&#x02019;s disease</article-title><source>Trends Neurosci.</source><year>2000</year><volume>23</volume><issue>(Suppl. S10)</issue><fpage>S109</fpage><lpage>S115</lpage><pub-id pub-id-type="doi">10.1016/S1471-1931(00)00029-X</pub-id><pub-id pub-id-type="pmid">11052228</pub-id>
+</element-citation></ref><ref id="B31-brainsci-14-00514"><label>31.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Corsi</surname><given-names>S.</given-names></name>
+<name><surname>Stancampiano</surname><given-names>R.</given-names></name>
+<name><surname>Carta</surname><given-names>M.</given-names></name>
+</person-group><article-title>Serotonin/dopamine interaction in the induction and maintenance of L-DOPA-induced dyskinesia: An update</article-title><source>Prog. Brain Res.</source><year>2021</year><volume>261</volume><fpage>287</fpage><lpage>302</lpage><pub-id pub-id-type="pmid">33785132</pub-id>
+</element-citation></ref><ref id="B32-brainsci-14-00514"><label>32.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Navailles</surname><given-names>S.</given-names></name>
+<name><surname>De Deurwaerdere</surname><given-names>P.</given-names></name>
+</person-group><article-title>Imbalanced Dopaminergic Transmission Mediated by Serotonergic Neurons in L-DOPA-Induced Dyskinesia</article-title><source>Parkinsons Dis.</source><year>2012</year><volume>2012</volume><fpage>323686</fpage><pub-id pub-id-type="doi">10.1155/2012/323686</pub-id><pub-id pub-id-type="pmid">22007343</pub-id>
+</element-citation></ref><ref id="B33-brainsci-14-00514"><label>33.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bandopadhyay</surname><given-names>R.</given-names></name>
+<name><surname>Mishra</surname><given-names>N.</given-names></name>
+<name><surname>Rana</surname><given-names>R.</given-names></name>
+<name><surname>Kaur</surname><given-names>G.</given-names></name>
+<name><surname>Ghoneim</surname><given-names>M.M.</given-names></name>
+<name><surname>Alshehri</surname><given-names>S.</given-names></name>
+<name><surname>Mustafa</surname><given-names>G.</given-names></name>
+<name><surname>Ahmad</surname><given-names>J.</given-names></name>
+<name><surname>Alhakamy</surname><given-names>N.A.</given-names></name>
+<name><surname>Mishra</surname><given-names>A.</given-names></name>
+</person-group><article-title>Molecular Mechanisms and Therapeutic Strategies for Levodopa-Induced Dyskinesia in Parkinson&#x02019;s Disease: A Perspective Through Preclinical and Clinical Evidence</article-title><source>Front. Pharmacol.</source><year>2022</year><volume>13</volume><fpage>805388</fpage><pub-id pub-id-type="doi">10.3389/fphar.2022.805388</pub-id><pub-id pub-id-type="pmid">35462934</pub-id>
+</element-citation></ref><ref id="B34-brainsci-14-00514"><label>34.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Campanelli</surname><given-names>F.</given-names></name>
+<name><surname>Marino</surname><given-names>G.</given-names></name>
+<name><surname>Barsotti</surname><given-names>N.</given-names></name>
+<name><surname>Natale</surname><given-names>G.</given-names></name>
+<name><surname>Calabrese</surname><given-names>V.</given-names></name>
+<name><surname>Cardinale</surname><given-names>A.</given-names></name>
+<name><surname>Ghiglieri</surname><given-names>V.</given-names></name>
+<name><surname>Maddaloni</surname><given-names>G.</given-names></name>
+<name><surname>Usiello</surname><given-names>A.</given-names></name>
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+<etal/>
+</person-group><article-title>Serotonin drives striatal synaptic plasticity in a sex-related manner</article-title><source>Neurobiol. Dis.</source><year>2021</year><volume>158</volume><elocation-id>105448</elocation-id><pub-id pub-id-type="doi">10.1016/j.nbd.2021.105448</pub-id><pub-id pub-id-type="pmid">34280523</pub-id>
+</element-citation></ref><ref id="B35-brainsci-14-00514"><label>35.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Politis</surname><given-names>M.</given-names></name>
+<name><surname>Oertel</surname><given-names>W.H.</given-names></name>
+<name><surname>Wu</surname><given-names>K.</given-names></name>
+<name><surname>Quinn</surname><given-names>N.P.</given-names></name>
+<name><surname>Pogarell</surname><given-names>O.</given-names></name>
+<name><surname>Brooks</surname><given-names>D.J.</given-names></name>
+<name><surname>Bjorklund</surname><given-names>A.</given-names></name>
+<name><surname>Lindvall</surname><given-names>O.</given-names></name>
+<name><surname>Piccini</surname><given-names>P.</given-names></name>
+</person-group><article-title>Graft-induced dyskinesias in Parkinson&#x02019;s disease: High striatal serotonin/dopamine transporter ratio</article-title><source>Mov. Disord.</source><year>2011</year><volume>26</volume><fpage>1997</fpage><lpage>2003</lpage><pub-id pub-id-type="doi">10.1002/mds.23743</pub-id><pub-id pub-id-type="pmid">21611977</pub-id>
+</element-citation></ref><ref id="B36-brainsci-14-00514"><label>36.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Carta</surname><given-names>M.</given-names></name>
+<name><surname>Bezard</surname><given-names>E.</given-names></name>
+</person-group><article-title>Contribution of pre-synaptic mechanisms to L-DOPA-induced dyskinesia</article-title><source>Neuroscience</source><year>2011</year><volume>198</volume><fpage>245</fpage><lpage>251</lpage><pub-id pub-id-type="doi">10.1016/j.neuroscience.2011.07.070</pub-id><pub-id pub-id-type="pmid">21840375</pub-id>
+</element-citation></ref><ref id="B37-brainsci-14-00514"><label>37.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Politis</surname><given-names>M.</given-names></name>
+<name><surname>Wu</surname><given-names>K.</given-names></name>
+<name><surname>Loane</surname><given-names>C.</given-names></name>
+<name><surname>Quinn</surname><given-names>N.P.</given-names></name>
+<name><surname>Brooks</surname><given-names>D.J.</given-names></name>
+<name><surname>Rehncrona</surname><given-names>S.</given-names></name>
+<name><surname>Bjorklund</surname><given-names>A.</given-names></name>
+<name><surname>Lindvall</surname><given-names>O.</given-names></name>
+<name><surname>Piccini</surname><given-names>P.</given-names></name>
+</person-group><article-title>Serotonergic neurons mediate dyskinesia side effects in Parkinson&#x02019;s patients with neural transplants</article-title><source>Sci. Transl. Med.</source><year>2010</year><volume>2</volume><fpage>38ra46</fpage><pub-id pub-id-type="doi">10.1126/scitranslmed.3000976</pub-id><pub-id pub-id-type="pmid">20592420</pub-id>
+</element-citation></ref><ref id="B38-brainsci-14-00514"><label>38.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Carta</surname><given-names>M.</given-names></name>
+<name><surname>Carlsson</surname><given-names>T.</given-names></name>
+<name><surname>Kirik</surname><given-names>D.</given-names></name>
+<name><surname>Bjorklund</surname><given-names>A.</given-names></name>
+</person-group><article-title>Dopamine released from 5-HT terminals is the cause of L-DOPA-induced dyskinesia in parkinsonian rats</article-title><source>Brain</source><year>2007</year><volume>130</volume><issue-part>Pt 7</issue-part><fpage>1819</fpage><lpage>1833</lpage><pub-id pub-id-type="doi">10.1093/brain/awm082</pub-id><pub-id pub-id-type="pmid">17452372</pub-id>
+</element-citation></ref><ref id="B39-brainsci-14-00514"><label>39.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kempadoo</surname><given-names>K.A.</given-names></name>
+<name><surname>Mosharov</surname><given-names>E.V.</given-names></name>
+<name><surname>Choi</surname><given-names>S.J.</given-names></name>
+<name><surname>Sulzer</surname><given-names>D.</given-names></name>
+<name><surname>Kandel</surname><given-names>E.R.</given-names></name>
+</person-group><article-title>Dopamine release from the locus coeruleus to the dorsal hippocampus promotes spatial learning and memory</article-title><source>Proc. Natl. Acad. Sci. USA</source><year>2016</year><volume>113</volume><fpage>14835</fpage><lpage>14840</lpage><pub-id pub-id-type="doi">10.1073/pnas.1616515114</pub-id><pub-id pub-id-type="pmid">27930324</pub-id>
+</element-citation></ref><ref id="B40-brainsci-14-00514"><label>40.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bezard</surname><given-names>E.</given-names></name>
+<name><surname>Brotchie</surname><given-names>J.M.</given-names></name>
+<name><surname>Gross</surname><given-names>C.E.</given-names></name>
+</person-group><article-title>Pathophysiology of levodopa-induced dyskinesia: Potential for new therapies</article-title><source>Nat. Rev. Neurosci.</source><year>2001</year><volume>2</volume><fpage>577</fpage><lpage>588</lpage><pub-id pub-id-type="doi">10.1038/35086062</pub-id><pub-id pub-id-type="pmid">11484001</pub-id>
+</element-citation></ref><ref id="B41-brainsci-14-00514"><label>41.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gerfen</surname><given-names>C.R.</given-names></name>
+<name><surname>Keefe</surname><given-names>K.A.</given-names></name>
+<name><surname>Gauda</surname><given-names>E.B.</given-names></name>
+</person-group><article-title>D1 and D2 dopamine receptor function in the striatum: Coactivation of D1- and D2-dopamine receptors on separate populations of neurons results in potentiated immediate early gene response in D1-containing neurons</article-title><source>J. Neurosci.</source><year>1995</year><volume>15</volume><fpage>8167</fpage><lpage>8176</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.15-12-08167.1995</pub-id><pub-id pub-id-type="pmid">8613751</pub-id>
+</element-citation></ref><ref id="B42-brainsci-14-00514"><label>42.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Calabrese</surname><given-names>V.</given-names></name>
+<name><surname>Di Maio</surname><given-names>A.</given-names></name>
+<name><surname>Marino</surname><given-names>G.</given-names></name>
+<name><surname>Cardinale</surname><given-names>A.</given-names></name>
+<name><surname>Natale</surname><given-names>G.</given-names></name>
+<name><surname>De Rosa</surname><given-names>A.</given-names></name>
+<name><surname>Campanelli</surname><given-names>F.</given-names></name>
+<name><surname>Mancini</surname><given-names>M.</given-names></name>
+<name><surname>Napolitano</surname><given-names>F.</given-names></name>
+<name><surname>Avallone</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group><article-title>Rapamycin, by Inhibiting mTORC1 Signaling, Prevents the Loss of Striatal Bidirectional Synaptic Plasticity in a Rat Model of L-DOPA-Induced Dyskinesia</article-title><source>Front. Aging Neurosci.</source><year>2020</year><volume>12</volume><fpage>230</fpage><pub-id pub-id-type="doi">10.3389/fnagi.2020.00230</pub-id><pub-id pub-id-type="pmid">32848709</pub-id>
+</element-citation></ref><ref id="B43-brainsci-14-00514"><label>43.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Santini</surname><given-names>E.</given-names></name>
+<name><surname>Valjent</surname><given-names>E.</given-names></name>
+<name><surname>Usiello</surname><given-names>A.</given-names></name>
+<name><surname>Carta</surname><given-names>M.</given-names></name>
+<name><surname>Borgkvist</surname><given-names>A.</given-names></name>
+<name><surname>Girault</surname><given-names>J.A.</given-names></name>
+<name><surname>Herve</surname><given-names>D.</given-names></name>
+<name><surname>Greengard</surname><given-names>P.</given-names></name>
+<name><surname>Fisone</surname><given-names>G.</given-names></name>
+</person-group><article-title>Critical involvement of cAMP/DARPP-32 and extracellular signal-regulated protein kinase signaling in L-DOPA-induced dyskinesia</article-title><source>J. Neurosci.</source><year>2007</year><volume>27</volume><fpage>6995</fpage><lpage>7005</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.0852-07.2007</pub-id><pub-id pub-id-type="pmid">17596448</pub-id>
+</element-citation></ref><ref id="B44-brainsci-14-00514"><label>44.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Santini</surname><given-names>E.</given-names></name>
+<name><surname>Heiman</surname><given-names>M.</given-names></name>
+<name><surname>Greengard</surname><given-names>P.</given-names></name>
+<name><surname>Valjent</surname><given-names>E.</given-names></name>
+<name><surname>Fisone</surname><given-names>G.</given-names></name>
+</person-group><article-title>Inhibition of mTOR signaling in Parkinson&#x02019;s disease prevents L-DOPA-induced dyskinesia</article-title><source>Sci. Signal</source><year>2009</year><volume>2</volume><fpage>ra36</fpage><pub-id pub-id-type="doi">10.1126/scisignal.2000308</pub-id><pub-id pub-id-type="pmid">19622833</pub-id>
+</element-citation></ref><ref id="B45-brainsci-14-00514"><label>45.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cardinale</surname><given-names>A.</given-names></name>
+<name><surname>Fusco</surname><given-names>F.R.</given-names></name>
+</person-group><article-title>Inhibition of phosphodiesterases as a strategy to achieve neuroprotection in Huntington&#x02019;s disease</article-title><source>CNS Neurosci. Ther.</source><year>2018</year><volume>24</volume><fpage>319</fpage><lpage>328</lpage><pub-id pub-id-type="doi">10.1111/cns.12834</pub-id><pub-id pub-id-type="pmid">29500937</pub-id>
+</element-citation></ref><ref id="B46-brainsci-14-00514"><label>46.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Niccolini</surname><given-names>F.</given-names></name>
+<name><surname>Foltynie</surname><given-names>T.</given-names></name>
+<name><surname>Reis Marques</surname><given-names>T.</given-names></name>
+<name><surname>Muhlert</surname><given-names>N.</given-names></name>
+<name><surname>Tziortzi</surname><given-names>A.C.</given-names></name>
+<name><surname>Searle</surname><given-names>G.E.</given-names></name>
+<name><surname>Natesan</surname><given-names>S.</given-names></name>
+<name><surname>Kapur</surname><given-names>S.</given-names></name>
+<name><surname>Rabiner</surname><given-names>E.A.</given-names></name>
+<name><surname>Gunn</surname><given-names>R.N.</given-names></name>
+<etal/>
+</person-group><article-title>Loss of phosphodiesterase 10A expression is associated with progression and severity in Parkinson&#x02019;s disease</article-title><source>Brain</source><year>2015</year><volume>138</volume><issue-part>Pt 10</issue-part><fpage>3003</fpage><lpage>3015</lpage><pub-id pub-id-type="doi">10.1093/brain/awv219</pub-id><pub-id pub-id-type="pmid">26210536</pub-id>
+</element-citation></ref><ref id="B47-brainsci-14-00514"><label>47.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sgambato-Faure</surname><given-names>V.</given-names></name>
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+</person-group><article-title>Glutamatergic mechanisms in the dyskinesias induced by pharmacological dopamine replacement and deep brain stimulation for the treatment of Parkinson&#x02019;s disease</article-title><source>Prog. Neurobiol.</source><year>2012</year><volume>96</volume><fpage>69</fpage><lpage>86</lpage><pub-id pub-id-type="doi">10.1016/j.pneurobio.2011.10.005</pub-id><pub-id pub-id-type="pmid">22075179</pub-id>
+</element-citation></ref><ref id="B48-brainsci-14-00514"><label>48.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ahmed</surname><given-names>I.</given-names></name>
+<name><surname>Bose</surname><given-names>S.K.</given-names></name>
+<name><surname>Pavese</surname><given-names>N.</given-names></name>
+<name><surname>Ramlackhansingh</surname><given-names>A.</given-names></name>
+<name><surname>Turkheimer</surname><given-names>F.</given-names></name>
+<name><surname>Hotton</surname><given-names>G.</given-names></name>
+<name><surname>Hammers</surname><given-names>A.</given-names></name>
+<name><surname>Brooks</surname><given-names>D.J.</given-names></name>
+</person-group><article-title>Glutamate NMDA receptor dysregulation in Parkinson&#x02019;s disease with dyskinesias</article-title><source>Brain</source><year>2011</year><volume>134</volume><issue-part>Pt 4</issue-part><fpage>979</fpage><lpage>986</lpage><pub-id pub-id-type="doi">10.1093/brain/awr028</pub-id><pub-id pub-id-type="pmid">21371994</pub-id>
+</element-citation></ref><ref id="B49-brainsci-14-00514"><label>49.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gardoni</surname><given-names>F.</given-names></name>
+<name><surname>Picconi</surname><given-names>B.</given-names></name>
+<name><surname>Ghiglieri</surname><given-names>V.</given-names></name>
+<name><surname>Polli</surname><given-names>F.</given-names></name>
+<name><surname>Bagetta</surname><given-names>V.</given-names></name>
+<name><surname>Bernardi</surname><given-names>G.</given-names></name>
+<name><surname>Cattabeni</surname><given-names>F.</given-names></name>
+<name><surname>Di Luca</surname><given-names>M.</given-names></name>
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+</person-group><article-title>A critical interaction between NR2B and MAGUK in L-DOPA induced dyskinesia</article-title><source>J. Neurosci.</source><year>2006</year><volume>26</volume><fpage>2914</fpage><lpage>2922</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.5326-05.2006</pub-id><pub-id pub-id-type="pmid">16540568</pub-id>
+</element-citation></ref><ref id="B50-brainsci-14-00514"><label>50.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nash</surname><given-names>J.E.</given-names></name>
+<name><surname>Brotchie</surname><given-names>J.M.</given-names></name>
+</person-group><article-title>Characterisation of striatal NMDA receptors involved in the generation of parkinsonian symptoms: Intrastriatal microinjection studies in the 6-OHDA-lesioned rat</article-title><source>Mov. Disord.</source><year>2002</year><volume>17</volume><fpage>455</fpage><lpage>466</lpage><pub-id pub-id-type="doi">10.1002/mds.10107</pub-id><pub-id pub-id-type="pmid">12112191</pub-id>
+</element-citation></ref><ref id="B51-brainsci-14-00514"><label>51.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+<name><surname>Centonze</surname><given-names>D.</given-names></name>
+<name><surname>Gubellini</surname><given-names>P.</given-names></name>
+<name><surname>Marfia</surname><given-names>G.A.</given-names></name>
+<name><surname>Pisani</surname><given-names>A.</given-names></name>
+<name><surname>Sancesario</surname><given-names>G.</given-names></name>
+<name><surname>Bernardi</surname><given-names>G.</given-names></name>
+</person-group><article-title>Synaptic transmission in the striatum: From plasticity to neurodegeneration</article-title><source>Prog. Neurobiol.</source><year>2000</year><volume>61</volume><fpage>231</fpage><lpage>265</lpage><pub-id pub-id-type="doi">10.1016/S0301-0082(99)00030-1</pub-id><pub-id pub-id-type="pmid">10727775</pub-id>
+</element-citation></ref><ref id="B52-brainsci-14-00514"><label>52.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Menegoz</surname><given-names>M.</given-names></name>
+<name><surname>Lau</surname><given-names>L.F.</given-names></name>
+<name><surname>Herve</surname><given-names>D.</given-names></name>
+<name><surname>Huganir</surname><given-names>R.L.</given-names></name>
+<name><surname>Girault</surname><given-names>J.A.</given-names></name>
+</person-group><article-title>Tyrosine phosphorylation of NMDA receptor in rat striatum: Effects of 6-OH-dopamine lesions</article-title><source>Neuroreport</source><year>1995</year><volume>7</volume><fpage>125</fpage><lpage>128</lpage><pub-id pub-id-type="doi">10.1097/00001756-199512000-00030</pub-id><pub-id pub-id-type="pmid">8742433</pub-id>
+</element-citation></ref><ref id="B53-brainsci-14-00514"><label>53.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+<name><surname>Kim</surname><given-names>C.</given-names></name>
+<name><surname>Yeom</surname><given-names>H.D.</given-names></name>
+<name><surname>Nguyen</surname><given-names>K.V.A.</given-names></name>
+<name><surname>Eom</surname><given-names>S.</given-names></name>
+<name><surname>Lee</surname><given-names>S.</given-names></name>
+<name><surname>Jung</surname><given-names>J.H.</given-names></name>
+<name><surname>Lee</surname><given-names>J.H.</given-names></name>
+<name><surname>Kim</surname><given-names>S.H.</given-names></name>
+<name><surname>Kim</surname><given-names>I.K.</given-names></name>
+<etal/>
+</person-group><article-title>Subunit-specific effects of poricoic acid A on NMDA receptors</article-title><source>Pharmacol. Rep.</source><year>2020</year><volume>72</volume><fpage>472</fpage><lpage>480</lpage><pub-id pub-id-type="doi">10.1007/s43440-019-00036-7</pub-id><pub-id pub-id-type="pmid">32048268</pub-id>
+</element-citation></ref><ref id="B54-brainsci-14-00514"><label>54.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Loureiro</surname><given-names>C.M.</given-names></name>
+<name><surname>Shuhama</surname><given-names>R.</given-names></name>
+<name><surname>Fachim</surname><given-names>H.A.</given-names></name>
+<name><surname>Menezes</surname><given-names>P.R.</given-names></name>
+<name><surname>Del-Ben</surname><given-names>C.M.</given-names></name>
+<name><surname>Louzada-Junior</surname><given-names>P.</given-names></name>
+</person-group><article-title>Low plasma concentrations of N-methyl-d-aspartate receptor subunits as a possible biomarker for psychosis</article-title><source>Schizophr. Res.</source><year>2018</year><volume>202</volume><fpage>55</fpage><lpage>63</lpage><pub-id pub-id-type="doi">10.1016/j.schres.2018.06.037</pub-id><pub-id pub-id-type="pmid">29935886</pub-id>
+</element-citation></ref><ref id="B55-brainsci-14-00514"><label>55.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pokkula</surname><given-names>S.</given-names></name>
+<name><surname>Thakur</surname><given-names>S.R.</given-names></name>
+</person-group><article-title>Icariin ameliorates partial sciatic nerve ligation induced neuropathic pain in rats: An evidence of in silico and in vivo studies</article-title><source>J. Pharm. Pharmacol.</source><year>2021</year><volume>73</volume><fpage>874</fpage><lpage>880</lpage><pub-id pub-id-type="doi">10.1093/jpp/rgab021</pub-id><pub-id pub-id-type="pmid">33822115</pub-id>
+</element-citation></ref><ref id="B56-brainsci-14-00514"><label>56.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Flores</surname><given-names>A.J.</given-names></name>
+<name><surname>Bartlett</surname><given-names>M.J.</given-names></name>
+<name><surname>Root</surname><given-names>B.K.</given-names></name>
+<name><surname>Parent</surname><given-names>K.L.</given-names></name>
+<name><surname>Heien</surname><given-names>M.L.</given-names></name>
+<name><surname>Porreca</surname><given-names>F.</given-names></name>
+<name><surname>Polt</surname><given-names>R.</given-names></name>
+<name><surname>Sherman</surname><given-names>S.J.</given-names></name>
+<name><surname>Falk</surname><given-names>T.</given-names></name>
+</person-group><article-title>The combination of the opioid glycopeptide MMP-2200 and a NMDA receptor antagonist reduced l-DOPA-induced dyskinesia and MMP-2200 by itself reduced dopamine receptor 2-like agonist-induced dyskinesia</article-title><source>Neuropharmacology</source><year>2018</year><volume>141</volume><fpage>260</fpage><lpage>271</lpage><pub-id pub-id-type="doi">10.1016/j.neuropharm.2018.09.005</pub-id><pub-id pub-id-type="pmid">30201210</pub-id>
+</element-citation></ref><ref id="B57-brainsci-14-00514"><label>57.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Prescott</surname><given-names>I.A.</given-names></name>
+<name><surname>Dostrovsky</surname><given-names>J.O.</given-names></name>
+<name><surname>Moro</surname><given-names>E.</given-names></name>
+<name><surname>Hodaie</surname><given-names>M.</given-names></name>
+<name><surname>Lozano</surname><given-names>A.M.</given-names></name>
+<name><surname>Hutchison</surname><given-names>W.D.</given-names></name>
+</person-group><article-title>Levodopa enhances synaptic plasticity in the substantia nigra pars reticulata of Parkinson&#x02019;s disease patients</article-title><source>Brain</source><year>2009</year><volume>132</volume><issue-part>Pt 2</issue-part><fpage>309</fpage><lpage>318</lpage><pub-id pub-id-type="doi">10.1093/brain/awn322</pub-id><pub-id pub-id-type="pmid">19050033</pub-id>
+</element-citation></ref><ref id="B58-brainsci-14-00514"><label>58.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Q.</given-names></name>
+<name><surname>Zhang</surname><given-names>W.</given-names></name>
+</person-group><article-title>Maladaptive Synaptic Plasticity in L-DOPA-Induced Dyskinesia</article-title><source>Front. Neural. Circuits</source><year>2016</year><volume>10</volume><fpage>105</fpage><pub-id pub-id-type="doi">10.3389/fncir.2016.00105</pub-id><pub-id pub-id-type="pmid">28066191</pub-id>
+</element-citation></ref><ref id="B59-brainsci-14-00514"><label>59.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dwivedi</surname><given-names>A.</given-names></name>
+<name><surname>Dwivedi</surname><given-names>N.</given-names></name>
+<name><surname>Kumar</surname><given-names>A.</given-names></name>
+<name><surname>Singh</surname><given-names>V.K.</given-names></name>
+<name><surname>Pathak</surname><given-names>A.</given-names></name>
+<name><surname>Chaurasia</surname><given-names>R.N.</given-names></name>
+<name><surname>Mishra</surname><given-names>V.N.</given-names></name>
+<name><surname>Mohanty</surname><given-names>S.</given-names></name>
+<name><surname>Joshi</surname><given-names>D.</given-names></name>
+</person-group><article-title>Association of Catechol-O-Methyltransferase Gene rs4680 Polymorphism and Levodopa Induced Dyskinesia in Parkinson&#x02019;s Disease: A Meta-Analysis and Systematic Review</article-title><source>J. Geriatr. Psychiatry Neurol.</source><year>2023</year><volume>36</volume><fpage>98</fpage><lpage>106</lpage><pub-id pub-id-type="doi">10.1177/08919887221103580</pub-id><pub-id pub-id-type="pmid">35603896</pub-id>
+</element-citation></ref><ref id="B60-brainsci-14-00514"><label>60.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lohle</surname><given-names>M.</given-names></name>
+<name><surname>Mangone</surname><given-names>G.</given-names></name>
+<name><surname>Hermann</surname><given-names>W.</given-names></name>
+<name><surname>Hausbrand</surname><given-names>D.</given-names></name>
+<name><surname>Wolz</surname><given-names>M.</given-names></name>
+<name><surname>Mende</surname><given-names>J.</given-names></name>
+<name><surname>Reichmann</surname><given-names>H.</given-names></name>
+<name><surname>Hermann</surname><given-names>A.</given-names></name>
+<name><surname>Corvol</surname><given-names>J.C.</given-names></name>
+<name><surname>Storch</surname><given-names>A.</given-names></name>
+</person-group><article-title>Functional MAOB Gene Intron 13 Polymorphism Predicts Dyskinesia in Parkinson&#x02019;s Disease</article-title><source>Parkinsons Dis.</source><year>2022</year><volume>2022</volume><fpage>5597503</fpage><pub-id pub-id-type="doi">10.1155/2022/5597503</pub-id><pub-id pub-id-type="pmid">35096365</pub-id>
+</element-citation></ref><ref id="B61-brainsci-14-00514"><label>61.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yoon</surname><given-names>W.</given-names></name>
+<name><surname>Min</surname><given-names>S.</given-names></name>
+<name><surname>Ryu</surname><given-names>H.S.</given-names></name>
+<name><surname>Chung</surname><given-names>S.J.</given-names></name>
+<name><surname>Chung</surname><given-names>J.</given-names></name>
+</person-group><article-title>Discovery of levodopa-induced dyskinesia-associated genes using genomic studies in patients and Drosophila behavioral analyses</article-title><source>Commun. Biol.</source><year>2022</year><volume>5</volume><elocation-id>872</elocation-id><pub-id pub-id-type="doi">10.1038/s42003-022-03830-x</pub-id><pub-id pub-id-type="pmid">36008531</pub-id>
+</element-citation></ref><ref id="B62-brainsci-14-00514"><label>62.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pajares</surname><given-names>M.</given-names></name>
+<name><surname>Rojo</surname><given-names>A.I.</given-names></name>
+<name><surname>Manda</surname><given-names>G.</given-names></name>
+<name><surname>Bosca</surname><given-names>L.</given-names></name>
+<name><surname>Cuadrado</surname><given-names>A.</given-names></name>
+</person-group><article-title>Inflammation in Parkinson&#x02019;s Disease: Mechanisms and Therapeutic Implications</article-title><source>Cells</source><year>2020</year><volume>9</volume><elocation-id>1687</elocation-id><pub-id pub-id-type="doi">10.3390/cells9071687</pub-id><pub-id pub-id-type="pmid">32674367</pub-id>
+</element-citation></ref><ref id="B63-brainsci-14-00514"><label>63.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sood</surname><given-names>A.</given-names></name>
+<name><surname>Preeti</surname><given-names>K.</given-names></name>
+<name><surname>Fernandes</surname><given-names>V.</given-names></name>
+<name><surname>Khatri</surname><given-names>D.K.</given-names></name>
+<name><surname>Singh</surname><given-names>S.B.</given-names></name>
+</person-group><article-title>Glia: A major player in glutamate-GABA dysregulation-mediated neurodegeneration</article-title><source>J. Neurosci. Res.</source><year>2021</year><volume>99</volume><fpage>3148</fpage><lpage>3189</lpage><pub-id pub-id-type="doi">10.1002/jnr.24977</pub-id><pub-id pub-id-type="pmid">34748682</pub-id>
+</element-citation></ref><ref id="B64-brainsci-14-00514"><label>64.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Iovino</surname><given-names>M.</given-names></name>
+<name><surname>Messana</surname><given-names>T.</given-names></name>
+<name><surname>De Pergola</surname><given-names>G.</given-names></name>
+<name><surname>Iovino</surname><given-names>E.</given-names></name>
+<name><surname>Guastamacchia</surname><given-names>E.</given-names></name>
+<name><surname>Licchelli</surname><given-names>B.</given-names></name>
+<name><surname>Vanacore</surname><given-names>A.</given-names></name>
+<name><surname>Giagulli</surname><given-names>V.A.</given-names></name>
+<name><surname>Triggiani</surname><given-names>V.</given-names></name>
+</person-group><article-title>Brain Angiotensinergic Regulation of the Immune System: Implications for Cardiovascular and Neuroendocrine Responses</article-title><source>Endocr. Metab. Immune Disord. Drug Targets</source><year>2020</year><volume>20</volume><fpage>15</fpage><lpage>24</lpage><pub-id pub-id-type="doi">10.2174/1871530319666190617160934</pub-id><pub-id pub-id-type="pmid">31237219</pub-id>
+</element-citation></ref><ref id="B65-brainsci-14-00514"><label>65.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pisanu</surname><given-names>A.</given-names></name>
+<name><surname>Boi</surname><given-names>L.</given-names></name>
+<name><surname>Mulas</surname><given-names>G.</given-names></name>
+<name><surname>Spiga</surname><given-names>S.</given-names></name>
+<name><surname>Fenu</surname><given-names>S.</given-names></name>
+<name><surname>Carta</surname><given-names>A.R.</given-names></name>
+</person-group><article-title>Neuroinflammation in L-DOPA-induced dyskinesia: Beyond the immune function</article-title><source>J. Neural Transm. (Vienna)</source><year>2018</year><volume>125</volume><fpage>1287</fpage><lpage>1297</lpage><pub-id pub-id-type="doi">10.1007/s00702-018-1874-4</pub-id><pub-id pub-id-type="pmid">29541852</pub-id>
+</element-citation></ref><ref id="B66-brainsci-14-00514"><label>66.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Patel</surname><given-names>J.P.</given-names></name>
+<name><surname>Frey</surname><given-names>B.N.</given-names></name>
+</person-group><article-title>Disruption in the Blood-Brain Barrier: The Missing Link between Brain and Body Inflammation in Bipolar Disorder?</article-title><source>Neural Plast.</source><year>2015</year><volume>2015</volume><fpage>708306</fpage><pub-id pub-id-type="doi">10.1155/2015/708306</pub-id><pub-id pub-id-type="pmid">26075104</pub-id>
+</element-citation></ref><ref id="B67-brainsci-14-00514"><label>67.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>de Vries</surname><given-names>H.E.</given-names></name>
+<name><surname>Kooij</surname><given-names>G.</given-names></name>
+<name><surname>Frenkel</surname><given-names>D.</given-names></name>
+<name><surname>Georgopoulos</surname><given-names>S.</given-names></name>
+<name><surname>Monsonego</surname><given-names>A.</given-names></name>
+<name><surname>Janigro</surname><given-names>D.</given-names></name>
+</person-group><article-title>Inflammatory events at blood-brain barrier in neuroinflammatory and neurodegenerative disorders: Implications for clinical disease</article-title><source>Epilepsia</source><year>2012</year><volume>53</volume><issue>(Suppl. S6)</issue><fpage>45</fpage><lpage>52</lpage><pub-id pub-id-type="doi">10.1111/j.1528-1167.2012.03702.x</pub-id><pub-id pub-id-type="pmid">23134495</pub-id>
+</element-citation></ref><ref id="B68-brainsci-14-00514"><label>68.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kuter</surname><given-names>K.Z.</given-names></name>
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+<name><surname>Carta</surname><given-names>A.R.</given-names></name>
+</person-group><article-title>The role of glia in Parkinson&#x02019;s disease: Emerging concepts and therapeutic applications</article-title><source>Prog. Brain Res.</source><year>2020</year><volume>252</volume><fpage>131</fpage><lpage>168</lpage><pub-id pub-id-type="pmid">32247363</pub-id>
+</element-citation></ref><ref id="B69-brainsci-14-00514"><label>69.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>De Chiara</surname><given-names>V.</given-names></name>
+<name><surname>Motta</surname><given-names>C.</given-names></name>
+<name><surname>Rossi</surname><given-names>S.</given-names></name>
+<name><surname>Studer</surname><given-names>V.</given-names></name>
+<name><surname>Barbieri</surname><given-names>F.</given-names></name>
+<name><surname>Lauro</surname><given-names>D.</given-names></name>
+<name><surname>Bernardi</surname><given-names>G.</given-names></name>
+<name><surname>Centonze</surname><given-names>D.</given-names></name>
+</person-group><article-title>Interleukin-1beta alters the sensitivity of cannabinoid CB1 receptors controlling glutamate transmission in the striatum</article-title><source>Neuroscience</source><year>2013</year><volume>250</volume><fpage>232</fpage><lpage>239</lpage><pub-id pub-id-type="doi">10.1016/j.neuroscience.2013.06.069</pub-id><pub-id pub-id-type="pmid">23856068</pub-id>
+</element-citation></ref><ref id="B70-brainsci-14-00514"><label>70.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Centonze</surname><given-names>D.</given-names></name>
+<name><surname>Muzio</surname><given-names>L.</given-names></name>
+<name><surname>Rossi</surname><given-names>S.</given-names></name>
+<name><surname>Cavasinni</surname><given-names>F.</given-names></name>
+<name><surname>De Chiara</surname><given-names>V.</given-names></name>
+<name><surname>Bergami</surname><given-names>A.</given-names></name>
+<name><surname>Musella</surname><given-names>A.</given-names></name>
+<name><surname>D&#x02019;Amelio</surname><given-names>M.</given-names></name>
+<name><surname>Cavallucci</surname><given-names>V.</given-names></name>
+<name><surname>Martorana</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group><article-title>Inflammation triggers synaptic alteration and degeneration in experimental autoimmune encephalomyelitis</article-title><source>J. Neurosci.</source><year>2009</year><volume>29</volume><fpage>3442</fpage><lpage>3452</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.5804-08.2009</pub-id><pub-id pub-id-type="pmid">19295150</pub-id>
+</element-citation></ref><ref id="B71-brainsci-14-00514"><label>71.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Harry</surname><given-names>G.J.</given-names></name>
+</person-group><article-title>Microglia in Neurodegenerative Events-An Initiator or a Significant Other?</article-title><source>Int. J. Mol. Sci.</source><year>2021</year><volume>22</volume><elocation-id>5818</elocation-id><pub-id pub-id-type="doi">10.3390/ijms22115818</pub-id><pub-id pub-id-type="pmid">34072307</pub-id>
+</element-citation></ref><ref id="B72-brainsci-14-00514"><label>72.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Parnetti</surname><given-names>L.</given-names></name>
+<name><surname>Gaetani</surname><given-names>L.</given-names></name>
+<name><surname>Eusebi</surname><given-names>P.</given-names></name>
+<name><surname>Paciotti</surname><given-names>S.</given-names></name>
+<name><surname>Hansson</surname><given-names>O.</given-names></name>
+<name><surname>El-Agnaf</surname><given-names>O.</given-names></name>
+<name><surname>Mollenhauer</surname><given-names>B.</given-names></name>
+<name><surname>Blennow</surname><given-names>K.</given-names></name>
+<name><surname>Calabresi</surname><given-names>P.</given-names></name>
+</person-group><article-title>CSF and blood biomarkers for Parkinson&#x02019;s disease</article-title><source>Lancet Neurol.</source><year>2019</year><volume>18</volume><fpage>573</fpage><lpage>586</lpage><pub-id pub-id-type="doi">10.1016/S1474-4422(19)30024-9</pub-id><pub-id pub-id-type="pmid">30981640</pub-id>
+</element-citation></ref><ref id="B73-brainsci-14-00514"><label>73.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Cavalcanti-Kiwiatkoski</surname><given-names>R.</given-names></name>
+<name><surname>Padovan-Neto</surname><given-names>F.E.</given-names></name>
+<name><surname>da-Silva</surname><given-names>C.A.</given-names></name>
+<name><surname>Mitkovski</surname><given-names>M.</given-names></name>
+<name><surname>Raisman-Vozari</surname><given-names>R.</given-names></name>
+<name><surname>Del-Bel</surname><given-names>E.</given-names></name>
+</person-group><article-title>Glial activation is associated with l-DOPA induced dyskinesia and blocked by a nitric oxide synthase inhibitor in a rat model of Parkinson&#x02019;s disease</article-title><source>Neurobiol. Dis.</source><year>2015</year><volume>73</volume><fpage>377</fpage><lpage>387</lpage><pub-id pub-id-type="doi">10.1016/j.nbd.2014.10.017</pub-id><pub-id pub-id-type="pmid">25447229</pub-id>
+</element-citation></ref><ref id="B74-brainsci-14-00514"><label>74.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Teema</surname><given-names>A.M.</given-names></name>
+<name><surname>Zaitone</surname><given-names>S.A.</given-names></name>
+<name><surname>Moustafa</surname><given-names>Y.M.</given-names></name>
+</person-group><article-title>Ibuprofen or piroxicam protects nigral neurons and delays the development of l-dopa induced dyskinesia in rats with experimental Parkinsonism: Influence on angiogenesis</article-title><source>Neuropharmacology</source><year>2016</year><volume>107</volume><fpage>432</fpage><lpage>450</lpage><pub-id pub-id-type="doi">10.1016/j.neuropharm.2016.03.034</pub-id><pub-id pub-id-type="pmid">27016022</pub-id>
+</element-citation></ref><ref id="B75-brainsci-14-00514"><label>75.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Barnum</surname><given-names>C.J.</given-names></name>
+<name><surname>Eskow</surname><given-names>K.L.</given-names></name>
+<name><surname>Dupre</surname><given-names>K.</given-names></name>
+<name><surname>Blandino</surname><given-names>P.</given-names><suffix>Jr.</suffix></name>
+<name><surname>Deak</surname><given-names>T.</given-names></name>
+<name><surname>Bishop</surname><given-names>C.</given-names></name>
+</person-group><article-title>Exogenous corticosterone reduces L-DOPA-induced dyskinesia in the hemi-parkinsonian rat: Role for interleukin-1beta</article-title><source>Neuroscience</source><year>2008</year><volume>156</volume><fpage>30</fpage><lpage>41</lpage><pub-id pub-id-type="doi">10.1016/j.neuroscience.2008.07.016</pub-id><pub-id pub-id-type="pmid">18687386</pub-id>
+</element-citation></ref><ref id="B76-brainsci-14-00514"><label>76.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Padovan-Neto</surname><given-names>F.E.</given-names></name>
+<name><surname>Cavalcanti-Kiwiatkoski</surname><given-names>R.</given-names></name>
+<name><surname>Dos Santos-Pereira</surname><given-names>M.</given-names></name>
+<name><surname>Mitkovski</surname><given-names>M.</given-names></name>
+<name><surname>Raisman-Vozari</surname><given-names>R.</given-names></name>
+<name><surname>Del-Bel</surname><given-names>E.</given-names></name>
+</person-group><article-title>Are cyclooxygenase-2 and nitric oxide involved in the dyskinesia of Parkinson&#x02019;s disease induced by L-DOPA?</article-title><source>Philos. Trans. R. Soc. Lond. B Biol. Sci.</source><year>2015</year><volume>370</volume><elocation-id>20140190</elocation-id><pub-id pub-id-type="doi">10.1098/rstb.2014.0190</pub-id><pub-id pub-id-type="pmid">26009769</pub-id>
+</element-citation></ref><ref id="B77-brainsci-14-00514"><label>77.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Martinez</surname><given-names>A.A.</given-names></name>
+<name><surname>Morgese</surname><given-names>M.G.</given-names></name>
+<name><surname>Pisanu</surname><given-names>A.</given-names></name>
+<name><surname>Macheda</surname><given-names>T.</given-names></name>
+<name><surname>Paquette</surname><given-names>M.A.</given-names></name>
+<name><surname>Seillier</surname><given-names>A.</given-names></name>
+<name><surname>Cassano</surname><given-names>T.</given-names></name>
+<name><surname>Carta</surname><given-names>A.R.</given-names></name>
+<name><surname>Giuffrida</surname><given-names>A.</given-names></name>
+</person-group><article-title>Activation of PPAR gamma receptors reduces levodopa-induced dyskinesias in 6-OHDA-lesioned rats</article-title><source>Neurobiol. Dis.</source><year>2015</year><volume>74</volume><fpage>295</fpage><lpage>304</lpage><pub-id pub-id-type="doi">10.1016/j.nbd.2014.11.024</pub-id><pub-id pub-id-type="pmid">25486547</pub-id>
+</element-citation></ref><ref id="B78-brainsci-14-00514"><label>78.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Angelopoulou</surname><given-names>E.</given-names></name>
+<name><surname>Paudel</surname><given-names>Y.N.</given-names></name>
+<name><surname>Julian</surname><given-names>T.</given-names></name>
+<name><surname>Shaikh</surname><given-names>M.F.</given-names></name>
+<name><surname>Piperi</surname><given-names>C.</given-names></name>
+</person-group><article-title>Pivotal Role of Fyn Kinase in Parkinson&#x02019;s Disease and Levodopa-Induced Dyskinesia: A Novel Therapeutic Target?</article-title><source>Mol. Neurobiol.</source><year>2021</year><volume>58</volume><fpage>1372</fpage><lpage>1391</lpage><pub-id pub-id-type="doi">10.1007/s12035-020-02201-z</pub-id><pub-id pub-id-type="pmid">33175322</pub-id>
+</element-citation></ref><ref id="B79-brainsci-14-00514"><label>79.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rahman</surname><given-names>T.</given-names></name>
+<name><surname>Purves-Tyson</surname><given-names>T.</given-names></name>
+<name><surname>Geddes</surname><given-names>A.E.</given-names></name>
+<name><surname>Huang</surname><given-names>X.F.</given-names></name>
+<name><surname>Newell</surname><given-names>K.A.</given-names></name>
+<name><surname>Weickert</surname><given-names>C.S.</given-names></name>
+</person-group><article-title>N-Methyl-d-Aspartate receptor and inflammation in dorsolateral prefrontal cortex in schizophrenia</article-title><source>Schizophr. Res.</source><year>2022</year><volume>240</volume><fpage>61</fpage><lpage>70</lpage><pub-id pub-id-type="doi">10.1016/j.schres.2021.11.045</pub-id><pub-id pub-id-type="pmid">34952289</pub-id>
+</element-citation></ref><ref id="B80-brainsci-14-00514"><label>80.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zucca</surname><given-names>F.A.</given-names></name>
+<name><surname>Segura-Aguilar</surname><given-names>J.</given-names></name>
+<name><surname>Ferrari</surname><given-names>E.</given-names></name>
+<name><surname>Munoz</surname><given-names>P.</given-names></name>
+<name><surname>Paris</surname><given-names>I.</given-names></name>
+<name><surname>Sulzer</surname><given-names>D.</given-names></name>
+<name><surname>Sarna</surname><given-names>T.</given-names></name>
+<name><surname>Casella</surname><given-names>L.</given-names></name>
+<name><surname>Zecca</surname><given-names>L.</given-names></name>
+</person-group><article-title>Interactions of iron, dopamine and neuromelanin pathways in brain aging and Parkinson&#x02019;s disease</article-title><source>Prog. Neurobiol.</source><year>2017</year><volume>155</volume><fpage>96</fpage><lpage>119</lpage><pub-id pub-id-type="doi">10.1016/j.pneurobio.2015.09.012</pub-id><pub-id pub-id-type="pmid">26455458</pub-id>
+</element-citation></ref><ref id="B81-brainsci-14-00514"><label>81.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Inyushin</surname><given-names>M.Y.</given-names></name>
+<name><surname>Huertas</surname><given-names>A.</given-names></name>
+<name><surname>Kucheryavykh</surname><given-names>Y.V.</given-names></name>
+<name><surname>Kucheryavykh</surname><given-names>L.Y.</given-names></name>
+<name><surname>Tsydzik</surname><given-names>V.</given-names></name>
+<name><surname>Sanabria</surname><given-names>P.</given-names></name>
+<name><surname>Eaton</surname><given-names>M.J.</given-names></name>
+<name><surname>Skatchkov</surname><given-names>S.N.</given-names></name>
+<name><surname>Rojas</surname><given-names>L.V.</given-names></name>
+<name><surname>Wessinger</surname><given-names>W.D.</given-names></name>
+</person-group><article-title>L-DOPA Uptake in Astrocytic Endfeet Enwrapping Blood Vessels in Rat Brain</article-title><source>Parkinsons Dis.</source><year>2012</year><volume>2012</volume><fpage>321406</fpage><pub-id pub-id-type="doi">10.1155/2012/321406</pub-id><pub-id pub-id-type="pmid">22888467</pub-id>
+</element-citation></ref><ref id="B82-brainsci-14-00514"><label>82.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Verkhratsky</surname><given-names>A.</given-names></name>
+<name><surname>Zorec</surname><given-names>R.</given-names></name>
+</person-group><article-title>Astroglial signalling in health and disease</article-title><source>Neurosci. Lett.</source><year>2019</year><volume>689</volume><fpage>1</fpage><lpage>4</lpage><pub-id pub-id-type="doi">10.1016/j.neulet.2018.07.026</pub-id><pub-id pub-id-type="pmid">30031035</pub-id>
+</element-citation></ref><ref id="B83-brainsci-14-00514"><label>83.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Asanuma</surname><given-names>M.</given-names></name>
+<name><surname>Miyazaki</surname><given-names>I.</given-names></name>
+<name><surname>Murakami</surname><given-names>S.</given-names></name>
+<name><surname>Diaz-Corrales</surname><given-names>F.J.</given-names></name>
+<name><surname>Ogawa</surname><given-names>N.</given-names></name>
+</person-group><article-title>Striatal astrocytes act as a reservoir for L-DOPA</article-title><source>PLoS ONE</source><year>2014</year><volume>9</volume><elocation-id>e106362</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0106362</pub-id><pub-id pub-id-type="pmid">25188235</pub-id>
+</element-citation></ref><ref id="B84-brainsci-14-00514"><label>84.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+</person-group><article-title>Presynaptic Mechanisms of l-DOPA-Induced Dyskinesia: The Findings, the Debate, and the Therapeutic Implications</article-title><source>Front. Neurol.</source><year>2014</year><volume>5</volume><fpage>118136</fpage><pub-id pub-id-type="doi">10.3389/fneur.2014.00242</pub-id><pub-id pub-id-type="pmid">25566170</pub-id>
+</element-citation></ref><ref id="B85-brainsci-14-00514"><label>85.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nishijima</surname><given-names>H.</given-names></name>
+<name><surname>Tomiyama</surname><given-names>M.</given-names></name>
+</person-group><article-title>What Mechanisms Are Responsible for the Reuptake of Levodopa-Derived Dopamine in Parkinsonian Striatum?</article-title><source>Front. Neurosci.</source><year>2016</year><volume>10</volume><fpage>575</fpage><pub-id pub-id-type="doi">10.3389/fnins.2016.00575</pub-id><pub-id pub-id-type="pmid">28018168</pub-id>
+</element-citation></ref><ref id="B86-brainsci-14-00514"><label>86.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bishop</surname><given-names>C.</given-names></name>
+</person-group><article-title>Neuroinflammation: Fanning the fire of l-dopa-induced dyskinesia</article-title><source>Mov. Disord.</source><year>2019</year><volume>34</volume><fpage>1758</fpage><lpage>1760</lpage><pub-id pub-id-type="doi">10.1002/mds.27900</pub-id><pub-id pub-id-type="pmid">31845761</pub-id>
+</element-citation></ref><ref id="B87-brainsci-14-00514"><label>87.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mulas</surname><given-names>G.</given-names></name>
+<name><surname>Espa</surname><given-names>E.</given-names></name>
+<name><surname>Fenu</surname><given-names>S.</given-names></name>
+<name><surname>Spiga</surname><given-names>S.</given-names></name>
+<name><surname>Cossu</surname><given-names>G.</given-names></name>
+<name><surname>Pillai</surname><given-names>E.</given-names></name>
+<name><surname>Carboni</surname><given-names>E.</given-names></name>
+<name><surname>Simbula</surname><given-names>G.</given-names></name>
+<name><surname>Jadzic</surname><given-names>D.</given-names></name>
+<name><surname>Angius</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group><article-title>Differential induction of dyskinesia and neuroinflammation by pulsatile versus continuous l-DOPA delivery in the 6-OHDA model of Parkinson&#x02019;s disease</article-title><source>Exp. Neurol.</source><year>2016</year><volume>286</volume><fpage>83</fpage><lpage>92</lpage><pub-id pub-id-type="doi">10.1016/j.expneurol.2016.09.013</pub-id><pub-id pub-id-type="pmid">27697481</pub-id>
+</element-citation></ref><ref id="B88-brainsci-14-00514"><label>88.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Morissette</surname><given-names>M.</given-names></name>
+<name><surname>Bourque</surname><given-names>M.</given-names></name>
+<name><surname>Tremblay</surname><given-names>M.E.</given-names></name>
+<name><surname>Di Paolo</surname><given-names>T.</given-names></name>
+</person-group><article-title>Prevention of L-Dopa-Induced Dyskinesias by MPEP Blockade of Metabotropic Glutamate Receptor 5 Is Associated with Reduced Inflammation in the Brain of Parkinsonian Monkeys</article-title><source>Cells</source><year>2022</year><volume>11</volume><elocation-id>691</elocation-id><pub-id pub-id-type="doi">10.3390/cells11040691</pub-id><pub-id pub-id-type="pmid">35203338</pub-id>
+</element-citation></ref><ref id="B89-brainsci-14-00514"><label>89.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lanza</surname><given-names>K.</given-names></name>
+<name><surname>Perkins</surname><given-names>A.E.</given-names></name>
+<name><surname>Deak</surname><given-names>T.</given-names></name>
+<name><surname>Bishop</surname><given-names>C.</given-names></name>
+</person-group><article-title>Late aging-associated increases in L-DOPA-induced dyskinesia are accompanied by heightened neuroinflammation in the hemi-parkinsonian rat</article-title><source>Neurobiol. Aging</source><year>2019</year><volume>81</volume><fpage>190</fpage><lpage>199</lpage><pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2019.05.019</pub-id><pub-id pub-id-type="pmid">31306813</pub-id>
+</element-citation></ref><ref id="B90-brainsci-14-00514"><label>90.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Warren Olanow</surname><given-names>C.</given-names></name>
+<name><surname>Kieburtz</surname><given-names>K.</given-names></name>
+<name><surname>Rascol</surname><given-names>O.</given-names></name>
+<name><surname>Poewe</surname><given-names>W.</given-names></name>
+<name><surname>Schapira</surname><given-names>A.H.</given-names></name>
+<name><surname>Emre</surname><given-names>M.</given-names></name>
+<name><surname>Nissinen</surname><given-names>H.</given-names></name>
+<name><surname>Leinonen</surname><given-names>M.</given-names></name>
+<name><surname>Stocchi</surname><given-names>F.</given-names></name>
+<collab>Stalevo Reduction in Dyskinesia Evaluation in Parkinson&#x02019;s Disease (STRIDE-PD) Investigators</collab>
+</person-group><article-title>Factors predictive of the development of Levodopa-induced dyskinesia and wearing-off in Parkinson&#x02019;s disease</article-title><source>Mov. Disord.</source><year>2013</year><volume>28</volume><fpage>1064</fpage><lpage>1071</lpage><pub-id pub-id-type="doi">10.1002/mds.25364</pub-id><pub-id pub-id-type="pmid">23630119</pub-id>
+</element-citation></ref><ref id="B91-brainsci-14-00514"><label>91.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kumar</surname><given-names>N.</given-names></name>
+<name><surname>Van Gerpen</surname><given-names>J.A.</given-names></name>
+<name><surname>Bower</surname><given-names>J.H.</given-names></name>
+<name><surname>Ahlskog</surname><given-names>J.E.</given-names></name>
+</person-group><article-title>Levodopa-dyskinesia incidence by age of Parkinson&#x02019;s disease onset</article-title><source>Mov. Disord.</source><year>2005</year><volume>20</volume><fpage>342</fpage><lpage>344</lpage><pub-id pub-id-type="doi">10.1002/mds.20360</pub-id><pub-id pub-id-type="pmid">15580606</pub-id>
+</element-citation></ref><ref id="B92-brainsci-14-00514"><label>92.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bez</surname><given-names>F.</given-names></name>
+<name><surname>Francardo</surname><given-names>V.</given-names></name>
+<name><surname>Cenci</surname><given-names>M.A.</given-names></name>
+</person-group><article-title>Dramatic differences in susceptibility to l-DOPA-induced dyskinesia between mice that are aged before or after a nigrostriatal dopamine lesion</article-title><source>Neurobiol. Dis.</source><year>2016</year><volume>94</volume><fpage>213</fpage><lpage>225</lpage><pub-id pub-id-type="doi">10.1016/j.nbd.2016.06.005</pub-id><pub-id pub-id-type="pmid">27312773</pub-id>
+</element-citation></ref><ref id="B93-brainsci-14-00514"><label>93.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dyavar</surname><given-names>S.R.</given-names></name>
+<name><surname>Potts</surname><given-names>L.F.</given-names></name>
+<name><surname>Beck</surname><given-names>G.</given-names></name>
+<name><surname>Dyavar Shetty</surname><given-names>B.L.</given-names></name>
+<name><surname>Lawson</surname><given-names>B.</given-names></name>
+<name><surname>Podany</surname><given-names>A.T.</given-names></name>
+<name><surname>Fletcher</surname><given-names>C.V.</given-names></name>
+<name><surname>Amara</surname><given-names>R.R.</given-names></name>
+<name><surname>Papa</surname><given-names>S.M.</given-names></name>
+</person-group><article-title>Transcriptomic approach predicts a major role for transforming growth factor beta type 1 pathway in L-Dopa-induced dyskinesia in parkinsonian rats</article-title><source>Genes Brain Behav.</source><year>2020</year><volume>19</volume><fpage>e12690</fpage><pub-id pub-id-type="doi">10.1111/gbb.12690</pub-id><pub-id pub-id-type="pmid">32741046</pub-id>
+</element-citation></ref><ref id="B94-brainsci-14-00514"><label>94.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>De Lella Ezcurra</surname><given-names>A.L.</given-names></name>
+<name><surname>Chertoff</surname><given-names>M.</given-names></name>
+<name><surname>Ferrari</surname><given-names>C.</given-names></name>
+<name><surname>Graciarena</surname><given-names>M.</given-names></name>
+<name><surname>Pitossi</surname><given-names>F.</given-names></name>
+</person-group><article-title>Chronic expression of low levels of tumor necrosis factor-alpha in the substantia nigra elicits progressive neurodegeneration, delayed motor symptoms and microglia/macrophage activation</article-title><source>Neurobiol. Dis.</source><year>2010</year><volume>37</volume><fpage>630</fpage><lpage>640</lpage><pub-id pub-id-type="doi">10.1016/j.nbd.2009.11.018</pub-id><pub-id pub-id-type="pmid">19969084</pub-id>
+</element-citation></ref><ref id="B95-brainsci-14-00514"><label>95.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McCoy</surname><given-names>M.K.</given-names></name>
+<name><surname>Tansey</surname><given-names>M.G.</given-names></name>
+</person-group><article-title>TNF signaling inhibition in the CNS: Implications for normal brain function and neurodegenerative disease</article-title><source>J. Neuroinflamm.</source><year>2008</year><volume>5</volume><fpage>45</fpage><pub-id pub-id-type="doi">10.1186/1742-2094-5-45</pub-id><pub-id pub-id-type="pmid">18925972</pub-id>
+</element-citation></ref><ref id="B96-brainsci-14-00514"><label>96.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Beattie</surname><given-names>E.C.</given-names></name>
+<name><surname>Stellwagen</surname><given-names>D.</given-names></name>
+<name><surname>Morishita</surname><given-names>W.</given-names></name>
+<name><surname>Bresnahan</surname><given-names>J.C.</given-names></name>
+<name><surname>Ha</surname><given-names>B.K.</given-names></name>
+<name><surname>Von Zastrow</surname><given-names>M.</given-names></name>
+<name><surname>Beattie</surname><given-names>M.S.</given-names></name>
+<name><surname>Malenka</surname><given-names>R.C.</given-names></name>
+</person-group><article-title>Control of synaptic strength by glial TNFalpha</article-title><source>Science</source><year>2002</year><volume>295</volume><fpage>2282</fpage><lpage>2285</lpage><pub-id pub-id-type="doi">10.1126/science.1067859</pub-id><pub-id pub-id-type="pmid">11910117</pub-id>
+</element-citation></ref><ref id="B97-brainsci-14-00514"><label>97.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Calon</surname><given-names>F.</given-names></name>
+<name><surname>Rajput</surname><given-names>A.H.</given-names></name>
+<name><surname>Hornykiewicz</surname><given-names>O.</given-names></name>
+<name><surname>Bedard</surname><given-names>P.J.</given-names></name>
+<name><surname>Di Paolo</surname><given-names>T.</given-names></name>
+</person-group><article-title>Levodopa-induced motor complications are associated with alterations of glutamate receptors in Parkinson&#x02019;s disease</article-title><source>Neurobiol. Dis.</source><year>2003</year><volume>14</volume><fpage>404</fpage><lpage>416</lpage><pub-id pub-id-type="doi">10.1016/j.nbd.2003.07.003</pub-id><pub-id pub-id-type="pmid">14678757</pub-id>
+</element-citation></ref><ref id="B98-brainsci-14-00514"><label>98.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Konitsiotis</surname><given-names>S.</given-names></name>
+<name><surname>Blanchet</surname><given-names>P.J.</given-names></name>
+<name><surname>Verhagen</surname><given-names>L.</given-names></name>
+<name><surname>Lamers</surname><given-names>E.</given-names></name>
+<name><surname>Chase</surname><given-names>T.N.</given-names></name>
+</person-group><article-title>AMPA receptor blockade improves levodopa-induced dyskinesia in MPTP monkeys</article-title><source>Neurology</source><year>2000</year><volume>54</volume><fpage>1589</fpage><lpage>1595</lpage><pub-id pub-id-type="doi">10.1212/WNL.54.8.1589</pub-id><pub-id pub-id-type="pmid">10762498</pub-id>
+</element-citation></ref><ref id="B99-brainsci-14-00514"><label>99.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ouattara</surname><given-names>B.</given-names></name>
+<name><surname>Hoyer</surname><given-names>D.</given-names></name>
+<name><surname>Gregoire</surname><given-names>L.</given-names></name>
+<name><surname>Morissette</surname><given-names>M.</given-names></name>
+<name><surname>Gasparini</surname><given-names>F.</given-names></name>
+<name><surname>Gomez-Mancilla</surname><given-names>B.</given-names></name>
+<name><surname>Di Paolo</surname><given-names>T.</given-names></name>
+</person-group><article-title>Changes of AMPA receptors in MPTP monkeys with levodopa-induced dyskinesias</article-title><source>Neuroscience</source><year>2010</year><volume>167</volume><fpage>1160</fpage><lpage>1167</lpage><pub-id pub-id-type="doi">10.1016/j.neuroscience.2010.03.022</pub-id><pub-id pub-id-type="pmid">20303391</pub-id>
+</element-citation></ref><ref id="B100-brainsci-14-00514"><label>100.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lewitus</surname><given-names>G.M.</given-names></name>
+<name><surname>Pribiag</surname><given-names>H.</given-names></name>
+<name><surname>Duseja</surname><given-names>R.</given-names></name>
+<name><surname>St-Hilaire</surname><given-names>M.</given-names></name>
+<name><surname>Stellwagen</surname><given-names>D.</given-names></name>
+</person-group><article-title>An adaptive role of TNFalpha in the regulation of striatal synapses</article-title><source>J. Neurosci.</source><year>2014</year><volume>34</volume><fpage>6146</fpage><lpage>6155</lpage><pub-id pub-id-type="doi">10.1523/JNEUROSCI.3481-13.2014</pub-id><pub-id pub-id-type="pmid">24790185</pub-id>
+</element-citation></ref><ref id="B101-brainsci-14-00514"><label>101.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Balosso</surname><given-names>S.</given-names></name>
+<name><surname>Ravizza</surname><given-names>T.</given-names></name>
+<name><surname>Pierucci</surname><given-names>M.</given-names></name>
+<name><surname>Calcagno</surname><given-names>E.</given-names></name>
+<name><surname>Invernizzi</surname><given-names>R.</given-names></name>
+<name><surname>Di Giovanni</surname><given-names>G.</given-names></name>
+<name><surname>Esposito</surname><given-names>E.</given-names></name>
+<name><surname>Vezzani</surname><given-names>A.</given-names></name>
+</person-group><article-title>Molecular and functional interactions between tumor necrosis factor-alpha receptors and the glutamatergic system in the mouse hippocampus: Implications for seizure susceptibility</article-title><source>Neuroscience</source><year>2009</year><volume>161</volume><fpage>293</fpage><lpage>300</lpage><pub-id pub-id-type="doi">10.1016/j.neuroscience.2009.03.005</pub-id><pub-id pub-id-type="pmid">19285115</pub-id>
+</element-citation></ref><ref id="B102-brainsci-14-00514"><label>102.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Boi</surname><given-names>L.</given-names></name>
+<name><surname>Pisanu</surname><given-names>A.</given-names></name>
+<name><surname>Greig</surname><given-names>N.H.</given-names></name>
+<name><surname>Scerba</surname><given-names>M.T.</given-names></name>
+<name><surname>Tweedie</surname><given-names>D.</given-names></name>
+<name><surname>Mulas</surname><given-names>G.</given-names></name>
+<name><surname>Fenu</surname><given-names>S.</given-names></name>
+<name><surname>Carboni</surname><given-names>E.</given-names></name>
+<name><surname>Spiga</surname><given-names>S.</given-names></name>
+<name><surname>Carta</surname><given-names>A.R.</given-names></name>
+</person-group><article-title>Immunomodulatory drugs alleviate l-dopa-induced dyskinesia in a rat model of Parkinson&#x02019;s disease</article-title><source>Mov. Disord.</source><year>2019</year><volume>34</volume><fpage>1818</fpage><lpage>1830</lpage><pub-id pub-id-type="doi">10.1002/mds.27799</pub-id><pub-id pub-id-type="pmid">31335998</pub-id>
+</element-citation></ref><ref id="B103-brainsci-14-00514"><label>103.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mercurio</surname><given-names>A.</given-names></name>
+<name><surname>Adriani</surname><given-names>G.</given-names></name>
+<name><surname>Catalano</surname><given-names>A.</given-names></name>
+<name><surname>Carocci</surname><given-names>A.</given-names></name>
+<name><surname>Rao</surname><given-names>L.</given-names></name>
+<name><surname>Lentini</surname><given-names>G.</given-names></name>
+<name><surname>Cavalluzzi</surname><given-names>M.M.</given-names></name>
+<name><surname>Franchini</surname><given-names>C.</given-names></name>
+<name><surname>Vacca</surname><given-names>A.</given-names></name>
+<name><surname>Corbo</surname><given-names>F.</given-names></name>
+</person-group><article-title>A Mini-Review on Thalidomide: Chemistry, Mechanisms of Action, Therapeutic Potential and Anti-Angiogenic Properties in Multiple Myeloma</article-title><source>Curr. Med. Chem.</source><year>2017</year><volume>24</volume><fpage>2736</fpage><lpage>2744</lpage><pub-id pub-id-type="doi">10.2174/0929867324666170601074646</pub-id><pub-id pub-id-type="pmid">28571559</pub-id>
+</element-citation></ref><ref id="B104-brainsci-14-00514"><label>104.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Deng</surname><given-names>X.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Huang</surname><given-names>F.</given-names></name>
+</person-group><article-title>Thalidomide reduces recurrence of ankylosing spondylitis in patients following discontinuation of etanercept</article-title><source>Rheumatol. Int.</source><year>2013</year><volume>33</volume><fpage>1409</fpage><lpage>1413</lpage><pub-id pub-id-type="doi">10.1007/s00296-012-2571-5</pub-id><pub-id pub-id-type="pmid">23143621</pub-id>
+</element-citation></ref><ref id="B105-brainsci-14-00514"><label>105.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Russo</surname><given-names>I.</given-names></name>
+<name><surname>Caracciolo</surname><given-names>L.</given-names></name>
+<name><surname>Tweedie</surname><given-names>D.</given-names></name>
+<name><surname>Choi</surname><given-names>S.H.</given-names></name>
+<name><surname>Greig</surname><given-names>N.H.</given-names></name>
+<name><surname>Barlati</surname><given-names>S.</given-names></name>
+<name><surname>Bosetti</surname><given-names>F.</given-names></name>
+</person-group><article-title>3,6&#x02019;-Dithiothalidomide, a new TNF-alpha synthesis inhibitor, attenuates the effect of Abeta1-42 intracerebroventricular injection on hippocampal neurogenesis and memory deficit</article-title><source>J. Neurochem.</source><year>2012</year><volume>122</volume><fpage>1181</fpage><lpage>1192</lpage><pub-id pub-id-type="doi">10.1111/j.1471-4159.2012.07846.x</pub-id><pub-id pub-id-type="pmid">22731394</pub-id>
+</element-citation></ref><ref id="B106-brainsci-14-00514"><label>106.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tweedie</surname><given-names>D.</given-names></name>
+<name><surname>Ferguson</surname><given-names>R.A.</given-names></name>
+<name><surname>Fishman</surname><given-names>K.</given-names></name>
+<name><surname>Frankola</surname><given-names>K.A.</given-names></name>
+<name><surname>Van Praag</surname><given-names>H.</given-names></name>
+<name><surname>Holloway</surname><given-names>H.W.</given-names></name>
+<name><surname>Luo</surname><given-names>W.</given-names></name>
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+<name><surname>Caracciolo</surname><given-names>L.</given-names></name>
+<name><surname>Russo</surname><given-names>I.</given-names></name>
+<etal/>
+</person-group><article-title>Tumor necrosis factor-alpha synthesis inhibitor 3,6&#x02019;-dithiothalidomide attenuates markers of inflammation, Alzheimer pathology and behavioral deficits in animal models of neuroinflammation and Alzheimer&#x02019;s disease</article-title><source>J. Neuroinflamm.</source><year>2012</year><volume>9</volume><fpage>106</fpage><pub-id pub-id-type="doi">10.1186/1742-2094-9-106</pub-id></element-citation></ref><ref id="B107-brainsci-14-00514"><label>107.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tweedie</surname><given-names>D.</given-names></name>
+<name><surname>Frankola</surname><given-names>K.A.</given-names></name>
+<name><surname>Luo</surname><given-names>W.</given-names></name>
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+<name><surname>Greig</surname><given-names>N.H.</given-names></name>
+</person-group><article-title>Thalidomide Analogues Suppress Lipopolysaccharide-Induced Synthesis of TNF-alpha and Nitrite, an Intermediate of Nitric Oxide, in a Cellular Model of Inflammation</article-title><source>Open Biochem. J.</source><year>2011</year><volume>5</volume><fpage>37</fpage><lpage>44</lpage><pub-id pub-id-type="doi">10.2174/1874091X01105010037</pub-id><pub-id pub-id-type="pmid">21792375</pub-id>
+</element-citation></ref><ref id="B108-brainsci-14-00514"><label>108.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Moreira</surname><given-names>A.L.</given-names></name>
+<name><surname>Sampaio</surname><given-names>E.P.</given-names></name>
+<name><surname>Zmuidzinas</surname><given-names>A.</given-names></name>
+<name><surname>Frindt</surname><given-names>P.</given-names></name>
+<name><surname>Smith</surname><given-names>K.A.</given-names></name>
+<name><surname>Kaplan</surname><given-names>G.</given-names></name>
+</person-group><article-title>Thalidomide exerts its inhibitory action on tumor necrosis factor alpha by enhancing mRNA degradation</article-title><source>J. Exp. Med.</source><year>1993</year><volume>177</volume><fpage>1675</fpage><lpage>1680</lpage><pub-id pub-id-type="doi">10.1084/jem.177.6.1675</pub-id><pub-id pub-id-type="pmid">8496685</pub-id>
+</element-citation></ref><ref id="B109-brainsci-14-00514"><label>109.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sampaio</surname><given-names>E.P.</given-names></name>
+<name><surname>Sarno</surname><given-names>E.N.</given-names></name>
+<name><surname>Galilly</surname><given-names>R.</given-names></name>
+<name><surname>Cohn</surname><given-names>Z.A.</given-names></name>
+<name><surname>Kaplan</surname><given-names>G.</given-names></name>
+</person-group><article-title>Thalidomide selectively inhibits tumor necrosis factor alpha production by stimulated human monocytes</article-title><source>J. Exp. Med.</source><year>1991</year><volume>173</volume><fpage>699</fpage><lpage>703</lpage><pub-id pub-id-type="doi">10.1084/jem.173.3.699</pub-id><pub-id pub-id-type="pmid">1997652</pub-id>
+</element-citation></ref><ref id="B110-brainsci-14-00514"><label>110.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Blanchette</surname><given-names>J.</given-names></name>
+<name><surname>Jaramillo</surname><given-names>M.</given-names></name>
+<name><surname>Olivier</surname><given-names>M.</given-names></name>
+</person-group><article-title>Signalling events involved in interferon-gamma-inducible macrophage nitric oxide generation</article-title><source>Immunology</source><year>2003</year><volume>108</volume><fpage>513</fpage><lpage>522</lpage><pub-id pub-id-type="doi">10.1046/j.1365-2567.2003.01620.x</pub-id><pub-id pub-id-type="pmid">12667213</pub-id>
+</element-citation></ref><ref id="B111-brainsci-14-00514"><label>111.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ferrari</surname><given-names>D.P.</given-names></name>
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Del Bel</surname><given-names>E.A.</given-names></name>
+</person-group><article-title>Interferon-gamma Involvement in the Neuroinflammation Associated with Parkinson&#x02019;s Disease and L-DOPA-Induced Dyskinesia</article-title><source>Neurotox Res.</source><year>2021</year><volume>39</volume><fpage>705</fpage><lpage>719</lpage><pub-id pub-id-type="doi">10.1007/s12640-021-00345-x</pub-id><pub-id pub-id-type="pmid">33687725</pub-id>
+</element-citation></ref><ref id="B112-brainsci-14-00514"><label>112.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sarkar</surname><given-names>S.</given-names></name>
+<name><surname>Roy</surname><given-names>A.</given-names></name>
+<name><surname>Choudhury</surname><given-names>S.</given-names></name>
+<name><surname>Banerjee</surname><given-names>R.</given-names></name>
+<name><surname>Dey</surname><given-names>S.</given-names></name>
+<name><surname>Kumar</surname><given-names>H.</given-names></name>
+</person-group><article-title>Levodopa-induced Dyskinesia in Parkinson&#x02019;s Disease: Plausible Inflammatory and Oxidative Stress Biomarkers. Can</article-title><source>J. Neurol. Sci.</source><year>2024</year><volume>51</volume><fpage>104</fpage><lpage>109</lpage><pub-id pub-id-type="doi">10.1017/cjn.2023.8</pub-id></element-citation></ref><ref id="B113-brainsci-14-00514"><label>113.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>S.F.</given-names></name>
+<name><surname>Xie</surname><given-names>C.L.</given-names></name>
+<name><surname>Lin</surname><given-names>J.Y.</given-names></name>
+<name><surname>Wang</surname><given-names>M.H.</given-names></name>
+<name><surname>Wang</surname><given-names>X.J.</given-names></name>
+<name><surname>Liu</surname><given-names>Z.G.</given-names></name>
+</person-group><article-title>Lipoic acid alleviates L-DOPA-induced dyskinesia in 6-OHDA parkinsonian rats via anti-oxidative stress</article-title><source>Mol. Med. Rep.</source><year>2018</year><volume>17</volume><fpage>1118</fpage><lpage>1124</lpage><pub-id pub-id-type="doi">10.3892/mmr.2017.7974</pub-id><pub-id pub-id-type="pmid">29115484</pub-id>
+</element-citation></ref><ref id="B114-brainsci-14-00514"><label>114.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bido</surname><given-names>S.</given-names></name>
+<name><surname>Marti</surname><given-names>M.</given-names></name>
+<name><surname>Morari</surname><given-names>M.</given-names></name>
+</person-group><article-title>Amantadine attenuates levodopa-induced dyskinesia in mice and rats preventing the accompanying rise in nigral GABA levels</article-title><source>J. Neurochem.</source><year>2011</year><volume>118</volume><fpage>1043</fpage><lpage>1055</lpage><pub-id pub-id-type="doi">10.1111/j.1471-4159.2011.07376.x</pub-id><pub-id pub-id-type="pmid">21740438</pub-id>
+</element-citation></ref><ref id="B115-brainsci-14-00514"><label>115.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Johnston</surname><given-names>T.H.</given-names></name>
+<name><surname>Lacoste</surname><given-names>A.M.B.</given-names></name>
+<name><surname>Visanji</surname><given-names>N.P.</given-names></name>
+<name><surname>Lang</surname><given-names>A.E.</given-names></name>
+<name><surname>Fox</surname><given-names>S.H.</given-names></name>
+<name><surname>Brotchie</surname><given-names>J.M.</given-names></name>
+</person-group><article-title>Repurposing drugs to treat l-DOPA-induced dyskinesia in Parkinson&#x02019;s disease</article-title><source>Neuropharmacology</source><year>2019</year><volume>147</volume><fpage>11</fpage><lpage>27</lpage><pub-id pub-id-type="doi">10.1016/j.neuropharm.2018.05.035</pub-id><pub-id pub-id-type="pmid">29907424</pub-id>
+</element-citation></ref><ref id="B116-brainsci-14-00514"><label>116.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Daneault</surname><given-names>J.F.</given-names></name>
+<name><surname>Carignan</surname><given-names>B.</given-names></name>
+<name><surname>Sadikot</surname><given-names>A.F.</given-names></name>
+<name><surname>Panisset</surname><given-names>M.</given-names></name>
+<name><surname>Duval</surname><given-names>C.</given-names></name>
+</person-group><article-title>Drug-induced dyskinesia in Parkinson&#x02019;s disease. Should success in clinical management be a function of improvement of motor repertoire rather than amplitude of dyskinesia?</article-title><source>BMC Med.</source><year>2013</year><volume>11</volume><elocation-id>76</elocation-id><pub-id pub-id-type="doi">10.1186/1741-7015-11-76</pub-id><pub-id pub-id-type="pmid">23514355</pub-id>
+</element-citation></ref><ref id="B117-brainsci-14-00514"><label>117.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rudzinska</surname><given-names>M.</given-names></name>
+<name><surname>Bukowczan</surname><given-names>S.</given-names></name>
+<name><surname>Stozek</surname><given-names>J.</given-names></name>
+<name><surname>Zajdel</surname><given-names>K.</given-names></name>
+<name><surname>Mirek</surname><given-names>E.</given-names></name>
+<name><surname>Chwala</surname><given-names>W.</given-names></name>
+<name><surname>Wojcik-Pedziwiatr</surname><given-names>M.</given-names></name>
+<name><surname>Banaszkiewicz</surname><given-names>K.</given-names></name>
+<name><surname>Szczudlik</surname><given-names>A.</given-names></name>
+</person-group><article-title>Causes and consequences of falls in Parkinson disease patients in a prospective study</article-title><source>Neurol. Neurochir. Pol.</source><year>2013</year><volume>47</volume><fpage>423</fpage><lpage>430</lpage><pub-id pub-id-type="doi">10.5114/ninp.2013.38222</pub-id><pub-id pub-id-type="pmid">24166563</pub-id>
+</element-citation></ref><ref id="B118-brainsci-14-00514"><label>118.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bachmann</surname><given-names>C.G.</given-names></name>
+<name><surname>Trenkwalder</surname><given-names>C.</given-names></name>
+</person-group><article-title>Body weight in patients with Parkinson&#x02019;s disease</article-title><source>Mov. Disord.</source><year>2006</year><volume>21</volume><fpage>1824</fpage><lpage>1830</lpage><pub-id pub-id-type="doi">10.1002/mds.21068</pub-id><pub-id pub-id-type="pmid">16958133</pub-id>
+</element-citation></ref><ref id="B119-brainsci-14-00514"><label>119.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ashburn</surname><given-names>A.</given-names></name>
+<name><surname>Stack</surname><given-names>E.</given-names></name>
+<name><surname>Pickering</surname><given-names>R.M.</given-names></name>
+<name><surname>Ward</surname><given-names>C.D.</given-names></name>
+</person-group><article-title>A community-dwelling sample of people with Parkinson&#x02019;s disease: Characteristics of fallers and non-fallers</article-title><source>Age Ageing</source><year>2001</year><volume>30</volume><fpage>47</fpage><lpage>52</lpage><pub-id pub-id-type="doi">10.1093/ageing/30.1.47</pub-id><pub-id pub-id-type="pmid">11322672</pub-id>
+</element-citation></ref><ref id="B120-brainsci-14-00514"><label>120.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fox</surname><given-names>S.H.</given-names></name>
+<name><surname>Katzenschlager</surname><given-names>R.</given-names></name>
+<name><surname>Lim</surname><given-names>S.Y.</given-names></name>
+<name><surname>Barton</surname><given-names>B.</given-names></name>
+<name><surname>de Bie</surname><given-names>R.M.A.</given-names></name>
+<name><surname>Seppi</surname><given-names>K.</given-names></name>
+<name><surname>Coelho</surname><given-names>M.</given-names></name>
+<name><surname>Sampaio</surname><given-names>C.</given-names></name>
+<collab>Movement Disorder Society Evidence&#x02010;Based Medicine Committee</collab>
+</person-group><article-title>International Parkinson and movement disorder society evidence-based medicine review: Update on treatments for the motor symptoms of Parkinson&#x02019;s disease</article-title><source>Mov. Disord.</source><year>2018</year><volume>33</volume><fpage>1248</fpage><lpage>1266</lpage><pub-id pub-id-type="doi">10.1002/mds.27372</pub-id><pub-id pub-id-type="pmid">29570866</pub-id>
+</element-citation></ref><ref id="B121-brainsci-14-00514"><label>121.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fox</surname><given-names>S.H.</given-names></name>
+<name><surname>Katzenschlager</surname><given-names>R.</given-names></name>
+<name><surname>Lim</surname><given-names>S.Y.</given-names></name>
+<name><surname>Ravina</surname><given-names>B.</given-names></name>
+<name><surname>Seppi</surname><given-names>K.</given-names></name>
+<name><surname>Coelho</surname><given-names>M.</given-names></name>
+<name><surname>Poewe</surname><given-names>W.</given-names></name>
+<name><surname>Rascol</surname><given-names>O.</given-names></name>
+<name><surname>Goetz</surname><given-names>C.G.</given-names></name>
+<name><surname>Sampaio</surname><given-names>C.</given-names></name>
+</person-group><article-title>The Movement Disorder Society Evidence-Based Medicine Review Update: Treatments for the motor symptoms of Parkinson&#x02019;s disease</article-title><source>Mov. Disord.</source><year>2011</year><volume>26</volume><issue>(Suppl. S3)</issue><fpage>S2</fpage><lpage>S41</lpage><pub-id pub-id-type="doi">10.1002/mds.23829</pub-id><pub-id pub-id-type="pmid">22021173</pub-id>
+</element-citation></ref><ref id="B122-brainsci-14-00514"><label>122.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hubsher</surname><given-names>G.</given-names></name>
+<name><surname>Haider</surname><given-names>M.</given-names></name>
+<name><surname>Okun</surname><given-names>M.S.</given-names></name>
+</person-group><article-title>Amantadine: The journey from fighting flu to treating Parkinson disease</article-title><source>Neurology</source><year>2012</year><volume>78</volume><fpage>1096</fpage><lpage>1099</lpage><pub-id pub-id-type="doi">10.1212/WNL.0b013e31824e8f0d</pub-id><pub-id pub-id-type="pmid">22474298</pub-id>
+</element-citation></ref><ref id="B123-brainsci-14-00514"><label>123.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>J.H.</given-names></name>
+<name><surname>Lee</surname><given-names>H.W.</given-names></name>
+<name><surname>Hwang</surname><given-names>J.</given-names></name>
+<name><surname>Kim</surname><given-names>J.</given-names></name>
+<name><surname>Lee</surname><given-names>M.J.</given-names></name>
+<name><surname>Han</surname><given-names>H.S.</given-names></name>
+<name><surname>Lee</surname><given-names>W.H.</given-names></name>
+<name><surname>Suk</surname><given-names>K.</given-names></name>
+</person-group><article-title>Microglia-inhibiting activity of Parkinson&#x02019;s disease drug amantadine</article-title><source>Neurobiol. Aging</source><year>2012</year><volume>33</volume><fpage>2145</fpage><lpage>2159</lpage><pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2011.08.011</pub-id><pub-id pub-id-type="pmid">22035588</pub-id>
+</element-citation></ref><ref id="B124-brainsci-14-00514"><label>124.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dos Santos Pereira</surname><given-names>M.</given-names></name>
+<name><surname>do Nascimento</surname><given-names>G.C.</given-names></name>
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Michel</surname><given-names>P.P.</given-names></name>
+<name><surname>Raisman-Vozari</surname><given-names>R.</given-names></name>
+<name><surname>Del Bel</surname><given-names>E.</given-names></name>
+</person-group><article-title>Doxycycline attenuates l-DOPA-induced dyskinesia through an anti-inflammatory effect in a hemiparkinsonian mouse model</article-title><source>Front. Pharmacol.</source><year>2022</year><volume>13</volume><fpage>1045465</fpage><pub-id pub-id-type="doi">10.3389/fphar.2022.1045465</pub-id><pub-id pub-id-type="pmid">36506543</pub-id>
+</element-citation></ref><ref id="B125-brainsci-14-00514"><label>125.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bariotto-Dos-Santos</surname><given-names>K.</given-names></name>
+<name><surname>Padovan-Neto</surname><given-names>F.E.</given-names></name>
+<name><surname>Bortolanza</surname><given-names>M.</given-names></name>
+<name><surname>Dos-Santos-Pereira</surname><given-names>M.</given-names></name>
+<name><surname>Raisman-Vozari</surname><given-names>R.</given-names></name>
+<name><surname>Tumas</surname><given-names>V.</given-names></name>
+<name><surname>Del Bel</surname><given-names>E.</given-names></name>
+</person-group><article-title>Repurposing an established drug: An emerging role for methylene blue in L-DOPA-induced dyskinesia</article-title><source>Eur. J. Neurosci.</source><year>2019</year><volume>49</volume><fpage>869</fpage><lpage>882</lpage><pub-id pub-id-type="doi">10.1111/ejn.14079</pub-id><pub-id pub-id-type="pmid">30022547</pub-id>
+</element-citation></ref><ref id="B126-brainsci-14-00514"><label>126.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Garthwaite</surname><given-names>J.</given-names></name>
+</person-group><article-title>Concepts of neural nitric oxide-mediated transmission</article-title><source>Eur. J. Neurosci.</source><year>2008</year><volume>27</volume><fpage>2783</fpage><lpage>2802</lpage><pub-id pub-id-type="doi">10.1111/j.1460-9568.2008.06285.x</pub-id><pub-id pub-id-type="pmid">18588525</pub-id>
+</element-citation></ref><ref id="B127-brainsci-14-00514"><label>127.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Murad</surname><given-names>F.</given-names></name>
+</person-group><article-title>Shattuck Lecture. Nitric oxide and cyclic GMP in cell signaling and drug development</article-title><source>N. Engl. J. Med.</source><year>2006</year><volume>355</volume><fpage>2003</fpage><lpage>2011</lpage><pub-id pub-id-type="doi">10.1056/NEJMsa063904</pub-id><pub-id pub-id-type="pmid">17093251</pub-id>
+</element-citation></ref><ref id="B128-brainsci-14-00514"><label>128.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>H.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+<name><surname>Feng</surname><given-names>M.</given-names></name>
+<name><surname>Shen</surname><given-names>Y.</given-names></name>
+<name><surname>Cao</surname><given-names>S.</given-names></name>
+<name><surname>Li</surname><given-names>T.</given-names></name>
+<name><surname>Peng</surname><given-names>Y.</given-names></name>
+<name><surname>Fan</surname><given-names>L.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group><article-title>Methylene blue attenuates neuroinflammation after subarachnoid hemorrhage in rats through the Akt/GSK-3beta/MEF2D signaling pathway</article-title><source>Brain Behav. Immun.</source><year>2017</year><volume>65</volume><fpage>125</fpage><lpage>139</lpage><pub-id pub-id-type="doi">10.1016/j.bbi.2017.04.020</pub-id><pub-id pub-id-type="pmid">28457811</pub-id>
+</element-citation></ref><ref id="B129-brainsci-14-00514"><label>129.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fenn</surname><given-names>A.M.</given-names></name>
+<name><surname>Skendelas</surname><given-names>J.P.</given-names></name>
+<name><surname>Moussa</surname><given-names>D.N.</given-names></name>
+<name><surname>Muccigrosso</surname><given-names>M.M.</given-names></name>
+<name><surname>Popovich</surname><given-names>P.G.</given-names></name>
+<name><surname>Lifshitz</surname><given-names>J.</given-names></name>
+<name><surname>Eiferman</surname><given-names>D.S.</given-names></name>
+<name><surname>Godbout</surname><given-names>J.P.</given-names></name>
+</person-group><article-title>Methylene blue attenuates traumatic brain injury-associated neuroinflammation and acute depressive-like behavior in mice</article-title><source>J. Neurotrauma</source><year>2015</year><volume>32</volume><fpage>127</fpage><lpage>138</lpage><pub-id pub-id-type="doi">10.1089/neu.2014.3514</pub-id><pub-id pub-id-type="pmid">25070744</pub-id>
+</element-citation></ref><ref id="B130-brainsci-14-00514"><label>130.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dibaj</surname><given-names>P.</given-names></name>
+<name><surname>Zschuntzsch</surname><given-names>J.</given-names></name>
+<name><surname>Steffens</surname><given-names>H.</given-names></name>
+<name><surname>Scheffel</surname><given-names>J.</given-names></name>
+<name><surname>Goricke</surname><given-names>B.</given-names></name>
+<name><surname>Weishaupt</surname><given-names>J.H.</given-names></name>
+<name><surname>Le Meur</surname><given-names>K.</given-names></name>
+<name><surname>Kirchhoff</surname><given-names>F.</given-names></name>
+<name><surname>Hanisch</surname><given-names>U.K.</given-names></name>
+<name><surname>Schomburg</surname><given-names>E.D.</given-names></name>
+<etal/>
+</person-group><article-title>Influence of methylene blue on microglia-induced inflammation and motor neuron degeneration in the SOD1(G93A) model for ALS</article-title><source>PLoS ONE</source><year>2012</year><volume>7</volume><elocation-id>e43963</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0043963</pub-id><pub-id pub-id-type="pmid">22952827</pub-id>
+</element-citation></ref><ref id="B131-brainsci-14-00514"><label>131.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zheng</surname><given-names>C.Q.</given-names></name>
+<name><surname>Fan</surname><given-names>H.X.</given-names></name>
+<name><surname>Li</surname><given-names>X.X.</given-names></name>
+<name><surname>Li</surname><given-names>J.J.</given-names></name>
+<name><surname>Sheng</surname><given-names>S.</given-names></name>
+<name><surname>Zhang</surname><given-names>F.</given-names></name>
+</person-group><article-title>Resveratrol Alleviates Levodopa-Induced Dyskinesia in Rats</article-title><source>Front. Immunol.</source><year>2021</year><volume>12</volume><fpage>683577</fpage><pub-id pub-id-type="doi">10.3389/fimmu.2021.683577</pub-id><pub-id pub-id-type="pmid">34248967</pub-id>
+</element-citation></ref><ref id="B132-brainsci-14-00514"><label>132.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bayo-Olugbami</surname><given-names>A.</given-names></name>
+<name><surname>Nafiu</surname><given-names>A.B.</given-names></name>
+<name><surname>Amin</surname><given-names>A.</given-names></name>
+<name><surname>Ogundele</surname><given-names>O.M.</given-names></name>
+<name><surname>Lee</surname><given-names>C.C.</given-names></name>
+<name><surname>Owoyele</surname><given-names>B.V.</given-names></name>
+</person-group><article-title>Cholecalciferol (VD3) Attenuates L-DOPA-Induced Dyskinesia in Parkinsonian Mice Via Modulation of Microglia and Oxido-Inflammatory Mechanisms</article-title><source>Niger. J. Physiol. Sci.</source><year>2022</year><volume>37</volume><fpage>175</fpage><lpage>183</lpage><pub-id pub-id-type="doi">10.54548/njps.v37i2.3</pub-id><pub-id pub-id-type="pmid">38243560</pub-id>
+</element-citation></ref><ref id="B133-brainsci-14-00514"><label>133.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Golan</surname><given-names>D.</given-names></name>
+<name><surname>Staun-Ram</surname><given-names>E.</given-names></name>
+<name><surname>Glass-Marmor</surname><given-names>L.</given-names></name>
+<name><surname>Lavi</surname><given-names>I.</given-names></name>
+<name><surname>Rozenberg</surname><given-names>O.</given-names></name>
+<name><surname>Dishon</surname><given-names>S.</given-names></name>
+<name><surname>Barak</surname><given-names>M.</given-names></name>
+<name><surname>Ish-Shalom</surname><given-names>S.</given-names></name>
+<name><surname>Miller</surname><given-names>A.</given-names></name>
+</person-group><article-title>The influence of vitamin D supplementation on melatonin status in patients with multiple sclerosis</article-title><source>Brain Behav. Immun.</source><year>2013</year><volume>32</volume><fpage>180</fpage><lpage>185</lpage><pub-id pub-id-type="doi">10.1016/j.bbi.2013.04.010</pub-id><pub-id pub-id-type="pmid">23665342</pub-id>
+</element-citation></ref><ref id="B134-brainsci-14-00514"><label>134.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Buttner</surname><given-names>S.</given-names></name>
+<name><surname>Faes</surname><given-names>L.</given-names></name>
+<name><surname>Reichelt</surname><given-names>W.N.</given-names></name>
+<name><surname>Broeskamp</surname><given-names>F.</given-names></name>
+<name><surname>Habernig</surname><given-names>L.</given-names></name>
+<name><surname>Benke</surname><given-names>S.</given-names></name>
+<name><surname>Kourtis</surname><given-names>N.</given-names></name>
+<name><surname>Ruli</surname><given-names>D.</given-names></name>
+<name><surname>Carmona-Gutierrez</surname><given-names>D.</given-names></name>
+<name><surname>Eisenberg</surname><given-names>T.</given-names></name>
+<etal/>
+</person-group><article-title>The Ca<sup>2+</sup>/Mn<sup>2+</sup> ion-pump PMR1 links elevation of cytosolic Ca<sup>2+</sup> levels to alpha-synuclein toxicity in Parkinson&#x02019;s disease models</article-title><source>Cell Death Differ.</source><year>2013</year><volume>20</volume><fpage>465</fpage><lpage>477</lpage><pub-id pub-id-type="doi">10.1038/cdd.2012.142</pub-id><pub-id pub-id-type="pmid">23154387</pub-id>
+</element-citation></ref></ref-list></back><floats-group><fig position="float" id="brainsci-14-00514-f001"><label>Figure 1</label><caption><p>Different types of levodopa-induced dyskinesias. The figure accurately describes the different types of levodopa-induced dyskinesias. Diphasic dyskinesias occur early in the effect of levodopa treatment, before the peak of clinical benefit on motor symptoms is reached, and may recur as the drug effect wanes until it disappears. Peak dyskinesias coincide with the full antiparkinsonian benefit of levodopa during the &#x0201c;on&#x0201d; period, whereas &#x0201c;off&#x0201d; period dyskinesias occur when levodopa is no longer effective.</p></caption><graphic xlink:href="brainsci-14-00514-g001" position="float"/></fig><table-wrap position="float" id="brainsci-14-00514-t001"><object-id pub-id-type="pii">brainsci-14-00514-t001_Table 1</object-id><label>Table 1</label><caption><p>Anti-inflammatory drug treatments in LID.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Drug Name</th><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Characteristics </th><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">References</th></tr></thead><tbody><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Amantadine</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">As a mild glutamate receptor antagonist, it is used to treat Parkinson&#x02019;s disease (PD), boosting dopamine and preventing its reuptake</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B7-brainsci-14-00514" ref-type="bibr">7</xref>,<xref rid="B11-brainsci-14-00514" ref-type="bibr">11</xref>,<xref rid="B115-brainsci-14-00514" ref-type="bibr">115</xref>,<xref rid="B120-brainsci-14-00514" ref-type="bibr">120</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Corticosterone</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Hormone with potent immunomodulatory properties</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B75-brainsci-14-00514" ref-type="bibr">75</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Ibuprofen</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">A non-selective COX inhibitor</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B74-brainsci-14-00514" ref-type="bibr">74</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MPEP </td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Metabotropic glutamate receptor 5 antagonist</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B88-brainsci-14-00514" ref-type="bibr">88</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Doxycycline</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">A semisynthetic tetracycline antibiotic</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B124-brainsci-14-00514" ref-type="bibr">124</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Methylene blue (MB) </td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">A non-selective inhibitor of the soluble enzyme guanylyl cyclase (sGC)</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B98-brainsci-14-00514" ref-type="bibr">98</xref>,<xref rid="B125-brainsci-14-00514" ref-type="bibr">125</xref>,<xref rid="B126-brainsci-14-00514" ref-type="bibr">126</xref>,<xref rid="B127-brainsci-14-00514" ref-type="bibr">127</xref>,<xref rid="B128-brainsci-14-00514" ref-type="bibr">128</xref>,<xref rid="B129-brainsci-14-00514" ref-type="bibr">129</xref>,<xref rid="B130-brainsci-14-00514" ref-type="bibr">130</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Resveratrol (trans-3, 4, 5-trihydroxystilbene, RES)</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Class of plant micronutrients called polyphenols</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B131-brainsci-14-00514" ref-type="bibr">131</xref>]</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Cholecalciferol (VD3)</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Vitamin </td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">[<xref rid="B132-brainsci-14-00514" ref-type="bibr">132</xref>,<xref rid="B133-brainsci-14-00514" ref-type="bibr">133</xref>,<xref rid="B134-brainsci-14-00514" ref-type="bibr">134</xref>]</td></tr></tbody></table></table-wrap></floats-group></article>
