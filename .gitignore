@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+scripts/parsed_citations.txt
+scripts/results_*.txt
+scripts/samples/

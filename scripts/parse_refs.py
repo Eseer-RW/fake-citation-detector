@@ -38,46 +38,89 @@ def _is_garbled(text: str) -> bool:
 def _detect_column_split(page: str) -> int | None:
     """Return the character column where a right column of numbered refs starts, or None.
 
-    Specifically looks for lines that begin with a numbered reference (e.g. "12. Author…")
-    after heavy leading whitespace — the surest sign of a two-column layout.
+    Handles two layouts:
+    - Classic two-column: lines *start* with a numbered reference after heavy whitespace
+      (indent > 50).
+    - Three-column (e.g. JAMA): numbered references appear *mid-line* after a column
+      gap (≥ 3 spaces) at position > 35.  Each column of refs is on the same physical
+      line as the other columns.
+
+    Returns the leftmost column position where any reference column begins.
     """
-    indents = []
+    positions = []
     for line in page.splitlines():
         stripped = line.lstrip(' ')
         indent   = len(line) - len(stripped)
+        # Case 1: line starts with a numbered ref after heavy indentation (classic 2-col)
         if indent > 50 and re.match(r'\d+\.\s+\w', stripped):
-            indents.append(indent)
-    if len(indents) < 2:
+            positions.append(indent)
+        # Case 2: numbered ref mid-line after a column gap (multi-column, e.g. JAMA)
+        for m_ref in re.finditer(r'(?<!\w)\d{1,2}\.\s+[A-Z]\w', line):
+            pos = m_ref.start()
+            if pos > 35 and line[max(0, pos - 3):pos] == '   ':
+                positions.append(pos)
+                break   # at most one mid-line match per line
+    if len(positions) < 2:
         return None
-    return min(indents)   # left edge of the right column
+    return min(positions)   # left edge of the leftmost reference column
 
 
-def _deinterleave_columns(page: str, split_col: int) -> str:
-    """Re-order a two-column pdftotext page: all left-column lines, then right-column lines.
+def _deinterleave_columns(page: str, split_col: int,
+                          _all_right: bool = False) -> str:
+    """Re-order a pdftotext page that has content in two or more columns.
 
-    pdftotext -layout places left and right column content side-by-side on each
-    physical line.  Splitting at split_col and collecting each half separately
-    restores the natural reading order (left column top→bottom, then right column
-    top→bottom).
+    Splits each physical line at *split_col*: everything to the left becomes
+    "left-column" content, everything to the right becomes "right-column" content.
+    The two halves are output sequentially (left column top→bottom, then right column
+    top→bottom), restoring natural reading order.
 
-    Right-column content before the first numbered reference is skipped — this
-    drops running headers and other page-margin text that sits in the right column
-    above where the reference list begins.
+    If the right column itself has a secondary column split (detected by
+    _detect_column_split), it is recursively deinterleaved, handling 3-col layouts.
+
+    _all_right=True skips the "wait for first numbered ref" guard on the right column —
+    used for recursive inner calls where we're already inside the reference section.
     """
     left_lines  = []
     right_lines = []
-    right_started = False   # becomes True once we see a numbered ref in the right col
+    right_started = _all_right   # if True, include right content from the very first line
     for line in page.splitlines():
-        left_part  = line[:split_col].rstrip()        if len(line) >= split_col else line.rstrip()
-        right_part = line[split_col:].strip()          if len(line) >  split_col else ""
+        # Special case: a section-heading line ("References", "Bibliography", …) that
+        # spans or falls just before the split column.  Such lines are often shorter than
+        # split_col (the heading has no continuation text to the right), so the normal
+        # left/right split would either swallow the heading into left_part or chop it
+        # mid-word.  Detect them early and route them into right_lines whole.
+        stripped_line = line.strip()
+        if re.match(
+            r'^(?:references|bibliography|works\s+cited'
+            r'|literature\s+cited|reference\s+list)\s*$',
+            stripped_line, re.IGNORECASE
+        ):
+            right_lines.append(stripped_line)
+            right_started = True
+            continue
+
+        left_part  = line[:split_col].rstrip()   if len(line) >= split_col else line.rstrip()
+        right_part = line[split_col:].strip()     if len(line) >  split_col else ""
         if left_part:
             left_lines.append(left_part)
         if right_part:
-            if not right_started and re.match(r'\d+\.\s+\w', right_part):
-                right_started = True
+            if not right_started:
+                # Start capturing right column once we see a numbered ref OR the
+                # section heading "REFERENCES" (e.g. mid-line header in JAMA)
+                if re.match(r'\d+\.\s+\w', right_part) or re.match(r'REFERENCES', right_part):
+                    right_started = True
             if right_started:
                 right_lines.append(right_part)
-    return '\n'.join(left_lines) + '\n\n' + '\n'.join(right_lines)
+
+    right_text = '\n'.join(right_lines)
+
+    # Recursive: if the right portion also has a column split, deinterleave it too.
+    # Use _all_right=True so we don't skip any content in the inner right column.
+    inner_split = _detect_column_split(right_text)
+    if inner_split:
+        right_text = _deinterleave_columns(right_text, inner_split, _all_right=True)
+
+    return '\n'.join(left_lines) + '\n\n' + right_text
 
 
 def _extract_with_pdftotext(pdf_path: str) -> list[str]:
@@ -132,6 +175,118 @@ def _extract_with_pdfplumber(pdf_path: str) -> list[str]:
             else:
                 pages_text.append(page.extract_text() or "")
     return pages_text
+
+
+def _strip_line_numbers(text: str) -> str:
+    """Remove manuscript line numbers that eLife preprints stamp on every line.
+
+    Handles both 4-digit and 5-digit sequential numbers followed by whitespace:
+      '1104   Achim, K., Pettit, J.B., …' → 'Achim, K., Pettit, J.B., …'
+    """
+    return re.sub(r'(?m)^\d{4,5}[ \t]+', '', text)
+
+
+def _segment_hanging_indent(text: str) -> str:
+    """Insert blank lines between hanging-indent NLM citation blocks (eLife format).
+
+    In eLife NLM PDFs the reference section has no blank lines between citations.
+    Each citation's first line is at a *shallower* indent than its continuation
+    lines (a hanging-indent layout):
+
+      [  0 sp] Adair LS, Fall CH, …          ← first citation (indent 0 after .strip())
+      [ 36 sp]   Micklesfield L, … Lancet…   ← continuation
+      [ 34 sp] Barker DJ, … 2005. …          ← new citation start
+      [ 36 sp]   in Childhood 90:272…        ← continuation
+      [ 34 sp] Baten J, … 2012. …            ← new citation start
+
+    Strategy:
+      1. Find the *dominant deep indent* — the most-common indent among non-empty
+         lines with indent ≥ 20.  That is the continuation-line indent.
+      2. Any non-empty line with indent < cont_indent immediately following a
+         non-blank line is a citation boundary → insert a blank line before it.
+    Only activates when the dominant deep indent is ≥ 20 chars and appears ≥ 3 times.
+    """
+    from collections import Counter
+
+    lines = text.splitlines()
+    if not lines:
+        return text
+
+    # Count how often each deep indent level appears
+    deep_counts: Counter = Counter(
+        len(l) - len(l.lstrip(' '))
+        for l in lines
+        if l.strip() and len(l) - len(l.lstrip(' ')) >= 20
+    )
+    if not deep_counts:
+        return text  # no deep indentation → not a hanging-indent layout
+
+    # Dominant deep indent = the continuation-line column
+    cont_indent, cnt = deep_counts.most_common(1)[0]
+    if cnt < 3:
+        return text  # not enough evidence
+
+    # Sanity check: the continuation-indent lines must make up at least 40% of all
+    # non-empty lines.  If only a small fraction have the deep indent (e.g. scattered
+    # supplementary table rows), this is NOT a hanging-indent citation block and we
+    # should not insert spurious blank lines before every shallow line.
+    total_nonempty = len([l for l in lines if l.strip()])
+    if cnt / total_nonempty < 0.40:
+        return text
+
+    # Insert blank lines before every line that is shallower than cont_indent
+    # and follows a non-blank line (i.e. starts a new citation).
+    out: list[str] = []
+    for line in lines:
+        s = line.lstrip(' ')
+        if not s:
+            out.append(line)
+            continue
+        indent = len(line) - len(s)
+        if indent < cont_indent and out and out[-1].strip():
+            out.append('')   # blank separator before new citation
+        out.append(line)
+
+    # Strip leading whitespace from all content lines now that indentation is no longer
+    # needed as a structural signal (citations are separated by blank lines).
+    out = [l.lstrip(' ') if l.strip() else l for l in out]
+
+    return '\n'.join(out)
+
+
+def _segment_apa_refs(text: str) -> str:
+    """Insert blank lines between APA-style citations that lack blank-line separators.
+
+    Used for eLife preprints whose line numbers have been stripped but whose
+    citation blocks still run together.  Detects the boundary where the
+    previous line ends a sentence (".") and the next line starts an APA author
+    name (Surname, Initial.) followed by a comma or a year in parentheses:
+
+      'tissue of origin. Nature Biotechnology 33, 503-509.'   ← prev ends with "."
+      'Adamson, B., Norman, T.M., …'                          ← new citation start
+    """
+    _APA_START = re.compile(
+        r'^[A-Z][a-záéíóúàèìòùâêîôûäëïöüãõçñ\-]+,\s+[A-Z][a-zA-Z.]*'
+        r'(?:,|\s*\((?:19|20)\d{2}\))'
+    )
+
+    lines = text.splitlines()
+    out: list[str] = []
+    prev_ends_sentence = False
+
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            out.append(line)
+            prev_ends_sentence = False
+            continue
+        if prev_ends_sentence and _APA_START.match(stripped):
+            if out and out[-1].strip():
+                out.append('')   # blank separator
+        out.append(line)
+        prev_ends_sentence = stripped.endswith('.')
+
+    return '\n'.join(out)
 
 
 def extract_references_from_pdf(pdf_path: str) -> str:
@@ -190,6 +345,9 @@ def extract_references_from_pdf(pdf_path: str) -> str:
         m = re.search(r'References\n', full_text)
 
     if not m:
+        # Inline heading: "REFERENCES" embedded mid-line (e.g. JAMA 3-column header)
+        m = re.search(r'\bREFERENCES\b', full_text)
+    if not m:
         print("  Warning: could not find a references heading — extracting last 30% of document.")
         start = int(len(full_text) * 0.70)
         refs_text = full_text[start:]
@@ -208,12 +366,79 @@ def extract_references_from_pdf(pdf_path: str) -> str:
 
     # Clean up: remove bare page numbers (lines that are just a digit string)
     refs_text = re.sub(r'(?m)^\s*\d+\s*$', '', refs_text)
-    # Fix soft hyphens at line breaks: "Manage-\n    ment" → "Management"
-    refs_text = re.sub(r'(\w)-\n[ \t]*(\w)', r'\1\2', refs_text)
+    # Strip Nature-style running page headers/footers that get interleaved with refs.
+    # These look like: "7 2 | N AT U R E | VO L 4 8 9 | 6 S E P T E M B E R 2 0 1 2"
+    # The footer may span two physical lines:
+    #   Line 1: "7 2 | N AT U R E | VO L"          ← matched by first pattern (has "VOL")
+    #   Line 2: "4 8 9 | 6 S E P T E M B E R 2 0 1 2 ©2012 Macmill"  ← matched by second
+    refs_text = re.sub(
+        r'(?m)^\s*[\d\s]+\|[^|\n]+\|\s*VO\s*L\b[^\n]*$',
+        '',
+        refs_text,
+    )
+    # Second line of the Nature footer: "digits | MONTH YEAR ©YEAR Publisher"
+    refs_text = re.sub(
+        r'(?m)^\s*[\d\s]+\|[^\n]*©\s*(?:19|20)\d{2}[^\n]*$',
+        '',
+        refs_text,
+    )
+    # Strip eLife running section headers that get injected into the ref section
+    # on every page.  The label appears on its own (indented) line, optionally followed
+    # by discipline text on the SAME line:
+    # "    Research article                          Epidemiology and Global Health"
+    # "    Tools and resources    Computational and Systems Biology Microbiology …"
+    # Also strip Nature "ARTICLE RESEARCH" / "LETTER RESEARCH" running headers.
+    refs_text = re.sub(
+        r'(?m)^\s*(?:Research article|Tools and resources|Research Advance'
+        r'|Short report|Insight|Review article|Feature article'
+        r'|ARTICLE\s+RESEARCH|LETTER\s+RESEARCH|LETTER|ARTICLE'
+        r'|Extended\s+Data)(?:\s+[A-Z][^\n]*)?\s*$',
+        '',
+        refs_text,
+    )
+    # Fix soft hyphens and dashes at line breaks: "Manage-\nment" → "Management",
+    # "627–\n640" → "627-640"  (en-dash and em-dash variants too)
+    refs_text = re.sub(r'(\w)[-–—]\n[ \t]*(\w)', r'\1-\2', refs_text)
     # Fix PDF encoding artifact: "999e1006" → "999-1006" (en-dash encoded as "e")
     refs_text = re.sub(r'(\d)e(\d)', r'\1-\2', refs_text)
+    # Fix PDF ± artifact: "225±246" → "225-246" (old Nature PDFs encode en-dash as ±)
+    refs_text = re.sub(r'(\d)±(\d)', r'\1-\2', refs_text)
+    # Strip old Macmillan/Nature running footers that don't use the | separator:
+    # "©2001 Macmillan Magazines Ltd  NNN articles Nature Vol NNN …"
+    refs_text = re.sub(
+        r'(?m)^\s*©\s*(?:19|20)\d{2}\s+Macmillan[^\n]*$',
+        '',
+        refs_text,
+    )
+    # Strip JAMA "(Reprinted)" footers that get appended to citation text.
+    # e.g. " (Reprinted) JAMA August 25, 2020 Volume 324, Number 8 ©2020 …"
+    refs_text = re.sub(
+        r'\s*\(Reprinted\)\s+JAMA\b[^\n]*',
+        '',
+        refs_text,
+    )
+    # Strip PLOS running page-number footers that appear mid-references section.
+    # e.g. "October 6, 2015 18 / 22 PLOS Medicine | DOI:10.1371/journal.pmed.1001885"
+    refs_text = re.sub(
+        r'(?m)^\s*(?:January|February|March|April|May|June|July|August'
+        r'|September|October|November|December)\s+\d{1,2},\s+\d{4}'
+        r'\s+\d+\s*/\s*\d+\s+PLOS\b[^\n]*$',
+        '',
+        refs_text,
+    )
     # Collapse runs of blank lines down to one
     refs_text = re.sub(r'\n{3,}', '\n\n', refs_text).strip()
+
+    # ── eLife / preprint post-processing ────────────────────────────────────
+    # Strip 4-5 digit manuscript line numbers (eLife preprints stamp every line)
+    refs_text = _strip_line_numbers(refs_text)
+    # Re-run blank-line collapse after stripping (line numbers may leave artifacts)
+    refs_text = re.sub(r'\n{3,}', '\n\n', refs_text).strip()
+    # Segment hanging-indent NLM-style blocks (eLife published: deep indent, no gaps)
+    refs_text = _segment_hanging_indent(refs_text)
+    # If still no blank lines between refs, try APA sentence-boundary detection
+    if '\n\n' not in refs_text:
+        refs_text = _segment_apa_refs(refs_text)
 
     return refs_text
 
@@ -441,6 +666,8 @@ def lookup_crossref(title: str, year: int = None, raw: str = None) -> dict:
             "score":     top.get("score"),
         }
 
+    except KeyboardInterrupt:
+        raise   # let Ctrl+C propagate so the main loop can catch it cleanly
     except Exception as e:
         print(f"  [API error: {e}]")
         return {}
@@ -479,8 +706,11 @@ if citations is None:
 print(f"Found {len(citations)} citations — looking up DOIs via Crossref...\n")
 
 print("=" * 70)
-for i, c in enumerate(citations, 1):
+try:
+  for i, c in enumerate(citations, 1):
     print(f"\n[{i}] PARSED ({c.style.value.upper()})")
+    raw_display = c.raw[:95].replace('\n', ' ') + ('…' if len(c.raw) > 95 else '')
+    print(f"     Raw:     {raw_display}")
     print(f"     Title:   {c.title}")
     authors_str = ", ".join(c.authors[:3]) + ("..." if len(c.authors) > 3 else "")
     print(f"     Authors: {authors_str}")
@@ -491,7 +721,9 @@ for i, c in enumerate(citations, 1):
     elif c.title or c.raw:
         meta = lookup_crossref(c.title, year=c.year, raw=c.raw)
         if meta.get("doi"):
-            print(f"     CROSSREF MATCH  (score={meta.get('score', '-')})")
+            score = meta.get('score') or 0
+            confidence = "LOW CONFIDENCE — verify manually" if score < 40 else f"score={score:.1f}"
+            print(f"     CROSSREF MATCH  ({confidence})")
             print(f"     DOI:       {meta['doi']}")
             print(f"     Title:     {meta.get('title')}")
             match_authors = ", ".join(meta.get("authors", [])[:3])
@@ -505,3 +737,6 @@ for i, c in enumerate(citations, 1):
             print("     DOI:       not found in Crossref")
     else:
         print("     DOI:       (could not look up — no usable text)")
+except KeyboardInterrupt:
+    print("\n\nStopped early — results above are complete up to this point.")
+    sys.exit(0)
