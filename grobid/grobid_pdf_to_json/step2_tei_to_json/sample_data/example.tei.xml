@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <teiHeader>
+    <encodingDesc>
+      <appInfo>
+        <application version="0.7.1" ident="GROBID" when="2022-11-01T00:00+0000">
+          <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <fileDesc>
+      <titleStmt>
+        <title level="a" type="main">A synthetic example paper for testing the TEI-to-JSON parser</title>
+      </titleStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName><forename type="first">Ada</forename><surname>Lovelace</surname></persName>
+            </author>
+            <author>
+              <persName><forename type="first">Alan</forename><surname>Turing</surname></persName>
+            </author>
+            <idno type="DOI">10.0000/example.0001</idno>
+          </analytic>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text xml:lang="en">
+    <body>
+      <div>
+        <head>Introduction</head>
+        <p>Deep neural networks have transformed natural language processing in recent years. Earlier work established the foundations of sequence modeling <ref type="bibr" target="#b0">[1]</ref>. More recent studies extended these ideas to large-scale pretraining <ref type="bibr" target="#b1">[2]</ref>. The present paper builds on both of these lines of research to study citation behavior. We describe our method in the following section and report results afterwards. Our contribution is a reproducible pipeline for extracting citing sentences from full text.</p>
+        <p>Several benchmarks have been proposed to evaluate such systems <ref type="bibr" target="#b1">[2]</ref>. These benchmarks vary widely in size and domain coverage. We adopt a standard protocol for fair comparison. The remainder of this paper is organized as follows. We first introduce the data, then the model, and finally the evaluation. A short discussion closes the paper.</p>
+      </div>
+    </body>
+    <back>
+      <div type="references">
+        <listBibl>
+          <biblStruct xml:id="b0">
+            <analytic>
+              <title level="a" type="main">A foundational study of sequence modeling</title>
+              <author><persName><forename type="first">Grace</forename><surname>Hopper</surname></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Journal of Computing</title>
+              <imprint>
+                <biblScope unit="volume">12</biblScope>
+                <biblScope unit="page" from="100" to="115"/>
+                <date type="published" when="2001">2001</date>
+              </imprint>
+            </monogr>
+            <note type="raw_reference">Hopper, G. (2001). A foundational study of sequence modeling. Journal of Computing 12 100-115.</note>
+          </biblStruct>
+          <biblStruct xml:id="b1">
+            <analytic>
+              <title level="a" type="main">Large-scale pretraining for language understanding</title>
+              <author><persName><forename type="first">Edsger</forename><surname>Dijkstra</surname></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Transactions on Machine Learning</title>
+              <imprint>
+                <biblScope unit="volume">8</biblScope>
+                <biblScope unit="page" from="200" to="222"/>
+                <date type="published" when="2019">2019</date>
+              </imprint>
+            </monogr>
+            <note type="raw_reference">Dijkstra, E. (2019). Large-scale pretraining for language understanding. Transactions on Machine Learning 8 200-222.</note>
+          </biblStruct>
+        </listBibl>
+      </div>
+    </back>
+  </text>
+</TEI>

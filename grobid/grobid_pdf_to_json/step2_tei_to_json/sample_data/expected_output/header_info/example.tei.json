@@ -1,0 +1,16 @@
+{
+    "title": "a synthetic example paper for testing the tei-to-json parser",
+    "authors": [
+        {
+            "full_name": "Ada Lovelace",
+            "given_name": "Ada",
+            "surname": "Lovelace"
+        },
+        {
+            "full_name": "Alan Turing",
+            "given_name": "Alan",
+            "surname": "Turing"
+        }
+    ],
+    "doi": "10.0000/example.0001"
+}

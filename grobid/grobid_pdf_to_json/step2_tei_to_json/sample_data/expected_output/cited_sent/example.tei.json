@@ -1,0 +1,27 @@
+[
+    {
+        "title": "A foundational study of sequence modeling",
+        "authors": "Grace Hopper",
+        "year": "2001",
+        "citation": "Hopper, G. (2001). A foundational study of sequence modeling. Journal of Computing 12 100-115.",
+        "pages": "100-115",
+        "journal": "Journal of Computing",
+        "volume": "12",
+        "sentences": [
+            "Earlier work established the foundations of sequence modeling [CITATION]."
+        ]
+    },
+    {
+        "title": "Large-scale pretraining for language understanding",
+        "authors": "Edsger Dijkstra",
+        "year": "2019",
+        "citation": "Dijkstra, E. (2019). Large-scale pretraining for language understanding. Transactions on Machine Learning 8 200-222.",
+        "pages": "200-222",
+        "journal": "Transactions on Machine Learning",
+        "volume": "8",
+        "sentences": [
+            "More recent studies extended these ideas to large-scale pretraining [CITATION].",
+            "Several benchmarks have been proposed to evaluate such systems [CITATION]."
+        ]
+    }
+]

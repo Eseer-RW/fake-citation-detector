@@ -1,0 +1,11 @@
+# Step 2 (TEI-XML -> JSON) dependencies. Tested with these versions.
+grobid_tei_xml==0.1.3
+beautifulsoup4==4.14.3
+lxml                      # XML parser backend used by BeautifulSoup(..., 'xml')
+nltk==3.9.4
+typing_extensions
+
+# After installing, download the NLTK data the sentence tokenizer needs:
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('words')"
+# (LitcoinSentenceTokenizer also calls these downloads at startup, so a first
+#  run with network access will fetch them automatically.)

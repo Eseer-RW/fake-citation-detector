@@ -1,0 +1,178 @@
+[
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 0,
+        "sentence": "Deep neural networks have transformed natural language processing in recent years.",
+        "sent_before": [],
+        "sent_after": [
+            "Earlier work established the foundations of sequence modeling .",
+            "More recent studies extended these ideas to large-scale pretraining .",
+            "The present paper builds on both of these lines of research to study citation behavior.",
+            "We describe our method in the following section and report results afterwards.",
+            "Our contribution is a reproducible pipeline for extracting citing sentences from full text."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 1,
+        "sentence": "Earlier work established the foundations of sequence modeling .",
+        "sent_before": [
+            "Deep neural networks have transformed natural language processing in recent years."
+        ],
+        "sent_after": [
+            "More recent studies extended these ideas to large-scale pretraining .",
+            "The present paper builds on both of these lines of research to study citation behavior.",
+            "We describe our method in the following section and report results afterwards.",
+            "Our contribution is a reproducible pipeline for extracting citing sentences from full text."
+        ],
+        "label": 1
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 2,
+        "sentence": "More recent studies extended these ideas to large-scale pretraining .",
+        "sent_before": [
+            "Deep neural networks have transformed natural language processing in recent years.",
+            "Earlier work established the foundations of sequence modeling ."
+        ],
+        "sent_after": [
+            "The present paper builds on both of these lines of research to study citation behavior.",
+            "We describe our method in the following section and report results afterwards.",
+            "Our contribution is a reproducible pipeline for extracting citing sentences from full text."
+        ],
+        "label": 1
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 3,
+        "sentence": "The present paper builds on both of these lines of research to study citation behavior.",
+        "sent_before": [
+            "Deep neural networks have transformed natural language processing in recent years.",
+            "Earlier work established the foundations of sequence modeling .",
+            "More recent studies extended these ideas to large-scale pretraining ."
+        ],
+        "sent_after": [
+            "We describe our method in the following section and report results afterwards.",
+            "Our contribution is a reproducible pipeline for extracting citing sentences from full text."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 4,
+        "sentence": "We describe our method in the following section and report results afterwards.",
+        "sent_before": [
+            "Deep neural networks have transformed natural language processing in recent years.",
+            "Earlier work established the foundations of sequence modeling .",
+            "More recent studies extended these ideas to large-scale pretraining .",
+            "The present paper builds on both of these lines of research to study citation behavior."
+        ],
+        "sent_after": [
+            "Our contribution is a reproducible pipeline for extracting citing sentences from full text."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 5,
+        "sentence": "Our contribution is a reproducible pipeline for extracting citing sentences from full text.",
+        "sent_before": [
+            "Deep neural networks have transformed natural language processing in recent years.",
+            "Earlier work established the foundations of sequence modeling .",
+            "More recent studies extended these ideas to large-scale pretraining .",
+            "The present paper builds on both of these lines of research to study citation behavior.",
+            "We describe our method in the following section and report results afterwards."
+        ],
+        "sent_after": [],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 6,
+        "sentence": "Several benchmarks have been proposed to evaluate such systems .",
+        "sent_before": [],
+        "sent_after": [
+            "These benchmarks vary widely in size and domain coverage.",
+            "We adopt a standard protocol for fair comparison.",
+            "The remainder of this paper is organized as follows.",
+            "We first introduce the data, then the model, and finally the evaluation.",
+            "A short discussion closes the paper."
+        ],
+        "label": 1
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 7,
+        "sentence": "These benchmarks vary widely in size and domain coverage.",
+        "sent_before": [
+            "Several benchmarks have been proposed to evaluate such systems ."
+        ],
+        "sent_after": [
+            "We adopt a standard protocol for fair comparison.",
+            "The remainder of this paper is organized as follows.",
+            "We first introduce the data, then the model, and finally the evaluation.",
+            "A short discussion closes the paper."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 8,
+        "sentence": "We adopt a standard protocol for fair comparison.",
+        "sent_before": [
+            "Several benchmarks have been proposed to evaluate such systems .",
+            "These benchmarks vary widely in size and domain coverage."
+        ],
+        "sent_after": [
+            "The remainder of this paper is organized as follows.",
+            "We first introduce the data, then the model, and finally the evaluation.",
+            "A short discussion closes the paper."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 9,
+        "sentence": "The remainder of this paper is organized as follows.",
+        "sent_before": [
+            "Several benchmarks have been proposed to evaluate such systems .",
+            "These benchmarks vary widely in size and domain coverage.",
+            "We adopt a standard protocol for fair comparison."
+        ],
+        "sent_after": [
+            "We first introduce the data, then the model, and finally the evaluation.",
+            "A short discussion closes the paper."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 10,
+        "sentence": "We first introduce the data, then the model, and finally the evaluation.",
+        "sent_before": [
+            "Several benchmarks have been proposed to evaluate such systems .",
+            "These benchmarks vary widely in size and domain coverage.",
+            "We adopt a standard protocol for fair comparison.",
+            "The remainder of this paper is organized as follows."
+        ],
+        "sent_after": [
+            "A short discussion closes the paper."
+        ],
+        "label": 0
+    },
+    {
+        "doc_id": "sample_data_example.tei",
+        "sent_index": 11,
+        "sentence": "A short discussion closes the paper.",
+        "sent_before": [
+            "Several benchmarks have been proposed to evaluate such systems .",
+            "These benchmarks vary widely in size and domain coverage.",
+            "We adopt a standard protocol for fair comparison.",
+            "The remainder of this paper is organized as follows.",
+            "We first introduce the data, then the model, and finally the evaluation."
+        ],
+        "sent_after": [],
+        "label": 0
+    }
+]

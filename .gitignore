@@ -6,3 +6,8 @@ __pycache__/
 scripts/parsed_citations.txt
 scripts/results_*.txt
 scripts/samples/
+
+# GROBID pipeline — generated files (re-runnable, not source)
+grobid/**/tei/
+grobid/**/tei_flat/
+grobid/**/out/
