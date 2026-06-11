@@ -1,0 +1,200 @@
+"""
+solr_lookup.py — verify citations against the OpenAlex Solr index on galaxy.
+
+Uses the openalexWorks Solr collection (492M works) as an alternative to
+the Crossref MongoDB lookup. Works immediately — no text index build required.
+
+Endpoint: http://galaxy:8983/solr/openalexWorks/select
+
+Usage as a module:
+    from solr_lookup import SolrLookup
+    with SolrLookup() as lookup:
+        result = lookup.by_citation(obj)   # obj needs .doi, .title, .year
+
+Usage standalone (test):
+    python3 solr_lookup.py
+"""
+import re
+import types
+from dataclasses import dataclass
+from difflib import SequenceMatcher
+from enum import Enum
+from typing import Optional
+from urllib.parse import urlencode, quote
+
+import requests
+
+SOLR_URL = "http://galaxy:8983/solr/openalexWorks/select"
+SIMILARITY_THRESHOLD = 0.85
+
+
+class MatchMethod(str, Enum):
+    DOI        = "doi"
+    TITLE_YEAR = "title_year"
+    TITLE_ONLY = "title_only"
+    NOT_FOUND  = "not_found"
+
+
+@dataclass
+class SolrResult:
+    found: bool
+    method: MatchMethod
+    record: Optional[dict] = None
+    confidence: float = 0.0
+
+
+def _title_similarity(a: str, b: str) -> float:
+    return SequenceMatcher(None, a.lower().strip(), b.lower().strip()).ratio()
+
+
+def _get_title(doc: dict) -> Optional[str]:
+    t = doc.get("title")
+    if isinstance(t, list) and t:
+        return t[0]
+    if isinstance(t, str):
+        return t
+    return None
+
+
+def _solr_get(params: dict, timeout: int = 10) -> dict:
+    """Fire a GET request to Solr and return the parsed JSON response."""
+    # Always disable facets — the collection has expensive default facets
+    params.setdefault("facet", "false")
+    resp = requests.get(SOLR_URL, params=params, timeout=timeout)
+    resp.raise_for_status()
+    return resp.json()
+
+
+# Admin endpoint — used only for the fast connection check
+_SOLR_ADMIN_URL = SOLR_URL.replace("/select", "").rsplit("/", 1)[0] + \
+    "/admin/info/system"
+
+
+class SolrLookup:
+
+    def __init__(
+        self,
+        solr_url: str = SOLR_URL,
+        similarity_threshold: float = SIMILARITY_THRESHOLD,
+    ):
+        self.url = solr_url
+        self.threshold = similarity_threshold
+        self._check_connection()
+
+    def _check_connection(self):
+        """Ping the Solr admin endpoint — much faster than scanning 492M docs."""
+        admin_url = self.url.replace("/select", "").rsplit("/", 1)[0] + \
+            "/admin/info/system"
+        try:
+            r = requests.get(admin_url, params={"wt": "json"}, timeout=5)
+            r.raise_for_status()
+        except Exception as e:
+            raise RuntimeError(
+                f"\nCannot connect to Solr at {self.url}\n"
+                f"Check that galaxy:8983 is reachable.\nError: {e}"
+            ) from None
+
+    def by_doi(self, doi: str) -> SolrResult:
+        """Exact DOI lookup."""
+        # strip protocol prefix if present
+        doi = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi.strip(), flags=re.I)
+        doi = doi.lower()
+        params = {
+            "q": f'doi:"{doi}"',
+            "defType": "lucene",
+            "fl": "id,title,doi,publication_year,cited_by_count,type",
+            "rows": "1",
+            "wt": "json",
+        }
+        try:
+            data = _solr_get(params)
+            docs = data["response"]["docs"]
+            if docs:
+                return SolrResult(found=True, method=MatchMethod.DOI,
+                                  record=docs[0], confidence=1.0)
+        except Exception as e:
+            print(f"Solr DOI lookup failed: {e}")
+        return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def by_title(self, title: str, year: Optional[int] = None,
+                 candidates: int = 5) -> SolrResult:
+        """Keyword title search with optional year filter."""
+        params = {
+            "q": title,
+            "qf": "title^3 abstract",
+            "defType": "edismax",
+            "fl": "id,title,doi,publication_year,cited_by_count,type",
+            "rows": str(candidates),
+            "wt": "json",
+            "boost": "",           # disable recency boost
+        }
+        if year:
+            params["fq"] = f"publication_year:[{year - 1} TO {year + 1}]"
+        else:
+            params["fq"] = ""      # include all years
+
+        try:
+            data = _solr_get(params)
+            docs = data["response"]["docs"]
+        except Exception as e:
+            print(f"Solr title lookup failed: {e}")
+            return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+
+        best_doc, best_score = None, 0.0
+        for doc in docs:
+            candidate = _get_title(doc)
+            if not candidate:
+                continue
+            score = _title_similarity(title, candidate)
+            if score > best_score:
+                best_score = score
+                best_doc = doc
+
+        if best_doc and best_score >= self.threshold:
+            method = MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY
+            return SolrResult(found=True, method=method,
+                              record=best_doc, confidence=round(best_score, 4))
+        return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def by_citation(self, parsed) -> SolrResult:
+        """Try DOI first, then title+year, then title only."""
+        if parsed.doi:
+            result = self.by_doi(parsed.doi)
+            if result.found:
+                return result
+        if parsed.title and parsed.year:
+            result = self.by_title(parsed.title, year=parsed.year)
+            if result.found:
+                return result
+        if parsed.title:
+            result = self.by_title(parsed.title)
+            if result.found:
+                return result
+        return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    def close(self):
+        pass  # no persistent connection to close
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_):
+        self.close()
+
+
+if __name__ == "__main__":
+    print("Testing SolrLookup...")
+    with SolrLookup() as s:
+        # DOI test
+        r = s.by_doi("10.1056/NEJMoa2001017")
+        print(f"\nDOI lookup:  found={r.found}  method={r.method}")
+        if r.record:
+            print(f"  title: {_get_title(r.record)}")
+            print(f"  year:  {r.record.get('publication_year')}")
+
+        # title+year test
+        r2 = s.by_title("A novel coronavirus from patients with pneumonia in China", year=2020)
+        print(f"\nTitle lookup: found={r2.found}  method={r2.method}  conf={r2.confidence}")
+        if r2.record:
+            print(f"  title: {_get_title(r2.record)}")
+            print(f"  year:  {r2.record.get('publication_year')}")
