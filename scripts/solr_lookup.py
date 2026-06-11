@@ -56,7 +56,7 @@ def _get_title(doc: dict) -> Optional[str]:
     return None
 
 
-def _solr_get(params: dict, timeout: int = 10) -> dict:
+def _solr_get(params: dict, timeout: int = 30) -> dict:
     """Fire a GET request to Solr and return the parsed JSON response."""
     # Always disable facets — the collection has expensive default facets
     params.setdefault("facet", "false")
@@ -156,20 +156,74 @@ class SolrLookup:
                               record=best_doc, confidence=round(best_score, 4))
         return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
+    @staticmethod
+    def _title_variants(title: str) -> list:
+        """
+        Generate alternative title strings to retry when the raw GROBID title fails.
+
+        GROBID has two common failure modes:
+        1. Author-team prefix:  "Novel Coronavirus Outbreak Research Team. Detection of..."
+           → the real title is the part AFTER the first ". "
+        2. Appended subtitle:   "...QUOROM Statement. Quality of Reporting of Meta-analyses"
+           → the real title is the part BEFORE the first ". "
+
+        We also normalize common PDF ligature encoding artifacts (® → fi, Ð → -).
+        """
+        variants = []
+
+        # Normalize PDF ligature / encoding artifacts
+        normalized = (title
+                      .replace('®', 'fi')   # ® is the fi ligature in some PDFs
+                      .replace('ð', '-')    # ð mis-encoded as em-dash
+                      .replace('Ð', '-')    # Ð
+                      .replace('±', '-')    # ± used as en-dash
+                      .replace('“', '"').replace('”', '"')
+                      .replace('‘', "'").replace('’', "'"))
+        if normalized != title:
+            variants.append(normalized)
+
+        # Split on first ". " — try both halves if the title has one
+        if '. ' in title:
+            before, after = title.split('. ', 1)
+            # Only use a fragment if it's substantial (>20 chars) and looks like a title
+            if len(after.strip()) > 20:
+                variants.append(after.strip())   # drop author prefix
+            if len(before.strip()) > 20:
+                variants.append(before.strip())  # drop appended subtitle
+
+        return variants
+
     def by_citation(self, parsed) -> SolrResult:
-        """Try DOI first, then title+year, then title only."""
+        """Try DOI first, then title+year, then title only, then title variants."""
         if parsed.doi:
             result = self.by_doi(parsed.doi)
             if result.found:
                 return result
-        if parsed.title and parsed.year:
-            result = self.by_title(parsed.title, year=parsed.year)
+
+        title = parsed.title
+        year  = parsed.year
+
+        if title and year:
+            result = self.by_title(title, year=year)
             if result.found:
                 return result
-        if parsed.title:
-            result = self.by_title(parsed.title)
+
+        if title:
+            result = self.by_title(title)
             if result.found:
                 return result
+
+        # Retry with cleaned-up title variants (subtitle stripping, author prefix, encoding)
+        if title:
+            for variant in self._title_variants(title):
+                if year:
+                    result = self.by_title(variant, year=year)
+                    if result.found:
+                        return result
+                result = self.by_title(variant)
+                if result.found:
+                    return result
+
         return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
     def close(self):
