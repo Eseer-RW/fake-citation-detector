@@ -171,4 +171,18 @@ The pipeline is ready for deployment on a larger dataset. The two parsing fixes 
 
 ---
 
+---
+
+## Appendix: How the Pipeline Works
+
+**GROBID** (GeneRation Of BIbliographic Data) is an open-source machine learning tool that reads raw academic PDFs and extracts structured information. It was trained on millions of scientific papers and can identify titles, authors, body text, in-text citation markers, and full reference lists regardless of journal formatting.
+
+The pipeline runs in two steps:
+
+**Step 1 — PDF → TEI-XML:** GROBID processes each PDF and produces a TEI-XML file where every section of the document is labelled — body sentences, citation markers, and reference list entries. Crucially, it links each in-text marker (e.g. `[1]`) back to its corresponding reference.
+
+**Step 2 — TEI-XML → cited_sent JSON:** A Python script parses the TEI-XML and produces one JSON file per paper. Each entry in the JSON represents a single cited reference and contains its structured metadata (title, authors, year, journal, DOI) plus the body sentences in which it was cited — with a `[CITATION]` placeholder marking where the reference appeared.
+
+**Step 3 — Verification:** `grobid_verify.py` takes each citation object and looks it up in the OpenAlex Solr index (492M works) to confirm the paper exists, using DOI exact-match first, then fuzzy title + year matching.
+
 *Pipeline: GROBID 0.7.1 → TEI-XML → cited_sent JSON → `grobid_verify.py` → OpenAlex Solr (`http://galaxy:8983/solr/openalexWorks/select`, 492M works)*
