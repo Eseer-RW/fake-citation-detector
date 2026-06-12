@@ -11,3 +11,6 @@ scripts/samples/
 grobid/**/tei/
 grobid/**/tei_flat/
 grobid/**/out/
+
+# Runtime logs
+*.log

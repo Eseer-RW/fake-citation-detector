@@ -5,15 +5,12 @@ Reads all cited_sent JSON files produced by the GROBID pipeline (step2_tei_to_js
 and looks up each citation.
 
 Default: uses the OpenAlex Solr index (492M works, no index build required) for both
-DOI and title+year matching.
-
-Fallback: pass --backend mongo to use the Crossref MongoDB instead (requires the text
-index to be finished building first; use --doi-only to skip title search).
+DOI and title+year matching. Results are written incrementally after each paper.
 
 Usage (from scripts/ directory):
     python3 grobid_verify.py                         # Solr, full matching (DOI + title)
     python3 grobid_verify.py --paper jama            # one paper (substring match)
-    python3 grobid_verify.py --out results.txt       # save output
+    python3 grobid_verify.py --out results.txt       # save output (written per paper)
     python3 grobid_verify.py --show-found            # also print matched citations
     python3 grobid_verify.py --backend mongo         # use MongoDB (needs text index)
     python3 grobid_verify.py --backend mongo --doi-only  # MongoDB, DOI-only
@@ -30,8 +27,6 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 CITED_SENT_DIR = pathlib.Path(__file__).parent.parent / \
     "grobid/grobid_pdf_to_json/step2_tei_to_json/out/cited_sent"
 
-# Matches DOIs embedded in raw citation strings, e.g. "doi:10.1056/..." or
-# "https://doi.org/10.1056/..."
 _DOI_RE = re.compile(
     r'(?:https?://(?:dx\.)?doi\.org/|doi:\s*)(10\.\d{4,}/\S+)',
     re.IGNORECASE,
@@ -44,7 +39,6 @@ def _normalize_doi(doi: str) -> str:
 
 
 def extract_doi_from_raw(citation_str: str) -> str | None:
-    """Pull a DOI out of a raw citation string if one is present."""
     m = _DOI_RE.search(citation_str)
     if m:
         doi = m.group(1).rstrip('.,)')
@@ -53,8 +47,6 @@ def extract_doi_from_raw(citation_str: str) -> str | None:
 
 
 def make_citation_obj(entry: dict):
-    """Wrap a cited_sent dict in a simple object with .doi/.title/.year attributes.
-    DOI is taken from the 'doi' field if present, otherwise extracted from 'citation'."""
     obj = types.SimpleNamespace()
     doi = entry.get("doi") or extract_doi_from_raw(entry.get("citation", ""))
     obj.doi   = doi or None
@@ -74,11 +66,10 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
     paper_name = json_path.stem.replace(".tei", "")
     results = []
 
-    for entry in citations:
+    for i, entry in enumerate(citations, 1):
         obj = make_citation_obj(entry)
 
         if doi_only:
-            # Only attempt DOI lookup — skip title search entirely
             from mongo_lookup import LookupResult, MatchMethod
             if obj.doi:
                 result = lookup.by_doi(obj.doi)
@@ -99,14 +90,27 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
         }
         if result.found and result.record:
             rec = result.record
-            # Handle both Solr (OpenAlex) and MongoDB (Crossref) record shapes
             raw_title = rec.get("title") or rec.get("title_s")
             if isinstance(raw_title, list):
                 raw_title = raw_title[0] if raw_title else ""
             row["db_title"]   = raw_title or ""
-            row["db_year"]    = rec.get("publication_year") or rec.get("published-print", {}).get("date-parts", [[None]])[0][0]
-            row["db_journal"] = rec.get("primary_location", {}).get("source", {}).get("display_name", "") if isinstance(rec.get("primary_location"), dict) else (rec.get("container-title", [""])[0] if isinstance(rec.get("container-title"), list) else "")
+            row["db_year"]    = (
+                rec.get("publication_year") or
+                rec.get("published-print", {}).get("date-parts", [[None]])[0][0]
+            )
+            pl = rec.get("primary_location")
+            if isinstance(pl, dict):
+                row["db_journal"] = pl.get("source", {}).get("display_name", "")
+            else:
+                ct = rec.get("container-title", [""])
+                row["db_journal"] = ct[0] if isinstance(ct, list) else ct
         results.append(row)
+
+        # live progress dot every 10 citations
+        if verbose and i % 10 == 0:
+            found_so_far = sum(1 for r in results if r["found"])
+            print(f"    {i}/{len(citations)} citations checked  "
+                  f"({found_so_far} found so far)", flush=True)
 
     if verbose:
         found     = sum(1 for r in results if r["found"])
@@ -114,7 +118,6 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
         print(f"\n{'='*70}")
         print(f"Paper: {paper_name}  ({len(citations)} citations)")
         print(f"  Found: {found}  |  Not found: {not_found}")
-
         if not_found:
             print(f"\n  ⚠  NOT FOUND ({not_found}):")
             for r in results:
@@ -126,19 +129,39 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
     return results
 
 
+def _format_rows(results: list, show_found: bool) -> list[str]:
+    lines = []
+    for r in results:
+        status = "FOUND" if r["found"] else "NOT_FOUND"
+        lines.append(
+            f"{status:<10} [{r['method']:<12}] conf={r['confidence']:.2f} "
+            f"| {r['paper'][:30]:<30} | [{r['year']}] {r['title'][:60]}"
+        )
+        if r["found"] and show_found:
+            lines.append(
+                f"           db:   {r.get('db_title','')[:60]}"
+                f" ({r.get('db_year','')})"
+            )
+        elif not r["found"] and r["sentences"]:
+            lines.append(
+                f"           cited in: \"{r['sentences'][0][:80]}\""
+            )
+    return lines
+
+
 def main():
     ap = argparse.ArgumentParser(
         description="Verify GROBID citations via OpenAlex (Solr) or Crossref (MongoDB)")
     ap.add_argument("--paper", default=None,
                     help="filter to papers whose filename contains this substring")
     ap.add_argument("--out", default=None,
-                    help="write full results to this text file")
+                    help="write results to this file (appended per paper as each finishes)")
     ap.add_argument("--show-found", action="store_true",
-                    help="also print successfully matched citations")
+                    help="also print/write successfully matched citations")
     ap.add_argument("--backend", choices=["solr", "mongo"], default="solr",
                     help="lookup backend: 'solr' (default, OpenAlex) or 'mongo' (Crossref)")
     ap.add_argument("--doi-only", action="store_true",
-                    help="only use DOI lookup (mongo backend only; skips title search)")
+                    help="only use DOI lookup (mongo backend only)")
     args = ap.parse_args()
 
     json_files = sorted(CITED_SENT_DIR.glob("*.json"))
@@ -155,67 +178,61 @@ def main():
     if args.backend == "solr":
         from solr_lookup import SolrLookup
         print("Backend: OpenAlex Solr (DOI + title matching)")
-        ctx = SolrLookup()
+        lookup = SolrLookup()
     else:
         from mongo_lookup import MongoLookup
         mode = "DOI-only" if args.doi_only else "DOI + title (requires text index)"
         print(f"Backend: Crossref MongoDB ({mode})")
-        ctx = MongoLookup()
+        lookup = MongoLookup()
+
+    # clear/create output file upfront so user knows where it is
+    out_path = pathlib.Path(args.out) if args.out else None
+    if out_path:
+        out_path.write_text("")
+        print(f"Results will be written incrementally to: {out_path}\n")
 
     all_results = []
-    with ctx if hasattr(ctx, '__enter__') else _nullctx(ctx) as lookup:
-        for path in json_files:
-            doi_only = args.doi_only if args.backend == "mongo" else False
-            results = verify_paper(path, lookup, doi_only=doi_only, verbose=True)
-            all_results.extend(results)
+    for idx, path in enumerate(json_files, 1):
+        print(f"\n[{idx}/{len(json_files)}] {path.stem[:60]}", flush=True)
+        doi_only = args.doi_only if args.backend == "mongo" else False
+        results = verify_paper(path, lookup, doi_only=doi_only, verbose=True)
+        all_results.extend(results)
+
+        # write this paper's results immediately
+        if out_path:
+            lines = _format_rows(results, args.show_found)
+            with out_path.open("a") as f:
+                f.write("\n".join(lines) + "\n")
 
     # ── summary ──────────────────────────────────────────────────────────
     total     = len(all_results)
     found     = sum(1 for r in all_results if r["found"])
     not_found = total - found
-    by_method = {}
+    by_method: dict[str, int] = {}
     for r in all_results:
         by_method[r["method"]] = by_method.get(r["method"], 0) + 1
 
-    print(f"\n{'='*70}")
-    print(f"SUMMARY")
-    print(f"{'='*70}")
-    print(f"  Papers processed : {len(json_files)}")
-    print(f"  Total citations  : {total}")
-    print(f"  Found            : {found}  ({100*found/total:.1f}%)")
-    print(f"  Not found        : {not_found}  ({100*not_found/total:.1f}%)")
-    print(f"\n  By match method:")
+    summary = [
+        "",
+        "=" * 70,
+        "SUMMARY",
+        "=" * 70,
+        f"  Papers processed : {len(json_files)}",
+        f"  Total citations  : {total}",
+        f"  Found            : {found}  ({100*found/total:.1f}%)",
+        f"  Not found        : {not_found}  ({100*not_found/total:.1f}%)",
+        "",
+        "  By match method:",
+    ]
     for method, count in sorted(by_method.items()):
-        print(f"    {method:<15} {count:>5}  ({100*count/total:.1f}%)")
+        summary.append(f"    {method:<15} {count:>5}  ({100*count/total:.1f}%)")
 
-    # ── optional file output ──────────────────────────────────────────────
-    if args.out:
-        out_path = pathlib.Path(args.out)
-        lines = []
-        for r in all_results:
-            status = "FOUND" if r["found"] else "NOT_FOUND"
-            lines.append(
-                f"{status:<10} [{r['method']:<12}] conf={r['confidence']:.2f} "
-                f"| {r['paper'][:30]:<30} | [{r['year']}] {r['title'][:60]}"
-            )
-            if r["found"] and args.show_found:
-                lines.append(
-                    f"           db:   {r.get('db_title','')[:60]}"
-                    f" ({r.get('db_year','')})"
-                )
-            elif not r["found"] and r["sentences"]:
-                lines.append(
-                    f"           cited in: \"{r['sentences'][0][:80]}\""
-                )
-        out_path.write_text("\n".join(lines) + "\n")
+    print("\n".join(summary))
+
+    if out_path:
+        with out_path.open("a") as f:
+            f.write("\n".join(summary) + "\n")
         print(f"\nFull results written to {out_path}")
-
-
-class _nullctx:
-    """Trivial context manager for objects that don't implement __enter__/__exit__."""
-    def __init__(self, obj): self._obj = obj
-    def __enter__(self): return self._obj
-    def __exit__(self, *_): pass
 
 
 if __name__ == "__main__":
