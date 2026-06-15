@@ -15,11 +15,15 @@ from NLPtools.SentenceTokenizer import LitcoinSentenceTokenizer as SentenceToken
 
 sentence_tokenizer = SentenceTokenizer()
 
-# Plausible publication year: 1900-2099.
-# Narrower than the original (1500-2299) so that volume numbers, report numbers,
-# and page numbers that happen to look like years are rejected.
-_YEAR_VALID  = re.compile(r'^(?:19|20)\d{2}$')  # full-string match for validation
-_YEAR_SEARCH = re.compile(r'(?:19|20)\d{2}')    # substring search for extraction
+import datetime as _dt
+_YEAR_MAX    = _dt.date.today().year + 1  # current year + 1 (allow slightly ahead-of-print)
+_YEAR_SEARCH = re.compile(r'(?:19|20)\d{2}')  # finds any 1900-2099 candidate in a string
+
+def _year_valid(year_str: str) -> bool:
+    """Return True if year_str is a 4-digit year between 1900 and current year + 1."""
+    if not re.match(r'^(?:19|20)\d{2}$', year_str):
+        return False
+    return 1900 <= int(year_str) <= _YEAR_MAX
 def parse_tei_xml(xml_path):
     # Use grobid_tei_xml API to get header and  reference list
     with open(xml_path, 'r') as xml_file:
@@ -101,7 +105,7 @@ def re_format_refDict(references):
             # (e.g. 1854, 1768, 2116, 2264 seen in real data). The original condition here
             # was inverted — it fired when a year WAS found, never catching bad values.
             # Fix: fall back to the raw citation string only when the year is INVALID.
-            if not _YEAR_VALID.match(year):
+            if not _year_valid(year):
                 m = _YEAR_SEARCH.search(citation)
                 year = m.group() if m else ''
             title = ref['title']
