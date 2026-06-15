@@ -18,12 +18,12 @@
 
 | Method | Count | % |
 |--------|------:|--:|
-| Title + year (fuzzy match) | 1,800 | 75.6% |
+| Title + year (fuzzy match) | 1,865 | 78.3% |
 | DOI (exact match) | 338 | 14.2% |
-| Title only (no year) | 133 | 5.6% |
+| Title only (no year) | 68 | 2.9% |
 | Not found | 110 | 4.6% |
 
-The majority of citations were matched by title + year against the OpenAlex Solr index — this was not possible before (required the MongoDB text index to finish building) and accounts for most of the improvement from an earlier DOI-only run that found only 62.5%.
+The majority of citations were matched by title + year against the OpenAlex Solr index. After fixing the year parser in `grobid_tool.py`, 65 citations that previously fell through to title-only matching (no year) now match correctly via title + year, reflected in the shift from 75.6% → 78.3% title_year and 5.6% → 2.9% title_only. The overall found rate (95.4%) and NOT_FOUND count (110) are unchanged — the citations that had wrong years were tech reports and books not indexed in OpenAlex regardless of year.
 
 ---
 
@@ -67,13 +67,13 @@ These are real, citable works — they are simply not journal articles.
 
 ---
 
-### Category B — Software, R Packages, and Technical Reports (~25 citations, ~23%)
+### Category B — Software, R Packages, and Technical Reports (~29 citations, ~26%)
 
 Several papers (especially computational biology and physics papers) cite software tools, R packages, and government lab technical reports. These are not indexed as academic works in OpenAlex.
 
 - **R packages**: `vegan`, `multtest`, `distory`, `phyloseq`, `markdown`
 - **Software tools**: MDSJ (Java), AUGEM, PyroTagger, MGRAST server, GDAL, XLA (TensorFlow compiler)
-- **HPC technical reports**: UCRL-MA-118543 Parts I–IV (LLNL Basis System manuals — the year "1854" in the results is a GROBID parsing error on a page number)
+- **HPC technical reports**: UCRL-MA-118543 Parts I–IV (LLNL Basis System manuals — previously showed year "1854" due to a GROBID parsing bug; now correctly shows [1995] after the year parser fix)
 - **GitHub URLs** parsed as citations: `Available: joey711` (a GitHub username, not a paper title)
 
 These are all real software citations that fall outside journal article databases.
@@ -89,41 +89,45 @@ These are all real software citations that fall outside journal article database
 
 ---
 
-### Category C — GROBID Parsing Errors (~15 citations, ~14%)
+### Category C — GROBID Parsing Errors (~8 citations, ~7%)
 
-Some citations were not found because GROBID misextracted the title or year from the PDF. These are real papers, but the extracted text is wrong.
+Some citations were not found because GROBID misextracted the title or year from the PDF.
 
-**Wrong years (clearly erroneous):**
+**Wrong years — now fixed:** The year parser previously accepted years 1500–2299, allowing
+volume numbers (2116, 2264) and page numbers (1854, 1768) to pass as valid years. After
+fixing `grobid_tool.py` to enforce `1900 ≤ year ≤ current year + 1`, the fallback correctly
+extracts the year from the raw citation string instead. These entries no longer appear in
+the NOT_FOUND list — papers that had volume/page numbers as years are now either found
+with the correct year, or moved to Category B (e.g. the LLNL reports now correctly show
+[1995] and are not found because they are technical reports, not because of a bad year).
 
-| Year extracted | Likely cause |
-|---------------|-------------|
-| 1854 | LLNL report number (UCRL-MA-118543) parsed as year |
-| 1768, 1909, 1925, 1940 | Page numbers or footnote numbers parsed as years |
-| 2116, 2264 | Journal volume numbers parsed as years |
+**Remaining parsing issues (still present):**
 
-**Author name in title field:**
+**PDF encoding artifact in title:**
 ```
-[2019] "Novel Coronavirus Outbreak Research Team. Detection of air and surface 
-        contamination by SARS-CoV-2 in hospital rooms of infected patients"
-```
-GROBID prepended the author consortium name to the title. The actual paper (*Detection of air and surface contamination by SARS-CoV-2…*, 2020) is confirmed to exist in OpenAlex.
-
-**PDF encoding artifacts in titles:**
-```
-"Modi®cation and Editing of RNA"       → "Modification" (fi-ligature → ®)
-"GenieÐgene ®nding in Drosophila"     → "Genie—gene finding" (em-dash → Ð)
-"Collected Poems 1909±1962"           → ± is a minus sign, not a year separator
+"Collected Poems 1909±1962"   → ± rendered as a literal character, confusing title matching
 ```
 
 **Sentence fragment parsed as title:**
 ```
 "Note that in addition to the distribution of incoming links,"
 ```
-This is a body sentence, not a reference title — GROBID mis-tagged it.
+A body sentence was mis-tagged as a reference title by GROBID.
+
+**Truncated / malformed reference:**
+```
+"Proc. IEEE 91"   → journal name + volume only, no title extracted
+```
+
+**Garbled title from sentence context:**
+```
+"One of possible models for the complex graphene-SiC interface is given by S"
+```
+This looks like a sentence beginning, not a paper title — GROBID mis-tagged it.
 
 ---
 
-### Category D — Papers Genuinely Not in OpenAlex (~25 citations, ~23%)
+### Category D — Papers Genuinely Not in OpenAlex (~28 citations, ~26%)
 
 A small number of citations appear to be real journal papers that are simply not indexed in OpenAlex (or indexed under a slightly different title that falls below the 0.85 similarity threshold). Examples include:
 
@@ -142,9 +146,9 @@ Across **2,381 citations from 38 papers**, every NOT_FOUND citation has an ident
 | Cause | ~Count |
 |-------|-------:|
 | Books / manuals / institutional documents | ~45 |
-| Software, R packages, technical reports | ~25 |
-| GROBID parsing errors (wrong year, garbled title) | ~15 |
-| Papers not indexed in OpenAlex | ~25 |
+| Software, R packages, technical reports (incl. LLNL) | ~29 |
+| GROBID parsing errors (garbled title, truncated ref) | ~8 |
+| Papers not indexed in OpenAlex | ~28 |
 | **Total NOT_FOUND** | **110** |
 
 None of the not-found citations show the hallmarks of AI-fabricated citations (plausible-sounding but non-existent papers, wrong author combinations, invented journal names). All titles are recognizable as legitimate academic references or known software tools.
