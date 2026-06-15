@@ -59,7 +59,7 @@ def parse_tei_xml(xml_path):
                     insert_string = '[CITATION]'
                     e.insert_after(insert_string)
                     e.decompose()
-            except:
+            except Exception:
                 print("<None></None>")
         body_text.append(add_middle_citation(para.get_text(), doc['citations'][0]['id']))
         # split sentence (1) generate data for string detection (2) generate data for model training 
@@ -136,7 +136,6 @@ def re_format_refDict(references):
            
 
 def get_citation_num(sentence, Id): # Id is a example of citation IDs, normally should be the first key of reference list
-    pt = re.sub('[0-9]+','',Id).strip()
     pt = '#b'   # just for grobid result
     ref_pattern = re.compile("(\[CITATION\s"+pt+"[0-999]+\])", re.I) # [CITATION R21] not include the space before or after
     #ref_pattern = re.compile("(\[CITATION\sR[0-999]+\])", re.I) # [CITATION R21] not include the space before or after
@@ -155,10 +154,9 @@ def add_middle_citation(para, Id):
     # para is the paragraph with already change citation marker to [CITATION R0]
     pt = re.sub('[0-9]+','',Id).strip()
     pattern = "\[CITATION\s"+pt+"[0-9]+\]\–\[CITATION\s"+pt+"[0-9]+\]"
-    cases = re.findall(pattern, para)
     if re.search(pattern, para) is not None:
         for case in re.finditer(pattern, para):
-            num = re.findall('\d',case[0])
+            num = re.findall(r'\d+', case[0])  # \d+ captures whole numbers; \d would split '10' into ['1','0']
             if len(num) == 2:
                 new_insert_num = [i for i in range (int(num[0]), int(num[1])+1)]
                 new_insert = ','.join([f"[CITATION {pt}{i}]" for i in new_insert_num])
@@ -250,7 +248,7 @@ def process_xml_fromPDF_singlefile(xml_path, output_cited_sent, output_model_dat
     print(xml_path)
     try:
         doc = parse_tei_xml(xml_path)
-    except:
+    except Exception:
         print('Cannot parse file:', xml_path, flush=True)
         return 0
 
