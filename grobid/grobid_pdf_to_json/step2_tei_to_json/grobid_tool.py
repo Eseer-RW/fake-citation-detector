@@ -14,6 +14,12 @@ from bs4 import BeautifulSoup
 from NLPtools.SentenceTokenizer import LitcoinSentenceTokenizer as SentenceTokenizer
 
 sentence_tokenizer = SentenceTokenizer()
+
+# Plausible publication year: 1900-2099.
+# Narrower than the original (1500-2299) so that volume numbers, report numbers,
+# and page numbers that happen to look like years are rejected.
+_YEAR_VALID  = re.compile(r'^(?:19|20)\d{2}$')  # full-string match for validation
+_YEAR_SEARCH = re.compile(r'(?:19|20)\d{2}')    # substring search for extraction
 def parse_tei_xml(xml_path):
     # Use grobid_tei_xml API to get header and  reference list
     with open(xml_path, 'r') as xml_file:
@@ -85,17 +91,19 @@ def re_format_refDict(references):
             ID = ref['id']
             citation = ref['unstructured']
             year = ref['date']
-            if len(year) > 4:   # something like 1997-01, 2022-10-06, we only need year 
-                if re.search("(?:15|16|17|18|19|20|21|22)[0-9][0-9]", year):
-                    year = re.search("(?:15|16|17|18|19|20|21|22)[0-9][0-9]", year).group()
-                else:
-                    year = ''
-            if re.search("(?:15|16|17|18|19|20|21|22)[0-9][0-9]", year): # year found by grobid is not year, extract from raw citation
-                find_year = re.search("(?:15|16|17|18|19|20|21|22)[0-9][0-9]", citation)
-                if find_year:
-                    year = find_year.group()
-                else:
-                    year = ''
+            # Step 1: GROBID sometimes returns full dates like "2020-01-15"; keep only the year.
+            if len(year) > 4:
+                m = _YEAR_SEARCH.search(year)
+                year = m.group() if m else ''
+
+            # Step 2: If the year is outside the plausible range 1900-2099, it is likely a
+            # volume number, page number, or report number that GROBID mis-tagged as the date
+            # (e.g. 1854, 1768, 2116, 2264 seen in real data). The original condition here
+            # was inverted — it fired when a year WAS found, never catching bad values.
+            # Fix: fall back to the raw citation string only when the year is INVALID.
+            if not _YEAR_VALID.match(year):
+                m = _YEAR_SEARCH.search(citation)
+                year = m.group() if m else ''
             title = ref['title']
             new_ref.update({ID:{'title':title, 'authors':authors, 'year':year, 'citation':citation, 'id':ID}})
             if 'publisher' in ref:
