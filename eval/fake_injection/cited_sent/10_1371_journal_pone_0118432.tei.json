@@ -1,0 +1,742 @@
+[
+  {
+    "title": "Machine learning and its applications to biology",
+    "authors": "A L Tarca;V J Carey;X W Chen;R Romero;S Draghici",
+    "year": "2007",
+    "citation": "Tarca AL, Carey VJ, Chen XW, Romero R, Draghici S. Machine learning and its applications to biology. PLoS Comput Biol. 2007; 3: e116. PMID: 17604446",
+    "pages": "e116",
+    "journal": "PLoS Comput Biol",
+    "volume": "3",
+    "sentences": [
+      "They have been successfully applied to a wide range of biological and medical problems in recent years [CITATION][CITATION #b1][CITATION #b2]."
+    ]
+  },
+  {
+    "title": "What are artificial neural networks?",
+    "authors": "A Krogh",
+    "year": "2008",
+    "citation": "Krogh A. What are artificial neural networks? Nat Biotechnol. 2008; 26: 195-197. doi: 10.1038/nbt1386 PMID: 18259176",
+    "pages": "195-197",
+    "journal": "Nat Biotechnol",
+    "volume": "26",
+    "sentences": [
+      "They have been successfully applied to a wide range of biological and medical problems in recent years [CITATION #b0][CITATION][CITATION #b2]."
+    ]
+  },
+  {
+    "title": "Support vector machines and kernels for computational biology",
+    "authors": "A Ben-Hur;C S Ong;S Sonnenburg;B Scholkopf;G Ratsch",
+    "year": "2008",
+    "citation": "Ben-Hur A, Ong CS, Sonnenburg S, Scholkopf B, Ratsch G. Support vector machines and kernels for computational biology. PLoS Comput Biol. 2008; 4: e1000173. doi: 10.1371/journal.pcbi.1000173 PMID: 18974822",
+    "pages": "",
+    "journal": "PLoS Comput Biol",
+    "volume": "4",
+    "sentences": [
+      "They have been successfully applied to a wide range of biological and medical problems in recent years [CITATION #b0][CITATION #b1][CITATION]."
+    ]
+  },
+  {
+    "title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve",
+    "authors": "J A Hanley;B J Mcneil",
+    "year": "1982",
+    "citation": "Hanley JA, McNeil BJ. The meaning and use of the area under a receiver operating characteristic (ROC) curve. Radiology. 1982; 143: 29-36. PMID: 7063747",
+    "pages": "29-36",
+    "journal": "Radiology",
+    "volume": "143",
+    "sentences": [
+      "Commonly used measures of classifier performance in the phase of model construction are accuracy, error rate, and the Area under the Receiver Operating Characteristics (ROC) curve (AUC) [CITATION].",
+      "AUC is 0.5 for random and 1.0 for perfect classifiers [CITATION]."
+    ]
+  },
+  {
+    "title": "Learning from Imbalanced Data",
+    "authors": "H He;E Garcia",
+    "year": "2009",
+    "citation": "He H, Garcia E. Learning from Imbalanced Data. IEEE Trans Knowl Data Eng. 2009; 21: 1263-1284.",
+    "pages": "1263-1284",
+    "journal": "IEEE Trans Knowl Data Eng",
+    "volume": "21",
+    "sentences": [
+      "Various additional measures are useful for the evaluation of the final model, and several plots provide visual representations, such as ROC and Precision-Recall (PRC) plots [CITATION].",
+      "The classification of imbalanced datasets is a relatively new challenge in the field of machine learning [CITATION][CITATION #b9].",
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18].",
+      "Despite the development of state-of-the-art solutions for the building of classifiers with imbalanced data [CITATION][CITATION #b10][CITATION #b19], selecting a suitable performance evaluation method is often underestimated.",
+      "The most widely used basic measures of classifier performance are accuracy (ACC) and error rate (ERR) [CITATION].",
+      "Cost curves analyse classification performance by varying operating points [CITATION].",
+      "PCF (+) is based on the probability of correctly classifying positives, and it is calculated by class probabilities and misclassification costs [CITATION].",
+      "This filtering also excludes studies with small sample size (Table 4; SS; 24.1%) since the approaches to solve imbalance problems with small sized data can be different from those of medium and large sized data [CITATION][CITATION #b51]."
+    ]
+  },
+  {
+    "title": "Editorial: Special Issue on Learning from Imbalanced Data Sets",
+    "authors": "N Chawla;N Japkowicz",
+    "year": "2004",
+    "citation": "Chawla N, Japkowicz N. Editorial: Special Issue on Learning from Imbalanced Data Sets. SIGKDD Explor. 2004;6.",
+    "pages": "",
+    "journal": "SIGKDD Explor",
+    "volume": "6",
+    "sentences": [
+      "Class imbalance-a difference in the numbers of positive and negative instances, usually with the negatives outnumbering the positives-occurs in a wide range of scientific areas, including the life sciences, where unequal class distributions arise naturally [CITATION][CITATION #b6][CITATION #b7][CITATION #b8]."
+    ]
+  },
+  {
+    "title": "SMOTE: synthetic minority over-sampling technique",
+    "authors": "N V Chawla;K W Bowyer;L O Hall;W P Kegelmeyer",
+    "year": "2002",
+    "citation": "Chawla NV, Bowyer KW, Hall LO, Kegelmeyer WP. SMOTE: synthetic minority over-sampling tech- nique. J Artif Intell Res. 2002; 16: 321-357.",
+    "pages": "321-357",
+    "journal": "J Artif Intell Res",
+    "volume": "16",
+    "sentences": [
+      "Class imbalance-a difference in the numbers of positive and negative instances, usually with the negatives outnumbering the positives-occurs in a wide range of scientific areas, including the life sciences, where unequal class distributions arise naturally [CITATION #b5][CITATION][CITATION #b7][CITATION #b8].",
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "Data mining for improved cardiac care",
+    "authors": "R B Rao;S Krishnan;R S Niculescu",
+    "year": "2006",
+    "citation": "Rao RB, Krishnan S, Niculescu RS. Data mining for improved cardiac care. SIGKDD Explor. 2006; 8: 3-10.",
+    "pages": "3-10",
+    "journal": "SIGKDD Explor",
+    "volume": "8",
+    "sentences": [
+      "Class imbalance-a difference in the numbers of positive and negative instances, usually with the negatives outnumbering the positives-occurs in a wide range of scientific areas, including the life sciences, where unequal class distributions arise naturally [CITATION #b5][CITATION #b6][CITATION][CITATION #b8].",
+      "The rapid expansion in high-throughput biological experiments produces a number of large-sized datasets, and the majority of such datasets can be expected to be imbalanced [CITATION][CITATION #b21][CITATION #b22]."
+    ]
+  },
+  {
+    "title": "Machine Learning for the Detection of Oil Spills in Satellite Radar Images",
+    "authors": "M Kubat;R C Holte;S Matwin",
+    "year": "1998",
+    "citation": "Kubat M, Holte RC, Matwin S. Machine Learning for the Detection of Oil Spills in Satellite Radar Im- ages. Mach Learn. 1998; 30: 195-215.",
+    "pages": "195-215",
+    "journal": "Mach Learn",
+    "volume": "30",
+    "sentences": [
+      "Class imbalance-a difference in the numbers of positive and negative instances, usually with the negatives outnumbering the positives-occurs in a wide range of scientific areas, including the life sciences, where unequal class distributions arise naturally [CITATION #b5][CITATION #b6][CITATION #b7][CITATION]."
+    ]
+  },
+  {
+    "title": "Machine learning from imbalanced data sets 101",
+    "authors": "F Provost",
+    "year": "2000",
+    "citation": "Provost F. Machine learning from imbalanced data sets 101. Proceedings of the AAAI-2000 Workshop on Imbalanced Data Sets. 2000.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The classification of imbalanced datasets is a relatively new challenge in the field of machine learning [CITATION #b4][CITATION]."
+    ]
+  },
+  {
+    "title": "Experimental perspectives on learning from imbalanced data",
+    "authors": "J V Hulse;T M Khoshgoftaar;A Napolitano",
+    "year": "2007",
+    "citation": "Hulse JV, Khoshgoftaar TM, Napolitano A. Experimental perspectives on learning from imbalanced data. Proceedings of the 24th international conference on Machine learning. 2007: 935-942.",
+    "pages": "935-942",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18].",
+      "Despite the development of state-of-the-art solutions for the building of classifiers with imbalanced data [CITATION #b4][CITATION][CITATION #b19], selecting a suitable performance evaluation method is often underestimated."
+    ]
+  },
+  {
+    "title": "Learning from imbalanced data sets with boosting and data generation: the Data-Boost-IM approach",
+    "authors": "H Guo;H L Viktor",
+    "year": "2004",
+    "citation": "Guo H, Viktor HL. Learning from imbalanced data sets with boosting and data generation: the Data- Boost-IM approach. SIGKDD Explor. 2004; 6: 30-39.",
+    "pages": "30-39",
+    "journal": "SIGKDD Explor",
+    "volume": "6",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18].",
+      "The cost curve (CC) is an alternative to the ROC plot [CITATION][CITATION #b27]."
+    ]
+  },
+  {
+    "title": "Addressing the curse of imbalanced training sets: one-sided selection",
+    "authors": "M Kubat;S Matwin",
+    "year": "1997",
+    "citation": "Kubat M, Matwin S. Addressing the curse of imbalanced training sets: one-sided selection. In Proceed- ings of the Fourteenth International Conference on Machine Learning. 1997: 179-186.",
+    "pages": "179-186",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "Data Mining for Direct Marketing: Problems and Solutions",
+    "authors": "C Ling;C Li",
+    "year": "1998",
+    "citation": "Ling C, Li C. Data Mining for Direct Marketing: Problems and Solutions. In Proceedings of the Fourth In- ternational Conference on Knowledge Discovery and Data Mining. 1998: 73-79.",
+    "pages": "73-79",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "The foundations of cost-sensitive learning",
+    "authors": "C Elkan",
+    "year": "2001",
+    "citation": "Elkan C. The foundations of cost-sensitive learning. Proceedings of the 17th international joint confer- ence on Artificial intelligence-Volume 2. 2001: 973-978.",
+    "pages": "973-978",
+    "journal": "",
+    "volume": "2",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "Cost-sensitive boosting for classification of imbalanced data",
+    "authors": "Y Sun;M S Kamel;Akc Wong;Y Wang",
+    "year": "2007",
+    "citation": "Sun Y, Kamel MS, Wong AKC, Wang Y. Cost-sensitive boosting for classification of imbalanced data. Pattern Recognit. 2007; 40: 3358-3378.",
+    "pages": "3358-3378",
+    "journal": "Pattern Recognit",
+    "volume": "40",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION][CITATION #b16][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "The class imbalance problem: A systematic study",
+    "authors": "N Japkowicz;S Stephen",
+    "year": "2002",
+    "citation": "Japkowicz N, Stephen S. The class imbalance problem: A systematic study. Intell Data Anal. 2002; 6: 429-449.",
+    "pages": "429-449",
+    "journal": "Intell Data Anal",
+    "volume": "6",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION][CITATION #b17][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "A kernel-based two-class classifier for imbalanced data sets",
+    "authors": "X Hong;S Chen;C J Harris",
+    "year": "2007",
+    "citation": "Hong X, Chen S, Harris CJ. A kernel-based two-class classifier for imbalanced data sets. IEEE Trans Neural Netw. 2007; 18: 28-41. PMID: 17278459",
+    "pages": "28-41",
+    "journal": "IEEE Trans Neural Netw",
+    "volume": "18",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "Class-Boundary Alignment for Imbalanced Dataset Learning",
+    "authors": "G Wu;E Chang",
+    "year": "2003",
+    "citation": "Wu G, Chang E. Class-Boundary Alignment for Imbalanced Dataset Learning. Workshop on Learning from Imbalanced Datasets in ICML. 2003.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While many solutions for binary classification on imbalanced data have been proposed [CITATION #b4][CITATION #b10], they are mostly related to either data resampling [CITATION #b6][CITATION #b11][CITATION #b12][CITATION #b13] or model-training [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION]."
+    ]
+  },
+  {
+    "title": "A Multiple Resampling Method for Learning from Imbalanced Data Sets",
+    "authors": "A Estabrooks;T Jo;N Japkowicz",
+    "year": "2004",
+    "citation": "Estabrooks A, Jo T, Japkowicz N. A Multiple Resampling Method for Learning from Imbalanced Data Sets. Comput Intell. 2004; 20: 18-36.",
+    "pages": "18-36",
+    "journal": "Comput Intell",
+    "volume": "20",
+    "sentences": [
+      "Despite the development of state-of-the-art solutions for the building of classifiers with imbalanced data [CITATION #b4][CITATION #b10][CITATION], selecting a suitable performance evaluation method is often underestimated."
+    ]
+  },
+  {
+    "title": "A user's guide to support vector machines",
+    "authors": "A Ben-Hur;J Weston",
+    "year": "2010",
+    "citation": "Ben-Hur A, Weston J. A user's guide to support vector machines. Methods Mol Biol. 2010; 609: 223- 239. doi: 10.1007/978-1-60327-241-4_13 PMID: 20221922",
+    "pages": "978-1",
+    "journal": "Methods Mol Biol",
+    "volume": "609",
+    "sentences": [
+      "It usually divides a training dataset further into training and validation subsets, for example for cross-validation [CITATION]."
+    ]
+  },
+  {
+    "title": "The problem of bias in training data in regression problems in medical decision support",
+    "authors": "Mac Namee;B Cunningham;P Byrne;S Corrigan;O I",
+    "year": "2002",
+    "citation": "Mac Namee B, Cunningham P, Byrne S, Corrigan OI. The problem of bias in training data in regression problems in medical decision support. Artif Intell Med. 2002; 24: 51-70. PMID: 11779685",
+    "pages": "51-70",
+    "journal": "Artif Intell Med",
+    "volume": "24",
+    "sentences": [
+      "The rapid expansion in high-throughput biological experiments produces a number of large-sized datasets, and the majority of such datasets can be expected to be imbalanced [CITATION #b7][CITATION][CITATION #b22]."
+    ]
+  },
+  {
+    "title": "Receiver-operating characteristic curve analysis in diagnostic, prognostic and predictive biomarker research",
+    "authors": "K Soreide",
+    "year": "2009",
+    "citation": "Soreide K. Receiver-operating characteristic curve analysis in diagnostic, prognostic and predictive bio- marker research. J Clin Pathol. 2009; 62: 1-5. doi: 10.1136/jcp.2008.061010 PMID: 18818262",
+    "pages": "1-5",
+    "journal": "J Clin Pathol",
+    "volume": "62",
+    "sentences": [
+      "The rapid expansion in high-throughput biological experiments produces a number of large-sized datasets, and the majority of such datasets can be expected to be imbalanced [CITATION #b7][CITATION #b21][CITATION]."
+    ]
+  },
+  {
+    "title": "An introduction to ROC analysis",
+    "authors": "T Fawcett",
+    "year": "2006",
+    "citation": "Fawcett T. An introduction to ROC analysis. Pattern Recognit Lett. 2006; 27: 861-874.",
+    "pages": "861-874",
+    "journal": "Pattern Recognit Lett",
+    "volume": "27",
+    "sentences": [
+      "Here, we review the theoretical background of commonly used evaluation measures, specifically ROC [CITATION][CITATION #b24], PRC [CITATION #b25], concentrated ROC (CROC) [CITATION #b26], and Cost Curves (CC) [CITATION #b27].",
+      "The ROC plot shows the tradeoff between specificity and sensitivity [CITATION].",
+      "In ROC plots, classifiers with random performance show a straight diagonal line from (0, 0) to (1, 1) [CITATION], and this line can be defined as the baseline of ROC."
+    ]
+  },
+  {
+    "title": "Measuring the accuracy of diagnostic systems",
+    "authors": "J A Swets",
+    "year": "1988",
+    "citation": "Swets JA. Measuring the accuracy of diagnostic systems. Science. 1988; 240: 1285-1293. PMID: 3287615",
+    "pages": "1285-1293",
+    "journal": "Science",
+    "volume": "240",
+    "sentences": [
+      "Here, we review the theoretical background of commonly used evaluation measures, specifically ROC [CITATION #b23][CITATION], PRC [CITATION #b25], concentrated ROC (CROC) [CITATION #b26], and Cost Curves (CC) [CITATION #b27]."
+    ]
+  },
+  {
+    "title": "The relationship between Precision-Recall and ROC curves",
+    "authors": "J Davis;M Goadrich",
+    "year": "2006",
+    "citation": "Davis J, Goadrich M. The relationship between Precision-Recall and ROC curves. Proceedings of the 23rd international conference on Machine learning. 2006: 233-240.",
+    "pages": "233-240",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Here, we review the theoretical background of commonly used evaluation measures, specifically ROC [CITATION #b23][CITATION #b24], PRC [CITATION], concentrated ROC (CROC) [CITATION #b26], and Cost Curves (CC) [CITATION #b27].",
+      "ROC alternatives, PRC, CROC, and CC, are less popular than ROC, but they are known to be robust even under imbalanced datasets [CITATION][CITATION #b26][CITATION #b27].",
+      "The AUC score of PRC, denoted as AUC (PRC), is likewise effective in multiple-classifier comparisons [CITATION].",
+      "A PRC curve has a one-to-one relationship with a corresponding ROC curve [CITATION], that is, each point in any of the two curves uniquely determines a corresponding point in the other curve.",
+      "Interpolation between two points A and B in PRC space can be represented as a function y = (TP A + x) / {TP A + x + FP A + ((FP B -FP A ) \u00c3 x) / (TP B -TP A )} where x can be any value between TP A and TP B [CITATION].",
+      "AUCCalculator [CITATION] is a Java application and provides accurate PRC and ROC interpolation.",
+      "We used AUCCalculator [CITATION] and the CROC Python library [CITATION #b26] to calculate areas under the curve."
+    ]
+  },
+  {
+    "title": "A CROC stronger than ROC: measuring, visualizing and optimizing early retrieval",
+    "authors": "S J Swamidass;C A Azencott;K Daily;P Baldi",
+    "year": "2010",
+    "citation": "Swamidass SJ, Azencott CA, Daily K, Baldi P. A CROC stronger than ROC: measuring, visualizing and optimizing early retrieval. Bioinformatics. 2010; 26: 1348-1356. doi: 10.1093/bioinformatics/btq140 PMID: 20378557",
+    "pages": "1348-1356",
+    "journal": "Bioinformatics",
+    "volume": "26",
+    "sentences": [
+      "Here, we review the theoretical background of commonly used evaluation measures, specifically ROC [CITATION #b23][CITATION #b24], PRC [CITATION #b25], concentrated ROC (CROC) [CITATION], and Cost Curves (CC) [CITATION #b27].",
+      "ROC alternatives, PRC, CROC, and CC, are less popular than ROC, but they are known to be robust even under imbalanced datasets [CITATION #b25][CITATION][CITATION #b27].",
+      "The majority of recent machine-learning libraries can produce discriminant values or posterior probabilities that can be used as scores [CITATION][CITATION #b33][CITATION #b34], but not all classifiers provide such values.",
+      "The concentrated ROC (CROC) plot facilitates the evaluation of early-retrieval performance [CITATION].",
+      "Similar to ROC plots, the area under the curve (AUC) of a CROC curve is likewise effective for classifier comparison [CITATION].",
+      "ROC plotting tools normally use the average and lower bound methods [CITATION][CITATION #b39].",
+      "CROC [CITATION] is a Python package for CROC and ROC calculations.",
+      "We used AUCCalculator [CITATION #b25] and the CROC Python library [CITATION] to calculate areas under the curve."
+    ]
+  },
+  {
+    "title": "Explicitly Representing Expected Cost: An Alternative to ROC Representation",
+    "authors": "C Drummond;R Holte",
+    "year": "2000",
+    "citation": "Drummond C, Holte R. Explicitly Representing Expected Cost: An Alternative to ROC Representation. In Proceedings of the Sixth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. 2000: 198-207.",
+    "pages": "198-207",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Here, we review the theoretical background of commonly used evaluation measures, specifically ROC [CITATION #b23][CITATION #b24], PRC [CITATION #b25], concentrated ROC (CROC) [CITATION #b26], and Cost Curves (CC) [CITATION].",
+      "ROC alternatives, PRC, CROC, and CC, are less popular than ROC, but they are known to be robust even under imbalanced datasets [CITATION #b25][CITATION #b26][CITATION].",
+      "The cost curve (CC) is an alternative to the ROC plot [CITATION #b11][CITATION].",
+      "The normalized expected cost or NE[C] represents the classification performance on the y-axis [CITATION].",
+      "The probability cost function (+) or PCF (+) represents the operating points on the x-axis [CITATION].",
+      "The CC plot has the probability cost function (+) or PCF (+) on the x-axis and normalized expected cost or NE[C] on the y-axis [CITATION]."
+    ]
+  },
+  {
+    "title": "Caveats and pitfalls of ROC analysis in clinical microarray research (and how to avoid them)",
+    "authors": "D Berrar;P Flach",
+    "year": "2012",
+    "citation": "Berrar D, Flach P. Caveats and pitfalls of ROC analysis in clinical microarray research (and how to avoid them). Brief Bioinform. 2012; 13: 83-97. doi: 10.1093/bib/bbr008 PMID: 21422066",
+    "pages": "83-97",
+    "journal": "Brief Bioinform",
+    "volume": "13",
+    "sentences": [
+      "ROC is the most popular evaluation method for binary classifiers, but the interpretation of ROC curves requires a special caution when used with imbalanced datasets [CITATION]."
+    ]
+  },
+  {
+    "title": "MiRFinder: an improved approach and software implementation for genome-wide fast microRNA precursor scans",
+    "authors": "T H Huang;B Fan;M F Rothschild;Z L Hu;K Li;S H Zhao",
+    "year": "2007",
+    "citation": "Huang TH, Fan B, Rothschild MF, Hu ZL, Li K, Zhao SH. MiRFinder: an improved approach and soft- ware implementation for genome-wide fast microRNA precursor scans. BMC Bioinformatics. 2007; 8: 341. PMID: 17868480",
+    "pages": "341",
+    "journal": "BMC Bioinformatics",
+    "volume": "8",
+    "sentences": [
+      "In addition, we re-analyse classifier performance from a previously published study, on a popular microRNA gene discovery algorithm called MiRFinder [CITATION].",
+      "To calculate the scores of the miRNA discovery tools, we downloaded the source code of MiRFinder [CITATION], miPred [CITATION #b46], RNAmicro [CITATION #b47], ProMir [CITATION #b48], and RNAfold [CITATION #b49] and installed them locally.",
+      "We selected the MiRFinder study [CITATION] for re-analysis with PRC for three reasons: it uses ROC in conjunction with imbalanced data, the test data is available, and the classifier can produce scores, which is necessary for being able to create ROC and PRC plots."
+    ]
+  },
+  {
+    "title": "Diagnostic tests. 1: Sensitivity and specificity",
+    "authors": "D G Altman;J M Bland",
+    "year": "1994",
+    "citation": "Altman DG, Bland JM. Diagnostic tests. 1: Sensitivity and specificity. BMJ. 1994; 308: 1552. PMID: 8019315",
+    "pages": "1552",
+    "journal": "BMJ",
+    "volume": "308",
+    "sentences": [
+      "Sensitivity (SN) and specificity (SP) are also popular [CITATION]."
+    ]
+  },
+  {
+    "title": "Assessing the accuracy of prediction algorithms for classification: an overview",
+    "authors": "P Baldi;S Brunak;Y Chauvin;C A Andersen;H Nielsen",
+    "year": "2000",
+    "citation": "Baldi P, Brunak S, Chauvin Y, Andersen CA, Nielsen H. Assessing the accuracy of prediction algo- rithms for classification: an overview. Bioinformatics. 2000; 16: 412-424. PMID: 10871264",
+    "pages": "412-424",
+    "journal": "Bioinformatics",
+    "volume": "16",
+    "sentences": [
+      "Matthews correlation coefficient (MCC) [CITATION] and F \u03b2 score [CITATION #b32] are also useful but less frequency used.",
+      "The measures we discuss in this study are accuracy (ACC), error rate (ERR), sensitivity (SN), specificity (SP), true positive rate (TPR), recall (REC), false positive rate (FPR), precision (PREC), positive predictive value (PPV), Matthews correlation coefficient (MCC) [CITATION], and F \u03b2 score [CITATION #b32] where \u03b2 is 0.5, 1, or 2."
+    ]
+  },
+  {
+    "title": "A probabilistic interpretation of precision, recall and F-score, with implication for evaluation. Advances in Information Retrieval",
+    "authors": "C Goutte;E Gaussier",
+    "year": "2005",
+    "citation": "Goutte C, Gaussier E. A probabilistic interpretation of precision, recall and F-score, with implication for evaluation. Advances in Information Retrieval. 2005: 345-359.",
+    "pages": "345-359",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Matthews correlation coefficient (MCC) [CITATION #b31] and F \u03b2 score [CITATION] are also useful but less frequency used.",
+      "The measures we discuss in this study are accuracy (ACC), error rate (ERR), sensitivity (SN), specificity (SP), true positive rate (TPR), recall (REC), false positive rate (FPR), precision (PREC), positive predictive value (PPV), Matthews correlation coefficient (MCC) [CITATION #b31], and F \u03b2 score [CITATION] where \u03b2 is 0.5, 1, or 2."
+    ]
+  },
+  {
+    "title": "The WEKA data mining software: an update",
+    "authors": "M Hall;E Frank;G Holmes;B Pfahringer;P Reutemann;I H Witten",
+    "year": "2009",
+    "citation": "Hall M, Frank E, Holmes G, Pfahringer B, Reutemann P, Witten IH. The WEKA data mining software: an update. SIGKDD Explor. 2009; 11: 10-18.",
+    "pages": "10-18",
+    "journal": "SIGKDD Explor",
+    "volume": "11",
+    "sentences": [
+      "The majority of recent machine-learning libraries can produce discriminant values or posterior probabilities that can be used as scores [CITATION #b26][CITATION][CITATION #b34], but not all classifiers provide such values.",
+      "Several integrated machine learning and bioinformatics platforms such as WEKA [CITATION] and Bioconductor [CITATION #b41][CITATION #b42] also have basic functions or libraries for making ROC and PRC plots."
+    ]
+  },
+  {
+    "title": "Social network structure and the diffusion of misinformation: causal evidence from a field experiment",
+    "authors": [
+      "Abramowitz, J.",
+      "Nkemdirim, C.",
+      "L\u00f6fgren, K."
+    ],
+    "year": "2022",
+    "journal": "Quarterly Journal of Economics",
+    "doi": "",
+    "citation": "Abramowitz et al. (2022) Q J Econ.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A library for support vector machines",
+    "authors": "C-C Chang;C-J Lin;Libsvm",
+    "year": "2011",
+    "citation": "Chang C-C, Lin C-J. LIBSVM: A library for support vector machines. ACM Trans Intell Syst Technol. 2011; 2: 1-27.",
+    "pages": "1-27",
+    "journal": "ACM Trans Intell Syst Technol",
+    "volume": "2",
+    "sentences": [
+      "The majority of recent machine-learning libraries can produce discriminant values or posterior probabilities that can be used as scores [CITATION #b26][CITATION #b33][CITATION], but not all classifiers provide such values."
+    ]
+  },
+  {
+    "title": "The area under the ROC curve and its competitors",
+    "authors": "J Hilden",
+    "year": "1991",
+    "citation": "Hilden J. The area under the ROC curve and its competitors. Med Decis Making. 1991; 11: 95-101. PMID: 1865785",
+    "pages": "95-101",
+    "journal": "Med Decis Making",
+    "volume": "11",
+    "sentences": [
+      "2A) is useful for evaluating a fraction of the data with high-ranked instances [CITATION][CITATION #b36]."
+    ]
+  },
+  {
+    "title": "Evaluating virtual screening methods: good and bad metrics for the \"early recognition\" problem",
+    "authors": "J F Truchon;C I Bayly",
+    "year": "2007",
+    "citation": "Truchon JF, Bayly CI. Evaluating virtual screening methods: good and bad metrics for the \"early recog- nition\" problem. J Chem Inf Model. 2007; 47: 488-508. PMID: 17288412",
+    "pages": "488-508",
+    "journal": "J Chem Inf Model",
+    "volume": "47",
+    "sentences": [
+      "2A) is useful for evaluating a fraction of the data with high-ranked instances [CITATION #b35][CITATION]."
+    ]
+  },
+  {
+    "title": "Use of receiver operating characteristic (ROC) analysis to evaluate sequence matching",
+    "authors": "M Gribskov;N L Robinson",
+    "year": "1996",
+    "citation": "Gribskov M, Robinson NL. Use of receiver operating characteristic (ROC) analysis to evaluate se- quence matching. Comput Chem. 1996; 20: 25-33. PMID: 16718863",
+    "pages": "25-33",
+    "journal": "Comput Chem",
+    "volume": "20",
+    "sentences": [
+      "While a simple, single-threshold measure such as ROC 50 , which sums up true positives (TPs) until the number of false positives (FPs) reaches 50 [CITATION], can be useful in the evaluation of early-retrieval performance, the CROC plot provides a visual representation over the range of performances and with that a higher level of utility."
+    ]
+  },
+  {
+    "title": "Confidence bands for ROC curves: Methods and an empirical study. Proceedings of the First Workshop on ROC Analysis in AI",
+    "authors": "S Macskassy;F Provost",
+    "year": "2004",
+    "citation": "Macskassy S, Provost F. Confidence bands for ROC curves: Methods and an empirical study. Pro- ceedings of the First Workshop on ROC Analysis in AI. 2004.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Three practical examples of ROC characteristics that associate with interpolation are ROC convex hull [CITATION], the treatment of ties, and default values for missing scores.",
+      "The ROC convex hull gives an estimate of the best possible performance of a classifier [CITATION]."
+    ]
+  },
+  {
+    "title": "ROCR: visualizing classifier performance in R",
+    "authors": "T Sing;O Sander;N Beerenwinkel;T Lengauer",
+    "year": "2005",
+    "citation": "Sing T, Sander O, Beerenwinkel N, Lengauer T. ROCR: visualizing classifier performance in R. Bioin- formatics. 2005; 21: 3940-3941. PMID: 16096348",
+    "pages": "3940-3941",
+    "journal": "Bioinformatics",
+    "volume": "21",
+    "sentences": [
+      "ROC plotting tools normally use the average and lower bound methods [CITATION #b26][CITATION].",
+      "ROCR [CITATION] is a popular R [CITATION #b40] package for drawing a variety of evaluation plots, including ROC, PRC, and CC."
+    ]
+  },
+  {
+    "title": "R: A Language for Data Analysis and Graphics",
+    "authors": "R Ihaka;R Gentleman",
+    "year": "1996",
+    "citation": "Ihaka R, Gentleman R. R: A Language for Data Analysis and Graphics. J Comput Graph Stat. 1996; 5: 299-314.",
+    "pages": "299-314",
+    "journal": "J Comput Graph Stat",
+    "volume": "5",
+    "sentences": [
+      "ROCR [CITATION #b39] is a popular R [CITATION] package for drawing a variety of evaluation plots, including ROC, PRC, and CC."
+    ]
+  },
+  {
+    "title": "Bioconductor: open software development for computational biology and bioinformatics",
+    "authors": "R C Gentleman;V J Carey;D M Bates;B Bolstad;M Dettling;S Dudoit",
+    "year": "2004",
+    "citation": "Gentleman RC, Carey VJ, Bates DM, Bolstad B, Dettling M, Dudoit S, et al. Bioconductor: open soft- ware development for computational biology and bioinformatics. Genome Biol. 2004; 5: R80. PMID: 15461798",
+    "pages": "R80",
+    "journal": "Genome Biol",
+    "volume": "5",
+    "sentences": [
+      "Several integrated machine learning and bioinformatics platforms such as WEKA [CITATION #b33] and Bioconductor [CITATION][CITATION #b42] also have basic functions or libraries for making ROC and PRC plots."
+    ]
+  },
+  {
+    "title": "minet: A R/Bioconductor package for inferring large transcriptional networks using mutual information",
+    "authors": "P E Meyer;F Lafitte;G Bontempi",
+    "year": "2008",
+    "citation": "Meyer PE, Lafitte F, Bontempi G. minet: A R/Bioconductor package for inferring large transcriptional networks using mutual information. BMC Bioinformatics. 2008; 9: 461. doi: 10.1186/1471-2105-9-461 PMID: 18959772",
+    "pages": "1471-2105",
+    "journal": "BMC Bioinformatics",
+    "volume": "9",
+    "sentences": [
+      "Several integrated machine learning and bioinformatics platforms such as WEKA [CITATION #b33] and Bioconductor [CITATION #b41][CITATION] also have basic functions or libraries for making ROC and PRC plots."
+    ]
+  },
+  {
+    "title": "Genome-wide association studies for common diseases and complex traits",
+    "authors": "J N Hirschhorn;M J Daly",
+    "year": "2005",
+    "citation": "Hirschhorn JN, Daly MJ. Genome-wide association studies for common diseases and complex traits. Nat Rev Genet. 2005; 6: 95-108. PMID: 15716906",
+    "pages": "95-108",
+    "journal": "Nat Rev Genet",
+    "volume": "6",
+    "sentences": [
+      "We also added \"NOT Association\" to exclude Genome-Wide Association Studies (GWAS) [CITATION]."
+    ]
+  },
+  {
+    "title": "RNAz 2.0: improved noncoding RNA detection",
+    "authors": "A R Gruber;S Findeiss;S Washietl;I L Hofacker;P F Stadler",
+    "year": "2010",
+    "citation": "Gruber AR, Findeiss S, Washietl S, Hofacker IL, Stadler PF. RNAz 2.0: improved noncoding RNA de- tection. Pac Symp Biocomput. 2010: 69-79. PMID: 19908359",
+    "pages": "69-79",
+    "journal": "Pac Symp Biocomput",
+    "volume": "",
+    "sentences": [
+      "Dataset T2 uses all functional RNA candidates generated by RNAz [CITATION]."
+    ]
+  },
+  {
+    "title": "integrating microRNA annotation and deep-sequencing data",
+    "authors": "A Kozomara;S Griffiths-Jones;Mirbase",
+    "year": "2011",
+    "citation": "Kozomara A, Griffiths-Jones S. miRBase: integrating microRNA annotation and deep-sequencing data. Nucleic Acids Res. 2011; 39: D152-157. doi: 10.1093/nar/gkq1027 PMID: 21037258",
+    "pages": "152-157",
+    "journal": "Nucleic Acids Res",
+    "volume": "39",
+    "sentences": [
+      "Positive candidates are those that overlap with miRBase [CITATION] entries, and negatives are the remaining functional RNA candidates."
+    ]
+  },
+  {
+    "title": "MiPred: classification of real and pseudo microRNA precursors using random forest prediction model with combined features",
+    "authors": "P Jiang;H Wu;W Wang;W Ma;X Sun;Z Lu",
+    "year": "2007",
+    "citation": "Jiang P, Wu H, Wang W, Ma W, Sun X, Lu Z. MiPred: classification of real and pseudo microRNA pre- cursors using random forest prediction model with combined features. Nucleic Acids Res. 2007; 35: W339-344. PMID: 17553836",
+    "pages": "339-344",
+    "journal": "Nucleic Acids Res",
+    "volume": "35",
+    "sentences": [
+      "To calculate the scores of the miRNA discovery tools, we downloaded the source code of MiRFinder [CITATION #b29], miPred [CITATION], RNAmicro [CITATION #b47], ProMir [CITATION #b48], and RNAfold [CITATION #b49] and installed them locally.",
+      "From the seven additional tools evaluated in the MiRFinder study, we selected for our analysis the three tools that can produce scores and for which source code was available, namely miPred [CITATION], RNAmicro [CITATION #b47], and ProMir [CITATION #b48], and added RNAfold [CITATION #b49] as a fourth tool."
+    ]
+  },
+  {
+    "title": "Hairpins in a Haystack: recognizing microRNA precursors in comparative genomics data",
+    "authors": "J Hertel;P F Stadler",
+    "year": "2006",
+    "citation": "Hertel J, Stadler PF. Hairpins in a Haystack: recognizing microRNA precursors in comparative geno- mics data. Bioinformatics. 2006; 22: e197-202. PMID: 16873472",
+    "pages": "197-202",
+    "journal": "Bioinformatics",
+    "volume": "22",
+    "sentences": [
+      "To calculate the scores of the miRNA discovery tools, we downloaded the source code of MiRFinder [CITATION #b29], miPred [CITATION #b46], RNAmicro [CITATION], ProMir [CITATION #b48], and RNAfold [CITATION #b49] and installed them locally.",
+      "From the seven additional tools evaluated in the MiRFinder study, we selected for our analysis the three tools that can produce scores and for which source code was available, namely miPred [CITATION #b46], RNAmicro [CITATION], and ProMir [CITATION #b48], and added RNAfold [CITATION #b49] as a fourth tool.",
+      "This test set was generated from the C. elegans genome by using the method described in the RNAmicro study [CITATION]."
+    ]
+  },
+  {
+    "title": "Epigenetic regulation of microglial activation in neurodegenerative disease: mechanisms and therapeutic targets",
+    "authors": [
+      "Patel, R.",
+      "Yamamoto, K.",
+      "Ferreira, A."
+    ],
+    "year": "2020",
+    "journal": "Nature Neuroscience",
+    "doi": "",
+    "citation": "Patel et al. (2020) Nat Neurosci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A unified framework for causal inference in observational studies with time-varying confounding",
+    "authors": [
+      "Rashid, M.",
+      "Eriksson, H.",
+      "Owusu-Acheampong, D."
+    ],
+    "year": "2021",
+    "journal": "Biometrika",
+    "doi": "",
+    "citation": "Rashid et al. (2021) Biometrika.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Human microRNA prediction through a probabilistic co-learning model of sequence and structure",
+    "authors": "J W Nam;K R Shin;J Han;Y Lee;V N Kim;B T Zhang",
+    "year": "2005",
+    "citation": "Nam JW, Shin KR, Han J, Lee Y, Kim VN, Zhang BT. Human microRNA prediction through a probabilis- tic co-learning model of sequence and structure. Nucleic Acids Res. 2005; 33: 3570-3581. PMID: 15987789",
+    "pages": "3570-3581",
+    "journal": "Nucleic Acids Res",
+    "volume": "33",
+    "sentences": [
+      "To calculate the scores of the miRNA discovery tools, we downloaded the source code of MiRFinder [CITATION #b29], miPred [CITATION #b46], RNAmicro [CITATION #b47], ProMir [CITATION], and RNAfold [CITATION #b49] and installed them locally.",
+      "From the seven additional tools evaluated in the MiRFinder study, we selected for our analysis the three tools that can produce scores and for which source code was available, namely miPred [CITATION #b46], RNAmicro [CITATION #b47], and ProMir [CITATION], and added RNAfold [CITATION #b49] as a fourth tool."
+    ]
+  },
+  {
+    "title": "Fast Folding and Comparison of RNA Secondary Structures",
+    "authors": "I Hofacker;W Fontana;P Stadler;S Bonhoeffer;M Tacker;P Schuster",
+    "year": "1994",
+    "citation": "Hofacker I, Fontana W, Stadler P, Bonhoeffer S, Tacker M, Schuster P. Fast Folding and Comparison of RNA Secondary Structures. Monatsh Chem. 1994; 125: 167-188.",
+    "pages": "167-188",
+    "journal": "Monatsh Chem",
+    "volume": "125",
+    "sentences": [
+      "To calculate the scores of the miRNA discovery tools, we downloaded the source code of MiRFinder [CITATION #b29], miPred [CITATION #b46], RNAmicro [CITATION #b47], ProMir [CITATION #b48], and RNAfold [CITATION] and installed them locally.",
+      "From the seven additional tools evaluated in the MiRFinder study, we selected for our analysis the three tools that can produce scores and for which source code was available, namely miPred [CITATION #b46], RNAmicro [CITATION #b47], and ProMir [CITATION #b48], and added RNAfold [CITATION] as a fourth tool."
+    ]
+  },
+  {
+    "title": "A training algorithm for optimal margin classifiers",
+    "authors": "B Boser;I Guyon;V Vapnik",
+    "year": "1992",
+    "citation": "Boser B, Guyon I, Vapnik V. A training algorithm for optimal margin classifiers. Proceedings of the fifth annual workshop on Computational learning theory. 1992: 144-152.",
+    "pages": "144-152",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "We used the PubMed term \"((Support Vector Machine) AND Genome-wide) NOT Association\" to find studies with imbalanced datasets that use support vector machines (SVMs) [CITATION] for classification."
+    ]
+  },
+  {
+    "title": "Small Sample Size Effects in Statistical Pattern Recognition: Recommendations for Practitioners",
+    "authors": "S J Raudys;A K Jain",
+    "year": "1991",
+    "citation": "Raudys SJ, Jain AK. Small Sample Size Effects in Statistical Pattern Recognition: Recommendations for Practitioners. IEEE Trans Pattern Anal Mach Intell. 1991; 13: 252-264.",
+    "pages": "252-264",
+    "journal": "IEEE Trans Pattern Anal Mach Intell",
+    "volume": "13",
+    "sentences": [
+      "This filtering also excludes studies with small sample size (Table 4; SS; 24.1%) since the approaches to solve imbalance problems with small sized data can be different from those of medium and large sized data [CITATION #b4][CITATION]."
+    ]
+  },
+  {
+    "title": "MicroRNAs: genomics, biogenesis, mechanism, and function",
+    "authors": "D P Bartel",
+    "year": "2004",
+    "citation": "Bartel DP. MicroRNAs: genomics, biogenesis, mechanism, and function. Cell. 2004; 116: 281-297. PMID: 14744438",
+    "pages": "281-297",
+    "journal": "Cell",
+    "volume": "116",
+    "sentences": [
+      "miRNAs are a class of small RNAs that have important regulatory roles in plants and animals [CITATION], and finding genome locations of miRNA genes is a popular but challenging field in bioinformatics [CITATION #b53]."
+    ]
+  },
+  {
+    "title": "A Review of Computational Tools in microRNA",
+    "authors": "C P Gomes;J H Cho;L Hood;O L Franco;R W Pereira;K Wang",
+    "year": "2013",
+    "citation": "Gomes CP, Cho JH, Hood L, Franco OL, Pereira RW, Wang K. A Review of Computational Tools in microRNA Discovery. Front Genet. 2013; 4: 81. doi: 10.3389/fgene.2013.00081 PMID: 23720668",
+    "pages": "81",
+    "journal": "Discovery. Front Genet",
+    "volume": "4",
+    "sentences": [
+      "miRNAs are a class of small RNAs that have important regulatory roles in plants and animals [CITATION #b52], and finding genome locations of miRNA genes is a popular but challenging field in bioinformatics [CITATION]."
+    ]
+  }
+]

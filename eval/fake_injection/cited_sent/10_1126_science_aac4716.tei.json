@@ -1,0 +1,259 @@
+[
+  {
+    "title": "Registered reports: A method to increase the credibility of published results",
+    "authors": "B A Nosek;D Lakens",
+    "year": "2014",
+    "citation": "B. A. Nosek, D. Lakens, Registered reports: A method to increase the credibility of published results. Soc. Psychol. 45 , 137141 (2014).",
+    "pages": "",
+    "journal": "Soc. Psychol",
+    "volume": "45",
+    "sentences": [
+      "Direct replication is the attempt to recreate the conditions believed sufficient for obtaining a previously observed finding [CITATION][CITATION #b7], and is the means of establishing reproducibility with new data.",
+      "\u2022 We used the 2tailed recalculated pvalues, with the exception of studies [CITATION][CITATION #b14]    because the p values were onetailed (see column BU\u037e p values in DH and DT marked with yellow)."
+    ]
+  },
+  {
+    "title": "Shall we really do it again? The powerful concept of replication is neglected in the social sciences",
+    "authors": "S Schmidt",
+    "year": "2009",
+    "citation": "S. Schmidt, Shall we really do it again? The powerful concept of replication is neglected in the social sciences. Rev. Gen. Psychol. 13 , 90100 (2009).",
+    "pages": "90100",
+    "journal": "Rev. Gen. Psychol",
+    "volume": "13",
+    "sentences": [
+      "Direct replication is the attempt to recreate the conditions believed sufficient for obtaining a previously observed finding [CITATION #b6][CITATION], and is the means of establishing reproducibility with new data."
+    ]
+  },
+  {
+    "title": "ScaleFold: an efficient transformer architecture for protein tertiary structure prediction from evolutionary sequence information",
+    "authors": [
+      "Chen, W.",
+      "Korolev, I.",
+      "Bashir, M."
+    ],
+    "year": "2022",
+    "journal": "Nature Methods",
+    "doi": "",
+    "citation": "Chen et al. (2022) Nat Methods.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Why most published research findings are false",
+    "authors": "J P A Ioannidis",
+    "year": "2005",
+    "citation": "J. P. A. Ioannidis, Why most published research findings are false. PLoS Med. 2 , e124 (2005), doi: 10.1371/journal.pmed.0020124.",
+    "pages": "e124",
+    "journal": "PLoS Med",
+    "volume": "2",
+    "sentences": [
+      "Using Bayesian reasoning, Ioannidis [CITATION] estimated that publishing and analytic practices make it likely that more than half of research results are false, and therefore irreproducible.",
+      "An important qualification about this result is the possibility that the original studies have inflated effect sizes due to publication, selection, reporting, or other biases [CITATION] ."
+    ]
+  },
+  {
+    "title": "Raise standards for preclinical cancer research",
+    "authors": "C G Begley;L M Ellis",
+    "year": "2012",
+    "citation": "C. G. Begley, L. M. Ellis, Raise standards for preclinical cancer research. Nature 483 , 531533 (2012).",
+    "pages": "",
+    "journal": "Nature",
+    "volume": "483",
+    "sentences": [
+      "In cell biology, two industrial laboratories reported success replicating the original results of landmark findings in only 11% and 25% of the attempted cases [CITATION][CITATION #b10]."
+    ]
+  },
+  {
+    "title": "Believe it or not: How much can we rely on published data on potential drug targets?",
+    "authors": "F Prinz;T Schlange;K Asadullah",
+    "year": "2011",
+    "citation": "F. Prinz, T. Schlange, K. Asadullah, Believe it or not: How much can we rely on published data on potential drug targets? Nat. Rev. Drug Disc. 10 , 712713 (2011",
+    "pages": "",
+    "journal": "Nat. Rev. Drug Disc",
+    "volume": "10",
+    "sentences": [
+      "In cell biology, two industrial laboratories reported success replicating the original results of landmark findings in only 11% and 25% of the attempted cases [CITATION #b9][CITATION]."
+    ]
+  },
+  {
+    "title": "Power failure: Why small sample size undermines the reliability of neuroscience",
+    "authors": "K S Button",
+    "year": "2013",
+    "citation": "K. S. Button, et al ., Power failure: Why small sample size undermines the reliability of neuroscience. Nat. Rev. Neurosci. 14 , 112 (2013).",
+    "pages": "112",
+    "journal": "Nat. Rev. Neurosci",
+    "volume": "14",
+    "sentences": [
+      "There is good evidence that low power of research designs combined with publication bias favoring positive results over negative results produces a literature with upwardly biased effect sizes [CITATION][CITATION #b15][CITATION #b29][CITATION #b30]."
+    ]
+  },
+  {
+    "title": "Positive\" results increase down the hierarchy of the Sciences",
+    "authors": "D Fanelli",
+    "year": "2010",
+    "citation": "D. Fanelli, \"Positive\" results increase down the hierarchy of the Sciences. PLoS One 5 , e10068 (2010), doi: 10.1371/journal.pone.0010068 .",
+    "pages": "",
+    "journal": "PLoS One",
+    "volume": "5",
+    "sentences": [
+      "\u2022 We used the 2tailed recalculated pvalues, with the exception of studies [CITATION #b6][CITATION]    because the p values were onetailed (see column BU\u037e p values in DH and DT marked with yellow)."
+    ]
+  },
+  {
+    "title": "Consequences of prejudice against the null hypothesis",
+    "authors": "A G Greenwald",
+    "year": "1975",
+    "citation": "A. G. Greenwald, Consequences of prejudice against the null hypothesis. Psychol. Bull. 82 , 1-20 (1975).",
+    "pages": "1-20",
+    "journal": "Psychol. Bull",
+    "volume": "82",
+    "sentences": [
+      "A core principle of scientific progress is reproducibility [CITATION].",
+      "There is good evidence that low power of research designs combined with publication bias favoring positive results over negative results produces a literature with upwardly biased effect sizes [CITATION #b13][CITATION][CITATION #b29][CITATION #b30]."
+    ]
+  },
+  {
+    "title": "Electrocatalytic reduction of CO2 to formate using atomically dispersed copper on nitrogen-doped graphene under ambient conditions",
+    "authors": [
+      "Villanueva, P.",
+      "Hoffmann, R.",
+      "Kwame, D."
+    ],
+    "year": "2021",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "",
+    "citation": "Villanueva et al. (2021) J Am Chem Soc.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Continuously cumulating metaanalysis and replicability",
+    "authors": "S L Braver;F J Thoemmes;R Rosenthal",
+    "year": "2014",
+    "citation": "S. L. Braver, F. J. Thoemmes, R. Rosenthal, Continuously cumulating metaanalysis and replicability. Perspect. Psychol. Sci. 9 , 333342 (2014).",
+    "pages": "",
+    "journal": "",
+    "volume": "9",
+    "sentences": [
+      "A key weakness of this method is that it treats the .05 threshold as a brightline criterion between replication success and failure [CITATION].",
+      "This is often addressed by computing a metaanalytic estimate of the effect sizes by combining the original and replication studies [CITATION]."
+    ]
+  },
+  {
+    "title": "Small telescopes: Detectability and the evaluation of replication results",
+    "authors": "U Simonsohn",
+    "year": "2015",
+    "citation": "U. Simonsohn, Small telescopes: Detectability and the evaluation of replication results. Psychol. Sci. (2015), doi: 10.1177/0956797614567341.",
+    "pages": "",
+    "journal": "Psychol. Sci",
+    "volume": "",
+    "sentences": [
+      "However, the method will also indicate that a replication \"fails\" when the direction of the effect is the same but the replication effect size is significantly smaller than the original effect size [CITATION]."
+    ]
+  },
+  {
+    "title": "Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for ttests and ANOVAs",
+    "authors": "D Lakens",
+    "year": "2013",
+    "citation": "D. Lakens, Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for ttests and ANOVAs. Front. Psychol. 4 , 863 (2013), doi: 10.3389/fpsyg.2013.00863.",
+    "pages": "",
+    "journal": "Front. Psychol",
+    "volume": "4",
+    "sentences": [
+      "Of the 97 studies for which an effect size in both the original and replication study could be calculated [CITATION], 82 showed a stronger effect size in the original study (82.8%\u037e p < .001, binomial test\u037e see right panel of Figure 1)."
+    ]
+  },
+  {
+    "title": "The truth wears off: Is there something wrong with the scientific method? The New Yorker",
+    "authors": "J Lehrer",
+    "year": "2010",
+    "citation": "J. Lehrer, The truth wears off: Is there something wrong with the scientific method? The New Yorker , 5257 (2010).",
+    "pages": "5257",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Replication effects ( M = .198, SD = .255) were half the magnitude of original effects ( M = .396, SD = .196) representing a substantial decline effect [CITATION]."
+    ]
+  },
+  {
+    "title": "The statistical power of abnormalsocial psychological research: A review",
+    "authors": "J Cohen",
+    "year": "1962",
+    "citation": "J. Cohen, The statistical power of abnormalsocial psychological research: A review. J. Abnorm. Soc. Psychol. 65 , 145153 (1962).",
+    "pages": "",
+    "journal": "J. Abnorm. Soc. Psychol",
+    "volume": "65",
+    "sentences": [
+      "There is good evidence that low power of research designs combined with publication bias favoring positive results over negative results produces a literature with upwardly biased effect sizes [CITATION #b13][CITATION #b15][CITATION][CITATION #b30]."
+    ]
+  },
+  {
+    "title": "Publication decisions and their possible effects on inferences drawn from tests of significanceor vice versa",
+    "authors": "T D Sterling",
+    "year": "1959",
+    "citation": "T. D. Sterling, Publication decisions and their possible effects on inferences drawn from tests of significanceor vice versa. J. Am. Stat. Assoc. 54 , 3034 (1959).",
+    "pages": "3034",
+    "journal": "J. Am. Stat. Assoc",
+    "volume": "54",
+    "sentences": [
+      "There is good evidence that low power of research designs combined with publication bias favoring positive results over negative results produces a literature with upwardly biased effect sizes [CITATION #b13][CITATION #b15][CITATION #b29][CITATION]."
+    ]
+  },
+  {
+    "title": "Investigating variation in replicability: A \"many labs\" replication project",
+    "authors": "R Klein",
+    "year": "2014",
+    "citation": "R. Klein, et al ., Investigating variation in replicability: A \"many labs\" replication project. Soc. Psychol. 45 , 142152 (2014).",
+    "pages": "",
+    "journal": "Soc. Psychol",
+    "volume": "45",
+    "sentences": [
+      "Nonetheless, none of these efforts guarantee that unanticipated factors in the sample, setting, or procedure altered the observed effect magnitudes [CITATION].",
+      "Perhaps this, and the related Many Labs replication projects [CITATION], will spur similar efforts across disciplines such as the ongoing effort in cancer biology [CITATION #b32]."
+    ]
+  },
+  {
+    "title": "An open investigation of the reproducibility of cancer biology research",
+    "authors": "T Errington",
+    "year": "2014",
+    "citation": "T. Errington, et al ., An open investigation of the reproducibility of cancer biology research. eLife 3 , e04333 (2014), doi: 10.7554/eLife.04333.",
+    "pages": "",
+    "journal": "",
+    "volume": "3",
+    "sentences": [
+      "Perhaps this, and the related Many Labs replication projects [CITATION #b31], will spur similar efforts across disciplines such as the ongoing effort in cancer biology [CITATION]."
+    ]
+  },
+  {
+    "title": "The effect of experimenter bias on the performance of the albino rat",
+    "authors": "R Rosenthal;K L Fode",
+    "year": "1963",
+    "citation": "R. Rosenthal, K. L. Fode, The effect of experimenter bias on the performance of the albino rat. Behav. Sci . 8 , 183189 (1963).",
+    "pages": "",
+    "journal": "Behav. Sci",
+    "volume": "8",
+    "sentences": [
+      "The expectations of the experimenter can influence study outcomes [CITATION]."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  }
+]

@@ -1,0 +1,1084 @@
+[
+  {
+    "title": "Sequencing technologies -the next generation",
+    "authors": "M L Metzker",
+    "year": "2010",
+    "citation": "Metzker ML (2010) Sequencing technologies -the next generation. Nature Reviews Genetics 11: 31-46.",
+    "pages": "31-46",
+    "journal": "Nature Reviews Genetics",
+    "volume": "11",
+    "sentences": [
+      "High-throughput (HT) DNA sequencing [CITATION] is allowing major advances in microbial ecology studies [CITATION #b1], where our understanding of the presence and abundance of microbial species relies heavily on the observation of their nucleic acids in a ''culture independent'' manner [CITATION #b2]."
+    ]
+  },
+  {
+    "title": "Error-correcting barcoded primers for pyrosequencing hundreds of samples in multiplex",
+    "authors": "M Hamady;J J Walker;J K Harris;N J Gold;R Knight",
+    "year": "2008",
+    "citation": "Hamady M, Walker JJ, Harris JK, Gold NJ, Knight R (2008) Error-correcting barcoded primers for pyrosequencing hundreds of samples in multiplex. Nature Methods 5: 235-237.",
+    "pages": "235-237",
+    "journal": "Nature Methods",
+    "volume": "5",
+    "sentences": [
+      "High-throughput (HT) DNA sequencing [CITATION #b0] is allowing major advances in microbial ecology studies [CITATION], where our understanding of the presence and abundance of microbial species relies heavily on the observation of their nucleic acids in a ''culture independent'' manner [CITATION #b2].",
+      "Barcoded [CITATION] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION #b5][CITATION #b6][CITATION #b7]."
+    ]
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A molecular view of microbial diversity and the biosphere",
+    "authors": "N R Pace",
+    "year": "1997",
+    "citation": "Pace NR (1997) A molecular view of microbial diversity and the biosphere. Science 276: 734-740.",
+    "pages": "734-740",
+    "journal": "Science",
+    "volume": "276",
+    "sentences": [
+      "High-throughput (HT) DNA sequencing [CITATION #b0] is allowing major advances in microbial ecology studies [CITATION #b1], where our understanding of the presence and abundance of microbial species relies heavily on the observation of their nucleic acids in a ''culture independent'' manner [CITATION].",
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION #b5][CITATION #b6][CITATION #b7]."
+    ]
+  },
+  {
+    "title": "Accurate taxonomy assignments from 16S rRNA sequences produced by highly parallel pyrosequencers",
+    "authors": "Z Liu;T Z Desantis;G L Andersen;R Knight",
+    "year": "2008",
+    "citation": "Liu Z, DeSantis TZ, Andersen GL, Knight R (2008) Accurate taxonomy assignments from 16S rRNA sequences produced by highly parallel pyrose- quencers. Nucleic Acids Research 36: e120.",
+    "pages": "e120",
+    "journal": "Nucleic Acids Research",
+    "volume": "36",
+    "sentences": [
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION #b5][CITATION #b6][CITATION #b7]."
+    ]
+  },
+  {
+    "title": "NAST: a multiple sequence alignment server for comparative analysis of 16S rRNA genes",
+    "authors": "T Z Desantis;P Hugenholtz;K Keller;E L Brodie;N Larsen",
+    "year": "2006",
+    "citation": "DeSantis TZ, Hugenholtz P, Keller K, Brodie EL, Larsen N, et al. (2006) NAST: a multiple sequence alignment server for comparative analysis of 16S rRNA genes. Nucleic Acids Research 34: W394-9.",
+    "pages": "394-9",
+    "journal": "Nucleic Acids Research",
+    "volume": "34",
+    "sentences": [
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION] and large reference databases [CITATION #b5][CITATION #b6][CITATION #b7]."
+    ]
+  },
+  {
+    "title": "Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with",
+    "authors": "T Z Desantis;P Hugenholtz;N Larsen;M Rojas;E L Brodie",
+    "year": "2006",
+    "citation": "DeSantis TZ, Hugenholtz P, Larsen N, Rojas M, Brodie EL, et al. (2006) Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with ARB. Applied and Environ-mental Microbiology 72: 5069- 5072.",
+    "pages": "5069-5072",
+    "journal": "ARB. Applied and Environ-mental Microbiology",
+    "volume": "72",
+    "sentences": [
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION][CITATION #b6][CITATION #b7]."
+    ]
+  },
+  {
+    "title": "The Ribosomal Database Project: improved alignments and new tools for rRNA analysis",
+    "authors": "J R Cole;Q Wang;E Cardenas;J Fish;B Chai",
+    "year": "2009",
+    "citation": "Cole JR, Wang Q, Cardenas E, Fish J, Chai B, et al. (2009) The Ribosomal Database Project: improved alignments and new tools for rRNA analysis. Nucleic Acids Research 37: D141-5.",
+    "pages": "141-5",
+    "journal": "Nucleic Acids Research",
+    "volume": "37",
+    "sentences": [
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION #b5][CITATION][CITATION #b7].",
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17].",
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION #b29], and supporting common OTUclustering output formats like QIIME [CITATION #b10], mothur [CITATION #b11], the RDPpipeline [CITATION], Pyrotagger [CITATION #b13], and the biom-format [CITATION #b34].",
+      "Instead, phyloseq provides tools to read the output files of the most common OTU-clustering applications [CITATION][CITATION #b10][CITATION #b11][CITATION #b13], and represents this data in R as an instance of the main data class.",
+      "These functions are described in detail in the phyloseq manual [CITATION], and are part of a modular workflow summarized in Figure 2."
+    ]
+  },
+  {
+    "title": "SILVA: a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data compatible with ARB",
+    "authors": "E Pruesse;C Quast;K Knittel;B M Fuchs;W Ludwig",
+    "year": "2007",
+    "citation": "Pruesse E, Quast C, Knittel K, Fuchs BM, Ludwig W, et al. (2007) SILVA: a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data compatible with ARB. Nucleic Acids Research 35: 7188-7196.",
+    "pages": "7188-7196",
+    "journal": "Nucleic Acids Research",
+    "volume": "35",
+    "sentences": [
+      "Barcoded [CITATION #b1] amplicon sequencing of dozens to hundreds of samples [CITATION #b3] is a method of phylogenetic sequencing of microbiomes, often targeting the small subunit ribosomal RNA (16S rRNA) gene [CITATION #b2], for which there are also convenient tools [CITATION #b4] and large reference databases [CITATION #b5][CITATION #b6][CITATION]."
+    ]
+  },
+  {
+    "title": "CD-HIT: a fast program for clustering and comparing large sets of protein or nucleotide sequences",
+    "authors": "W Li;A Godzik",
+    "year": "2006",
+    "citation": "Li W, Godzik A (2006) CD-HIT: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22: 1658-1659.",
+    "pages": "1658-1659",
+    "journal": "Bioinformatics",
+    "volume": "22",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17]."
+    ]
+  },
+  {
+    "title": "CD-HIT Suite: a web server for clustering and comparing biological sequences",
+    "authors": "Y Huang;B Niu;Y Gao;L Fu;W Li",
+    "year": "2010",
+    "citation": "Huang Y, Niu B, Gao Y, Fu L, Li W (2010) CD-HIT Suite: a web server for clustering and comparing biological sequences. Bioinformatics 26: 680-682.",
+    "pages": "680-682",
+    "journal": "Bioinformatics",
+    "volume": "26",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17]."
+    ]
+  },
+  {
+    "title": "QIIME allows analysis of high-throughput community sequencing data",
+    "authors": "J Caporaso;J Kuczynski;J Stombaugh;K Bittinger;F Bushman",
+    "year": "2010",
+    "citation": "Caporaso J, Kuczynski J, Stombaugh J, Bittinger K, Bushman F, et al. (2010) QIIME allows analysis of high-throughput community sequencing data. Nature methods 7: 335-336.",
+    "pages": "335-336",
+    "journal": "Nature methods",
+    "volume": "7",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17].",
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION #b29], and supporting common OTUclustering output formats like QIIME [CITATION], mothur [CITATION #b11], the RDPpipeline [CITATION #b6], Pyrotagger [CITATION #b13], and the biom-format [CITATION #b34].",
+      "Instead, phyloseq provides tools to read the output files of the most common OTU-clustering applications [CITATION #b6][CITATION][CITATION #b11][CITATION #b13], and represents this data in R as an instance of the main data class.",
+      "Virtual machine image and cloud-deployed ''pipeline'' analyses [CITATION][CITATION #b14][CITATION #b17] can further increase accessibility of analyses by mitigating the need for expensive computing hardware while also avoiding complicated installation procedures.",
+      "Similarly, as an open-source package in an open language/framework (R), phyloseq can be easily included at the relevant steps in pipelines, workbenches, and GUIs now under active development (E.g. ClovR [CITATION #b14], MG-RAST [CITATION #b17], QIIME [CITATION], mcaGUI [CITATION #b84]).",
+      "This PDF file contains a table summarizing a comparison of supported capabilities between phyloseq and QIIME [CITATION], mothur [CITATION #b11], and the pair of packages OTUbase [CITATION #b33] and mcaGUI [CITATION #b84]."
+    ]
+  },
+  {
+    "title": "Introducing mothur: Open-Source, Platform-Independent, Community-Supported Software for Describing and Comparing Microbial Communities",
+    "authors": "P D Schloss;S L Westcott;T Ryabin;J R Hall;M Hartmann",
+    "year": "2009",
+    "citation": "Schloss PD, Westcott SL, Ryabin T, Hall JR, Hartmann M, et al. (2009) Introducing mothur: Open-Source, Platform-Independent, Community-Sup- ported Software for Describing and Comparing Microbial Communities. Applied and Environmental Microbiology 75: 7537-7541.",
+    "pages": "7537-7541",
+    "journal": "Applied and Environmental Microbiology",
+    "volume": "75",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17].",
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION #b29], and supporting common OTUclustering output formats like QIIME [CITATION #b10], mothur [CITATION], the RDPpipeline [CITATION #b6], Pyrotagger [CITATION #b13], and the biom-format [CITATION #b34].",
+      "Instead, phyloseq provides tools to read the output files of the most common OTU-clustering applications [CITATION #b6][CITATION #b10][CITATION][CITATION #b13], and represents this data in R as an instance of the main data class.",
+      "This PDF file contains a table summarizing a comparison of supported capabilities between phyloseq and QIIME [CITATION #b10], mothur [CITATION], and the pair of packages OTUbase [CITATION #b33] and mcaGUI [CITATION #b84]."
+    ]
+  },
+  {
+    "title": "PANGEA: pipeline for analysis of next generation amplicons",
+    "authors": "A Giongo;D B Crabb;A G Davis-Richardson;D Chauliac;J M Mobberley",
+    "year": "2010",
+    "citation": "Giongo A, Crabb DB, Davis-Richardson AG, Chauliac D, Mobberley JM, et al. (2010) PANGEA: pipeline for analysis of next generation amplicons. The ISME Journal 4: 852-861.",
+    "pages": "852-861",
+    "journal": "The ISME Journal",
+    "volume": "4",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17]."
+    ]
+  },
+  {
+    "title": "ScaleFold: an efficient transformer architecture for protein tertiary structure prediction from evolutionary sequence information",
+    "authors": [
+      "Chen, W.",
+      "Korolev, I.",
+      "Bashir, M."
+    ],
+    "year": "2022",
+    "journal": "Nature Methods",
+    "doi": "",
+    "citation": "Chen et al. (2022) Nat Methods.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "PyroTagger: A fast, accurate pipeline for analysis of rRNA amplicon pyrosequence data",
+    "authors": "V Kunin",
+    "year": "2010",
+    "citation": "Kunin V (2010) PyroTagger: A fast, accurate pipeline for analysis of rRNA amplicon pyrosequence data. The Open Journal.",
+    "pages": "",
+    "journal": "The Open Journal",
+    "volume": "",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17].",
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION #b29], and supporting common OTUclustering output formats like QIIME [CITATION #b10], mothur [CITATION #b11], the RDPpipeline [CITATION #b6], Pyrotagger [CITATION], and the biom-format [CITATION #b34].",
+      "Instead, phyloseq provides tools to read the output files of the most common OTU-clustering applications [CITATION #b6][CITATION #b10][CITATION #b11][CITATION], and represents this data in R as an instance of the main data class."
+    ]
+  },
+  {
+    "title": "CloVR: a virtual machine for automated and portable sequence analysis from the desktop using cloud computing",
+    "authors": "S V Angiuoli;M Matalka;A Gussman;K Galens;M Vangala",
+    "year": "2011",
+    "citation": "Angiuoli SV, Matalka M, Gussman A, Galens K, Vangala M, et al. (2011) CloVR: a virtual machine for automated and portable sequence analysis from the desktop using cloud computing. BMC Bioinformatics 12: 356.",
+    "pages": "356",
+    "journal": "BMC Bioinformatics",
+    "volume": "12",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION #b17].",
+      "Virtual machine image and cloud-deployed ''pipeline'' analyses [CITATION #b10][CITATION][CITATION #b17] can further increase accessibility of analyses by mitigating the need for expensive computing hardware while also avoiding complicated installation procedures.",
+      "Similarly, as an open-source package in an open language/framework (R), phyloseq can be easily included at the relevant steps in pipelines, workbenches, and GUIs now under active development (E.g. ClovR [CITATION], MG-RAST [CITATION #b17], QIIME [CITATION #b10], mcaGUI [CITATION #b84])."
+    ]
+  },
+  {
+    "title": "The metagenomics RAST server -a public resource for the automatic phylogenetic and functional analysis of metagenomes",
+    "authors": "F Meyer;D Paarmann;D' Souza;M Olson;R Glass;E M",
+    "year": "2008",
+    "citation": "Meyer F, Paarmann D, D'Souza M, Olson R, Glass EM, et al. (2008) The metagenomics RAST server -a public resource for the automatic phylogenetic and functional analysis of metagenomes. BMC Bioinformatics 9: 386.",
+    "pages": "386",
+    "journal": "BMC Bioinformatics",
+    "volume": "9",
+    "sentences": [
+      "The task of decoding the sample source of each sequence read by its barcode, followed by similarity clustering to define operational taxonomic units (OTUs, sometimes referred to as taxa) [CITATION #b8][CITATION #b9] can be performed by publicly available packages/pipelines, including QIIME [CITATION #b10], mothur [CITATION #b11], and PANGEA [CITATION #b12]; as well as virtual machine (VM) and cloud-based solutions such as the RDP pipeline [CITATION #b6], Pyrotagger [CITATION #b13], CLoVR-16S [CITATION #b14], Genboree [CITATION #b15], QIIME EC2 image [CITATION #b16], n3phele , and MG-RAST [CITATION].",
+      "Virtual machine image and cloud-deployed ''pipeline'' analyses [CITATION #b10][CITATION #b14][CITATION] can further increase accessibility of analyses by mitigating the need for expensive computing hardware while also avoiding complicated installation procedures.",
+      "Similarly, as an open-source package in an open language/framework (R), phyloseq can be easily included at the relevant steps in pipelines, workbenches, and GUIs now under active development (E.g. ClovR [CITATION #b14], MG-RAST [CITATION], QIIME [CITATION #b10], mcaGUI [CITATION #b84])."
+    ]
+  },
+  {
+    "title": "Shotgun sequencing of the human genome",
+    "authors": "J C Venter;M D Adams;G G Sutton;A R Kerlavage;H O Smith",
+    "year": "1998",
+    "citation": "Venter JC, Adams MD, Sutton GG, Kerlavage AR, Smith HO, et al. (1998) Shotgun sequencing of the human genome. Science 280: 1540-1542.",
+    "pages": "1540-1542",
+    "journal": "Science",
+    "volume": "280",
+    "sentences": [
+      "An alternative experimental method is random ''shotgun'' sequencing [CITATION][CITATION #b19] of un-amplified metagenomic DNA [CITATION #b20], in which case OTU clustering and counting is based upon one or more detectable phylogenetic markers in the metagenomic sequence fragments, using tools such as phylOTU [CITATION #b21]."
+    ]
+  },
+  {
+    "title": "Whole-genome random sequencing and assembly of Haemophilus inuenzae Rd",
+    "authors": "R Fleischmann;M Adams;O White;R Clayton;E Kirkness",
+    "year": "1995",
+    "citation": "Fleischmann R, Adams M, White O, Clayton R, Kirkness E, et al. (1995) Whole-genome random sequencing and assembly of Haemophilus inuenzae Rd. Science 269: 496-512.",
+    "pages": "496-512",
+    "journal": "Science",
+    "volume": "269",
+    "sentences": [
+      "An alternative experimental method is random ''shotgun'' sequencing [CITATION #b18][CITATION] of un-amplified metagenomic DNA [CITATION #b20], in which case OTU clustering and counting is based upon one or more detectable phylogenetic markers in the metagenomic sequence fragments, using tools such as phylOTU [CITATION #b21]."
+    ]
+  },
+  {
+    "title": "Environmental genome shotgun sequencing of the sargasso sea",
+    "authors": "J C Venter;Remington K Heidelberg;J F Halpern;A L Rusch;D",
+    "year": "2004",
+    "citation": "Venter JC, Remington K, Heidelberg JF, Halpern AL, Rusch D, et al. (2004) Environmental genome shotgun sequencing of the sargasso sea. Science 304: 66- 74.",
+    "pages": "66-74",
+    "journal": "Science",
+    "volume": "304",
+    "sentences": [
+      "An alternative experimental method is random ''shotgun'' sequencing [CITATION #b18][CITATION #b19] of un-amplified metagenomic DNA [CITATION], in which case OTU clustering and counting is based upon one or more detectable phylogenetic markers in the metagenomic sequence fragments, using tools such as phylOTU [CITATION #b21]."
+    ]
+  },
+  {
+    "title": "PhylOTU: a high-throughput procedure quantifies microbial community diversity and resolves novel taxa from metagenomic data",
+    "authors": "T J Sharpton;S J Riesenfeld;S W Kembel;J Ladau;O Dwyer;J P",
+    "year": "2011",
+    "citation": "Sharpton TJ, Riesenfeld SJ, Kembel SW, Ladau J, O'Dwyer JP, et al. (2011) PhylOTU: a high-throughput procedure quantifies microbial community diversity and resolves novel taxa from metagenomic data. PLoS computational biology 7: e1001061.",
+    "pages": "",
+    "journal": "PLoS computational biology",
+    "volume": "7",
+    "sentences": [
+      "An alternative experimental method is random ''shotgun'' sequencing [CITATION #b18][CITATION #b19] of un-amplified metagenomic DNA [CITATION #b20], in which case OTU clustering and counting is based upon one or more detectable phylogenetic markers in the metagenomic sequence fragments, using tools such as phylOTU [CITATION].",
+      "It is worth noting that bias from PCR amplification is avoided in this latter approach -at the expense of per-sequence efficiency [CITATION] and both methods are now commonly used for phylogenetic sequencing (Figure 1)."
+    ]
+  },
+  {
+    "title": "The C++ programming language",
+    "authors": "B Stroustrup",
+    "year": "2000",
+    "citation": "Stroustrup B (2000) The C++ programming language. ISBN 0201700735. Addison-Wesley Pro-fessional, 3rd edition.",
+    "publisher": "Addison-Wesley Pro-fessional",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While the computational efficiency of compiled languages like C zz [CITATION] make them appropriate for the expensive but well-defined requirements of the initial sequence-processing, the subsequent analysis is vaguely-defined and project specific; requiring instead a broad set of interactive calculations that is often less computationally expensive and for which R is well-suited [CITATION #b24]."
+    ]
+  },
+  {
+    "title": "Software for data analysis: programming with R",
+    "authors": "J Chambers",
+    "year": "2008",
+    "citation": "Chambers J (2008) Software for data analysis: programming with R. Springer Verlag.",
+    "publisher": "Springer Verlag",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "While the computational efficiency of compiled languages like C zz [CITATION #b23] make them appropriate for the expensive but well-defined requirements of the initial sequence-processing, the subsequent analysis is vaguely-defined and project specific; requiring instead a broad set of interactive calculations that is often less computationally expensive and for which R is well-suited [CITATION]."
+    ]
+  },
+  {
+    "title": "distory: Distances between trees",
+    "authors": "J Chakerian;S Holmes",
+    "year": "2010",
+    "citation": "Chakerian J, Holmes S (2010) distory: Distances between trees.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For instance, there are several dozen packages listed in the CRAN Ecology Task View [CITATION #b25], as well as distory [CITATION], phangorn [CITATION #b27], picante [CITATION #b28], and now phyloseq [CITATION #b29]."
+    ]
+  },
+  {
+    "title": "phangorn: phylogenetic analysis in R",
+    "authors": "K P Schliep",
+    "year": "2011",
+    "citation": "Schliep KP (2011) phangorn: phylogenetic analysis in R. Bioinformatics 27: 592-593.",
+    "pages": "592-593",
+    "journal": "Bioinformatics",
+    "volume": "27",
+    "sentences": [
+      "For instance, there are several dozen packages listed in the CRAN Ecology Task View [CITATION #b25], as well as distory [CITATION #b26], phangorn [CITATION], picante [CITATION #b28], and now phyloseq [CITATION #b29]."
+    ]
+  },
+  {
+    "title": "Picante: R tools for integrating phylogenies and ecology",
+    "authors": "S W Kembel;P D Cowan;M R Helmus;W K Cornwell;H Morlon",
+    "year": "2010",
+    "citation": "Kembel SW, Cowan PD, Helmus MR, Cornwell WK, Morlon H, et al. (2010) Picante: R tools for integrating phylogenies and ecology. Bioinformatics 26: 1463-1464.",
+    "pages": "1463-1464",
+    "journal": "Bioinformatics",
+    "volume": "26",
+    "sentences": [
+      "For instance, there are several dozen packages listed in the CRAN Ecology Task View [CITATION #b25], as well as distory [CITATION #b26], phangorn [CITATION #b27], picante [CITATION], and now phyloseq [CITATION #b29]."
+    ]
+  },
+  {
+    "title": "Bioconductor Package for Handling and Analysis of High-Throughput Phylogenetic Sequence Data. Pacific Symposium on Biocomputing",
+    "authors": "P J Mcmurdie;S Holmes",
+    "year": "2012",
+    "citation": "McMurdie PJ, Holmes S (2012) phyloseq: A Bioconductor Package for Handling and Analysis of High-Throughput Phylogenetic Sequence Data. Pacific Symposium on Biocomputing 17: 235-246.",
+    "pages": "235-246",
+    "journal": "",
+    "volume": "17",
+    "sentences": [
+      "For instance, there are several dozen packages listed in the CRAN Ecology Task View [CITATION #b25], as well as distory [CITATION #b26], phangorn [CITATION #b27], picante [CITATION #b28], and now phyloseq [CITATION].",
+      "In spite of all of these highly relevant tools, we recently described the lack of a satisfactory standard within Bioconductor [CITATION #b32] (or R generally) for importing the data files from the most popular OTU-clustering applications, or representing this data in a complete, integrated class [CITATION].",
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION], and supporting common OTUclustering output formats like QIIME [CITATION #b10], mothur [CITATION #b11], the RDPpipeline [CITATION #b6], Pyrotagger [CITATION #b13], and the biom-format [CITATION #b34].",
+      "It is important to note that the new phyloseq-class is a significant departure from the originally-proposed phyloseq-class structure [CITATION], which used nested multiple inheritance and a naming convention."
+    ]
+  },
+  {
+    "title": "Sweave. Dynamic generation of statistical reports using literate data analysis",
+    "authors": "W Hardle;B Ronz",
+    "year": "2002",
+    "citation": "Hardle W, Ronz B, editors (2002) Sweave. Dynamic generation of statistical reports using literate data analysis. Compstat 2002, Proceedings in Computa- tional Statistics.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Furthermore, R includes infrastructure for documenting an analysis in such a way that it can be easily reproduced and modified by peers [CITATION][CITATION #b31].",
+      "This can be achieved when phyloseq is used (possibly with other R packages) in conjunction with documentation tools such as Sweave [CITATION], knitr [CITATION #b31], iPython [CITATION #b80] Notebook invoking the rmagic extension, or '' R flavored markdown'' (RFM) [CITATION #b81].",
+      "This is a compressed .zip directory containing the main source file in Sweave .Rnw format [CITATION], as well as the additional files necessary to completely recreate the original manuscript submitted to PLoS ONE.",
+      "For the uninitiated, Sweave is a R/ LaTeX2e interleaved hybrid language format [CITATION] that allows advanced typesetting description to accompany R code and its output (including graphics)."
+    ]
+  },
+  {
+    "title": "knitr: A general-purpose package for dynamic report generation in R",
+    "authors": "Y Xie",
+    "year": "2012",
+    "citation": "Xie Y (2012) knitr: A general-purpose package for dynamic report generation in R. R package version 0.8.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Furthermore, R includes infrastructure for documenting an analysis in such a way that it can be easily reproduced and modified by peers [CITATION #b30][CITATION].",
+      "This can be achieved when phyloseq is used (possibly with other R packages) in conjunction with documentation tools such as Sweave [CITATION #b30], knitr [CITATION], iPython [CITATION #b80] Notebook invoking the rmagic extension, or '' R flavored markdown'' (RFM) [CITATION #b81]."
+    ]
+  },
+  {
+    "title": "Bioconductor: open software development for computational biology and bioinformatics",
+    "authors": "R C Gentleman;V J Carey;D M Bates;B Bolstad;M Dettling",
+    "year": "2004",
+    "citation": "Gentleman RC, Carey VJ, Bates DM, Bolstad B, Dettling M, et al. (2004) Bioconductor: open software development for computational biology and bioinformatics. Genome Biology 5: R80.",
+    "pages": "R80",
+    "journal": "Genome Biology",
+    "volume": "5",
+    "sentences": [
+      "In spite of all of these highly relevant tools, we recently described the lack of a satisfactory standard within Bioconductor [CITATION] (or R generally) for importing the data files from the most popular OTU-clustering applications, or representing this data in a complete, integrated class [CITATION #b29].",
+      "It also satisfies additional requirements of the Bioconductor Repository [CITATION], and uses a literate-programming framework based on structured in-source comments, called roxygen2 [CITATION #b38], for (re)building the R documentation (.Rd) files and the namespace specifications.",
+      "The phyloseq package is released on Bioconductor [CITATION] and developed collaboratively on GitHub [CITATION #b36]."
+    ]
+  },
+  {
+    "title": "OTUbase: an R infrastructure package for operational taxo-nomic unit data",
+    "authors": "D Beck;M Settles;J A Foster",
+    "year": "2011",
+    "citation": "Beck D, Settles M, Foster JA (2011) OTUbase: an R infrastructure package for operational taxo-nomic unit data. Bioinformatics.",
+    "pages": "",
+    "journal": "Bioinformatics",
+    "volume": "",
+    "sentences": [
+      "One Bioconductor package, OTUbase [CITATION], pursues some of these goals, but has no support for phylogenetic trees in its data class, nor support for importing data from popular/recent OTU-clustering output formats [CITATION] (File S1).",
+      "This PDF file contains a table summarizing a comparison of supported capabilities between phyloseq and QIIME [CITATION #b10], mothur [CITATION #b11], and the pair of packages OTUbase [CITATION] and mcaGUI [CITATION #b84]."
+    ]
+  },
+  {
+    "title": "The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the omeome",
+    "authors": "D Mcdonald;J C Clemente;J Kuczynski",
+    "year": "2012",
+    "citation": "McDonald D, Clemente JC, Kuczynski J (2012) The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the ome- ome. Giga Science.",
+    "pages": "",
+    "journal": "Giga Science",
+    "volume": "",
+    "sentences": [
+      "We have proposed a new Bioconductor package, phyloseq (from ''phylogenetic sequencing''), dedicated to the object-oriented representation and analysis of phylogenetic sequencing data in R [CITATION #b29], and supporting common OTUclustering output formats like QIIME [CITATION #b10], mothur [CITATION #b11], the RDPpipeline [CITATION #b6], Pyrotagger [CITATION #b13], and the biom-format [CITATION].",
+      "In this context of highly-parallel phylogenetic-sequencing experiments, reproducible research can be partially facilitated by emerging standards for experimental design [CITATION #b75] and file format [CITATION]."
+    ]
+  },
+  {
+    "title": "Package manual for phyloseq",
+    "authors": "P J Mcmurdie;S Holmes",
+    "year": "2013",
+    "citation": "McMurdie PJ, Holmes S. Package manual for phyloseq. Available: http:// bioconductor.org/packages/devel/bioc/manuals/phyloseq/man/phyloseq.pdf. Accessed 2013 March 22.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The phyloseq package includes extensive documentation in the form of function-and package-level manuals embedded in the package's documentation interface and in a PDF version on Bioconductor [CITATION], as well as extended reproducible examples on the phyloseq homepage [CITATION #b36], and open collaborative development on GitHub [CITATION #b37]."
+    ]
+  },
+  {
+    "title": "Available: joey711",
+    "authors": "Homepage The Phyloseq",
+    "year": "2013",
+    "citation": "The phyloseq Homepage. Available: joey711.github.com/phyloseq/. Accessed 2013 March 22.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The phyloseq package includes extensive documentation in the form of function-and package-level manuals embedded in the package's documentation interface and in a PDF version on Bioconductor [CITATION #b35], as well as extended reproducible examples on the phyloseq homepage [CITATION], and open collaborative development on GitHub [CITATION #b37].",
+      "The following list summarizes the key graphics-producing functions in phyloseq, which are also demonstrated in Figure 4, and in phyloseq's online tutorials [CITATION].",
+      "See additional descriptions of each function in the body text, and at the phyloseq homepage [CITATION].",
+      "The recently-described RFM format and iPython Notebook can also work very well for cases where a web-browser is a satisfactory documentation delivery medium, with RFM being our preferred source format for publishing reproducible online tutorials with embedded code and figures (HTML5) [CITATION] .",
+      "The phyloseq package is released on Bioconductor [CITATION #b32] and developed collaboratively on GitHub [CITATION]."
+    ]
+  },
+  {
+    "title": "Writing R Extensions. Comprehensive R Archive Network (CRAN)",
+    "authors": "R D Evelopment Core Team",
+    "year": "2012",
+    "citation": "R D evelopment Core Team (2012) Writing R Extensions. Comprehensive R Archive Network (CRAN).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The phyloseq package includes extensive documentation in the form of function-and package-level manuals embedded in the package's documentation interface and in a PDF version on Bioconductor [CITATION #b35], as well as extended reproducible examples on the phyloseq homepage [CITATION #b36], and open collaborative development on GitHub [CITATION].",
+      "The phyloseq package adheres to the requirements for standard R packages set forth in the official ''Writing R Extensions'' manual [CITATION]."
+    ]
+  },
+  {
+    "title": "roxygen2: In-source documentation for R",
+    "authors": "H Wickham;P Danenberg;M Eugster",
+    "year": "2013",
+    "citation": "Wickham H, Danenberg P, Eugster M. roxygen2: In-source documentation for R. R package version 2.2.2. Available: http://cran.r-project.org/web/ packages/roxygen2/index.html. Accessed 2013 March 22.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It also satisfies additional requirements of the Bioconductor Repository [CITATION #b32], and uses a literate-programming framework based on structured in-source comments, called roxygen2 [CITATION], for (re)building the R documentation (.Rd) files and the namespace specifications."
+    ]
+  },
+  {
+    "title": "Compositional dissimilarity as a robust measure of ecological distance",
+    "authors": "D Faith;P Minchin",
+    "year": "1987",
+    "citation": "Faith D, Minchin P (1987) Compositional dissimilarity as a robust measure of ecological distance. Vegetatio 69: 57-68.",
+    "pages": "57-68",
+    "journal": "",
+    "volume": "69",
+    "sentences": [
+      "Comparisons of the type and quantity of OTUs observed between microbiome samples (''beta diversity'') is often approached through the calculation of pairwise ecological distances [CITATION][CITATION #b40], and through dimensional reduction (ordination) methods."
+    ]
+  },
+  {
+    "title": "Multivariate dispersion as a measure of beta diversity",
+    "authors": "M J Anderson;K E Ellingsen;B H Mcardle",
+    "year": "2006",
+    "citation": "Anderson MJ, Ellingsen KE, McArdle BH (2006) Multivariate dispersion as a measure of beta diversity. Ecology Letters 9: 683-693.",
+    "pages": "683-693",
+    "journal": "Ecology Letters",
+    "volume": "9",
+    "sentences": [
+      "Comparisons of the type and quantity of OTUs observed between microbiome samples (''beta diversity'') is often approached through the calculation of pairwise ecological distances [CITATION #b39][CITATION], and through dimensional reduction (ordination) methods."
+    ]
+  },
+  {
+    "title": "Fast unifrac: facilitating highthroughput phylogenetic analyses of microbial communities including analysis of pyrosequencing and phylochip data",
+    "authors": "M Hamady;C Lozupone;R Knight",
+    "year": "2009",
+    "citation": "Hamady M, Lozupone C, Knight R (2009) Fast unifrac: facilitating high- throughput phylogenetic analyses of microbial communities including analysis of pyrosequencing and phylochip data. The ISME Journal.",
+    "pages": "",
+    "journal": "The ISME Journal",
+    "volume": "",
+    "sentences": [
+      "This includes a R -native, optionally-parallel implementation of Fast UniFrac [CITATION] (both weighted [CITATION #b42] and unweighted [CITATION #b43])."
+    ]
+  },
+  {
+    "title": "Quantitative and qualitative beta diversity measures lead to different insights into factors that structure microbial communities",
+    "authors": "C A Lozupone;M Hamady;S T Kelley;R Knight",
+    "year": "2007",
+    "citation": "Lozupone CA, Hamady M, Kelley ST, Knight R (2007) Quantitative and qualitative beta diversity measures lead to different insights into factors that structure microbial communities. Applied and Environmental Microbiology 73: 1576-1585.",
+    "pages": "1576-1585",
+    "journal": "Applied and Environmental Microbiology",
+    "volume": "73",
+    "sentences": [
+      "This includes a R -native, optionally-parallel implementation of Fast UniFrac [CITATION #b41] (both weighted [CITATION] and unweighted [CITATION #b43])."
+    ]
+  },
+  {
+    "title": "UniFrac: a new phylogenetic method for comparing microbial communities",
+    "authors": "C Lozupone;R Knight",
+    "year": "2005",
+    "citation": "Lozupone C, Knight R (2005) UniFrac: a new phylogenetic method for comparing microbial communities. Applied and Environmental Microbiology 71: 8228-8235.",
+    "pages": "8228-8235",
+    "journal": "Applied and Environmental Microbiology",
+    "volume": "71",
+    "sentences": [
+      "This includes a R -native, optionally-parallel implementation of Fast UniFrac [CITATION #b41] (both weighted [CITATION #b42] and unweighted [CITATION]).",
+      "For example, PCoA/MDS can be calculated on an unweighted UniFrac distance matrix [CITATION], using the following command:"
+    ]
+  },
+  {
+    "title": "Global patterns of 16S rRNA diversity at a depth of millions of sequences per sample",
+    "authors": "J G Caporaso;C L Lauber;W A Walters;D Berg-Lyons;C A Lozupone",
+    "year": "2011",
+    "citation": "Caporaso JG, Lauber CL, Walters WA, Berg-Lyons D, Lozupone CA, et al. (2011) Global patterns of 16S rRNA diversity at a depth of millions of sequences per sample. Proceedings of the National Academy of Sciences 108: 4516-4522.",
+    "pages": "4516-4522",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "volume": "108",
+    "sentences": [
+      "For example, the following would perform (unconstrained) correspondence analysis on the included ''Global Patterns'' dataset [CITATION].",
+      "They emphasize different aspects of ordination results, and the best choice depends heavily on   [CITATION] and Enterotypes [CITATION #b87] datasets are included with the phyloseq package."
+    ]
+  },
+  {
+    "title": "Theory and Applications of Correspondence Analysis",
+    "authors": "M J Greenacre",
+    "year": "1984",
+    "citation": "Greenacre MJ (1984) Theory and Applications of Correspondence Analysis. London: Academic Press.",
+    "publisher": "Academic Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "Canonical Correspondence Analysis: A new eigenvector technique for multivariate direct gradient analysis",
+    "authors": "Ter Braak;Cjf",
+    "year": "1986",
+    "citation": "Ter Braak CJF (1986) Canonical Correspondence Analysis: A new eigenvector technique for multivariate direct gradient analysis. Ecology 67: 1167.",
+    "pages": "1167",
+    "journal": "Ecology",
+    "volume": "67",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "Detrended Correspondence Analysis, an improved ordination technique",
+    "authors": "M Hill;H Gauch",
+    "year": "1980",
+    "citation": "Hill M, Gauch H (1980) Detrended Correspondence Analysis, an improved ordination technique. Vegetatio 42: 47-58.",
+    "pages": "47-58",
+    "journal": "",
+    "volume": "42",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "Redundancy analysis an alternative for canonical correlation analysis",
+    "authors": "A L Wollenberg",
+    "year": "1977",
+    "citation": "Wollenberg AL (1977) Redundancy analysis an alternative for canonical correlation analysis. Psychometrika 42: 207-219.",
+    "pages": "207-219",
+    "journal": "Psychometrika",
+    "volume": "42",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "Analysis of a complex of statistical variables into principal components",
+    "authors": "H Hotelling",
+    "year": "1933",
+    "citation": "Hotelling H (1933) Analysis of a complex of statistical variables into principal components. Journal of Educational Psychology 24: 417-441.",
+    "pages": "417-441",
+    "journal": "Journal of Educational Psychology",
+    "volume": "24",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "From dissimilarities among species to dissimilarities among communities: a double principal coordinate analysis",
+    "authors": "S Pavoine;A Dufour;D Chessel",
+    "year": "2004",
+    "citation": "Pavoine S, Dufour A, Chessel D (2004) From dissimilarities among species to dissimilarities among communities: a double principal coordinate analysis. Journal of Theoretical Biology 228: 523-537.",
+    "pages": "523-537",
+    "journal": "Journal of Theoretical Biology",
+    "volume": "228",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "Some distance properties of latent root and vector methods used in multivariate analysis",
+    "authors": "J C Gower",
+    "year": "1966",
+    "citation": "Gower JC (1966) Some distance properties of latent root and vector methods used in multivariate analysis. Biometrika 53: 325-338.",
+    "pages": "325-338",
+    "journal": "Biometrika",
+    "volume": "53",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION], and non-metric multidimensional scaling (NMDS) [CITATION #b52]."
+    ]
+  },
+  {
+    "title": "An evaluation of the relative robustness of techniques for ecological ordination",
+    "authors": "P R Minchin",
+    "year": "1987",
+    "citation": "Minchin PR (1987) An evaluation of the relative robustness of techniques for ecological ordination. Vegetatio 69: 89-107.",
+    "pages": "89-107",
+    "journal": "",
+    "volume": "69",
+    "sentences": [
+      "The ordinate function currently supports correspondence analysis (CA) [CITATION #b45], constrained correspondence analysis (CCA) [CITATION #b46], detrended correspondence analysis (DCA) [CITATION #b47], redundancy analysis (RDA) [CITATION #b48], principal components analysis (PCA) [CITATION #b49], double principle coordinates analysis (DPCoA) [CITATION #b50], multidimensional scaling (MDS, PCoA) [CITATION #b51], and non-metric multidimensional scaling (NMDS) [CITATION]."
+    ]
+  },
+  {
+    "title": "Simultaneous analysis of a sequence of paired ecological tables: A comparison of several methods",
+    "authors": "J Thioulouse",
+    "year": "2011",
+    "citation": "Thioulouse J (2011) Simultaneous analysis of a sequence of paired ecological tables: A comparison of several methods. Annals of Applied Statistics 5: 2300- 2325.",
+    "pages": "2300-2325",
+    "journal": "Annals of Applied Statistics",
+    "volume": "5",
+    "sentences": [
+      "There are many combinations of approaches possible (even extending into time-series of table pairs), and the optimal approach depends on the goals of the experiment and characteristics of the data [CITATION]."
+    ]
+  },
+  {
+    "title": "ggplot2: elegant graphics for data analysis",
+    "authors": "H Wickham",
+    "year": "2009",
+    "citation": "Wickham H (2009) ggplot2: elegant graphics for data analysis. Springer New York.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "One of the key features of the phyloseq package is a set of graphics functions custom-tailored for phylogenetic sequencing analysis, built using the ggplot2 package [CITATION].",
+      "All of these functions return a ggplot object that can be further customized/modified by tools in the ggplot2 package [CITATION]."
+    ]
+  },
+  {
+    "title": "The Grammar Of Graphics",
+    "authors": "L Wilkinson;G Wills",
+    "year": "2005",
+    "citation": "Wilkinson L, Wills G (2005) The Grammar Of Graphics. Statistics and Computing. Springer, 2nd edition.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "Statistics and Computing",
+    "volume": "",
+    "sentences": [
+      "R packages can include example data that is documented with the same help system as other package objects [CITATION].",
+      "The ggplot2 package is an implementation of Wilkinson's The Grammar of Graphics, which provides an object-oriented description of analytical graphics that emphasizes the separation of data and its mapping to aesthetic attributes [CITATION]."
+    ]
+  },
+  {
+    "title": "NeatMap-non-clustering heat map alternatives in R",
+    "authors": "S Rajaram;Y Oono",
+    "year": "2010",
+    "citation": "Rajaram S, Oono Y (2010) NeatMap-non-clustering heat map alternatives in R. BMC Bioinformatics 11: 45.",
+    "pages": "45",
+    "journal": "BMC Bioinformatics",
+    "volume": "11",
+    "sentences": [
+      "This is a special implementation of the ordination-organized heat map similar to the NeatMap package [CITATION].",
+      "Traditionally, hierarchical clustering methods have been used for this organization; but, as Rajaram and Oono recently pointed out [CITATION], this has the potential to misrepresent the data when deeply-branching elements are placed next to one another arbitrarily."
+    ]
+  },
+  {
+    "title": "The igraph software package for complex network research. InterJournal Complex Systems",
+    "authors": "G Csardi;T Nepusz",
+    "year": "2006",
+    "citation": "Csardi G, Nepusz T (2006) The igraph software package for complex network research. InterJournal Complex Systems: 1695.",
+    "pages": "1695",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This function plots an igraph-class network [CITATION] representing binary relationships between samples or OTUs."
+    ]
+  },
+  {
+    "title": "The visual display of quantitative information",
+    "authors": "E R Tufte",
+    "year": "2001",
+    "citation": "Tufte ER (2001) The visual display of quantitative information, Graphics Press, Cheshire, Con-necticut, chapter 9 Aesthetics and Technique in Data Graphical Design. 2nd edition, p. 178.",
+    "publisher": "Graphics Press",
+    "pages": "178",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Although sometimes very complicated, a wellorganized bar plot can be an effective graphical means for direct quantitative comparison of abundance values, and we note that statisticians generally discourage the use of pie-charts [CITATION]."
+    ]
+  },
+  {
+    "title": "Correspondence analysis in practice",
+    "authors": "M Greenacre",
+    "year": "2007",
+    "citation": "Greenacre M (2007) Correspondence analysis in practice. Chapman & Hall.",
+    "publisher": "Chapman & Hall",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The coordinates are derived from an unconstrained correspondence analysis [CITATION].",
+      "Methods based on chi-squared distances rather than variances deal with this by comparing weighted column profiles [CITATION], computed as relative abundances for each OTU within a column, with the overall column sum retained as a weighting factor."
+    ]
+  },
+  {
+    "title": "PCR Biases Distort Bacterial and Archaeal Community Structure in Pyrosequencing Datasets",
+    "authors": "A J Pinto;L Raskin",
+    "year": "2012",
+    "citation": "Pinto AJ, Raskin L (2012) PCR Biases Distort Bacterial and Archaeal Community Structure in Pyrosequencing Datasets. PLoS ONE 7: e43093.",
+    "pages": "",
+    "journal": "PLoS ONE",
+    "volume": "7",
+    "sentences": [
+      "However, chi-square distances are sums of squares and can be overly sensitive to outliers and sequencing ''jackpot'' effects such as those occurring in pyrosequencing data [CITATION]."
+    ]
+  },
+  {
+    "title": "Marine benthic diversity: A comparative study",
+    "authors": "H L Sanders",
+    "year": "1968",
+    "citation": "Sanders HL (1968) Marine benthic diversity: A comparative study. The American Naturalist 102: pp. 243-282.",
+    "pages": "243-282",
+    "journal": "The American Naturalist",
+    "volume": "102",
+    "sentences": [
+      "This subsampling procedure is inspired by the popular idea of rarefaction in coverage studies first invented by Sanders [CITATION], but has yet to be proved beneficial for all microbial community structures."
+    ]
+  },
+  {
+    "title": "Visualization and statisti-cal comparisons of microbial communities using R packages on phylochip data",
+    "authors": "S Holmes;A Alekseyenko;A Timme;T Nelson;P J Pasricha",
+    "year": "2011",
+    "citation": "Holmes S, Alekseyenko A, Timme A, Nelson T, Pasricha PJ, et al. (2011) Visualization and statisti-cal comparisons of microbial communities using R packages on phylochip data. Pacific Symposium on Biocomputing: 142-153.",
+    "pages": "142-153",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The parallels between gene expression microarray analyses and microbial abundance analyses was mentioned in [CITATION], which proposed several expression-inspired strategies for robustifying abundance measurements.",
+      "For instance in Holmes et al [CITATION] and Nelson et al [CITATION #b65] several phyla were shown to be significantly over-abundant in IBS rats as compared to healthy controls using this hypergeometric test."
+    ]
+  },
+  {
+    "title": "Microarray Data Analysis: from Disarray to Consolidation and Consensus",
+    "authors": "D B Allison;X Cui;G P Page;M Sabripour",
+    "year": "2006",
+    "citation": "Allison DB, Cui X, Page GP, Sabripour M (2006) Microarray Data Analysis: from Disarray to Consolidation and Consensus. Nat Rev Genet 7: 55-65.",
+    "pages": "55-65",
+    "journal": "Nat Rev Genet",
+    "volume": "7",
+    "sentences": [
+      "The phyloseq package enables easy filtering and rank transformations in the same vein as robust multi-array averaging (rma) [CITATION].",
+      "OTU abundance data through filtering, normalizing, centering, shrinking, and other transformations is a common practice and necessary for analysis [CITATION], but varies widely among researchers and is often difficult to reproduce.",
+      "To a large extent this revisits many of the same issues of reproducible research [CITATION #b77][CITATION #b78][CITATION #b79] that have been addressed over the last decade for the analysis of microarray data [CITATION], and for which there are many proven tools already available in Bioconductor/R."
+    ]
+  },
+  {
+    "title": "Statistical analysis challenges in the microbiome",
+    "authors": "S Holmes;P J Mcmurdie",
+    "year": "2012",
+    "citation": "Holmes S, McMurdie PJ (2012) Statistical analysis challenges in the microbiome. To appear PNAS: The Social Biology of Microbial Communities forum on Microbial Threats.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "We provide further details in (McMurdie and Holmes, [CITATION])."
+    ]
+  },
+  {
+    "title": "Shifts in luminal and mucosal microbial communities associated with an experimental model of irritable bowel syndrome",
+    "authors": "T Nelson;P Pasricha;S Holmes;A Spormann",
+    "year": "2010",
+    "citation": "Nelson T, Pasricha P, Holmes S, Spormann A (2010) Shifts in luminal and mucosal microbial communities associated with an experimental model of irritable bowel syndrome. Gastroenterology.",
+    "pages": "",
+    "journal": "Gastroenterology",
+    "volume": "",
+    "sentences": [
+      "For instance in Holmes et al [CITATION #b62] and Nelson et al [CITATION] several phyla were shown to be significantly over-abundant in IBS rats as compared to healthy controls using this hypergeometric test."
+    ]
+  },
+  {
+    "title": "Longitudinal assessment of systemic inflammatory markers in post-acute COVID-19 sequelae: a multicentre cohort study",
+    "authors": [
+      "Harrison, M.",
+      "Okonkwo, T.",
+      "Lindstr\u00f6m, E."
+    ],
+    "year": "2021",
+    "journal": "The Lancet Infectious Diseases",
+    "doi": "",
+    "citation": "Harrison et al. (2021) Lancet Infect Dis.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "An introduction to the bootstrap",
+    "authors": "B Efron;R Tibshirani",
+    "year": "1993",
+    "citation": "Efron B, Tibshirani R (1993) An introduction to the bootstrap, volume 57. Chapman & Hall/CRC.",
+    "publisher": "Chapman & Hall/CRC",
+    "pages": "",
+    "journal": "",
+    "volume": "57",
+    "sentences": [
+      "For instance the bootstrap uses many thousands of analyses of resampled data to address problems such as statistical stability or bias estimation [CITATION], and can even provide confidence regions [CITATION] for nonstandard parameters, such as phylogenetic trees [CITATION #b67]."
+    ]
+  },
+  {
+    "title": "Bootstrapping phylogenetic trees: theory and methods",
+    "authors": "S Holmes",
+    "year": "2003",
+    "citation": "Holmes S (2003) Bootstrapping phylogenetic trees: theory and methods. Statistical Science : 241-255.",
+    "pages": "241-255",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For instance the bootstrap uses many thousands of analyses of resampled data to address problems such as statistical stability or bias estimation [CITATION #b66], and can even provide confidence regions [CITATION #b66] for nonstandard parameters, such as phylogenetic trees [CITATION]."
+    ]
+  },
+  {
+    "title": "Resampling-Based Multiple Testing. Examples and Methods for P-Value Adjustment",
+    "authors": "P H Westfall;S S Young",
+    "year": "1993",
+    "citation": "Westfall PH, Young SS (1993) Resampling-Based Multiple Testing. Examples and Methods for P-Value Adjustment. Wiley-Interscience.",
+    "publisher": "Wiley-Interscience",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For instance, Westfall and Young's permutation-based minP procedure controls the FWER [CITATION] and is implemented within the multtest package [CITATION #b69]."
+    ]
+  },
+  {
+    "title": "multtest: Resamplingbased multiple hypothesis testing",
+    "authors": "K S Pollard;H N Gilbert;Y Ge;S Taylor;S Dudoit",
+    "year": "2010",
+    "citation": "Pollard KS, Gilbert HN, Ge Y, Taylor S, Dudoit S (2010) multtest: Resampling- based multiple hypothesis testing. R package version 2.4.0.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For instance, Westfall and Young's permutation-based minP procedure controls the FWER [CITATION #b68] and is implemented within the multtest package [CITATION]."
+    ]
+  },
+  {
+    "title": "Why most published research findings are false",
+    "authors": "Jpa Ioannidis",
+    "year": "2005",
+    "citation": "Ioannidis JPA (2005) Why most published research findings are false. PLoS medicine 2: e124.",
+    "pages": "e124",
+    "journal": "PLoS medicine",
+    "volume": "2",
+    "sentences": [
+      "In exploratory statistical work it is easy to produce biased results [CITATION] through poorly chosen metrics or tests, a failure to properly control for multiple inferences, undisclosed data ''pruning'', and probably many other means."
+    ]
+  },
+  {
+    "title": "Computational science: Error, why scientific programming does not compute",
+    "authors": "Z Merali",
+    "year": "2010",
+    "citation": "Merali Z (2010) Computational science: Error, why scientific programming does not compute. Nature 467: 775-777.",
+    "pages": "775-777",
+    "journal": "Nature",
+    "volume": "467",
+    "sentences": [
+      "Although not commonly required [CITATION][CITATION #b72][CITATION #b73], an important defense against biased (or poorly-supported) findings is a higher standard for reproducibility in published research [CITATION #b74], in which journal articles are accompanied by sufficient data and software such that all presented analyses, tables, and figures can be reproduced exactly and with minimal effort [CITATION #b72]."
+    ]
+  },
+  {
+    "title": "Reproducible research in computational science",
+    "authors": "R D Peng",
+    "year": "2011",
+    "citation": "Peng RD (2011) Reproducible research in computational science. Science 334: 1226-1227.",
+    "pages": "1226-1227",
+    "journal": "Science",
+    "volume": "334",
+    "sentences": [
+      "Although not commonly required [CITATION #b71][CITATION][CITATION #b73], an important defense against biased (or poorly-supported) findings is a higher standard for reproducibility in published research [CITATION #b74], in which journal articles are accompanied by sufficient data and software such that all presented analyses, tables, and figures can be reproduced exactly and with minimal effort [CITATION].",
+      "However, the use of publicly available ''pipeline'' tools does not fully meet the reproducibility standard unless accompanied with the complete code and data used in the analysis being published [CITATION]."
+    ]
+  },
+  {
+    "title": "The case for open computer programs",
+    "authors": "D C Ince;L Hatton;J Graham-Cumming",
+    "year": "2012",
+    "citation": "Ince DC, Hatton L, Graham-Cumming J (2012) The case for open computer programs. Nature 482: 485-488.",
+    "pages": "485-488",
+    "journal": "Nature",
+    "volume": "482",
+    "sentences": [
+      "Although not commonly required [CITATION #b71][CITATION #b72][CITATION], an important defense against biased (or poorly-supported) findings is a higher standard for reproducibility in published research [CITATION #b74], in which journal articles are accompanied by sufficient data and software such that all presented analyses, tables, and figures can be reproduced exactly and with minimal effort [CITATION #b72]."
+    ]
+  },
+  {
+    "title": "Reproducible Research Concepts and Tools for Cancer Bioinformatics",
+    "authors": "V J Carey;V Stodden",
+    "year": "2010",
+    "citation": "Carey VJ, Stodden V (2010) Reproducible Research Concepts and Tools for Cancer Bioinformatics. In: Ochs MF, Casagrande JT, Davuluri RV, editors, Biomedical Informatics for Cancer Research, Boston, MA: Springer US. pp. 149-175.",
+    "publisher": "Springer US",
+    "pages": "149-175",
+    "journal": "Biomedical Informatics for Cancer Research",
+    "volume": "",
+    "sentences": [
+      "Although not commonly required [CITATION #b71][CITATION #b72][CITATION #b73], an important defense against biased (or poorly-supported) findings is a higher standard for reproducibility in published research [CITATION], in which journal articles are accompanied by sufficient data and software such that all presented analyses, tables, and figures can be reproduced exactly and with minimal effort [CITATION #b72].",
+      "The Sweaveformat approach is part of the reproducible research standards strongly encouraged by the journal Biostatistics [CITATION #b78], as well as many disciplines related to statistics and bioinformatics [CITATION][CITATION #b82]."
+    ]
+  },
+  {
+    "title": "Unlocking the potential of metage-nomics through replicated experimental design",
+    "authors": "R Knight;J Jansson;D Field;N Fierer;N Desai",
+    "year": "2012",
+    "citation": "Knight R, Jansson J, Field D, Fierer N, Desai N, et al. (2012) Unlocking the potential of metage-nomics through replicated experimental design. Nature biotechnology 30: 513-520.",
+    "pages": "513-520",
+    "journal": "Nature biotechnology",
+    "volume": "30",
+    "sentences": [
+      "In this context of highly-parallel phylogenetic-sequencing experiments, reproducible research can be partially facilitated by emerging standards for experimental design [CITATION] and file format [CITATION #b34]."
+    ]
+  },
+  {
+    "title": "An invitation to reproducible computational research",
+    "authors": "D L Donoho",
+    "year": "2010",
+    "citation": "Donoho DL (2010) An invitation to reproducible computational research. Biostatistics (Oxford, England) 11: 385-388.",
+    "pages": "385-388",
+    "journal": "Biostatistics",
+    "volume": "11",
+    "sentences": [
+      "To a large extent this revisits many of the same issues of reproducible research [CITATION][CITATION #b78][CITATION #b79] that have been addressed over the last decade for the analysis of microarray data [CITATION #b63], and for which there are many proven tools already available in Bioconductor/R."
+    ]
+  },
+  {
+    "title": "Reproducible research and Biostatistics",
+    "authors": "R D Peng",
+    "year": "2009",
+    "citation": "Peng RD (2009) Reproducible research and Biostatistics. Biostatistics (Oxford, England) 10: 405-408.",
+    "pages": "405-408",
+    "journal": "",
+    "volume": "10",
+    "sentences": [
+      "To a large extent this revisits many of the same issues of reproducible research [CITATION #b77][CITATION][CITATION #b79] that have been addressed over the last decade for the analysis of microarray data [CITATION #b63], and for which there are many proven tools already available in Bioconductor/R.",
+      "The Sweaveformat approach is part of the reproducible research standards strongly encouraged by the journal Biostatistics [CITATION], as well as many disciplines related to statistics and bioinformatics [CITATION #b74][CITATION #b82]."
+    ]
+  },
+  {
+    "title": "Statistical analyses and reproducible research",
+    "authors": "R Gentleman;Temple Lang;D",
+    "year": "2004",
+    "citation": "Gentleman R, Temple Lang D (2004) Statistical analyses and reproducible research. Bioconductor Project Working Papers : 2.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "To a large extent this revisits many of the same issues of reproducible research [CITATION #b77][CITATION #b78][CITATION] that have been addressed over the last decade for the analysis of microarray data [CITATION #b63], and for which there are many proven tools already available in Bioconductor/R."
+    ]
+  },
+  {
+    "title": "IPython: a System for Interactive Scientific Computing",
+    "authors": "F Pe \u00b4rez;B E Granger",
+    "year": "2007",
+    "citation": "Pe \u00b4rez F, Granger BE (2007) IPython: a System for Interactive Scientific Computing. Comput Sci Eng 9: 21-29.",
+    "pages": "21-29",
+    "journal": "Comput Sci Eng",
+    "volume": "9",
+    "sentences": [
+      "This can be achieved when phyloseq is used (possibly with other R packages) in conjunction with documentation tools such as Sweave [CITATION #b30], knitr [CITATION #b31], iPython [CITATION] Notebook invoking the rmagic extension, or '' R flavored markdown'' (RFM) [CITATION #b81]."
+    ]
+  },
+  {
+    "title": "The markdown package: Markdown rendering for R. R package version 0",
+    "authors": "J Allaire;J Horner;V Marti;N Porte",
+    "year": "2013",
+    "citation": "Allaire J, Horner J, Marti V, Porte N The markdown package: Markdown rendering for R. R package version 0.5.4. Available: http://CRAN.R-project. org/package = markdown. Accessed 2013 March 22.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This can be achieved when phyloseq is used (possibly with other R packages) in conjunction with documentation tools such as Sweave [CITATION #b30], knitr [CITATION #b31], iPython [CITATION #b80] Notebook invoking the rmagic extension, or '' R flavored markdown'' (RFM) [CITATION]."
+    ]
+  },
+  {
+    "title": "Reproducible research: a bioinformatics case study. Statistical applications in genetics and molecular biology 4: Article2",
+    "authors": "R Gentleman",
+    "year": "2005",
+    "citation": "Gentleman R (2005) Reproducible research: a bioinformatics case study. Statistical applications in genetics and molecular biology 4: Article2.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The Sweaveformat approach is part of the reproducible research standards strongly encouraged by the journal Biostatistics [CITATION #b78], as well as many disciplines related to statistics and bioinformatics [CITATION #b74][CITATION]."
+    ]
+  },
+  {
+    "title": "Publish your computer code: it is good enough",
+    "authors": "N Barnes",
+    "year": "2010",
+    "citation": "Barnes N (2010) Publish your computer code: it is good enough. Nature 467: 753.",
+    "pages": "753",
+    "journal": "Nature",
+    "volume": "467",
+    "sentences": [
+      "We emphasize that the benefits of reproducibility are not contingent on ''pretty'' code [CITATION], and we encourage researchers in the field to make their code available even if they feel insecure about its programmatic elegance."
+    ]
+  },
+  {
+    "title": "mcaGUI: microbial commu-nity analysis R-Graphical User Interface (GUI)",
+    "authors": "W K Copeland;V Krishnan;D Beck;M Settles;J A Foster",
+    "year": "2012",
+    "citation": "Copeland WK, Krishnan V, Beck D, Settles M, Foster JA, et al. (2012) mcaGUI: microbial commu-nity analysis R-Graphical User Interface (GUI). Bioinfor- matics (Oxford, England) 28: 2198-2199.",
+    "pages": "2198-2199",
+    "journal": "",
+    "volume": "28",
+    "sentences": [
+      "Similarly, as an open-source package in an open language/framework (R), phyloseq can be easily included at the relevant steps in pipelines, workbenches, and GUIs now under active development (E.g. ClovR [CITATION #b14], MG-RAST [CITATION #b17], QIIME [CITATION #b10], mcaGUI [CITATION]).",
+      "This PDF file contains a table summarizing a comparison of supported capabilities between phyloseq and QIIME [CITATION #b10], mothur [CITATION #b11], and the pair of packages OTUbase [CITATION #b33] and mcaGUI [CITATION]."
+    ]
+  },
+  {
+    "title": "Enterotypes of the human gut microbiome",
+    "authors": "M Arumugam;J Raes;E Pelletier;Le Paslier;D Yamada;T",
+    "year": "2011",
+    "citation": "Arumugam M, Raes J, Pelletier E, Le Paslier D, Yamada T, et al. (2011) Enterotypes of the human gut microbiome. Nature 473: 174-180.",
+    "pages": "174-180",
+    "journal": "Nature",
+    "volume": "473",
+    "sentences": [
+      "They emphasize different aspects of ordination results, and the best choice depends heavily on   [CITATION #b44] and Enterotypes [CITATION] datasets are included with the phyloseq package.",
+      "Generally speaking, the preprocessing of The original ''Enterotypes'' dataset [CITATION] (included in phyloseq) with OTU-wise testing of enterotype groups.",
+      "Not surprisingly, Prevotella and Bacteroides top the list, as they were major components of the ''Enterotypes'' classification described in the original article [CITATION]."
+    ]
+  }
+]

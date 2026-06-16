@@ -1,0 +1,344 @@
+[
+  {
+    "title": "In silico protein interaction screening uncovers DONSON's role in replication initiation",
+    "authors": "Y Lim",
+    "year": "2023",
+    "citation": "Lim, Y. et al. In silico protein interaction screening uncovers DONSON's role in replication initiation. Science 381, eadi3448 (2023).",
+    "pages": "3448",
+    "journal": "Science",
+    "volume": "381",
+    "sentences": [
+      "Accurate models of biological complexes are critical to our understanding of cellular functions and for the rational design of therapeutics [CITATION][CITATION #b1][CITATION #b5] ."
+    ]
+  },
+  {
+    "title": "AI-based structure prediction empowers integrative structural analysis of human nuclear pores",
+    "authors": "S Mosalaganti",
+    "year": "2022",
+    "citation": "Mosalaganti, S. et al. AI-based structure prediction empowers integrative structural analysis of human nuclear pores. Science 376, eabm9506 (2022).",
+    "pages": "9506",
+    "journal": "Science",
+    "volume": "376",
+    "sentences": [
+      "Accurate models of biological complexes are critical to our understanding of cellular functions and for the rational design of therapeutics [CITATION #b0][CITATION][CITATION #b5] ."
+    ]
+  },
+  {
+    "title": "Protein complex prediction with AlphaFold-Multimer",
+    "authors": "R Evans",
+    "year": "2022",
+    "citation": "Evans, R. et al. Protein complex prediction with AlphaFold-Multimer. bioRxiv 2021.10.04.463034 (2022) doi:10.1101/2021.10.04.463034.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Almost immediately after AlphaFold became available, it was shown that simple input modifications would enable surprisingly accurate protein interaction predictions [CITATION #b9][CITATION #b10] and that training AlphaFold 2 specifically for protein interaction prediction yielded a highly accurate system [CITATION] .",
+      "To counteract this effect, we use a novel cross-distillation method where we enrich the training data with AlphaFold-Multimer v2.3 [CITATION] predicted structures."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+    "authors": "Z Lin",
+    "year": "2023",
+    "citation": "Lin, Z. et al. Evolutionary-scale prediction of atomic-level protein structure with a language model. Science 379, 1123-1130 (2023).",
+    "pages": "1123-1130",
+    "journal": "Science",
+    "volume": "379",
+    "sentences": [
+      "Enormous progress has been achieved in protein structure prediction with the development of AlphaFold 1 , and the field has grown tremendously with a number of later methods that build on the ideas and techniques of AlphaFold 2 [CITATION][CITATION #b7][CITATION #b8] ."
+    ]
+  },
+  {
+    "title": "Accurate prediction of protein structures and interactions using a three-track neural network",
+    "authors": "M Baek",
+    "year": "2021",
+    "citation": "Baek, M. et al. Accurate prediction of protein structures and interactions using a three-track neural network. Science (2021) doi:10.1126/science.abj8754.",
+    "pages": "",
+    "journal": "Science",
+    "volume": "",
+    "sentences": [
+      "Enormous progress has been achieved in protein structure prediction with the development of AlphaFold 1 , and the field has grown tremendously with a number of later methods that build on the ideas and techniques of AlphaFold 2 [CITATION #b6][CITATION][CITATION #b8] ."
+    ]
+  },
+  {
+    "title": "Improved prediction of protein-protein interactions using AlphaFold2",
+    "authors": "P Bryant;G Pozzati;A Elofsson",
+    "year": "2022",
+    "citation": "Bryant, P., Pozzati, G. & Elofsson, A. Improved prediction of protein-protein interactions using AlphaFold2. Nat. Commun. 13, 1-11 (2022).",
+    "pages": "1-11",
+    "journal": "Nat. Commun",
+    "volume": "13",
+    "sentences": [
+      "Almost immediately after AlphaFold became available, it was shown that simple input modifications would enable surprisingly accurate protein interaction predictions [CITATION][CITATION #b10] and that training AlphaFold 2 specifically for protein interaction prediction yielded a highly accurate system [CITATION #b4] ."
+    ]
+  },
+  {
+    "title": "State-specific protein-ligand complex structure prediction with a multi-scale deep generative model",
+    "authors": "Z Qiao;W Nie;A Vahdat;T F Miller;A Iii & Anandkumar",
+    "year": "2022",
+    "citation": "Qiao, Z., Nie, W., Vahdat, A., Miller, T. F., III & Anandkumar, A. State-specific protein-ligand complex structure prediction with a multi-scale deep generative model. arXiv preprint arXiv:2209.15171 (2022) doi:10.48550/arXiv.2209.15171.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "End-to-end protein-ligand complex structure generation with diffusion-based generative models",
+    "authors": "S Nakata;Y Mori;S Tanaka",
+    "year": "2023",
+    "citation": "Nakata, S., Mori, Y. & Tanaka, S. End-to-end protein-ligand complex structure generation with diffusion-based generative models. BMC Bioinformatics 24, 1-18 (2023).",
+    "pages": "1-18",
+    "journal": "BMC Bioinformatics",
+    "volume": "24",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Accurate prediction of protein-nucleic acid complexes using RoseTTAFoldNA",
+    "authors": "M Baek",
+    "year": "2023",
+    "citation": "Baek, M. et al. Accurate prediction of protein-nucleic acid complexes using RoseTTAFoldNA. Nat. Methods 1-5 (2023).",
+    "pages": "1-5",
+    "journal": "Nat. Methods",
+    "volume": "1",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] .",
+      "We also evaluated AF3 performance on the 10 publicly available CASP15 RNA targets: We achieve a higher average performance than RoseTTAFold2NA and AIchemy_RNA 27 (the best AI-based submission in CASP15 [CITATION][CITATION #b23] ) on the respective common subsets of our and their predictions (see Extended Data Fig.",
+      "For benchmarking performance on nucleic acid structure prediction, we report baseline comparisons to an existing machine learning system for protein-nucleic acid and RNA tertiary structure prediction, RoseTTAFold2NA [CITATION] ."
+    ]
+  },
+  {
+    "title": "Geometric deep learning of RNA structure",
+    "authors": "R J L Townshend",
+    "year": "2021",
+    "citation": "Townshend, R. J. L. et al. Geometric deep learning of RNA structure. Science 373, 1047-1051 (2021).",
+    "pages": "1047-1051",
+    "journal": "Science",
+    "volume": "373",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Epigenetic regulation of microglial activation in neurodegenerative disease: mechanisms and therapeutic targets",
+    "authors": [
+      "Patel, R.",
+      "Yamamoto, K.",
+      "Ferreira, A."
+    ],
+    "year": "2020",
+    "journal": "Nature Neuroscience",
+    "doi": "",
+    "citation": "Patel et al. (2020) Nat Neurosci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "InteractionGraphNet: A Novel and Efficient Deep Graph Representation Learning Framework for Accurate Protein-Ligand Interaction Predictions",
+    "authors": "D Jiang",
+    "year": "2021",
+    "citation": "Jiang, D. et al. InteractionGraphNet: A Novel and Efficient Deep Graph Representation Learning Framework for Accurate Protein-Ligand Interaction Predictions. J. Med. Chem. 64, (2021).",
+    "pages": "",
+    "journal": "J. Med. Chem",
+    "volume": "64",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Predicting Protein-Ligand Docking Structure with Graph Neural Network",
+    "authors": "H Jiang",
+    "year": "2022",
+    "citation": "Jiang, H. et al. Predicting Protein-Ligand Docking Structure with Graph Neural Network. J. Chem. Inf. Model. (2022) doi:10.1021/acs.jcim.2c00127.",
+    "pages": "",
+    "journal": "J. Chem. Inf. Model",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Diffusion Steps, Twists, and Turns for Molecular Docking",
+    "authors": "G Corso;H St\u00e4rk;B Jing;R Barzilay;T Jaakkola;Diffdock",
+    "year": "2022",
+    "citation": "Corso, G., St\u00e4rk, H., Jing, B., Barzilay, R. & Jaakkola, T. DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking. arXiv preprint arXiv:2210.01776 (2022) doi:10.48550/arXiv.2210.01776.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Geometric Deep Learning for Drug Binding Structure Prediction",
+    "authors": "H St\u00e4rk;O.-E Ganea;L Pattanaik;R Barzilay;T Jaakkola;Equibind",
+    "year": "2022",
+    "citation": "St\u00e4rk, H., Ganea, O.-E., Pattanaik, L., Barzilay, R. & Jaakkola, T. EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction. arXiv preprint arXiv:2202.05146 (2022) doi:10.48550/arXiv.2202.05146.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "DeepDock: Enhancing Ligand-protein Interaction Prediction by a Combination of Ligand and Structure Information",
+    "authors": "Z Liao",
+    "year": "2019",
+    "citation": "Liao, Z. et al. DeepDock: Enhancing Ligand-protein Interaction Prediction by a Combination of Ligand and Structure Information. 2019 IEEE International Conference on Bioinformatics and Structure Prediction. (2022).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] .",
+      "Separately, we also train a version of AlphaFold 3 that receives the \"pocket information\" as used in some recent deep learning work [CITATION] (Extended Data Fig."
+    ]
+  },
+  {
+    "title": "Pushing the limits of what is achievable in protein-DNA docking: benchmarking HADDOCK's performance",
+    "authors": "M Van Dijk;A M J Bonvin",
+    "year": "2010",
+    "citation": "van Dijk, M. & Bonvin, A. M. J. J. Pushing the limits of what is achievable in protein-DNA docking: benchmarking HADDOCK's performance. Nucleic Acids Res. 38, 5634-5647 (2010).",
+    "pages": "5634-5647",
+    "journal": "Nucleic Acids Res",
+    "volume": "38",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Generalized biomolecular modeling and design with RoseTTAFold All-Atom",
+    "authors": "R Krishna",
+    "year": "2024",
+    "citation": "Krishna, R. et al. Generalized biomolecular modeling and design with RoseTTAFold All-Atom. Science 384, eadl2528 (2024).",
+    "pages": "2528",
+    "journal": "Science",
+    "volume": "384",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION #b23] .",
+      "Note that we do not compare directly to RoseTTAFold All-Atom, but benchmarks indicate that RoseTTAFold All-Atom is comparable to slightly less accurate than RoseTTAFold2NA for nucleic acid predictions [CITATION] ."
+    ]
+  },
+  {
+    "title": "PoseBusters: AI-based docking methods fail to generate physically valid poses or generalise to novel sequences",
+    "authors": "M Buttenschoen;G M Morris;C M Deane",
+    "year": "2023",
+    "citation": "Buttenschoen, M., Morris, G. M. & Deane, C. M. PoseBusters: AI-based docking methods fail to generate physically valid poses or generalise to novel sequences. arXiv preprint arXiv:2308.05777 (2023) doi:10.48550/arXiv.2308.05777.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Assessment of three-dimensional RNA structure prediction in CASP15",
+    "authors": "R Das",
+    "year": "2023",
+    "citation": "Das, R. et al. Assessment of three-dimensional RNA structure prediction in CASP15. Proteins 91, (2023).",
+    "pages": "",
+    "journal": "Proteins",
+    "volume": "91",
+    "sentences": [
+      "A wide range of predictors for various specific interaction types have been developed [CITATION #b11][CITATION #b12][CITATION #b13][CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19]   [CITATION #b20] , as well as one generalist method developed concurrently with the present work [CITATION #b21] , but the accuracy of such deep learning attempts has been mixed and often below that of physics-inspired methods [CITATION #b22][CITATION] .",
+      "We also evaluated AF3 performance on the 10 publicly available CASP15 RNA targets: We achieve a higher average performance than RoseTTAFold2NA and AIchemy_RNA 27 (the best AI-based submission in CASP15 [CITATION #b13][CITATION] ) on the respective common subsets of our and their predictions (see Extended Data Fig."
+    ]
+  },
+  {
+    "title": "The Protein Data Bank",
+    "authors": "H M Berman",
+    "year": "2000",
+    "citation": "Berman, H. M. et al. The Protein Data Bank. Nucleic Acids Res. 28, 235-242 (2000).",
+    "pages": "235-242",
+    "journal": "Nucleic Acids Res",
+    "volume": "28",
+    "sentences": [
+      "Here, we present AlphaFold 3 (AF3), a model that is capable of high accuracy prediction of complexes containing nearly all molecular types present in the Protein Data Bank [CITATION] (PDB) (Fig."
+    ]
+  },
+  {
+    "title": "Elucidating the Design Space of Diffusion-Based Generative Models",
+    "authors": "T Karras;M Aittala;T Aila;S Laine",
+    "year": "2022",
+    "citation": "Karras, T., Aittala, M., Aila, T. & Laine, S. Elucidating the Design Space of Diffusion-Based Generative Models. arXiv preprint arXiv:2206.00364 (2022) doi:10.48550/arXiv.2206.00364.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "We use a relatively standard diffusion approach [CITATION] in which the diffusion model is trained to receive \"noised\" atomic coordinates then predict the true coordinates."
+    ]
+  },
+  {
+    "title": "Generating Molecular Conformer Fields",
+    "authors": "Y Wang;A A Elhag;N Jaitly;J M Susskind;M A Bautista",
+    "year": "2023",
+    "citation": "Wang, Y., Elhag, A. A., Jaitly, N., Susskind, J. M. & Bautista, M. A. Generating Molecular Conformer Fields. arXiv preprint arXiv:2311.17932 (2023) doi:10.48550/arXiv.2311.17932.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Similarly to some recent work [CITATION] , we find that no invariance or equivariance with respect to global rotations and translation of the molecule are required in the architecture and so we omit them to simplify the machine learning architecture."
+    ]
+  },
+  {
+    "title": "Survey of Hallucination in Natural Language Generation",
+    "authors": "Z Ji",
+    "year": "2022",
+    "citation": "Ji, Z. et al. Survey of Hallucination in Natural Language Generation. arXiv preprint arXiv:2202.03629 (2022) doi:10.1145/3571730.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The biggest issue is that generative models are prone to hallucination [CITATION] where the"
+    ]
+  },
+  {
+    "title": "Critical assessment of protein intrinsic disorder prediction (CAID) -Results of round 2",
+    "authors": "Del Conte;A",
+    "year": "2023",
+    "citation": "Del Conte, A. et al. Critical assessment of protein intrinsic disorder prediction (CAID) -Results of round 2. Proteins: Struct. Funct. Bioinf. 91, 1925-1934 (2023).",
+    "pages": "1925-1934",
+    "journal": "Proteins: Struct. Funct. Bioinf",
+    "volume": "91",
+    "sentences": [
+      "To encourage ribbon-like predictions in AF3, we use distillation training from AlphaFold 2 predictions, and we add a ranking term to encourage results with more solvent accessible surface area [CITATION] ."
+    ]
+  }
+]

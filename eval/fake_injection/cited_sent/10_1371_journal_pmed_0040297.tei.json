@@ -1,0 +1,2798 @@
+[
+  {
+    "title": "Assessing the quality of research",
+    "authors": "P Glasziou;J P Vandenbroucke;I Chalmers",
+    "year": "2004",
+    "citation": "Glasziou P, Vandenbroucke JP, Chalmers I (2004) Assessing the quality of research. BMJ 328: 39-41.",
+    "pages": "39-41",
+    "journal": "BMJ",
+    "volume": "328",
+    "sentences": [
+      "However, much of clinical or public health knowledge comes from observational research [CITATION]."
+    ]
+  },
+  {
+    "title": "Distribution of study designs in four major US journals of obstetrics and gynecology",
+    "authors": "E F Funai;E J Rosenbush;M J Lee;Del Priore;G",
+    "year": "2001",
+    "citation": "Funai EF, Rosenbush EJ, Lee MJ, Del Priore G (2001) Distribution of study designs in four major US journals of obstetrics and gynecology. Gynecol Obstet Invest 51: 8-11.",
+    "pages": "8-11",
+    "journal": "Gynecol Obstet Invest",
+    "volume": "51",
+    "sentences": [
+      "About nine of ten research papers published in clinical speciality journals describe observational research [CITATION][CITATION #b2]."
+    ]
+  },
+  {
+    "title": "Clinical research and statistical methods in the urology literature",
+    "authors": "C D Scales Jr;R D Norris;B L Peterson;G M Preminger;P Dahm",
+    "year": "2005",
+    "citation": "Scales CD Jr., Norris RD, Peterson BL, Preminger GM, Dahm P (2005) Clinical research and statistical methods in the urology literature. J Urol 174: 1374-1379.",
+    "pages": "1374-1379",
+    "journal": "J Urol",
+    "volume": "174",
+    "sentences": [
+      "About nine of ten research papers published in clinical speciality journals describe observational research [CITATION #b1][CITATION]."
+    ]
+  },
+  {
+    "title": "Issues in the reporting of epidemiological studies: a survey of recent practice",
+    "authors": "S J Pocock;T J Collier;K J Dandreo;B L De Stavola;M B Goldman",
+    "year": "2004",
+    "citation": "Pocock SJ, Collier TJ, Dandreo KJ, de Stavola BL, Goldman MB, et al. (2004) Issues in the reporting of epidemiological studies: a survey of recent practice. BMJ 329: 883.",
+    "pages": "883",
+    "journal": "BMJ",
+    "volume": "329",
+    "sentences": [
+      "Reporting of observational research is often not detailed and clear enough to assess the strengths and weaknesses of the investigation [CITATION][CITATION #b4].",
+      "Few epidemiological studies explain or report deliberations about sample size [CITATION][CITATION #b4].",
+      "In a recent survey, two thirds of epidemiological publications studied quantitative exposure variables [CITATION].",
+      "Another study found that among 67 articles in which statistical analyses were adjusted for confounders, it was mostly unclear how confounders were chosen [CITATION].",
+      "As discussed in detail under item 17, many debate the use and value of analyses restricted to subgroups of the study population [CITATION][CITATION #b103].",
+      "Subgroup analyses are nevertheless often done [CITATION].",
+      "Incomplete or absent reporting of participation and non-participation in epidemiological studies was also documented in two other surveys of the literature [CITATION][CITATION #b4].",
+      "Recent studies of the quality of reporting of epidemiological studies found that confidence intervals were reported in most articles [CITATION].",
+      "However, few authors explained their choice of confounding variables [CITATION][CITATION #b4].",
+      "There is debate about the dangers associated with subgroup analyses, and multiplicity of analyses in general [CITATION][CITATION #b103].",
+      "The majority claimed differences across groups but only eight articles reported a formal evaluation of interaction (see item 12b) [CITATION]."
+    ]
+  },
+  {
+    "title": "Quality of reporting of observational longitudinal research",
+    "authors": "L Tooth;R Ware;C Bain;D M Purdie;A Dobson",
+    "year": "2005",
+    "citation": "Tooth L, Ware R, Bain C, Purdie DM, Dobson A (2005) Quality of reporting of observational longitudinal research. Am J Epidemiol 161: 280-288.",
+    "pages": "280-288",
+    "journal": "Am J Epidemiol",
+    "volume": "161",
+    "sentences": [
+      "Reporting of observational research is often not detailed and clear enough to assess the strengths and weaknesses of the investigation [CITATION #b3][CITATION].",
+      "In a survey of observational stroke research, 17 of 49 reports (35%) did not specify eligibility criteria [CITATION].",
+      "A survey of cohort studies in stroke research found that 14 of 49 (28%) articles published from 1999 to 2003 addressed potential selection bias in the recruitment of study participants and 35 (71%) mentioned the possibility that any type of bias may have affected results [CITATION].",
+      "Few epidemiological studies explain or report deliberations about sample size [CITATION #b3][CITATION].",
+      "Despite its ubiquity and importance, few papers report in detail on the problem of missing data [CITATION][CITATION #b106].",
+      "Incomplete or absent reporting of participation and non-participation in epidemiological studies was also documented in two other surveys of the literature [CITATION #b3][CITATION].",
+      "However, few authors explained their choice of confounding variables [CITATION #b3][CITATION]."
+    ]
+  },
+  {
+    "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: guidelines for reporting observational studies",
+    "authors": "E Von Elm;D G Altman;M Egger;P C G\u00f8tzsche;S J Pocock",
+    "year": "2007",
+    "citation": "von Elm E, Altman DG, Egger M, G\u00f8tzsche PC, Pocock SJ, et al. (2007) The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: guidelines for reporting observational studies. PLoS Med e296. doi:10.1371/journal.pmed.0040296.",
+    "pages": "e296",
+    "journal": "PLoS Med",
+    "volume": "",
+    "sentences": [
+      "The STROBE Statement has recently been published in several journals [CITATION].",
+      "This paper is linked to the shorter STROBE paper that introduced the items of the checklist in several journals [CITATION], and forms an integral part of the STROBE Statement."
+    ]
+  },
+  {
+    "title": "Users' guide to the surgical literature. Case-control studies in surgical journals",
+    "authors": "A Mihailovic;C M Bell;D R Urbach",
+    "year": "2005",
+    "citation": "Mihailovic A, Bell CM, Urbach DR (2005) Users' guide to the surgical literature. Case-control studies in surgical journals. Can J Surg 48: 148- 151.",
+    "pages": "148-151",
+    "journal": "Can J Surg",
+    "volume": "48",
+    "sentences": [
+      "Unfortunately, terminology is often used incorrectly [CITATION] or imprecisely [CITATION #b7]."
+    ]
+  },
+  {
+    "title": "Reporting of occupational and environmental research: use and misuse of statistical and epidemiological methods",
+    "authors": "L Rushton",
+    "year": "2000",
+    "citation": "Rushton L (2000) Reporting of occupational and environmental research: use and misuse of statistical and epidemiological methods. Occup Environ Med 57: 1-9.",
+    "pages": "1-9",
+    "journal": "Occup Environ Med",
+    "volume": "57",
+    "sentences": [
+      "Unfortunately, terminology is often used incorrectly [CITATION #b6] or imprecisely [CITATION]."
+    ]
+  },
+  {
+    "title": "No adjustments are needed for multiple comparisons",
+    "authors": "K J Rothman",
+    "year": "1990",
+    "citation": "Rothman KJ (1990) No adjustments are needed for multiple comparisons. Epidemiology 1: 43-46.",
+    "pages": "43-46",
+    "journal": "Epidemiology",
+    "volume": "1",
+    "sentences": [
+      "Adjusting for multiple looks at the data may not be possible or desirable [CITATION], but further studies to confirm or refute initial observations are often needed [CITATION #b9].",
+      "Some argue that it is neither possible nor necessary to inform the reader about all subgroup analyses done as future analyses of other data will tell to what extent the early exciting findings stand the test of time [CITATION]."
+    ]
+  },
+  {
+    "title": "Most published research findings are false-but a little replication goes a long way",
+    "authors": "R Moonesinghe;M J Khoury;A C Janssens",
+    "year": "2007",
+    "citation": "Moonesinghe R, Khoury MJ, Janssens AC (2007) Most published research findings are false-but a little replication goes a long way. PLoS Med 4: e28. doi:10.1371/journal.pmed.0040028",
+    "pages": "e28",
+    "journal": "PLoS Med",
+    "volume": "4",
+    "sentences": [
+      "Adjusting for multiple looks at the data may not be possible or desirable [CITATION #b8], but further studies to confirm or refute initial observations are often needed [CITATION]."
+    ]
+  },
+  {
+    "title": "Clinical Case Reporting",
+    "authors": "M Jenicek",
+    "year": "1999",
+    "citation": "Jenicek M (1999) Clinical Case Reporting. Evidence-Based Medicine. Oxford: Butterworth-Heinemann. 117 pp.",
+    "publisher": "Butterworth-Heinemann",
+    "pages": "",
+    "journal": "Evidence-Based Medicine",
+    "volume": "117",
+    "sentences": [
+      "STROBE recommendations do not specifically address topics such as genetic linkage studies, infectious disease modelling or case reports and case series [CITATION][CITATION #b11]."
+    ]
+  },
+  {
+    "title": "In defense of case reports and case series",
+    "authors": "J P Vandenbroucke",
+    "year": "2001",
+    "citation": "Vandenbroucke JP (2001) In defense of case reports and case series. Ann Intern Med 134: 330-334.",
+    "pages": "330-334",
+    "journal": "Ann Intern Med",
+    "volume": "134",
+    "sentences": [
+      "STROBE recommendations do not specifically address topics such as genetic linkage studies, infectious disease modelling or case reports and case series [CITATION #b10][CITATION]."
+    ]
+  },
+  {
+    "title": "Towards complete and accurate reporting of studies of diagnostic accuracy: The STARD Initiative",
+    "authors": "P M Bossuyt;J B Reitsma;D E Bruns;C A Gatsonis;P P Glasziou",
+    "year": "2003",
+    "citation": "Bossuyt PM, Reitsma JB, Bruns DE, Gatsonis CA, Glasziou PP, et al. (2003) Towards complete and accurate reporting of studies of diagnostic accuracy: The STARD Initiative. Ann Intern Med 138: 40-44.",
+    "pages": "40-44",
+    "journal": "Ann Intern Med",
+    "volume": "138",
+    "sentences": [
+      "For authors of observational studies that specifically address diagnostic tests, tumour markers and genetic associations, STARD [CITATION], REMARK [CITATION #b13], and STRE-GA [CITATION #b14] recommendations may be particularly useful.",
+      "We stress that STROBE and other recommendations on the reporting of research [CITATION][CITATION #b232][CITATION #b233] should be seen as evolving documents that require continual assessment, refinement, and, if necessary, change [CITATION #b234][CITATION #b235]."
+    ]
+  },
+  {
+    "title": "REporting recommendations for tumour MARKer prognostic studies (REMARK)",
+    "authors": "L M Mcshane;D G Altman;W Sauerbrei;S E Taube;M Gion",
+    "year": "2005",
+    "citation": "McShane LM, Altman DG, Sauerbrei W, Taube SE, Gion M, et al. (2005) REporting recommendations for tumour MARKer prognostic studies (REMARK). Br J Cancer 93: 387-391.",
+    "pages": "387-391",
+    "journal": "Br J Cancer",
+    "volume": "93",
+    "sentences": [
+      "For authors of observational studies that specifically address diagnostic tests, tumour markers and genetic associations, STARD [CITATION #b12], REMARK [CITATION], and STRE-GA [CITATION #b14] recommendations may be particularly useful."
+    ]
+  },
+  {
+    "title": "A road map for efficient and reliable human genome epidemiology",
+    "authors": "J P Ioannidis;M Gwinn;J Little;J P Higgins;J L Bernstein",
+    "year": "2006",
+    "citation": "Ioannidis JP, Gwinn M, Little J, Higgins JP, Bernstein JL, et al. (2006) A road map for efficient and reliable human genome epidemiology. Nat Genet 38: 3-5.",
+    "pages": "3-5",
+    "journal": "Nat Genet",
+    "volume": "38",
+    "sentences": [
+      "For authors of observational studies that specifically address diagnostic tests, tumour markers and genetic associations, STARD [CITATION #b12], REMARK [CITATION #b13], and STRE-GA [CITATION] recommendations may be particularly useful.",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "Case-control designs in the study of common diseases: updates on the demise of the rare disease assumption and the choice of sampling scheme for controls",
+    "authors": "L Rodrigues;B R Kirkwood",
+    "year": "1990",
+    "citation": "Rodrigues L, Kirkwood BR (1990) Case-control designs in the study of common diseases: updates on the demise of the rare disease assumption and the choice of sampling scheme for controls. Int J Epidemiol 19: 205- 213.",
+    "pages": "205-213",
+    "journal": "Int J Epidemiol",
+    "volume": "19",
+    "sentences": [
+      "Depending on the sampling strategy for cases and controls and the nature of the population studied, the odds ratio obtained in a case-control study is interpreted as the risk ratio, rate ratio or (prevalence) odds ratio [CITATION][CITATION #b16].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "Case-Control Studies",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Case-Control Studies. In: Rothman KJ, Greenland S editors. Modern epidemiology. 2nd ed: Lippincott Raven. pp. 93-114.",
+    "pages": "93-114",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Depending on the sampling strategy for cases and controls and the nature of the population studied, the odds ratio obtained in a case-control study is interpreted as the risk ratio, rate ratio or (prevalence) odds ratio [CITATION #b15][CITATION].",
+      "Neighbourhood or friend controls may present intrinsic matching on exposure [CITATION].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION][CITATION #b17][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "Leukaemia incidence among workers in the shoe and boot manufacturing industry: a case-control study",
+    "authors": "S P Forand",
+    "year": "2004",
+    "citation": "Forand SP (2004) Leukaemia incidence among workers in the shoe and boot manufacturing industry: a case-control study. Environ Health 3: 7.",
+    "pages": "7",
+    "journal": "Environ Health",
+    "volume": "3",
+    "sentences": [
+      "''Leukaemia incidence among workers in the shoe and boot manufacturing industry: a case-control study'' [CITATION].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162].",
+      "[CITATION]."
+    ]
+  },
+  {
+    "title": "A comparison of observational studies and randomized, controlled trials",
+    "authors": "K Benson;A J Hartz",
+    "year": "2000",
+    "citation": "Benson K, Hartz AJ (2000) A comparison of observational studies and randomized, controlled trials. N Engl J Med 342: 1878-1886.",
+    "pages": "1878-1886",
+    "journal": "N Engl J Med",
+    "volume": "342",
+    "sentences": [
+      "An explicit, commonly used term for the study design also helps ensure correct indexing of articles in electronic databases [CITATION][CITATION #b19].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "Searching for non-randomised studies. Draft chapter 3. Cochrane Non-Randomised Studies Methods Group",
+    "authors": "P C G\u00f8tzsche;A Harden",
+    "year": "2002",
+    "citation": "G\u00f8tzsche PC, Harden A Searching for non-randomised studies. Draft chapter 3. Cochrane Non-Randomised Studies Methods Group, 26 July 2002. Available: http://www.cochrane.dk/nrsmg. Accessed 10 September 2007.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "An explicit, commonly used term for the study design also helps ensure correct indexing of articles in electronic databases [CITATION #b18][CITATION].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162].",
+      "[CITATION]."
+    ]
+  },
+  {
+    "title": "Survival of persons with and without HIV infection in Denmark",
+    "authors": "N Lohse;A B Hansen;G Pedersen;G Kronborg;J Gerstoft",
+    "year": "1995",
+    "citation": "Lohse N, Hansen AB, Pedersen G, Kronborg G, Gerstoft J, et al. (2007) Survival of persons with and without HIV infection in Denmark, 1995- 2005. Ann Intern Med 146: 87-95.",
+    "pages": "87-95",
+    "journal": "Ann Intern Med",
+    "volume": "146",
+    "sentences": [
+      "However, an ongoing effort is still needed to further reduce mortality rates for these persons compared with the general population'' [CITATION].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19][CITATION][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "More informative abstracts revisited",
+    "authors": "R B Haynes;C D Mulrow;E J Huth;D G Altman;M J Gardner",
+    "year": "1990",
+    "citation": "Haynes RB, Mulrow CD, Huth EJ, Altman DG, Gardner MJ (1990) More informative abstracts revisited. Ann Intern Med 113: 69-76.",
+    "pages": "69-76",
+    "journal": "Ann Intern Med",
+    "volume": "113",
+    "sentences": [
+      "A series of headings pertaining to the background, design, conduct, and analysis of a study may help readers acquire the essential information rapidly [CITATION].",
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION #b162]."
+    ]
+  },
+  {
+    "title": "Quality of nonstructured and structured abstracts of original research articles in the",
+    "authors": "A Taddio;T Pain;F F Fassos;H Boon;A L Ilersich",
+    "year": "1994",
+    "citation": "Taddio A, Pain T, Fassos FF, Boon H, Ilersich AL, et al. (1994) Quality of nonstructured and structured abstracts of original research articles in the British Medical Journal, the Canadian Medical Association Journal and the Journal of the American Medical Association. CMAJ 150: 1611- 1615.",
+    "pages": "1611-1615",
+    "journal": "British Medical Journal, the Canadian Medical Association Journal and the Journal of the American Medical Association",
+    "volume": "150",
+    "sentences": [
+      "Many journals require such structured abstracts, which tend to be of higher quality and more readily informative than unstructured summaries [CITATION][CITATION #b24]."
+    ]
+  },
+  {
+    "title": "Which layout do you prefer? An analysis of readers' preferences for different typographic layouts of structured abstracts",
+    "authors": "J Hartley;M Sydes",
+    "year": "1996",
+    "citation": "Hartley J, Sydes M (1996) Which layout do you prefer? An analysis of readers' preferences for different typographic layouts of structured abstracts. J Inform Sci 22: 27-37.",
+    "pages": "27-37",
+    "journal": "J Inform Sci",
+    "volume": "22",
+    "sentences": [
+      "Many journals require such structured abstracts, which tend to be of higher quality and more readily informative than unstructured summaries [CITATION #b23][CITATION]."
+    ]
+  },
+  {
+    "title": "Adult socioeconomic, educational, social, and psychological outcomes of childhood obesity: a national birth cohort study",
+    "authors": "R M Viner;T J Cole",
+    "year": "2005",
+    "citation": "Viner RM, Cole TJ (2005) Adult socioeconomic, educational, social, and psychological outcomes of childhood obesity: a national birth cohort study. BMJ 330: 1354.",
+    "pages": "1354",
+    "journal": "BMJ",
+    "volume": "330",
+    "sentences": [
+      ".) We used longitudinal data from the 1970 British birth cohort to examine the adult socioeconomic, educational, social, and psychological outcomes of childhood obesity'' [CITATION]."
+    ]
+  },
+  {
+    "title": "The ''battering syndrome'': prevalence and clinical characteristics of domestic violence in primary care internal medicine practices",
+    "authors": "J Mccauley;D E Kern;K Kolodner;L Dill;A F Schroeder",
+    "year": "1995",
+    "citation": "McCauley J, Kern DE, Kolodner K, Dill L, Schroeder AF, et al. (1995) The ''battering syndrome'': prevalence and clinical characteristics of domestic violence in primary care internal medicine practices. Ann Intern Med 123: 737-746.",
+    "pages": "737-746",
+    "journal": "Ann Intern Med",
+    "volume": "123",
+    "sentences": [
+      "Example ''Our primary objectives were to 1) determine the prevalence of domestic violence among female patients presenting to four community-based, primary care, adult medicine practices that serve patients of diverse socioeconomic background and 2) identify demographic and clinical differences between currently abused patients and patients not currently being abused '' [CITATION]."
+    ]
+  },
+  {
+    "title": "Role of mobile phones in motor vehicle crashes resulting in hospital attendance: a case-crossover study",
+    "authors": "S P Mcevoy;M R Stevenson;A T Mccartt;M Woodward;C Haworth",
+    "year": "2005",
+    "citation": "McEvoy SP, Stevenson MR, McCartt AT, Woodward M, Haworth C, et al. (2005) Role of mobile phones in motor vehicle crashes resulting in hospital attendance: a case-crossover study. BMJ 331: 428.",
+    "pages": "428",
+    "journal": "BMJ",
+    "volume": "331",
+    "sentences": [
+      "As it is important that risks during control periods and crash trips are similar, we compared phone activity during the hazard interval (time immediately before the crash) with phone activity during control intervals (equivalent times during which participants were driving but did not crash) in the previous week'' [CITATION].",
+      "For instance, for a casecrossover study, one of the variants of the case-control design, a succinct description of the principles was given in the example above [CITATION]."
+    ]
+  },
+  {
+    "title": "Prospective or retrospective: what's in a name?",
+    "authors": "J P Vandenbroucke",
+    "year": "1991",
+    "citation": "Vandenbroucke JP (1991) Prospective or retrospective: what's in a name? BMJ 302: 249-250.",
+    "pages": "249-250",
+    "journal": "BMJ",
+    "volume": "302",
+    "sentences": [
+      "We recommend that authors refrain from simply calling a study 'prospective' or 'retrospective' because these terms are ill defined [CITATION]."
+    ]
+  },
+  {
+    "title": "A Dictionary of Epidemiology",
+    "authors": "J M Last",
+    "year": "2000",
+    "citation": "Last JM (2000) A Dictionary of Epidemiology. New York: Oxford University Press.",
+    "publisher": "Oxford University Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "One usage sees cohort and prospective as synonymous and reserves the word retrospective for casecontrol studies [CITATION].",
+      "Similarly, terms like point prevalence and period, annual or lifetime prevalence are used to describe different types of prevalence [CITATION]."
+    ]
+  },
+  {
+    "title": "Theoretical Epidemiology: principles of occurrence research in medicine",
+    "authors": "O S Miettinen",
+    "year": "1985",
+    "citation": "Miettinen OS (1985) Theoretical Epidemiology: principles of occurrence research in medicine. New York: Wiley. pp. 64-66.",
+    "publisher": "Wiley",
+    "pages": "64-66",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A second usage distinguishes prospective and retrospective cohort studies according to the timing of data collection relative to when the idea for the study was developed [CITATION]."
+    ]
+  },
+  {
+    "title": "Types of Epidemiologic Studies",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Types of Epidemiologic Studies. In: Rothman KJ, Greenland S editors. Modern epidemiology. 2nd ed: Lippincott Raven. pp. 74-75.",
+    "pages": "74-75",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A third usage distinguishes prospective and retrospective case-control studies depending on whether the data about the exposure of interest existed when cases were selected [CITATION]."
+    ]
+  },
+  {
+    "title": "Epidemiology, principles and methods",
+    "authors": "B Macmahon;D Trichopoulos",
+    "year": "1996",
+    "citation": "MacMahon B, Trichopoulos D (1996) Epidemiology, principles and methods. 2nd ed. Boston: Little, Brown. 81 p.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Some advise against using these terms [CITATION], or adopting the alternatives 'concurrent' and 'historical' for describing cohort studies [CITATION #b33]."
+    ]
+  },
+  {
+    "title": "Mutation in the gene coding for coagulation factor V and the risk of myocardial infarction, stroke, and venous thrombosis in apparently healthy men",
+    "authors": "P M Ridker;C H Hennekens;K Lindpaintner;M J Stampfer;P R Eisenberg",
+    "year": "1995",
+    "citation": "Ridker PM, Hennekens CH, Lindpaintner K, Stampfer MJ, Eisenberg PR, et al. (1995) Mutation in the gene coding for coagulation factor V and the risk of myocardial infarction, stroke, and venous thrombosis in apparently healthy men. N Engl J Med 332: 912-917.",
+    "pages": "912-917",
+    "journal": "N Engl J Med",
+    "volume": "332",
+    "sentences": [
+      "For example, the Physicians' Health Study, a randomized controlled trial of aspirin and carotene, was later used to demonstrate that a point mutation in the factor V gene was associated with an increased risk of venous thrombosis, but not of myocardial infarction or stroke [CITATION]."
+    ]
+  },
+  {
+    "title": "Dynamics of Helicobacter pylori infection in a US-Mexico cohort during the first two years of life",
+    "authors": "K J Goodman;K O'rourke;R S Day;C Wang;Z Nurgalieva",
+    "year": "2005",
+    "citation": "Goodman KJ, O'Rourke K, Day RS, Wang C, Nurgalieva Z, et al. (2005) Dynamics of Helicobacter pylori infection in a US-Mexico cohort during the first two years of life. Int J Epidemiol 34: 1348-1355.",
+    "pages": "1348-1355",
+    "journal": "Int J Epidemiol",
+    "volume": "34",
+    "sentences": [
+      "In this ongoing cohort study, we target follow-up exams at 6-month intervals beginning at age 6 months'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Review of survival analyses published in cancer journals",
+    "authors": "D G Altman;De Stavola;B L Love;S B Stepniewska;K A",
+    "year": "1995",
+    "citation": "Altman DG, De Stavola BL, Love SB, Stepniewska KA (1995) Review of survival analyses published in cancer journals. Br J Cancer 72: 511-518.",
+    "pages": "511-518",
+    "journal": "Br J Cancer",
+    "volume": "72",
+    "sentences": [
+      "Of note, nearly 80% of 132 reports in oncology journals that used survival analysis included the starting and ending dates for accrual of patients, but only 24% also reported the date on which follow-up ended [CITATION].",
+      "Almost half of 132 articles in cancer journals (mostly cohort studies) did not give any summary of length of follow-up [CITATION]."
+    ]
+  },
+  {
+    "title": "Transfusion history and cancer risk in older women",
+    "authors": "J R Cerhan;R B Wallace;A R Folsom;J D Potter;R G Munger",
+    "year": "1993",
+    "citation": "Cerhan JR, Wallace RB, Folsom AR, Potter JD, Munger RG, et al. (1993) Transfusion history and cancer risk in older women. Ann Intern Med 119: 8-15.",
+    "pages": "8-15",
+    "journal": "Ann Intern Med",
+    "volume": "119",
+    "sentences": [
+      "The Iowa Women's Health Study cohort was matched to the registry with combinations of first, last, and maiden names, zip code, birthdate, and social security number'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Toenail arsenic content and cutaneous melanoma in Iowa",
+    "authors": "L E Beane Freeman;L K Dennis;C F Lynch;P S Thorne;C L Just",
+    "year": "2004",
+    "citation": "Beane Freeman LE, Dennis LK, Lynch CF, Thorne PS, Just CL (2004) Toenail arsenic content and cutaneous melanoma in Iowa. Am J Epidemiol 160: 679-687.",
+    "pages": "679-687",
+    "journal": "Am J Epidemiol",
+    "volume": "160",
+    "sentences": [
+      "Colorectal cancer controls were selected because they are common and have a relatively long survival, and because arsenic exposure has not been conclusively linked to the incidence of colorectal cancer'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Relation of race and sex to the use of reperfusion therapy in Medicare beneficiaries with acute myocardial infarction",
+    "authors": "J G Canto;J J Allison;C I Kiefe;C Fincher;R Farmer",
+    "year": "2000",
+    "citation": "Canto JG, Allison JJ, Kiefe CI, Fincher C, Farmer R, et al. (2000) Relation of race and sex to the use of reperfusion therapy in Medicare beneficiaries with acute myocardial infarction. N Engl J Med 342: 1094- 1100.",
+    "pages": "1094-1100",
+    "journal": "N Engl J Med",
+    "volume": "342",
+    "sentences": [
+      ".) To be eligible, patients had to present to the hospital after at least 30 minutes but less than 12 hours of chest pain and had to have ST-segment elevation of at least 1 mm on two contiguous leads on the initial electrocardiogram'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Long-term serological analysis and clinical follow-up of patients with cat scratch disease",
+    "authors": "E Metzkor-Cotter;Y Kletter;B Avidor;M Varon;Y Golan",
+    "year": "2003",
+    "citation": "Metzkor-Cotter E, Kletter Y, Avidor B, Varon M, Golan Y, et al. (2003) Long-term serological analysis and clinical follow-up of patients with cat scratch disease. Clin Infect Dis 37: 1149-1154.",
+    "pages": "1149-1154",
+    "journal": "Clin Infect Dis",
+    "volume": "37",
+    "sentences": [
+      "For example, in a study that used IgM antibodies to detect acute infections, readers needed to know the interval between blood tests for IgM antibodies so that they could judge whether some infections likely were missed because the interval between blood tests was too long [CITATION]."
+    ]
+  },
+  {
+    "title": "Bias on withdrawing lost subjects from the analysis at the time of loss, in cohort mortality studies, and in follow-up methods",
+    "authors": "E S Johnson",
+    "year": "1990",
+    "citation": "Johnson ES (1990) Bias on withdrawing lost subjects from the analysis at the time of loss, in cohort mortality studies, and in follow-up methods. J Occup Med 32: 250-254.",
+    "pages": "250-254",
+    "journal": "J Occup Med",
+    "volume": "32",
+    "sentences": [
+      "In other studies where follow-up procedures differed between exposed and unexposed groups, readers might recognize substantial bias due to unequal ascertainment of events or differences in non-response or loss to follow-up [CITATION]."
+    ]
+  },
+  {
+    "title": "Limitations of the application of fourfold table analysis to hospital data",
+    "authors": "J Berkson",
+    "year": "1946",
+    "citation": "Berkson J (1946) Limitations of the application of fourfold table analysis to hospital data. Biom Bull 2: 53.",
+    "pages": "53",
+    "journal": "Biom Bull",
+    "volume": "2",
+    "sentences": [
+      "However, they can present problems if the exposure of interest affects the risk of developing or being hospitalized for the control condition(s) [CITATION][CITATION #b43]."
+    ]
+  },
+  {
+    "title": "An analysis of Berkson's bias in case-control studies",
+    "authors": "A R Feinstein;S D Walter;R I Horwitz",
+    "year": "1986",
+    "citation": "Feinstein AR, Walter SD, Horwitz RI (1986) An analysis of Berkson's bias in case-control studies. J Chronic Dis 39: 495-504.",
+    "pages": "495-504",
+    "journal": "J Chronic Dis",
+    "volume": "39",
+    "sentences": [
+      "However, they can present problems if the exposure of interest affects the risk of developing or being hospitalized for the control condition(s) [CITATION #b42][CITATION]."
+    ]
+  },
+  {
+    "title": "Case-control studies in the evaluation of druginduced illness",
+    "authors": "H Jick;M P Vessey",
+    "year": "1978",
+    "citation": "Jick H, Vessey MP (1978) Case-control studies in the evaluation of drug- induced illness. Am J Epidemiol 107: 1-7.",
+    "pages": "1-7",
+    "journal": "Am J Epidemiol",
+    "volume": "107",
+    "sentences": [
+      "To remedy this problem often a mixture of the best defensible control diseases is used [CITATION]."
+    ]
+  },
+  {
+    "title": "Statins and sepsis in patients with cardiovascular disease: a population-based cohort analysis",
+    "authors": "D G Hackam;M Mamdani;P Li;D A Redelmeier",
+    "year": "2006",
+    "citation": "Hackam DG, Mamdani M, Li P, Redelmeier DA (2006) Statins and sepsis in patients with cardiovascular disease: a population-based cohort analysis. Lancet 367: 413-418.",
+    "pages": "413-418",
+    "journal": "Lancet",
+    "volume": "367",
+    "sentences": [
+      "[CITATION]."
+    ]
+  },
+  {
+    "title": "MMR vaccination and pervasive developmental disorders: a case-control study",
+    "authors": "L Smeeth;C Cook;E Fombonne;L Heavey;L C Rodrigues",
+    "year": "2004",
+    "citation": "Smeeth L, Cook C, Fombonne E, Heavey L, Rodrigues LC, et al. (2004) MMR vaccination and pervasive developmental disorders: a case-control study. Lancet 364: 963-969.",
+    "pages": "963-969",
+    "journal": "Lancet",
+    "volume": "364",
+    "sentences": [
+      "For the remaining 994, one or more controls was excluded...'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Matching",
+    "authors": "M C Costanza",
+    "year": "1995",
+    "citation": "Costanza MC (1995) Matching. Prev Med 24: 425-433.",
+    "pages": "425-433",
+    "journal": "Prev Med",
+    "volume": "24",
+    "sentences": [
+      "For example, it is not necessary to take the matching into account for the estimation of the relative risk [CITATION].",
+      "In case-control studies matching is done to increase a study's efficiency by ensuring similarity in the distribution of variables between cases and controls, in particular the distribution of potential confounding variables [CITATION][CITATION #b48].",
+      "Matching remains most desirable, or even necessary, when the distributions of the confounder (e.g., age) might differ radically between the unmatched comparison groups [CITATION][CITATION #b48]."
+    ]
+  },
+  {
+    "title": "Flexible matching strategies to increase power and efficiency to detect and estimate gene-environment interactions in case-control studies",
+    "authors": "T Sturmer;H Brenner",
+    "year": "2002",
+    "citation": "Sturmer T, Brenner H (2002) Flexible matching strategies to increase power and efficiency to detect and estimate gene-environment inter- actions in case-control studies. Am J Epidemiol 155: 593-602.",
+    "pages": "593-602",
+    "journal": "Am J Epidemiol",
+    "volume": "155",
+    "sentences": [
+      "In case-control studies matching is done to increase a study's efficiency by ensuring similarity in the distribution of variables between cases and controls, in particular the distribution of potential confounding variables [CITATION #b47][CITATION].",
+      "Matching remains most desirable, or even necessary, when the distributions of the confounder (e.g., age) might differ radically between the unmatched comparison groups [CITATION #b47][CITATION]."
+    ]
+  },
+  {
+    "title": "Matching",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Matching. In: Rothman KJ, Greenland S, editors. 2 nd ed. Modern epidemiology. Lippincott Raven. pp. 147-161.",
+    "pages": "147-161",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The use of matching in case-control studies and its interpretation are fraught with difficulties, especially if matching is attempted on several risk factors, some of which may be linked to the exposure of prime interest [CITATION][CITATION #b50].",
+      "If matching was done for variables like age and sex that are universal attributes, the analysis needs not retain the individual, person-to-person matching: a simple analysis in categories of age and sex is sufficient [CITATION]."
+    ]
+  },
+  {
+    "title": "Epidemiology, Beyond the Basics",
+    "authors": "M F Szklo;J Nieto",
+    "year": "2000",
+    "citation": "Szklo MF, Nieto J (2000). Epidemiology, Beyond the Basics. Sudbury (MA): Jones and Bartlett. pp. 40-51.",
+    "publisher": "Jones and Bartlett",
+    "pages": "40-51",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The use of matching in case-control studies and its interpretation are fraught with difficulties, especially if matching is attempted on several risk factors, some of which may be linked to the exposure of prime interest [CITATION #b49][CITATION]."
+    ]
+  },
+  {
+    "title": "Attributable risk percent in case-control studies",
+    "authors": "P Cole;B Macmahon",
+    "year": "1971",
+    "citation": "Cole P, MacMahon B (1971) Attributable risk percent in case-control studies. Br J Prev Soc Med 25: 242-244.",
+    "pages": "242-244",
+    "journal": "Br J Prev Soc Med",
+    "volume": "25",
+    "sentences": [
+      "In addition, because the matched control group ceases to be representative for the population at large, the exposure distribution among the controls can no longer be used to estimate the population attributable fraction (see Box 7) [CITATION]."
+    ]
+  },
+  {
+    "title": "The danger of overmatching in studies of the perinatal mortality and birthweight of infants born after assisted conception",
+    "authors": "M Gissler;E Hemminki",
+    "year": "1996",
+    "citation": "Gissler M, Hemminki E (1996) The danger of overmatching in studies of the perinatal mortality and birthweight of infants born after assisted conception. Eur J Obstet Gynecol Reprod Biol 69: 73-75.",
+    "pages": "73-75",
+    "journal": "Eur J Obstet Gynecol Reprod Biol",
+    "volume": "69",
+    "sentences": [
+      "For example, in vitro fertilization is associated with an increased risk of perinatal death, due to an increase in multiple births and low birth weight infants [CITATION]."
+    ]
+  },
+  {
+    "title": "An empirical investigation on matching in published case-control studies",
+    "authors": "O Gefeller;A Pfahlberg;H Brenner;J Windeler",
+    "year": "1998",
+    "citation": "Gefeller O, Pfahlberg A, Brenner H, Windeler J (1998) An empirical investigation on matching in published case-control studies. Eur J Epidemiol 14: 321-325.",
+    "pages": "321-325",
+    "journal": "Eur J Epidemiol",
+    "volume": "14",
+    "sentences": [
+      "In response, there has been a reduction in the number of matching factors employed, an increasing use of frequency matching, which avoids some of the problems discussed above, and more case-control studies with no matching at all [CITATION]."
+    ]
+  },
+  {
+    "title": "Congenital structural anomalies in offspring of women with epilepsy-a populationbased cohort study in Finland",
+    "authors": "M Artama;A Ritvanen;M Gissler;J Isojarvi;A Auvinen",
+    "year": "2006",
+    "citation": "Artama M, Ritvanen A, Gissler M, Isojarvi J, Auvinen A (2006) Congenital structural anomalies in offspring of women with epilepsy-a population- based cohort study in Finland. Int J Epidemiol 35: 280-287.",
+    "pages": "280-287",
+    "journal": "Int J Epidemiol",
+    "volume": "35",
+    "sentences": [
+      "Factors considered potential effect modifiers were maternal age at reimbursement for antiepileptic medication and maternal age at delivery'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Cohorts, infants and children",
+    "authors": "S Ebrahim",
+    "year": "2004",
+    "citation": "Ebrahim S (2004) Cohorts, infants and children. Int J Epidemiol 33: 1165- 1166.",
+    "pages": "1165-1166",
+    "journal": "Int J Epidemiol",
+    "volume": "33",
+    "sentences": [
+      "Of note, the International Journal of Epidemiology recently launched a new section with 'cohort profiles', that includes detailed information on what was measured at different points in time in particular studies [CITATION][CITATION #b56]."
+    ]
+  },
+  {
+    "title": "The British Regional Heart Study 1975-2004",
+    "authors": "M Walker;P H Whincup;A G Shaper",
+    "year": "2004",
+    "citation": "Walker M, Whincup PH, Shaper AG (2004) The British Regional Heart Study 1975-2004. Int J Epidemiol 33: 1185-1192.",
+    "pages": "1975-2004",
+    "journal": "Int J Epidemiol",
+    "volume": "33",
+    "sentences": [
+      "Of note, the International Journal of Epidemiology recently launched a new section with 'cohort profiles', that includes detailed information on what was measured at different points in time in particular studies [CITATION #b55][CITATION]."
+    ]
+  },
+  {
+    "title": "Selective exposure reporting and Medline indexing limited the search sensitivity for observational studies of the adverse effects of oral contraceptives",
+    "authors": "S Wieland;K Dickersin",
+    "year": "2005",
+    "citation": "Wieland S, Dickersin K (2005) Selective exposure reporting and Medline indexing limited the search sensitivity for observational studies of the adverse effects of oral contraceptives. J Clin Epidemiol 58: 560-567.",
+    "pages": "560-567",
+    "journal": "J Clin Epidemiol",
+    "volume": "58",
+    "sentences": [
+      "Finally, we advise that authors declare all 'candidate variables' considered for statistical analysis, rather than selectively reporting only those included in the final models (see also item 16a) [CITATION][CITATION #b58]."
+    ]
+  },
+  {
+    "title": "Ambient particulate matter and health effects: publication bias in studies of short-term associations",
+    "authors": "H R Anderson;R W Atkinson;J L Peacock;M J Sweeting;L Marston",
+    "year": "2005",
+    "citation": "Anderson HR, Atkinson RW, Peacock JL, Sweeting MJ, Marston L (2005) Ambient particulate matter and health effects: publication bias in studies of short-term associations. Epidemiology 16: 155-163.",
+    "pages": "155-163",
+    "journal": "Epidemiology",
+    "volume": "16",
+    "sentences": [
+      "Finally, we advise that authors declare all 'candidate variables' considered for statistical analysis, rather than selectively reporting only those included in the final models (see also item 16a) [CITATION #b57][CITATION].",
+      "Detailed presentation is more appropriate if the issue investigated is of major concern, or if effect estimates vary considerably [CITATION][CITATION #b185]."
+    ]
+  },
+  {
+    "title": "Habitual caffeine intake and the risk of hypertension in women",
+    "authors": "W C Winkelmayer;M J Stampfer;W C Willett;G C Curhan",
+    "year": "2005",
+    "citation": "Winkelmayer WC, Stampfer MJ, Willett WC, Curhan GC (2005) Habitual caffeine intake and the risk of hypertension in women. JAMA 294: 2330- 2335.",
+    "pages": "2330-2335",
+    "journal": "JAMA",
+    "volume": "294",
+    "sentences": [
+      "This method of measuring (caffeine) intake was shown to be valid in both the NHS I cohort and a similar cohort study of male health professionals (...) Self-reported diagnosis of hypertension was found to be reliable in the NHS I cohort'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Serum adiponectin is not associated with risk of colorectal cancer",
+    "authors": "A Lukanova;S Soderberg;R Kaaks;E Jellum;P Stattin",
+    "year": "2006",
+    "citation": "Lukanova A, Soderberg S, Kaaks R, Jellum E, Stattin P (2006) Serum adiponectin is not associated with risk of colorectal cancer. Cancer Epidemiol Biomarkers Prev 15: 401-402.",
+    "pages": "401-402",
+    "journal": "Cancer Epidemiol Biomarkers Prev",
+    "volume": "15",
+    "sentences": [
+      "''Samples pertaining to matched cases and controls were always analyzed together in the same batch and laboratory personnel were unable to distinguish among cases and controls'' [CITATION]."
+    ]
+  },
+  {
+    "title": "The concept of residual confounding in regression models and some applications",
+    "authors": "H Becher",
+    "year": "1992",
+    "citation": "Becher H (1992) The concept of residual confounding in regression models and some applications. Stat Med 11: 1747-1758.",
+    "pages": "1747-1758",
+    "journal": "Stat Med",
+    "volume": "11",
+    "sentences": [
+      "Error in measurement of potential confounders can increase the risk of residual confounding [CITATION][CITATION #b62].",
+      "If a continuous confounder is grouped, residual confounding may occur, whereby some of the variable's confounding effect remains unadjusted for (see [CITATION][CITATION #b88]."
+    ]
+  },
+  {
+    "title": "Controlling for continuous confounders in epidemiologic research",
+    "authors": "H Brenner;M Blettner",
+    "year": "1997",
+    "citation": "Brenner H, Blettner M (1997) Controlling for continuous confounders in epidemiologic research. Epidemiology 8: 429-434.",
+    "pages": "429-434",
+    "journal": "Epidemiology",
+    "volume": "8",
+    "sentences": [
+      "Error in measurement of potential confounders can increase the risk of residual confounding [CITATION #b61][CITATION]."
+    ]
+  },
+  {
+    "title": "Risk factors for suicide in China: a national case-control psychological autopsy study",
+    "authors": "M R Phillips;G Yang;Y Zhang;L Wang;H Ji",
+    "year": "2002",
+    "citation": "Phillips MR, Yang G, Zhang Y, Wang L, Ji H, et al. (2002) Risk factors for suicide in China: a national case-control psychological autopsy study. Lancet 360: 1728-1736.",
+    "pages": "1728-1736",
+    "journal": "Lancet",
+    "volume": "360",
+    "sentences": [
+      "control group of deceased individuals, the sources of information used to assess risk factors are informants who have recently experienced the death of a family member or close associate -and are therefore more comparable to the sources of information in the suicide group than if living controls were used'' [CITATION].",
+      "For instance, in casecontrol studies information bias can occur, but may be reduced by selecting an appropriate control group, as in the first example [CITATION]."
+    ]
+  },
+  {
+    "title": "Prospective study of type 2 diabetes mellitus and risk of primary openangle glaucoma in women",
+    "authors": "L R Pasquale;J H Kang;J E Manson;W C Willett;B A Rosner",
+    "year": "2006",
+    "citation": "Pasquale LR, Kang JH, Manson JE, Willett WC, Rosner BA, et al. (2006) Prospective study of type 2 diabetes mellitus and risk of primary open- angle glaucoma in women. Ophthalmology 113: 1081-1086.",
+    "pages": "1081-1086",
+    "journal": "Ophthalmology",
+    "volume": "113",
+    "sentences": [
+      "We also recalculated the relative risk for POAG with additional control for covariates associated with more careful ocular surveillance (a self-report of cataract, macular degeneration, number of eye examinations, and number of physical examinations)'' [CITATION].",
+      "Differences in the medical surveillance of participants were a problem in the second example [CITATION].",
+      "For instance, if diabetic women receive more regular and thorough eye examinations, the ascertainment of glaucoma will be more complete than in women without diabetes (see item 9) [CITATION]."
+    ]
+  },
+  {
+    "title": "Antecedent therapy versus detection bias as causes of neoplastic multimorbidity",
+    "authors": "S L Craig;A R Feinstein",
+    "year": "1999",
+    "citation": "Craig SL, Feinstein AR (1999) Antecedent therapy versus detection bias as causes of neoplastic multimorbidity. Am J Clin Oncol 22: 51-56.",
+    "pages": "51-56",
+    "journal": "Am J Clin Oncol",
+    "volume": "22",
+    "sentences": [
+      "Among 43 case-control and cohort studies published from 1990 to 1994 that investigated the risk of second cancers in patients with a history of cancer, medical surveillance bias was mentioned in only 5 articles [CITATION]."
+    ]
+  },
+  {
+    "title": "The neglect of response bias in mental health research",
+    "authors": "L H Rogler;D K Mroczek;M Fellows;S T Loftus",
+    "year": "2001",
+    "citation": "Rogler LH, Mroczek DK, Fellows M, Loftus ST (2001) The neglect of response bias in mental health research. J Nerv Ment Dis 189: 182-187.",
+    "pages": "182-187",
+    "journal": "J Nerv Ment Dis",
+    "volume": "189",
+    "sentences": [
+      "A survey of reports of mental health research published during 1998 in three psychiatric journals found that only 13% of 392 articles mentioned response bias [CITATION]."
+    ]
+  },
+  {
+    "title": "The logic of medicine",
+    "authors": "E A Murphy",
+    "year": "1976",
+    "citation": "Murphy EA (1976) The logic of medicine. Baltimore: Johns Hopkins University Press.",
+    "publisher": "Johns Hopkins University Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Many possible sources of bias have been described and a variety of terms are used [CITATION][CITATION #b68]."
+    ]
+  },
+  {
+    "title": "Bias in analytic research",
+    "authors": "D L Sackett",
+    "year": "1979",
+    "citation": "Sackett DL (1979) Bias in analytic research. J Chronic Dis 32: 51-63.",
+    "pages": "51-63",
+    "journal": "J Chronic Dis",
+    "volume": "32",
+    "sentences": [
+      "Many possible sources of bias have been described and a variety of terms are used [CITATION #b67][CITATION]."
+    ]
+  },
+  {
+    "title": "Interviewer effects in a cohort study. Results from the Massachusetts Women's Health Study",
+    "authors": "C B Johannes;S L Crawford;J B Mckinlay",
+    "year": "1997",
+    "citation": "Johannes CB, Crawford SL, McKinlay JB (1997) Interviewer effects in a cohort study. Results from the Massachusetts Women's Health Study. Am J Epidemiol 146: 429-438.",
+    "pages": "429-438",
+    "journal": "Am J Epidemiol",
+    "volume": "146",
+    "sentences": [
+      "'Interviewer bias' can occur if interviewers are aware of the study hypothesis and subconsciously or consciously gather data selectively [CITATION]."
+    ]
+  },
+  {
+    "title": "Risk of venous thrombosis with use of current low-dose oral contraceptives is not explained by diagnostic suspicion and referral bias",
+    "authors": "K W Bloemenkamp;F R Rosendaal;H R Buller;F M Helmerhorst;L P Colly",
+    "year": "1999",
+    "citation": "Bloemenkamp KW, Rosendaal FR, Buller HR, Helmerhorst FM, Colly LP, et al. (1999) Risk of venous thrombosis with use of current low-dose oral contraceptives is not explained by diagnostic suspicion and referral bias. Arch Intern Med 159: 65-70.",
+    "pages": "65-70",
+    "journal": "Arch Intern Med",
+    "volume": "159",
+    "sentences": [
+      "Such bias may be countered by using cases and controls that were referred in the same way to the diagnostic service [CITATION]."
+    ]
+  },
+  {
+    "title": "Clinical epidemiology: the architecture of clinical research",
+    "authors": "A R Feinstein",
+    "year": "1985",
+    "citation": "Feinstein AR (1985) Clinical epidemiology: the architecture of clinical research. Philadelphia: W.B. Saunders.",
+    "publisher": "W.B. Saunders",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Similarly, the use of disease registers may introduce selection bias: if a possible relationship between an exposure and a disease is known, cases may be more likely to be submitted to a register if they have been exposed to the suspected causative agent [CITATION]."
+    ]
+  },
+  {
+    "title": "Indoor and peridomestic transmission of American cutaneous leishmaniasis in northwestern Argentina: a retrospective case-control study",
+    "authors": "Z E Yadon;L C Rodrigues;C R Davies;M A Quigley",
+    "year": "2003",
+    "citation": "Yadon ZE, Rodrigues LC, Davies CR, Quigley MA (2003) Indoor and peridomestic transmission of American cutaneous leishmaniasis in northwestern Argentina: a retrospective case-control study. Am J Trop Med Hyg 68: 519-526.",
+    "pages": "519-526",
+    "journal": "Am J Trop Med Hyg",
+    "volume": "68",
+    "sentences": [
+      "''The number of cases in the area during the study period determined the sample size'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Maternal depression and low maternal intelligence as risk factors for malnutrition in children: a community based case-control study from South India",
+    "authors": "S Anoop;B Saravanan;A Joseph;A Cherian;K S Jacob",
+    "year": "2004",
+    "citation": "Anoop S, Saravanan B, Joseph A, Cherian A, Jacob KS (2004) Maternal depression and low maternal intelligence as risk factors for malnutrition in children: a community based case-control study from South India. Arch Dis Child 89: 325-329.",
+    "pages": "325-329",
+    "journal": "Arch Dis Child",
+    "volume": "89",
+    "sentences": [
+      "Assuming depression in mothers with normal weight children to be 20% and an odds ratio of 3 for depression in mothers with a malnourished child we needed 72 case-control sets (one case to one control) with an 80% power and 5% significance'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Sample size",
+    "authors": "J B Carlin;L W Doyle",
+    "year": "2002",
+    "citation": "Carlin JB, Doyle LW (2002) Sample size. J Paediatr Child Health 38: 300- 304.",
+    "pages": "300-304",
+    "journal": "J Paediatr Child Health",
+    "volume": "38",
+    "sentences": [
+      "Formal, a priori calculation of sample size may be useful when planning a new study [CITATION][CITATION #b75]."
+    ]
+  },
+  {
+    "title": "Statistical methods in epidemiology. II: A commonsense approach to sample size estimation",
+    "authors": "A S Rigby;A Vail",
+    "year": "1998",
+    "citation": "Rigby AS, Vail A (1998) Statistical methods in epidemiology. II: A commonsense approach to sample size estimation. Disabil Rehabil 20: 405-410.",
+    "pages": "405-410",
+    "journal": "Disabil Rehabil",
+    "volume": "20",
+    "sentences": [
+      "Formal, a priori calculation of sample size may be useful when planning a new study [CITATION #b74][CITATION]."
+    ]
+  },
+  {
+    "title": "Sample size calculations in randomised trials: mandatory and mystical",
+    "authors": "K F Schulz;D A Grimes",
+    "year": "2005",
+    "citation": "Schulz KF, Grimes DA (2005) Sample size calculations in randomised trials: mandatory and mystical. Lancet 365: 1348-1353.",
+    "pages": "1348-1353",
+    "journal": "Lancet",
+    "volume": "365",
+    "sentences": [
+      "For example, estimates of the rate of the event of interest or other assumptions central to calculations are commonly imprecise, if not guesswork [CITATION].",
+      "Do not bother readers with post hoc justifications for study size or retrospective power calculations [CITATION]."
+    ]
+  },
+  {
+    "title": "The design of case-control studies: the effect of confounding on sample size requirements",
+    "authors": "K Drescher;J Timm;K H Jockel",
+    "year": "1990",
+    "citation": "Drescher K, Timm J, Jockel KH (1990) The design of case-control studies: the effect of confounding on sample size requirements. Stat Med 9: 765- 776.",
+    "pages": "765-776",
+    "journal": "Stat Med",
+    "volume": "9",
+    "sentences": [
+      "The precision obtained in the final analysis can often not be determined beforehand because it will be reduced by inclusion of confounding variables in multivariable analyses [CITATION], the degree of precision with which key variables can be measured [CITATION #b78], and the exclusion of some individuals."
+    ]
+  },
+  {
+    "title": "Estimating sample size for epidemiologic studies: the impact of ignoring exposure measurement uncertainty",
+    "authors": "O J Devine;J M Smith",
+    "year": "1998",
+    "citation": "Devine OJ, Smith JM (1998) Estimating sample size for epidemiologic studies: the impact of ignoring exposure measurement uncertainty. Stat Med 17: 1375-1389.",
+    "pages": "1375-1389",
+    "journal": "Stat Med",
+    "volume": "17",
+    "sentences": [
+      "The precision obtained in the final analysis can often not be determined beforehand because it will be reduced by inclusion of confounding variables in multivariable analyses [CITATION #b77], the degree of precision with which key variables can be measured [CITATION], and the exclusion of some individuals."
+    ]
+  },
+  {
+    "title": "Effect measure modification and confounding of severe head injury mortality by age and multiple organ injury severity",
+    "authors": "S Linn;L Levi;P D Grunau;I Zaidise;S Zarka",
+    "year": "2007",
+    "citation": "Linn S, Levi L, Grunau PD, Zaidise I, Zarka S (2007) Effect measure modification and confounding of severe head injury mortality by age and multiple organ injury severity. Ann Epidemiol 17: 142-147.",
+    "pages": "142-147",
+    "journal": "Ann Epidemiol",
+    "volume": "17",
+    "sentences": [
+      "We examined the association of GCS in these two categories with the occurrence of death within 12 months from injury'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Dangers of using ''optimal'' cutpoints in the evaluation of prognostic factors",
+    "authors": "D G Altman;B Lausen;W Sauerbrei;M Schumacher",
+    "year": "1994",
+    "citation": "Altman DG, Lausen B, Sauerbrei W, Schumacher M (1994) Dangers of using ''optimal'' cutpoints in the evaluation of prognostic factors. J Natl Cancer Inst 86: 829-835.",
+    "pages": "829-835",
+    "journal": "J Natl Cancer Inst",
+    "volume": "86",
+    "sentences": [
+      "Grouping choices may have important consequences for later analyses [CITATION][CITATION #b81].",
+      "In particular, if the cut-points were chosen to minimise a P value the true strength of an association will be exaggerated [CITATION]."
+    ]
+  },
+  {
+    "title": "Dichotomizing continuous predictors in multiple regression: a bad idea",
+    "authors": "P Royston;D G Altman;W Sauerbrei",
+    "year": "2006",
+    "citation": "Royston P, Altman DG, Sauerbrei W (2006) Dichotomizing continuous predictors in multiple regression: a bad idea. Stat Med 25: 127-141.",
+    "pages": "127-141",
+    "journal": "Stat Med",
+    "volume": "25",
+    "sentences": [
+      "Grouping choices may have important consequences for later analyses [CITATION #b80][CITATION].",
+      "Several methods exist for fitting a non-linear relation between the exposure and outcome [CITATION][CITATION #b82][CITATION #b83].",
+      "However, grouping loses information and may reduce statistical power [CITATION #b86] especially when dichotomization is used [CITATION][CITATION #b84][CITATION #b87]."
+    ]
+  },
+  {
+    "title": "Avoiding power loss associated with categorization and ordinal scores in dose-response and trend analysis",
+    "authors": "S Greenland",
+    "year": "1995",
+    "citation": "Greenland S (1995) Avoiding power loss associated with categorization and ordinal scores in dose-response and trend analysis. Epidemiology 6: 450-454.",
+    "pages": "450-454",
+    "journal": "Epidemiology",
+    "volume": "6",
+    "sentences": [
+      "Several methods exist for fitting a non-linear relation between the exposure and outcome [CITATION #b81][CITATION][CITATION #b83]."
+    ]
+  },
+  {
+    "title": "The use of fractional polynomials to model continuous risk variables in epidemiology",
+    "authors": "P Royston;G Ambler;W Sauerbrei",
+    "year": "1999",
+    "citation": "Royston P, Ambler G, Sauerbrei W (1999) The use of fractional polynomials to model continuous risk variables in epidemiology. Int J Epidemiol 28: 964-974.",
+    "pages": "964-974",
+    "journal": "Int J Epidemiol",
+    "volume": "28",
+    "sentences": [
+      "Several methods exist for fitting a non-linear relation between the exposure and outcome [CITATION #b81][CITATION #b82][CITATION]."
+    ]
+  },
+  {
+    "title": "On the practice of dichotomization of quantitative variables",
+    "authors": "R C Maccallum;S Zhang;K J Preacher;D D Rucker",
+    "year": "2002",
+    "citation": "MacCallum RC, Zhang S, Preacher KJ, Rucker DD (2002) On the practice of dichotomization of quantitative variables. Psychol Methods 7: 19-40.",
+    "pages": "19-40",
+    "journal": "Psychol Methods",
+    "volume": "7",
+    "sentences": [
+      "In another survey, of the psychological literature, dichotomization was justified in only 22 of 110 articles (20%) [CITATION].",
+      "However, grouping loses information and may reduce statistical power [CITATION #b86] especially when dichotomization is used [CITATION #b81][CITATION][CITATION #b87]."
+    ]
+  },
+  {
+    "title": "Categorizing continuous variables",
+    "authors": "D G Altman",
+    "year": "2005",
+    "citation": "Altman DG (2005) Categorizing continuous variables. In: Armitage P, Colton T editors. Encyclopedia of biostatistics. 2nd ed. Chichester: John Wiley. pp. 708-711.",
+    "publisher": "John Wiley",
+    "pages": "708-711",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "There are several reasons why continuous data may be grouped [CITATION]."
+    ]
+  },
+  {
+    "title": "The cost of dichotomization",
+    "authors": "J Cohen",
+    "year": "1983",
+    "citation": "Cohen J (1983) The cost of dichotomization. Applied Psychological Measurement 7: 249-253.",
+    "pages": "249-253",
+    "journal": "Applied Psychological Measurement",
+    "volume": "7",
+    "sentences": [
+      "However, grouping loses information and may reduce statistical power [CITATION] especially when dichotomization is used [CITATION #b81][CITATION #b84][CITATION #b87]."
+    ]
+  },
+  {
+    "title": "Efficiency loss from categorizing quantitative exposures into qualitative exposures in case-control studies",
+    "authors": "L P Zhao;L N Kolonel",
+    "year": "1992",
+    "citation": "Zhao LP, Kolonel LN (1992) Efficiency loss from categorizing quantitative exposures into qualitative exposures in case-control studies. Am J Epidemiol 136: 464-474.",
+    "pages": "464-474",
+    "journal": "Am J Epidemiol",
+    "volume": "136",
+    "sentences": [
+      "However, grouping loses information and may reduce statistical power [CITATION #b86] especially when dichotomization is used [CITATION #b81][CITATION #b84][CITATION]."
+    ]
+  },
+  {
+    "title": "The effectiveness of adjustment by subclassification in removing bias in observational studies",
+    "authors": "W G Cochran",
+    "year": "1968",
+    "citation": "Cochran WG (1968) The effectiveness of adjustment by subclassification in removing bias in observational studies. Biometrics 24: 295-313.",
+    "pages": "295-313",
+    "journal": "Biometrics",
+    "volume": "24",
+    "sentences": [
+      "If a continuous confounder is grouped, residual confounding may occur, whereby some of the variable's confounding effect remains unadjusted for (see [CITATION #b61][CITATION]."
+    ]
+  },
+  {
+    "title": "Models for dose-response",
+    "authors": "D Clayton;M Hills",
+    "year": "1993",
+    "citation": "Clayton D, Hills M (1993) Models for dose-response (Chapter 25). Statistical Models in Epidemiology. Oxford: Oxford University Press. pp. 249-260.",
+    "publisher": "Oxford University Press",
+    "pages": "249-260",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "They may choose equal numbers of individuals in each group using quantiles [CITATION]."
+    ]
+  },
+  {
+    "title": "Note on grouping",
+    "authors": "D R Cox",
+    "year": "1957",
+    "citation": "Cox DR (1957) Note on grouping. J Am Stat Assoc 52: 543-547.",
+    "pages": "543-547",
+    "journal": "J Am Stat Assoc",
+    "volume": "52",
+    "sentences": [
+      "On the other hand, one may gain more insight into the association with the outcome by choosing more extreme outer groups and having the middle group(s) larger than the outer groups [CITATION]."
+    ]
+  },
+  {
+    "title": "Choice of exposure scores for categorical regression in meta-analysis: a case study of a common problem",
+    "authors": "D Il'yasova;I Hertz-Picciotto;U Peters;J A Berlin;C Poole",
+    "year": "2005",
+    "citation": "Il'yasova D, Hertz-Picciotto I, Peters U, Berlin JA, Poole C (2005) Choice of exposure scores for categorical regression in meta-analysis: a case study of a common problem. Cancer Causes Control 16: 383-388.",
+    "pages": "383-388",
+    "journal": "Cancer Causes Control",
+    "volume": "16",
+    "sentences": [
+      "Il'yasova et al [CITATION]."
+    ]
+  },
+  {
+    "title": "The association between exposure to a rear-end collision and future neck or shoulder pain: a cohort study",
+    "authors": "A Berglund;L Alfredsson;J D Cassidy;I Jensen;A Nygren",
+    "year": "2000",
+    "citation": "Berglund A, Alfredsson L, Cassidy JD, Jensen I, Nygren A (2000) The association between exposure to a rear-end collision and future neck or shoulder pain: a cohort study. J Clin Epidemiol 53: 1089-1094.",
+    "pages": "1089-1094",
+    "journal": "J Clin Epidemiol",
+    "volume": "53",
+    "sentences": [
+      "The 95% confidence interval (CI) was computed around the adjusted relative risk, using the variance according to Greenland and Robins and Robins et al.'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Controlling for continuous confounding factors: non-and semiparametric approaches",
+    "authors": "R Slama;A Werwatz",
+    "year": "2005",
+    "citation": "Slama R, Werwatz A (2005) Controlling for continuous confounding factors: non-and semiparametric approaches. Rev Epidemiol Sante Publique 53 Spec No 2: 2S65-80.",
+    "pages": "65-80",
+    "journal": "Rev Epidemiol Sante Publique",
+    "volume": "53",
+    "sentences": [
+      "If groups being compared are not similar with regard to some characteristics, adjustment should be made for possible confounding variables by stratification or by multivariable regression (see Box 5) [CITATION]."
+    ]
+  },
+  {
+    "title": "Introduction to regression modelling",
+    "authors": "S Greenland",
+    "year": "1998",
+    "citation": "Greenland S (1998) Introduction to regression modelling (Chapter 21). In: Rothman KJ, Greenland S editors. Modern epidemiology. 2nd ed: Lippincott Raven. pp. 401-432.",
+    "pages": "401-432",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For instance, Cox proportional hazard regression is commonly used in cohort studies [CITATION]."
+    ]
+  },
+  {
+    "title": "Statistical analysis of case-control studies",
+    "authors": "W D Thompson",
+    "year": "1994",
+    "citation": "Thompson WD (1994) Statistical analysis of case-control studies. Epidemiol Rev 16: 33-50.",
+    "pages": "33-50",
+    "journal": "Epidemiol Rev",
+    "volume": "16",
+    "sentences": [
+      "whereas logistic regression is often the method of choice in case-control studies [CITATION][CITATION #b96]."
+    ]
+  },
+  {
+    "title": "Logistic regression for case-control studies (Chapter 8.2). Case-control studies Design, conduct, analysis",
+    "authors": "J J Schlesselman",
+    "year": "1982",
+    "citation": "Schlesselman JJ (1982) Logistic regression for case-control studies (Chapter 8.2). Case-control studies Design, conduct, analysis. New York, Oxford: Oxford University Press. pp. 235-241.",
+    "publisher": "Oxford University Press",
+    "pages": "235-241",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "whereas logistic regression is often the method of choice in case-control studies [CITATION #b95][CITATION]."
+    ]
+  },
+  {
+    "title": "Choice and interpretation of models",
+    "authors": "D Clayton;M Hills",
+    "year": "1993",
+    "citation": "Clayton D, Hills M (1993) Choice and interpretation of models (Chapter 27). Statistical Models in Epidemiology. Oxford: Oxford University Press. pp. 271-281.",
+    "publisher": "Oxford University Press",
+    "pages": "271-281",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Analysts should fully describe specific procedures for variable selection and not only present results from the final model [CITATION][CITATION #b98]."
+    ]
+  },
+  {
+    "title": "Statistical guidelines for contributors to medical journals",
+    "authors": "D G Altman;S M Gore;M J Gardner;S J Pocock",
+    "year": "1983",
+    "citation": "Altman DG, Gore SM, Gardner MJ, Pocock SJ (1983) Statistical guidelines for contributors to medical journals. Br Med J 286: 1489-1493.",
+    "pages": "1489-1493",
+    "journal": "Br Med J",
+    "volume": "286",
+    "sentences": [
+      "Analysts should fully describe specific procedures for variable selection and not only present results from the final model [CITATION #b97][CITATION]."
+    ]
+  },
+  {
+    "title": "Reporting on statistical methods to adjust for confounding: a cross-sectional survey",
+    "authors": "M Mullner;H Matthews;D G Altman",
+    "year": "2002",
+    "citation": "Mullner M, Matthews H, Altman DG (2002) Reporting on statistical methods to adjust for confounding: a cross-sectional survey. Ann Intern Med 136: 122-126.",
+    "pages": "122-126",
+    "journal": "Ann Intern Med",
+    "volume": "136",
+    "sentences": [
+      "In an empirical study, only 93 of 169 articles (55%) reporting adjustment for confounding clearly stated how continuous and multi-category variables were entered into the statistical model [CITATION]."
+    ]
+  },
+  {
+    "title": "Re: Residual confounding",
+    "authors": "J Olsen;O Basso",
+    "year": "1999",
+    "citation": "Olsen J, Basso O (1999) Re: Residual confounding. Am J Epidemiol 149: 290.",
+    "pages": "290",
+    "journal": "Am J Epidemiol",
+    "volume": "149",
+    "sentences": [
+      "Results may still be distorted by residual confounding (the confounding that remains after unsuccessful attempts to control for it [CITATION]), random sampling error, selection bias and information bias (see Box 3)."
+    ]
+  },
+  {
+    "title": "Obesity, smoking, and physical inactivity as risk factors for CKD: are men more vulnerable?",
+    "authors": "S Hallan;R De Mutsert;S Carlsen;F W Dekker;K Aasarod",
+    "year": "2006",
+    "citation": "Hallan S, de Mutsert R, Carlsen S, Dekker FW, Aasarod K, et al. (2006) Obesity, smoking, and physical inactivity as risk factors for CKD: are men more vulnerable? Am J Kidney Dis 47: 396-405.",
+    "pages": "396-405",
+    "journal": "Am J Kidney Dis",
+    "volume": "47",
+    "sentences": [
+      "RERI of 0 means no interaction'' [CITATION].",
+      "Whatever view is taken, this should be clearly presented to the reader, as is done in the example above [CITATION]."
+    ]
+  },
+  {
+    "title": "Believability of relative risks and odds ratios in abstracts: cross sectional study",
+    "authors": "P C Gotzsche",
+    "year": "2006",
+    "citation": "Gotzsche PC (2006) Believability of relative risks and odds ratios in abstracts: cross sectional study. BMJ 333: 231-234.",
+    "pages": "231-234",
+    "journal": "BMJ",
+    "volume": "333",
+    "sentences": [
+      "As discussed in detail under item 17, many debate the use and value of analyses restricted to subgroups of the study population [CITATION #b3][CITATION].",
+      "There is debate about the dangers associated with subgroup analyses, and multiplicity of analyses in general [CITATION #b3][CITATION]."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Communicating Results of Epidemiologic Studies",
+    "authors": "M F Szklo;J Nieto",
+    "year": "2000",
+    "citation": "Szklo MF, Nieto J (2000) Communicating Results of Epidemiologic Studies (Chapter 9). Epidemiology, Beyond the Basics. Sudbury (MA): Jones and Bartlett. pp. 408-430.",
+    "publisher": "Jones and Bartlett",
+    "pages": "408-430",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "There is consensus that the additive scale, which uses absolute risks, is more appropriate for public health and clinical decision making [CITATION]."
+    ]
+  },
+  {
+    "title": "Chronic stress at work and the metabolic syndrome: prospective study",
+    "authors": "T Chandola;E Brunner;M Marmot",
+    "year": "2006",
+    "citation": "Chandola T, Brunner E, Marmot M (2006) Chronic stress at work and the metabolic syndrome: prospective study. BMJ 332: 521-525.",
+    "pages": "521-525",
+    "journal": "BMJ",
+    "volume": "332",
+    "sentences": [
+      "We averaged estimates of the variables to give a single mean estimate and adjusted standard errors according to Rubin's rules'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Biased estimation of the odds ratio in casecontrol studies due to the use of ad hoc methods of correcting for missing values for confounding variables",
+    "authors": "W Vach;M Blettner",
+    "year": "1991",
+    "citation": "Vach W, Blettner M (1991) Biased estimation of the odds ratio in case- control studies due to the use of ad hoc methods of correcting for missing values for confounding variables. Am J Epidemiol 134: 895-907.",
+    "pages": "895-907",
+    "journal": "Am J Epidemiol",
+    "volume": "134",
+    "sentences": [
+      "Despite its ubiquity and importance, few papers report in detail on the problem of missing data [CITATION #b4][CITATION].",
+      "Inserting a missing category indicator for a confounder may increase residual confounding [CITATION]."
+    ]
+  },
+  {
+    "title": "A taxonomy of missing-data methods",
+    "authors": "R J Little;D B Rubin",
+    "year": "2002",
+    "citation": "Little RJ, Rubin DB (2002) A taxonomy of missing-data methods (Chapter 1.4.) In: Statistical Analysis with Missing Data. New York: Wiley. pp. 19- 23.",
+    "publisher": "Wiley",
+    "pages": "19-23",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Although such 'complete-case' analyses are unbiased in many circumstances, they can be biased and are always inefficient [CITATION].",
+      "Rubin developed a typology of missing data problems, based on a model for the probability of an observation being missing [CITATION][CITATION #b109].",
+      "Methods to deal with data missing at random (MAR) fall into three broad classes [CITATION][CITATION #b110]: likelihood-based approaches [CITATION #b111], weighted estimation [CITATION #b112] and multiple imputation [CITATION #b110][CITATION #b113]."
+    ]
+  },
+  {
+    "title": "Interpreting incomplete data in studies of diet and weight loss",
+    "authors": "J H Ware",
+    "year": "2003",
+    "citation": "Ware JH (2003) Interpreting incomplete data in studies of diet and weight loss. N Engl J Med 348: 2136-2137.",
+    "pages": "2136-2137",
+    "journal": "N Engl J Med",
+    "volume": "348",
+    "sentences": [
+      "Using the last observation carried forward for repeated measures can distort trends over time if persons who experience a foreshadowing of the outcome selectively drop out [CITATION]."
+    ]
+  },
+  {
+    "title": "Inference and missing data",
+    "authors": "D B Rubin",
+    "year": "1976",
+    "citation": "Rubin DB (1976) Inference and missing data. Biometrika 63: 581-592.",
+    "pages": "581-592",
+    "journal": "Biometrika",
+    "volume": "63",
+    "sentences": [
+      "Rubin developed a typology of missing data problems, based on a model for the probability of an observation being missing [CITATION #b107][CITATION]."
+    ]
+  },
+  {
+    "title": "Analysis of Incomplete Multivariate Data",
+    "authors": "J L Schafer",
+    "year": "1997",
+    "citation": "Schafer JL (1997) Analysis of Incomplete Multivariate Data. London: Chapman & Hall.",
+    "publisher": "Chapman & Hall",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Methods to deal with data missing at random (MAR) fall into three broad classes [CITATION #b107][CITATION]: likelihood-based approaches [CITATION #b111], weighted estimation [CITATION #b112] and multiple imputation [CITATION][CITATION #b113]."
+    ]
+  },
+  {
+    "title": "Non-ignorable missing covariates in generalized linear models",
+    "authors": "S R Lipsitz;J G Ibrahim;M H Chen;H Peterson",
+    "year": "1999",
+    "citation": "Lipsitz SR, Ibrahim JG, Chen MH, Peterson H (1999) Non-ignorable missing covariates in generalized linear models. Stat Med 18: 2435-2448.",
+    "pages": "2435-2448",
+    "journal": "Stat Med",
+    "volume": "18",
+    "sentences": [
+      "Methods to deal with data missing at random (MAR) fall into three broad classes [CITATION #b107][CITATION #b110]: likelihood-based approaches [CITATION], weighted estimation [CITATION #b112] and multiple imputation [CITATION #b110][CITATION #b113]."
+    ]
+  },
+  {
+    "title": "Analysis of semi-parametric regression models with non-ignorable non-response",
+    "authors": "A Rotnitzky;J Robins",
+    "year": "1997",
+    "citation": "Rotnitzky A, Robins J (1997) Analysis of semi-parametric regression models with non-ignorable non-response. Stat Med 16: 81-102.",
+    "pages": "81-102",
+    "journal": "Stat Med",
+    "volume": "16",
+    "sentences": [
+      "Methods to deal with data missing at random (MAR) fall into three broad classes [CITATION #b107][CITATION #b110]: likelihood-based approaches [CITATION #b111], weighted estimation [CITATION] and multiple imputation [CITATION #b110][CITATION #b113]."
+    ]
+  },
+  {
+    "title": "Multiple Imputation for Nonresponse in Surveys",
+    "authors": "D B Rubin",
+    "year": "1987",
+    "citation": "Rubin DB (1987) Multiple Imputation for Nonresponse in Surveys. New York: John Wiley.",
+    "publisher": "John Wiley",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Methods to deal with data missing at random (MAR) fall into three broad classes [CITATION #b107][CITATION #b110]: likelihood-based approaches [CITATION #b111], weighted estimation [CITATION #b112] and multiple imputation [CITATION #b110][CITATION]."
+    ]
+  },
+  {
+    "title": "Applications of multiple imputation in medical studies: from AIDS to NHANES",
+    "authors": "J Barnard;X L Meng",
+    "year": "1999",
+    "citation": "Barnard J, Meng XL (1999) Applications of multiple imputation in medical studies: from AIDS to NHANES. Stat Methods Med Res 8: 17- 36.",
+    "pages": "17-36",
+    "journal": "Stat Methods Med Res",
+    "volume": "8",
+    "sentences": [
+      "Of these three approaches, multiple imputation is the most commonly used and flexible, particularly when multiple variables have missing values [CITATION]."
+    ]
+  },
+  {
+    "title": "Mortality of HIV-1-infected patients in the first year of antiretroviral therapy: comparison between low-income and high-income countries",
+    "authors": "P Braitstein;M W Brinkhof;F Dabis;M Schechter;A Boulle",
+    "year": "2006",
+    "citation": "Braitstein P, Brinkhof MW, Dabis F, Schechter M, Boulle A, et al. (2006) Mortality of HIV-1-infected patients in the first year of antiretroviral therapy: comparison between low-income and high-income countries. Lancet 367: 817-824.",
+    "pages": "817-824",
+    "journal": "Lancet",
+    "volume": "367",
+    "sentences": [
+      ".) Treatment programmes with passive follow-up were excluded from subsequent analyses'' [CITATION].",
+      "In the example above, patients lost to follow-up in treatment programmes with no active follow-up had fewer CD4 helper cells than those remaining under observation and were therefore at higher risk of dying [CITATION]."
+    ]
+  },
+  {
+    "title": "Cerebral emboli as a potential cause of Alzheimer's disease and vascular dementia: case-control study",
+    "authors": "N Purandare;A Burns;K J Daly;J Hardicre;J Morris",
+    "year": "2006",
+    "citation": "Purandare N, Burns A, Daly KJ, Hardicre J, Morris J, et al. (2006) Cerebral emboli as a potential cause of Alzheimer's disease and vascular dementia: case-control study. BMJ 332: 1119-1124.",
+    "pages": "1119-1124",
+    "journal": "BMJ",
+    "volume": "332",
+    "sentences": [
+      "''We used McNemar's test, paired t test, and conditional logistic regression analysis to compare dementia patients with their matched controls for cardiovascular risk factors, the occurrence of spontaneous cerebral emboli, carotid disease, and venous to arterial circulation shunt'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Hypertension in South African adults: results from the Demographic and Health Survey",
+    "authors": "K Steyn;T A Gaziano;D Bradshaw;R Laubscher;J Fourie",
+    "year": "1998",
+    "citation": "Steyn K, Gaziano TA, Bradshaw D, Laubscher R, Fourie J (2001) Hypertension in South African adults: results from the Demographic and Health Survey, 1998. J Hypertens 19: 1717-1725.",
+    "pages": "1717-1725",
+    "journal": "J Hypertens",
+    "volume": "19",
+    "sentences": [
+      ".) The overall design effect for diastolic blood pressure was found to be 1.9 for men and 1.8 for women and, for systolic blood pressure, it was 1.9 for men and 2.0 for women'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Sampling: Design and Analysis",
+    "authors": "S L Lohr",
+    "year": "1999",
+    "citation": "Lohr SL (1999) Design Effects (Chapter 7.5). Sampling: Design and Analysis. Pacific Grove (CA): Duxbury Press.",
+    "publisher": "Duxbury Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Measures of precision such as standard error or confidence interval should be corrected using the design effect, a ratio measure that describes how much precision is gained or lost if a more complex sampling strategy is used instead of simple random sampling [CITATION]."
+    ]
+  },
+  {
+    "title": "GraphReg: graph neural network-based prediction of gene regulatory networks from chromatin accessibility data",
+    "authors": [
+      "Huang, Z.",
+      "Volkov, N.",
+      "Santos, R."
+    ],
+    "year": "2023",
+    "journal": "Nature Computational Science",
+    "doi": "",
+    "citation": "Huang et al. (2023) Nat Comput Sci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "The relationship between use of oral contraceptives and myocardial infarction in young women with fatal outcome, compared to those who survive: results from the MICA case-control study",
+    "authors": "N R Dunn;A Arscott;M Thorogood",
+    "year": "2001",
+    "citation": "Dunn NR, Arscott A, Thorogood M (2001) The relationship between use of oral contraceptives and myocardial infarction in young women with fatal outcome, compared to those who survive: results from the MICA case-control study. Contraception 63: 65-69.",
+    "pages": "65-69",
+    "journal": "Contraception",
+    "volume": "63",
+    "sentences": [
+      "We have assumed that the proportion of women using oral contraceptives in the study group applies to the whole (19.1% for dead, and 11.4% for live patients), and then applied two extreme scenarios: either all the exposed missing patients used second generation pills or they all used third-generation pills'' [CITATION].",
+      "Issues that may be examined include the criteria for inclusion in analyses, the definitions of exposures or outcomes [CITATION #b121], which confounding variables merit adjustment, the handling of missing data [CITATION][CITATION #b122], possible selection bias or bias from inaccurate or inconsistent measurement of exposure, disease and other variables, and specific analysis choices, such as the treatment of quantitative variables (see item 11).",
+      "We would not recommend any change in prescribing practice on the strength of these results'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Basic Methods for Sensitivity Analysis and External Adjustment",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Basic Methods for Sensitivity Analysis and External Adjustment. In: Rothman KJ, Greenland S, editors. Modern epidemiology. 2nd ed: Lippincott Raven. pp. 343-357.",
+    "pages": "343-357",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Sensitivity analyses are useful to investigate whether or not the main results are consistent with those obtained with alternative analysis strategies or assumptions [CITATION].",
+      "In case-control studies the equivalent of comparing exposed and non-exposed for the presence of potential confounders (as is done in cohorts) can be achieved by exploring the source population of the cases: if the control group is large enough and represents the source population, exposed and unexposed controls can be compared for potential confounders [CITATION][CITATION #b146]."
+    ]
+  },
+  {
+    "title": "Hormonal exposures and the risk of intracranial meningioma in women: a population-based case-control study",
+    "authors": "B Custer;W T Longstreth Jr;L E Phillips;T D Koepsell",
+    "year": "2006",
+    "citation": "Custer B, Longstreth WT Jr., Phillips LE, Koepsell TD, Van Belle G (2006) Hormonal exposures and the risk of intracranial meningioma in women: a population-based case-control study. BMC Cancer 6: 152.",
+    "pages": "152",
+    "journal": "BMC Cancer",
+    "volume": "6",
+    "sentences": [
+      "Issues that may be examined include the criteria for inclusion in analyses, the definitions of exposures or outcomes [CITATION], which confounding variables merit adjustment, the handling of missing data [CITATION #b119][CITATION #b122], possible selection bias or bias from inaccurate or inconsistent measurement of exposure, disease and other variables, and specific analysis choices, such as the treatment of quantitative variables (see item 11)."
+    ]
+  },
+  {
+    "title": "Effect of restrictions on smoking at home, at school, and in public places on teenage smoking: cross sectional study",
+    "authors": "M A Wakefield;F J Chaloupka;N J Kaufman;C T Orleans;D C Barker",
+    "year": "2000",
+    "citation": "Wakefield MA, Chaloupka FJ, Kaufman NJ, Orleans CT, Barker DC, et al. (2000) Effect of restrictions on smoking at home, at school, and in public places on teenage smoking: cross sectional study. BMJ 321: 333-337.",
+    "pages": "333-337",
+    "journal": "BMJ",
+    "volume": "321",
+    "sentences": [
+      "Issues that may be examined include the criteria for inclusion in analyses, the definitions of exposures or outcomes [CITATION #b121], which confounding variables merit adjustment, the handling of missing data [CITATION #b119][CITATION], possible selection bias or bias from inaccurate or inconsistent measurement of exposure, disease and other variables, and specific analysis choices, such as the treatment of quantitative variables (see item 11)."
+    ]
+  },
+  {
+    "title": "The impact of prior distributions for uncontrolled confounding and response bias: a case study of the relation of wire codes and magnetic fields to childhood leukemia",
+    "authors": "S Greenland",
+    "year": "2003",
+    "citation": "Greenland S (2003) The impact of prior distributions for uncontrolled confounding and response bias: a case study of the relation of wire codes and magnetic fields to childhood leukemia. J Am Stat Assoc 98: 47-54.",
+    "pages": "47-54",
+    "journal": "J Am Stat Assoc",
+    "volume": "98",
+    "sentences": [
+      "Sophisticated methods are increasingly used to simultaneously model the influence of several biases or assumptions [CITATION][CITATION #b124][CITATION #b125]."
+    ]
+  },
+  {
+    "title": "Semi-automated sensitivity analysis to assess systematic errors in observational data",
+    "authors": "T L Lash;A K Fink",
+    "year": "2003",
+    "citation": "Lash TL, Fink AK (2003) Semi-automated sensitivity analysis to assess systematic errors in observational data. Epidemiology 14: 451-458.",
+    "pages": "451-458",
+    "journal": "Epidemiology",
+    "volume": "14",
+    "sentences": [
+      "Sophisticated methods are increasingly used to simultaneously model the influence of several biases or assumptions [CITATION #b123][CITATION][CITATION #b125]."
+    ]
+  },
+  {
+    "title": "Quantifying and reporting uncertainty from systematic errors",
+    "authors": "C V Phillips",
+    "year": "2003",
+    "citation": "Phillips CV (2003) Quantifying and reporting uncertainty from system- atic errors. Epidemiology 14: 459-466.",
+    "pages": "459-466",
+    "journal": "Epidemiology",
+    "volume": "14",
+    "sentences": [
+      "Sophisticated methods are increasingly used to simultaneously model the influence of several biases or assumptions [CITATION #b123][CITATION #b124][CITATION]."
+    ]
+  },
+  {
+    "title": "Smoking and lung cancer: recent evidence and a discussion of some questions",
+    "authors": "J Cornfield;W Haenszel;E C Hammond;A M Lilienfeld;M B Shimkin",
+    "year": "1959",
+    "citation": "Cornfield J, Haenszel W, Hammond EC, Lilienfeld AM, Shimkin MB, et al. (1959) Smoking and lung cancer: recent evidence and a discussion of some questions. J Natl Cancer Inst 22: 173-203.",
+    "pages": "173-203",
+    "journal": "J Natl Cancer Inst",
+    "volume": "22",
+    "sentences": [
+      "In 1959 Cornfield et al. famously showed that a relative risk of 9 for cigarette smoking and lung cancer was extremely unlikely to be due to any conceivable confounder, since the confounder would need to be at least nine times as prevalent in smokers as in non-smokers [CITATION].",
+      "This is a reversal of the point by Cornfield et al. about the strength of large relative risks (see item 12b) [CITATION]."
+    ]
+  },
+  {
+    "title": "Factors that explain the power line configuration wiring code-childhood leukemia association: what would they look like?",
+    "authors": "B Langholz",
+    "year": "2001",
+    "citation": "Langholz B (2001) Factors that explain the power line configuration wiring code-childhood leukemia association: what would they look like? Bioelectromagnetics 5: S19-31.",
+    "pages": "19-31",
+    "journal": "Bioelectromagnetics",
+    "volume": "5",
+    "sentences": [
+      "The same approach was recently used to identify plausible confounding factors that could explain the association between childhood leukaemia and living near electric power lines [CITATION]."
+    ]
+  },
+  {
+    "title": "Bartenders' respiratory health after establishment of smoke-free bars and taverns",
+    "authors": "M D Eisner;A K Smith;P D Blanc",
+    "year": "1998",
+    "citation": "Eisner MD, Smith AK, Blanc PD (1998) Bartenders' respiratory health after establishment of smoke-free bars and taverns. JAMA 280: 1909- 1914.",
+    "pages": "1909-1914",
+    "journal": "JAMA",
+    "volume": "280",
+    "sentences": [
+      "Fifty-four of the daytime bartenders (81%) completed baseline interviews and spirometry; 53 of these subjects (98%) completed follow-up'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Participation bias in a sexuality survey: psychological and behavioural characteristics of responders and non-responders",
+    "authors": "M P Dunne;N G Martin;J M Bailey;A C Heath;K K Bucholz",
+    "year": "1997",
+    "citation": "Dunne MP, Martin NG, Bailey JM, Heath AC, Bucholz KK, et al. (1997) Participation bias in a sexuality survey: psychological and behavioural characteristics of responders and non-responders. Int J Epidemiol 26: 844-854.",
+    "pages": "844-854",
+    "journal": "Int J Epidemiol",
+    "volume": "26",
+    "sentences": [
+      "For example, people who agreed to participate in a postal survey of sexual behaviour attended church less often, had less conservative sexual attitudes and earlier age at first sexual intercourse, and were more likely to smoke cigarettes and drink alcohol than people who refused [CITATION]."
+    ]
+  },
+  {
+    "title": "Association of childhood cancer with factors related to pregnancy and birth",
+    "authors": "J Schuz;P Kaatsch;U Kaletsch;R Meinert;J Michaelis",
+    "year": "1999",
+    "citation": "Schuz J, Kaatsch P, Kaletsch U, Meinert R, Michaelis J (1999) Association of childhood cancer with factors related to pregnancy and birth. Int J Epidemiol 28: 631-639.",
+    "pages": "631-639",
+    "journal": "Int J Epidemiol",
+    "volume": "28",
+    "sentences": [
+      "As another example, the association between young maternal age and leukaemia in offspring, which has been observed in some case-control studies [CITATION][CITATION #b131], was explained by differential participation of young women in case and control groups."
+    ]
+  },
+  {
+    "title": "Prenatal and neonatal risk factors for childhood myeloid leukemia",
+    "authors": "S Cnattingius;M Zack;A Ekbom;J Gunnarskog;M Linet",
+    "year": "1995",
+    "citation": "Cnattingius S, Zack M, Ekbom A, Gunnarskog J, Linet M, et al. (1995) Prenatal and neonatal risk factors for childhood myeloid leukemia. Cancer Epidemiol Biomarkers Prev 4: 441-445.",
+    "pages": "441-445",
+    "journal": "Cancer Epidemiol Biomarkers Prev",
+    "volume": "4",
+    "sentences": [
+      "As another example, the association between young maternal age and leukaemia in offspring, which has been observed in some case-control studies [CITATION #b130][CITATION], was explained by differential participation of young women in case and control groups."
+    ]
+  },
+  {
+    "title": "Non-response bias as a likely cause of the association between young maternal age at the time of delivery and the risk of cancer in the offspring",
+    "authors": "J Schuz",
+    "year": "2003",
+    "citation": "Schuz J (2003) Non-response bias as a likely cause of the association between young maternal age at the time of delivery and the risk of cancer in the offspring. Paediatr Perinat Epidemiol 17: 106-112.",
+    "pages": "106-112",
+    "journal": "Paediatr Perinat Epidemiol",
+    "volume": "17",
+    "sentences": [
+      "Young women with healthy children were less likely to participate than those with unhealthy children [CITATION]."
+    ]
+  },
+  {
+    "title": "Response rates among control subjects in case-control studies",
+    "authors": "M L Slattery;S L Edwards;B J Caan;R A Kerber;J D Potter",
+    "year": "1995",
+    "citation": "Slattery ML, Edwards SL, Caan BJ, Kerber RA, Potter JD (1995) Response rates among control subjects in case-control studies. Ann Epidemiol 5: 245-249.",
+    "pages": "245-249",
+    "journal": "Ann Epidemiol",
+    "volume": "5",
+    "sentences": [
+      "Also, as there are no universally agreed definitions for participation, response or follow-up rates, readers need to understand how authors calculated such proportions [CITATION]."
+    ]
+  },
+  {
+    "title": "Case-control studies: research in reverse",
+    "authors": "K F Schulz;D A Grimes",
+    "year": "2002",
+    "citation": "Schulz KF, Grimes DA (2002) Case-control studies: research in reverse. Lancet 359: 431-434.",
+    "pages": "431-434",
+    "journal": "Lancet",
+    "volume": "359",
+    "sentences": [
+      "In casecontrol studies, we advise that authors describe the flow of participants separately for case and control groups [CITATION]."
+    ]
+  },
+  {
+    "title": "Reporting participation in case-control studies",
+    "authors": "S H Olson;L F Voigt;C B Begg;N S Weiss",
+    "year": "2002",
+    "citation": "Olson SH, Voigt LF, Begg CB, Weiss NS (2002) Reporting participation in case-control studies. Epidemiology 13: 123-126.",
+    "pages": "123-126",
+    "journal": "Epidemiology",
+    "volume": "13",
+    "sentences": [
+      "Olson and colleagues proposed useful reporting guidelines for controls recruited through random-digit dialling and other methods [CITATION]."
+    ]
+  },
+  {
+    "title": "Reporting participation in epidemiologic studies: a survey of practice",
+    "authors": "L M Morton;J Cahill;P Hartge",
+    "year": "2006",
+    "citation": "Morton LM, Cahill J, Hartge P (2006) Reporting participation in epidemiologic studies: a survey of practice. Am J Epidemiol 163: 197- 203.",
+    "pages": "197-203",
+    "journal": "Am J Epidemiol",
+    "volume": "163",
+    "sentences": [
+      "A recent survey of epidemiological studies published in 10 general epidemiology, public health and medical journals found that some information regarding participation was provided in 47 of 107 case-control studies (59%), 49 of 154 cohort studies (32%), and 51 of 86 cross-sectional studies (59%) [CITATION].",
+      "Finally, there is evidence that participation in epidemiological studies may have declined in recent decades [CITATION][CITATION #b137], which underscores the need for transparent reporting [CITATION #b138]."
+    ]
+  },
+  {
+    "title": "Reported participation in case-control studies: changes over time",
+    "authors": "S H Olson",
+    "year": "2001",
+    "citation": "Olson SH (2001) Reported participation in case-control studies: changes over time. Am J Epidemiol 154: 574-581.",
+    "pages": "574-581",
+    "journal": "Am J Epidemiol",
+    "volume": "154",
+    "sentences": [
+      "Finally, there is evidence that participation in epidemiological studies may have declined in recent decades [CITATION #b136][CITATION], which underscores the need for transparent reporting [CITATION #b138]."
+    ]
+  },
+  {
+    "title": "On revealing what we'd rather hide: the problem of describing study participation",
+    "authors": "D P Sandler",
+    "year": "2002",
+    "citation": "Sandler DP (2002) On revealing what we'd rather hide: the problem of describing study participation. Epidemiology 13: 117.",
+    "pages": "117",
+    "journal": "Epidemiology",
+    "volume": "13",
+    "sentences": [
+      "Finally, there is evidence that participation in epidemiological studies may have declined in recent decades [CITATION #b136][CITATION #b137], which underscores the need for transparent reporting [CITATION]."
+    ]
+  },
+  {
+    "title": "Mobile phone use and risk of glioma in adults: case-control study",
+    "authors": "S J Hepworth;M J Schoemaker;K R Muir;A J Swerdlow;M J Van Tongeren",
+    "year": "2006",
+    "citation": "Hepworth SJ, Schoemaker MJ, Muir KR, Swerdlow AJ, van Tongeren MJ, et al. (2006) Mobile phone use and risk of glioma in adults: case-control study. BMJ 332: 883-887.",
+    "pages": "883-887",
+    "journal": "BMJ",
+    "volume": "332",
+    "sentences": [
+      "Example ''The main reasons for non-participation were the participant was too ill or had died before interview (cases 30%, controls , 1%), nonresponse (cases 2%, controls 21%), refusal (cases 10%, controls 29%), and other reasons (refusal by consultant or general practitioner, non-English speaking, mental impairment) (cases 7%, controls 5%)'' [CITATION]."
+    ]
+  },
+  {
+    "title": "An improper use of statistical significance testing in studying covariables",
+    "authors": "L G Dales;H K Ury",
+    "year": "1978",
+    "citation": "Dales LG, Ury HK (1978) An improper use of statistical significance testing in studying covariables. Int J Epidemiol 7: 373-375.",
+    "pages": "373-375",
+    "journal": "Int J Epidemiol",
+    "volume": "7",
+    "sentences": [
+      "Also, P values are not an appropriate criterion for selecting which confounders to adjust for in analysis; even small differences in a confounder that has a strong effect on the outcome can be important [CITATION][CITATION #b144]."
+    ]
+  },
+  {
+    "title": "Simulation study of confounderselection strategies",
+    "authors": "G Maldonado;S Greenland",
+    "year": "1993",
+    "citation": "Maldonado G, Greenland S (1993) Simulation study of confounder- selection strategies. Am J Epidemiol 138: 923-936.",
+    "pages": "923-936",
+    "journal": "Am J Epidemiol",
+    "volume": "138",
+    "sentences": [
+      "Also, P values are not an appropriate criterion for selecting which confounders to adjust for in analysis; even small differences in a confounder that has a strong effect on the outcome can be important [CITATION #b143][CITATION]."
+    ]
+  },
+  {
+    "title": "Oral contraceptives and the risk of myocardial infarction",
+    "authors": "B C Tanis;M A Van Den Bosch;J M Kemmeren;V M Cats;F M Helmerhorst",
+    "year": "2001",
+    "citation": "Tanis BC, van den Bosch MA, Kemmeren JM, Cats VM, Helmerhorst FM, et al. (2001) Oral contraceptives and the risk of myocardial infarction. N Engl J Med 345: 1787-1793.",
+    "pages": "1787-1793",
+    "journal": "N Engl J Med",
+    "volume": "345",
+    "sentences": [
+      "For example, in a study of oral contraceptives and myocardial infarction, a sample of young women with infarction more often had risk factors for that disease, such as high serum cholesterol, smoking and a positive family history, than the control group [CITATION]."
+    ]
+  },
+  {
+    "title": "Precision and Validity in Epidemiologic Studies",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Precision and Validity in Epidemiologic Studies. In: Rothman KJ, Greenland S editors. Modern epidemiology. 2nd ed: Lippincott Raven. pp. 120-125.",
+    "pages": "120-125",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "In case-control studies the equivalent of comparing exposed and non-exposed for the presence of potential confounders (as is done in cohorts) can be achieved by exploring the source population of the cases: if the control group is large enough and represents the source population, exposed and unexposed controls can be compared for potential confounders [CITATION #b120][CITATION].",
+      "Of note, we and others do not advise selecting confounders based solely on statistical significance testing [CITATION][CITATION #b158][CITATION #b159]."
+    ]
+  },
+  {
+    "title": "Quantification of the completeness of follow-up",
+    "authors": "T G Clark;D G Altman;De Stavola;B L",
+    "year": "2002",
+    "citation": "Clark TG, Altman DG, De Stavola BL (2002) Quantification of the completeness of follow-up. Lancet 359: 1309-1310.",
+    "pages": "1309-1310",
+    "journal": "Lancet",
+    "volume": "359",
+    "sentences": [
+      "In a cohort study, authors should report the extent of loss to follow-up (with reasons), since incomplete follow-up may bias findings (see also items 12d and 13) [CITATION].",
+      "They may report total person-years of follow-up or some indication of the proportion of potential data that was captured [CITATION]."
+    ]
+  },
+  {
+    "title": "Occupational exposure to electromagnetic fields and risk of Alzheimer's disease",
+    "authors": "C Qiu;L Fratiglioni;A Karp;B Winblad;T Bellander",
+    "year": "2004",
+    "citation": "Qiu C, Fratiglioni L, Karp A, Winblad B, Bellander T (2004) Occupational exposure to electromagnetic fields and risk of Alzheimer's disease. Epidemiology 15: 687-694.",
+    "pages": "687-694",
+    "journal": "Epidemiology",
+    "volume": "15",
+    "sentences": [
+      "''During the 4366 person-years of follow-up (median 5.4, maximum 8.3 years), 265 subjects were diagnosed as having dementia, including 202 with Alzheimer's disease'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Survival plots of time-to-event outcomes in clinical trials: good practice and pitfalls",
+    "authors": "S J Pocock;T C Clayton;D G Altman",
+    "year": "2002",
+    "citation": "Pocock SJ, Clayton TC, Altman DG (2002) Survival plots of time-to-event outcomes in clinical trials: good practice and pitfalls. Lancet 359: 1686- 1689.",
+    "pages": "1686-1689",
+    "journal": "Lancet",
+    "volume": "359",
+    "sentences": [
+      "It might be preferable to show plots as cumulative incidence that go up from 0% rather than down from 100%, especially if the event rate is lower than, say, 30% [CITATION]."
+    ]
+  },
+  {
+    "title": "A note on the presentation of matched case-control data",
+    "authors": "P Sasieni",
+    "year": "1992",
+    "citation": "Sasieni P (1992) A note on the presentation of matched case-control data. Stat Med 11: 617-620.",
+    "pages": "617-620",
+    "journal": "Stat Med",
+    "volume": "11",
+    "sentences": [
+      "For case-control studies, the focus will be on reporting exposures separately for cases and controls as frequencies or quantitative summaries [CITATION]."
+    ]
+  },
+  {
+    "title": "A nested casecontrol study of residential and personal magnetic field measures and miscarriages",
+    "authors": "G M Lee;R R Neutra;L Hristova;M Yost;R A Hiatt",
+    "year": "2002",
+    "citation": "Lee GM, Neutra RR, Hristova L, Yost M, Hiatt RA (2002) A nested case- control study of residential and personal magnetic field measures and miscarriages. Epidemiology 13: 21-31.",
+    "pages": "21-31",
+    "journal": "Epidemiology",
+    "volume": "13",
+    "sentences": [
+      ".) that produced a 10% change in the odds ratio after the Mantel-Haenszel adjustment'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Risk factors, confounding, and the illusion of statistical control",
+    "authors": "N J Christenfeld;R P Sloan;D Carroll;S Greenland",
+    "year": "2004",
+    "citation": "Christenfeld NJ, Sloan RP, Carroll D, Greenland S (2004) Risk factors, confounding, and the illusion of statistical control. Psychosom Med 66: 868-875.",
+    "pages": "868-875",
+    "journal": "Psychosom Med",
+    "volume": "66",
+    "sentences": [
+      "Thus, great care should be exercised when interpreting adjusted results, as the validity of results often depends crucially on complete knowledge of important confounders, their precise measurement, and appropriate specification in the statistical model (see also item 20) [CITATION][CITATION #b157]."
+    ]
+  },
+  {
+    "title": "Declaring independence: why we should be cautious",
+    "authors": "G D Smith;A Phillips",
+    "year": "1990",
+    "citation": "Smith GD, Phillips A (1990) Declaring independence: why we should be cautious [erratum: J Epidemiol Community Health 1991 Mar;45(1);88]. J Epidemiol Community Health 44: 257-258.",
+    "pages": "257-258",
+    "journal": "J Epidemiol Community Health",
+    "volume": "45",
+    "sentences": [
+      "Thus, great care should be exercised when interpreting adjusted results, as the validity of results often depends crucially on complete knowledge of important confounders, their precise measurement, and appropriate specification in the statistical model (see also item 20) [CITATION #b156][CITATION]."
+    ]
+  },
+  {
+    "title": "Control of confounding in the assessment of medical technology",
+    "authors": "S Greenland;R Neutra",
+    "year": "1980",
+    "citation": "Greenland S, Neutra R (1980) Control of confounding in the assessment of medical technology. Int J Epidemiol 9: 361-367.",
+    "pages": "361-367",
+    "journal": "Int J Epidemiol",
+    "volume": "9",
+    "sentences": [
+      "Of note, we and others do not advise selecting confounders based solely on statistical significance testing [CITATION #b146][CITATION][CITATION #b159]."
+    ]
+  },
+  {
+    "title": "Data, design, and background knowledge in etiologic inference",
+    "authors": "J M Robins",
+    "year": "2001",
+    "citation": "Robins JM (2001) Data, design, and background knowledge in etiologic inference. Epidemiology 12: 313-320.",
+    "pages": "313-320",
+    "journal": "Epidemiology",
+    "volume": "12",
+    "sentences": [
+      "Of note, we and others do not advise selecting confounders based solely on statistical significance testing [CITATION #b146][CITATION #b158][CITATION]."
+    ]
+  },
+  {
+    "title": "Breast cancer and hormone-replacement therapy in the Million Women Study",
+    "authors": "V Beral",
+    "year": "2003",
+    "citation": "Beral V (2003) Breast cancer and hormone-replacement therapy in the Million Women Study. Lancet 362: 419-427.",
+    "pages": "419-427",
+    "journal": "Lancet",
+    "volume": "362",
+    "sentences": [
+      "''10 years' use of HRT [hormone replacement therapy] is estimated to result in five (95% CI 3-7) additional breast cancers per 1000 users of oestrogen-only preparations and 19 [CITATION #b14][CITATION #b15][CITATION #b16][CITATION #b17][CITATION #b18][CITATION #b19][CITATION #b20][CITATION #b21][CITATION #b22] additional cancers per 1000 users of oestrogenprogestagen combinations'' [CITATION].",
+      "The example gives the additional number of breast cancer cases per 1000 women who used hormone-replacement therapy for 10 years [CITATION]."
+    ]
+  },
+  {
+    "title": "The environment and disease: Association or causation?",
+    "authors": "A B Hill",
+    "year": "1965",
+    "citation": "Hill AB (1965) The environment and disease: Association or causation? Proc R Soc Med 58: 295-300.",
+    "pages": "295-300",
+    "journal": "Proc R Soc Med",
+    "volume": "58",
+    "sentences": [
+      "If the relative risk is a long way from 1 it is less likely that the association is due to confounding [CITATION][CITATION #b164].",
+      "To guide thinking and conclusions about causality, some may find criteria proposed by Bradford Hill in 1965 helpful [CITATION]."
+    ]
+  },
+  {
+    "title": "Causality in epidemiology",
+    "authors": "P Vineis",
+    "year": "2003",
+    "citation": "Vineis P (2003) Causality in epidemiology. Soz Praventivmed 48: 80-87.",
+    "pages": "80-87",
+    "journal": "Soz Praventivmed",
+    "volume": "48",
+    "sentences": [
+      "If the relative risk is a long way from 1 it is less likely that the association is due to confounding [CITATION #b163][CITATION]."
+    ]
+  },
+  {
+    "title": "Are the Framingham and PROCAM coronary heart disease risk functions applicable to different European populations? The PRIME Study",
+    "authors": "J P Empana;P Ducimetiere;D Arveiler;J Ferrieres;A Evans",
+    "year": "2003",
+    "citation": "Empana JP, Ducimetiere P, Arveiler D, Ferrieres J, Evans A, et al. (2003) Are the Framingham and PROCAM coronary heart disease risk functions applicable to different European populations? The PRIME Study. Eur Heart J 24: 1903-1911.",
+    "pages": "1903-1911",
+    "journal": "Eur Heart J",
+    "volume": "24",
+    "sentences": [
+      "For example, similar relative risks were obtained for the classic cardiovascular risk factors for men living in Northern Ireland, France, the USA and Germany, despite the fact that the underlying risk of coronary heart disease varies substantially between these countries [CITATION][CITATION #b166]."
+    ]
+  },
+  {
+    "title": "Contribution of trends in survival and coronary-event rates to changes in coronary heart disease mortality: 10-year results from 37 WHO MONICA project populations. Monitoring trends and determinants in cardiovascular disease",
+    "authors": "H Tunstall-Pedoe;K Kuulasmaa;M Mahonen;H Tolonen;E Ruokokoski",
+    "year": "1999",
+    "citation": "Tunstall-Pedoe H, Kuulasmaa K, Mahonen M, Tolonen H, Ruokokoski E, et al. (1999) Contribution of trends in survival and coronary-event rates to changes in coronary heart disease mortality: 10-year results from 37 WHO MONICA project populations. Monitoring trends and determi- nants in cardiovascular disease. Lancet 353: 1547-1557.",
+    "pages": "1547-1557",
+    "journal": "Lancet",
+    "volume": "353",
+    "sentences": [
+      "For example, similar relative risks were obtained for the classic cardiovascular risk factors for men living in Northern Ireland, France, the USA and Germany, despite the fact that the underlying risk of coronary heart disease varies substantially between these countries [CITATION #b165][CITATION]."
+    ]
+  },
+  {
+    "title": "Is the relationship between blood pressure and cardiovascular risk dependent on body mass index?",
+    "authors": "F Cambien;J M Chretien;P Ducimetiere;L Guize;J L Richard",
+    "year": "1985",
+    "citation": "Cambien F, Chretien JM, Ducimetiere P, Guize L, Richard JL (1985) Is the relationship between blood pressure and cardiovascular risk dependent on body mass index? Am J Epidemiol 122: 434-442.",
+    "pages": "434-442",
+    "journal": "Am J Epidemiol",
+    "volume": "122",
+    "sentences": [
+      "In contrast, in a study of hypertension as a risk factor for cardiovascular disease mortality, the data were more compatible with a constant rate difference than with a constant rate ratio [CITATION]."
+    ]
+  },
+  {
+    "title": "The importance of assessing the fit of logistic regression models: a case study",
+    "authors": "D W Hosmer;S Taber;S Lemeshow",
+    "year": "1991",
+    "citation": "Hosmer DW, Taber S, Lemeshow S (1991) The importance of assessing the fit of logistic regression models: a case study. Am J Public Health 81: 1630-1635.",
+    "pages": "1630-1635",
+    "journal": "Am J Public Health",
+    "volume": "81",
+    "sentences": [
+      "Widely used statistical models, including logistic [CITATION] and proportional hazards (Cox) regression [CITATION #b169] are based on ratio measures."
+    ]
+  },
+  {
+    "title": "A plain man's guide to the proportional hazards model",
+    "authors": "R Tibshirani",
+    "year": "1982",
+    "citation": "Tibshirani R (1982) A plain man's guide to the proportional hazards model. Clin Invest Med 5: 63-68.",
+    "pages": "63-68",
+    "journal": "Clin Invest Med",
+    "volume": "5",
+    "sentences": [
+      "Widely used statistical models, including logistic [CITATION #b168] and proportional hazards (Cox) regression [CITATION] are based on ratio measures."
+    ]
+  },
+  {
+    "title": "Use and misuse of population attributable fractions",
+    "authors": "B Rockhill;B Newman;C Weinberg",
+    "year": "1998",
+    "citation": "Rockhill B, Newman B, Weinberg C (1998) Use and misuse of population attributable fractions. Am J Public Health 88: 15-19.",
+    "pages": "15-19",
+    "journal": "Am J Public Health",
+    "volume": "88",
+    "sentences": [
+      "Authors should be aware of the strong assumptions made in this context, including a causal relationship between a risk factor and disease (also see [CITATION].",
+      "However, authors should be aware of the strong assumptions made in this context [CITATION]."
+    ]
+  },
+  {
+    "title": "The application of methods to quantify attributable risk in medical practice",
+    "authors": "W Uter;A Pfahlberg",
+    "year": "2001",
+    "citation": "Uter W, Pfahlberg A (2001) The application of methods to quantify attributable risk in medical practice. Stat Methods Med Res 10: 231-237.",
+    "pages": "231-237",
+    "journal": "Stat Methods Med Res",
+    "volume": "10",
+    "sentences": [
+      "Because of the semantic ambiguity and complexities involved, authors should report in detail what methods were used to calculate attributable risks, ideally giving the formulae used [CITATION].",
+      "The population attributable fraction is generally defined as the proportion of cases caused by a particular exposure, but several concepts (and no unified terminology) exist, and incorrect approaches to adjust for other factors are sometimes used [CITATION][CITATION #b179]."
+    ]
+  },
+  {
+    "title": "Ratio measures in leading medical journals: structured review of accessibility of underlying absolute risks",
+    "authors": "L M Schwartz;S Woloshin;E L Dvorin;H G Welch",
+    "year": "2006",
+    "citation": "Schwartz LM, Woloshin S, Dvorin EL, Welch HG (2006) Ratio measures in leading medical journals: structured review of accessibility of underlying absolute risks. BMJ 333: 1248.",
+    "pages": "1248",
+    "journal": "BMJ",
+    "volume": "333",
+    "sentences": [
+      "A recent survey of abstracts of 222 articles published in leading medical journals found that in 62% of abstracts of randomised trials including a ratio measure absolute risks were given, but only in 21% of abstracts of cohort studies [CITATION]."
+    ]
+  },
+  {
+    "title": "Reporting of attributable and relative risks",
+    "authors": "T Nakayama;M M Zaman;H Tanaka",
+    "year": "1998",
+    "citation": "Nakayama T, Zaman MM, Tanaka H (1998) Reporting of attributable and relative risks, 1966-97. Lancet 351: 1179.",
+    "pages": "1966-97",
+    "journal": "",
+    "volume": "351",
+    "sentences": [
+      "A free text search of Medline 1966 to 1997 showed that 619 items mentioned attributable risks in the title or abstract, compared to 18,955 using relative risk or odds ratio, for a ratio of 1 to 31 [CITATION]."
+    ]
+  },
+  {
+    "title": "A method of estimating comparative rates from clinical data; applications to cancer of the lung, breast, and cervix",
+    "authors": "J Cornfield",
+    "year": "1951",
+    "citation": "Cornfield J (1951) A method of estimating comparative rates from clinical data; applications to cancer of the lung, breast, and cervix. J Natl Cancer Inst 11: 1269-1275.",
+    "pages": "1269-1275",
+    "journal": "J Natl Cancer Inst",
+    "volume": "11",
+    "sentences": [
+      "This odds ratio provides an estimate of the risk or rate ratio depending on the sampling of cases and controls (see also Box 1) [CITATION][CITATION #b175]."
+    ]
+  },
+  {
+    "title": "Room-temperature superconductivity in nitrogen-doped lutetium hydride under moderate pressure conditions",
+    "authors": [
+      "Reinholt, G.",
+      "Tanaka, M.",
+      "Osei, A."
+    ],
+    "year": "2023",
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "citation": "Reinholt et al. (2023) Phys Rev Lett.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "What does the odds ratio estimate in a case-control study?",
+    "authors": "N Pearce",
+    "year": "1993",
+    "citation": "Pearce N (1993) What does the odds ratio estimate in a case-control study? Int J Epidemiol 22: 1189-1192.",
+    "pages": "1189-1192",
+    "journal": "Int J Epidemiol",
+    "volume": "22",
+    "sentences": [
+      "This odds ratio provides an estimate of the risk or rate ratio depending on the sampling of cases and controls (see also Box 1) [CITATION #b174][CITATION]."
+    ]
+  },
+  {
+    "title": "Measures of Disease Frequency",
+    "authors": "K J Rothman;S Greenland",
+    "year": "1998",
+    "citation": "Rothman KJ, Greenland S (1998) Measures of Disease Frequency. In: Rothman KJ, Greenland S, editors. Modern epidemiology. 2nd ed. Lippincott Raven. pp. 44-45.",
+    "pages": "44-45",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The prevalence ratio or prevalence odds ratio from cross-sectional studies may be useful in some situations [CITATION]."
+    ]
+  },
+  {
+    "title": "The mortality of doctors in relation to their smoking habits: a preliminary report",
+    "authors": "R Doll;A B Hill",
+    "year": "1954",
+    "citation": "Doll R, Hill AB (2004) The mortality of doctors in relation to their smoking habits: a preliminary report. 1954. BMJ 328: 1529-1533; discussion 1533.",
+    "pages": "1529-1533",
+    "journal": "BMJ",
+    "volume": "328",
+    "sentences": [
+      "For example, in a study of male British doctors the incidence rate of death from lung cancer over 50 years of follow-up was 249 per 100,000 per year among smokers, compared to 17 per 100,000 per year among non-smokers: a rate ratio of 14.6 (249/17) [CITATION]."
+    ]
+  },
+  {
+    "title": "Estimates of global mortality attributable to smoking in 2000",
+    "authors": "M Ezzati;A D Lopez",
+    "year": "2003",
+    "citation": "Ezzati M, Lopez AD (2003) Estimates of global mortality attributable to smoking in 2000. Lancet 362: 847-852.",
+    "pages": "847-852",
+    "journal": "Lancet",
+    "volume": "362",
+    "sentences": [
+      "Global estimates have been published for smoking: according to one study 91% of all lung cancers, 40% of CHD and 33% of all deaths among men in 2000 were attributed to smoking [CITATION]."
+    ]
+  },
+  {
+    "title": "Applications of Stratified Analysis Methods",
+    "authors": "S Greenland",
+    "year": "1998",
+    "citation": "Greenland S (1998) Applications of Stratified Analysis Methods. In: Rothman KJ, Greenland S, editors. Modern epidemiology. 2nd ed. Lippincott Raven. pp. 295-297.",
+    "pages": "295-297",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The population attributable fraction is generally defined as the proportion of cases caused by a particular exposure, but several concepts (and no unified terminology) exist, and incorrect approaches to adjust for other factors are sometimes used [CITATION #b171][CITATION]."
+    ]
+  },
+  {
+    "title": "Sick individuals and sick populations",
+    "authors": "G Rose",
+    "year": "2001",
+    "citation": "Rose G (2001) Sick individuals and sick populations. Int J Epidemiol 30: 427-432; discussion 433-424.",
+    "pages": "427-432",
+    "journal": "Int J Epidemiol",
+    "volume": "30",
+    "sentences": [
+      "If a causal relationship with an exposure is documented and associations are interpreted as effects, estimates of relative risk may be translated into suitable measures of absolute risk in order to gauge the possible impact of public health policies (see item 16c) [CITATION]."
+    ]
+  },
+  {
+    "title": "Increased risk of venous thrombosis in oral-contraceptive users who are carriers of factor V Leiden mutation",
+    "authors": "J P Vandenbroucke;T Koster;E Briet;P H Reitsma;R M Bertina",
+    "year": "1994",
+    "citation": "Vandenbroucke JP, Koster T, Briet E, Reitsma PH, Bertina RM, et al. (1994) Increased risk of venous thrombosis in oral-contraceptive users who are carriers of factor V Leiden mutation. Lancet 344: 1453-1457.",
+    "pages": "1453-1457",
+    "journal": "Lancet",
+    "volume": "344",
+    "sentences": [
+      "Data from the study on oral contraceptives and factor V Leiden mutation [CITATION] were used to explain the proposal, and this example is also used in item 17."
+    ]
+  },
+  {
+    "title": "Commentary: facing the challenge of geneenvironment interaction: the two-by-four table and beyond",
+    "authors": "L D Botto;M J Khoury",
+    "year": "2001",
+    "citation": "Botto LD, Khoury MJ (2001) Commentary: facing the challenge of gene- environment interaction: the two-by-four table and beyond. Am J Epidemiol 153: 1016-1020.",
+    "pages": "1016-1020",
+    "journal": "Am J Epidemiol",
+    "volume": "153",
+    "sentences": [
+      "A sensible approach is to report the separate effect of each exposure as well as the joint effect-if possible in a table, as in the first example above [CITATION], or in the study by Martinelli et al. [CITATION #b184].",
+      "The Human Genomic Epidemiology Network (HuGENet) proposed a lay-out for transparent presentation of separate and joint effects that permits evaluation of different types of interaction [CITATION]."
+    ]
+  },
+  {
+    "title": "Risk of venous thromboembolism after air travel: interaction with thrombophilia and oral contraceptives",
+    "authors": "I Martinelli;E Taioli;T Battaglioli;G M Podda;S M Passamonti",
+    "year": "2003",
+    "citation": "Martinelli I, Taioli E, Battaglioli T, Podda GM, Passamonti SM, et al. (2003) Risk of venous thromboembolism after air travel: interaction with thrombophilia and oral contraceptives. Arch Intern Med 163: 2771-2774.",
+    "pages": "2771-2774",
+    "journal": "Arch Intern Med",
+    "volume": "163",
+    "sentences": [
+      "A sensible approach is to report the separate effect of each exposure as well as the joint effect-if possible in a table, as in the first example above [CITATION #b182], or in the study by Martinelli et al. [CITATION]."
+    ]
+  },
+  {
+    "title": "Selective reporting biases in cancer prognostic factor studies",
+    "authors": "P A Kyzas;K T Loizou;J P Ioannidis",
+    "year": "2005",
+    "citation": "Kyzas PA, Loizou KT, Ioannidis JP (2005) Selective reporting biases in cancer prognostic factor studies. J Natl Cancer Inst 97: 1043-1055.",
+    "pages": "1043-1055",
+    "journal": "J Natl Cancer Inst",
+    "volume": "97",
+    "sentences": [
+      "Detailed presentation is more appropriate if the issue investigated is of major concern, or if effect estimates vary considerably [CITATION #b58][CITATION]."
+    ]
+  },
+  {
+    "title": "Concepts of interaction",
+    "authors": "K J Rothman;S Greenland;A M Walker",
+    "year": "1980",
+    "citation": "Rothman KJ, Greenland S, Walker AM (1980) Concepts of interaction. Am J Epidemiol 112: 467-470.",
+    "pages": "467-470",
+    "journal": "Am J Epidemiol",
+    "volume": "112",
+    "sentences": [
+      "The use of the relative risk leads to a multiplicative model, while the use of the risk difference corresponds to an additive model [CITATION][CITATION #b187]."
+    ]
+  },
+  {
+    "title": "Interaction and synergism",
+    "authors": "R Saracci",
+    "year": "1980",
+    "citation": "Saracci R (1980) Interaction and synergism. Am J Epidemiol 112: 465-466.",
+    "pages": "465-466",
+    "journal": "Am J Epidemiol",
+    "volume": "112",
+    "sentences": [
+      "The use of the relative risk leads to a multiplicative model, while the use of the risk difference corresponds to an additive model [CITATION #b186][CITATION]."
+    ]
+  },
+  {
+    "title": "Interactions Between Causes. Modern epidemiology. Boston: Little Brown",
+    "authors": "K J Rothman",
+    "year": "1986",
+    "citation": "Rothman KJ (1986) Interactions Between Causes. Modern epidemiology. Boston: Little Brown. pp. 311-326.",
+    "pages": "311-326",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "When odds ratios are interpreted as relative risks (or rate ratios), the latter quantity (25.1) is the Relative Excess Risk from Interaction (RERI) [CITATION]."
+    ]
+  },
+  {
+    "title": "How to write an effective discussion",
+    "authors": "D R Hess",
+    "year": "2004",
+    "citation": "Hess DR (2004) How to write an effective discussion. Respir Care 49: 1238-1241.",
+    "pages": "1238-1241",
+    "journal": "Respir Care",
+    "volume": "49",
+    "sentences": [
+      "The discussion section addresses the central issues of validity and meaning of the study [CITATION].",
+      "Others have made similar suggestions [CITATION][CITATION #b193]."
+    ]
+  },
+  {
+    "title": "The hidden research paper",
+    "authors": "R Horton",
+    "year": "2002",
+    "citation": "Horton R (2002) The hidden research paper. JAMA 287: 2775-2778.",
+    "pages": "2775-2778",
+    "journal": "JAMA",
+    "volume": "287",
+    "sentences": [
+      "Surveys have found that discussion sections are often dominated by incomplete or biased assessments of the study's results and their implications, and rhetoric supporting the authors' findings [CITATION][CITATION #b192].",
+      "A survey of authors who had published original research articles in The Lancet found that important weaknesses of the study were reported by the investigators in the survey questionnaires, but not in the published article [CITATION]."
+    ]
+  },
+  {
+    "title": "The rhetoric of research",
+    "authors": "R Horton",
+    "year": "1995",
+    "citation": "Horton R (1995) The rhetoric of research. BMJ 310: 985-987.",
+    "pages": "985-987",
+    "journal": "BMJ",
+    "volume": "310",
+    "sentences": [
+      "Surveys have found that discussion sections are often dominated by incomplete or biased assessments of the study's results and their implications, and rhetoric supporting the authors' findings [CITATION #b191][CITATION]."
+    ]
+  },
+  {
+    "title": "The case for structuring the discussion of scientific papers",
+    "authors": "M Docherty;R Smith",
+    "year": "1999",
+    "citation": "Docherty M, Smith R (1999) The case for structuring the discussion of scientific papers. BMJ 318: 1224-1225.",
+    "pages": "1224-1225",
+    "journal": "BMJ",
+    "volume": "318",
+    "sentences": [
+      "Structuring the discussion may help authors avoid unwarranted speculation and over-interpretation of results while guiding readers through the text [CITATION][CITATION #b194].",
+      "Others have made similar suggestions [CITATION #b190][CITATION]."
+    ]
+  },
+  {
+    "title": "Writing a research article: advice to beginners",
+    "authors": "T V Perneger;P M Hudelson",
+    "year": "2004",
+    "citation": "Perneger TV, Hudelson PM (2004) Writing a research article: advice to beginners. Int J Qual Health Care 16: 191-192.",
+    "pages": "191-192",
+    "journal": "Int J Qual Health Care",
+    "volume": "16",
+    "sentences": [
+      "Structuring the discussion may help authors avoid unwarranted speculation and over-interpretation of results while guiding readers through the text [CITATION #b193][CITATION]."
+    ]
+  },
+  {
+    "title": "More research is needed",
+    "authors": "G Maldonado;C Poole",
+    "year": "1999",
+    "citation": "Maldonado G, Poole C (1999) More research is needed. Ann Epidemiol 9: 17-18.",
+    "pages": "17-18",
+    "journal": "Ann Epidemiol",
+    "volume": "9",
+    "sentences": [
+      "Investigators should suggest ways in which subsequent research can improve on their studies rather than blandly stating 'more research is needed' [CITATION][CITATION #b197]."
+    ]
+  },
+  {
+    "title": "The economics of 'more research is needed'",
+    "authors": "C V Phillips",
+    "year": "2001",
+    "citation": "Phillips CV (2001) The economics of 'more research is needed'. Int J Epidemiol 30: 771-776.",
+    "pages": "771-776",
+    "journal": "Int J Epidemiol",
+    "volume": "30",
+    "sentences": [
+      "Investigators should suggest ways in which subsequent research can improve on their studies rather than blandly stating 'more research is needed' [CITATION #b196][CITATION]."
+    ]
+  },
+  {
+    "title": "Ethnic and socioeconomic differences in cardiovascular disease risk factors: findings for women from the Third National Health and Nutrition Examination Survey",
+    "authors": "M A Winkleby;H C Kraemer;D K Ahn;A N Varady",
+    "year": "1988",
+    "citation": "Winkleby MA, Kraemer HC, Ahn DK, Varady AN (1998) Ethnic and socioeconomic differences in cardiovascular disease risk factors: findings for women from the Third National Health and Nutrition Examination Survey, 1988-1994. JAMA 280: 356-362.",
+    "pages": "1988-1994",
+    "journal": "JAMA",
+    "volume": "280",
+    "sentences": [
+      "In addition, we found large differences in CVD risk factors by SES, a finding that illustrates the high-risk status of both ethnic minority women as well as white women with low SES'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Are health care professionals advising obese patients to lose weight",
+    "authors": "D A Galuska;J C Will;M K Serdula;E S Ford",
+    "year": "1999",
+    "citation": "Galuska DA, Will JC, Serdula MK, Ford ES (1999) Are health care professionals advising obese patients to lose weight? JAMA 282: 1576- 1578.",
+    "pages": "1576-1578",
+    "journal": "JAMA",
+    "volume": "282",
+    "sentences": [
+      "Furthermore, because data were collected cross-sectionally, we cannot infer that counseling preceded a patient's attempt to lose weight'' [CITATION]."
+    ]
+  },
+  {
+    "title": "The proof and measurement of association between two things",
+    "authors": "C Spearman",
+    "year": "1904",
+    "citation": "Spearman C (1904) The proof and measurement of association between two things. Am J Psychol 15: 72-101.",
+    "pages": "72-101",
+    "journal": "Am J Psychol",
+    "volume": "15",
+    "sentences": [
+      "This effect has been described as 'attenuation' [CITATION][CITATION #b201], or more recently as 'regression dilution bias' [CITATION #b202]."
+    ]
+  },
+  {
+    "title": "Regression estimates after correcting for attenuation",
+    "authors": "W A Fuller;M A Hidiroglou",
+    "year": "1978",
+    "citation": "Fuller WA, Hidiroglou MA (1978) Regression estimates after correcting for attenuation. J Am Stat Assoc 73: 99-104.",
+    "pages": "99-104",
+    "journal": "J Am Stat Assoc",
+    "volume": "73",
+    "sentences": [
+      "This effect has been described as 'attenuation' [CITATION #b200][CITATION], or more recently as 'regression dilution bias' [CITATION #b202]."
+    ]
+  },
+  {
+    "title": "Blood pressure, stroke, and coronary heart disease. Part 1, Prolonged differences in blood pressure: prospective observational studies corrected for the regression dilution bias",
+    "authors": "S Macmahon;R Peto;J Cutler;R Collins;P Sorlie",
+    "year": "1990",
+    "citation": "MacMahon S, Peto R, Cutler J, Collins R, Sorlie P, et al. (1990) Blood pressure, stroke, and coronary heart disease. Part 1, Prolonged differ- ences in blood pressure: prospective observational studies corrected for the regression dilution bias. Lancet 335: 765-774.",
+    "pages": "765-774",
+    "journal": "Lancet",
+    "volume": "335",
+    "sentences": [
+      "This effect has been described as 'attenuation' [CITATION #b200][CITATION #b201], or more recently as 'regression dilution bias' [CITATION]."
+    ]
+  },
+  {
+    "title": "How independent are ''independent'' effects? Relative risk estimation when correlated exposures are measured imprecisely",
+    "authors": "A N Phillips;G D Smith",
+    "year": "1991",
+    "citation": "Phillips AN, Smith GD (1991) How independent are ''independent'' effects? Relative risk estimation when correlated exposures are measured imprecisely. J Clin Epidemiol 44: 1223-1231.",
+    "pages": "1223-1231",
+    "journal": "J Clin Epidemiol",
+    "volume": "44",
+    "sentences": [
+      "However, when correlated risk factors are measured with different degrees of imprecision, the adjusted relative risk associated with them can be biased towards or away from unity [CITATION][CITATION #b204][CITATION #b205]."
+    ]
+  },
+  {
+    "title": "Bias in relative odds estimation owing to imprecise measurement of correlated exposures",
+    "authors": "A N Phillips;G D Smith",
+    "year": "1992",
+    "citation": "Phillips AN, Smith GD (1992) Bias in relative odds estimation owing to imprecise measurement of correlated exposures. Stat Med 11: 953-961.",
+    "pages": "953-961",
+    "journal": "Stat Med",
+    "volume": "11",
+    "sentences": [
+      "However, when correlated risk factors are measured with different degrees of imprecision, the adjusted relative risk associated with them can be biased towards or away from unity [CITATION #b203][CITATION][CITATION #b205]."
+    ]
+  },
+  {
+    "title": "The effect of misclassification in the presence of covariates",
+    "authors": "S Greenland",
+    "year": "1980",
+    "citation": "Greenland S (1980) The effect of misclassification in the presence of covariates. Am J Epidemiol 112: 564-569.",
+    "pages": "564-569",
+    "journal": "Am J Epidemiol",
+    "volume": "112",
+    "sentences": [
+      "However, when correlated risk factors are measured with different degrees of imprecision, the adjusted relative risk associated with them can be biased towards or away from unity [CITATION #b203][CITATION #b204][CITATION]."
+    ]
+  },
+  {
+    "title": "Commentary: This study failed?",
+    "authors": "C Poole;U Peters;D Il'yasova;L Arab",
+    "year": "2003",
+    "citation": "Poole C, Peters U, Il'yasova D, Arab L (2003) Commentary: This study failed? Int J Epidemiol 32: 534-535.",
+    "pages": "534-535",
+    "journal": "Int J Epidemiol",
+    "volume": "32",
+    "sentences": [
+      "In this approach, each study can be viewed as contribution to the literature, not as a stand-alone basis for inference and action [CITATION]."
+    ]
+  },
+  {
+    "title": "Socioeconomic status and health in blacks and whites: the problem of residual confounding and the resiliency of race",
+    "authors": "J S Kaufman;R S Cooper;D L Mcgee",
+    "year": "1997",
+    "citation": "Kaufman JS, Cooper RS, McGee DL (1997) Socioeconomic status and health in blacks and whites: the problem of residual confounding and the resiliency of race. Epidemiology 8: 621-628.",
+    "pages": "621-628",
+    "journal": "Epidemiology",
+    "volume": "8",
+    "sentences": [
+      "Variables used to measure SES (income, education, or occupation) are surrogates for other undefined and unmeasured exposures, and the true confounder will by definition be measured with error [CITATION]."
+    ]
+  },
+  {
+    "title": "Randomization, statistics, and causal inference",
+    "authors": "S Greenland",
+    "year": "1990",
+    "citation": "Greenland S (1990) Randomization, statistics, and causal inference. Epidemiology 1: 421-429.",
+    "pages": "421-429",
+    "journal": "Epidemiology",
+    "volume": "1",
+    "sentences": [
+      "The latter do not take into account other uncertainties that arise from a study's design, implementation, and methods of measurement [CITATION]."
+    ]
+  },
+  {
+    "title": "Epidemiology faces its limits",
+    "authors": "G Taubes",
+    "year": "1995",
+    "citation": "Taubes G (1995) Epidemiology faces its limits. Science 269: 164-169.",
+    "pages": "164-169",
+    "journal": "Science",
+    "volume": "269",
+    "sentences": [
+      "For example, some have argued that relative risks below 2 or 3 should be ignored [CITATION][CITATION #b210]."
+    ]
+  },
+  {
+    "title": "Meta-analysis and epidemiologic studies in drug development and postmarketing surveillance",
+    "authors": "R Temple",
+    "year": "1999",
+    "citation": "Temple R (1999) Meta-analysis and epidemiologic studies in drug development and postmarketing surveillance. JAMA 281: 841-844.",
+    "pages": "841-844",
+    "journal": "JAMA",
+    "volume": "281",
+    "sentences": [
+      "For example, some have argued that relative risks below 2 or 3 should be ignored [CITATION #b209][CITATION]."
+    ]
+  },
+  {
+    "title": "Epidemiology of cancer in children",
+    "authors": "R S Greenberg;J L Shuster Jr",
+    "year": "1985",
+    "citation": "Greenberg RS, Shuster JL Jr. (1985) Epidemiology of cancer in children. Epidemiol Rev 7: 22-48.",
+    "pages": "22-48",
+    "journal": "Epidemiol Rev",
+    "volume": "7",
+    "sentences": [
+      "For instance, the small increase in the risk of childhood leukaemia after intrauterine irradiation is credible because it concerns an adverse effect of a medical procedure for which no alternative explanations are obvious [CITATION]."
+    ]
+  },
+  {
+    "title": "Prospective study of diet and ovarian cancer",
+    "authors": "L H Kushi;P J Mink;A R Folsom;K E Anderson;W Zheng",
+    "year": "1999",
+    "citation": "Kushi LH, Mink PJ, Folsom AR, Anderson KE, Zheng W, et al. (1999) Prospective study of diet and ovarian cancer. Am J Epidemiol 149: 21- 31.",
+    "pages": "21-31",
+    "journal": "Am J Epidemiol",
+    "volume": "149",
+    "sentences": [
+      "The doubling in the risk of ovarian cancer associated with eating 2 to 4 eggs per week is not immediately credible, since dietary habits are associated with a large number of lifestyle factors as well as SES [CITATION]."
+    ]
+  },
+  {
+    "title": "Effect of second-and third-generation oral contraceptives on the protein C system in the absence or presence of the factor V Leiden mutation: a randomized trial",
+    "authors": "J M Kemmeren;A Algra;J C Meijers;G Tans;B N Bouma",
+    "year": "2004",
+    "citation": "Kemmeren JM, Algra A, Meijers JC, Tans G, Bouma BN, et al. (2004) Effect of second-and third-generation oral contraceptives on the protein C system in the absence or presence of the factor V Leiden mutation: a randomized trial. Blood 103: 927-933.",
+    "pages": "927-933",
+    "journal": "Blood",
+    "volume": "103",
+    "sentences": [
+      "In contrast, the credibility of much debated epidemiologic findings of a difference in thrombosis risk between different types of oral contraceptives was greatly enhanced by the differences in coagulation found in a randomised cross-over trial [CITATION]."
+    ]
+  },
+  {
+    "title": "Prognosis of HIV-1-infected patients starting highly active antiretroviral therapy: a collaborative analysis of prospective studies",
+    "authors": "M Egger;M May;G Chene;A N Phillips;B Ledergerber",
+    "year": "2002",
+    "citation": "Egger M, May M, Chene G, Phillips AN, Ledergerber B, et al. (2002) Prognosis of HIV-1-infected patients starting highly active antiretroviral therapy: a collaborative analysis of prospective studies. Lancet 360: 119- 129.",
+    "pages": "119-129",
+    "journal": "Lancet",
+    "volume": "360",
+    "sentences": [
+      "The severity of immunodeficiency at baseline ranged from not measureable to very severe, and viral load from undetectable to extremely high'' [CITATION]."
+    ]
+  },
+  {
+    "title": "Factors relevant to the validity of experiments in social settings",
+    "authors": "D T Campbell",
+    "year": "1957",
+    "citation": "Campbell DT (1957) Factors relevant to the validity of experiments in social settings. Psychol Bull 54: 297-312.",
+    "pages": "297-312",
+    "journal": "Psychol Bull",
+    "volume": "54",
+    "sentences": [
+      "Generalisability, also called external validity or applicability, is the extent to which the results of a study can be applied to other circumstances [CITATION]."
+    ]
+  },
+  {
+    "title": "Assessing the generalizability of prognostic information",
+    "authors": "A C Justice;K E Covinsky;J A Berlin",
+    "year": "1999",
+    "citation": "Justice AC, Covinsky KE, Berlin JA (1999) Assessing the generalizability of prognostic information. Ann Intern Med 130: 515-524.",
+    "pages": "515-524",
+    "journal": "Ann Intern Med",
+    "volume": "130",
+    "sentences": [
+      "There is no external validity per se; the term is meaningful only with regard to clearly specified conditions [CITATION]."
+    ]
+  },
+  {
+    "title": "Conflict of interest policies in science and medical journals: editorial practices and author disclosures",
+    "authors": "S Krimsky;L S Rothenberg",
+    "year": "2001",
+    "citation": "Krimsky S, Rothenberg LS (2001) Conflict of interest policies in science and medical journals: editorial practices and author disclosures. Sci Eng Ethics 7: 205-218.",
+    "pages": "205-218",
+    "journal": "Sci Eng Ethics",
+    "volume": "7",
+    "sentences": [
+      "Some journals require authors to disclose the presence or absence of financial and other conflicts of interest [CITATION #b99][CITATION]."
+    ]
+  },
+  {
+    "title": "Scope and impact of financial conflicts of interest in biomedical research: a systematic review",
+    "authors": "J E Bekelman;Y Li;C P Gross",
+    "year": "2003",
+    "citation": "Bekelman JE, Li Y, Gross CP (2003) Scope and impact of financial conflicts of interest in biomedical research: a systematic review. JAMA 289: 454-465.",
+    "pages": "454-465",
+    "journal": "JAMA",
+    "volume": "289",
+    "sentences": [
+      "Several investigations show strong associations between the source of funding and the conclusions of research articles [CITATION][CITATION #b219][CITATION #b220][CITATION #b221]."
+    ]
+  },
+  {
+    "title": "Source of funding and outcome of clinical trials",
+    "authors": "R A Davidson",
+    "year": "1986",
+    "citation": "Davidson RA (1986) Source of funding and outcome of clinical trials. J Gen Intern Med 1: 155-158.",
+    "pages": "155-158",
+    "journal": "J Gen Intern Med",
+    "volume": "1",
+    "sentences": [
+      "Several investigations show strong associations between the source of funding and the conclusions of research articles [CITATION #b218][CITATION][CITATION #b220][CITATION #b221]."
+    ]
+  },
+  {
+    "title": "Conflict of interest in the debate over calcium-channel antagonists",
+    "authors": "H T Stelfox;G Chua;K O'rourke;A S Detsky",
+    "year": "1998",
+    "citation": "Stelfox HT, Chua G, O'Rourke K, Detsky AS (1998) Conflict of interest in the debate over calcium-channel antagonists. N Engl J Med 338: 101- 106.",
+    "pages": "101-106",
+    "journal": "N Engl J Med",
+    "volume": "338",
+    "sentences": [
+      "Several investigations show strong associations between the source of funding and the conclusions of research articles [CITATION #b218][CITATION #b219][CITATION][CITATION #b221]."
+    ]
+  },
+  {
+    "title": "Pharmaceutical industry sponsorship and research outcome and quality: systematic review",
+    "authors": "J Lexchin;L A Bero;B Djulbegovic;O Clark",
+    "year": "2003",
+    "citation": "Lexchin J, Bero LA, Djulbegovic B, Clark O (2003) Pharmaceutical industry sponsorship and research outcome and quality: systematic review. BMJ 326: 1167-1170.",
+    "pages": "1167-1170",
+    "journal": "BMJ",
+    "volume": "326",
+    "sentences": [
+      "Several investigations show strong associations between the source of funding and the conclusions of research articles [CITATION #b218][CITATION #b219][CITATION #b220][CITATION]."
+    ]
+  },
+  {
+    "title": "Association of funding and conclusions in randomized drug trials: a reflection of treatment effect or adverse events",
+    "authors": "B Als-Nielsen;W Chen;C Gluud;L L Kjaergard",
+    "year": "2003",
+    "citation": "Als-Nielsen B, Chen W, Gluud C, Kjaergard LL (2003) Association of funding and conclusions in randomized drug trials: a reflection of treatment effect or adverse events? JAMA 290: 921-928.",
+    "pages": "921-928",
+    "journal": "JAMA",
+    "volume": "290",
+    "sentences": [
+      "The conclusions in randomised trials recommended the experimental drug as the drug of choice much more often (odds ratio 5.3) if the trial was funded by for-profit organisations, even after adjustment for the effect size [CITATION]."
+    ]
+  },
+  {
+    "title": "Why review articles on the health effects of passive smoking reach different conclusions",
+    "authors": "D E Barnes;L A Bero",
+    "year": "1998",
+    "citation": "Barnes DE, Bero LA (1998) Why review articles on the health effects of passive smoking reach different conclusions. JAMA 279: 1566-1570.",
+    "pages": "1566-1570",
+    "journal": "JAMA",
+    "volume": "279",
+    "sentences": [
+      "Other studies document the influence of the tobacco and telecommunication industries on the research they funded [CITATION][CITATION #b224][CITATION #b225][CITATION #b226]."
+    ]
+  },
+  {
+    "title": "Industry-funded research and conflict of interest: an analysis of research sponsored by the tobacco industry through the Center for Indoor Air Research",
+    "authors": "D E Barnes;L A Bero",
+    "year": "1996",
+    "citation": "Barnes DE, Bero LA (1996) Industry-funded research and conflict of interest: an analysis of research sponsored by the tobacco industry through the Center for Indoor Air Research. J Health Polit Policy Law 21: 515-542.",
+    "pages": "515-542",
+    "journal": "J Health Polit Policy Law",
+    "volume": "21",
+    "sentences": [
+      "Other studies document the influence of the tobacco and telecommunication industries on the research they funded [CITATION #b223][CITATION][CITATION #b225][CITATION #b226]."
+    ]
+  },
+  {
+    "title": "Looking through a keyhole at the tobacco industry. The Brown and Williamson documents",
+    "authors": "S A Glantz;D E Barnes;L Bero;P Hanauer;J Slade",
+    "year": "1995",
+    "citation": "Glantz SA, Barnes DE, Bero L, Hanauer P, Slade J (1995) Looking through a keyhole at the tobacco industry. The Brown and Williamson documents. JAMA 274: 219-224.",
+    "pages": "219-224",
+    "journal": "JAMA",
+    "volume": "274",
+    "sentences": [
+      "Other studies document the influence of the tobacco and telecommunication industries on the research they funded [CITATION #b223][CITATION #b224][CITATION][CITATION #b226]."
+    ]
+  },
+  {
+    "title": "Source of funding and results of studies of health effects of mobile phone use: systematic review of experimental studies",
+    "authors": "A Huss;M Egger;K Hug;K Huwiler-Muntener;M Roosli",
+    "year": "2007",
+    "citation": "Huss A, Egger M, Hug K, Huwiler-Muntener K, Roosli M (2007) Source of funding and results of studies of health effects of mobile phone use: systematic review of experimental studies. Environ Health Perspect 115: 1-4.",
+    "pages": "1-4",
+    "journal": "Environ Health Perspect",
+    "volume": "115",
+    "sentences": [
+      "Other studies document the influence of the tobacco and telecommunication industries on the research they funded [CITATION #b223][CITATION #b224][CITATION #b225][CITATION]."
+    ]
+  },
+  {
+    "title": "Design and reporting modifications in industrysponsored comparative psychopharmacology trials",
+    "authors": "D J Safer",
+    "year": "2002",
+    "citation": "Safer DJ (2002) Design and reporting modifications in industry- sponsored comparative psychopharmacology trials. J Nerv Ment Dis 190: 583-592.",
+    "pages": "583-592",
+    "journal": "J Nerv Ment Dis",
+    "volume": "190",
+    "sentences": [
+      "Authors or funders may have conflicts of interest that influence any of the following: the design of the study [CITATION]; choice of exposures [CITATION][CITATION #b228], outcomes [CITATION #b229], statistical methods [CITATION #b230], and selective publication of outcomes [CITATION #b229] and studies [CITATION #b231]."
+    ]
+  },
+  {
+    "title": "Denial of effective treatment and poor quality of clinical information in placebo controlled trials of ondansetron for postoperative nausea and vomiting: a review of published trials",
+    "authors": "R L Aspinall;N W Goodman",
+    "year": "1995",
+    "citation": "Aspinall RL, Goodman NW (1995) Denial of effective treatment and poor quality of clinical information in placebo controlled trials of ondanse- tron for postoperative nausea and vomiting: a review of published trials. BMJ 311: 844-846.",
+    "pages": "844-846",
+    "journal": "BMJ",
+    "volume": "311",
+    "sentences": [
+      "Authors or funders may have conflicts of interest that influence any of the following: the design of the study [CITATION #b227]; choice of exposures [CITATION #b227][CITATION], outcomes [CITATION #b229], statistical methods [CITATION #b230], and selective publication of outcomes [CITATION #b229] and studies [CITATION #b231]."
+    ]
+  },
+  {
+    "title": "Empirical evidence for selective reporting of outcomes in randomized trials: comparison of protocols to published articles",
+    "authors": "A W Chan;A Hrobjartsson;M T Haahr;P C G\u00f8tzsche;D G Altman",
+    "year": "2004",
+    "citation": "Chan AW, Hrobjartsson A, Haahr MT, G\u00f8tzsche PC, Altman DG (2004) Empirical evidence for selective reporting of outcomes in randomized trials: comparison of protocols to published articles. JAMA 291: 2457- 2465.",
+    "pages": "2457-2465",
+    "journal": "JAMA",
+    "volume": "291",
+    "sentences": [
+      "Authors or funders may have conflicts of interest that influence any of the following: the design of the study [CITATION #b227]; choice of exposures [CITATION #b227][CITATION #b228], outcomes [CITATION], statistical methods [CITATION #b230], and selective publication of outcomes [CITATION] and studies [CITATION #b231]."
+    ]
+  },
+  {
+    "title": "Evidence b(i)ased medicine-selective reporting from studies sponsored by pharmaceutical industry: review of studies in new drug applications",
+    "authors": "H Melander;J Ahlqvist-Rastad;G Meijer;B Beermann",
+    "year": "2003",
+    "citation": "Melander H, Ahlqvist-Rastad J, Meijer G, Beermann B (2003) Evidence b(i)ased medicine-selective reporting from studies sponsored by pharmaceutical industry: review of studies in new drug applications. BMJ 326: 1171-1173.",
+    "pages": "1171-1173",
+    "journal": "BMJ",
+    "volume": "326",
+    "sentences": [
+      "Authors or funders may have conflicts of interest that influence any of the following: the design of the study [CITATION #b227]; choice of exposures [CITATION #b227][CITATION #b228], outcomes [CITATION #b229], statistical methods [CITATION], and selective publication of outcomes [CITATION #b229] and studies [CITATION #b231]."
+    ]
+  },
+  {
+    "title": "Full publication of results initially presented in abstracts",
+    "authors": "R W Scherer;P Langenberg;E Von Elm",
+    "year": "2005",
+    "citation": "Scherer RW, Langenberg P, von Elm E (2005) Full publication of results initially presented in abstracts. Cochrane Database of Systematic Reviews, Issue 2. Art. No.: MR000005. Available: http://www.cochrane. org/reviews/en/mr000005.html. Accessed 10 September 10, 2007.",
+    "pages": "",
+    "journal": "Cochrane Database of Systematic Reviews",
+    "volume": "",
+    "sentences": [
+      "Authors or funders may have conflicts of interest that influence any of the following: the design of the study [CITATION #b227]; choice of exposures [CITATION #b227][CITATION #b228], outcomes [CITATION #b229], statistical methods [CITATION #b230], and selective publication of outcomes [CITATION #b229] and studies [CITATION]."
+    ]
+  },
+  {
+    "title": "The CONSORT statement: revised recommendations for improving the quality of reports of parallel-group randomised trials",
+    "authors": "D Moher;K F Schulz;D G Altman",
+    "year": "2001",
+    "citation": "Moher D, Schulz KF, Altman DG (2001) The CONSORT statement: revised recommendations for improving the quality of reports of parallel-group randomised trials. Lancet 357: 1191-1194.",
+    "pages": "1191-1194",
+    "journal": "Lancet",
+    "volume": "357",
+    "sentences": [
+      "We stress that STROBE and other recommendations on the reporting of research [CITATION #b12][CITATION][CITATION #b233] should be seen as evolving documents that require continual assessment, refinement, and, if necessary, change [CITATION #b234][CITATION #b235].",
+      "Since then members of the group have met regularly to review the need to revise the recommendations; a revised version appeared in 2001 [CITATION] and a further version is in development."
+    ]
+  },
+  {
+    "title": "Meta-analysis of observational studies in epidemiology: a proposal for reporting. Meta-analysis Of Observational Studies in Epidemiology (MOOSE) group",
+    "authors": "D F Stroup;J A Berlin;S C Morton;I Olkin;G D Williamson",
+    "year": "2000",
+    "citation": "Stroup DF, Berlin JA, Morton SC, Olkin I, Williamson GD, et al. (2000) Meta-analysis of observational studies in epidemiology: a proposal for reporting. Meta-analysis Of Observational Studies in Epidemiology (MOOSE) group. JAMA 283: 2008-2012.",
+    "pages": "2008-2012",
+    "journal": "JAMA",
+    "volume": "283",
+    "sentences": [
+      "We stress that STROBE and other recommendations on the reporting of research [CITATION #b12][CITATION #b232][CITATION] should be seen as evolving documents that require continual assessment, refinement, and, if necessary, change [CITATION #b234][CITATION #b235]."
+    ]
+  },
+  {
+    "title": "The revised CONSORT statement for reporting randomized trials: explanation and elaboration",
+    "authors": "D G Altman;K F Schulz;D Moher;M Egger;F Davidoff",
+    "year": "2001",
+    "citation": "Altman DG, Schulz KF, Moher D, Egger M, Davidoff F, et al. (2001) The revised CONSORT statement for reporting randomized trials: explan- ation and elaboration. Ann Intern Med 134: 663-694.",
+    "pages": "663-694",
+    "journal": "Ann Intern Med",
+    "volume": "134",
+    "sentences": [
+      "We stress that STROBE and other recommendations on the reporting of research [CITATION #b12][CITATION #b232][CITATION #b233] should be seen as evolving documents that require continual assessment, refinement, and, if necessary, change [CITATION][CITATION #b235]."
+    ]
+  },
+  {
+    "title": "CONSORT: an evolving tool to help improve the quality of reports of randomized controlled trials. Consolidated Standards of Reporting Trials",
+    "authors": "D Moher",
+    "year": "1998",
+    "citation": "Moher D (1998) CONSORT: an evolving tool to help improve the quality of reports of randomized controlled trials. Consolidated Standards of Reporting Trials. JAMA 279: 1489-1491.",
+    "pages": "1489-1491",
+    "journal": "JAMA",
+    "volume": "279",
+    "sentences": [
+      "We stress that STROBE and other recommendations on the reporting of research [CITATION #b12][CITATION #b232][CITATION #b233] should be seen as evolving documents that require continual assessment, refinement, and, if necessary, change [CITATION #b234][CITATION]."
+    ]
+  },
+  {
+    "title": "Improving the quality of reporting of randomized controlled trials. The CONSORT statement",
+    "authors": "C Begg;M Cho;S Eastwood;R Horton;D Moher",
+    "year": "1996",
+    "citation": "Begg C, Cho M, Eastwood S, Horton R, Moher D, et al. (1996) Improving the quality of reporting of randomized controlled trials. The CONSORT statement. JAMA 276: 637-639.",
+    "pages": "637-639",
+    "journal": "JAMA",
+    "volume": "276",
+    "sentences": [
+      "For example, the CON-SORT Statement for the reporting of parallel-group randomized trials was first developed in the mid 1990s [CITATION]."
+    ]
+  }
+]

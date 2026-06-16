@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Proc. Natl. Acad. Sci. USA",
+    "authors": "K S Novoselov",
+    "year": "2005",
+    "citation": "K. S. Novoselov et al, Proc. Natl. Acad. Sci. USA 102, 10451 (2005).",
+    "pages": "10451",
+    "journal": "",
+    "volume": "102",
+    "sentences": [
+      "Large graphene crystals were prepared by micromechanical cleavage of natural graphite flakes (www.graphit.de) on top of an oxidized Si wafer [CITATION] with an additional thin layer of PMMA [CITATION #b5]."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Optimal stopping rules for adaptive sequential meta-analysis in the presence of publication bias",
+    "authors": [
+      "Bergmann, U.",
+      "Adebayo, T.",
+      "Leung, P."
+    ],
+    "year": "2019",
+    "journal": "Statistics in Medicine",
+    "doi": "",
+    "citation": "Bergmann et al. (2019) Stat Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  }
+]

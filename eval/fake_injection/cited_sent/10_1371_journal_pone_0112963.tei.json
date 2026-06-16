@@ -1,0 +1,604 @@
+[
+  {
+    "title": "Dense genomic sampling identifies highways of pneumococcal recombination",
+    "authors": "C Chewapreecha;S R Harris;N J Croucher;C Turner;P Marttinen",
+    "year": "2014",
+    "citation": "Chewapreecha C, Harris SR, Croucher NJ, Turner C, Marttinen P, et al. (2014) Dense genomic sampling identifies highways of pneumococcal recombination. Nat Genet 46: 305-309. Available: http://www.ncbi.nlm.nih.gov/pubmed/ 24509479. Accessed 21 March 2014.",
+    "pages": "305-309",
+    "journal": "Nat Genet",
+    "volume": "46",
+    "sentences": [
+      "Comparisons of whole genome sequence data from hundreds of microorganisms have provided unprecedented views on all aspects of microbial diversity, and there is growing recognition that 'hundreds' of genomes is the minimum scale needed to address pressing questions related to microbial evolution, diversity, pathogenicity and resistance to antimicrobial drugs [CITATION][CITATION #b1][CITATION #b2][CITATION #b3]."
+    ]
+  },
+  {
+    "title": "Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans",
+    "authors": "I Comas;M Coscolla;T Luo;S Borrell;K E Holt",
+    "year": "2013",
+    "citation": "Comas I, Coscolla M, Luo T, Borrell S, Holt KE, et al. (2013) Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans. Nat Genet 45: 1176-1182. Available: http://www.ncbi.nlm. nih.gov/pubmed/23995134. Accessed 19 March 2014.",
+    "pages": "1176-1182",
+    "journal": "Nat Genet",
+    "volume": "45",
+    "sentences": [
+      "Comparisons of whole genome sequence data from hundreds of microorganisms have provided unprecedented views on all aspects of microbial diversity, and there is growing recognition that 'hundreds' of genomes is the minimum scale needed to address pressing questions related to microbial evolution, diversity, pathogenicity and resistance to antimicrobial drugs [CITATION #b0][CITATION][CITATION #b2][CITATION #b3]."
+    ]
+  },
+  {
+    "title": "Population genomics of post-vaccine changes in pneumococcal epidemiology",
+    "authors": "N J Croucher;S I Pelton;P K Mitchell;G M Lee",
+    "year": "2013",
+    "citation": "Croucher NJ, Finkelstein J a, Pelton SI, Mitchell PK, Lee GM, et al. (2013) Population genomics of post-vaccine changes in pneumococcal epidemiology. Nat Genet 45: 656-663. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=3725542&tool=pmcentrez&rendertype=abstract. Ac- cessed 21 March 2014.",
+    "pages": "656-663",
+    "journal": "Nat Genet",
+    "volume": "45",
+    "sentences": [
+      "Comparisons of whole genome sequence data from hundreds of microorganisms have provided unprecedented views on all aspects of microbial diversity, and there is growing recognition that 'hundreds' of genomes is the minimum scale needed to address pressing questions related to microbial evolution, diversity, pathogenicity and resistance to antimicrobial drugs [CITATION #b0][CITATION #b1][CITATION][CITATION #b3]."
+    ]
+  },
+  {
+    "title": "Genomic epidemiology of Neisseria gonorrhoeae with reduced susceptibility to cefixime in the USA: a retrospective observational study",
+    "authors": "Y H Grad;R D Kirkcaldy;D Trees;J Dordel;S R Harris",
+    "year": "2014",
+    "citation": "Grad YH, Kirkcaldy RD, Trees D, Dordel J, Harris SR, et al. (2014) Genomic epidemiology of Neisseria gonorrhoeae with reduced susceptibility to cefixime in the USA: a retrospective observational study. Lancet Infect Dis 14: 220-226. Available: http://www.ncbi.nlm.nih.gov/pubmed/24462211. Accessed 21 March 2014.",
+    "pages": "220-226",
+    "journal": "Lancet Infect Dis",
+    "volume": "14",
+    "sentences": [
+      "Comparisons of whole genome sequence data from hundreds of microorganisms have provided unprecedented views on all aspects of microbial diversity, and there is growing recognition that 'hundreds' of genomes is the minimum scale needed to address pressing questions related to microbial evolution, diversity, pathogenicity and resistance to antimicrobial drugs [CITATION #b0][CITATION #b1][CITATION #b2][CITATION]."
+    ]
+  },
+  {
+    "title": "SEQuel: improving the accuracy of genome assemblies",
+    "authors": "R Ronen;C Boucher;H Chitsaz;P Pevzner",
+    "year": "2012",
+    "citation": "Ronen R, Boucher C, Chitsaz H, Pevzner P (2012) SEQuel: improving the accuracy of genome assemblies. Bioinformatics 28: i188-96. Available: http:// www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3371851&tool=pmcentrez& rendertype=abstract. Accessed 20 January 2014.",
+    "pages": "188-96",
+    "journal": "Bioinformatics",
+    "volume": "28",
+    "sentences": [
+      "Several computational methods exist that make improvements to the quality of draft assemblies by recognizing and correcting errors involving (i) single bases and small insertion/deletion events (indels) [CITATION], (ii) gaps [CITATION #b5], (iii) read alignment discontinuities [CITATION #b6] or by reconciling multiple de novo assemblies into an improved consensus assembly [CITATION #b7]."
+    ]
+  },
+  {
+    "title": "Optimal stopping rules for adaptive sequential meta-analysis in the presence of publication bias",
+    "authors": [
+      "Bergmann, U.",
+      "Adebayo, T.",
+      "Leung, P."
+    ],
+    "year": "2019",
+    "journal": "Statistics in Medicine",
+    "doi": "",
+    "citation": "Bergmann et al. (2019) Stat Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "GraphReg: graph neural network-based prediction of gene regulatory networks from chromatin accessibility data",
+    "authors": [
+      "Huang, Z.",
+      "Volkov, N.",
+      "Santos, R."
+    ],
+    "year": "2023",
+    "journal": "Nature Computational Science",
+    "doi": "",
+    "citation": "Huang et al. (2023) Nat Comput Sci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A postassembly genome-improvement toolkit (PAGIT) to obtain annotated genomes from contigs",
+    "authors": "M T Swain;I J Tsai;C Newbold;M Berriman",
+    "year": "2012",
+    "citation": "Swain MT, Tsai IJ, Assefa S a, Newbold C, Berriman M, et al. (2012) A post- assembly genome-improvement toolkit (PAGIT) to obtain annotated genomes from contigs. Nat Protoc 7: 1260-1284. Available: http://www.pubmedcentral. nih.gov/articlerender.fcgi?artid=3648784&tool=pmcentrez&rendertype=abstract. Accessed 24 January 2014.",
+    "pages": "1260-1284",
+    "journal": "Nat Protoc",
+    "volume": "7",
+    "sentences": [
+      "Several computational methods exist that make improvements to the quality of draft assemblies by recognizing and correcting errors involving (i) single bases and small insertion/deletion events (indels) [CITATION #b4], (ii) gaps [CITATION], (iii) read alignment discontinuities [CITATION #b6] or by reconciling multiple de novo assemblies into an improved consensus assembly [CITATION #b7].",
+      "Using an iterative strategy has recently been used with some success by PAGIT [CITATION].",
+      "IMAGE was run in the manner implemented in the PAGIT [CITATION] example scripts: 6 iterations, one with a kmer size of 61, three with a kmer size of 49, and two with a kmer size of 41."
+    ]
+  },
+  {
+    "title": "REAPR: a universal tool for genome assembly evaluation",
+    "authors": "M Hunt;T Kikuchi;M Sanders;C Newbold;M Berriman",
+    "year": "2013",
+    "citation": "Hunt M, Kikuchi T, Sanders M, Newbold C, Berriman M, et al. (2013) REAPR: a universal tool for genome assembly evaluation. Genome Biol 14: R47. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3798757 &tool=pmcentrez&rendertype=abstract. Accessed 22 January 2014.",
+    "pages": "R47",
+    "journal": "Genome Biol",
+    "volume": "14",
+    "sentences": [
+      "Several computational methods exist that make improvements to the quality of draft assemblies by recognizing and correcting errors involving (i) single bases and small insertion/deletion events (indels) [CITATION #b4], (ii) gaps [CITATION #b5], (iii) read alignment discontinuities [CITATION] or by reconciling multiple de novo assemblies into an improved consensus assembly [CITATION #b7]."
+    ]
+  },
+  {
+    "title": "GAM-NGS: genomic assemblies merger for next generation sequencing",
+    "authors": "R Vicedomini;F Vezzi;S Scalabrin;L Arvestad;A Policriti",
+    "year": "2013",
+    "citation": "Vicedomini R, Vezzi F, Scalabrin S, Arvestad L, Policriti A (2013) GAM-NGS: genomic assemblies merger for next generation sequencing. BMC Bioinfor- matics 14 Suppl 7: S6. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=3633056&tool=pmcentrez&rendertype=abstract. Ac- cessed 28 January 2014.",
+    "pages": "",
+    "journal": "BMC Bioinformatics",
+    "volume": "14",
+    "sentences": [
+      "Several computational methods exist that make improvements to the quality of draft assemblies by recognizing and correcting errors involving (i) single bases and small insertion/deletion events (indels) [CITATION #b4], (ii) gaps [CITATION #b5], (iii) read alignment discontinuities [CITATION #b6] or by reconciling multiple de novo assemblies into an improved consensus assembly [CITATION]."
+    ]
+  },
+  {
+    "title": "The Sequence Alignment/Map format and SAMtools",
+    "authors": "H Li;B Handsaker;A Wysoker;T Fennell;J Ruan",
+    "year": "2009",
+    "citation": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, et al. (2009) The Sequence Alignment/Map format and SAMtools. Bioinformatics 25: 2078-2079. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2723002 &tool=pmcentrez&rendertype=abstract. Accessed 20 January 2014.",
+    "pages": "2078-2079",
+    "journal": "Bioinformatics",
+    "volume": "25",
+    "sentences": [
+      "Computational tools for identifying sequence polymorphisms also exist [CITATION][CITATION #b9], but focus primarily on identifying variants in the human genome [CITATION #b10], and particularly small events (SNPs and small indels) or structural rearrangements (chromosomal rearrangements) [CITATION #b10]."
+    ]
+  },
+  {
+    "title": "The Genome Analysis Toolkit: a MapReduce framework for analyzing nextgeneration DNA sequencing data",
+    "authors": "A Mckenna;M Hanna;E Banks;A Sivachenko;K Cibulskis",
+    "year": "2010",
+    "citation": "McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, et al. (2010) The Genome Analysis Toolkit: a MapReduce framework for analyzing next- generation DNA sequencing data. Genome Res 20: 1297-1303. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2928508&tool= pmcentrez&rendertype=abstract. Accessed 21 January 2014.",
+    "pages": "1297-1303",
+    "journal": "Genome Res",
+    "volume": "20",
+    "sentences": [
+      "Computational tools for identifying sequence polymorphisms also exist [CITATION #b8][CITATION], but focus primarily on identifying variants in the human genome [CITATION #b10], and particularly small events (SNPs and small indels) or structural rearrangements (chromosomal rearrangements) [CITATION #b10]."
+    ]
+  },
+  {
+    "title": "A survey of tools for variant analysis of next-generation genome sequencing data",
+    "authors": "S Pabinger;A Dander;M Fischer;R Snajder;M Sperk",
+    "year": "2013",
+    "citation": "Pabinger S, Dander A, Fischer M, Snajder R, Sperk M, et al. (2013) A survey of tools for variant analysis of next-generation genome sequencing data. Brief Bioinform 15: 256-278. Available: http://www.ncbi.nlm.nih.gov/pubmed/ 23341494. Accessed 19 March 2014.",
+    "pages": "256-278",
+    "journal": "Brief Bioinform",
+    "volume": "15",
+    "sentences": [
+      "Computational tools for identifying sequence polymorphisms also exist [CITATION #b8][CITATION #b9], but focus primarily on identifying variants in the human genome [CITATION], and particularly small events (SNPs and small indels) or structural rearrangements (chromosomal rearrangements) [CITATION].",
+      "In addition, for tools able to identify variants that exceed the length of the sequence reads (read-length) being evaluated, they generally indicate the approximate chromosomal location and estimated size of the predicted variant relative to the reference, but often do not provide exact coordinates [CITATION].",
+      "Since Pilon performed well in identifying and resolving MNPs and since GATK-UG and SAMtools were not explicitly designed to call these large variants, we sought to compare Pilon's MNP calls to that of methods specifically designed for MNP detection [CITATION]."
+    ]
+  },
+  {
+    "title": "Analysis of the genetic variation in Mycobacterium tuberculosis strains by multiple genome alignments",
+    "authors": "A Cubillos-Ruiz;J Morales;M M Zambrano",
+    "year": "2008",
+    "citation": "Cubillos-Ruiz A, Morales J, Zambrano MM (2008) Analysis of the genetic variation in Mycobacterium tuberculosis strains by multiple genome alignments. BMC Res Notes 1: 110. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=2590607&tool=pmcentrez&rendertype=abstract. Ac- cessed 28 January 2014.",
+    "pages": "110",
+    "journal": "BMC Res Notes",
+    "volume": "1",
+    "sentences": [
+      "These strains were chosen because they represent different GC content (40% and 66% GC content, respectively) and both possess genomic features that are known to confound assemblers, leading to mis-assembled and/or incomplete genome sequences [CITATION][CITATION #b12][CITATION #b13]."
+    ]
+  },
+  {
+    "title": "Next-generation sequence assembly: four stages of data processing and computational challenges",
+    "authors": "S El-Metwally;T Hamza;M Zakaria;M Helmy",
+    "year": "2013",
+    "citation": "El-Metwally S, Hamza T, Zakaria M, Helmy M (2013) Next-generation sequence assembly: four stages of data processing and computational challenges. PLoS Comput Biol 9: e1003345. Available: http://www.pubmedcentral.nih. gov/articlerender.fcgi?artid=3861042&tool=pmcentrez&rendertype=abstract. Accessed 21 January 2014.",
+    "pages": "",
+    "journal": "PLoS Comput Biol",
+    "volume": "9",
+    "sentences": [
+      "These strains were chosen because they represent different GC content (40% and 66% GC content, respectively) and both possess genomic features that are known to confound assemblers, leading to mis-assembled and/or incomplete genome sequences [CITATION #b11][CITATION][CITATION #b13].",
+      "However, Pilon's change introduced a deletion with respect to the reference, underscoring the difficulty of accurately assembling repetitive regions with short read data [CITATION]."
+    ]
+  },
+  {
+    "title": "Complete genome sequence of a virulent isolate of Streptococcus pneumoniae",
+    "authors": "H Tettelin;K E Nelson;I T Paulsen;J Eisen;T D Read",
+    "year": "2001",
+    "citation": "Tettelin H, Nelson KE, Paulsen IT, Eisen J a, Read TD, et al. (2001) Complete genome sequence of a virulent isolate of Streptococcus pneumoniae. Science 293: 498-506. Available: http://www.ncbi.nlm.nih.gov/pubmed/11463916. Accessed 21 January 2014.",
+    "pages": "498-506",
+    "journal": "Science",
+    "volume": "293",
+    "sentences": [
+      "These strains were chosen because they represent different GC content (40% and 66% GC content, respectively) and both possess genomic features that are known to confound assemblers, leading to mis-assembled and/or incomplete genome sequences [CITATION #b11][CITATION #b12][CITATION]."
+    ]
+  },
+  {
+    "title": "Fast and accurate short read alignment with Burrows-Wheeler transform",
+    "authors": "H Li;R Durbin",
+    "year": "2009",
+    "citation": "Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows- Wheeler transform. Bioinformatics 25: 1754-1760. Available: http://www. pubmedcentral.nih.gov/articlerender.fcgi?artid=2705234&tool=pmcentrez& rendertype=abstract. Accessed 20 January 2014.",
+    "pages": "1754-1760",
+    "journal": "Bioinformatics",
+    "volume": "25",
+    "sentences": [
+      "Sequence reads from both libraries were aligned back to their respective draft assemblies using BWA [CITATION], and Pilon was run with those alignments.",
+      "For Illumina data, these BAM files are usually produced by an aligner such as BWA [CITATION] or Bowtie 2 [CITATION #b34]."
+    ]
+  },
+  {
+    "title": "Improving draft assemblies by iterative mapping and assembly of short reads to eliminate gaps",
+    "authors": "I J Tsai;T D Otto;M Berriman",
+    "year": "2010",
+    "citation": "Tsai IJ, Otto TD, Berriman M (2010) Improving draft assemblies by iterative mapping and assembly of short reads to eliminate gaps. Genome Biol 11: R41. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2884544 &tool=pmcentrez&rendertype=abstract.",
+    "pages": "R41",
+    "journal": "Genome Biol",
+    "volume": "11",
+    "sentences": [
+      "We compared Pilon's ability to close gaps in these assemblies with two other tools commonly used for this purpose, IMAGE [CITATION] and GapFiller [CITATION #b16] (see Table S1b).",
+      "We benchmarked Pilon's ability to close gaps in the draft bacterial assemblies against two tools built for this purpose, IMAGE v2.4.1 [CITATION] and GapFiller v1."
+    ]
+  },
+  {
+    "title": "GapFiller: a de novo assembly approach to fill the gap within paired reads",
+    "authors": "F Nadalin;F Vezzi;A Policriti",
+    "year": "2012",
+    "citation": "Nadalin F, Vezzi F, Policriti A (2012) GapFiller: a de novo assembly approach to fill the gap within paired reads. BMC Bioinformatics 13 Suppl 14: S8. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3439727&tool= pmcentrez&rendertype=abstract. Accessed 10 July 2014.",
+    "pages": "",
+    "journal": "BMC Bioinformatics",
+    "volume": "13",
+    "sentences": [
+      "We compared Pilon's ability to close gaps in these assemblies with two other tools commonly used for this purpose, IMAGE [CITATION #b15] and GapFiller [CITATION] (see Table S1b)."
+    ]
+  },
+  {
+    "title": "Iterative Correction of Reference Nucleotides (iCORN) using second generation sequencing technology",
+    "authors": "T D Otto;M Sanders;M Berriman;C Newbold",
+    "year": "2010",
+    "citation": "Otto TD, Sanders M, Berriman M, Newbold C (2010) Iterative Correction of Reference Nucleotides (iCORN) using second generation sequencing technol- ogy. Bioinformatics 26: 1704-1707. Available: http://www.pubmedcentral.nih. gov/articlerender.fcgi?artid=2894513&tool=pmcentrez&rendertype=abstract. Accessed 10 July 2014.",
+    "pages": "1704-1707",
+    "journal": "Bioinformatics",
+    "volume": "26",
+    "sentences": [
+      "By comparison, iCORN [CITATION] made 47 single-base changes and 2 single-base deletions, but only 35 of the 49 (71%) of its changes were correct.",
+      "To evaluate the quality of Pilon's single base and small indel corrections to the draft assemblies, we also ran iCORN v0.97 [CITATION], the consensus sequence improvement tool in PAGIT, on the same draft assemblies using the same sets of fragment reads."
+    ]
+  },
+  {
+    "title": "Solution structure of choline binding protein A, the major adhesin of Streptococcus pneumoniae",
+    "authors": "R Luo;B Mann;W S Lewis;A Rowe;R Heath",
+    "year": "2005",
+    "citation": "Luo R, Mann B, Lewis WS, Rowe A, Heath R, et al. (2005) Solution structure of choline binding protein A, the major adhesin of Streptococcus pneumoniae. EMBO J 24: 34-43. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=544903&tool=pmcentrez&rendertype=abstract. Ac- cessed 21 March 2014.",
+    "pages": "34-43",
+    "journal": "EMBO J",
+    "volume": "24",
+    "sentences": [
+      "Pilon was also able to partially fill other genes encoding repetitive cell wall surface proteins -including choline binding protein A [CITATION] and pneumococcal surface protein A [CITATION #b19] both implicated in adhesion and virulence in S. pneumoniae."
+    ]
+  },
+  {
+    "title": "Pneumococcal surface protein A inhibits complement activation by Streptococcus pneumoniae",
+    "authors": "A H Tu;R L Fulgham;M A Mccrory;D E Briles;A J Szalai",
+    "year": "1999",
+    "citation": "Tu AH, Fulgham RL, McCrory MA, Briles DE, Szalai AJ (1999) Pneumococcal surface protein A inhibits complement activation by Streptococcus pneumoniae. Infect Immun 67: 4720-4724. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=96800&tool=pmcentrez&rendertype=abstract. Ac- cessed 21 March 2014.",
+    "pages": "4720-4724",
+    "journal": "Infect Immun",
+    "volume": "67",
+    "sentences": [
+      "Pilon was also able to partially fill other genes encoding repetitive cell wall surface proteins -including choline binding protein A [CITATION #b18] and pneumococcal surface protein A [CITATION] both implicated in adhesion and virulence in S. pneumoniae."
+    ]
+  },
+  {
+    "title": "Evolution of pathogenicity and sexual reproduction in eight Candida genomes",
+    "authors": "G Butler;M D Rasmussen;M F Lin;S Santos M A;S Sakthikumar",
+    "year": "2009",
+    "citation": "Butler G, Rasmussen MD, Lin MF, Santos M a S, Sakthikumar S, et al. (2009) Evolution of pathogenicity and sexual reproduction in eight Candida genomes. Nature 459: 657-662. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=2834264&tool=pmcentrez&rendertype=abstract. Ac- cessed 28 January 2014.",
+    "pages": "657-662",
+    "journal": "Nature",
+    "volume": "459",
+    "sentences": [
+      "It consists of 8 chromosomes that are present at diploid levels with an average of one SNP found at every 330-390 bases, although large regions of most chromosomes display loss of heterozygosity [CITATION][CITATION #b21]."
+    ]
+  },
+  {
+    "title": "The diploid genome sequence of Candida albicans",
+    "authors": "T Jones;H Chibana;J Dungan;S Kalman",
+    "year": "2004",
+    "citation": "Jones T, Federspiel N a, Chibana H, Dungan J, Kalman S, et al. (2004) The diploid genome sequence of Candida albicans. Proc Natl Acad Sci U S A 101: 7329-7334. Available: http://www.pubmedcentral.nih.gov/articlerender. fcgi?artid=409918&tool=pmcentrez&rendertype=abstract.",
+    "pages": "7329-7334",
+    "journal": "Proc Natl Acad Sci U S A",
+    "volume": "101",
+    "sentences": [
+      "It consists of 8 chromosomes that are present at diploid levels with an average of one SNP found at every 330-390 bases, although large regions of most chromosomes display loss of heterozygosity [CITATION #b20][CITATION]."
+    ]
+  },
+  {
+    "title": "Assembly of a phased diploid Candida albicans genome facilitates allele-specific measurements and provides a simple model for repeat and indel structure",
+    "authors": "D Muzzey;K Schwartz;J S Weissman;G Sherlock",
+    "year": "2013",
+    "citation": "Muzzey D, Schwartz K, Weissman JS, Sherlock G (2013) Assembly of a phased diploid Candida albicans genome facilitates allele-specific measurements and provides a simple model for repeat and indel structure. Genome Biol 14: R97. Available: http://www.ncbi.nlm.nih.gov/pubmed/24025428. Accessed 2014 January 28.",
+    "pages": "R97",
+    "journal": "Genome Biol",
+    "volume": "14",
+    "sentences": [
+      "These positions represented about half of the ,70,000 heterozygous SNP positions in this Candida genome [CITATION]."
+    ]
+  },
+  {
+    "title": "BreakDancer: an algorithm for high-resolution mapping of genomic structural variation",
+    "authors": "K Chen;J W Wallis;M D Mclellan;D E Larson;J M Kalicki",
+    "year": "2009",
+    "citation": "Chen K, Wallis JW, McLellan MD, Larson DE, Kalicki JM, et al. (2009) BreakDancer: an algorithm for high-resolution mapping of genomic structural variation. Nat Methods 6: 677-681. Available: http://www.pubmedcentral.nih.",
+    "pages": "677-681",
+    "journal": "Nat Methods",
+    "volume": "6",
+    "sentences": [
+      "Though neither was described for use on microbial data, we evaluated how well BreakDancer [CITATION] and CLEVER [CITATION #b25], two algorithms developed to detect large variants in eukaryotes, performed in calling MNPs on the M. tuberculosis test set."
+    ]
+  },
+  {
+    "title": "CLEVER: clique-enumerating variant finder",
+    "authors": "T Marschall;I G Costa;S Canzar;M Bauer;G W Klau",
+    "year": "2012",
+    "citation": "Marschall T, Costa IG, Canzar S, Bauer M, Klau GW, et al. (2012) CLEVER: clique-enumerating variant finder. Bioinformatics 28: 2875-2882. Available: http://www.ncbi.nlm.nih.gov/pubmed/23060616. Accessed 10 July 2014.",
+    "pages": "2875-2882",
+    "journal": "Bioinformatics",
+    "volume": "28",
+    "sentences": [
+      "Though neither was described for use on microbial data, we evaluated how well BreakDancer [CITATION #b23] and CLEVER [CITATION], two algorithms developed to detect large variants in eukaryotes, performed in calling MNPs on the M. tuberculosis test set."
+    ]
+  },
+  {
+    "title": "Independent large scale duplications in multiple M. tuberculosis lineages overlapping the same genomic region",
+    "authors": "B Weiner;J Gomez;T C Victor;R M Warren;A Sloutsky",
+    "year": "2012",
+    "citation": "Weiner B, Gomez J, Victor TC, Warren RM, Sloutsky A, et al. (2012) Independent large scale duplications in multiple M. tuberculosis lineages overlapping the same genomic region. PLoS One 7: e26038. Available: http:// www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3274525&tool=pmcentrez &rendertype=abstract. Accessed 2012 August 24.",
+    "pages": "",
+    "journal": "PLoS One",
+    "volume": "7",
+    "sentences": [
+      "To evaluate Pilon's ability to identify large duplications, we resequenced M. tuberculosis T67, a strain previously reported to harbor a large-scale duplication [CITATION], using fragment and long insert libraries, and aligned the reads to the M. tuberculosis H37Rv finished reference.",
+      "The left gene boundary (Rv3128c) of the first predicted duplication and right gene boundary (Rv3427c) of the second predicted duplication corresponded to the upstream and downstream boundaries in the previously reported M. tuberculosis T67 duplication [CITATION]."
+    ]
+  },
+  {
+    "title": "Variation among genome sequences of H37Rv strains of Mycobacterium tuberculosis from multiple laboratories",
+    "authors": "T R Ioerger;Y Feng;K Ganesula;X Chen;K M Dobos",
+    "year": "2010",
+    "citation": "Ioerger TR, Feng Y, Ganesula K, Chen X, Dobos KM, et al. (2010) Variation among genome sequences of H37Rv strains of Mycobacterium tuberculosis from multiple laboratories. J Bacteriol 192: 3645-3653. Available: http://www. pubmedcentral.nih.gov/articlerender.fcgi?artid=2897344&tool=pmcentrez& rendertype=abstract. Accessed 2014 January 22.",
+    "pages": "3645-3653",
+    "journal": "J Bacteriol",
+    "volume": "192",
+    "sentences": [
+      "Upon closer inspection, the 3 Kbp intervening region contained two copies of the IS6110 element, which are routinely found in multiple copies within the M. tuberculosis genome (16 copies in H37Rv) [CITATION].",
+      "In the M. tuberculosis case, Pilon improved the sequence accuracy and placement of genes encoding transposases, which have an important role in genome reorganization in this species [CITATION] and are used in strain typing schemes [CITATION #b30]."
+    ]
+  },
+  {
+    "title": "Comparative genomic and proteomic analyses of PE/PPE multigene family of Mycobacterium tuberculosis H 37 Rv and H 37 Ra reveal novel and interesting differences with implications in virulence",
+    "authors": "S Kohli;Y Singh;K Sharma;A Mittal;N Z Ehtesham",
+    "year": "2012",
+    "citation": "Kohli S, Singh Y, Sharma K, Mittal A, Ehtesham NZ, et al. (2012) Comparative genomic and proteomic analyses of PE/PPE multigene family of Mycobacterium tuberculosis H 37 Rv and H 37 Ra reveal novel and interesting differences with implications in virulence. Nucleic Acids Res 40: 7113-7122. Available: http:// www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3424577&tool=pmcentrez &rendertype=abstract. Accessed 2014 March 21.",
+    "pages": "7113-7122",
+    "journal": "Nucleic Acids Res",
+    "volume": "40",
+    "sentences": [
+      "In particular, several highly repetitive genes that were captured by Pilon are known to play a role in virulence and host-pathogen interactions [CITATION][CITATION #b29]."
+    ]
+  },
+  {
+    "title": "Conserved immune recognition hierarchy of mycobacterial PE/PPE proteins during infection in natural hosts",
+    "authors": "H M Vordermeier;R G Hewinson;R J Wilkinson;H P Wilkinson K A, Gideon",
+    "year": "2012",
+    "citation": "Vordermeier HM, Hewinson RG, Wilkinson RJ, Wilkinson K a, Gideon HP, et al. (2012) Conserved immune recognition hierarchy of mycobacterial PE/PPE proteins during infection in natural hosts. PLoS One 7: e40890. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3411574&tool= pmcentrez&rendertype=abstract. Accessed 2014 March 21.",
+    "pages": "",
+    "journal": "PLoS One",
+    "volume": "7",
+    "sentences": [
+      "In particular, several highly repetitive genes that were captured by Pilon are known to play a role in virulence and host-pathogen interactions [CITATION #b28][CITATION]."
+    ]
+  },
+  {
+    "title": "IS6110 restriction fragment length polymorphism typing of clinical isolates of Mycobacterium tuberculosis from patients with pulmonary tuberculosis in Madras, south India",
+    "authors": "S Das;C N Paramasivan;D B Lowrie;R Prabhakar;P R Narayanan",
+    "year": "1995",
+    "citation": "Das S, Paramasivan CN, Lowrie DB, Prabhakar R, Narayanan PR (1995) IS6110 restriction fragment length polymorphism typing of clinical isolates of Mycobacterium tuberculosis from patients with pulmonary tuberculosis in Madras, south India. Tuber Lung Dis 76: 550-554. Available: http://www.ncbi. nlm.nih.gov/pubmed/8593378. Accessed 2014 January 28.",
+    "pages": "550-554",
+    "journal": "Tuber Lung Dis",
+    "volume": "76",
+    "sentences": [
+      "In the M. tuberculosis case, Pilon improved the sequence accuracy and placement of genes encoding transposases, which have an important role in genome reorganization in this species [CITATION #b27] and are used in strain typing schemes [CITATION]."
+    ]
+  },
+  {
+    "title": "Frequent homologous recombination events in Mycobacterium tuberculosis PE/ PPE multigene families: potential role in antigenic variability",
+    "authors": "A Karboul;A Mazza;N C Gey Van Pittius;J L Ho;R Brousseau",
+    "year": "2008",
+    "citation": "Karboul A, Mazza A, Gey van Pittius NC, Ho JL, Brousseau R, et al. (2008) Frequent homologous recombination events in Mycobacterium tuberculosis PE/ PPE multigene families: potential role in antigenic variability. J Bacteriol 190: 7838-7846. Available: http://www.pubmedcentral.nih.gov/articlerender. fcgi?artid=2583619&tool=pmcentrez&rendertype=abstract. Accessed 2014 Jan- uary 28.",
+    "pages": "7838-7846",
+    "journal": "J Bacteriol",
+    "volume": "190",
+    "sentences": [
+      "In addition, for M. tuberculosis, Pilon had a significant impact on the repetitive, GC-rich and not well understood PE and PPE genes, an expanded family of highly repetitive genes that account for about 10% of the gene repertoire in this species [CITATION], and are implicated in pathogen-host interactions and virulence [CITATION #b32][CITATION #b33]."
+    ]
+  },
+  {
+    "title": "Mycobacterium tuberculosis-heterogeneity revealed through whole genome sequencing",
+    "authors": "C Ford;K Yusim;T Ioerger;S Feng;M Chase",
+    "year": "2012",
+    "citation": "Ford C, Yusim K, Ioerger T, Feng S, Chase M, et al. (2012) Mycobacterium tuberculosis-heterogeneity revealed through whole genome sequencing. Tuberculosis (Edinb) 92: 194-201. Available: http://www.pubmedcentral.nih. gov/articlerender.fcgi?artid=3323677&tool=pmcentrez&rendertype=abstract. Accessed 28 January 2014.",
+    "pages": "194-201",
+    "journal": "Tuberculosis (Edinb)",
+    "volume": "92",
+    "sentences": [
+      "In addition, for M. tuberculosis, Pilon had a significant impact on the repetitive, GC-rich and not well understood PE and PPE genes, an expanded family of highly repetitive genes that account for about 10% of the gene repertoire in this species [CITATION #b31], and are implicated in pathogen-host interactions and virulence [CITATION][CITATION #b33]."
+    ]
+  },
+  {
+    "title": "Comparative analysis of Mycobacterium tuberculosis pe and ppe genes reveals high sequence variation and an apparent absence of selective constraints",
+    "authors": "Cre Mcevoy;R Cloete;B Mu \u00a8ller;A C Schu \u00a8rch;P D Van Helden",
+    "year": "2012",
+    "citation": "McEvoy CRE, Cloete R, Mu \u00a8ller B, Schu \u00a8rch AC, van Helden PD, et al. (2012) Comparative analysis of Mycobacterium tuberculosis pe and ppe genes reveals high sequence variation and an apparent absence of selective constraints. PLoS One 7: e30593. Available: http://www.pubmedcentral.nih.gov/articlerender. fcgi?artid=3319526&tool=pmcentrez&rendertype=abstract. Accessed 2012 July 28.",
+    "pages": "",
+    "journal": "PLoS One",
+    "volume": "7",
+    "sentences": [
+      "In addition, for M. tuberculosis, Pilon had a significant impact on the repetitive, GC-rich and not well understood PE and PPE genes, an expanded family of highly repetitive genes that account for about 10% of the gene repertoire in this species [CITATION #b31], and are implicated in pathogen-host interactions and virulence [CITATION #b32][CITATION]."
+    ]
+  },
+  {
+    "title": "Fast gapped-read alignment with Bowtie 2",
+    "authors": "B Langmead;S L Salzberg",
+    "year": "2012",
+    "citation": "Langmead B, Salzberg SL (2012) Fast gapped-read alignment with Bowtie 2. Nat Methods 9: 357-359. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=3322381&tool=pmcentrez&rendertype=abstract. Ac- cessed 2014 January 20.",
+    "pages": "357-359",
+    "journal": "Nat Methods",
+    "volume": "9",
+    "sentences": [
+      "For Illumina data, these BAM files are usually produced by an aligner such as BWA [CITATION #b14] or Bowtie 2 [CITATION]."
+    ]
+  },
+  {
+    "title": "Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration",
+    "authors": "H Thorvaldsdo \u00b4ttir;J T Robinson;J P Mesirov",
+    "year": "2013",
+    "citation": "Thorvaldsdo \u00b4ttir H, Robinson JT, Mesirov JP (2013) Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration. Brief Bioinform 14: 178-192. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=3603213&tool=pmcentrez&rendertype=abstract. Ac- cessed 2014 January 20.",
+    "pages": "178-192",
+    "journal": "Brief Bioinform",
+    "volume": "14",
+    "sentences": [
+      "Finally, Pilon will optionally (with thetracks option) output a series of visualization tracks (''bed'' and ''wig'' files) suitable for viewing in genome browsers such as IGV [CITATION] and GenomeView [CITATION #b36]."
+    ]
+  },
+  {
+    "title": "GenomeView: a next-generation genome browser",
+    "authors": "T Abeel;T Van Parys;Y Saeys;J Galagan;Y Van De Peer",
+    "year": "2012",
+    "citation": "Abeel T, Van Parys T, Saeys Y, Galagan J, Van de Peer Y (2012) GenomeView: a next-generation genome browser. Nucleic Acids Res 40: e12. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3258165&tool= pmcentrez&rendertype=abstract. Accessed 2012 March 15.",
+    "pages": "e12",
+    "journal": "Nucleic Acids Res",
+    "volume": "40",
+    "sentences": [
+      "Finally, Pilon will optionally (with thetracks option) output a series of visualization tracks (''bed'' and ''wig'' files) suitable for viewing in genome browsers such as IGV [CITATION #b35] and GenomeView [CITATION]."
+    ]
+  },
+  {
+    "title": "Characterizing and measuring bias in sequence data",
+    "authors": "M G Ross;C Russ;M Costello;A Hollinger;N J Lennon",
+    "year": "2013",
+    "citation": "Ross MG, Russ C, Costello M, Hollinger A, Lennon NJ, et al. (2013) Characterizing and measuring bias in sequence data. Genome Biol 14: R51. Available: http://www.ncbi.nlm.nih.gov/pubmed/23718773. Accessed 2014 January 22.",
+    "pages": "R51",
+    "journal": "Genome Biol",
+    "volume": "14",
+    "sentences": [
+      "For sequencing M. tuberculosis F11 and T67, two libraries were generated: one PCRfree 180 bp insert paired fragment library [CITATION] and large insert 3-5 Kbp long insert library [CITATION #b38].",
+      "S. pneumoniae TIGR4 data also consisted of two libraries: one robotically size selected 180 bp insert paired fragment library [CITATION] and a large insert 3-5 Kbp long insert library [CITATION #b38].",
+      "The sequencing data for C. albicans SC5314 was generated from three libraries: a robotically size-selected 180 bp insert paired fragment library [CITATION], a gel-cut 4 Kbp long insert library [CITATION #b39], and a 40 Kb Fosill library [CITATION #b40]."
+    ]
+  },
+  {
+    "title": "Genomic epidemiology of the Escherichia coli O104:H4 outbreaks in Europe",
+    "authors": "Y H Grad;M Lipsitch;M Feldgarden;H M Arachchi;G C Cerqueira",
+    "year": "2011",
+    "citation": "Grad YH, Lipsitch M, Feldgarden M, Arachchi HM, Cerqueira GC, et al. (2012) Genomic epidemiology of the Escherichia coli O104:H4 outbreaks in Europe, 2011. Proc Natl Acad Sci U S A 109: 3065-3070. Available: http:// www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3286951&tool=pmcentrez &rendertype=abstract. Accessed 2014 January 20.",
+    "pages": "3065-3070",
+    "journal": "Proc Natl Acad Sci U S A",
+    "volume": "109",
+    "sentences": [
+      "For sequencing M. tuberculosis F11 and T67, two libraries were generated: one PCRfree 180 bp insert paired fragment library [CITATION #b37] and large insert 3-5 Kbp long insert library [CITATION].",
+      "S. pneumoniae TIGR4 data also consisted of two libraries: one robotically size selected 180 bp insert paired fragment library [CITATION #b37] and a large insert 3-5 Kbp long insert library [CITATION].",
+      "This filter expression was based on one previously used to call variants from the European Escherichia coli O104:H4 outbreak [CITATION], adjusting depth and allele balance thresholds to yield the best performance tradeoff between false negative and false positive results on these data."
+    ]
+  },
+  {
+    "title": "Finished bacterial genomes from shotgun sequence data",
+    "authors": "F J Ribeiro;D Przybylski;S Yin;T Sharpe;S Gnerre",
+    "year": "2012",
+    "citation": "Ribeiro FJ, Przybylski D, Yin S, Sharpe T, Gnerre S, et al. (2012) Finished bacterial genomes from shotgun sequence data. Genome Res 22: 2270-2277. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3483556 &tool=pmcentrez&rendertype=abstract. Accessed 2014 January 23.",
+    "pages": "2270-2277",
+    "journal": "Genome Res",
+    "volume": "22",
+    "sentences": [
+      "The sequencing data for C. albicans SC5314 was generated from three libraries: a robotically size-selected 180 bp insert paired fragment library [CITATION #b37], a gel-cut 4 Kbp long insert library [CITATION], and a 40 Kb Fosill library [CITATION #b40]."
+    ]
+  },
+  {
+    "title": "Paired-end sequencing of Fosmid libraries by Illumina",
+    "authors": "Ljs Williams;D G Tabbaa;N Li;A M Berlin;T P Shea",
+    "year": "2012",
+    "citation": "Williams LJS, Tabbaa DG, Li N, Berlin AM, Shea TP, et al. (2012) Paired-end sequencing of Fosmid libraries by Illumina. Genome Res 22: 2241-2249. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3483553 &tool=pmcentrez&rendertype=abstract. Accessed 28 January 2014.",
+    "pages": "2241-2249",
+    "journal": "Genome Res",
+    "volume": "22",
+    "sentences": [
+      "The sequencing data for C. albicans SC5314 was generated from three libraries: a robotically size-selected 180 bp insert paired fragment library [CITATION #b37], a gel-cut 4 Kbp long insert library [CITATION #b39], and a 40 Kb Fosill library [CITATION]."
+    ]
+  },
+  {
+    "title": "Highquality draft assemblies of mammalian genomes from massively parallel sequence data",
+    "authors": "S Gnerre;I Maccallum;D Przybylski;F J Ribeiro;J N Burton",
+    "year": "2011",
+    "citation": "Gnerre S, Maccallum I, Przybylski D, Ribeiro FJ, Burton JN, et al. (2011) High- quality draft assemblies of mammalian genomes from massively parallel sequence data. Proc Natl Acad Sci U S A 108: 1513-1518. Available: http:// www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3029755&tool=pmcentrez &rendertype=abstract. Accessed 21 January 2014.",
+    "pages": "1513-1518",
+    "journal": "Proc Natl Acad Sci U S A",
+    "volume": "108",
+    "sentences": [
+      "All draft assemblies were generated using ALLPATHS-LG [CITATION]."
+    ]
+  },
+  {
+    "title": "Basic local alignment search tool",
+    "authors": "S F Altschul;W Gish;W Miller;E W Myers;D J Lipman",
+    "year": "1990",
+    "citation": "Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ (1990) Basic local alignment search tool. J Mol Biol 215: 403-410. Available: http://www.ncbi. nlm.nih.gov/pubmed/2231712. Accessed 23 January 2014.",
+    "pages": "403-410",
+    "journal": "J Mol Biol",
+    "volume": "215",
+    "sentences": [
+      "These extracted sequences were aligned to their respective finished reference genomes with BLASTN [CITATION], and the accuracy of the changes was assessed by manually inspecting the alignments for accuracy, judging each fix as ''Correct'' or ''Incorrect''."
+    ]
+  },
+  {
+    "title": "Fast algorithms for largescale genome alignment and comparison",
+    "authors": "A L Delcher;A Phillippy;J Carlton;S L Salzberg",
+    "year": "2002",
+    "citation": "Delcher AL, Phillippy A, Carlton J, Salzberg SL (2002) Fast algorithms for large- scale genome alignment and comparison. Nucleic Acids Res 30: 2478-2483. Available: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=117189 &tool=pmcentrez&rendertype=abstract.",
+    "pages": "2478-2483",
+    "journal": "Nucleic Acids Res",
+    "volume": "30",
+    "sentences": [
+      "Areas where there was a significant break in synteny or where the banded Smith-Waterman alignment produced questionable results were analyzed using either Nucmer [CITATION], ClustalW [CITATION #b44] or Blast2 [CITATION #b46] to verify the nature of the difference and to obtain more accurate coordinates."
+    ]
+  },
+  {
+    "title": "BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences",
+    "authors": "T A Tatusova;T L Madden",
+    "year": "1999",
+    "citation": "Tatusova TA, Madden TL (1999) BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences. FEMS Microbiol Lett 174: 247- 250. Available: http://www.ncbi.nlm.nih.gov/pubmed/10339815. Accessed 28 January 2014.",
+    "pages": "247-250",
+    "journal": "FEMS Microbiol Lett",
+    "volume": "174",
+    "sentences": [
+      "Areas where there was a significant break in synteny or where the banded Smith-Waterman alignment produced questionable results were analyzed using either Nucmer [CITATION #b43], ClustalW [CITATION #b44] or Blast2 [CITATION] to verify the nature of the difference and to obtain more accurate coordinates."
+    ]
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "ProSOM: core promoter prediction based on unsupervised clustering of DNA physical profiles",
+    "authors": "T Abeel;Y Saeys;\u00b4p Rouze;Y Van De Peer",
+    "year": "2008",
+    "citation": "Abeel T, Saeys Y, Rouze \u00b4P, Van de Peer Y (2008) ProSOM: core promoter prediction based on unsupervised clustering of DNA physical profiles. Bioinformatics 24: i24-31. Available: http://www.pubmedcentral.nih.gov/ articlerender.fcgi?artid=2718650&tool=pmcentrez&rendertype=abstract. Ac- cessed 8 July 2012.",
+    "pages": "24-31",
+    "journal": "Bioinformatics",
+    "volume": "24",
+    "sentences": [
+      "Based on this comparison, recall and precision were calculated according to the strategy described in [CITATION]."
+    ]
+  }
+]

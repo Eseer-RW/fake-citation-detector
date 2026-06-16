@@ -1,0 +1,972 @@
+[
+  {
+    "title": "Epidemiologic Methods for Health Policy",
+    "authors": "R A Spasoff",
+    "year": "1999",
+    "citation": "Spasoff RA. Epidemiologic Methods for Health Policy. New York: Oxford University Press, Inc.; 1999.",
+    "publisher": "Oxford University Press, Inc",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Routinely collected health data are defined as data collected without specific a priori research questions developed prior to utilization for research [CITATION]."
+    ]
+  },
+  {
+    "title": "Using population-based routine data for evidence-based health policy decisions: lessons from three examples of setting and evaluating national health policy in Australia, the UK and the USA",
+    "authors": "E H Morrato;M Elias;C A Gericke",
+    "year": "2007",
+    "citation": "Morrato EH, Elias M, Gericke CA. Using population-based routine data for evidence-based health pol- icy decisions: lessons from three examples of setting and evaluating national health policy in Australia, the UK and the USA. Journal of public health (Oxford, England). 2007; 29(4):463-71.",
+    "pages": "463-71",
+    "journal": "Journal of public health",
+    "volume": "29",
+    "sentences": [
+      "These data, generated in various health care settings and geographic locations, present opportunities for innovative, efficient, and cost-effective research to inform decisions in clinical medicine, health services planning, and public health [CITATION]."
+    ]
+  },
+  {
+    "title": "Identifying priorities in methodological research using ICD-9-CM and ICD-10 administrative data: report from an international consortium",
+    "authors": "De Coster;C Quan;H Finlayson;A Gao;M Halfon;P Humphries;K H",
+    "year": "2006",
+    "citation": "De Coster C, Quan H, Finlayson A, Gao M, Halfon P, Humphries KH, et al. Identifying priorities in meth- odological research using ICD-9-CM and ICD-10 administrative data: report from an international con- sortium. BMC Health Serv Res. 2006; 6:77. PMID: 16776836",
+    "pages": "77",
+    "journal": "BMC Health Serv Res",
+    "volume": "6",
+    "sentences": [
+      "Internationally, governments and funding agencies have prioritized use of routinely collected health data as tools to improve patient care, transform health research, and improve health care efficiency [CITATION]."
+    ]
+  },
+  {
+    "title": "Development and use of reporting guidelines for assessing the quality of validation studies of health administrative data",
+    "authors": "E I Benchimol;D G Manuel;T To;A M Griffiths;L Rabeneck;A Guttmann",
+    "year": "2011",
+    "citation": "Benchimol EI, Manuel DG, To T, Griffiths AM, Rabeneck L, Guttmann A. Development and use of reporting guidelines for assessing the quality of validation studies of health administrative data. J Clin Epidemiol. 2011; 64(8):821-9. doi: 10.1016/j.jclinepi.2010.10.006 PMID: 21194889",
+    "pages": "821-9",
+    "journal": "J Clin Epidemiol",
+    "volume": "64",
+    "sentences": [
+      "Two recent systematic reviews also document poor reporting of studies undertaken to validate data from routine data sources [CITATION][CITATION #b6], which can obscure sources of bias, hamper efforts to undertake meta-analyses, and lead to erroneous conclusions.",
+      "The most common reference standards are medical records, surveys of patients or practitioners, and clinical registries [CITATION][CITATION #b33].",
+      "Measures of accuracy are similar to those reported in diagnostic test studies, including sensitivity, specificity, positive and negative predictive values, or kappa coefficients [CITATION][CITATION #b33].",
+      "If validation work was conducted as part of the observational study in question, we suggest that authors use the published reporting guidelines for validation studies [CITATION]."
+    ]
+  },
+  {
+    "title": "Validation and validity of diagnoses in the General Practice Research Database: a systematic review",
+    "authors": "E Herrett;S L Thomas;W M Schoonen;L Smeeth;A J Hall",
+    "year": "2010",
+    "citation": "Herrett E, Thomas SL, Schoonen WM, Smeeth L, Hall AJ. Validation and validity of diagnoses in the General Practice Research Database: a systematic review. British journal of clinical pharmacology. 2010; 69(1):4-14. doi: 10.1111/j.1365-2125.2009.03537.x PMID: 20078607",
+    "pages": "4-14",
+    "journal": "British journal of clinical pharmacology",
+    "volume": "69",
+    "sentences": [
+      "Two recent systematic reviews also document poor reporting of studies undertaken to validate data from routine data sources [CITATION #b5][CITATION], which can obscure sources of bias, hamper efforts to undertake meta-analyses, and lead to erroneous conclusions."
+    ]
+  },
+  {
+    "title": "Modern Epidemiology",
+    "authors": "K J Rothman;S Greenland;T L Lash",
+    "year": "2008",
+    "citation": "Rothman KJ, Greenland S, Lash TL. Modern Epidemiology, 3rd edition. 3rd ed. Philadelphia: Lippin- cott Williams & Wilkins; 2008.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "These populations include the source population, which represents that from which the database population is derived and hence about which the researchers want to make inferences; the database population, which is derived from the source population and comprises people with data included in the data source; and the study population, identified from within the database population by the researchers using codes and algorithms (Fig 1) [CITATION]."
+    ]
+  },
+  {
+    "title": "Does the CONSORT checklist improve the quality of reports of randomised controlled trials? A systematic review",
+    "authors": "A C Plint;D Moher;A Morrison;K Schulz;D G Altman;C Hill",
+    "year": "2006",
+    "citation": "Plint AC, Moher D, Morrison A, Schulz K, Altman DG, Hill C, et al. Does the CONSORT checklist improve the quality of reports of randomised controlled trials? A systematic review. The Medical journal of Australia. 2006; 185(5):263-7. PMID: 16948622",
+    "pages": "263-7",
+    "journal": "The Medical journal of Australia",
+    "volume": "185",
+    "sentences": [
+      "Reporting guidelines have been developed to guide reporting for a range of study designs and contexts and are associated with improved quality of reporting [CITATION][CITATION #b9]."
+    ]
+  },
+  {
+    "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration",
+    "authors": "J P Vandenbroucke;E Von Elm;D G Altman;P C Gotzsche;C D Mulrow;S J Pocock",
+    "year": "2007",
+    "citation": "Vandenbroucke JP, von Elm E, Altman DG, Gotzsche PC, Mulrow CD, Pocock SJ, et al. Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): explanation and elaboration. PLOS Medicine. 2007; 4(10):e297. PMID: 17941715",
+    "pages": "e297",
+    "journal": "PLOS Medicine",
+    "volume": "4",
+    "sentences": [
+      "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement was developed to enhance the transparency of reporting of observational research [CITATION][CITATION #b11] and has been widely adopted and endorsed by leading medical journals.",
+      "Missing data are problematic for all observational research and have been addressed in Box 6 of the STROBE explanatory article [CITATION]."
+    ]
+  },
+  {
+    "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies",
+    "authors": "E Von Elm;D G Altman;M Egger;S J Pocock;P C Gotzsche;J P Vandenbroucke",
+    "year": "2007",
+    "citation": "von Elm E, Altman DG, Egger M, Pocock SJ, Gotzsche PC, Vandenbroucke JP. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. PLOS Medicine. 2007; 4(10):e296. PMID: 17941714",
+    "pages": "e296",
+    "journal": "PLOS Medicine",
+    "volume": "4",
+    "sentences": [
+      "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement was developed to enhance the transparency of reporting of observational research [CITATION #b10][CITATION] and has been widely adopted and endorsed by leading medical journals."
+    ]
+  },
+  {
+    "title": "Using the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement to assess reporting of observational trials in hand surgery",
+    "authors": "A A Sorensen;R D Wojahn;M C Manske;R P Calfee",
+    "year": "2013",
+    "citation": "Sorensen AA, Wojahn RD, Manske MC, Calfee RP. Using the Strengthening the Reporting of Observa- tional Studies in Epidemiology (STROBE) Statement to assess reporting of observational trials in hand surgery. The Journal of hand surgery. 2013; 38(8):1584-9.e2. doi: 10.1016/j.jhsa.2013.05.008 PMID: 23845586",
+    "pages": "1584-9",
+    "journal": "The Journal of hand surgery",
+    "volume": "38",
+    "sentences": [
+      "It has been demonstrated to improve the quality of research reporting when implemented in the editorial process [CITATION][CITATION #b13].",
+      "Reporting guidelines have been demonstrated to improve reporting of research, thereby allowing for consumers of the research to be aware of the strengths, limitations, and accuracy of conclusions [CITATION][CITATION #b83][CITATION #b84][CITATION #b85]."
+    ]
+  },
+  {
+    "title": "Effect of using reporting guidelines during peer review on quality of final manuscripts submitted to a biomedical journal: masked randomised trial",
+    "authors": "E Cobo;J Cortes;J M Ribera;F Cardellach;A Selva-O'callaghan;B Kostov",
+    "year": "2011",
+    "citation": "Cobo E, Cortes J, Ribera JM, Cardellach F, Selva-O'Callaghan A, Kostov B, et al. Effect of using report- ing guidelines during peer review on quality of final manuscripts submitted to a biomedical journal: masked randomised trial. BMJ. 2011; 343:d6783. doi: 10.1136/bmj.d6783 PMID: 22108262",
+    "pages": "6783",
+    "journal": "BMJ",
+    "volume": "343",
+    "sentences": [
+      "It has been demonstrated to improve the quality of research reporting when implemented in the editorial process [CITATION #b12][CITATION]."
+    ]
+  },
+  {
+    "title": "Call to RECORD: the need for complete reporting of research using routinely collected health data",
+    "authors": "E I Benchimol;S Langan;A Guttmann",
+    "year": "2013",
+    "citation": "Benchimol EI, Langan S, Guttmann A. Call to RECORD: the need for complete reporting of research using routinely collected health data. J Clin Epidemiol. 2013; 66(7):703-5. doi: 10.1016/j.jclinepi.2012. 09.006 PMID: 23186992",
+    "pages": "703-5",
+    "journal": "J Clin Epidemiol",
+    "volume": "66",
+    "sentences": [
+      "An international group of scientists with a specific interest in using routinely collected health data and representatives of the STROBE group met following the Primary Care Database Symposium in London in 2012 to discuss STROBE in the context of studies using routinely collected health data [CITATION][CITATION #b15]."
+    ]
+  },
+  {
+    "title": "Setting the RECORD straight: developing a guideline for the REporting of studies Conducted using Observational Routinely collected Data",
+    "authors": "S M Langan;E I Benchimol;A Guttmann;D Moher;I Petersen;L Smeeth",
+    "year": "2013",
+    "citation": "Langan SM, Benchimol EI, Guttmann A, Moher D, Petersen I, Smeeth L, et al. Setting the RECORD straight: developing a guideline for the REporting of studies Conducted using Observational Routinely collected Data. Clin Epidemiol. 2013; 5:29-31. doi: 10.2147/CLEP.S36885 PMID: 23413321",
+    "pages": "29-31",
+    "journal": "Clin Epidemiol",
+    "volume": "5",
+    "sentences": [
+      "An international group of scientists with a specific interest in using routinely collected health data and representatives of the STROBE group met following the Primary Care Database Symposium in London in 2012 to discuss STROBE in the context of studies using routinely collected health data [CITATION #b14][CITATION]."
+    ]
+  },
+  {
+    "title": "The REporting of Studies Conducted Using Observational Routinely-Collected Health Data (RECORD) Statement: Methods for Arriving at Consensus and Developing Reporting Guidelines",
+    "authors": "S G Nicholls;P Quach;E Von Elm;A Guttmann;D Moher;I Petersen",
+    "year": "2015",
+    "citation": "Nicholls SG, Quach P, von Elm E, Guttmann A, Moher D, Petersen I, et al. The REporting of Studies Conducted Using Observational Routinely-Collected Health Data (RECORD) Statement: Methods for Arriving at Consensus and Developing Reporting Guidelines. PLOS One. 2015; 10(5):e0125620. doi: 10.1371/journal.pone.0125620 PMID: 25965407",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "10",
+    "sentences": [
+      "The methodology used to develop the RECORD guidelines is detailed elsewhere [CITATION] and based on the established methods to develop reporting guidelines [CITATION #b17].",
+      "We recruited stakeholders through open calls and targeted invitations using a variety of channels [CITATION]."
+    ]
+  },
+  {
+    "title": "Guidance for developers of health research reporting guidelines",
+    "authors": "D Moher;K F Schulz;I Simera;D G Altman",
+    "year": "2010",
+    "citation": "Moher D, Schulz KF, Simera I, Altman DG. Guidance for developers of health research reporting guide- lines. PLOS Medicine. 2010; 7(2):e1000217. doi: 10.1371/journal.pmed.1000217 PMID: 20169112",
+    "pages": "",
+    "journal": "PLOS Medicine",
+    "volume": "7",
+    "sentences": [
+      "The methodology used to develop the RECORD guidelines is detailed elsewhere [CITATION #b16] and based on the established methods to develop reporting guidelines [CITATION].",
+      "While a great deal of input was obtained through surveys and feedback from the stakeholder group, feasibility dictated that the statements were crafted by a smaller working committee consisting of 19 members who met in person, as previously suggested in the literature [CITATION]."
+    ]
+  },
+  {
+    "title": "Reducing waste from incomplete or unusable reports of biomedical research",
+    "authors": "P Glasziou;D G Altman;P Bossuyt;I Boutron;M Clarke;S Julious",
+    "year": "2014",
+    "citation": "Glasziou P, Altman DG, Bossuyt P, Boutron I, Clarke M, Julious S, et al. Reducing waste from incom- plete or unusable reports of biomedical research. Lancet. 2014; 383(9913):267-76. doi: 10.1016/ S0140-6736(13)62228-X PMID: 24411647",
+    "pages": "267-76",
+    "journal": "Lancet",
+    "volume": "383",
+    "sentences": [
+      "By improving the quality of reporting of research using routinely collected health data, we seek to reduce unclear research reports and achieve the tenets of the scientific process: discovery, transparency, and replicability [CITATION]."
+    ]
+  },
+  {
+    "title": "The Dutch hospital standardised mortality ratio (HSMR) method and cardiac surgery: benchmarking in a national cohort using hospital administration data versus a clinical database",
+    "authors": "S Siregar;M E Pouw;K G Moons;M I Versteegh;M L Bots;Y Van Der Graaf",
+    "year": "2014",
+    "citation": "Siregar S, Pouw ME, Moons KG, Versteegh MI, Bots ML, van der Graaf Y, et al. The Dutch hospital standardised mortality ratio (HSMR) method and cardiac surgery: benchmarking in a national cohort using hospital administration data versus a clinical database. Heart. 2014; 100(9):702-10. doi: 10. 1136/heartjnl-2013-304645 PMID: 24334377",
+    "pages": "702-10",
+    "journal": "Heart",
+    "volume": "100",
+    "sentences": [
+      "Database\" [CITATION].",
+      "The linkage was performed by Statistics Netherlands and is described in previous publications\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Use of case-time-control design in pharmacovigilance applications: exploration with high-risk medications and unplanned hospital admissions in the Western Australian elderly",
+    "authors": "S D Price;C D Holman;F M Sanfilippo;J D Emery",
+    "year": "2013",
+    "citation": "Price SD, Holman CD, Sanfilippo FM, Emery JD. Use of case-time-control design in pharmacovigilance applications: exploration with high-risk medications and unplanned hospital admissions in the Western Australian elderly. Pharmacoepidemiol Drug Saf. 2013; 22(11):1159-70. doi: 10.1002/pds.3469 PMID: 23797984",
+    "pages": "1159-70",
+    "journal": "Pharmacoepidemiol Drug Saf",
+    "volume": "22",
+    "sentences": [
+      "For studies using routinely collected data, authors should further clarify whether the analyses were exploratory with the purpose of finding new relationships in the data (examples are data mining or hypothesis-generating studies [CITATION][CITATION #b22]) or confirmatory with the purpose of testing one or more hypotheses [CITATION #b23]."
+    ]
+  },
+  {
+    "title": "Relation between Medicare screening reimbursement and stage at diagnosis for older patients with colon cancer",
+    "authors": "C P Gross;M S Andersen;H M Krumholz;G J Mcavay;D Proctor;M E Tinetti",
+    "year": "2006",
+    "citation": "Gross CP, Andersen MS, Krumholz HM, McAvay GJ, Proctor D, Tinetti ME. Relation between Medicare screening reimbursement and stage at diagnosis for older patients with colon cancer. JAMA. 2006; 296 (23):2815-22. PMID: 17179458",
+    "pages": "2815-22",
+    "journal": "JAMA",
+    "volume": "296",
+    "sentences": [
+      "For studies using routinely collected data, authors should further clarify whether the analyses were exploratory with the purpose of finding new relationships in the data (examples are data mining or hypothesis-generating studies [CITATION #b21][CITATION]) or confirmatory with the purpose of testing one or more hypotheses [CITATION #b23]."
+    ]
+  },
+  {
+    "title": "Observational research, randomised trials, and two views of medical science",
+    "authors": "J P Vandenbroucke",
+    "year": "2008",
+    "citation": "Vandenbroucke JP. Observational research, randomised trials, and two views of medical science. PLOS Medicine. 2008; 5(3):e67. doi: 10.1371/journal.pmed.0050067 PMID: 18336067",
+    "pages": "e67",
+    "journal": "PLOS Medicine",
+    "volume": "5",
+    "sentences": [
+      "For studies using routinely collected data, authors should further clarify whether the analyses were exploratory with the purpose of finding new relationships in the data (examples are data mining or hypothesis-generating studies [CITATION #b21][CITATION #b22]) or confirmatory with the purpose of testing one or more hypotheses [CITATION].",
+      "Because the strengths and limitations of methods used to conduct research with routinely collected data may be contentious, a clear description of a study's objectives is essential [CITATION][CITATION #b24]."
+    ]
+  },
+  {
+    "title": "Data dredging, bias, or confounding",
+    "authors": "G D Smith;S Ebrahim",
+    "year": "2002",
+    "citation": "Smith GD, Ebrahim S. Data dredging, bias, or confounding. BMJ. 2002; 325(7378):1437-8. PMID: 12493654",
+    "pages": "1437-8",
+    "journal": "BMJ",
+    "volume": "325",
+    "sentences": [
+      "Because the strengths and limitations of methods used to conduct research with routinely collected data may be contentious, a clear description of a study's objectives is essential [CITATION #b23][CITATION]."
+    ]
+  },
+  {
+    "title": "Reusing the electronic medical record for clinical research",
+    "authors": "H U Prokosch;T Ganslandt",
+    "year": "2009",
+    "citation": "Prokosch HU, Ganslandt T. Perspectives for medical informatics. Reusing the electronic medical record for clinical research. Methods Inf Med. 2009; 48(1):38-44. PMID: 19151882",
+    "pages": "38-44",
+    "journal": "Methods Inf Med",
+    "volume": "48",
+    "sentences": [
+      "Users can be specifically trained for exhaustive and reproducible data entry, or no training may be provided [CITATION]."
+    ]
+  },
+  {
+    "title": "Changing Age Demographics of Inflammatory Bowel Disease in Ontario, Canada: A Population-based Cohort Study of Epidemiology Trends",
+    "authors": "E I Benchimol;D G Manuel;A Guttmann;G C Nguyen;N Mojaverian;P Quach",
+    "year": "2014",
+    "citation": "Benchimol EI, Manuel DG, Guttmann A, Nguyen GC, Mojaverian N, Quach P, et al. Changing Age Demographics of Inflammatory Bowel Disease in Ontario, Canada: A Population-based Cohort Study of Epidemiology Trends. Inflamm Bowel Dis. 2014; 20(10):1761-9. doi: 10.1097/MIB. 0000000000000103 PMID: 25159453",
+    "pages": "1761-9",
+    "journal": "Inflamm Bowel Dis",
+    "volume": "20",
+    "sentences": [
+      "[CITATION]."
+    ]
+  },
+  {
+    "title": "Importance of accurately identifying disease in studies using electronic health records",
+    "authors": "D G Manuel;L C Rosella;T A Stukel",
+    "year": "2010",
+    "citation": "Manuel DG, Rosella LC, Stukel TA. Importance of accurately identifying disease in studies using elec- tronic health records. BMJ. 2010; 341:c4226. doi: 10.1136/bmj.c4226 PMID: 20724404",
+    "pages": "4226",
+    "journal": "BMJ",
+    "volume": "341",
+    "sentences": [
+      "The risk of misclassification bias in studies using routine health data, as in many other epidemiological studies, may threaten the validity of study findings [CITATION].",
+      "Considering the risk of misclassification bias in all research, including research conducted using routine health data [CITATION], authors should provide sufficient detail to make their research reproducible and to make the risk of bias apparent."
+    ]
+  },
+  {
+    "title": "Validation studies of the health improvement network (THIN) database for pharmacoepidemiology research",
+    "authors": "J D Lewis;R Schinnar;W B Bilker;X Wang;B L Strom",
+    "year": "2007",
+    "citation": "Lewis JD, Schinnar R, Bilker WB, Wang X, Strom BL. Validation studies of the health improvement net- work (THIN) database for pharmacoepidemiology research. Pharmacoepidemiol Drug Saf. 2007; 16 (4):393-401. PMID: 17066486",
+    "pages": "393-401",
+    "journal": "Pharmacoepidemiol Drug Saf",
+    "volume": "16",
+    "sentences": [
+      "Validation of identification methods has been increasingly emphasized as essential for studies using routinely collected health data, particularly for disease codes in studies using administrative data collected for billing purposes [CITATION]."
+    ]
+  },
+  {
+    "title": "A framework for evaluation of secondary data sources for epidemiological research",
+    "authors": "H T Sorensen;S Sabroe;J Olsen",
+    "year": "1996",
+    "citation": "Sorensen HT, Sabroe S, Olsen J. A framework for evaluation of secondary data sources for epidemio- logical research. International journal of epidemiology. 1996; 25(2):435-42. PMID: 9119571",
+    "pages": "435-42",
+    "journal": "International journal of epidemiology",
+    "volume": "25",
+    "sentences": [
+      "The most common reference standards are medical records, surveys of patients or practitioners, and clinical registries [CITATION #b5][CITATION].",
+      "Measures of accuracy are similar to those reported in diagnostic test studies, including sensitivity, specificity, positive and negative predictive values, or kappa coefficients [CITATION #b5][CITATION]."
+    ]
+  },
+  {
+    "title": "Internal validation of Medicare claims data. Epidemiology",
+    "authors": "J A Baron;G Lu-Yao;J Barrett;D Mclerran;E S Fisher",
+    "year": "1994",
+    "citation": "Baron JA, Lu-Yao G, Barrett J, McLerran D, Fisher ES. Internal validation of Medicare claims data. Epi- demiology. 1994; 5(5):541-4. PMID: 7986870",
+    "pages": "541-4",
+    "journal": "",
+    "volume": "5",
+    "sentences": [
+      "In addition, internal validation of databases may be undertaken to compare overlapping data sources within a single database [CITATION]."
+    ]
+  },
+  {
+    "title": "Smoker, ex-smoker or non-smoker? The validity of routinely recorded smoking status in UK primary care: a cross-sectional study",
+    "authors": "L Marston;J R Carpenter;K R Walters;R W Morris;I Nazareth;I R White",
+    "year": "2014",
+    "citation": "Marston L, Carpenter JR, Walters KR, Morris RW, Nazareth I, White IR, et al. Smoker, ex-smoker or non-smoker? The validity of routinely recorded smoking status in UK primary care: a cross-sectional study. BMJ open. 2014; 4(4):e004958. doi: 10.1136/bmjopen-2014-004958 PMID: 24760355",
+    "pages": "2014-004958",
+    "journal": "BMJ open",
+    "volume": "4",
+    "sentences": [
+      "It is important to state whether the validation occurred in a source or database population different from that selected for the present study, as codes may function differently in different populations or databases [CITATION]."
+    ]
+  },
+  {
+    "title": "Estimating the prevalence of chronic conditions in children who die in England, Scotland and Wales: a data linkage cohort study",
+    "authors": "P Hardelid;N Dattani;R Gilbert",
+    "year": "2014",
+    "citation": "Hardelid P, Dattani N, Gilbert R. Estimating the prevalence of chronic conditions in children who die in England, Scotland and Wales: a data linkage cohort study. BMJ open. 2014; 4(8):e005331. doi: 10. 1136/bmjopen-2014-005331 PMID: 25085264",
+    "pages": "2014-005331",
+    "journal": "BMJ open",
+    "volume": "4",
+    "sentences": [
+      "Hardelid and colleagues provided all codes in their S1 Table in Data Supplement 2 [CITATION]."
+    ]
+  },
+  {
+    "title": "Risk factors for hospital admission with RSV bronchiolitis in England: a population-based birth cohort study",
+    "authors": "J Murray;A Bottle;M Sharland;N Modi;P Aylin;A Majeed",
+    "year": "2014",
+    "citation": "Murray J, Bottle A, Sharland M, Modi N, Aylin P, Majeed A, et al. Risk factors for hospital admission with RSV bronchiolitis in England: a population-based birth cohort study. PLOS One. 2014; 9(2): e89186. doi: 10.1371/journal.pone.0089186 PMID: 24586581",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "9",
+    "sentences": [
+      "Murray and colleagues provided all codes for at-risk groups in their Appendix S1 [CITATION].",
+      "Studies may exclude medical practices with inconsistent electronic health record entry or wait for those practices to become consistent [CITATION][CITATION #b54]."
+    ]
+  },
+  {
+    "title": "Inpatient growth and resource use in 28 children's hospitals: a longitudinal, multi-institutional study",
+    "authors": "J G Berry;M Hall;D E Hall;D Z Kuo;E Cohen;R Agrawal",
+    "year": "2013",
+    "citation": "Berry JG, Hall M, Hall DE, Kuo DZ, Cohen E, Agrawal R, et al. Inpatient growth and resource use in 28 children's hospitals: a longitudinal, multi-institutional study. JAMA pediatrics. 2013; 167(2):170-7. doi: 10.1001/jamapediatrics.2013.432 PMID: 23266509",
+    "pages": "170-7",
+    "journal": "JAMA pediatrics",
+    "volume": "167",
+    "sentences": [
+      "For example, some comorbidity adjustment indices have been created by for-profit companies and sold to researchers for use in academic research settings [CITATION][CITATION #b39]."
+    ]
+  },
+  {
+    "title": "Variability in the measurement of hospital-wide mortality rates",
+    "authors": "D M Shahian;R E Wolf;L I Iezzoni;L Kirle;S L Normand",
+    "year": "2010",
+    "citation": "Shahian DM, Wolf RE, Iezzoni LI, Kirle L, Normand SL. Variability in the measurement of hospital-wide mortality rates. N Engl J Med. 2010; 363(26):2530-9. doi: 10.1056/NEJMsa1006396 PMID: 21175315",
+    "pages": "2530-9",
+    "journal": "N Engl J Med",
+    "volume": "363",
+    "sentences": [
+      "For example, some comorbidity adjustment indices have been created by for-profit companies and sold to researchers for use in academic research settings [CITATION #b38][CITATION]."
+    ]
+  },
+  {
+    "title": "Optimal stopping rules for adaptive sequential meta-analysis in the presence of publication bias",
+    "authors": [
+      "Bergmann, U.",
+      "Adebayo, T.",
+      "Leung, P."
+    ],
+    "year": "2019",
+    "journal": "Statistics in Medicine",
+    "doi": "",
+    "citation": "Bergmann et al. (2019) Stat Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "ClinicalCodes: an online clinical codes repository to improve the validity and reproducibility of research using electronic medical records",
+    "authors": "D A Springate;E Kontopantelis;D M Ashcroft;I Olier;R Parisi;E Chamapiwa",
+    "year": "2014",
+    "citation": "Springate DA, Kontopantelis E, Ashcroft DM, Olier I, Parisi R, Chamapiwa E, et al. ClinicalCodes: an online clinical codes repository to improve the validity and reproducibility of research using electronic medical records. PLOS One. 2014; 9(6):e99825. doi: 10.1371/journal.pone.0099825 PMID: 24941260",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "9",
+    "sentences": [
+      "Code repositories such as ClinicalCodes.org hold great promise for the documentation and transparency of codes used in research based on health data [CITATION]."
+    ]
+  },
+  {
+    "title": "Features of childhood cancer in primary care: a population-based nested case-control study",
+    "authors": "R M Dommett;M T Redaniel;M C Stevens;W Hamilton;R M Martin",
+    "year": "2012",
+    "citation": "Dommett RM, Redaniel MT, Stevens MC, Hamilton W, Martin RM. Features of childhood cancer in pri- mary care: a population-based nested case-control study. Br J Cancer. 2012; 106(5):982-7. doi: 10. 1038/bjc.2011.600 PMID: 22240793",
+    "pages": "982-7",
+    "journal": "Br J Cancer",
+    "volume": "106",
+    "sentences": [
+      "[CITATION]."
+    ]
+  },
+  {
+    "title": "Adverse events recorded in English primary care: observational study using the General Practice Research Database",
+    "authors": "C Tsang;A Bottle;A Majeed;P Aylin",
+    "year": "2013",
+    "citation": "Tsang C, Bottle A, Majeed A, Aylin P. Adverse events recorded in English primary care: observational study using the General Practice Research Database. Br J Gen Pract. 2013; 63(613):e534-42. doi: 10. 3399/bjgp13X670660 PMID: 23972194",
+    "pages": "534-42",
+    "journal": "Br J Gen Pract",
+    "volume": "63",
+    "sentences": [
+      ".was obtained under a Medical Research Council licence for academic institutions [CITATION]."
+    ]
+  },
+  {
+    "title": "Linkage, evaluation and analysis of national electronic healthcare data: application to providing enhanced blood-stream infection surveillance in paediatric intensive care",
+    "authors": "K Harron;H Goldstein;A Wade;B Muller-Pebody;R Parslow;R Gilbert",
+    "year": "2013",
+    "citation": "Harron K, Goldstein H, Wade A, Muller-Pebody B, Parslow R, Gilbert R. Linkage, evaluation and analy- sis of national electronic healthcare data: application to providing enhanced blood-stream infection sur- veillance in paediatric intensive care. PLOS One. 2013; 8(12):e85278. doi: 10.1371/journal.pone. 0085278 PMID: 24376874",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "8",
+    "sentences": [
+      "RECORD ITEM 12.2: The following is an example of a data cleaning methods description [CITATION]:",
+      "Two articles contain excellent descriptions of linkage undertaken specifically for the study being reported [CITATION][CITATION #b44].",
+      "In the article by Harron and colleagues [CITATION], a detailed explanation on linkage is provided with graphical demonstration of the match process.",
+      "For example, if 378 comparison pairs agreed on date of birth and Soundex but disagreed on sex, and 312 of these were probable links, the match probability for the agreement pattern [1,1,0] was 312/378 = 0.825\" [CITATION].",
+      "As available, details should be provided on blocking variables, completeness of linkage variables, linkage rules, thresholds, and manual review [CITATION]."
+    ]
+  },
+  {
+    "title": "Constructing reproductive histories by linking vital records",
+    "authors": "M M Adams;H G Wilson;D L Casto;C J Berg;J M Mcdermott;J A Gaudino",
+    "year": "1997",
+    "citation": "Adams MM, Wilson HG, Casto DL, Berg CJ, McDermott JM, Gaudino JA, et al. Constructing reproduc- tive histories by linking vital records. Am J Epidemiol. 1997; 145(4):339-48. PMID: 9054238",
+    "pages": "339-48",
+    "journal": "Am J Epidemiol",
+    "volume": "145",
+    "sentences": [
+      "\"We linked live birth and fetal death certificates into chronological chains of events that, excluding induced abortions and ectopic pregnancies, constituted the reproductive experience of individual women\" [CITATION].",
+      "Two articles contain excellent descriptions of linkage undertaken specifically for the study being reported [CITATION #b43][CITATION].",
+      "Next followed phase n, which entailed multiple passes through the file to combine chains belonging to the same mother\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Characteristics of unmatched maternal and baby records in linked birth records and hospital discharge data",
+    "authors": "J B Ford;C L Roberts;L K Taylor",
+    "year": "2006",
+    "citation": "Ford JB, Roberts CL, Taylor LK. Characteristics of unmatched maternal and baby records in linked birth records and hospital discharge data. Paediatr Perinat Epidemiol. 2006; 20(4):329-37. PMID: 16879505",
+    "pages": "329-37",
+    "journal": "Paediatr Perinat Epidemiol",
+    "volume": "20",
+    "sentences": [
+      "..Selected variables that were available on both data sets were compared across three groups-ISC residuals, MDC residuals and matched records\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Methods and dimensions of electronic health record data quality assessment: enabling reuse for clinical research",
+    "authors": "N G Weiskopf;C Weng",
+    "year": "2013",
+    "citation": "Weiskopf NG, Weng C. Methods and dimensions of electronic health record data quality assessment: enabling reuse for clinical research. Journal of the American Medical Informatics Association: JAMIA. 2013; 20(1):144-51. doi: 10.1136/amiajnl-2011-000681 PMID: 22733976",
+    "pages": "144-51",
+    "journal": "Journal of the American Medical Informatics Association: JAMIA",
+    "volume": "20",
+    "sentences": [
+      "The description of data cleaning methods at different stages of the study should include those used to screen for erroneous and missing data, including range checks, checks for duplicate records, and handling of repeated measures [CITATION][CITATION #b47]."
+    ]
+  },
+  {
+    "title": "The efficient use of the maternity workforce and the implications for safety and quality in maternity care: a population-based, cross-sectional study",
+    "authors": "J Sandall;T Murrells;M Dodwell;R Gibson;S Bewley;K Coxon",
+    "year": "2014",
+    "citation": "Sandall J, Murrells T, Dodwell M, Gibson R, Bewley S, Coxon K, et al. The efficient use of the maternity workforce and the implications for safety and quality in maternity care: a population-based, cross-sec- tional study. Health Serv Deliv Res 2014; 2(38).",
+    "pages": "",
+    "journal": "Health Serv Deliv Res",
+    "volume": "2",
+    "sentences": [
+      "The description of data cleaning methods at different stages of the study should include those used to screen for erroneous and missing data, including range checks, checks for duplicate records, and handling of repeated measures [CITATION #b46][CITATION]."
+    ]
+  },
+  {
+    "title": "Two-stage method to remove population-and individual-level outliers from longitudinal data in a primary care database. Pharmacoepidemiol Drug Saf",
+    "authors": "C Welch;I Petersen;K Walters;R W Morris;I Nazareth;E Kalaitzaki",
+    "year": "2012",
+    "citation": "Welch C, Petersen I, Walters K, Morris RW, Nazareth I, Kalaitzaki E, et al. Two-stage method to remove population-and individual-level outliers from longitudinal data in a primary care database. Pharmacoe- pidemiol Drug Saf. 2012; 21(7):725-32. doi: 10.1002/pds.2270 PMID: 22052713",
+    "pages": "725-32",
+    "journal": "",
+    "volume": "21",
+    "sentences": [
+      "Other methods to be reported could include assessment of frequency distributions and data cross tabulations and graphical exploration or use of statistical methods for outlier detection [CITATION]."
+    ]
+  },
+  {
+    "title": "Data cleaning: detecting, diagnosing, and editing data abnormalities",
+    "authors": "J Van Den Broeck;S A Cunningham;R Eeckels;K Herbst",
+    "year": "2005",
+    "citation": "Van den Broeck J, Cunningham SA, Eeckels R, Herbst K. Data cleaning: detecting, diagnosing, and editing data abnormalities. PLOS Medicine. 2005; 2(10):e267. PMID: 16138788",
+    "pages": "e267",
+    "journal": "PLOS Medicine",
+    "volume": "2",
+    "sentences": [
+      "A clear and transparent description of data cleaning methods is important, as choice of methods could affect study findings, repeatability of the study, and reproducibility of study findings [CITATION]."
+    ]
+  },
+  {
+    "title": "Data linkage: a powerful research tool with potential problems",
+    "authors": "M A Bohensky;D Jolley;V Sundararajan;S Evans;D V Pilcher;I Scott",
+    "year": "2010",
+    "citation": "Bohensky MA, Jolley D, Sundararajan V, Evans S, Pilcher DV, Scott I, et al. Data linkage: a powerful research tool with potential problems. BMC Health Serv Res. 2010; 10:346. doi: 10.1186/1472-6963- 10-346 PMID: 21176171",
+    "pages": "1472-6963",
+    "journal": "BMC Health Serv Res",
+    "volume": "10",
+    "sentences": [
+      "Data describing linkage methods and evaluating their success are critical to permit the reader to assess the impact of any linkage error and related bias [CITATION]."
+    ]
+  },
+  {
+    "title": "Opening the black box of record linkage",
+    "authors": "K Harron;A Wade;B Muller-Pebody;H Goldstein;R Gilbert",
+    "year": "2012",
+    "citation": "Harron K, Wade A, Muller-Pebody B, Goldstein H, Gilbert R. Opening the black box of record linkage. J Epidemiol Community Health. 2012; 66(12):1198. doi: 10.1136/jech-2012-201376 PMID: 22705654",
+    "pages": "2012-201376",
+    "journal": "J Epidemiol Community Health",
+    "volume": "66",
+    "sentences": [
+      "Even small errors in the linkage process can introduce bias and lead to results that can overestimate or underestimate the associations under study [CITATION]."
+    ]
+  },
+  {
+    "title": "Differential record linkage by Hispanic ethnicity and age in linked mortality studies: implications for the epidemiologic paradox",
+    "authors": "J T Lariscy",
+    "year": "2011",
+    "citation": "Lariscy JT. Differential record linkage by Hispanic ethnicity and age in linked mortality studies: implica- tions for the epidemiologic paradox. J Aging Health. 2011; 23(8):1263-84. doi: 10.1177/ 0898264311421369 PMID: 21934120",
+    "pages": "1263-84",
+    "journal": "J Aging Health",
+    "volume": "23",
+    "sentences": [
+      "Authors should report linkage error using standard approaches including comparisons with gold standards or reference datasets, sensitivity analyses, and comparing characteristics of linked and unlinked data [CITATION]."
+    ]
+  },
+  {
+    "title": "Variations in use of PET among Medicare beneficiaries with non-small cell lung cancer",
+    "authors": "M A Dinan;L H Curtis;W R Carpenter;A K Biddle;A P Abernethy;E F Patz Jr",
+    "year": "1998",
+    "citation": "Dinan MA, Curtis LH, Carpenter WR, Biddle AK, Abernethy AP, Patz EF Jr., et al. Variations in use of PET among Medicare beneficiaries with non-small cell lung cancer, 1998-2007. Radiology. 2013; 267 (3):807-17. doi: 10.1148/radiol.12120174 PMID: 23418003",
+    "pages": "1998-2007",
+    "journal": "Radiology",
+    "volume": "267",
+    "sentences": [
+      "For example, in studies utilising United States Medicare data, beneficiaries currently registered in a health maintenance organisation are frequently excluded because of lack of records of clinical events [CITATION][CITATION #b55].",
+      "It is unclear how our results would differ with this newer approach\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Identifying periods of acceptable computer usage in primary care research databases",
+    "authors": "L Horsfall;K Walters;I Petersen",
+    "year": "2013",
+    "citation": "Horsfall L, Walters K, Petersen I. Identifying periods of acceptable computer usage in primary care research databases. Pharmacoepidemiol Drug Saf. 2013; 22(1):64-9. doi: 10.1002/pds.3368 PMID: 23124958",
+    "pages": "64-9",
+    "journal": "Pharmacoepidemiol Drug Saf",
+    "volume": "22",
+    "sentences": [
+      "Studies may exclude medical practices with inconsistent electronic health record entry or wait for those practices to become consistent [CITATION #b37][CITATION]."
+    ]
+  },
+  {
+    "title": "Impact of prior cancer on eligibility for lung cancer clinical trials",
+    "authors": "D E Gerber;A L Laccetti;Xuan L Halm;E A Pruitt;S L",
+    "year": "2014",
+    "citation": "Gerber DE, Laccetti AL, Xuan L, Halm EA, Pruitt SL. Impact of prior cancer on eligibility for lung cancer clinical trials. J Natl Cancer Inst. 2014; 106(11).",
+    "pages": "",
+    "journal": "J Natl Cancer Inst",
+    "volume": "106",
+    "sentences": [
+      "For example, in studies utilising United States Medicare data, beneficiaries currently registered in a health maintenance organisation are frequently excluded because of lack of records of clinical events [CITATION #b53][CITATION]."
+    ]
+  },
+  {
+    "title": "A validation study of a new classification algorithm to identify rheumatoid arthritis using administrative health databases: case-control and cohort diagnostic accuracy studies. Results from the RECord linkage On Rheumatic Diseases study of the Italian Society for Rheumatology",
+    "authors": "G Carrara;C A Scire;A Zambon;M A Cimmino;C Cerra;M Caprioli",
+    "year": "2015",
+    "citation": "Carrara G, Scire CA, Zambon A, Cimmino MA, Cerra C, Caprioli M, et al. A validation study of a new classification algorithm to identify rheumatoid arthritis using administrative health databases: case-con- trol and cohort diagnostic accuracy studies. Results from the RECord linkage On Rheumatic Diseases study of the Italian Society for Rheumatology. BMJ open. 2015; 5(1):e006029. doi: 10.1136/bmjopen- 2014-006029 PMID: 25631308",
+    "pages": "2014-006029",
+    "journal": "BMJ open",
+    "volume": "5",
+    "sentences": [
+      "If a study utilises linked routine data, the study population is frequently reduced through restriction to individuals for whom linked data are available [CITATION]."
+    ]
+  },
+  {
+    "title": "Recent trends in the incidence of recorded depression in primary care",
+    "authors": "G Rait;K Walters;M Griffin;M Buszewicz;I Petersen;I Nazareth",
+    "year": "2009",
+    "citation": "Rait G, Walters K, Griffin M, Buszewicz M, Petersen I, Nazareth I. Recent trends in the incidence of recorded depression in primary care. Br J Psychiatry. 2009; 195(6):520-4. doi: 10.1192/bjp.bp.108. 058636 PMID: 19949202",
+    "pages": "520-4",
+    "journal": "Br J Psychiatry",
+    "volume": "195",
+    "sentences": [
+      "Study populations may be derived using different codes and/or algorithms (see RECORD item 6.1), and different use of codes over time may impact the study population [CITATION][CITATION #b58]."
+    ]
+  },
+  {
+    "title": "Trends in depression and antidepressant prescribing in children and adolescents: a cohort study in The Health Improvement Network (THIN)",
+    "authors": "L P Wijlaars;I Nazareth;I Petersen",
+    "year": "2012",
+    "citation": "Wijlaars LP, Nazareth I, Petersen I. Trends in depression and antidepressant prescribing in children and adolescents: a cohort study in The Health Improvement Network (THIN). PLOS One. 2012; 7(3): e33181. doi: 10.1371/journal.pone.0033181 PMID: 22427983",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "7",
+    "sentences": [
+      "Study populations may be derived using different codes and/or algorithms (see RECORD item 6.1), and different use of codes over time may impact the study population [CITATION #b57][CITATION]."
+    ]
+  },
+  {
+    "title": "The Association of Statin Use after Cancer Diagnosis with Survival in Pancreatic Cancer Patients: A SEER-Medicare Analysis",
+    "authors": "C Y Jeon;S J Pandol;B Wu;G Cook-Wiens;R A Gottlieb;N B Merz",
+    "year": "2015",
+    "citation": "Jeon CY, Pandol SJ, Wu B, Cook-Wiens G, Gottlieb RA, Merz NB, et al. The Association of Statin Use after Cancer Diagnosis with Survival in Pancreatic Cancer Patients: A SEER-Medicare Analysis. PLOS One. 2015; 10(4):e0121783. doi: 10.1371/journal.pone.0121783 PMID: 25830309",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "10",
+    "sentences": [
+      "We also lacked more granular data on cancer progression, which could have confounded the association between statin use and death, given that statin treatment may be withheld or discontinued in patients with short expected survival time\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Upcoding emergency admissions for non-life-threatening injuries to children. The American journal of managed care",
+    "authors": "Z Pruitt;E Pracht",
+    "year": "2013",
+    "citation": "Pruitt Z, Pracht E. Upcoding emergency admissions for non-life-threatening injuries to children. The American journal of managed care. 2013; 19(11):917-24. PMID: 24511988",
+    "pages": "917-24",
+    "journal": "",
+    "volume": "19",
+    "sentences": [
+      "For example, when hospital reimbursement is based on complexity of the case mix, hospitals may maximize reimbursement by liberally applying more complex disease codes to patient records [CITATION]."
+    ]
+  },
+  {
+    "title": "The effects of financial incentives for case finding for depression in patients with diabetes and coronary heart disease: interrupted time series analysis",
+    "authors": "K Mclintock;A M Russell;S L Alderson;R West;A House;K Westerman",
+    "year": "2014",
+    "citation": "McLintock K, Russell AM, Alderson SL, West R, House A, Westerman K, et al. The effects of financial incentives for case finding for depression in patients with diabetes and coronary heart disease: inter- rupted time series analysis. BMJ open. 2014; 4(8):e005178. doi: 10.1136/bmjopen-2014-005178 PMID: 25142262",
+    "pages": "2014-005178",
+    "journal": "BMJ open",
+    "volume": "4",
+    "sentences": [
+      "For example, the introduction of provider billing incentive codes may change the likelihood of a code being used over time [CITATION][CITATION #b62]."
+    ]
+  },
+  {
+    "title": "CPT fee differentials and visit upcoding under Medicare Part B. Health economics",
+    "authors": "C S Brunt",
+    "year": "2011",
+    "citation": "Brunt CS. CPT fee differentials and visit upcoding under Medicare Part B. Health economics. 2011; 20 (7):831-41. doi: 10.1002/hec.1649 PMID: 20681033",
+    "pages": "831-41",
+    "journal": "",
+    "volume": "20",
+    "sentences": [
+      "For example, the introduction of provider billing incentive codes may change the likelihood of a code being used over time [CITATION #b61][CITATION].",
+      "A change in the way records are coded (e.g., upcoding or changes in coding systems, as described above) may alter the study population [CITATION][CITATION #b76][CITATION #b77]."
+    ]
+  },
+  {
+    "title": "Recent trends in the incidence of anxiety diagnoses and symptoms in primary care",
+    "authors": "K Walters;G Rait;M Griffin;M Buszewicz;I Nazareth",
+    "year": "2012",
+    "citation": "Walters K, Rait G, Griffin M, Buszewicz M, Nazareth I. Recent trends in the incidence of anxiety diagno- ses and symptoms in primary care. PLOS One. 2012; 7(8):e41670. doi: 10.1371/journal.pone.0041670 PMID: 22870242",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "7",
+    "sentences": [
+      "Other codes may be avoided because of patient stigmatization or provider penalties [CITATION]."
+    ]
+  },
+  {
+    "title": "The effect of the transition from the ninth to the tenth revision of the International Classification of Diseases on external cause registration of injury morbidity in Sweden",
+    "authors": "F Nilson;C Bonander;R Andersson",
+    "year": "2015",
+    "citation": "Nilson F, Bonander C, Andersson R. The effect of the transition from the ninth to the tenth revision of the International Classification of Diseases on external cause registration of injury morbidity in Sweden. Injury prevention: journal of the International Society for Child and Adolescent Injury Prevention 2015;",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "In addition, changes in versions of code classification systems (e.g., from International Classification of Diseases (ICD)-9 to ICD-10) may alter the validity of ascertainment using coded data [CITATION][CITATION #b66]."
+    ]
+  },
+  {
+    "title": "Trends in gastroenteritis-associated mortality in the United States",
+    "authors": "J S Jagai;G S Smith;J E Schmid;T J Wade",
+    "year": "1985",
+    "citation": "Jagai JS, Smith GS, Schmid JE, Wade TJ. Trends in gastroenteritis-associated mortality in the United States, 1985 inverted question mark2005: variations by ICD-9 and ICD-10 codes. BMC Gastroenterol. 2014; 14(1):211. doi: 10.1186/s12876-014-0211-0 PMID: PMID: 25492520",
+    "pages": "12876-014",
+    "journal": "",
+    "volume": "14",
+    "sentences": [
+      "In addition, changes in versions of code classification systems (e.g., from International Classification of Diseases (ICD)-9 to ICD-10) may alter the validity of ascertainment using coded data [CITATION #b64][CITATION]."
+    ]
+  },
+  {
+    "title": "Confounding adjustment via a semi-automated high-dimensional propensity score algorithm: an application to electronic medical records",
+    "authors": "S Toh;Garcia Rodriguez;L A Hernan;M A",
+    "year": "2011",
+    "citation": "Toh S, Garcia Rodriguez LA, Hernan MA. Confounding adjustment via a semi-automated high-dimen- sional propensity score algorithm: an application to electronic medical records. Pharmacoepidemiol Drug Saf. 2011; 20(8):849-57. doi: 10.1002/pds.2152 PMID: 21717528",
+    "pages": "849-57",
+    "journal": "Pharmacoepidemiol Drug Saf",
+    "volume": "20",
+    "sentences": [
+      "A variety of methods have been proposed to address this potential source of bias [CITATION][CITATION #b70][CITATION #b71][CITATION #b72], including propensity scores."
+    ]
+  },
+  {
+    "title": "Gut microbiome dysbiosis as a mediator of systemic inflammation in type 2 diabetes: evidence from a prospective twin study",
+    "authors": [
+      "Nakamura, S.",
+      "Osei-Bonsu, E.",
+      "Walters, D."
+    ],
+    "year": "2019",
+    "journal": "Cell Metabolism",
+    "doi": "",
+    "citation": "Nakamura et al. (2019) Cell Metab.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Analysis of observational studies in the presence of treatment selection bias: effects of invasive cardiac management on AMI survival using propensity score and instrumental variable methods",
+    "authors": "T A Stukel;E S Fisher;D E Wennberg;D A Alter;D J Gottlieb;M J Vermeulen",
+    "year": "2007",
+    "citation": "Stukel TA, Fisher ES, Wennberg DE, Alter DA, Gottlieb DJ, Vermeulen MJ. Analysis of observational studies in the presence of treatment selection bias: effects of invasive cardiac management on AMI sur- vival using propensity score and instrumental variable methods. Jama. 2007; 297(3):278-85. PMID: 17227979",
+    "pages": "278-85",
+    "journal": "Jama",
+    "volume": "297",
+    "sentences": [
+      "A variety of methods have been proposed to address this potential source of bias [CITATION #b69][CITATION][CITATION #b71][CITATION #b72], including propensity scores."
+    ]
+  },
+  {
+    "title": "An Introduction to Propensity Score Methods for Reducing the Effects of Confounding in Observational Studies",
+    "authors": "P C Austin",
+    "year": "2011",
+    "citation": "Austin PC. An Introduction to Propensity Score Methods for Reducing the Effects of Confounding in Observational Studies. Multivariate behavioral research. 2011; 46(3):399-424. doi: 10.1080/ 00273171.2011.568786 PMID: 21818162",
+    "pages": "399-424",
+    "journal": "Multivariate behavioral research",
+    "volume": "46",
+    "sentences": [
+      "A variety of methods have been proposed to address this potential source of bias [CITATION #b69][CITATION #b70][CITATION][CITATION #b72], including propensity scores."
+    ]
+  },
+  {
+    "title": "Multiple imputation for missing data in epidemiological and clinical research: potential and pitfalls",
+    "authors": "J A Sterne;I R White;J B Carlin;M Spratt;P Royston;M G Kenward",
+    "year": "2009",
+    "citation": "Sterne JA, White IR, Carlin JB, Spratt M, Royston P, Kenward MG, et al. Multiple imputation for missing data in epidemiological and clinical research: potential and pitfalls. BMJ. 2009; 338:b2393. doi: 10. 1136/bmj.b2393 PMID: 19564179",
+    "pages": "2393",
+    "journal": "BMJ",
+    "volume": "338",
+    "sentences": [
+      "A variety of methods have been proposed to address this potential source of bias [CITATION #b69][CITATION #b70][CITATION #b71][CITATION], including propensity scores."
+    ]
+  },
+  {
+    "title": "Making inferences on treatment effects from real world data: propensity scores, confounding by indication, and other perils for the unwary in observational research",
+    "authors": "N Freemantle;L Marston;K Walters;J Wood;M R Reynolds;I Petersen",
+    "year": "2013",
+    "citation": "Freemantle N, Marston L, Walters K, Wood J, Reynolds MR, Petersen I. Making inferences on treat- ment effects from real world data: propensity scores, confounding by indication, and other perils for the unwary in observational research. BMJ. 2013; 347:f6409. doi: 10.1136/bmj.f6409 PMID: 24217206",
+    "pages": "6409",
+    "journal": "BMJ",
+    "volume": "347",
+    "sentences": [
+      "Hence, the prognosis of those receiving the (drug) treatment may be better or worse than those who are not, but information on prognosis and/or severity of the underlying illness may not be available in the data [CITATION]."
+    ]
+  },
+  {
+    "title": "Issues in multiple imputation of missing data for large general practice clinical databases",
+    "authors": "L Marston;J R Carpenter;K R Walters;R W Morris;I Nazareth;I Petersen",
+    "year": "2010",
+    "citation": "Marston L, Carpenter JR, Walters KR, Morris RW, Nazareth I, Petersen I. Issues in multiple imputation of missing data for large general practice clinical databases. Pharmacoepidemiol Drug Saf. 2010; 19 (6):618-26. doi: 10.1002/pds.1934 PMID: 20306452",
+    "pages": "618-26",
+    "journal": "Pharmacoepidemiol Drug Saf",
+    "volume": "19",
+    "sentences": [
+      "Missing data are a particular issue for routinely collected data, as researchers cannot control data collection [CITATION]."
+    ]
+  },
+  {
+    "title": "Outcomes of pediatric inflammatory bowel disease: socioeconomic status disparity in a universal-access healthcare system",
+    "authors": "E I Benchimol;T To;A M Griffiths;L Rabeneck;A Guttmann",
+    "year": "2011",
+    "citation": "Benchimol EI, To T, Griffiths AM, Rabeneck L, Guttmann A. Outcomes of pediatric inflammatory bowel disease: socioeconomic status disparity in a universal-access healthcare system. J Pediatr. 2011; 158 (6):960-7.e1-4. doi: 10.1016/j.jpeds.2010.11.039 PMID: 21227449",
+    "pages": "960-7",
+    "journal": "J Pediatr",
+    "volume": "158",
+    "sentences": [
+      "In a study assessing the association between socioeconomic status and Crohn's disease outcomes, smoking status was discussed as a potential unmeasured confounding factor [CITATION]."
+    ]
+  },
+  {
+    "title": "Autism spectrum disorders in young children: effect of changes in diagnostic practices",
+    "authors": "N Nassar;G Dixon;J Bourke;C Bower;E Glasson;N De Klerk",
+    "year": "2009",
+    "citation": "Nassar N, Dixon G, Bourke J, Bower C, Glasson E, de Klerk N, et al. Autism spectrum disorders in young children: effect of changes in diagnostic practices. International journal of epidemiology. 2009; 38(5):1245-54. doi: 10.1093/ije/dyp260 PMID: 19737795",
+    "pages": "1245-54",
+    "journal": "International journal of epidemiology",
+    "volume": "38",
+    "sentences": [
+      "A change in the way records are coded (e.g., upcoding or changes in coding systems, as described above) may alter the study population [CITATION #b62][CITATION][CITATION #b77]."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "The Will Rogers phenomenon in the staging of breast cancer-does it matter?",
+    "authors": "G H Tan;N Bhoo-Pathy;N A Taib;M H See;S Jamaris;C H Yip",
+    "year": "2015",
+    "citation": "Tan GH, Bhoo-Pathy N, Taib NA, See MH, Jamaris S, Yip CH. The Will Rogers phenomenon in the staging of breast cancer-does it matter? Cancer Epidemiol. 2015; 39(1):115-7. doi: 10.1016/j.canep. 2014.11.005 PMID: 25475062",
+    "pages": "115-7",
+    "journal": "Cancer Epidemiol",
+    "volume": "39",
+    "sentences": [
+      "A change in the way records are coded (e.g., upcoding or changes in coding systems, as described above) may alter the study population [CITATION #b62][CITATION #b76][CITATION]."
+    ]
+  },
+  {
+    "title": "Cardiovascular Disease Population Risk Tool (CVDPoRT): predictive algorithm for assessing CVD risk in the community setting. A study protocol",
+    "authors": "M Taljaard;M Tuna;C Bennett;R Perez;Rosella L Tu;J V",
+    "year": "2014",
+    "citation": "Taljaard M, Tuna M, Bennett C, Perez R, Rosella L, Tu JV, et al. Cardiovascular Disease Population Risk Tool (CVDPoRT): predictive algorithm for assessing CVD risk in the community setting. A study protocol. BMJ open. 2014; 4(10):e006701. doi: 10.1136/bmjopen-2014-006701 PMID: 25341454",
+    "pages": "2014-006701",
+    "journal": "BMJ open",
+    "volume": "4",
+    "sentences": [
+      "The article by Taljaard and colleagues represents the full research protocol for a study using the Canadian Community Health Survey [CITATION]."
+    ]
+  },
+  {
+    "title": "Association between waiting times and short term mortality and hospital admission after departure from emergency department: population based cohort study from Ontario, Canada",
+    "authors": "A Guttmann;M J Schull;M J Vermeulen;T A Stukel",
+    "year": "2011",
+    "citation": "Guttmann A, Schull MJ, Vermeulen MJ, Stukel TA. Association between waiting times and short term mortality and hospital admission after departure from emergency department: population based cohort study from Ontario, Canada. BMJ. 2011; 342:d2983. doi: 10.1136/bmj.d2983 PMID: 21632665",
+    "pages": "2983",
+    "journal": "BMJ",
+    "volume": "342",
+    "sentences": [
+      "In their article, Guttmann and colleagues invite requests for the study protocol: \"Data sharing: The technical appendix, dataset creation plan/protocol, and statistical code are available from the corresponding author at [email address]\" [CITATION]."
+    ]
+  },
+  {
+    "title": "Open Data Access Policies and Strategies in the European Research Area and Beyond",
+    "authors": "A Nicol;J Caruso;E Archambault",
+    "year": "2013",
+    "citation": "Nicol A, Caruso J, Archambault E. Open Data Access Policies and Strategies in the European Research Area and Beyond. Montreal, Canada: Science-Metrix Inc., 2013 Aug. Report No.",
+    "publisher": "Science-Metrix Inc",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "These include online journal supplementary material, personal websites, institutional websites, science-based social media sites (e.g., ResearchGate.net and Academia.edu), data repositories (e.g., Dryad or Figshare), or government open data websites [CITATION]."
+    ]
+  },
+  {
+    "title": "What affects authors' and editors' use of reporting guidelines? Findings from an online survey and qualitative interviews",
+    "authors": "T Fuller;M Pearson;J Peters;R Anderson",
+    "year": "2015",
+    "citation": "Fuller T, Pearson M, Peters J, Anderson R. What affects authors' and editors' use of reporting guide- lines? Findings from an online survey and qualitative interviews. PLOS One. 2015; 10(4):e0121585. doi: 10.1371/journal.pone.0121585 PMID: 25875918",
+    "pages": "",
+    "journal": "PLOS One",
+    "volume": "10",
+    "sentences": [
+      "Publication of a reporting guideline and endorsement by journals are not sufficient to improve research reporting [CITATION]."
+    ]
+  },
+  {
+    "title": "Consolidated standards of reporting trials (CONSORT) and the completeness of reporting of randomised controlled trials (RCTs) published in medical journals",
+    "authors": "L Turner;L Shamseer;D G Altman;L Weeks;J Peters;T Kober",
+    "year": "2012",
+    "citation": "Turner L, Shamseer L, Altman DG, Weeks L, Peters J, Kober T, et al. Consolidated standards of report- ing trials (CONSORT) and the completeness of reporting of randomised controlled trials (RCTs) pub- lished in medical journals. Cochrane Database Syst Rev. 2012; 11:Mr000030.",
+    "pages": "30",
+    "journal": "Cochrane Database Syst Rev",
+    "volume": "11",
+    "sentences": [
+      "The manner in which the guidelines are implemented by researchers, journals, and peer reviewers are of key importance to RECORD having a measurable impact [CITATION]."
+    ]
+  },
+  {
+    "title": "Improving the reporting of public health intervention research: advancing TREND and CONSORT",
+    "authors": "R Armstrong;E Waters;L Moore;E Riggs;L G Cuervo;P Lumbiganon",
+    "year": "2008",
+    "citation": "Armstrong R, Waters E, Moore L, Riggs E, Cuervo LG, Lumbiganon P, et al. Improving the reporting of public health intervention research: advancing TREND and CONSORT. Journal of public health (Oxford, England). 2008; 30(1):103-9.",
+    "pages": "103-9",
+    "journal": "Journal of public health",
+    "volume": "30",
+    "sentences": [
+      "Reporting guidelines have been demonstrated to improve reporting of research, thereby allowing for consumers of the research to be aware of the strengths, limitations, and accuracy of conclusions [CITATION #b12][CITATION][CITATION #b84][CITATION #b85]."
+    ]
+  },
+  {
+    "title": "Improving the quality of reports of metaanalyses of randomised controlled trials: the QUOROM statement. Quality of Reporting of Meta-analyses",
+    "authors": "D Moher;D J Cook;S Eastwood;I Olkin;D Rennie;D F Stroup",
+    "year": "1999",
+    "citation": "Moher D, Cook DJ, Eastwood S, Olkin I, Rennie D, Stroup DF. Improving the quality of reports of meta- analyses of randomised controlled trials: the QUOROM statement. Quality of Reporting of Meta-analy- ses. Lancet. 1999; 354(9193):1896-900. doi: 10.1016/S0140-6736(99)04149-5 PMID: 10584742",
+    "pages": "1896-900",
+    "journal": "Lancet",
+    "volume": "354",
+    "sentences": [
+      "Reporting guidelines have been demonstrated to improve reporting of research, thereby allowing for consumers of the research to be aware of the strengths, limitations, and accuracy of conclusions [CITATION #b12][CITATION #b83][CITATION][CITATION #b85]."
+    ]
+  },
+  {
+    "title": "A systematic evaluation of the impact of STRICTA and CONSORT recommendations on quality of reporting for acupuncture trials",
+    "authors": "S L Prady;S J Richmond;V M Morton;H Macpherson",
+    "year": "2008",
+    "citation": "Prady SL, Richmond SJ, Morton VM, Macpherson H. A systematic evaluation of the impact of STRICTA and CONSORT recommendations on quality of reporting for acupuncture trials. PLOS One. 2008; 3(2): e1577. doi: 10.1371/journal.pone.0001577 PMID: 18270568",
+    "pages": "e1577",
+    "journal": "PLOS One",
+    "volume": "3",
+    "sentences": [
+      "Reporting guidelines have been demonstrated to improve reporting of research, thereby allowing for consumers of the research to be aware of the strengths, limitations, and accuracy of conclusions [CITATION #b12][CITATION #b83][CITATION #b84][CITATION]."
+    ]
+  }
+]

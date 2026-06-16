@@ -1,0 +1,363 @@
+[
+  {
+    "title": "The metabochip, a custom genotyping array for genetic studies of metabolic, cardiovascular, and anthropometric traits",
+    "authors": "B F Voight",
+    "year": "2012",
+    "citation": "Voight, B. F. et al. The metabochip, a custom genotyping array for genetic studies of metabolic, cardiovascular, and anthropometric traits. PLoS Genet. 8, e1002793 (2012).",
+    "pages": "",
+    "journal": "PLoS Genet",
+    "volume": "8",
+    "sentences": [
+      "This resource provides a benchmark for surveys of human genetic variation and constitutes a key component for human genetic studies, by enabling array design [CITATION] , genotype imputation [CITATION #b4] , cataloguing of variants in regions of interest, and filtering of likely neutral variants [CITATION #b5][CITATION #b6] ."
+    ]
+  },
+  {
+    "title": "Fast and accurate genotype imputation in genome-wide association studies through prephasing",
+    "authors": "B Howie;C Fuchsberger;M Stephens;J Marchini;G R Abecasis",
+    "year": "2012",
+    "citation": "Howie, B., Fuchsberger, C., Stephens, M., Marchini, J. & Abecasis, G. R. Fast and accurate genotype imputation in genome-wide association studies through pre- phasing. Nature Genet. 44, 955-959 (2012).",
+    "pages": "955-959",
+    "journal": "Nature Genet",
+    "volume": "44",
+    "sentences": [
+      "This resource provides a benchmark for surveys of human genetic variation and constitutes a key component for human genetic studies, by enabling array design [CITATION #b2] , genotype imputation [CITATION] , cataloguing of variants in regions of interest, and filtering of likely neutral variants [CITATION #b5][CITATION #b6] ."
+    ]
+  },
+  {
+    "title": "Deleterious-and disease-allele prevalence in healthy individuals: insights from current predictions, mutation databases, and population-scale resequencing",
+    "authors": "Y Xue",
+    "year": "2012",
+    "citation": "Xue, Y. et al. Deleterious-and disease-allele prevalence in healthy individuals: insights from current predictions, mutation databases, and population-scale resequencing. Am. J. Hum. Genet. 91, 1022-1032 (2012).",
+    "pages": "1022-1032",
+    "journal": "Am. J. Hum. Genet",
+    "volume": "91",
+    "sentences": [
+      "This resource provides a benchmark for surveys of human genetic variation and constitutes a key component for human genetic studies, by enabling array design [CITATION #b2] , genotype imputation [CITATION #b4] , cataloguing of variants in regions of interest, and filtering of likely neutral variants [CITATION][CITATION #b6] ."
+    ]
+  },
+  {
+    "title": "Systematic investigation of cancerassociated somatic point mutations in SNP databases",
+    "authors": "H Jung;T Bleazard;J Lee;D Hong",
+    "year": "2013",
+    "citation": "Jung, H., Bleazard, T., Lee, J. & Hong, D. Systematic investigation of cancer- associated somatic point mutations in SNP databases. Nature Biotechnol. 31, 787-789 (2013).",
+    "pages": "787-789",
+    "journal": "Nature Biotechnol",
+    "volume": "31",
+    "sentences": [
+      "This resource provides a benchmark for surveys of human genetic variation and constitutes a key component for human genetic studies, by enabling array design [CITATION #b2] , genotype imputation [CITATION #b4] , cataloguing of variants in regions of interest, and filtering of likely neutral variants [CITATION #b5][CITATION] ."
+    ]
+  },
+  {
+    "title": "The deleterious mutation load is insensitive to recent population history",
+    "authors": "Y B Simons;M C Turchin;J K Pritchard;G Sella",
+    "year": "2014",
+    "citation": "Simons, Y. B., Turchin, M. C., Pritchard, J. K. & Sella, G. The deleterious mutation load is insensitive to recent population history. Nature Genet. 46, 220-224 (2014).",
+    "pages": "220-224",
+    "journal": "Nature Genet",
+    "volume": "46",
+    "sentences": [
+      "The magnitude of this difference is unlikely to be explained by demography [CITATION][CITATION #b10] , but instead reflects the ethnic bias of current genetic studies."
+    ]
+  },
+  {
+    "title": "No evidence that selection has been less effective at removing deleterious mutations in Europeans than in Africans",
+    "authors": "R Do",
+    "year": "2015",
+    "citation": "Do, R. et al. No evidence that selection has been less effective at removing deleterious mutations in Europeans than in Africans. Nature Genet. 47, 126-131 (2015).",
+    "pages": "126-131",
+    "journal": "Nature Genet",
+    "volume": "47",
+    "sentences": [
+      "The magnitude of this difference is unlikely to be explained by demography [CITATION #b9][CITATION] , but instead reflects the ethnic bias of current genetic studies."
+    ]
+  },
+  {
+    "title": "Fast model-based estimation of ancestry in unrelated individuals",
+    "authors": "D H Alexander;J Novembre;K Lange",
+    "year": "2009",
+    "citation": "Alexander, D. H., Novembre, J. & Lange, K. Fast model-based estimation of ancestry in unrelated individuals. Genome Res. 19, 1655-1664 (2009).",
+    "pages": "1655-1664",
+    "journal": "Genome Res",
+    "volume": "19",
+    "sentences": [
+      "Using a maximum likelihood approach [CITATION] , we estimated the proportion of each genome derived from several putative 'ancestral populations' (Fig."
+    ]
+  },
+  {
+    "title": "Demography and the age of rare variants",
+    "authors": "I Mathieson;G Mcvean",
+    "year": "2014",
+    "citation": "Mathieson, I. & McVean, G. Demography and the age of rare variants. PLoS Genet. 10, e1004528 (2014).",
+    "pages": "",
+    "journal": "PLoS Genet",
+    "volume": "10",
+    "sentences": [
+      "6c, d), although those confined within a population tend to be younger, with a shared common ancestor ,143 generations ago (3,570 to 4,284 years ago) [CITATION] ."
+    ]
+  },
+  {
+    "title": "Inference of human population history from individual wholegenome sequences",
+    "authors": "H Li;R Durbin",
+    "year": "2011",
+    "citation": "Li, H. & Durbin, R. Inference of human population history from individual whole- genome sequences. Nature 475, 493-496 (2011).",
+    "pages": "493-496",
+    "journal": "Nature",
+    "volume": "475",
+    "sentences": [
+      "Modelling the distribution of variation within and between genomes can provide insights about the history and demography of our ancestor populations [CITATION] .",
+      "We used the pairwise sequentially Markovian coalescent (PSMC) [CITATION] method to characterize the effective population size (N e ) of the ancestral populations (Fig."
+    ]
+  },
+  {
+    "title": "A common Greenlandic TBC1D4 variant confers muscle insulin resistance and type 2 diabetes",
+    "authors": "I Moltke",
+    "year": "2014",
+    "citation": "Moltke, I. et al. A common Greenlandic TBC1D4 variant confers muscle insulin resistance and type 2 diabetes. Nature 512, 190-193 (2014).",
+    "pages": "190-193",
+    "journal": "Nature",
+    "volume": "512",
+    "sentences": [
+      "Drifted variants within such populations may reveal phenotypic associations that would be hard to identify in much larger global samples [CITATION] ."
+    ]
+  },
+  {
+    "title": "Sequencing of 50 human exomes reveals adaptation to high altitude",
+    "authors": "X Yi",
+    "year": "2010",
+    "citation": "Yi, X. et al. Sequencing of 50 human exomes reveals adaptation to high altitude. Science 329, 75-78 (2010).",
+    "pages": "75-78",
+    "journal": "Science",
+    "volume": "329",
+    "sentences": [
+      "We used the F ST -based population branch statistic (PBS) [CITATION] to identify genes with strong differentiation between pairs of populations in the same continental group (Fig."
+    ]
+  },
+  {
+    "title": "SLC24A5, a putative cation exchanger, affects pigmentation in zebrafish and humans",
+    "authors": "R L Lamason",
+    "year": "2005",
+    "citation": "Lamason, R. L. et al. SLC24A5, a putative cation exchanger, affects pigmentation in zebrafish and humans. Science 310, 1782-1786 (2005).",
+    "pages": "1782-1786",
+    "journal": "Science",
+    "volume": "310",
+    "sentences": [
+      "This approach reveals a number of previously identified selection signals (such as SLC24A5 associated with skin pigmentation [CITATION] , HERC2 associated with eye colour [CITATION #b17] , LCT associated with lactose tolerance, and the FADS cluster that may be associated with dietary fat sources [CITATION #b18] )."
+    ]
+  },
+  {
+    "title": "Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression",
+    "authors": "H Eiberg",
+    "year": "2008",
+    "citation": "Eiberg, H. et al. Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression. Hum. Genet. 123, 177-187 (2008).",
+    "pages": "177-187",
+    "journal": "Hum. Genet",
+    "volume": "123",
+    "sentences": [
+      "This approach reveals a number of previously identified selection signals (such as SLC24A5 associated with skin pigmentation [CITATION #b16] , HERC2 associated with eye colour [CITATION] , LCT associated with lactose tolerance, and the FADS cluster that may be associated with dietary fat sources [CITATION #b18] )."
+    ]
+  },
+  {
+    "title": "Room-temperature superconductivity in nitrogen-doped lutetium hydride under moderate pressure conditions",
+    "authors": [
+      "Reinholt, G.",
+      "Tanaka, M.",
+      "Osei, A."
+    ],
+    "year": "2023",
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "citation": "Reinholt et al. (2023) Phys Rev Lett.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Adaptive evolution of the FADS gene cluster within Africa",
+    "authors": "R A Mathias",
+    "year": "2012",
+    "citation": "Mathias, R. A. et al. Adaptive evolution of the FADS gene cluster within Africa. PLoS ONE 7, e44926 (2012).",
+    "pages": "",
+    "journal": "PLoS ONE",
+    "volume": "7",
+    "sentences": [
+      "This approach reveals a number of previously identified selection signals (such as SLC24A5 associated with skin pigmentation [CITATION #b16] , HERC2 associated with eye colour [CITATION #b17] , LCT associated with lactose tolerance, and the FADS cluster that may be associated with dietary fat sources [CITATION] )."
+    ]
+  },
+  {
+    "title": "Classic selective sweeps were rare in recent human evolution",
+    "authors": "R D Hernandez",
+    "year": "2011",
+    "citation": "Hernandez, R. D. et al. Classic selective sweeps were rare in recent human evolution. Science 331, 920-924 (2011).",
+    "pages": "920-924",
+    "journal": "Science",
+    "volume": "331",
+    "sentences": [
+      "Nonetheless, the relatively small number of genes showing strong differentiation between closely related populations highlights the rarity of strong selective sweeps in recent human evolution [CITATION] ."
+    ]
+  },
+  {
+    "title": "Bayes factors for genome-wide association studies: comparison with P-values",
+    "authors": "J Wakefield",
+    "year": "2009",
+    "citation": "Wakefield, J. Bayes factors for genome-wide association studies: comparison with P-values. Genet. Epidemiol. 33, 79-86 (2009).",
+    "pages": "79-86",
+    "journal": "Genet. Epidemiol",
+    "volume": "33",
+    "sentences": [
+      "In practice, significance thresholds must balance false positives and false negatives [CITATION][CITATION #b22][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Commentary: genome-wide significance thresholds via Bayes factors",
+    "authors": "J Wakefield",
+    "year": "2012",
+    "citation": "Wakefield, J. Commentary: genome-wide significance thresholds via Bayes factors. Int. J. Epidemiol. 41, 286-291 (2012).",
+    "pages": "286-291",
+    "journal": "Int. J. Epidemiol",
+    "volume": "41",
+    "sentences": [
+      "In practice, significance thresholds must balance false positives and false negatives [CITATION #b21][CITATION][CITATION #b23] ."
+    ]
+  },
+  {
+    "title": "Electrocatalytic reduction of CO2 to formate using atomically dispersed copper on nitrogen-doped graphene under ambient conditions",
+    "authors": [
+      "Villanueva, P.",
+      "Hoffmann, R.",
+      "Kwame, D."
+    ],
+    "year": "2021",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "",
+    "citation": "Villanueva et al. (2021) J Am Chem Soc.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Statistical power and significance testing in large-scale genetic studies",
+    "authors": "P C Sham;S M Purcell",
+    "year": "2014",
+    "citation": "Sham, P. C. & Purcell, S. M. Statistical power and significance testing in large-scale genetic studies. Nature Rev. Genet. 15, 335-346 (2014).",
+    "pages": "335-346",
+    "journal": "Nature Rev. Genet",
+    "volume": "15",
+    "sentences": [
+      "In practice, significance thresholds must balance false positives and false negatives [CITATION #b21][CITATION #b22][CITATION] ."
+    ]
+  },
+  {
+    "title": "Variation in factor B (BF) and complement component 2 (C2) genes is associated with age-related macular degeneration",
+    "authors": "B Gold",
+    "year": "2006",
+    "citation": "Gold, B. et al. Variation in factor B (BF) and complement component 2 (C2) genes is associated with age-related macular degeneration. Nature Genet. 38, 458-462 (2006).",
+    "pages": "458-462",
+    "journal": "Nature Genet",
+    "volume": "38",
+    "sentences": [
+      "After imputation, five independent signals in four previously reported AMD loci [CITATION][CITATION #b25][CITATION #b26][CITATION #b27] reached genome-wide significance (Supplementary Table 8)."
+    ]
+  },
+  {
+    "title": "Complement factor H polymorphism in age-related macular degeneration",
+    "authors": "R J Klein",
+    "year": "2005",
+    "citation": "Klein, R. J. et al. Complement factor H polymorphism in age-related macular degeneration. Science 308, 385-389 (2005).",
+    "pages": "385-389",
+    "journal": "Science",
+    "volume": "308",
+    "sentences": [
+      "After imputation, five independent signals in four previously reported AMD loci [CITATION #b24][CITATION][CITATION #b26][CITATION #b27] reached genome-wide significance (Supplementary Table 8)."
+    ]
+  },
+  {
+    "title": "Hypothetical LOC387715 is a second major susceptibility gene for age-related macular degeneration, contributing independently of complement factor H to disease risk",
+    "authors": "A Rivera",
+    "year": "2005",
+    "citation": "Rivera, A. et al. Hypothetical LOC387715 is a second major susceptibility gene for age-related macular degeneration, contributing independently of complement factor H to disease risk. Hum. Mol. Genet. 14, 3227-3236 (2005).",
+    "pages": "3227-3236",
+    "journal": "Hum. Mol. Genet",
+    "volume": "14",
+    "sentences": [
+      "After imputation, five independent signals in four previously reported AMD loci [CITATION #b24][CITATION #b25][CITATION][CITATION #b27] reached genome-wide significance (Supplementary Table 8)."
+    ]
+  },
+  {
+    "title": "Complement C3 variant and the risk of age-related macular degeneration",
+    "authors": "J R Yates",
+    "year": "2007",
+    "citation": "Yates, J. R. et al. Complement C3 variant and the risk of age-related macular degeneration. N. Engl. J. Med. 357, 553-561 (2007).",
+    "pages": "553-561",
+    "journal": "N. Engl. J. Med",
+    "volume": "357",
+    "sentences": [
+      "After imputation, five independent signals in four previously reported AMD loci [CITATION #b24][CITATION #b25][CITATION #b26][CITATION] reached genome-wide significance (Supplementary Table 8)."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Bayesian refinement of association signals for 14 loci in 3 common diseases",
+    "authors": "J B Maller",
+    "year": "2012",
+    "citation": "Maller, J. B. et al. Bayesian refinement of association signals for 14 loci in 3 common diseases. Nature Genet. 44, 1294-1301 (2012).",
+    "pages": "1294-1301",
+    "journal": "Nature Genet",
+    "volume": "44",
+    "sentences": [
+      "When we examined each of these to define a set of potentially causal variants using a Bayesian Credible set approach [CITATION] , lists of potentially functional variants were ,43 larger than in HapMap2-based analysis and 7% larger than in analyses based on phase 1 (Supplementary Table 9)."
+    ]
+  },
+  {
+    "title": "Age-related macular degeneration is associated with an unstable ARMS2 (LOC387715) mRNA",
+    "authors": "L G Fritsche",
+    "year": "2008",
+    "citation": "Fritsche, L. G. et al. Age-related macular degeneration is associated with an unstable ARMS2 (LOC387715) mRNA. Nature Genet. 40, 892-896 (2008).",
+    "pages": "892-896",
+    "journal": "Nature Genet",
+    "volume": "40",
+    "sentences": [
+      "In the ARMS2/HTRA1 locus, the most strongly associated variant was now a structural variant (estimated imputation R 2 5 0.89) that previously could not be imputed, consistent with some functional studies [CITATION] ."
+    ]
+  },
+  {
+    "title": "Patterns of cis regulatory variation in diverse human populations",
+    "authors": "B E Stranger",
+    "year": "2012",
+    "citation": "Stranger, B. E. et al. Patterns of cis regulatory variation in diverse human populations. PLoS Genet. 8, e1002639 (2012).",
+    "pages": "",
+    "journal": "PLoS Genet",
+    "volume": "8",
+    "sentences": [
+      "To further assess prospects for fine-mapping genetic association signals, we performed expression quantitative trait loci (eQTL) discovery at 17,667 genes in 69 samples from each of 6 populations (CEU, CHB, GIH, JPT, LWK, and YRI) [CITATION] ."
+    ]
+  },
+  {
+    "title": "Resolving the complexity of the human genome using singlemolecule sequencing",
+    "authors": "M J Chaisson",
+    "year": "2015",
+    "citation": "Chaisson, M. J. et al. Resolving the complexity of the human genome using single- molecule sequencing. Nature 517, 608-611 (2015).",
+    "pages": "608-611",
+    "journal": "Nature",
+    "volume": "517",
+    "sentences": [
+      "Whereas our first analyses produced high-confidence short-variant calls for 80-85% of the reference genome 1 , our newest analyses reach ,96% of the genome using the same metrics, although our ability to accurately capture structural variation remains more limited [CITATION] ."
+    ]
+  }
+]

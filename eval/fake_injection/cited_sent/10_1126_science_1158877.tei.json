@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "One of possible models for the complex graphene-SiC interface is given by S",
+    "authors": "J Kim;H J Ihm;Y W Choi;Son",
+    "year": "2008",
+    "citation": "One of possible models for the complex graphene-SiC interface is given by S. Kim, J. Ihm, H. J. Choi, Y.W. Son, Phys. Rev. Lett. 100, 176802 (2008).",
+    "pages": "",
+    "journal": "Phys. Rev. Lett",
+    "volume": "100",
+    "sentences": [
+      "However, interaction with the substrate induces strong doping (~10 13 cm -2 ) and significant spectral disorder at low energies [CITATION #b12][CITATION]."
+    ]
+  },
+  {
+    "title": "Semiconductor Heterostructures and Nanostructures",
+    "authors": "C W J Beenakker;H Van Houten",
+    "year": "1991",
+    "citation": "C. W. J. Beenakker, H. van Houten, Semiconductor Heterostructures and Nanostructures, in H. Ehrenreich, D. Turnbull (Eds.) (Academic Press, New York, 1991).",
+    "publisher": "Academic Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Also, it is easy to foresee the revisiting of lateral superlattices, magnetic focusing, electron optics and many interference and ballistic effects studied previously in the conventional 2DES [CITATION], which hopefully can either be more spectacular in graphene or clarify its physics."
+    ]
+  },
+  {
+    "title": "Electrocatalytic reduction of CO2 to formate using atomically dispersed copper on nitrogen-doped graphene under ambient conditions",
+    "authors": [
+      "Villanueva, P.",
+      "Hoffmann, R.",
+      "Kwame, D."
+    ],
+    "year": "2021",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "",
+    "citation": "Villanueva et al. (2021) J Am Chem Soc.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  }
+]

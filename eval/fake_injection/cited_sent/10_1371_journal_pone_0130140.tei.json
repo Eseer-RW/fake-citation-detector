@@ -1,0 +1,763 @@
+[
+  {
+    "title": "A Bayesian Hierarchical Model for Learning Natural Scene Categories",
+    "authors": "L Fei-Fei;P Perona",
+    "year": "2005",
+    "citation": "Fei-Fei L., Perona, P. A Bayesian Hierarchical Model for Learning Natural Scene Categories. In: 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR 2005), 20-26",
+    "pages": "20-26",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Classification of images has become a key ingredient in many computer vision applications, e.g. image search [CITATION], robotics [CITATION #b2], medical imaging [CITATION #b3], object detection in radar images [CITATION #b4] or face detection [CITATION #b5].",
+      "In this paper we propose a novel concept we denote as layer-wise relevance propagation as a general concept for the purpose of achieving a pixel-wise decomposition as in Eq [CITATION].",
+      "Iterating Eq (2) from the last layer which is the classifier output f(x) down to the input layer x consisting of image pixels then yields the desired Eq [CITATION].",
+      "The Relevance for the input layer will serve as the desired sum decomposition in Eq [CITATION]."
+    ]
+  },
+  {
+    "title": "Self-supervised Monocular Road Detection in Desert Terrain",
+    "authors": "H Dahlkamp;A Kaehler;D Stavens;S Thrun;G R Bradski",
+    "year": "2006",
+    "citation": "Dahlkamp H, Kaehler A, Stavens D, Thrun S, Bradski GR. Self-supervised Monocular Road Detection in Desert Terrain. In: Robotics: Science and Systems; 2006.",
+    "pages": "",
+    "journal": "Robotics: Science and Systems",
+    "volume": "",
+    "sentences": [
+      "Classification of images has become a key ingredient in many computer vision applications, e.g. image search [CITATION #b0], robotics [CITATION], medical imaging [CITATION #b3], object detection in radar images [CITATION #b4] or face detection [CITATION #b5]."
+    ]
+  },
+  {
+    "title": "Classification Of Cervical Cell Nuclei Using Morphological Segmentation And Textural Feature Extraction",
+    "authors": "R Walker;P Jackway;B Lovell;D Longstaff",
+    "year": "1994",
+    "citation": "Walker R, Jackway P, Lovell B, Longstaff D. Classification Of Cervical Cell Nuclei Using Morphological Segmentation And Textural Feature Extraction. In: Australian New Zealand Conference on Intelligent Information Systems; 1994.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Classification of images has become a key ingredient in many computer vision applications, e.g. image search [CITATION #b0], robotics [CITATION #b2], medical imaging [CITATION], object detection in radar images [CITATION #b4] or face detection [CITATION #b5]."
+    ]
+  },
+  {
+    "title": "Object Recognition from Polarimetric SAR Images",
+    "authors": "R H\u00e4nsch;O Hellwich",
+    "year": "2010",
+    "citation": "H\u00e4nsch R, Hellwich O. Object Recognition from Polarimetric SAR Images. In: Soergel U, editor. Radar Remote Sensing of Urban Areas. vol. 15 of Remote Sensing and Digital Image Processing. Springer Netherlands; 2010. p. 109-131. Available from: http://dx.doi.org/10.1007/978-90-481-3751-0_5.",
+    "publisher": "Springer",
+    "pages": "109-131",
+    "journal": "",
+    "volume": "15",
+    "sentences": [
+      "Classification of images has become a key ingredient in many computer vision applications, e.g. image search [CITATION #b0], robotics [CITATION #b2], medical imaging [CITATION #b3], object detection in radar images [CITATION] or face detection [CITATION #b5].",
+      "[CITATION] Local feature scores for p-means pooling"
+    ]
+  },
+  {
+    "title": "Rapid Object Detection using a Boosted Cascade of Simple Features",
+    "authors": "P A Viola;M J Jones",
+    "year": "2001",
+    "citation": "Viola PA, Jones MJ. Rapid Object Detection using a Boosted Cascade of Simple Features. In: CVPR (1); 2001. p. 511-518.",
+    "pages": "511-518",
+    "journal": "CVPR",
+    "volume": "",
+    "sentences": [
+      "Classification of images has become a key ingredient in many computer vision applications, e.g. image search [CITATION #b0], robotics [CITATION #b2], medical imaging [CITATION #b3], object detection in radar images [CITATION #b4] or face detection [CITATION].",
+      "Then, the relevance of a feature dimension x d depends on the sign of the term in Eq [CITATION].",
+      "Same as for the example with the linear mapping in Eq [CITATION], an input neuron can inherit positive or negative relevance depending on its input sign."
+    ]
+  },
+  {
+    "title": "Neural Networks for Pattern Recognition",
+    "authors": "C M Bishop",
+    "year": "1995",
+    "citation": "Bishop CM. Neural Networks for Pattern Recognition. New York, NY, USA: Oxford University Press, Inc.; 1995.",
+    "publisher": "Oxford University Press, Inc",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Two particularly popular approaches, neural networks [CITATION] and Bag of Words (BoW) models [CITATION #b7], are widely used for these tasks and were among the top submissions in competitions on image classification and ranking such as ImageNet [CITATION #b8], Pascal VOC [CITATION #b9] and Image-CLEF [CITATION #b10].",
+      "For the second part, the neural networks (e.g. [CITATION][CITATION #b16]), we will consider general multilayered network structures with arbitrary continuous neurons and pooling functions based on generalized p-means.",
+      "Neural networks are trained by backpropagation using stochastic gradient descent with mini batches of size 25 and using a softmax objective [CITATION]."
+    ]
+  },
+  {
+    "title": "Visual categorization with bags of keypoints",
+    "authors": "G Csurka;C R Dance;L Fan;J Willamowski;C Bray",
+    "year": "2004",
+    "citation": "Csurka G, Dance CR, Fan L, Willamowski J, Bray C. Visual categorization with bags of keypoints. In: In Workshop on Statistical Learning in Computer Vision, ECCV; 2004. p. 1-22. Accessed 2015 Apr 01. Available from: http://www.xrce.xerox.com/Research-Development/Publications/2004-0105/ (language)/eng-GB.",
+    "pages": "1-22",
+    "journal": "In Workshop on Statistical Learning in Computer Vision",
+    "volume": "",
+    "sentences": [
+      "Two particularly popular approaches, neural networks [CITATION #b6] and Bag of Words (BoW) models [CITATION], are widely used for these tasks and were among the top submissions in competitions on image classification and ranking such as ImageNet [CITATION #b8], Pascal VOC [CITATION #b9] and Image-CLEF [CITATION #b10]."
+    ]
+  },
+  {
+    "title": "The ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012);. Accessed",
+    "authors": "J Deng;A Berg;S Satheesh;H Su;A Khosla;L Fei-Fei",
+    "year": "2015",
+    "citation": "Deng J, Berg A, Satheesh S, Su H, Khosla A, Fei-Fei L. The ImageNet Large Scale Visual Recognition Challenge 2012 (ILSVRC2012);. Accessed 2015 Apr 01. Available from: http://www.image-net.org/ challenges/LSVRC/2012/.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Two particularly popular approaches, neural networks [CITATION #b6] and Bag of Words (BoW) models [CITATION #b7], are widely used for these tasks and were among the top submissions in competitions on image classification and ranking such as ImageNet [CITATION], Pascal VOC [CITATION #b9] and Image-CLEF [CITATION #b10].",
+      "In Eq [CITATION] and the following text the terms input and source have the meaning of being an input to another neuron in the direction as defined during classification time, not during the time of computation of layer-wise relevance i is the relevance of neuron i which is to be computed.",
+      "Given the two assumptions encoded in Eq [CITATION], the layer-wise relevance propagation by Eq (2) can be satisfied by the following sufficient condition:",
+      "The difference between condition (13) and definition [CITATION] is that in the condition (13) the sum runs over the sources at layer l for a fixed neuron k at layer l+1, while in the definition (8) the sum runs over the sinks at layer l+1 for a fixed neuron i at a layer l.",
+      "When using Eq [CITATION] to define the relevance of a neuron from its messages, then condition ( 13) is a sufficient condition in order to ensure that Eq (2) holds.",
+      "Our work in the following sections will be based on this notion and the more strict form of relevance conservation as given by definition [CITATION] and condition [CITATION #b13].",
+      "We set Eqs [CITATION] and [CITATION #b13] as the main constraints defining layer-wise relevance propagation.",
+      "Then definition [CITATION] would be used to define the relevances R (l) for all elements of layer l."
+    ]
+  },
+  {
+    "title": "ImageCLEF: Experimental Evaluation in Visual Information Retrieval",
+    "authors": "H M\u00fcller;P Clough;T Deselaers;B Caputo",
+    "year": "2010",
+    "citation": "M\u00fcller H, Clough P, Deselaers T, Caputo B. ImageCLEF: Experimental Evaluation in Visual Information Retrieval. vol. 32 of The Information Retrieval Series. Springer; 2010.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "32",
+    "sentences": [
+      "Two particularly popular approaches, neural networks [CITATION #b6] and Bag of Words (BoW) models [CITATION #b7], are widely used for these tasks and were among the top submissions in competitions on image classification and ranking such as ImageNet [CITATION #b8], Pascal VOC [CITATION #b9] and Image-CLEF [CITATION].",
+      "We know that during classification time, a neuron i inputs a i w ik to neuron k, provided that i has a forward connection to k. Thus, we can rewrite the left hand sides of Eqs ( 9) and [CITATION] so that it matches the structure of the right hand sides of the same equations by the following"
+    ]
+  },
+  {
+    "title": "Improving the Fisher Kernel for Large-Scale Image Classification",
+    "authors": "F Perronnin;J S\u00e1nchez;T Mensink",
+    "year": "2010",
+    "citation": "Perronnin F, S\u00e1nchez J, Mensink T. Improving the Fisher Kernel for Large-Scale Image Classification. In: Daniilidis K, Maragos P, Paragios N, editors. ECCV (4). vol. 6314 of Lecture Notes in Computer Sci- ence. Springer; 2010. p. 143-156.",
+    "publisher": "Springer",
+    "pages": "143-156",
+    "journal": "",
+    "volume": "6314",
+    "sentences": [
+      "For the first part, the Bag of Words models will be treated as an aggregation of non-linear mappings over local features in an image which includes a number of popular mapping methods such as Fisher vectors [CITATION], regularized coding [CITATION #b12][CITATION #b13][CITATION #b14] and soft coding [CITATION #b15], combined with differentiable non-linear kernels and a range of pooling functions including sum-and max-pooling.",
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION #b15][CITATION #b39][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION #b13][CITATION #b14], or Fisher Vectors [CITATION], share a multi-stage procedure in common.",
+      "For that reason our approach is also applicable to Fisher vectors [CITATION] and regularized coding approaches [CITATION #b12][CITATION #b13][CITATION #b14].",
+      "We stick to the formulation of Fisher vectors as given in [CITATION].",
+      "This definition can be extended in a straightforward manner to use power normalization and \u2113 2 normalization from [CITATION]."
+    ]
+  },
+  {
+    "title": "Room-temperature superconductivity in nitrogen-doped lutetium hydride under moderate pressure conditions",
+    "authors": [
+      "Reinholt, G.",
+      "Tanaka, M.",
+      "Osei, A."
+    ],
+    "year": "2023",
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "citation": "Reinholt et al. (2023) Phys Rev Lett.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Nonlinear Learning using Local Coordinate Coding",
+    "authors": "K Yu;T Zhang;Y Gong;Y Bengio;D Schuurmans;J D Lafferty;Cki Williams;A Culotta",
+    "year": "2009",
+    "citation": "Yu K, Zhang T, Gong Y. Nonlinear Learning using Local Coordinate Coding. In: Bengio Y, Schuurmans D, Lafferty JD, Williams CKI, Culotta A, editors. NIPS. Curran Associates, Inc.; 2009. p. 2223-2231.",
+    "publisher": "Curran Associates, Inc",
+    "pages": "2223-2231",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For the first part, the Bag of Words models will be treated as an aggregation of non-linear mappings over local features in an image which includes a number of popular mapping methods such as Fisher vectors [CITATION #b11], regularized coding [CITATION #b12][CITATION][CITATION #b14] and soft coding [CITATION #b15], combined with differentiable non-linear kernels and a range of pooling functions including sum-and max-pooling.",
+      "Summing over the left hand side in Eq [CITATION] yields",
+      "i One can interpret condition [CITATION] by saying that the messages R \u00f0l;l\u00fe1\u00de i k are used to distribute the relevance R \u00f0l\u00fe1\u00de k of a neuron k onto its input neurons at layer l.",
+      "Our work in the following sections will be based on this notion and the more strict form of relevance conservation as given by definition [CITATION #b8] and condition [CITATION].",
+      "We set Eqs [CITATION #b8] and [CITATION] as the main constraints defining layer-wise relevance propagation.",
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION #b15][CITATION #b39][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION][CITATION #b14], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common.",
+      "For that reason our approach is also applicable to Fisher vectors [CITATION #b11] and regularized coding approaches [CITATION #b12][CITATION][CITATION #b14]."
+    ]
+  },
+  {
+    "title": "Locality-constrained Linear Coding for image classification",
+    "authors": "J Wang;J Yang;K Yu;F Lv;T S Huang;Y Gong",
+    "year": "2010",
+    "citation": "Wang J, Yang J, Yu K, Lv F, Huang TS, Gong Y. Locality-constrained Linear Coding for image classifi- cation. In: CVPR. IEEE; 2010. p. 3360-3367.",
+    "publisher": "IEEE",
+    "pages": "3360-3367",
+    "journal": "CVPR",
+    "volume": "",
+    "sentences": [
+      "For the first part, the Bag of Words models will be treated as an aggregation of non-linear mappings over local features in an image which includes a number of popular mapping methods such as Fisher vectors [CITATION #b11], regularized coding [CITATION #b12][CITATION #b13][CITATION] and soft coding [CITATION #b15], combined with differentiable non-linear kernels and a range of pooling functions including sum-and max-pooling.",
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION #b15][CITATION #b39][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION #b13][CITATION], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common.",
+      "For that reason our approach is also applicable to Fisher vectors [CITATION #b11] and regularized coding approaches [CITATION #b12][CITATION #b13][CITATION].",
+      "Considering formulations as in [CITATION #b12][CITATION] argmin B;C"
+    ]
+  },
+  {
+    "title": "Visual Word Ambiguity",
+    "authors": "J Van Gemert;C J Veenman;Awm Smeulders;J M Geusebroek",
+    "year": "2010",
+    "citation": "van Gemert J, Veenman CJ, Smeulders AWM, Geusebroek JM. Visual Word Ambiguity. IEEE Trans Pattern Anal Mach Intell. 2010; 32(7):1271-1283. doi: 10.1109/TPAMI.2009.132 PMID: 20489229",
+    "pages": "1271-1283",
+    "journal": "IEEE Trans Pattern Anal Mach Intell",
+    "volume": "32",
+    "sentences": [
+      "For the first part, the Bag of Words models will be treated as an aggregation of non-linear mappings over local features in an image which includes a number of popular mapping methods such as Fisher vectors [CITATION #b11], regularized coding [CITATION #b12][CITATION #b13][CITATION #b14] and soft coding [CITATION], combined with differentiable non-linear kernels and a range of pooling functions including sum-and max-pooling.",
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION][CITATION #b39][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION #b13][CITATION #b14], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common.",
+      "A soft codebook mapping like in [CITATION][CITATION #b40]"
+    ]
+  },
+  {
+    "title": "Neural Networks: Tricks of the Trade, Reloaded",
+    "authors": "G Montavon;G B Orr;K R M\u00fcller",
+    "year": "2012",
+    "citation": "Montavon G, Orr GB, M\u00fcller KR, editors. Neural Networks: Tricks of the Trade, Reloaded. vol. 7700 of Lecture Notes in Computer Science (LNCS). 2nd ed. Springer; 2012.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "7700",
+    "sentences": [
+      "For the second part, the neural networks (e.g. [CITATION #b6][CITATION]), we will consider general multilayered network structures with arbitrary continuous neurons and pooling functions based on generalized p-means.",
+      "While this solution [CITATION] for message terms R \u00f0l;l\u00fe1\u00de i k still needs to be adapted such that it is usable when the denominator becomes zero, the example given in Eq [CITATION] gives an idea what a message R \u00f0l;l\u00fe1\u00de i k could be, namely the relevance of a sink neuron R \u00f0l\u00fe1\u00de k which has been already computed, weighted proportionally by the input of the neuron i from the preceding layer l."
+    ]
+  },
+  {
+    "title": "How to Explain Individual Classification Decisions",
+    "authors": "D Baehrens;T Schroeter;S Harmeling;M Kawanabe;K Hansen;K R M\u00fcller",
+    "year": "2010",
+    "citation": "Baehrens D, Schroeter T, Harmeling S, Kawanabe M, Hansen K, M\u00fcller KR. How to Explain Individual Classification Decisions. Journal of Machine Learning Research. 2010; 11:1803-1831.",
+    "pages": "1803-1831",
+    "journal": "Journal of Machine Learning Research",
+    "volume": "11",
+    "sentences": [
+      "Several works have been using sensitivity maps [CITATION][CITATION #b18][CITATION #b19] for visualization of classifier predictions which were based on using partial derivatives at the prediction point x.",
+      "[CITATION][CITATION #b18][CITATION #b19] consider explanation vectors based on local gradients which are sign-sensitive."
+    ]
+  },
+  {
+    "title": "Visualization of Nonlinear Classification Models in Neuroimaging -Signed Sensitivity Maps",
+    "authors": "P M Rasmussen;T Schmah;K H Madsen;T E Lund;G Yourganov;S C Strother",
+    "year": "2012",
+    "citation": "Rasmussen PM, Schmah T, Madsen KH, Lund TE, Yourganov G, Strother SC, et al. Visualization of Nonlinear Classification Models in Neuroimaging -Signed Sensitivity Maps. In: Huffel SV, Correia CMBA, Fred ALN, Gamboa H, editors. BIOSIGNALS. SciTePress; 2012. p. 254-263.",
+    "publisher": "SciTePress",
+    "pages": "254-263",
+    "journal": "BIOSIGNALS",
+    "volume": "",
+    "sentences": [
+      "Several works have been using sensitivity maps [CITATION #b17][CITATION][CITATION #b19] for visualization of classifier predictions which were based on using partial derivatives at the prediction point x.",
+      "This holds in particular when it is applied to the output function f as a function of the preceding layer f = f(z i \u2212 1 ), as Eq [CITATION] satisfies approximately the propagation Eq (2) when the relevance of the output layer is initialized as the value of prediction function f(x).",
+      "[CITATION #b17][CITATION][CITATION #b19] consider explanation vectors based on local gradients which are sign-sensitive.",
+      "Fig 11 shows pixel-wise relevances resulting from Taylor-type decomposition as defined in Eqs [CITATION] and [CITATION #b53]."
+    ]
+  },
+  {
+    "title": "Visual Interpretation of Kernel-Based Prediction Models",
+    "authors": "K Hansen;D Baehrens;T Schroeter;M Rupp;K R M\u00fcller",
+    "year": "2011",
+    "citation": "Hansen K, Baehrens D, Schroeter T, Rupp M, M\u00fcller KR. Visual Interpretation of Kernel-Based Predic- tion Models. Molecular Informatics. 2011; 30(9):817-826. doi: 10.1002/minf.201100059",
+    "pages": "817-826",
+    "journal": "Molecular Informatics",
+    "volume": "30",
+    "sentences": [
+      "Several works have been using sensitivity maps [CITATION #b17][CITATION #b18][CITATION] for visualization of classifier predictions which were based on using partial derivatives at the prediction point x.",
+      "[CITATION #b17][CITATION #b18][CITATION] consider explanation vectors based on local gradients which are sign-sensitive.",
+      "We assume the very generic p-means mapping scheme for local features l as given in Eq [CITATION].",
+      "Furthermore note that definition [CITATION #b27] has no explicit dependence on the way how the local features are pooled in Eq [CITATION] and this might be inappropriate weighting for max-pooling or general p-means pooling."
+    ]
+  },
+  {
+    "title": "Visualizing and Understanding Convolutional Networks",
+    "authors": "M D Zeiler;R Fergus",
+    "year": "2013",
+    "citation": "Zeiler MD, Fergus R. Visualizing and Understanding Convolutional Networks. CoRR. 2013;doi: abs/ 1311.2901.",
+    "pages": "",
+    "journal": "CoRR",
+    "volume": "",
+    "sentences": [
+      "As for neural networks, [CITATION] is dedicated towards analyzing classifier decisions at neurons which is applicable also to the pixel level.",
+      "See [CITATION #b22] which establishes an interpretation of the work in [CITATION]  as an approximation to partial derivatives with respect to pixels in the input image.",
+      "In a highlevel sense, the work in [CITATION] uses the method from their own predecessor work in [CITATION #b23] which solves optimization problems in order to reconstruct the image input, while our approach attempts to reconstruct the classifier decision.",
+      "In a more technical sense, the difference between [CITATION] and our approach can be seen by comparing how the responses are projected down towards the inputs.",
+      "[CITATION] uses rectified linear units to project information from the unfolded maps towards the inputs with the aim to ensure the feature maps to be non-negative."
+    ]
+  },
+  {
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "authors": "A Krizhevsky;I Sutskever;G E Hinton",
+    "year": "2012",
+    "citation": "Krizhevsky A, Sutskever I, Hinton GE. ImageNet Classification with Deep Convolutional Neural Net- works. In: Bartlett PL, Pereira FCN, Burges CJC, Bottou L, Weinberger KQ, editors. NIPS; 2012. p. 1106-1114.",
+    "pages": "1106-1114",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It performs a layer-wise inversion down from output layers towards the input pixels for the architecture of convolutional networks [CITATION].",
+      "In conclusion, our choice \u03b2 = \u22121, yielding a ratio of 1:2 towards positive messages explains why the heatmaps for the method [CITATION #b60]  It is known from [CITATION] that lower layers of deep networks which are very similar to the one from [CITATION #b60] used here may act like learned texture or gradient detectors."
+    ]
+  },
+  {
+    "title": "Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps",
+    "authors": "K Simonyan;A Vedaldi;A Zisserman",
+    "year": "2013",
+    "citation": "Simonyan K, Vedaldi A, Zisserman A. Deep Inside Convolutional Networks: Visualising Image Classifi- cation Models and Saliency Maps. CoRR. 2013;doi: abs/1312.6034.",
+    "pages": "",
+    "journal": "CoRR",
+    "volume": "",
+    "sentences": [
+      "See [CITATION] which establishes an interpretation of the work in [CITATION #b20]  as an approximation to partial derivatives with respect to pixels in the input image.",
+      "Another approach which lies between partial derivatives at the input point x and a full Taylor series around a different point x 0 is presented in [CITATION].",
+      "Besides deviating in the usage of a Taylor series, the work in [CITATION] does not make use of the layer-wise propagation strategy for neural networks presented in this paper, which unlike a Taylor series does not rely on a local approximation.",
+      "In this case, as with the linear and histogram intersection kernel, we can achieve Eq [CITATION] with equality in the following definition by applying layer-wise relevance propagation which results in Eq [CITATION #b24].",
+      "For the same reason, namely the possibility of the presence of geometric constraints, pixelwise decomposition is not always a good weak segmentation in contrast to the convincing results in the experiments of [CITATION] on images from the ILSVRC data set."
+    ]
+  },
+  {
+    "title": "Adaptive deconvolutional networks for mid and high level feature learning",
+    "authors": "M D Zeiler;G W Taylor;R Fergus",
+    "year": "2011",
+    "citation": "Zeiler MD, Taylor GW, Fergus R. Adaptive deconvolutional networks for mid and high level feature learning. In: ICCV; 2011. p. 2018-2025.",
+    "pages": "2018-2025",
+    "journal": "ICCV",
+    "volume": "",
+    "sentences": [
+      "In a highlevel sense, the work in [CITATION #b20] uses the method from their own predecessor work in [CITATION] which solves optimization problems in order to reconstruct the image input, while our approach attempts to reconstruct the classifier decision."
+    ]
+  },
+  {
+    "title": "Intriguing properties of neural networks",
+    "authors": "C Szegedy;W Zaremba;I Sutskever;J Bruna;D Erhan;I J Goodfellow",
+    "year": "2013",
+    "citation": "Szegedy C, Zaremba W, Sutskever I, Bruna J, Erhan D, Goodfellow IJ, et al. Intriguing properties of neural networks. CoRR. 2013;doi: abs/1312.6199.",
+    "pages": "",
+    "journal": "CoRR",
+    "volume": "",
+    "sentences": [
+      "A different type of analysis for understanding neural networks deals with creating counter-intuitive examples, see for example the work in [CITATION][CITATION #b25].",
+      "In this case, as with the linear and histogram intersection kernel, we can achieve Eq [CITATION #b22] with equality in the following definition by applying layer-wise relevance propagation which results in Eq [CITATION].",
+      "Summing the local feature relevance scores R \u00f02\u00de l from Eq (27) yields the Taylor approximation R \u00f03\u00de d of the prediction score f(x) in Eqs [CITATION] or [CITATION #b25].",
+      "We obtain exact summation to the prediction f(x) in the case of sum decomposable kernels and usage of Eq [CITATION] in this special case.",
+      "It is expected to be used with a linear kernel, thus we can use the exact formula from Eq [CITATION] for defining the BoW dimension relevance scores R \u00f03\u00de d .",
+      "The histogram intersection kernel applies to the exact decomposition formula in Eq [CITATION].",
+      "However, as noted in [CITATION], this can lead to points of the input space that are perceptually equivalent to the original sample x and whose choice as a root would produce non-informative pixel-wise decompositions."
+    ]
+  },
+  {
+    "title": "Explaining and Harnessing Adversarial Examples",
+    "authors": "I J Goodfellow;J Shlens;C Szegedy",
+    "year": "2014",
+    "citation": "Goodfellow IJ, Shlens J, Szegedy C. Explaining and Harnessing Adversarial Examples. CoRR. 2014; abs/1412.6572. Available from: http://arxiv.org/abs/1412.6572.",
+    "pages": "",
+    "journal": "CoRR",
+    "volume": "",
+    "sentences": [
+      "A different type of analysis for understanding neural networks deals with creating counter-intuitive examples, see for example the work in [CITATION #b24][CITATION].",
+      "The approximated dimensional contributions can be expressed as in Eq [CITATION].",
+      "Summing the local feature relevance scores R \u00f02\u00de l from Eq (27) yields the Taylor approximation R \u00f03\u00de d of the prediction score f(x) in Eqs [CITATION #b24] or [CITATION].",
+      "When plugged into Eq [CITATION], the dimensional contributions of the \u03c7 2 kernel are then obtained as"
+    ]
+  },
+  {
+    "title": "Visual Causal Feature Learning",
+    "authors": "K Chalupka;P Perona;F Eberhardt",
+    "year": "2014",
+    "citation": "Chalupka K, Perona P, Eberhardt F. Visual Causal Feature Learning. CoRR. 2014;abs/1412.2309. Available from: http://arxiv.org/abs/1412.2309.",
+    "pages": "",
+    "journal": "CoRR",
+    "volume": "",
+    "sentences": [
+      "For a treatment on how to discriminate structures which influence predictions from correlations with hidden variables such that the hidden variables have an impact on the predictor, see [CITATION]."
+    ]
+  },
+  {
+    "title": "Visualizing Higher-Layer Features of a Deep Network. University of Montreal",
+    "authors": "D Erhan;Y Bengio;A Courville;P Vincent",
+    "year": "2009",
+    "citation": "Erhan D, Bengio Y, Courville A, Vincent P. Visualizing Higher-Layer Features of a Deep Network. Uni- versity of Montreal; 2009. 1341.",
+    "pages": "1341",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Explanation of neural network behavior on the level of single neurons is done in [CITATION] and [CITATION #b28].",
+      "Applying the layer-wise propagation allows to define the local feature relevance score R \u00f02\u00de l as given in Eq [CITATION].",
+      "The summations over the mappings m (d) (l) over the local features {l} in Eq [CITATION] achieve a weighting of the relevance from the third layer proportional to the ratios of the mappings.",
+      "Furthermore note that definition [CITATION] has no explicit dependence on the way how the local features are pooled in Eq [CITATION #b19] and this might be inappropriate weighting for max-pooling or general p-means pooling."
+    ]
+  },
+  {
+    "title": "Building high-level features using large scale unsupervised learning",
+    "authors": "Q V Le",
+    "year": "2013",
+    "citation": "Le QV. Building high-level features using large scale unsupervised learning. In: ICASSP; 2013. p. 8595-8598.",
+    "pages": "8595-8598",
+    "journal": "ICASSP",
+    "volume": "",
+    "sentences": [
+      "Explanation of neural network behavior on the level of single neurons is done in [CITATION #b27] and [CITATION]."
+    ]
+  },
+  {
+    "title": "Review and comparison of methods to study the contribution of variables in artificial neural network models",
+    "authors": "M Gevrey;I Dimopoulos;S Lek",
+    "year": "2003",
+    "citation": "Gevrey M, Dimopoulos I, Lek S. Review and comparison of methods to study the contribution of vari- ables in artificial neural network models. Ecological Modelling. 2003; 160(3):249-264. doi: 10.1016/ S0304-3800(02)00257-0",
+    "pages": "249-264",
+    "journal": "Ecological Modelling",
+    "volume": "160",
+    "sentences": [
+      "Quantifying the importance of input variables using a neural network model has also been studied in specific areas such as ecological modeling, where [CITATION][CITATION #b30] surveyed a large ensemble of possible analyses, including, computing partial derivatives, perturbation analysis, weights analysis, and studying the effect of including and removing variables at training time."
+    ]
+  },
+  {
+    "title": "An accurate comparison of methods for quantifying variable importance in artificial neural networks using simulated data",
+    "authors": "J D Olden;M K Joy;R G Death",
+    "year": "2004",
+    "citation": "Olden JD, Joy MK, Death RG. An accurate comparison of methods for quantifying variable importance in artificial neural networks using simulated data. Ecological Modelling. 2004; 178(3-4):389-397. doi: 10.1016/j.ecolmodel.2004.03.013",
+    "pages": "3-4",
+    "journal": "Ecological Modelling",
+    "volume": "178",
+    "sentences": [
+      "Quantifying the importance of input variables using a neural network model has also been studied in specific areas such as ecological modeling, where [CITATION #b29][CITATION] surveyed a large ensemble of possible analyses, including, computing partial derivatives, perturbation analysis, weights analysis, and studying the effect of including and removing variables at training time."
+    ]
+  },
+  {
+    "title": "Understanding Neural Networks via Rule Extraction",
+    "authors": "R Setiono;H Liu",
+    "year": "1995",
+    "citation": "Setiono R, Liu H. Understanding Neural Networks via Rule Extraction. In: IJCAI. Morgan Kaufmann; 1995. p. 480-487.",
+    "pages": "480-487",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "A different avenue to understanding decisions in neural network is to fit a more interpretable model (e.g. decision tree) to the function learned by the neural network [CITATION], and extract the rules learned by this new model.",
+      "The first quotient in Eq [CITATION] converges to an indicator function for the maximal mapping element in the limit p !"
+    ]
+  },
+  {
+    "title": "Visualization of nonlinear kernel models in neuroimaging by sensitivity maps",
+    "authors": "P M Rasmussen;K H Madsen;T E Lund;L K Hansen",
+    "year": "2011",
+    "citation": "Rasmussen PM, Madsen KH, Lund TE, Hansen LK. Visualization of nonlinear kernel models in neuro- imaging by sensitivity maps. NeuroImage. 2011; 55(3):1120-1131. doi: 10.1016/j.neuroimage.2010. 12.035 PMID: 21168511",
+    "pages": "1120-1131",
+    "journal": "NeuroImage",
+    "volume": "55",
+    "sentences": [
+      "With respect to sensitivity of kernel-based classifiers to input dimensions, [CITATION] yields sensitivity maps, which are invariant to the sign of the predictions.",
+      "We remark again, that even max pooling fits into this structure as a limit of generalized means, see Eq [CITATION] for example."
+    ]
+  },
+  {
+    "title": "Randomised controlled trial of personalised dietary intervention based on gut microbiome profiling in patients with inflammatory bowel disease",
+    "authors": [
+      "Gupta, N.",
+      "Andersen, L.",
+      "Okafor, C."
+    ],
+    "year": "2022",
+    "journal": "New England Journal of Medicine",
+    "doi": "",
+    "citation": "Gupta et al. (2022) N Engl J Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "The Visual Extent of an Object-Suppose We Know the Object Locations",
+    "authors": "Jrr Uijlings;Awm Smeulders;Rjh Scha",
+    "year": "2012",
+    "citation": "Uijlings JRR, Smeulders AWM, Scha RJH. The Visual Extent of an Object-Suppose We Know the Object Locations. International Journal of Computer Vision. 2012; 96(1):46-63. doi: 10.1007/s11263- 011-0443-1",
+    "pages": "46-63",
+    "journal": "International Journal of Computer Vision",
+    "volume": "96",
+    "sentences": [
+      "The first works to our knowledge to visualize BoW models are [CITATION #b33] and [CITATION].",
+      "The work of [CITATION] has performed this step for the special case of one single histogram intersection kernel.",
+      "Layer-wise propagation yields Eq [CITATION].",
+      "The operator area(l) used Eqs [CITATION #b33] and [CITATION] returns the set of pixel coordinates covered by a local feature l."
+    ]
+  },
+  {
+    "title": "The PASCAL Visual Object Classes Challenge",
+    "authors": "M Everingham;L Van Gool;Cki Williams;J Winn;A Zisserman",
+    "year": "2009",
+    "citation": "Everingham M, Van Gool L, Williams CKI, Winn J, Zisserman A. The PASCAL Visual Object Classes Challenge 2009, Part2-Classification Task;.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "They have excelled in past competitions on visual concept recognition and ranking such as Pascal VOC [CITATION][CITATION #b36] and ImageCLEF PhotoAnnotation [CITATION #b37]."
+    ]
+  },
+  {
+    "title": "The PASCAL Visual Object Classes Challenge",
+    "authors": "M Everingham;L Van Gool;Cki Williams;J Winn;A Zisserman",
+    "year": "2010",
+    "citation": "Everingham M, Van Gool L, Williams CKI, Winn J, Zisserman A. The PASCAL Visual Object Classes Challenge 2010 (VOC2010) Results;.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "They have excelled in past competitions on visual concept recognition and ranking such as Pascal VOC [CITATION #b35][CITATION] and ImageCLEF PhotoAnnotation [CITATION #b37]."
+    ]
+  },
+  {
+    "title": "The CLEF 2011 Photo Annotation and Concept-based Retrieval Tasks",
+    "authors": "S Nowak;K Nagel;J Liebetrau",
+    "year": "2011",
+    "citation": "Nowak S, Nagel K, Liebetrau J. The CLEF 2011 Photo Annotation and Concept-based Retrieval Tasks. In: CLEF 2011 Labs and Workshop, Notebook Papers, 19-22 September 2011, Amsterdam, The Neth- erlands; 2011. Accessed 2015 Apr 01. Available from: http://ceur-ws.org/Vol-1177/CLEF2011wn- ImageCLEF-NowakEt2011.pdf.",
+    "pages": "19-22",
+    "journal": "",
+    "volume": "1177",
+    "sentences": [
+      "They have excelled in past competitions on visual concept recognition and ranking such as Pascal VOC [CITATION #b35][CITATION #b36] and ImageCLEF PhotoAnnotation [CITATION]."
+    ]
+  },
+  {
+    "title": "Gut microbiome dysbiosis as a mediator of systemic inflammation in type 2 diabetes: evidence from a prospective twin study",
+    "authors": [
+      "Nakamura, S.",
+      "Osei-Bonsu, E.",
+      "Walters, D."
+    ],
+    "year": "2019",
+    "journal": "Cell Metabolism",
+    "doi": "",
+    "citation": "Nakamura et al. (2019) Cell Metab.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Randomized Clustering Forests for Image Classification",
+    "authors": "F Moosmann;E Nowak;F Jurie",
+    "year": "2008",
+    "citation": "Moosmann F, Nowak E, Jurie F. Randomized Clustering Forests for Image Classification. IEEE Trans Pattern Anal Mach Intell. 2008; 30(9):1632-1646. doi: 10.1109/TPAMI.2007.70822 PMID: 18617720",
+    "pages": "1632-1646",
+    "journal": "IEEE Trans Pattern Anal Mach Intell",
+    "volume": "30",
+    "sentences": [
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION], soft codebook mapping [CITATION #b15][CITATION #b39][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION #b13][CITATION #b14], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common.",
+      "In a second stage which is performed once during training, representatives in the space of local features are computed, no matter whether they are cluster centroids obtained from k-means clustering, regions of the space as for clustering trees [CITATION], or centers of distributions as for Fisher vectors [CITATION #b44]."
+    ]
+  },
+  {
+    "title": "Kernel Codebooks for Scene Categorization",
+    "authors": "J Van Gemert;J M Geusebroek;C J Veenman;Awm Smeulders",
+    "year": "2008",
+    "citation": "van Gemert J, Geusebroek JM, Veenman CJ, Smeulders AWM. Kernel Codebooks for Scene Categori- zation. In: ECCV (3); 2008. p. 696-709.",
+    "pages": "696-709",
+    "journal": "ECCV",
+    "volume": "",
+    "sentences": [
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION #b15][CITATION][CITATION #b40][CITATION #b41], regularized local codings [CITATION #b12][CITATION #b13][CITATION #b14], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common."
+    ]
+  },
+  {
+    "title": "Enhanced representation and multi-task learning for image annotation. Computer Vision and Image Understanding",
+    "authors": "A Binder;W Samek;K R M\u00fcller;M Kawanabe",
+    "year": "2013",
+    "citation": "Binder A, Samek W, M\u00fcller KR, Kawanabe M. Enhanced representation and multi-task learning for image annotation. Computer Vision and Image Understanding. 2013; 117(5):466-478. doi: 10.1016/j. cviu.2012.09.006",
+    "pages": "466-478",
+    "journal": "",
+    "volume": "117",
+    "sentences": [
+      "All Bag of Words models, no matter whether based on hierarchical clustering [CITATION #b38], soft codebook mapping [CITATION #b15][CITATION #b39][CITATION #b40][CITATION], regularized local codings [CITATION #b12][CITATION #b13][CITATION #b14], or Fisher Vectors [CITATION #b11], share a multi-stage procedure in common.",
+      "Example case: \u03c7 2 kernel The \u03c7 2 kernel function has been applied with good performance in various image classification tasks [CITATION][CITATION #b54][CITATION #b55].",
+      "Standard SIFT features and stacks of 9-dimensional quantile features measuring values from 0.1 to 0.9 of the data over color intensities as in [CITATION] have been used at local feature scale 3.0."
+    ]
+  },
+  {
+    "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+    "authors": "D G Lowe",
+    "year": "2004",
+    "citation": "Lowe DG. Distinctive Image Features from Scale-Invariant Keypoints. International Journal of Com- puter Vision. 2004; 60(2):91-110. doi: 10.1023/B:VISI.0000029664.99615.94",
+    "pages": "91-110",
+    "journal": "International Journal of Computer Vision",
+    "volume": "60",
+    "sentences": [
+      "A local feature such as SIFT [CITATION] is in the abstract sense a vector computed from a region of the image, for example capturing information of interest such as shape characteristics or properties of color or texture on a local scale."
+    ]
+  },
+  {
+    "title": "Image Classification with the Fisher Vector: Theory and Practice",
+    "authors": "J S\u00e1nchez;F Perronnin;T Mensink;J J Verbeek",
+    "year": "2013",
+    "citation": "S\u00e1nchez J, Perronnin F, Mensink T, Verbeek JJ. Image Classification with the Fisher Vector: Theory and Practice. International Journal of Computer Vision. 2013; 105(3):222-245. doi: 10.1007/s11263- 013-0636-x",
+    "pages": "222-245",
+    "journal": "International Journal of Computer Vision",
+    "volume": "105",
+    "sentences": [
+      "In a second stage which is performed once during training, representatives in the space of local features are computed, no matter whether they are cluster centroids obtained from k-means clustering, regions of the space as for clustering trees [CITATION #b38], or centers of distributions as for Fisher vectors [CITATION].",
+      "The Fisher vector [CITATION] can be replicated using the following mapping m (d) given below."
+    ]
+  },
+  {
+    "title": "Learning the Kernel Matrix with Semidefinite Programming",
+    "authors": "Grg Lanckriet;N Cristianini;P L Bartlett;L E Ghaoui;M I Jordan",
+    "year": "2004",
+    "citation": "Lanckriet GRG, Cristianini N, Bartlett PL, Ghaoui LE, Jordan MI. Learning the Kernel Matrix with Semi- definite Programming. Journal of Machine Learning Research. 2004; 5:27-72.",
+    "pages": "27-72",
+    "journal": "Journal of Machine Learning Research",
+    "volume": "5",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION][CITATION #b46][CITATION #b47][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION #b51][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f"
+    ]
+  },
+  {
+    "title": "Multiple kernel learning, conic duality, and the SMO algorithm",
+    "authors": "F R Bach;Grg Lanckriet;M I Jordan",
+    "year": "2004",
+    "citation": "Bach FR, Lanckriet GRG, Jordan MI. Multiple kernel learning, conic duality, and the SMO algorithm. In: ICML; 2004.",
+    "pages": "",
+    "journal": "ICML",
+    "volume": "",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION][CITATION #b47][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION #b51][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f",
+      "Therefore the Taylor-type decomposition was used for computing the third layer relevances R \u00f03\u00de d by Eq [CITATION]."
+    ]
+  },
+  {
+    "title": "Efficient and Accurate Lp-norm Multiple Kernel Learning",
+    "authors": "M Kloft;U Brefeld;S Sonnenburg;P Laskov;K R M\u00fcller;A Zien",
+    "year": "2009",
+    "citation": "Kloft M, Brefeld U, Sonnenburg S, Laskov P, M\u00fcller KR, Zien A. Efficient and Accurate Lp-norm Multiple Kernel Learning. Advances in Neural Information Processing Systems. 2009; 22(22):997-1005.",
+    "pages": "997-1005",
+    "journal": "Advances in Neural Information Processing Systems",
+    "volume": "22",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION #b46][CITATION][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION #b51][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f"
+    ]
+  },
+  {
+    "title": "Insights from Classifying Visual Concepts with Multiple Kernel Learning",
+    "authors": "A Binder;S Nakajima;M Kloft;C M\u00fcller;W Samek;U Brefeld",
+    "year": "2012",
+    "citation": "Binder A, Nakajima S, Kloft M, M\u00fcller C, Samek W, Brefeld U, et al. Insights from Classifying Visual Concepts with Multiple Kernel Learning. PLoS ONE. 2012; 7(8). doi: 10.1371/journal.pone.0038897",
+    "pages": "",
+    "journal": "PLoS ONE",
+    "volume": "7",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION #b46][CITATION #b47][CITATION #b48][CITATION], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION #b51][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f"
+    ]
+  },
+  {
+    "title": "Semantic Kernel Forests from Multiple Taxonomies",
+    "authors": "S J Hwang;K Grauman;F Sha",
+    "year": "2012",
+    "citation": "Hwang SJ, Grauman K, Sha F. Semantic Kernel Forests from Multiple Taxonomies. In: NIPS; 2012. p. 1727-1735.",
+    "pages": "1727-1735",
+    "journal": "NIPS",
+    "volume": "",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION #b46][CITATION #b47][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION][CITATION #b51][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f",
+      "In such a general case, the weighting terms z ij = x i w ij from Eq [CITATION] have to be replaced accordingly by a function of h ij (x i )."
+    ]
+  },
+  {
+    "title": "On Taxonomies for Multi-class Image Categorization",
+    "authors": "A Binder;K R M\u00fcller;M Kawanabe",
+    "year": "2012",
+    "citation": "Binder A, M\u00fcller KR, Kawanabe M. On Taxonomies for Multi-class Image Categorization. International Journal of Computer Vision. 2012; 99(3):281-301. doi: 10.1007/s11263-010-0417-8",
+    "pages": "281-301",
+    "journal": "International Journal of Computer Vision",
+    "volume": "99",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION #b46][CITATION #b47][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION][CITATION #b52] or boosting-like formulations as in [CITATION #b53] f"
+    ]
+  },
+  {
+    "title": "Taxonomic Prediction with Tree-Structured Covariances",
+    "authors": "M B Blaschko;W Zaremba;A Gretton",
+    "year": "2013",
+    "citation": "Blaschko MB, Zaremba W, Gretton A. Taxonomic Prediction with Tree-Structured Covariances. In: ECML/PKDD (2); 2013. p. 304-319.",
+    "pages": "304-319",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This assumption can be extended without loss of generality to approaches using multiple kernel functions such as multiple kernel learning [CITATION #b45][CITATION #b46][CITATION #b47][CITATION #b48][CITATION #b49], structural prediction approaches with tensor product structure between features and labels as in taxonomy-based classifiers [CITATION #b50][CITATION #b51][CITATION] or boosting-like formulations as in [CITATION #b53] f"
+    ]
+  },
+  {
+    "title": "Local Features and Kernels for Classification of Texture and Object Categories: A Comprehensive Study",
+    "authors": "J Zhang;M Marszalek;S Lazebnik;C Schmid",
+    "year": "2007",
+    "citation": "Zhang J, Marszalek M, Lazebnik S, Schmid C. Local Features and Kernels for Classification of Texture and Object Categories: A Comprehensive Study. International Journal of Computer Vision. 2007; 73 (2):213-238. Available from: http://dx.doi.org/10.1007/s11263-006-9794-4",
+    "pages": "213-238",
+    "journal": "International Journal of Computer Vision",
+    "volume": "73",
+    "sentences": [
+      "Example case: \u03c7 2 kernel The \u03c7 2 kernel function has been applied with good performance in various image classification tasks [CITATION #b41][CITATION][CITATION #b55]."
+    ]
+  },
+  {
+    "title": "Multiple kernels for object detection",
+    "authors": "A Vedaldi;V Gulshan;M Varma;A Zisserman",
+    "year": "2009",
+    "citation": "Vedaldi A, Gulshan V, Varma M, Zisserman A. Multiple kernels for object detection. In: ICCV; 2009. p. 606-613.",
+    "pages": "606-613",
+    "journal": "ICCV",
+    "volume": "",
+    "sentences": [
+      "Example case: \u03c7 2 kernel The \u03c7 2 kernel function has been applied with good performance in various image classification tasks [CITATION #b41][CITATION #b54][CITATION]."
+    ]
+  },
+  {
+    "title": "Learning representations by back-propagating errors",
+    "authors": "D E Rumelhart;G E Hinton;R J Williams",
+    "year": "1986",
+    "citation": "Rumelhart DE, Hinton GE, Williams RJ. Learning representations by back-propagating errors. Nature. 1986 Oct; 323:533-536. doi: 10.1038/323533a0",
+    "pages": "533-536",
+    "journal": "Nature",
+    "volume": "323",
+    "sentences": [
+      "This formulation of neural network is general enough to encompass a wide range of architectures such as the simple multilayer perceptron [CITATION] or convolutional neural networks [CITATION #b57], where convolution and sum-pooling are linear operations.",
+      "The derivative @f(x)/@x (d) required for pixel-wise decomposition can be computed efficiently by reusing the network topology using the backpropagation algorithm [CITATION].",
+      "A drawback of the propagation rule of Eq [CITATION] is that for small values z j , relevances R i j can take unbounded values.",
+      "The network was trained using a standard error back-propagation algorithm Pixel-wise decompositions for a multilayer neural network trained and tested on MNIST digits, using layer-wise relevance propagation as in Formula [CITATION].",
+      "In order to compute the pixel-wise decompositions, we used Eq [CITATION], which does not use numerical stabilizers."
+    ]
+  },
+  {
+    "title": "The MNIST database of handwritten digits",
+    "authors": "Y Lecun;C Cortes",
+    "year": "1998",
+    "citation": "LeCun Y, Cortes C. The MNIST database of handwritten digits; 1998. Accessed 2015 Apr 01. Available from: http://yann.lecun.com/exdb/mnist/.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This formulation of neural network is general enough to encompass a wide range of architectures such as the simple multilayer perceptron [CITATION #b56] or convolutional neural networks [CITATION], where convolution and sum-pooling are linear operations.",
+      "which has similar form to Eq [CITATION].",
+      "Multilayer neural networks were trained on the MNIST [CITATION] data of handwritten digits and solve the posed ten-class problem with a prediction accuracy of 98.25% on the MNIST test set."
+    ]
+  },
+  {
+    "title": "Convolutional networks and applications in vision",
+    "authors": "Y Lecun;K Kavukcuoglu;C Farabet",
+    "year": "2010",
+    "citation": "LeCun Y, Kavukcuoglu K, Farabet C. Convolutional networks and applications in vision. In: ISCAS. IEEE; 2010. p. 253-256.",
+    "publisher": "IEEE",
+    "pages": "253-256",
+    "journal": "ISCAS",
+    "volume": "",
+    "sentences": [
+      "For structures with a higher degree of non-linearity, such as local renormalization [CITATION #b58][CITATION], Taylor approximation applied to neuron activation x j can be used again to achieve an approximation for the structure as given in Eq (63)."
+    ]
+  },
+  {
+    "title": "Caffe: An Open Source Convolutional Architecture for Fast Feature Embedding",
+    "authors": "Y Jia",
+    "year": "2013",
+    "citation": "Jia Y. Caffe: An Open Source Convolutional Architecture for Fast Feature Embedding; 2013. Accessed 2015 Apr 01. Available from: http://caffe.berkeleyvision.org/.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For neural networks we show results also on two data sets, two sets of results on MNIST which are easy to interpret, and a second set of experiments in which we rely on a 15 layers already trained network provided as part of the Caffe open source package [CITATION], which predicts the 1000 categories from the ILSVRC challenge.",
+      "We use here the pre-trained neural network which is provided by the Caffe open source package [CITATION].",
+      "Such an assumption can be reasonable because a small absolute value of inputs can sometimes be explained by the sum of positive inputs being close to the sum negative inputs, and noting that either the positive or the negative  [CITATION].",
+      "In conclusion, our choice \u03b2 = \u22121, yielding a ratio of 1:2 towards positive messages explains why the heatmaps for the method [CITATION]  It is known from [CITATION #b21] that lower layers of deep networks which are very similar to the one from [CITATION] used here may act like learned texture or gradient detectors."
+    ]
+  }
+]

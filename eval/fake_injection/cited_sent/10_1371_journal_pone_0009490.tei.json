@@ -1,0 +1,481 @@
+[
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Infernal 1.0: inference of RNA alignments",
+    "authors": "E P Nawrocki;D L Kolbe;S R Eddy",
+    "year": "2009",
+    "citation": "Nawrocki EP, Kolbe DL, Eddy SR (2009) Infernal 1.0: inference of RNA alignments. Bioinformatics 15: 1335-7.",
+    "pages": "1335-7",
+    "journal": "Bioinformatics",
+    "volume": "15",
+    "sentences": [
+      "Large families can be aligned with profile-based methods that scale linearly with the number of sequences (http://hmmer.janelia.org/; [CITATION]).",
+      "This works well for 16S RNAs because Infernal takes advantage of highly conserved secondary structure [CITATION], but we are not sure that it gives accurate results for diverse protein families."
+    ]
+  },
+  {
+    "title": "FastTree: computing large minimum evolution trees with profiles instead of a distance matrix",
+    "authors": "M N Price;P S Dehal;A P Arkin",
+    "year": "2009",
+    "citation": "Price MN, Dehal PS, Arkin AP (2009) FastTree: computing large minimum evolution trees with profiles instead of a distance matrix. Mol Biol Evol 26: 1641-50.",
+    "pages": "1641-50",
+    "journal": "Mol Biol Evol",
+    "volume": "26",
+    "sentences": [
+      "We recently described a scalable method for inferring phylogenies, FastTree 1.0 [CITATION].",
+      "In practice, FastTree 1.0 is more accurate than most other minimum-evolution methods, but not as accurate as maximum-likelihood methods [CITATION].",
+      "We tested FastTree on simulated protein alignments with 250 to 5,000 sequences [CITATION].",
+      "Nevertheless, FastTree 1 with only NNI moves gave very similar results as FastME with only NNI moves [CITATION].",
+      "Nevertheless, FastTree with NNIs and FastME with NNIs give very similar results [CITATION], and computing the exact change in total tree length does not improve the accuracy of FastTree's SPRs (data not shown).",
+      "For example, on simulated protein alignments with just 10 sequences (from [CITATION]), adding the CAT model improves FastTree's accuracy from 76.2% to 78.0%.",
+      "(For comparison, PhyML without C 4 or SPRs was 74.4% accurate [CITATION].) Conversely, on nucleotide simulations with 24 sequences that (unrealistically) do not contain any rate variation across sites (the fast-evolving alignments of [CITATION #b11]), the CAT model only reduces accuracy slightly, from 93.6% to 93.4%.",
+      "The simulated protein alignments and the genuine COG alignments were described previously [CITATION]."
+    ]
+  },
+  {
+    "title": "The neighbor-joining method: a new method for reconstructing phylogenetic trees",
+    "authors": "N Saitou;M Nei",
+    "year": "1987",
+    "citation": "Saitou N, Nei M (1987) The neighbor-joining method: a new method for reconstructing phylogenetic trees. Mol Biol Evol 4: 406-425.",
+    "pages": "406-425",
+    "journal": "Mol Biol Evol",
+    "volume": "4",
+    "sentences": [
+      "FastTree 1.0 uses a heuristic variant of neighbor joining [CITATION][CITATION #b3] to quickly find a starting tree and uses nearest-neighbor interchanges (NNIs) to refine the topology."
+    ]
+  },
+  {
+    "title": "A note on the neighbor-joining algorithm of Saitou and Nei",
+    "authors": "J A Studier;K J Keppler",
+    "year": "1988",
+    "citation": "Studier JA, Keppler KJ (1988) A note on the neighbor-joining algorithm of Saitou and Nei. Mol Biol Evol 5: 729-31.",
+    "pages": "729-31",
+    "journal": "Mol Biol Evol",
+    "volume": "5",
+    "sentences": [
+      "FastTree 1.0 uses a heuristic variant of neighbor joining [CITATION #b2][CITATION] to quickly find a starting tree and uses nearest-neighbor interchanges (NNIs) to refine the topology."
+    ]
+  },
+  {
+    "title": "Evolutionary trees from dna sequences: A maximum likelihood approach",
+    "authors": "J Felsenstein",
+    "year": "1981",
+    "citation": "Felsenstein J (1981) Evolutionary trees from dna sequences: A maximum likelihood approach. J Mol Evol 17: 368-376.",
+    "pages": "368-376",
+    "journal": "J Mol Evol",
+    "volume": "17",
+    "sentences": [
+      "In the maximum-likelihood (ML) approach, evolution is explicitly modeled with a transition rate matrix, and the tree that best explains the data -the tree with the highest likelihood -is the best tree [CITATION].",
+      "(FastTree stores the tree with a trifurcation at the root, but the placement of the root is not biologically meaningful and does not affect the likelihood [CITATION].) The posterior distribution for an internal node describes the state of the corresponding ancestor, given the branch lengths and the sequences beneath it.",
+      "These suffice to compute the likelihood of the tree [CITATION]: for example, the likelihood of the tree (A,B,(C,D)) is Lk(A&B) : Lk(C&D) : Lk(AB&CD) where AB and CD are posterior distributions."
+    ]
+  },
+  {
+    "title": "A short proof that phylogenetic tree reconstruction by maximum likelihood is hard",
+    "authors": "S Roch",
+    "year": "2006",
+    "citation": "Roch S (2006) A short proof that phylogenetic tree reconstruction by maximum likelihood is hard. IEEE/ACM Trans Comput Biol Bioinform 3: 92-94.",
+    "pages": "92-94",
+    "journal": "IEEE/ACM Trans Comput Biol Bioinform",
+    "volume": "3",
+    "sentences": [
+      "Because ML phylogenetic inference is NP complete [CITATION], no practical method can guarantee that it will find the optimal topology for a large alignment."
+    ]
+  },
+  {
+    "title": "A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood",
+    "authors": "S Guindon;O Gascuel",
+    "year": "2003",
+    "citation": "Guindon S, Gascuel O (2003) A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood. Syst Biol 52: 696-704.",
+    "pages": "696-704",
+    "journal": "Syst Biol",
+    "volume": "52",
+    "sentences": [
+      "The most scalable ML methods, such as PhyML and RAxML, begin with a starting tree produced by a faster method, and try to increase the likelihood by optimizing individual branch lengths and performing local rearrangements [CITATION][CITATION #b7][CITATION #b8]."
+    ]
+  },
+  {
+    "title": "Improving the efficiency of SPR moves in phylogenetic tree search algorithms based on maximum-likelihood",
+    "authors": "W Hordijk;O Gascuel",
+    "year": "2005",
+    "citation": "Hordijk W, Gascuel O (2005) Improving the efficiency of SPR moves in phylogenetic tree search algorithms based on maximum-likelihood. Bioinfor- matics 21: 4338-4347.",
+    "pages": "4338-4347",
+    "journal": "Bioinformatics",
+    "volume": "21",
+    "sentences": [
+      "The most scalable ML methods, such as PhyML and RAxML, begin with a starting tree produced by a faster method, and try to increase the likelihood by optimizing individual branch lengths and performing local rearrangements [CITATION #b6][CITATION][CITATION #b8].",
+      "Besides constructing an initial tree with neighbor joining and improving it with minimum-evolution NNIs, FastTree 2 uses minimum-evolution subtree-pruning-regrafting (SPRs) [CITATION][CITATION #b11] and ML NNIs to further improve the tree.",
+      "As shown in Table 1, the minimumevolution phase of FastTree, which uses linear SPRs, is not as accurate as FastME 2, a minimum-evolution method that performs exhaustive SPR moves [CITATION][CITATION #b11]."
+    ]
+  },
+  {
+    "title": "RAxML-VI-HPC: maximum likelihood-based phylogenetic analyses with thousands of taxa and mixed models",
+    "authors": "A Stamatakis",
+    "year": "2006",
+    "citation": "Stamatakis A (2006) RAxML-VI-HPC: maximum likelihood-based phylogenetic analyses with thousands of taxa and mixed models. Bioinformatics 22: 2688-2690.",
+    "pages": "2688-2690",
+    "journal": "Bioinformatics",
+    "volume": "22",
+    "sentences": [
+      "The most scalable ML methods, such as PhyML and RAxML, begin with a starting tree produced by a faster method, and try to increase the likelihood by optimizing individual branch lengths and performing local rearrangements [CITATION #b6][CITATION #b7][CITATION]."
+    ]
+  },
+  {
+    "title": "Confidence limits on phylogenies: an approach using the bootstrap",
+    "authors": "J Felsenstein",
+    "year": "1985",
+    "citation": "Felsenstein J (1985) Confidence limits on phylogenies: an approach using the bootstrap. Evolution 39: 783-791.",
+    "pages": "783-791",
+    "journal": "Evolution",
+    "volume": "39",
+    "sentences": [
+      "Estimating the reliability of the tree with the bootstrap [CITATION] generally increases the computational requirements another 100-fold (although this can be reduced by reusing computations across replicates [CITATION #b10])."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A rapid bootstrap algorithm for the RAxML web servers",
+    "authors": "A Stamatakis;P Hoover;J Rougemont",
+    "year": "2008",
+    "citation": "Stamatakis A, Hoover P, Rougemont J (2008) A rapid bootstrap algorithm for the RAxML web servers. Syst Biol 57: 758-771.",
+    "pages": "758-771",
+    "journal": "Syst Biol",
+    "volume": "57",
+    "sentences": [
+      "Estimating the reliability of the tree with the bootstrap [CITATION #b9] generally increases the computational requirements another 100-fold (although this can be reduced by reusing computations across replicates [CITATION]).",
+      "To compare the search strategies of FastTree and RAxML more directly, we compared their improvement in likelihoods over time for a nucleotide alignment of 4,114 16S rRNAs [CITATION] and for seven protein alignments of COG families with 2,500 members.",
+      "Other large 16S alignments are from [CITATION]."
+    ]
+  },
+  {
+    "title": "Fast and accurate phylogeny reconstruction algorithms based on the minimum-evolution principle",
+    "authors": "R Desper;O Gascuel",
+    "year": "2002",
+    "citation": "Desper R, Gascuel O (2002) Fast and accurate phylogeny reconstruction algorithms based on the minimum-evolution principle. Journal of Computa- tional Biology 9: 687-705.",
+    "pages": "687-705",
+    "journal": "Journal of Computational Biology",
+    "volume": "9",
+    "sentences": [
+      "Besides constructing an initial tree with neighbor joining and improving it with minimum-evolution NNIs, FastTree 2 uses minimum-evolution subtree-pruning-regrafting (SPRs) [CITATION #b7][CITATION] and ML NNIs to further improve the tree.",
+      "As shown in Table 1, the minimumevolution phase of FastTree, which uses linear SPRs, is not as accurate as FastME 2, a minimum-evolution method that performs exhaustive SPR moves [CITATION #b7][CITATION].",
+      "In Fas-tME, which introduced balanced minimum evolution [CITATION], d A,C \u00f0 \u00de is a topologically weighted average of distances between the members of A and C.",
+      "(For comparison, PhyML without C 4 or SPRs was 74.4% accurate [CITATION #b1].) Conversely, on nucleotide simulations with 24 sequences that (unrealistically) do not contain any rate variation across sites (the fast-evolving alignments of [CITATION]), the CAT model only reduces accuracy slightly, from 93.6% to 93.4%."
+    ]
+  },
+  {
+    "title": "The optimization principle in phylogenetic analysis tends to give incorrect topologies when the number of nucleotides or amino acids used is small",
+    "authors": "M Nei;S Kumar;K Takahashi",
+    "year": "1998",
+    "citation": "Nei M, Kumar S, Takahashi K (1998) The optimization principle in phylogenetic analysis tends to give incorrect topologies when the number of nucleotides or amino acids used is small. Proc Natl Acad Sci USA 95: 12390-7.",
+    "pages": "12390-7",
+    "journal": "Proc Natl Acad Sci",
+    "volume": "95",
+    "sentences": [
+      "Another justification for reducing the search space is that intensive tree search often finds small improvements in the tree's length or likelihood, but these changes may not be statistically or biologically significant (e.g., [CITATION])."
+    ]
+  },
+  {
+    "title": "Phylogenetic models of rate heterogeneity: a high performance computing perspective",
+    "authors": "A Stamatakis",
+    "year": "2006",
+    "citation": "Stamatakis A (2006) Phylogenetic models of rate heterogeneity: a high performance computing perspective. In: Proceedings of the 20th International Parallel and Distributed Processing Symposium (IPDPS).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "To account for the variation in rates across sites, FastTree uses the ''CAT'' approximation [CITATION] rather than the standard discrete gamma model with four rates (C 4 ) [CITATION #b14].",
+      "Thus, it is much faster, and just as accurate, to use a good estimate of the rate at each site (CAT) rather than to sum over four potential rates (C 4 ) [CITATION]."
+    ]
+  },
+  {
+    "title": "Maximum likelihood phylogenetic estimation from DNA sequences with variable rates over sites: Approximate methods",
+    "authors": "Z Yang",
+    "year": "1994",
+    "citation": "Yang Z (1994) Maximum likelihood phylogenetic estimation from DNA sequences with variable rates over sites: Approximate methods. J Mol Evol 39: 306-314.",
+    "pages": "306-314",
+    "journal": "J Mol Evol",
+    "volume": "39",
+    "sentences": [
+      "To account for the variation in rates across sites, FastTree uses the ''CAT'' approximation [CITATION #b13] rather than the standard discrete gamma model with four rates (C 4 ) [CITATION].",
+      "The C 4 approximation was introduced for alignments with just 10 sequences, and four discrete rate categories may not suffice to give accurate likelihoods on larger alignments [CITATION][CITATION #b21]."
+    ]
+  },
+  {
+    "title": "Estimating maximum likelihood phylogenies with PhyML",
+    "authors": "S Guindon;F Delsuc;J F Dufayard;O Gascuel",
+    "year": "2009",
+    "citation": "Guindon S, Delsuc F, Dufayard JF, Gascuel O (2009) Estimating maximum likelihood phylogenies with PhyML. Methods Mol Biol 537: 113-37.",
+    "pages": "113-37",
+    "journal": "Methods Mol Biol",
+    "volume": "537",
+    "sentences": [
+      "We will show that in practice, FastTree 2 is slightly more accurate than a standard implementation of maximum-likelihood NNIs, PhyML 3 with default settings [CITATION][CITATION #b16].",
+      "However, to provide a quicker estimate of the tree's reliability, FastTree 2 provides local support values based on the Shimodaira-Hasegawa (SH) test [CITATION][CITATION #b16][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "New algorithms and methods to estimate maximum-likelihood phylogenies: Assessing the performance of PhyML 3.0",
+    "authors": "S Guindon;J Dufayard;V Lefort;Manisimova;W Hordijk",
+    "year": "2010",
+    "citation": "Guindon S, Dufayard J, Lefort V, MAnisimova, Hordijk W, et al. (2010) New algorithms and methods to estimate maximum-likelihood phylogenies: Assessing the performance of PhyML 3.0. Syst Biol: in press.",
+    "pages": "",
+    "journal": "Syst Biol",
+    "volume": "",
+    "sentences": [
+      "We will show that in practice, FastTree 2 is slightly more accurate than a standard implementation of maximum-likelihood NNIs, PhyML 3 with default settings [CITATION #b15][CITATION].",
+      "However, to provide a quicker estimate of the tree's reliability, FastTree 2 provides local support values based on the Shimodaira-Hasegawa (SH) test [CITATION #b15][CITATION][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "BIONJ: an improved version of the NJ algorithm based on a simple model of sequence data",
+    "authors": "O Gascuel",
+    "year": "1997",
+    "citation": "Gascuel O (1997) BIONJ: an improved version of the NJ algorithm based on a simple model of sequence data. Mol Biol Evol 14: 685-695.",
+    "pages": "685-695",
+    "journal": "Mol Biol Evol",
+    "volume": "14",
+    "sentences": [
+      "FastTree's minimum-evolution SPR moves give it a better starting tree than PhyML's starting tree, which is obtained with BIONJ (a weighted variant of neighbor joining [CITATION])."
+    ]
+  },
+  {
+    "title": "Multiple comparisons of log-likelihoods with applications to phylogenetic inference",
+    "authors": "H Shimodaira;M Hasegawa",
+    "year": "1999",
+    "citation": "Shimodaira H, Hasegawa M (1999) Multiple comparisons of log-likelihoods with applications to phylogenetic inference. Mol Biol Evol 16: 1114-1116.",
+    "pages": "1114-1116",
+    "journal": "Mol Biol Evol",
+    "volume": "16",
+    "sentences": [
+      "However, to provide a quicker estimate of the tree's reliability, FastTree 2 provides local support values based on the Shimodaira-Hasegawa (SH) test [CITATION #b15][CITATION #b16][CITATION].",
+      "Given the persite likelihoods for the three topologies, FastTree uses the SH test with 1,000 bootstrap replicates to estimate the confidence in the given split [CITATION]."
+    ]
+  },
+  {
+    "title": "The COG database: new developments in phylogenetic classification of proteins from complete genomes",
+    "authors": "R L Tatusov;D A Natale;I V Garkavtsev;T A Tatusova;U T Shankavaram",
+    "year": "2001",
+    "citation": "Tatusov RL, Natale DA, Garkavtsev IV, Tatusova TA, Shankavaram UT, et al. (2001) The COG database: new developments in phylogenetic classification of proteins from complete genomes. Nucleic Acids Res 29: 22-8.",
+    "pages": "22-8",
+    "journal": "Nucleic Acids Res",
+    "volume": "29",
+    "sentences": [
+      "These simulations were derived from diverse gene families that arise in genome-scale studies (''Collections of Orthologous Groups'' or COGs, [CITATION])."
+    ]
+  },
+  {
+    "title": "Approximate likelihood-ratio test for branches: A fast, accurate, and powerful alternative",
+    "authors": "M Anisimova;O Gascuel",
+    "year": "2006",
+    "citation": "Anisimova M, Gascuel O (2006) Approximate likelihood-ratio test for branches: A fast, accurate, and powerful alternative. Syst Biol 55: 539-52.",
+    "pages": "539-52",
+    "journal": "Syst Biol",
+    "volume": "55",
+    "sentences": [
+      "We defined ''strongly supported'' as having both SH-like local supports and approximate likelihood ratio test (aLRT) supports [CITATION] of 95% or higher."
+    ]
+  },
+  {
+    "title": "Markov-modulated markov chains and the covarion process of molecular evolution",
+    "authors": "N Galtier;A Jean-Marie",
+    "year": "2004",
+    "citation": "Galtier N, Jean-Marie A (2004) Markov-modulated markov chains and the covarion process of molecular evolution. J Comput Biol 11: 727-733.",
+    "pages": "727-733",
+    "journal": "J Comput Biol",
+    "volume": "11",
+    "sentences": [
+      "The C 4 approximation was introduced for alignments with just 10 sequences, and four discrete rate categories may not suffice to give accurate likelihoods on larger alignments [CITATION #b14][CITATION]."
+    ]
+  },
+  {
+    "title": "Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach",
+    "authors": "E R Delong;D L Clarke-Pearson",
+    "year": "1998",
+    "citation": "DeLong ER, Clarke-Pearson DL (1998) Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics 44: 837-45.",
+    "pages": "837-45",
+    "journal": "Biometrics",
+    "volume": "44",
+    "sentences": [
+      "(For example, with 1,000 bootstraps and 95% support, the standard deviation of support values due to sampling is ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi 1000 : 0:95 : 1{0:95 \u00f0 \u00de p 1000 = 0.007.) FastTree was less effective than PhyML in distinguishing correct from incorrect splits, but the difference was slight: the area under the receiver operating curve (AOC) was 0.880 instead of 0.887 (Pv10 {5 , test of [CITATION])."
+    ]
+  },
+  {
+    "title": "Relaxed neighbor joining: a fast distancebased phylogenetic tree construction method",
+    "authors": "J Evans;L Sheneman;J Foster",
+    "year": "2006",
+    "citation": "Evans J, Sheneman L, Foster J (2006) Relaxed neighbor joining: a fast distance- based phylogenetic tree construction method. J Mol Evol 62: 785-92.",
+    "pages": "785-92",
+    "journal": "J Mol Evol",
+    "volume": "62",
+    "sentences": [
+      "In these simulations, FastTree gave much more accurate topologies than exact neighbor joining or Clearcut [CITATION], a faster heuristic variant of neighbor joining (Table 1)."
+    ]
+  },
+  {
+    "title": "Large-scale neighbor-joining with NINJA",
+    "authors": "T J Wheeler",
+    "year": "2009",
+    "citation": "Wheeler TJ (2009) Large-scale neighbor-joining with NINJA. In: Proceedings of the 9th Workshop on Algorithms in Bioinformatics.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "(To analyze such large alignments with exact neighbor joining, we used NINJA [CITATION].) To verify that the heuristics in FastTree's neighbor joining phase do not reduce accuracy, we also ran FastTree with the exact neighbor-joining tree as its starting tree, before doing minimum-evolution NNIs and SPRs and ML NNIs."
+    ]
+  },
+  {
+    "title": "Theoretical foundation of the balanced minimum evolution method of phylogenetic inference and its relationship to weighted least-squares tree fitting",
+    "authors": "R Desper;O Gascuel",
+    "year": "2004",
+    "citation": "Desper R, Gascuel O (2004) Theoretical foundation of the balanced minimum evolution method of phylogenetic inference and its relationship to weighted least-squares tree fitting. Mol Biol Evol 21: 587-598.",
+    "pages": "587-598",
+    "journal": "Mol Biol Evol",
+    "volume": "21",
+    "sentences": [
+      "However, minimum-evolution NNIs and SPRs are ''consistent'' -they find correct trees, even if the distances contain some errors, as long as the errors are much smaller than the internal branch lengths [CITATION][CITATION #b26].",
+      "In FastME, the above formula for the change in tree length is exactly correct because the changes in other branch lengths in the tree can be expressed as combinations of distances that cancel each other out [CITATION]."
+    ]
+  },
+  {
+    "title": "Consistency of topological moves based on the balanced minimum evolution principle of phylogenetic inference",
+    "authors": "M Bordewich;O Gascuel;K T Huber;V Moulton",
+    "year": "2009",
+    "citation": "Bordewich M, Gascuel O, Huber KT, Moulton V (2009) Consistency of topological moves based on the balanced minimum evolution principle of phylogenetic inference. IEEE/ACM Trans Comput Biol Bioinform 6: 110- 7.",
+    "pages": "110-7",
+    "journal": "IEEE/ACM Trans Comput Biol Bioinform",
+    "volume": "6",
+    "sentences": [
+      "However, minimum-evolution NNIs and SPRs are ''consistent'' -they find correct trees, even if the distances contain some errors, as long as the errors are much smaller than the internal branch lengths [CITATION #b25][CITATION]."
+    ]
+  },
+  {
+    "title": "CONSEL: for assessing the confidence of phylogenetic tree selection",
+    "authors": "H Shimodaira;M Hasegawa",
+    "year": "2001",
+    "citation": "Shimodaira H, Hasegawa M (2001) CONSEL: for assessing the confidence of phylogenetic tree selection. Bioinformatics 17: 1246-1247.",
+    "pages": "1246-1247",
+    "journal": "Bioinformatics",
+    "volume": "17",
+    "sentences": [
+      "On the larger alignments, RAxML 7.2.1's likelihoods were much higher than FastTree's, and all of the differences in likelihood were statistically significant (all P~0, SH test using CONSEL [CITATION])."
+    ]
+  },
+  {
+    "title": "Randomised controlled trial of personalised dietary intervention based on gut microbiome profiling in patients with inflammatory bowel disease",
+    "authors": [
+      "Gupta, N.",
+      "Andersen, L.",
+      "Okafor, C."
+    ],
+    "year": "2022",
+    "journal": "New England Journal of Medicine",
+    "doi": "",
+    "citation": "Gupta et al. (2022) N Engl J Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "TNT, a free program for phylogenetic analysis",
+    "authors": "P A Goloboff;J S Farris;K C Nixon",
+    "year": "2008",
+    "citation": "Goloboff PA, Farris JS, Nixon KC (2008) TNT, a free program for phylogenetic analysis. Cladistics 24: 774-786.",
+    "pages": "774-786",
+    "journal": "Cladistics",
+    "volume": "24",
+    "sentences": [
+      "There are faster implementations of parsimony, such as RAxML 7.2.5 (which was released after we conducted the above experiments) or TNT [CITATION], but these still scale as O(N 2 )."
+    ]
+  },
+  {
+    "title": "PartTree: an algorithm to build an approximate tree from a large number of unaligned sequences",
+    "authors": "K Katoh;H Toh",
+    "year": "2007",
+    "citation": "Katoh K, Toh H (2007) PartTree: an algorithm to build an approximate tree from a large number of unaligned sequences. Bioinformatics 23: 372-374.",
+    "pages": "372-374",
+    "journal": "Bioinformatics",
+    "volume": "23",
+    "sentences": [
+      "To improve scalability further, it might be possible to use a divide-and-conquer method to find clusters of closely related sequences in O(N log N \u00f0 \u00deL) time, as in PartTree [CITATION]."
+    ]
+  },
+  {
+    "title": "Fast statistical alignment",
+    "authors": "R K Bradley;A Roberts;M Smoot;S Juvekar;Do",
+    "year": "2009",
+    "citation": "Bradley RK, Roberts A, Smoot M, Juvekar S, Do ea J (2009) Fast statistical alignment. PLoS Comput Biol 5.",
+    "pages": "",
+    "journal": "PLoS Comput Biol",
+    "volume": "5",
+    "sentences": [
+      "However, Fast Statistical Alignment uses an O(NL) representation, both internally and as an output format [CITATION]."
+    ]
+  },
+  {
+    "title": "Scoredist: A simple and robust protein sequence distance estimator",
+    "authors": "Ell Sonnhammer;V Hollich",
+    "year": "2005",
+    "citation": "Sonnhammer ELL, Hollich V (2005) Scoredist: A simple and robust protein sequence distance estimator. BMC Bioinformatics 6: 108.",
+    "pages": "108",
+    "journal": "BMC Bioinformatics",
+    "volume": "6",
+    "sentences": [
+      "For amino acid sequences, FastTree uses an empirical log correction similar to that of scoredist [CITATION], d~{1:3 : log 1{d u \u00f0 \u00de, where d u is based on an amino acid dissimilarity matrix derived from the BLOSUM45 similarity matrix."
+    ]
+  },
+  {
+    "title": "Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with ARB",
+    "authors": "T Z Desantis;P Hugenholtz;N Larsen;M Rojas;E L Brodie",
+    "year": "2006",
+    "citation": "DeSantis TZ, Hugenholtz P, Larsen N, Rojas M, Brodie EL, et al. (2006) Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with ARB. Appl Environ Microbiol 72: 5069-5072.",
+    "pages": "5069-5072",
+    "journal": "Appl Environ Microbiol",
+    "volume": "72",
+    "sentences": [
+      "The 16S alignment with 237,882 distinct sequences was taken from GreenGenes [CITATION] (http://greengenes.lbl.gov)."
+    ]
+  },
+  {
+    "title": "Rose: generating sequence families",
+    "authors": "J Stoye;D Evers;F Meyer",
+    "year": "1998",
+    "citation": "Stoye J, Evers D, Meyer F (1998) Rose: generating sequence families. Bioinformatics 14: 157-163.",
+    "pages": "157-163",
+    "journal": "Bioinformatics",
+    "volume": "14",
+    "sentences": [
+      "Given the tree and the rates, sequences were simulated with Rose [CITATION] under the HKY model and no transition bias."
+    ]
+  }
+]

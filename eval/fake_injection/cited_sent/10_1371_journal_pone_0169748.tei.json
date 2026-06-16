@@ -1,0 +1,925 @@
+[
+  {
+    "title": "Global soil organic carbon assessment. Global Food Security",
+    "authors": "U Stockmann;J Padarian;A Mcbratney;B Minasny;D De Brogniez;L Montanarella",
+    "year": "2015",
+    "citation": "Stockmann U, Padarian J, McBratney A, Minasny B, de Brogniez D, Montanarella L, et al. Global soil organic carbon assessment. Global Food Security. 2015; 6:9-16. http://dx.doi.org/10.1016/j.gfs.2015. 07.001.",
+    "pages": "9-16",
+    "journal": "",
+    "volume": "6",
+    "sentences": [
+      "Improvements can be attributed to: (1) the use of machine learning instead of linear regression, [CITATION] to considerable investments in preparing finer resolution covariate layers and (3) to insertion of additional soil profiles.",
+      "Stockmann et al. [CITATION] recently made progress in modeling global soil organic carbon dynamics, mainly using time-series of MODIS land cover images, but numerous challenges remain:"
+    ]
+  },
+  {
+    "title": "Plant response to the soil environment: An analytical model integrating yield, water, soil type, and salinity. Water resources research",
+    "authors": "U Shani;A Ben-Gal;E Tripler;L M Dudley",
+    "year": "2007",
+    "citation": "Shani U, Ben-Gal A, Tripler E, Dudley LM. Plant response to the soil environment: An analytical model integrating yield, water, soil type, and salinity. Water resources research. 2007; 43(8). doi: 10.1029/ 2006WR005313",
+    "pages": "",
+    "journal": "",
+    "volume": "43",
+    "sentences": [
+      "There is a growing demand for detailed soil information, especially for global estimation of soil organic carbon [1-3] and for modeling agricultural productivity [CITATION][CITATION #b5]."
+    ]
+  },
+  {
+    "title": "Land health surveillance and response: A framework for evidence-informed land management",
+    "authors": "K D Shepherd;G Shepherd;M G Walsh",
+    "year": "2015",
+    "citation": "Shepherd KD, Shepherd G, Walsh MG. Land health surveillance and response: A framework for evi- dence-informed land management. Agricultural Systems. 2015; 132:93-106. doi: 10.1016/j.agsy.2014. 09.002",
+    "pages": "93-106",
+    "journal": "Agricultural Systems",
+    "volume": "132",
+    "sentences": [
+      "There is a growing demand for detailed soil information, especially for global estimation of soil organic carbon [1-3] and for modeling agricultural productivity [CITATION #b4][CITATION]."
+    ]
+  },
+  {
+    "title": "Sensitivity of crop model predictions to entire meteorological and soil input datasets highlights vulnerability to drought. Environmental Modelling & Software",
+    "authors": "M Pogson;A Hastings;P Smith",
+    "year": "2012",
+    "citation": "Pogson M, Hastings A, Smith P. Sensitivity of crop model predictions to entire meteorological and soil input datasets highlights vulnerability to drought. Environmental Modelling & Software. 2012; 29(1):37- 43. doi: 10.1016/j.envsoft.2011.10.008",
+    "pages": "37-43",
+    "journal": "",
+    "volume": "29",
+    "sentences": [
+      "Spatial information about soil water parameters is likely to become increasingly critical in areas affected by climate change [CITATION]."
+    ]
+  },
+  {
+    "title": "Global governance of soil resources as a necessary condition for sustainable development. Current Opinion in Environmental Sustainability",
+    "authors": "L Montanarella;R Vargas",
+    "year": "2012",
+    "citation": "Montanarella L, Vargas R. Global governance of soil resources as a necessary condition for sustainable development. Current Opinion in Environmental Sustainability. 2012; 4(5):559-564. doi: 10.1016/j. cosust.2012.06.007",
+    "pages": "559-564",
+    "journal": "",
+    "volume": "4",
+    "sentences": [
+      "Soils and soil information are also particularly relevant for the Sustainable Development goal target 15.3 of achieving Land Degradation Neutrality (LDN), as specified by the United Nations Convention to Combat Desertification (UNCCD; http://www.unccd.int), and are one of the main areas of interest of the FAO's Global Soil Partnership initiative [CITATION]."
+    ]
+  },
+  {
+    "title": "Uncertainty in soil data can outweigh climate impact signals in global crop yield simulations",
+    "authors": "C Folberth;\u00b4r Skalsky;E Moltchanova;J Balkovi\u010d;L B Azevedo;M Obersteiner",
+    "year": "2016",
+    "citation": "Folberth C, Skalsky \u00b4R, Moltchanova E, Balkovi\u010d J, Azevedo LB, Obersteiner M, et al. Uncertainty in soil data can outweigh climate impact signals in global crop yield simulations. Nature Communications. 2016; 7. doi: 10.1038/ncomms11872",
+    "pages": "",
+    "journal": "Nature Communications",
+    "volume": "7",
+    "sentences": [
+      "Folberth et al. [CITATION] have recently discovered that accurate soil information might be the key to predicting either buffering or amplifying impacts of climate change on food production.",
+      "Future work is required to determine if these improvements in accuracy could also help produce more accurate Global Gridded Crop Models (GGCMs) that allow for more reliable estimates of impact of climate change and land degradation on food production [CITATION]."
+    ]
+  },
+  {
+    "title": "SoilGrids1km -Global Soil Information Based on Automated Mapping",
+    "authors": "T Hengl;J Mendes De Jesus;R A Macmillan;N H Batjes;Gbm Heuvelink;E Ribeiro",
+    "year": "2014",
+    "citation": "Hengl T, Mendes de Jesus J, MacMillan RA, Batjes NH, Heuvelink GBM, Ribeiro E, et al. SoilGrids1km -Global Soil Information Based on Automated Mapping. PLoS ONE. 2014; 9(e105992). doi: 10.1371/ journal.pone.0105992 PMID: 25171179",
+    "pages": "",
+    "journal": "PLoS ONE",
+    "volume": "9",
+    "sentences": [
+      "The first version of SoilGrids (predictions at 1 km spatial resolution released in 2014), was, at the time, a 'proof of concept' demonstrating that global compilations of soil profiles can be used in an automated framework to produce complete and consistent spatial predictions of soil properties and classes [CITATION].",
+      "SoilGrids provides predictions for the following list of standard soil properties and classes [CITATION]:",
+      "Based on predictions of soil organic carbon content, bulk density, and coarse fragments, we also derived soil organic carbon stock (tha \u22121 ) for the six GlobalSoilMap standard depth intervals following the standard approach [CITATION][CITATION #b18]."
+    ]
+  },
+  {
+    "title": "National versus global modelling the 3D distribution of soil organic carbon in mainland France",
+    "authors": "V Mulder;M Lacoste;A Richer-De Forges;M Martin;D Arrouays",
+    "year": "2016",
+    "citation": "Mulder V, Lacoste M, Richer-de Forges A, Martin M, Arrouays D. National versus global modelling the 3D distribution of soil organic carbon in mainland France. Geoderma. 2016; 263:16-34. doi: 10.1016/j. geoderma.2015.08.035",
+    "pages": "16-34",
+    "journal": "Geoderma",
+    "volume": "263",
+    "sentences": [
+      "Mulder et al. [CITATION] observed, using more detailed soil profile data and maps, that SoilGrids likely overestimated all low values for organic carbon content in France.",
+      "Mulder et al. [CITATION] correctly recognized that, in many areas in the world, locally produced predictions of soil properties could likely be significantly more accurate than SoilGrids."
+    ]
+  },
+  {
+    "title": "Mapping and validating predictions of soil bacterial biodiversity using European and national scale datasets",
+    "authors": "R I Griffiths;B C Thomson;P Plassart;H S Gweon;D Stone;R E Creamer",
+    "year": "2016",
+    "citation": "Griffiths RI, Thomson BC, Plassart P, Gweon HS, Stone D, Creamer RE, et al. Mapping and validating predictions of soil bacterial biodiversity using European and national scale datasets. Applied Soil Ecol- ogy. 2016; 97:61-68. doi: 10.1016/j.apsoil.2015.06.018",
+    "pages": "61-68",
+    "journal": "Applied Soil Ecology",
+    "volume": "97",
+    "sentences": [
+      "Likewise, Griffiths et al. [CITATION] reported underestimation of the pH in comparison to UK national data."
+    ]
+  },
+  {
+    "title": "Harmonized World Soil Database (version 1.2). Rome: FAO",
+    "authors": "Fao/Iiasa/Isric/Iss-Cas/ Jrc",
+    "year": "2012",
+    "citation": "FAO/IIASA/ISRIC/ISS-CAS/JRC. Harmonized World Soil Database (version 1.2). Rome: FAO; 2012.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "In addition, many of the artifacts visible in the Harmonized World Soil Database (HWSD) [CITATION], which was used as one of the covariates to produce the first version of SoilGrids, e.g. country borders, were propagated to SoilGrids1km."
+    ]
+  },
+  {
+    "title": "Near-global freshwater-specific environmental variables for biodiversity analyses in 1 km resolution. Scientific data",
+    "authors": "S Domisch;G Amatulli;W Jetz",
+    "year": "2015",
+    "citation": "Domisch S, Amatulli G, Jetz W. Near-global freshwater-specific environmental variables for biodiversity analyses in 1 km resolution. Scientific data. 2015; 2. doi: 10.1038/sdata.2015.73 PMID: 26647296",
+    "pages": "",
+    "journal": "",
+    "volume": "2",
+    "sentences": [
+      "Some users have also expressed concerns that the first version of SoilGrids did not provide predictions for arid and desert areas and hence can be considered an incomplete product [CITATION]."
+    ]
+  },
+  {
+    "title": "Global land cover mapping at 30 m resolution: A POK-based operational approach",
+    "authors": "J Chen;J Chen;A Liao;X Cao;L Chen;X Chen",
+    "year": "2015",
+    "citation": "Chen J, Chen J, Liao A, Cao X, Chen L, Chen X, et al. Global land cover mapping at 30 m resolution: A POK-based operational approach. ISPRS Journal of Photogrammetry and Remote Sensing. 2015; 103:7-27. doi: 10.1016/j.isprsjprs.2014.09.002",
+    "pages": "7-27",
+    "journal": "ISPRS Journal of Photogrammetry and Remote Sensing",
+    "volume": "103",
+    "sentences": [
+      "\u2022 Land cover classes (cultivated land, forests, grasslands, shrublands, wetlands, tundra, artificial surfaces and bareland cover) for the year 2010 based on the GlobCover30 product by the National Geomatics Center of China [CITATION]."
+    ]
+  },
+  {
+    "title": "Chapter Three-GlobalSoilMap: Toward a Fine-Resolution Global Grid of Soil Properties",
+    "authors": "D Arrouays;M G Grundy;A E Hartemink;J W Hempel;Gbm Heuvelink;Young Hong;S",
+    "year": "2014",
+    "citation": "Arrouays D, Grundy MG, Hartemink AE, Hempel JW, Heuvelink GBM, Young Hong S, et al. Chapter Three-GlobalSoilMap: Toward a Fine-Resolution Global Grid of Soil Properties. In: Sparks DL, editor. Soil carbon. vol. 125 of Advances in Agronomy. Academic Press; 2014. p. 93-134.",
+    "publisher": "Academic Press",
+    "pages": "93-134",
+    "journal": "",
+    "volume": "125",
+    "sentences": [
+      "We generated predictions at seven standard depths for all numeric soil properties (except for depth to bedrock and soil organic carbon stock): 0 cm, 5 cm, 15 cm, 30 cm, 60 cm, 100 cm and 200 cm, following the vertical discretisation as specified in the GlobalSoilMap specifications [CITATION]."
+    ]
+  },
+  {
+    "title": "Total carbon, organic carbon, and organic matter",
+    "authors": "D W Nelson;L E Sommers",
+    "year": "1982",
+    "citation": "Nelson DW, Sommers LE. Total carbon, organic carbon, and organic matter. In: Page AL, Miller RH, Keeney DR, editors. Methods of soil analysis, Part 2. 2nd ed. Agron. Monogr. 9. Madison, WI: ASA and SSSA; 1982. p. 539-579.",
+    "pages": "539-579",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Based on predictions of soil organic carbon content, bulk density, and coarse fragments, we also derived soil organic carbon stock (tha \u22121 ) for the six GlobalSoilMap standard depth intervals following the standard approach [CITATION #b9][CITATION]."
+    ]
+  },
+  {
+    "title": "Mapping the global depth to bedrock for land surface modeling",
+    "authors": "W Shangguan;T Hengl;J M De Jesus;H Yuan;Y Dai",
+    "year": "2016",
+    "citation": "Shangguan W, Hengl T, de Jesus JM, Yuan H, Dai Y. Mapping the global depth to bedrock for land sur- face modeling. Journal of Advances in Modeling Earth Systems. 2016; p. n/a-n/a.",
+    "pages": "",
+    "journal": "Journal of Advances in Modeling Earth Systems",
+    "volume": "",
+    "sentences": [
+      "Model fitting and spatial prediction of soil depth to bedrock variables is explained in detail in Shangguan et al. [CITATION].",
+      "To the initial mask map estimated using MODIS MIR band and slope map, we also added bare rock areas from more detailed maps available for some countries, such as Iceland and northern Europe [CITATION]."
+    ]
+  },
+  {
+    "title": "Guidelines for soil profile description",
+    "authors": "Fao",
+    "year": "2006",
+    "citation": "FAO. Guidelines for soil profile description. 4th ed. Rome: Food and Agriculture Organization of the United Nations; 2006.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "We set the reference soil surface at the air/soil boundary, as per FAO [CITATION], hence all soil material is included."
+    ]
+  },
+  {
+    "title": "A Handbook of Soil Terminology, Correlation and Classification",
+    "authors": "P Krasilnikov;Jji Marti;R Arnold;S Shoba",
+    "year": "2009",
+    "citation": "Krasilnikov P, Marti JJI, Arnold R, Shoba S, editors. A Handbook of Soil Terminology, Correlation and Classification. Earthscan LLC; 2009.",
+    "publisher": "Earthscan LLC",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For translation we used published correlation tables either reported in Krasilnikov et al. [CITATION] or reported on the agency websites; see e.g. correlation of Canadian Soil Taxonomy published (http://sis.agr.gc.ca/cansis/taxa/) and correlation of the Brazilian classification system (http:// www.pedologiafacil.com.br/classificacao.php)."
+    ]
+  },
+  {
+    "title": "Soil Properties of the Kelso Sand Dunes in the Mojave Desert. The Southwestern Naturalist",
+    "authors": "S A Lei",
+    "year": "1998",
+    "citation": "Lei SA. Soil Properties of the Kelso Sand Dunes in the Mojave Desert. The Southwestern Naturalist. 1998; 43(1):47-52.",
+    "pages": "47-52",
+    "journal": "",
+    "volume": "43",
+    "sentences": [
+      "For example, Lei [CITATION] has shown that sand dunes in the Mojave desert have an average pH of 8.1, 98% sand and 0% organic carbon."
+    ]
+  },
+  {
+    "title": "The GLIMS geospatial glacier database: a new tool for studying glacier change. Global and Planetary Change",
+    "authors": "B Raup;A Racoviteanu;Sjs Khalsa;C Helm;R Armstrong;Y Arnaud",
+    "year": "2007",
+    "citation": "Raup B, Racoviteanu A, Khalsa SJS, Helm C, Armstrong R, Arnaud Y. The GLIMS geospatial glacier database: a new tool for studying glacier change. Global and Planetary Change. 2007; 56(1):101-110. doi: 10.1016/j.gloplacha.2006.07.018",
+    "pages": "101-110",
+    "journal": "",
+    "volume": "56",
+    "sentences": [
+      "\u2022 Glaciers mask-To represent global distribution of glaciers we used the GLIMS Geospatial Glacier Database [CITATION]."
+    ]
+  },
+  {
+    "title": "Biophysical land suitability for oil palm in Kalimantan, Indonesia. ISRIC Report 2007/01. ISRIC-World Soil Information",
+    "authors": "S Mantel;H Wo \u00a8sten;J Verhagen",
+    "year": "2007",
+    "citation": "Mantel S, Wo \u00a8sten H, Verhagen J, et al. Biophysical land suitability for oil palm in Kalimantan, Indonesia. ISRIC Report 2007/01. ISRIC-World Soil Information; 2007.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For model training for predicting soil classes we also used pseudo-observations generated from the best available soil polygon maps: for poorly accessible tropical forest areas, such as Indonesia, we used the Land information system of Kalimantan [CITATION], and for northern latitudes, i.e. to represent permafrost soils, the Northern Circumpolar Soil Carbon Database was used [CITATION #b26]."
+    ]
+  },
+  {
+    "title": "The Northern Circumpolar Soil Carbon Database: spatially distributed datasets of soil coverage and soil carbon storage in the northern permafrost regions",
+    "authors": "G Hugelius;C Tarnocai;G Broll;J G Canadell;P Kuhry;D K Swanson",
+    "year": "2013",
+    "citation": "Hugelius G, Tarnocai C, Broll G, Canadell JG, Kuhry P, Swanson DK. The Northern Circumpolar Soil Carbon Database: spatially distributed datasets of soil coverage and soil carbon storage in the northern permafrost regions. Earth System Science Data. 2013; 5(1):3-13.",
+    "pages": "3-13",
+    "journal": "Earth System Science Data",
+    "volume": "5",
+    "sentences": [
+      "For model training for predicting soil classes we also used pseudo-observations generated from the best available soil polygon maps: for poorly accessible tropical forest areas, such as Indonesia, we used the Land information system of Kalimantan [CITATION #b25], and for northern latitudes, i.e. to represent permafrost soils, the Northern Circumpolar Soil Carbon Database was used [CITATION]."
+    ]
+  },
+  {
+    "title": "Global multi-resolution terrain elevation data 2010 (GMTED2010)",
+    "authors": "J J Danielson;D B Gesch",
+    "year": "2011",
+    "citation": "Danielson JJ, Gesch DB. Global multi-resolution terrain elevation data 2010 (GMTED2010). Open-File Report 2011-1073. U.S. Geological Survey; 2011.",
+    "pages": "2011-1073",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "\u2022 DEM-derived surfaces-slope, profile curvature, Multiresolution Index of Valley Bottom Flatness (VBF), deviation from Mean Value, valley depth, negative and positive Topographic Openness and SAGA Wetness Index-all based on the global merge of SRTMGL3 DEM and GMTED2010 [CITATION]."
+    ]
+  },
+  {
+    "title": "System for Automated Geoscientific Analyses (SAGA) v. 2.1.4. Geoscientific Model Development",
+    "authors": "O Conrad;B Bechtel;M Bock;H Dietrich;E Fischer;L Gerlitz",
+    "year": "2015",
+    "citation": "Conrad O, Bechtel B, Bock M, Dietrich H, Fischer E, Gerlitz L, et al. System for Automated Geoscientific Analyses (SAGA) v. 2.1.4. Geoscientific Model Development. 2015; 8(7):1991-2007. doi: 10.5194/ gmd-8-1991-2015",
+    "pages": "1991-2007",
+    "journal": "",
+    "volume": "8",
+    "sentences": [
+      "All DEM derivatives were computed using SAGA GIS [CITATION],",
+      "For processing the covariates we used a combination of Open Source GIS software, primarily SAGA GIS [CITATION], R packages raster [CITATION #b41], sp [CITATION #b42], GSIF and GDAL [CITATION #b43] for reprojecting, mosaicking and merging tiles."
+    ]
+  },
+  {
+    "title": "Terra and Aqua MODIS products available from NASA GES DAAC",
+    "authors": "A Savtchenko;D Ouzounov;S Ahmad;J Acker;G Leptoukh;J Koziana",
+    "year": "2004",
+    "citation": "Savtchenko A, Ouzounov D, Ahmad S, Acker J, Leptoukh G, Koziana J, et al. Terra and Aqua MODIS products available from NASA GES DAAC. Advances in Space Research. 2004; 34(4):710-714. doi: 10.1016/j.asr.2004.03.012",
+    "pages": "710-714",
+    "journal": "Advances in Space Research",
+    "volume": "34",
+    "sentences": [
+      "Derived using a stack of MOD13Q1 EVI images [CITATION],"
+    ]
+  },
+  {
+    "title": "The MODIS (collection V006) BRDF/albedo product MCD43D: temporal course evaluated over agricultural landscape. Remote Sensing of Environment",
+    "authors": "M Mira;M Weiss;F Baret;D Courault;O Hagolle;B Gallego-Elvira",
+    "year": "2015",
+    "citation": "Mira M, Weiss M, Baret F, Courault D, Hagolle O, Gallego-Elvira B, et al. The MODIS (collection V006) BRDF/albedo product MCD43D: temporal course evaluated over agricultural landscape. Remote Sens- ing of Environment. 2015; 170:216-228. doi: 10.1016/j.rse.2015.09.021",
+    "pages": "216-228",
+    "journal": "",
+    "volume": "170",
+    "sentences": [
+      "Derived using a stack of MCD43A4 images [CITATION],"
+    ]
+  },
+  {
+    "title": "MODIS land surface temperature products users' guide. ICESS",
+    "authors": "Z Wan",
+    "year": "2006",
+    "citation": "Wan Z. MODIS land surface temperature products users' guide. ICESS, University of California; 2006.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Derived using a stack of MOD11A2 LST images [CITATION],"
+    ]
+  },
+  {
+    "title": "Accuracy assessment of the MODIS snow products. Hydrological Processes",
+    "authors": "D K Hall;G A Riggs",
+    "year": "2007",
+    "citation": "Hall DK, Riggs GA. Accuracy assessment of the MODIS snow products. Hydrological Processes. 2007; 21(12):1534-1547.",
+    "pages": "1534-1547",
+    "journal": "",
+    "volume": "21",
+    "sentences": [
+      "\u2022 Long-term averaged mean monthly hours under snow cover based on a stack of MOD10A2 8-day snow occurrence images [CITATION],"
+    ]
+  },
+  {
+    "title": "A unified framework for causal inference in observational studies with time-varying confounding",
+    "authors": [
+      "Rashid, M.",
+      "Eriksson, H.",
+      "Owusu-Acheampong, D."
+    ],
+    "year": "2021",
+    "journal": "Biometrika",
+    "doi": "",
+    "citation": "Rashid et al. (2021) Biometrika.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Very high resolution interpolated climate surfaces for global land areas",
+    "authors": "R J Hijmans;S E Cameron;J L Parra;P G Jones;A Jarvis",
+    "year": "2005",
+    "citation": "Hijmans RJ, Cameron SE, Parra JL, Jones PG, Jarvis A. Very high resolution interpolated climate sur- faces for global land areas. International Journal of Climatology. 2005; 25:1965-1978. doi: 10.1002/joc. 1276",
+    "pages": "1965-1978",
+    "journal": "International Journal of Climatology",
+    "volume": "25",
+    "sentences": [
+      "\u2022 Monthly precipitation images derived as the weighted average between the WorldClim monthly precipitation [CITATION] and GPCP Version 2.2 [CITATION #b34],"
+    ]
+  },
+  {
+    "title": "GPCP version 2 combined precipitation data set documentation",
+    "authors": "G J Huffman;D T Bolvin",
+    "year": "2009",
+    "citation": "Huffman GJ, Bolvin DT. GPCP version 2 combined precipitation data set documentation. vol. 1. Labora- tory for Atmospheres, NASA Goddard Space Flight Center and Science Systems and Applications; 2009.",
+    "pages": "",
+    "journal": "",
+    "volume": "1",
+    "sentences": [
+      "\u2022 Monthly precipitation images derived as the weighted average between the WorldClim monthly precipitation [CITATION #b33] and GPCP Version 2.2 [CITATION],"
+    ]
+  },
+  {
+    "title": "The new global lithological map database GLiM: A representation of rock properties at the Earth surface. Geochemistry, Geophysics, Geosystems",
+    "authors": "J Hartmann;N Moosdorf",
+    "year": "2012",
+    "citation": "Hartmann J, Moosdorf N. The new global lithological map database GLiM: A representation of rock properties at the Earth surface. Geochemistry, Geophysics, Geosystems. 2012; 13(12):n/a-n/a. doi: 10.1029/2012GC004370",
+    "pages": "",
+    "journal": "",
+    "volume": "13",
+    "sentences": [
+      "Derived using a stack of MOD10A2 8-day snow occurrence images, \u2022 Lithologic units (acid plutonics, acid volcanic, basic plutonics, basic volcanics, carbonate sedimentary rocks, evaporite, ice and glaciers, intermediate plutonics, intermediate volcanics, metamorphics, mixed sedimentary rocks, pyroclastics, siliciclastic sedimentary rocks, unconsolidated sediment) based on Global Lithological Map GLiM [CITATION],",
+      "We have thus far used the Global Lithological Map (GLiM) [CITATION] as the key layer to represent parent material, but this layer is probably even coarser than 1 km resolution remote sensing covariates, and still contains numerous artifacts such as country/state borders."
+    ]
+  },
+  {
+    "title": "A new map of global ecological land units-an ecophysiographic stratification approach",
+    "authors": "R Sayre;J Dangermond;C Frye;R Vaughan;P Aniello;S Breyer",
+    "year": "2014",
+    "citation": "Sayre R, Dangermond J, Frye C, Vaughan R, Aniello P, Breyer S, et al. A new map of global ecological land units-an ecophysiographic stratification approach. Washington, DC: USGS / Association of American Geographers; 2014.",
+    "publisher": "USGS / Association of American Geographers",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "\u2022 Landform classes (breaks/foothills, flat plains, high mountains/deep canyons, hills, low hills, low mountains, smooth plains) based on the USGS's Map of Global Ecological Land Units [CITATION]."
+    ]
+  },
+  {
+    "title": "Global patterns of groundwater table depth",
+    "authors": "Y Fan;H Li;G Miguez-Macho",
+    "year": "2013",
+    "citation": "Fan Y, Li H, Miguez-Macho G. Global patterns of groundwater table depth. Science. 2013; 339 (6122):940-943. doi: 10.1126/science.1229881 PMID: 23430651",
+    "pages": "940-943",
+    "journal": "Science",
+    "volume": "339",
+    "sentences": [
+      "\u2022 Global Water Table Depth in meters; after Fan et al. [CITATION],"
+    ]
+  },
+  {
+    "title": "Status and distribution of mangrove forests of the world using earth observation satellite data",
+    "authors": "C Giri;E Ochieng;L L Tieszen;Z Zhu;A Singh;T Loveland",
+    "year": "2011",
+    "citation": "Giri C, Ochieng E, Tieszen LL, Zhu Z, Singh A, Loveland T, et al. Status and distribution of mangrove forests of the world using earth observation satellite data. Global Ecology and Biogeography. 2011; 20 (1):154-159. doi: 10.1111/j.1466-8238.2010.00584.x",
+    "pages": "154-159",
+    "journal": "Global Ecology and Biogeography",
+    "volume": "20",
+    "sentences": [
+      "\u2022 Landsat-based estimated distribution of Mangroves; after Giri et al. [CITATION],"
+    ]
+  },
+  {
+    "title": "A gridded global data set of soil, immobile regolith, and sedimentary deposit thicknesses for regional and global land surface modeling",
+    "authors": "J D Pelletier;P D Broxton;P Hazenberg;X Zeng;P A Troch;G Y Niu",
+    "year": "2016",
+    "citation": "Pelletier JD, Broxton PD, Hazenberg P, Zeng X, Troch PA, Niu GY, et al. A gridded global data set of soil, immobile regolith, and sedimentary deposit thicknesses for regional and global land surface model- ing. Journal of Advances in Modeling Earth Systems. 2016; 8. doi: 10.1002/2015MS000526",
+    "pages": "",
+    "journal": "Journal of Advances in Modeling Earth Systems",
+    "volume": "8",
+    "sentences": [
+      "\u2022 Average soil and sedimentary-deposit thickness in meters; after Pelletier et al. [CITATION]."
+    ]
+  },
+  {
+    "title": "Factors of soil formation: a system of quantitative pedology. Dover books on Earth sciences",
+    "authors": "H Jenny",
+    "year": "1994",
+    "citation": "Jenny H. Factors of soil formation: a system of quantitative pedology. Dover books on Earth sciences. Dover Publications; 1994.",
+    "publisher": "Dover Publications",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "These covariates were selected to represent factors of soil formation according to Jenny [CITATION]: climate, relief, living organisms, water dynamics and parent material."
+    ]
+  },
+  {
+    "title": "Geographic data analysis and modeling",
+    "authors": "R J Hijmans;J Van Etten;Raster",
+    "year": "2012",
+    "citation": "Hijmans RJ, van Etten J. raster: Geographic data analysis and modeling; 2012. Available from: http:// CRAN.R-project.org/package=raster.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For processing the covariates we used a combination of Open Source GIS software, primarily SAGA GIS [CITATION #b28], R packages raster [CITATION], sp [CITATION #b42], GSIF and GDAL [CITATION #b43] for reprojecting, mosaicking and merging tiles."
+    ]
+  },
+  {
+    "title": "Classes and methods for spatial data in R. R news",
+    "authors": "E J Pebesma;R S Bivand",
+    "year": "2005",
+    "citation": "Pebesma EJ, Bivand RS. Classes and methods for spatial data in R. R news. 2005; 5(2):9-13.",
+    "pages": "9-13",
+    "journal": "",
+    "volume": "5",
+    "sentences": [
+      "For processing the covariates we used a combination of Open Source GIS software, primarily SAGA GIS [CITATION #b28], R packages raster [CITATION #b41], sp [CITATION], GSIF and GDAL [CITATION #b43] for reprojecting, mosaicking and merging tiles."
+    ]
+  },
+  {
+    "title": "Geospatial Power Tools: GDAL Raster & Vector Commands",
+    "authors": "T Mitchell;G Developers",
+    "year": "2014",
+    "citation": "Mitchell T, Developers G. Geospatial Power Tools: GDAL Raster & Vector Commands. Locate Press; 2014.",
+    "publisher": "Locate Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For processing the covariates we used a combination of Open Source GIS software, primarily SAGA GIS [CITATION #b28], R packages raster [CITATION #b41], sp [CITATION #b42], GSIF and GDAL [CITATION] for reprojecting, mosaicking and merging tiles.",
+      "Final global mosaics in the WGS84 system were produced by reprojecting all pixels using GDAL warp and translate functions [CITATION]."
+    ]
+  },
+  {
+    "title": "A new global raster water mask at 250 m resolution",
+    "authors": "M L Carroll;J R Townshend;C M Dimiceli;P Noojipady;R A Sohlberg",
+    "year": "2009",
+    "citation": "Carroll ML, Townshend JR, DiMiceli CM, Noojipady P, Sohlberg RA. A new global raster water mask at 250 m resolution. International Journal of Digital Earth. 2009; 2( 4):291-308. doi: 10.1080/ 17538940902951401",
+    "pages": "291-308",
+    "journal": "International Journal of Digital Earth",
+    "volume": "2",
+    "sentences": [
+      "This was combined with the global water mask [CITATION] and the global sea mask map based on the SRTM DEM [CITATION #b45] to produce one consistent global soil mask that includes all land areas, expect for: (a) fresh water bodies such as lakes and rivers, and (b) permanent ice."
+    ]
+  },
+  {
+    "title": "The shuttle radar topography mission-a new class of digital elevation models acquired by spaceborne radar",
+    "authors": "B Rabus;M Eineder;A Roth;R Bamler",
+    "year": "2003",
+    "citation": "Rabus B, Eineder M, Roth A, Bamler R. The shuttle radar topography mission-a new class of digital elevation models acquired by spaceborne radar. ISPRS Journal of Photogrammetry and Remote Sens- ing. 2003; 57(4):241-262. doi: 10.1016/S0924-2716(02)00124-7",
+    "pages": "241-262",
+    "journal": "ISPRS Journal of Photogrammetry and Remote Sensing",
+    "volume": "57",
+    "sentences": [
+      "This was combined with the global water mask [CITATION #b44] and the global sea mask map based on the SRTM DEM [CITATION] to produce one consistent global soil mask that includes all land areas, expect for: (a) fresh water bodies such as lakes and rivers, and (b) permanent ice."
+    ]
+  },
+  {
+    "title": "Modern applied statistics with S",
+    "authors": "W N Venables;B D Ripley",
+    "year": "2002",
+    "citation": "Venables WN, Ripley BD. Modern applied statistics with S. 4th ed. New York: Springer-Verlag; 2002.",
+    "publisher": "Springer-Verlag",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "\u2022 WRB soil groups and USDA soil suborders were modelled using ensemble models based on nnet::multinom (which fits multinomial log-linear models via neural networks) [CITATION] and ranger::ranger (fits random forest) functions [CITATION #b47]."
+    ]
+  },
+  {
+    "title": "A Fast Implementation of Random Forests for High Dimensional Data in C++ and R",
+    "authors": "M N Wright;A Ziegler;Ranger",
+    "year": "2016",
+    "citation": "Wright MN, Ziegler A. ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. Journal of Statistical Software. 2016; p. 18.",
+    "pages": "18",
+    "journal": "Journal of Statistical Software",
+    "volume": "",
+    "sentences": [
+      "\u2022 WRB soil groups and USDA soil suborders were modelled using ensemble models based on nnet::multinom (which fits multinomial log-linear models via neural networks) [CITATION #b46] and ranger::ranger (fits random forest) functions [CITATION].",
+      "Ultimately, we decided to primarily rely on three R packagescaret [CITATION #b49], ranger [CITATION] and xgboost [CITATION #b48]-that have proven to be capable of processing huge raster stacks."
+    ]
+  },
+  {
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "authors": "T Chen;C Guestrin",
+    "year": "2016",
+    "citation": "Chen T, Guestrin C. XGBoost: A Scalable Tree Boosting System. ArXiv e-prints. 2016;.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "\u2022 Soil properties (organic carbon, bulk density, CEC, pH, soil texture fractions and coarse fragments) were modelled as 3D variables using an ensemble of ranger::ranger and xgboost::xgboost (fits Gradient Boosting Tree) [CITATION].",
+      "Ultimately, we decided to primarily rely on three R packagescaret [CITATION #b49], ranger [CITATION #b47] and xgboost [CITATION]-that have proven to be capable of processing huge raster stacks."
+    ]
+  },
+  {
+    "title": "Building Predictive Models in R Using the caret Package",
+    "authors": "M Kuhn",
+    "year": "2008",
+    "citation": "Kuhn M. Building Predictive Models in R Using the caret Package. Journal of Statistical Software. 2008; 28(1):1-26.",
+    "pages": "1-26",
+    "journal": "Journal of Statistical Software",
+    "volume": "28",
+    "sentences": [
+      "To optimize the model tuning parameters we consistently used the caret::train function [CITATION], which is also suited for big data.",
+      "Ultimately, we decided to primarily rely on three R packagescaret [CITATION], ranger [CITATION #b47] and xgboost [CITATION #b48]-that have proven to be capable of processing huge raster stacks."
+    ]
+  },
+  {
+    "title": "Learning with ensembles: How over-fitting can be useful",
+    "authors": "P Sollich;A Krogh",
+    "year": "1996",
+    "citation": "Sollich P, Krogh A. Learning with ensembles: How over-fitting can be useful. In: Proceedings of the 1995 Conference. vol. 8; 1996. p. 190.",
+    "pages": "190",
+    "journal": "",
+    "volume": "8",
+    "sentences": [
+      "For each variable we fitted a separate model and merged predictions from at least two models to minimize overshooting effects [CITATION].",
+      "The merging of predictions is done by using the average model accuracy estimated during the fine-tuning of model parameters, i.e. as a weighted average [CITATION]:"
+    ]
+  },
+  {
+    "title": "Easier parallel computing in R with snowfall and sfCluster",
+    "authors": "J Knaus;C Porzelius;H Binder;G Schwarzer",
+    "year": "2009",
+    "citation": "Knaus J, Porzelius C, Binder H, Schwarzer G. Easier parallel computing in R with snowfall and sfClus- ter. The R Journal. 2009; 1(1):54-59.",
+    "pages": "54-59",
+    "journal": "The R Journal",
+    "volume": "1",
+    "sentences": [
+      "For prediction, parallelization is already implemented internally via the ranger or xgboost software; for other processes we primarily used the snowfall package [CITATION]."
+    ]
+  },
+  {
+    "title": "Optimisation of global grids for high-resolution remote sensing data",
+    "authors": "B Bauer-Marschallinger;D Sabel;W Wagner",
+    "year": "2014",
+    "citation": "Bauer-Marschallinger B, Sabel D, Wagner W. Optimisation of global grids for high-resolution remote sensing data. Computers & Geosciences. 2014; 72:84-93. doi: 10.1016/j.cageo.2014.07.005",
+    "pages": "84-93",
+    "journal": "Computers & Geosciences",
+    "volume": "72",
+    "sentences": [
+      "For tiling, we used the Equi7 Grid system [CITATION] which splits the global land mass into seven separate planar grids (Europe and Asia are split into two land masses with some small overlap).",
+      "The Equi7 Grid system was selected for several practical reasons [CITATION]:"
+    ]
+  },
+  {
+    "title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit",
+    "authors": "J Cohen",
+    "year": "1968",
+    "citation": "Cohen J. Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit. Psychological bulletin. 1968; 70(4):213. doi: 10.1037/h0026256 PMID: 19673146",
+    "pages": "213",
+    "journal": "Psychological bulletin",
+    "volume": "70",
+    "sentences": [
+      "For predictions of soil WRB and USDA classes we calculated the map purity (0-100%) for the dominant soil class at cross-validation points and weighted kappa metrics [CITATION] as implemented in the psych package."
+    ]
+  },
+  {
+    "title": "ROCR: visualizing classifier performance in R",
+    "authors": "T Sing;O Sander;N Beerenwinkel;T Lengauer",
+    "year": "2005",
+    "citation": "Sing T, Sander O, Beerenwinkel N, Lengauer T. ROCR: visualizing classifier performance in R. Bioin- formatics. 2005; 21(20):3940-3941. doi: 10.1093/bioinformatics/bti623 PMID: 16096348",
+    "pages": "3940-3941",
+    "journal": "Bioinformatics",
+    "volume": "21",
+    "sentences": [
+      "For the predicted probabilities of soil class occurrences (0-1 probability values) we also derived the area under the receiver operating characteristic curve (AUC) and the True Positive Rate (TPR) statistic as implemented in the ROCR package [CITATION][CITATION #b55]."
+    ]
+  },
+  {
+    "title": "ROCR: Visualizing the Performance of Scoring Classifiers",
+    "authors": "T Sing;O Sander;N Beerenwinkel;T Lengauer",
+    "year": "2016",
+    "citation": "Sing T, Sander O, Beerenwinkel N, Lengauer T. ROCR: Visualizing the Performance of Scoring Classifi- ers; 2016. Available from: http://CRAN.R-project.org/package=ROCR.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For the predicted probabilities of soil class occurrences (0-1 probability values) we also derived the area under the receiver operating characteristic curve (AUC) and the True Positive Rate (TPR) statistic as implemented in the ROCR package [CITATION #b54][CITATION]."
+    ]
+  },
+  {
+    "title": "Communication in the presence of noise",
+    "authors": "C E Shannon",
+    "year": "1949",
+    "citation": "Shannon CE. Communication in the presence of noise. Proceedings of the IRE. 1949; 37(1):10-21. doi: 10.1109/JRPROC.1949.232969",
+    "pages": "10-21",
+    "journal": "Proceedings of the IRE",
+    "volume": "37",
+    "sentences": [
+      "For soil WRB and USDA classes we also generated global maps of the scaled Shannon Entropy Index using the per-class probability maps [CITATION][CITATION #b57]:"
+    ]
+  },
+  {
+    "title": "Fundamentals in Information Theory and Coding",
+    "authors": "M Borda",
+    "year": "2011",
+    "citation": "Borda M. Fundamentals in Information Theory and Coding. Springer Berlin Heidelberg; 2011. Available from: https://books.google.nl/books?id=Lyte2yl1SPAC.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For soil WRB and USDA classes we also generated global maps of the scaled Shannon Entropy Index using the per-class probability maps [CITATION #b56][CITATION]:"
+    ]
+  },
+  {
+    "title": "A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. ArXiv e-prints",
+    "authors": "M N Wright;A Ziegler;Ranger",
+    "year": "2015",
+    "citation": "Wright MN, Ziegler A. ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. ArXiv e-prints. 2015;.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Higher Mtry is recommend for cases where the number of covariates is large and multiple variables influence the target variables with equal importance [CITATION]."
+    ]
+  },
+  {
+    "title": "Sampling for validation of digital soil maps",
+    "authors": "D J Brus;B Kempen;Gbm Heuvelink",
+    "year": "2011",
+    "citation": "Brus DJ, Kempen B, Heuvelink GBM. Sampling for validation of digital soil maps. European Journal of Soil Science. 2011; 62(3):394-407. doi: 10.1111/j.1365-2389.2011.01364.x",
+    "pages": "394-407",
+    "journal": "European Journal of Soil Science",
+    "volume": "62",
+    "sentences": [
+      "Note also that because there is significant spatial clustering of the training points, it is possible that the validation results might be somewhat more optimistic than if we had validated predictions by using points collected following some (objective) probability sampling, as described in Brus et al. [CITATION].",
+      "There are very few and sparse validation soil data collected using objective probability sampling designs (as described in Brus et al. [CITATION])."
+    ]
+  },
+  {
+    "title": "Efficient sparse attention mechanisms for long-context language modelling with linear memory complexity",
+    "authors": [
+      "Petrov, A.",
+      "Kim, S.",
+      "Nwosu, E."
+    ],
+    "year": "2023",
+    "journal": "Journal of Machine Learning Research",
+    "doi": "",
+    "citation": "Petrov et al. (2023) JMLR.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Towards the standardization and harmonization of world soil data",
+    "authors": "E Ribeiro;N Batjes;Jgb Leenaars;A Van Oostrum",
+    "year": "2015",
+    "citation": "Ribeiro E, Batjes N, Leenaars JGB, van Oostrum A, editors. Towards the standardization and harmoni- zation of world soil data. ISRIC Report 2015/03. Wageningen, the Netherlands: ISRIC-World Soil Information; 2015.",
+    "pages": "",
+    "journal": "ISRIC-World Soil Information",
+    "volume": "",
+    "sentences": [
+      "A large portion of these data (about 80,000 unique points) is publicly available via ISRIC's Web Feature Service WoSIS (http://wfs.isric.org/ geoserver/wosis/wfs) [CITATION]; remaining soil profile data sets not publicly available via ISRIC's WoSIS WFS can be obtained by contacting the corresponding original data providers as listed in the Acknowledgment section."
+    ]
+  },
+  {
+    "title": "A conditioned Latin hypercube method for sampling in the presence of ancillary information",
+    "authors": "B Minasny;A B Mcbratney",
+    "year": "2006",
+    "citation": "Minasny B, McBratney AB. A conditioned Latin hypercube method for sampling in the presence of ancil- lary information. Computers & Geosciences. 2006; 32(9):1378-1388. doi: 10.1016/j.cageo.2005.12. 009",
+    "pages": "1378-1388",
+    "journal": "Computers & Geosciences",
+    "volume": "32",
+    "sentences": [
+      "We believe that there is great potential in undertaking various types of feature space distribution analysis (see e.g. Minasny et al. [CITATION] and Fitzpatrick et al. [CITATION #b63]) and optimizing new sampling of additional soil profiles using, for example, Latin Hypercube sampling principles."
+    ]
+  },
+  {
+    "title": "MaxEnt versus MaxLike: empirical comparisons with ant species distributions",
+    "authors": "M C Fitzpatrick;N J Gotelli;A M Ellison",
+    "year": "2013",
+    "citation": "Fitzpatrick MC, Gotelli NJ, Ellison AM. MaxEnt versus MaxLike: empirical comparisons with ant species distributions. Ecosphere. 2013; 4(5):art55-. doi: 10.1890/ES13-00066.1",
+    "pages": "13-00066",
+    "journal": "Ecosphere",
+    "volume": "4",
+    "sentences": [
+      "We believe that there is great potential in undertaking various types of feature space distribution analysis (see e.g. Minasny et al. [CITATION #b62] and Fitzpatrick et al. [CITATION]) and optimizing new sampling of additional soil profiles using, for example, Latin Hypercube sampling principles."
+    ]
+  },
+  {
+    "title": "A comprehensive comparison of random forests and support vector machines for microarray-based cancer classification",
+    "authors": "A Statnikov;L Wang;C Aliferis",
+    "year": "2008",
+    "citation": "Statnikov A, Wang L, Aliferis C. A comprehensive comparison of random forests and support vector machines for microarray-based cancer classification. BMC Bioinformatics. 2008; 9(1):319. doi: 10. 1186/1471-2105-9-319 PMID: 18647401",
+    "pages": "1471-2105",
+    "journal": "BMC Bioinformatics",
+    "volume": "9",
+    "sentences": [
+      "It has already been demonstrated that random forest can outperform linear models, especially in being able to better represent complex non-linear relationships in large data sets [CITATION][CITATION #b65][CITATION #b66]."
+    ]
+  },
+  {
+    "title": "Applied predictive modeling",
+    "authors": "M Kuhn;K Johnson",
+    "year": "2013",
+    "citation": "Kuhn M, Johnson K. Applied predictive modeling. Springer; 2013.",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It has already been demonstrated that random forest can outperform linear models, especially in being able to better represent complex non-linear relationships in large data sets [CITATION #b64][CITATION][CITATION #b66]."
+    ]
+  },
+  {
+    "title": "Mapping Soil Properties of Africa at 250 m Resolution: Random Forests Significantly Improve Current Predictions",
+    "authors": "T Hengl;Gbm Heuvelink;B Kempen;Jgb Leenaars;M G Walsh;K D Shepherd",
+    "year": "2015",
+    "citation": "Hengl T, Heuvelink GBM, Kempen B, Leenaars JGB, Walsh MG, Shepherd KD, et al. Mapping Soil Properties of Africa at 250 m Resolution: Random Forests Significantly Improve Current Predictions. PLoS ONE. 2015; 10(e0125814). doi: 10.1371/journal.pone.0125814 PMID: 26110833",
+    "pages": "",
+    "journal": "PLoS ONE",
+    "volume": "10",
+    "sentences": [
+      "It has already been demonstrated that random forest can outperform linear models, especially in being able to better represent complex non-linear relationships in large data sets [CITATION #b64][CITATION #b65][CITATION]."
+    ]
+  },
+  {
+    "title": "Soil taxonomic distance, a tool for correlation: As exemplified by the Hungarian Brown Forest Soils and related WRB Reference Soil Groups",
+    "authors": "V La \u00b4ng;M Fuchs;I Waltner;Miche",
+    "year": "2013",
+    "citation": "La \u00b4ng V, Fuchs M, Waltner I, Miche \u00b4li E. Soil taxonomic distance, a tool for correlation: As exemplified by the Hungarian Brown Forest Soils and related WRB Reference Soil Groups. Geoderma. 2013; 192:269-276. doi: 10.1016/j.geoderma.2012.07.023",
+    "pages": "269-276",
+    "journal": "Geoderma",
+    "volume": "192",
+    "sentences": [
+      "Several research groups [CITATION][CITATION #b68] are now looking into automating soil classification (i.e. by using automated or semi-automated soil classification software)."
+    ]
+  },
+  {
+    "title": "Soil mapping, classification, and pedologic modeling: History and future directions",
+    "authors": "E C Brevik;C Calzolari;B A Miller;P Pereira;C Kabala;A Baumgarten",
+    "year": "2016",
+    "citation": "Brevik EC, Calzolari C, Miller BA, Pereira P, Kabala C, Baumgarten A, et al. Soil mapping, classification, and pedologic modeling: History and future directions. Geoderma. 2016; 264:256-274. doi: 10.1016/j. geoderma.2015.09.022",
+    "pages": "256-274",
+    "journal": "Geoderma",
+    "volume": "264",
+    "sentences": [
+      "Several research groups [CITATION #b67][CITATION] are now looking into automating soil classification (i.e. by using automated or semi-automated soil classification software)."
+    ]
+  },
+  {
+    "title": "Deriving WRB soil types using National German Soil Survey Guidelines",
+    "authors": "E Eberhardt",
+    "year": "2011",
+    "citation": "Eberhardt E. Deriving WRB soil types using National German Soil Survey Guidelines. In: NCSS National Conference. NCSS Standards. Asheville, NC: United States Department of Agriculture USDA- NRCS; 2011. p. 1-2.",
+    "pages": "1-2",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Eberhardt [CITATION], for example, demonstrated using German soil profile data that soil classification can be completely automatized."
+    ]
+  },
+  {
+    "title": "Quantile regression forests",
+    "authors": "N Meinshausen",
+    "year": "2006",
+    "citation": "Meinshausen N. Quantile regression forests. The Journal of Machine Learning Research. 2006; 7:983- 999.",
+    "pages": "983-999",
+    "journal": "The Journal of Machine Learning Research",
+    "volume": "7",
+    "sentences": [
+      "Although tools for modeling uncertainty in ML methods already exist (see e.g. Meinshausen [CITATION]), these are hundreds of times more computationally intensive and will probably need to be re-implemented in some high-performance computing infrastructure."
+    ]
+  },
+  {
+    "title": "Spatio-temporal interpolation of daily temperatures for global land areas at 1 km resolution",
+    "authors": "M Kilibarda;T Hengl;G Heuvelink;B Gra \u00a8ler;E Pebesma;Per\u010dec Tadi\u0107;M",
+    "year": "2014",
+    "citation": "Kilibarda M, Hengl T, Heuvelink G, Gra \u00a8ler B, Pebesma E, Per\u010dec Tadi\u0107 M, et al. Spatio-temporal inter- polation of daily temperatures for global land areas at 1 km resolution. Journal of Geophysical Research: Atmospheres. 2014; 119(5):2294-2313.",
+    "pages": "2294-2313",
+    "journal": "Journal of Geophysical Research: Atmospheres",
+    "volume": "119",
+    "sentences": [
+      "Another opportunity for improvement lies in using spatiotemporal modeling [CITATION][CITATION #b72] vs purely spatial modeling."
+    ]
+  },
+  {
+    "title": "Spatio-temporal interpolation of soil water, temperature, and electrical conductivity in 3D+T: The Cook Agronomy Farm data set",
+    "authors": "C Gasch;T Hengl;B Gra \u00a8ler;H Meyer;T Magney;D Brown",
+    "year": "2015",
+    "citation": "Gasch C, Hengl T, Gra \u00a8ler B, Meyer H, Magney T, Brown D. Spatio-temporal interpolation of soil water, temperature, and electrical conductivity in 3D+T: The Cook Agronomy Farm data set. Spatial Statistics. 2015; 14(Part A):70-90. doi: 10.1016/j.spasta.2015.04.001",
+    "pages": "70-90",
+    "journal": "Spatial Statistics",
+    "volume": "14",
+    "sentences": [
+      "Another opportunity for improvement lies in using spatiotemporal modeling [CITATION #b71][CITATION] vs purely spatial modeling."
+    ]
+  },
+  {
+    "title": "Measuring the Algorithmic Convergence of Random Forests via Bootstrap Extrapolation",
+    "authors": "M E Lopes",
+    "year": "2015",
+    "citation": "Lopes ME. Measuring the Algorithmic Convergence of Random Forests via Bootstrap Extrapolation. Davis CA: Department of Statistics, University of California; 2015.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Lopes [CITATION] shows a framework, based on bootstrapping, to detect an optimal number of trees given some error threshold."
+    ]
+  },
+  {
+    "title": "Social network structure and the diffusion of misinformation: causal evidence from a field experiment",
+    "authors": [
+      "Abramowitz, J.",
+      "Nkemdirim, C.",
+      "L\u00f6fgren, K."
+    ],
+    "year": "2022",
+    "journal": "Quarterly Journal of Economics",
+    "doi": "",
+    "citation": "Abramowitz et al. (2022) Q J Econ.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Uncertainties of a TanDEM-X derived Digital Surface Model 2014-A case study from the Roda catchment",
+    "authors": "J Baade;C Schmullius",
+    "year": "2014",
+    "citation": "Baade J, Schmullius C. Uncertainties of a TanDEM-X derived Digital Surface Model 2014-A case study from the Roda catchment, Germany. In: Geoscience and Remote Sensing Symposium (IGARSS), 2014 IEEE International; 2014. p. 4327-4330.",
+    "pages": "4327-4330",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Likewise, the latest most accurate DEM of the world (WorldDEM\u2122) is an order of magnitude more accurate and more detailed than the SRTM DEM [CITATION] and as such would be an ideal covariate for many regional and global soil mapping projects."
+    ]
+  },
+  {
+    "title": "The HYDE 3.1 spatially explicit database of human-induced global land-use change over the past 12,000 years",
+    "authors": "K Klein Goldewijk;A Beusen;G Van Drecht;De Vos;M",
+    "year": "2011",
+    "citation": "Klein Goldewijk K, Beusen A, Van Drecht G, De Vos M. The HYDE 3.1 spatially explicit database of human-induced global land-use change over the past 12,000 years. Global Ecology and Biogeography. 2011; 20(1):73-86. doi: 10.1111/j.1466-8238.2010.00587.x",
+    "pages": "73-86",
+    "journal": "Global Ecology and Biogeography",
+    "volume": "20",
+    "sentences": [
+      "Information on pre-historic climatic conditions and land use is unfortunately often not available, especially not at detailed cartographic scales, although there are now several global products that represent, for example, dynamics of land use / changes of land cover (see e.g. HYDE data set by Klein et al. [CITATION]) through the past 1500+ years."
+    ]
+  },
+  {
+    "title": "Using model averaging to combine soil property rasters from legacy soil maps and from point data",
+    "authors": "B P Malone;B Minasny;N P Odgers;A B Mcbratney",
+    "year": "2014",
+    "citation": "Malone BP, Minasny B, Odgers NP, McBratney AB. Using model averaging to combine soil property rasters from legacy soil maps and from point data. Geoderma. 2014; 232:34-44. doi: 10.1016/j. geoderma.2014.04.033",
+    "pages": "34-44",
+    "journal": "Geoderma",
+    "volume": "232",
+    "sentences": [
+      "In that context, Malone et al. [CITATION] recently made progress in testing and developing methods for merging predictions from polygon-based maps and maps derived using spatial predictions."
+    ]
+  },
+  {
+    "title": "Digital Soil Mapping and Modeling at Continental Scales: Finding Solutions for Global Issues",
+    "authors": "S Grunwald;J A Thompson;J L Boettinger",
+    "year": "2011",
+    "citation": "Grunwald S, Thompson JA, Boettinger JL. Digital Soil Mapping and Modeling at Continental Scales: Finding Solutions for Global Issues. Soil Science Society of America Journal. 2011; 75:1201-1213. doi: 10.2136/sssaj2011.0025",
+    "pages": "1201-1213",
+    "journal": "Soil Science Society of America Journal",
+    "volume": "75",
+    "sentences": [
+      "Soil has long been considered one of the least developed global environmental layers with data available only at coarse resolutions and with limited accuracy [CITATION #b78][CITATION]."
+    ]
+  }
+]

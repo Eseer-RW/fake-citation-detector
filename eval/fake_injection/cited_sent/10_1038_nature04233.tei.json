@@ -1,0 +1,169 @@
+[
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Gut microbiome dysbiosis as a mediator of systemic inflammation in type 2 diabetes: evidence from a prospective twin study",
+    "authors": [
+      "Nakamura, S.",
+      "Osei-Bonsu, E.",
+      "Walters, D."
+    ],
+    "year": "2019",
+    "journal": "Cell Metabolism",
+    "doi": "",
+    "citation": "Nakamura et al. (2019) Cell Metab.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Semimetals 1: Graphite and Its Compounds",
+    "authors": "N B Brandt;S M Chudinov;Y G Ponomarev",
+    "year": "1988",
+    "citation": "Brandt, N.B., Chudinov, S.M. & Ponomarev, Y.G. Semimetals 1: Graphite and Its Compounds (North-Holland, Amsterdam, 1988).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Comparison with the experiment yields f =4, in agreement with the double-spin and double-valley degeneracy expected for graphene [CITATION #b5][CITATION] (cf.",
+      "3 unambiguously prove the linear dispersion E =hkc * for both electrons and holes with a common origin at E =0 [CITATION #b5][CITATION].",
+      "Furthermore, the above equations also imply m c =E/c * 2 =(h 2 n/4\u03c0c * 2 ) 1/2 and the best fit to our data yields c * \u22481\u22c510 6 m/s, in agreement with band structure calculations [CITATION #b5][CITATION]."
+    ]
+  },
+  {
+    "title": "Quantum Solid State Physics",
+    "authors": "S V Vonsovsky;M I Katsnelson",
+    "year": "1989",
+    "citation": "Vonsovsky, S.V. and Katsnelson, M.I. Quantum Solid State Physics (Springer, New York, 1989).",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "To explain the observed behaviour of m c , we refer to the semiclassical expressions B F = (h/2\u03c0e)S(E) and m c =(h 2 /2\u03c0)\u2202S(E)/\u2202E where S(E) =\u03c0k 2 is the area in k-space of the orbits at the Fermi energy E(k) [CITATION]."
+    ]
+  },
+  {
+    "title": "Introduction to Superstrings",
+    "authors": "M Kaku",
+    "year": "1988",
+    "citation": "Kaku, M. Introduction to Superstrings (Springer, New York, 1988).",
+    "publisher": "Springer",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The latter can be viewed as a direct consequence of the Atiyah-Singer index theorem that plays an important role in quantum field theory and the theory of superstrings [CITATION][CITATION #b13]."
+    ]
+  },
+  {
+    "title": "Topology and Physics",
+    "authors": "M Nakahara;Geometry",
+    "year": "1990",
+    "citation": "Nakahara, M. Geometry, Topology and Physics (IOP Publishing, Bristol, 1990).",
+    "publisher": "IOP Publishing",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The latter can be viewed as a direct consequence of the Atiyah-Singer index theorem that plays an important role in quantum field theory and the theory of superstrings [CITATION #b12][CITATION]."
+    ]
+  },
+  {
+    "title": "Electron Processes in Non-Crystalline Materials",
+    "authors": "N F Mott;E A Davis",
+    "year": "1979",
+    "citation": "Mott, N.F. & Davis, E.A. Electron Processes in Non-Crystalline Materials (Clarendon Press, Oxford, 1979).",
+    "publisher": "Clarendon Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Assuming the absence of localization, the observed minimum conductivity can be explained qualitatively by invoking Mott's argument [CITATION] that mean-free-path l of charge carriers in a metal can never be shorter that their wavelength \u03bb F .",
+      "Although there is a broad theoretical consensus [CITATION #b17][CITATION #b18][CITATION #b19][CITATION][CITATION #b21][CITATION #b22][CITATION #b9][CITATION #b10] that a 2D gas of Dirac fermions should exhibit a minimum conductivity of about e 2 /h, this quantization was not expected to be accurate and most theories suggest a value of \u2248e 2 /\u03c0h, in disagreement with the experiment."
+    ]
+  },
+  {
+    "title": "Relativistic Electron Theory",
+    "authors": "M E Rose",
+    "year": "1961",
+    "citation": "Rose, M.E. Relativistic Electron Theory (John Wiley, New York, 1961).",
+    "publisher": "John Wiley",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This 2D system is not only interesting in itself but also allows one to access -in a condensed matter experiment -the subtle and rich physics of quantum electrodynamics [CITATION][CITATION #b24][CITATION #b25][CITATION #b26] and provides a bench-top setting for studies of phenomena relevant to cosmology and astrophysics [CITATION #b26][CITATION #b27]."
+    ]
+  },
+  {
+    "title": "Relativistic Quantum Theory",
+    "authors": "V B Berestetskii;E M Lifshitz;L P Pitaevskii",
+    "year": "1971",
+    "citation": "Berestetskii, V.B., Lifshitz, E.M. & Pitaevskii, L.P. Relativistic Quantum Theory (Pergamon Press, Oxford, 1971).",
+    "publisher": "Pergamon Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This 2D system is not only interesting in itself but also allows one to access -in a condensed matter experiment -the subtle and rich physics of quantum electrodynamics [CITATION #b23][CITATION][CITATION #b25][CITATION #b26] and provides a bench-top setting for studies of phenomena relevant to cosmology and astrophysics [CITATION #b26][CITATION #b27]."
+    ]
+  },
+  {
+    "title": "Field Theories of Condensed Matter Systems",
+    "authors": "E Fradkin",
+    "year": "1997",
+    "citation": "Fradkin, E. Field Theories of Condensed Matter Systems (Westview Press, Oxford, 1997).",
+    "publisher": "Westview Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This 2D system is not only interesting in itself but also allows one to access -in a condensed matter experiment -the subtle and rich physics of quantum electrodynamics [CITATION #b23][CITATION #b24][CITATION #b25][CITATION] and provides a bench-top setting for studies of phenomena relevant to cosmology and astrophysics [CITATION][CITATION #b27]."
+    ]
+  },
+  {
+    "title": "The Universe in a Helium Droplet",
+    "authors": "G E Volovik",
+    "year": "2003",
+    "citation": "Volovik, G.E. The Universe in a Helium Droplet (Clarendon Press, Oxford, 2003).",
+    "publisher": "Clarendon Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This 2D system is not only interesting in itself but also allows one to access -in a condensed matter experiment -the subtle and rich physics of quantum electrodynamics [CITATION #b23][CITATION #b24][CITATION #b25][CITATION #b26] and provides a bench-top setting for studies of phenomena relevant to cosmology and astrophysics [CITATION #b26][CITATION]."
+    ]
+  }
+]

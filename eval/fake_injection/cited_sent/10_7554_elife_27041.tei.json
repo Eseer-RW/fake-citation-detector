@@ -1,0 +1,2033 @@
+[
+  {
+    "title": "Multiplexed ion beam imaging of human breast tumors",
+    "authors": "M Angelo;S C Bendall;R Finck;M B Hale;C Hitzman;A D Borowsky;R M Levenson;J B Lowe;S D Liu;S Zhao",
+    "year": "2014",
+    "citation": "Angelo, M., Bendall, S.C., Finck, R., Hale, M.B., Hitzman, C., Borowsky, A.D., Levenson, R.M., Lowe, J.B., Liu, S.D., Zhao, S., et al. (2014). Multiplexed ion beam imaging of human breast tumors. Nature Medicine 20, 436-442.",
+    "pages": "436-442",
+    "journal": "Nature Medicine",
+    "volume": "20",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "With emerging highly multiplexed methods for in situ hybridization [CITATION #b36][CITATION #b186] or protein staining [CITATION][CITATION #b72], it should be possible to spatially map multiple cell types at once based on expression signatures to see how they relate to each other and to connect them with cell types defined by morphology or function.",
+      "Imaging [CITATION], involve staining a tissue specimen with antibodies, each labeled with a barcode of heavy metals, and rastering across the sample to measure the proteins in each 'pixel'."
+    ]
+  },
+  {
+    "title": "destiny: diffusion maps for large-scale single-cell data in R",
+    "authors": "P Angerer;L Haghverdi;M Buttner;F J Theis;C Marr;F Buettner",
+    "year": "2016",
+    "citation": "Angerer, P., Haghverdi, L., Buttner, M., Theis, F.J., Marr, C., and Buettner, F. (2016). destiny: diffusion maps for large-scale single-cell data in R. Bioinformatics 32, 1241-1243.",
+    "pages": "1241-1243",
+    "journal": "Bioinformatics",
+    "volume": "32",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION][CITATION #b20][CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION #b73]."
+    ]
+  },
+  {
+    "title": "Mapping differentiation under mixed culture conditions reveals a tunable continuum of T cell fates",
+    "authors": "Y E Antebi;S Reich-Zeliger;Y Hart;A Mayo;I Eizenberg;J Rimer;P Putheti;D Pe'er;N Friedman",
+    "year": "2013",
+    "citation": "Antebi, Y.E., Reich-Zeliger, S., Hart, Y., Mayo, A., Eizenberg, I., Rimer, J., Putheti, P., Pe'er, D., and Friedman, N. (2013). Mapping differentiation under mixed culture conditions reveals a tunable continuum of T cell fates. PLoS Biology 11, e1001616.",
+    "pages": "",
+    "journal": "PLoS Biology",
+    "volume": "11",
+    "sentences": [
+      "Notably, the relative proportions of cells observed at different points along the developmental paths can help convey critical information, both about the duration of each phase [CITATION][CITATION #b102] and the balance of how progenitor cells are allocated among fates [CITATION][CITATION #b121][CITATION #b149], especially when information about the rate of cell proliferation and/or death can be incorporated as inferred from the profiles.",
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION][CITATION #b69][CITATION #b92][CITATION #b93][CITATION #b175][CITATION #b245] ."
+    ]
+  },
+  {
+    "title": "Albert Coons: harnessing the power of the antibody",
+    "authors": "G Arthur",
+    "year": "2016",
+    "citation": "Arthur, G. (2016). Albert Coons: harnessing the power of the antibody. Lancet Respir Med 4, 181-182.",
+    "pages": "181-182",
+    "journal": "Lancet Respir Med",
+    "volume": "4",
+    "sentences": [
+      "Immunohistochemistry, pioneered in the 1940s [CITATION] and accelerated by the advent of monoclonal antibodies [CITATION #b111] and Fluorescence-Activated Cell Sorting (FACS; [CITATION #b51][CITATION #b65] in the 1970s, made it possible to detect the presence and levels of specific proteins."
+    ]
+  },
+  {
+    "title": "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex",
+    "authors": "G A Ascoli;L Alonso-Nanclares;S A Anderson;G Barrionuevo;R Benavides-Piccione;A Burkhalter;G Buzsaki;B Cauli;J Defelipe",
+    "year": "2008",
+    "citation": "Ascoli, G.A., Alonso-Nanclares, L., Anderson, S.A., Barrionuevo, G., Benavides-Piccione, R., Burkhalter, A., Buzsaki, G., Cauli, B., Defelipe, J., et al. (2008). Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex. Nature Reviews Neuroscience 9, 557-568.",
+    "pages": "557-568",
+    "journal": "Nature Reviews Neuroscience",
+    "volume": "9",
+    "sentences": [
+      "Cellular neuroanatomy is deeply rooted in the concept of cell types defined by their morphologies (a proxy for connectivity) and electrophysiological properties [CITATION], and extensive efforts continue to classify the types in complicated structures like the retina and neocortex  [CITATION #b182]."
+    ]
+  },
+  {
+    "title": "Genome sequencing of normal cells reveals developmental lineages and mutational processes",
+    "authors": "S Behjati;M Huch;R Van Boxtel;W Karthaus;D C Wedge;A U Tamuri;I Martincorena;M Petljak;L B Alexandrov;G Gundem",
+    "year": "2014",
+    "citation": "Behjati, S., Huch, M., van Boxtel, R., Karthaus, W., Wedge, D.C., Tamuri, A.U., Martincorena, I., Petljak, M., Alexandrov, L.B., Gundem, G., et al. (2014). Genome sequencing of normal cells reveals developmental lineages and mutational processes. Nature 513, 422-425.",
+    "pages": "422-425",
+    "journal": "Nature",
+    "volume": "513",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION][CITATION #b45][CITATION #b48][CITATION #b64][CITATION #b71][CITATION #b128].",
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION][CITATION #b21][CITATION #b136][CITATION #b176][CITATION #b194] or as a molecular clock [CITATION #b212][CITATION #b214].",
+      "In humans, where such methods cannot be applied, human cell lineages can be monitored experimentally in vitro, or by transplantation of human cells to immunosuppressed mice [CITATION #b150][CITATION #b160][CITATION #b177], or can be inferred from in vivo samples by measuring the DNA differences between individual sampled cells, arising from random mutations during cell division, and using the genetic distances to construct cellular phylogenies, or lineages [CITATION][CITATION #b191]."
+    ]
+  },
+  {
+    "title": "Single-cell trajectory detection uncovers progression and regulatory coordination in human B cell development",
+    "authors": "S C Bendall;K L Davis;A D Amir El;M D Tadmor;E F Simonds;T J Chen;D K Shenfeld;G P Nolan;D Pe'er",
+    "year": "2014",
+    "citation": "Bendall, S.C., Davis, K.L., Amir el, A.D., Tadmor, M.D., Simonds, E.F., Chen, T.J., Shenfeld, D.K., Nolan, G.P., and Pe'er, D. (2014). Single-cell trajectory detection uncovers progression and regulatory coordination in human B cell development. Cell 157, 714-725.",
+    "pages": "714-725",
+    "journal": "Cell",
+    "volume": "157",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION][CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION #b73].",
+      "Linear developmental trajectories have been reconstructed, for example, from single-cell protein expression during B-cell differentiation [CITATION], and from single-cell RNA expression during myogenesis in vitro , early hematopoiesis , neurogenesis in vivo [CITATION #b80][CITATION #b193], and reprogramming from fibroblasts to neurons [CITATION #b73].",
+      "For example, the rare population associated with VDJ recombination first identified by trajectory analysis of B cell development [CITATION] is expanded in pediatric Acute Lymphoblastic Leukemia, and drastically more so in recurrence (Gary Nolan, unpublished results).",
+      "Computationally ordering cells along a time-course of development provides another way to infer regulators -a strategy that has been successful in, for example, differentiating B cells [CITATION], myoblasts , neurons [CITATION #b80][CITATION #b193], and T helper cells [CITATION #b121].",
+      "and related methods allow multiplexed measurement of proteins based on antibodies barcoded with heavy metals [CITATION][CITATION #b120]."
+    ]
+  },
+  {
+    "title": "A generic, cost-effective, and scalable cell lineage analysis platform",
+    "authors": "T Biezuner;A Spiro;O Raz;S Amir;L Milo;R Adar;N Chapal-Ilani;V Berman;Y Fried;E Ainbinder",
+    "year": "2016",
+    "citation": "Biezuner, T., Spiro, A., Raz, O., Amir, S., Milo, L., Adar, R., Chapal-Ilani, N., Berman, V., Fried, Y., Ainbinder, E., et al. (2016). A generic, cost-effective, and scalable cell lineage analysis platform. Genome Research 26, 1588-1599.",
+    "pages": "1588-1599",
+    "journal": "Genome Research",
+    "volume": "26",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION][CITATION #b136][CITATION #b176][CITATION #b194] or as a molecular clock [CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Label-free cell cycle analysis for highthroughput imaging flow cytometry",
+    "authors": "T Blasi;H Hennig;H D Summers;F J Theis;J Cerveira;J O Patterson;D Davies;A Filby;A E Carpenter;Rees;P",
+    "year": "2016",
+    "citation": "Blasi, T., Hennig, H., Summers, H.D., Theis, F.J., Cerveira, J., Patterson, J.O., Davies, D., Filby, A., Carpenter, A.E., and Rees, P. (2016). Label-free cell cycle analysis for high- throughput imaging flow cytometry. Nat Commun 7, 10256.",
+    "pages": "10256",
+    "journal": "Nat Commun",
+    "volume": "7",
+    "sentences": [
+      "Notably, the cell cycle could also be reconstructed by similar approaches when applied to imaging data of very few molecular markers along with salient spatial features [CITATION #b79] or with morphology alone [CITATION][CITATION #b58]."
+    ]
+  },
+  {
+    "title": "Fast unfolding of communities in large networks",
+    "authors": "V D Blondel;J L Guillaume;R Lambiotte;E Lefebvre",
+    "year": "2008",
+    "citation": "Blondel, V.D., Guillaume, J.L., Lambiotte, R., and Lefebvre, E. (2008). Fast unfolding of communities in large networks. J Stat Mech-Theory E. 2008:P10008",
+    "pages": "",
+    "journal": "J Stat Mech-Theory E",
+    "volume": "",
+    "sentences": [
+      "Computational approaches could then allow iterative refinement of cellular characterization based on both a cell's molecular profile and information about its neighborhood; methods perfected in the analysis of networks could provide a helpful starting point [CITATION][CITATION #b178]."
+    ]
+  },
+  {
+    "title": "A Universal History of",
+    "authors": "J L Borges;A Hurley",
+    "year": "2004",
+    "citation": "Borges, J.L., and Hurley, A. (2004). A Universal History of Iniquity New York: Penguin.",
+    "publisher": "Penguin",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The writer Jorge Luis Borges -a master at capturing the tension between grandeur and grandiosity -distilled this challenge in his one-paragraph story, \"On Exactitude in Science\", about an empire enamored with science of cartography (Box 2; [CITATION]."
+    ]
+  },
+  {
+    "title": "Sequences and consequences. Philosophical Transactions of the Royal Society of London Series B",
+    "authors": "S Brenner",
+    "year": "2010",
+    "citation": "Brenner, S. (2010). Sequences and consequences. Philosophical Transactions of the Royal Society of London Series B, Biological Sciences 365, 207-212.",
+    "pages": "207-212",
+    "journal": "",
+    "volume": "365",
+    "sentences": [
+      "The desirability of having much deeper knowledge about cells has been well recognized for a long time [CITATION][CITATION #b56][CITATION #b190][CITATION #b230]."
+    ]
+  },
+  {
+    "title": "Toxicities of chimeric antigen receptor T cells: recognition and management",
+    "authors": "J N Brudno;J N Kochenderfer",
+    "year": "2016",
+    "citation": "Brudno, J.N., and Kochenderfer, J.N. (2016). Toxicities of chimeric antigen receptor T cells: recognition and management. Blood 127, 3321-3330.",
+    "pages": "3321-3330",
+    "journal": "Blood",
+    "volume": "127",
+    "sentences": [
+      "Yet, the question is of enormous importance to basic biologists studying development or comparing a model system to human biology, medical scientists examining the effect of a disease-causing mutation, and drug developers concerned about the potential toxicities of a small molecule or a CAR-T cell targeting a specific protein [CITATION]."
+    ]
+  },
+  {
+    "title": "Electrophysiological, transcriptomic and morphologic profiling of single neurons using Patch-seq",
+    "authors": "C R Cadwell;A Palasantza;X Jiang;P Berens;Q Deng;M Yilmaz;J Reimer;S Shen;M Bethge;K F Tolias",
+    "year": "2016",
+    "citation": "Cadwell, C.R., Palasantza, A., Jiang, X., Berens, P., Deng, Q., Yilmaz, M., Reimer, J., Shen, S., Bethge, M., Tolias, K.F., et al. (2016). Electrophysiological, transcriptomic and morphologic profiling of single neurons using Patch-seq. Nature Biotechnology 34, 199- 203.",
+    "pages": "199-203",
+    "journal": "Nature Biotechnology",
+    "volume": "34",
+    "sentences": [
+      "For example, electrophysiological measurements with patch clamping followed by scRNA-seq used in a recent study of a particular inhibitory cortical cell type showed that the transcriptome correlated strongly with the cell's physiological state [CITATION][CITATION #b62]."
+    ]
+  },
+  {
+    "title": "Establishment of a normal hematopoietic and leukemia stem cell hierarchy",
+    "authors": "M P Chao;J Seita;I L Weissman",
+    "year": "2008",
+    "citation": "Chao, M.P., Seita, J., and Weissman, I.L. (2008). Establishment of a normal hematopoietic and leukemia stem cell hierarchy. Cold Spring Harbor Symposia on Quantitative Biology 73, 439-449.",
+    "pages": "439-449",
+    "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
+    "volume": "73",
+    "sentences": [
+      "Through these remarkable efforts, biologists have achieved an impressive understanding of specific systems, such as the hematopoietic and immune systems [CITATION][CITATION #b101][CITATION #b105] or the neurons in the retina [CITATION #b182].",
+      "Cells arrive at their final differentiated cell types through partly asynchronous branching pathways of development [CITATION #b61], which are driven by and reflected in molecular changes, especially gene-expression patterns (see, for example, [CITATION][CITATION #b101]."
+    ]
+  },
+  {
+    "title": "Expansion microscopy",
+    "authors": "F Chen;P W Tillberg;E S Boyden",
+    "year": "2015",
+    "citation": "Chen, F., Tillberg, P.W., and Boyden, E.S. (2015a). Expansion microscopy. Science 347, 543- 548.",
+    "pages": "543-548",
+    "journal": "Science",
+    "volume": "347",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Many in situ methods can benefit from tissue clearing and/or expansion to improve detection and spatial resolution [CITATION][CITATION #b34][CITATION #b143][CITATION #b119]."
+    ]
+  },
+  {
+    "title": "Epigenetic regulation of microglial activation in neurodegenerative disease: mechanisms and therapeutic targets",
+    "authors": [
+      "Patel, R.",
+      "Yamamoto, K.",
+      "Ferreira, A."
+    ],
+    "year": "2020",
+    "journal": "Nature Neuroscience",
+    "doi": "",
+    "citation": "Patel et al. (2020) Nat Neurosci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Nanoscale imaging of RNA with expansion microscopy",
+    "authors": "F Chen;A T Wassie;A J Cote;A Sinha;S Alon;S Asano;E R Daugharthy;J B Chang;A Marblestone;G M Church",
+    "year": "2016",
+    "citation": "Chen, F., Wassie, A.T., Cote, A.J., Sinha, A., Alon, S., Asano, S., Daugharthy, E.R., Chang, J.B., Marblestone, A., Church, G.M., et al. (2016a). Nanoscale imaging of RNA with expansion microscopy. Nature Methods 13, 679-684.",
+    "pages": "679-684",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "Many in situ methods can benefit from tissue clearing and/or expansion to improve detection and spatial resolution [CITATION #b33][CITATION][CITATION #b143][CITATION #b119]."
+    ]
+  },
+  {
+    "title": "Mpath maps multi-branching single-cell trajectories revealing progenitor cell progression during development",
+    "authors": "J Chen;A Schlitzer;S Chakarov;F Ginhoux;M Poidinger",
+    "year": "2016",
+    "citation": "Chen, J., Schlitzer, A., Chakarov, S., Ginhoux, F., and Poidinger, M. (2016b). Mpath maps multi-branching single-cell trajectories revealing progenitor cell progression during development. Nat Commun 7, 11988.",
+    "pages": "11988",
+    "journal": "Nat Commun",
+    "volume": "7",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION #b73].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION #b164] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "RNA imaging. Spatially resolved, highly multiplexed RNA profiling in single cells",
+    "authors": "K H Chen;A N Boettiger;J R Moffitt;S Wang;X Zhuang",
+    "year": "2015",
+    "citation": "Chen, K.H., Boettiger, A.N., Moffitt, J.R., Wang, S., and Zhuang, X. (2015b). RNA imaging. Spatially resolved, highly multiplexed RNA profiling in single cells. Science 348, aaa6090.",
+    "pages": "6090",
+    "journal": "Science",
+    "volume": "348",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "With emerging highly multiplexed methods for in situ hybridization [CITATION][CITATION #b186] or protein staining [CITATION #b6][CITATION #b72], it should be possible to spatially map multiple cell types at once based on expression signatures to see how they relate to each other and to connect them with cell types defined by morphology or function.",
+      "Some strategies for RNA detection, such as MERFISH [CITATION][CITATION #b144] or Seq-FISH [CITATION #b186], combine multiplex hybridization with microscopy-based quantification to assess distributions at both the cellular and subcellular level; other early studies have performed in situ transcription [CITATION #b213], followed by direct manual harvesting of cDNA from individual cells [CITATION #b41][CITATION #b213]."
+    ]
+  },
+  {
+    "title": "Lineage-specific and single cell chromatin accessibility charts human hematopoiesis and leukemia evolution",
+    "authors": "M R Corces;J D Buenrostro;B Wu;P G Greenside;S M Chan;J L Koenig;M P Snyder;J K Pritchard;A Kundaje;W J Greenleaf",
+    "year": "2016",
+    "citation": "Corces, M.R., Buenrostro, J.D., Wu, B., Greenside, P.G., Chan, S.M., Koenig, J.L., Snyder, M.P., Pritchard, J.K., Kundaje, A., Greenleaf, W.J., et al. (2016). Lineage-specific and single cell chromatin accessibility charts human hematopoiesis and leukemia evolution. Nature Genetics. 48, 1193-1203",
+    "pages": "1193-1203",
+    "journal": "Nature Genetics",
+    "volume": "48",
+    "sentences": [
+      "The optimal amount and type of information to collect will emerge based on a balance of technological feasibility and the biological insight provided by each layer [CITATION] [CITATION #b164]."
+    ]
+  },
+  {
+    "title": "Preleukemic mutations in human acute myeloid leukemia affect epigenetic regulators and persist in remission",
+    "authors": "M R Corces-Zimmerman;W J Hong;I L Weissman;B C Medeiros;R Majeti",
+    "year": "2014",
+    "citation": "Corces-Zimmerman, M.R., Hong, W.J., Weissman, I.L., Medeiros, B.C., and Majeti, R. (2014). Preleukemic mutations in human acute myeloid leukemia affect epigenetic regulators and persist in remission. PNAS 111, 2548-2553.",
+    "pages": "2548-2553",
+    "journal": "PNAS",
+    "volume": "111",
+    "sentences": [
+      "With the advent of high-throughput methods, single-cell genome analysis has been used to study the clonal structure and evolution of tumors in both breast cancer and acute lymphoblastic leukemia [CITATION #b70], and to infer the order of earliest mutations that cause acute myeloid leukemia [CITATION][CITATION #b99]."
+    ]
+  },
+  {
+    "title": "Embryonic neuronal markers in tuberous sclerosis: single-cell molecular pathology",
+    "authors": "P B Crino;J Q Trojanowski;M A Dichter;J Eberwine",
+    "year": "1996",
+    "citation": "Crino, P.B., Trojanowski, J.Q., Dichter, M.A., and Eberwine, J. (1996). Embryonic neuronal markers in tuberous sclerosis: single-cell molecular pathology. PNAS 93, 14152-14157.",
+    "pages": "14152-14157",
+    "journal": "PNAS",
+    "volume": "93",
+    "sentences": [
+      "Initial efforts first used microarrays and then RNA-seq to profile RNA from small numbers of single cells, which were obtained either by manual picking from in situ fixed tissue, using flowsorting or, later on, with microfluidic devices, adapted from devices developed initially for qPCR-based approaches [CITATION][CITATION #b44][CITATION #b133][CITATION #b142][CITATION #b244].",
+      "Some strategies for RNA detection, such as MERFISH [CITATION #b36][CITATION #b144] or Seq-FISH [CITATION #b186], combine multiplex hybridization with microscopy-based quantification to assess distributions at both the cellular and subcellular level; other early studies have performed in situ transcription [CITATION #b213], followed by direct manual harvesting of cDNA from individual cells [CITATION][CITATION #b213]."
+    ]
+  },
+  {
+    "title": "Single-cell dissection of transcriptional heterogeneity in human colon tumors",
+    "authors": "P Dalerba;T Kalisky;D Sahoo;P S Rajendran;M E Rothenberg;A A Leyrat;S Sim;J Okamoto;D M Johnston;D L Qian",
+    "year": "2011",
+    "citation": "Dalerba, P., Kalisky, T., Sahoo, D., Rajendran, P.S., Rothenberg, M.E., Leyrat, A.A., Sim, S., Okamoto, J., Johnston, D.M., Qian, D.L., et al. (2011). Single-cell dissection of transcriptional heterogeneity in human colon tumors. Nature Biotechnology 29, 1120-1127.",
+    "pages": "1120-1127",
+    "journal": "Nature Biotechnology",
+    "volume": "29",
+    "sentences": [
+      "Initial efforts first used microarrays and then RNA-seq to profile RNA from small numbers of single cells, which were obtained either by manual picking from in situ fixed tissue, using flowsorting or, later on, with microfluidic devices, adapted from devices developed initially for qPCR-based approaches [CITATION #b41][CITATION][CITATION #b133][CITATION #b142][CITATION #b244].",
+      "Early studies used single-cell qPCR to investigate the origin of radioresistance in cancer stem cells and to dissect the heterogeneity and distortions of cellular hierarchy in colon cancer [CITATION]."
+    ]
+  },
+  {
+    "title": "Simultaneous Multiplexed Measurement of RNA and Proteins in Single Cells",
+    "authors": "S Darmanis;C J Gallant;V D Marinescu;M Niklasson;A Segerman;G Flamourakis;S Fredriksson;E Assarsson;M Lundberg;S Nelander",
+    "year": "2016",
+    "citation": "Darmanis, S., Gallant, C.J., Marinescu, V.D., Niklasson, M., Segerman, A., Flamourakis, G., Fredriksson, S., Assarsson, E., Lundberg, M., Nelander, S., et al. (2016). Simultaneous Multiplexed Measurement of RNA and Proteins in Single Cells. Cell Reports 14, 380-389.",
+    "pages": "380-389",
+    "journal": "Cell Reports",
+    "volume": "14",
+    "sentences": [
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION #b19][CITATION][CITATION #b48][CITATION #b64][CITATION #b71][CITATION #b128].",
+      "Recent studies have simultaneously profiled the transcriptome together with either the genome [CITATION #b48][CITATION #b128], the epigenome , or protein signatures [CITATION][CITATION #b64][CITATION #b71]."
+    ]
+  },
+  {
+    "title": "A survey of human brain transcriptome diversity at the single cell level",
+    "authors": "S Darmanis;S A Sloan;Y Zhang;M Enge;C Caneda;L M Shuer;M G H Gephart;B A Barres;S R Quake",
+    "year": "2015",
+    "citation": "Darmanis, S., Sloan, S.A., Zhang, Y., Enge, M., Caneda, C., Shuer, L.M., Gephart, M.G.H., Barres, B.A., and Quake, S.R. (2015). A survey of human brain transcriptome diversity at the single cell level. PNAS 112, 7285-7290.",
+    "pages": "7285-7290",
+    "journal": "PNAS",
+    "volume": "112",
+    "sentences": [
+      "In other complex brain regions such as the neocortex and hippocampus there are also a large number of transcriptionally defined types [CITATION][CITATION #b73][CITATION #b80][CITATION #b116][CITATION #b167]  , but it has been more difficult to find consensus between data modalities, and the relationship between transcriptomic types and anatomical or morphological types is unclear."
+    ]
+  },
+  {
+    "title": "Glutamatergic Monopolar Interneurons Provide a Novel Pathway of Excitation in the Mouse Retina",
+    "authors": "Della Santina;L Kuo;S P Yoshimatsu;T Okawa;H Suzuki;S C Hoon;M Tsuboyama;K Rieke;F Wong;R O L",
+    "year": "2016",
+    "citation": "Della Santina, L., Kuo, S.P., Yoshimatsu, T., Okawa, H., Suzuki, S.C., Hoon, M., Tsuboyama, K., Rieke, F., and Wong, R.O.L. (2016). Glutamatergic Monopolar Interneurons Provide a Novel Pathway of Excitation in the Mouse Retina. Current Biology 26, 2070-2077.",
+    "pages": "2070-2077",
+    "journal": "Current Biology",
+    "volume": "26",
+    "sentences": [
+      "These subtypes included one with a 'bipolar' expression pattern and developmental history, but a unipolar morphology in the adult [CITATION #b192], which has distinct functional characteristics in the neural circuits of the retina (Della [CITATION]."
+    ]
+  },
+  {
+    "title": "Integrated genome and transcriptome sequencing of the same cell",
+    "authors": "S S Dey;L Kester;B Spanjaard;M Bienko;A Van Oudenaarden",
+    "year": "2015",
+    "citation": "Dey, S.S., Kester, L., Spanjaard, B., Bienko, M., and van Oudenaarden, A. (2015). Integrated genome and transcriptome sequencing of the same cell. Nature Biotechnology 33, 285-289.",
+    "pages": "285-289",
+    "journal": "Nature Biotechnology",
+    "volume": "33",
+    "sentences": [
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION #b19][CITATION #b45][CITATION][CITATION #b64][CITATION #b71][CITATION #b128].",
+      "Recent studies have simultaneously profiled the transcriptome together with either the genome [CITATION][CITATION #b128], the epigenome , or protein signatures [CITATION #b45][CITATION #b64][CITATION #b71]."
+    ]
+  },
+  {
+    "title": "Flow-through Chamber for Photometers to Measure and Count Particles in a Dispersion Medium",
+    "authors": "W M Dittrich;W H G\u00f6hde",
+    "year": "1971",
+    "citation": "Dittrich, W.M., and G\u00f6hde, W.H. (1971). Flow-through Chamber for Photometers to Measure and Count Particles in a Dispersion Medium. US Patent.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Immunohistochemistry, pioneered in the 1940s [CITATION #b11] and accelerated by the advent of monoclonal antibodies [CITATION #b111] and Fluorescence-Activated Cell Sorting (FACS; [CITATION][CITATION #b65] in the 1970s, made it possible to detect the presence and levels of specific proteins."
+    ]
+  },
+  {
+    "title": "A genome-wide association study identifies IL23R as an inflammatory bowel disease gene",
+    "authors": "R H Duerr;K D Taylor;S R Brant;J D Rioux;M S Silverberg;M J Daly;A H Steinhart;C Abraham;M Regueiro;A Griffiths",
+    "year": "2006",
+    "citation": "Duerr, R.H., Taylor, K.D., Brant, S.R., Rioux, J.D., Silverberg, M.S., Daly, M.J., Steinhart, A.H., Abraham, C., Regueiro, M., Griffiths, A., et al. (2006). A genome-wide association study identifies IL23R as an inflammatory bowel disease gene. Science 314, 1461-1463.",
+    "pages": "1461-1463",
+    "journal": "Science",
+    "volume": "314",
+    "sentences": [
+      "Therefore, genetic variants that contribute to disease typically manifest their action through impact in a particular cell types: for example, genetic variants in the IL23R locus increase risk of autoimmune diseases by altering the function of dendritic cells and T-cells [CITATION], and DMD mutations cause muscular dystrophy through specific effects in skeletal muscle cells ."
+    ]
+  },
+  {
+    "title": "Reconstruction of the Mouse Otocyst and Early Neuroblast Lineage at Single-Cell Resolution",
+    "authors": "R Durruthy-Durruthy;A Gottlieb;B H Hartman;J Waldhaus;R D Laske;R Altman;S Heller",
+    "year": "2014",
+    "citation": "Durruthy-Durruthy, R., Gottlieb, A., Hartman, B.H., Waldhaus, J., Laske, R.D., Altman, R., and Heller, S. (2014). Reconstruction of the Mouse Otocyst and Early Neuroblast Lineage at Single-Cell Resolution. Cell 157, 964-978.",
+    "pages": "964-978",
+    "journal": "Cell",
+    "volume": "157",
+    "sentences": [
+      "Single-cell analyses of tissues from early embryos [CITATION #b183][CITATION #b184] to adult demonstrate how physical locations can be imprinted in transcriptional profiles [CITATION] and can be used to infer tissue organization (Figure 2D)."
+    ]
+  },
+  {
+    "title": "Analysis of gene expression in single live neurons",
+    "authors": "J Eberwine;H Yeh;K Miyashiro;Y Cao;S Nair;R Finnell;M Zettel;Coleman;P",
+    "year": "1992",
+    "citation": "Eberwine, J., Yeh, H., Miyashiro, K., Cao, Y., Nair, S., Finnell, R., Zettel, M., and Coleman, P. (1992). Analysis of gene expression in single live neurons. PNAS 89, 3010-3014.",
+    "pages": "3010-3014",
+    "journal": "PNAS",
+    "volume": "89",
+    "sentences": [
+      "The desirability of having much deeper knowledge about cells has been well recognized for a long time [CITATION #b25][CITATION][CITATION #b190][CITATION #b230].",
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION][CITATION #b230], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION #b222] [CITATION #b129] and microwell-based [CITATION #b59][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "Functional roles for noise in genetic circuits",
+    "authors": "A Eldar;M B Elowitz",
+    "year": "2010",
+    "citation": "Eldar, A., and Elowitz, M.B. (2010). Functional roles for noise in genetic circuits. Nature 467, 167-173.",
+    "pages": "167-173",
+    "journal": "Nature",
+    "volume": "467",
+    "sentences": [
+      "In an atlas where cells are represented as points in a high-dimensional space, 'similar' cells should be 'close' in some appropriate sense, although not identical, owing to differences in physiological states (e.g., cell-cycle stage), the inherent noise in molecular systems [CITATION][CITATION #b104][CITATION #b107] , and measurement errors [CITATION #b146][CITATION #b104][CITATION #b107] [CITATION #b189][CITATION #b233]."
+    ]
+  },
+  {
+    "title": "Reconstructing cell cycle and disease progression using deep learning",
+    "authors": "P Eulenberg;N Kohler;T Blasi;A Filby;A E Carpenter;P Rees;F J Theis;F A Wolf",
+    "year": "2017",
+    "citation": "Eulenberg, P., Kohler, N., Blasi, T., Filby, A., Carpenter, A.E., Rees, P., Theis, F.J., and Wolf, F.A. (2017). Reconstructing cell cycle and disease progression using deep learning. Nat Commun 8, 463.",
+    "pages": "463",
+    "journal": "Nat Commun",
+    "volume": "8",
+    "sentences": [
+      "Notably, the cell cycle could also be reconstructed by similar approaches when applied to imaging data of very few molecular markers along with salient spatial features [CITATION #b79] or with morphology alone [CITATION #b22][CITATION]."
+    ]
+  },
+  {
+    "title": "Combinatorial labeling of single cells for gene expression cytometry",
+    "authors": "H C Fan;G K Fu;S P Fodor",
+    "year": "2015",
+    "citation": "Fan, H.C., Fu, G.K., and Fodor, S.P. (2015). Combinatorial labeling of single cells for gene expression cytometry. Science 347, 1258367.",
+    "pages": "",
+    "journal": "Science",
+    "volume": "347",
+    "sentences": [
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION #b230], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION #b222] [CITATION #b129] and microwell-based [CITATION][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "Single-cell DNA methylome sequencing and bioinformatic inference of epigenomic cell-state dynamics",
+    "authors": "M Farlik;N C Sheffield;A Nuzzo;P Datlinger;A Schonegger;J Klughammer;C Bock",
+    "year": "2015",
+    "citation": "Farlik, M., Sheffield, N.C., Nuzzo, A., Datlinger, P., Schonegger, A., Klughammer, J., and Bock, C. (2015). Single-cell DNA methylome sequencing and bioinformatic inference of epigenomic cell-state dynamics. Cell Reports 10, 1386-1397.",
+    "pages": "1386-1397",
+    "journal": "Cell Reports",
+    "volume": "10",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Epigenomic methods may capture regions based on distinctive histone modifications (single-cell ChIP-Seq; [CITATION #b179], accessibility (single-cell ATAC-Seq;  , or likewise characterize DNA methylation patterns (single-cell DNAme-Seq; [CITATION][CITATION #b77][CITATION #b147][CITATION #b197] or 3D organization (single-cell Hi-C; [CITATION #b153][CITATION #b171]."
+    ]
+  },
+  {
+    "title": "Bistability, bifurcations, and Waddington's epigenetic landscape",
+    "authors": "J E Ferrell;Jr",
+    "year": "2012",
+    "citation": "Ferrell, J.E., Jr. (2012). Bistability, bifurcations, and Waddington's epigenetic landscape. Current Biology 22, R458-466.",
+    "pages": "458-466",
+    "journal": "Current Biology",
+    "volume": "22",
+    "sentences": [
+      "Cells arrive at their final differentiated cell types through partly asynchronous branching pathways of development [CITATION], which are driven by and reflected in molecular changes, especially gene-expression patterns (see, for example, [CITATION #b32][CITATION #b101].",
+      "It should therefore be possible to reconstruct development as trajectories in high-dimensional space, mirroring Waddington's landscape [CITATION][CITATION #b232] -just as it would be possible to infer the ski lifts and trails on a 16 mountain from snapshots of the positions of enough skiers.",
+      "The reconstruction algorithms themselves could incorporate insights from theoretical studies of dynamical systems, and learned models could be analyzed in light of such frameworks [CITATION][CITATION #b137][CITATION #b215]."
+    ]
+  },
+  {
+    "title": "Highly multiplexed simultaneous detection of RNAs and proteins in single cells",
+    "authors": "A P Frei;F A Bava;E R Zunder;E W Hsieh;S Y Chen;G P Nolan;P F Gherardini",
+    "year": "2016",
+    "citation": "Frei, A.P., Bava, F.A., Zunder, E.R., Hsieh, E.W., Chen, S.Y., Nolan, G.P., and Gherardini, P.F. (2016). Highly multiplexed simultaneous detection of RNAs and proteins in single cells. Nature Methods 13, 269-275.",
+    "pages": "269-275",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION #b19][CITATION #b45][CITATION #b48][CITATION][CITATION #b71][CITATION #b128].",
+      "Recently, the approach has been extended to the measurement of RNA signatures through multiplex hybridization of nucleic-acid probes tagged with heavy metals [CITATION].",
+      "Recent studies have simultaneously profiled the transcriptome together with either the genome [CITATION #b48][CITATION #b128], the epigenome , or protein signatures [CITATION #b45][CITATION][CITATION #b71]."
+    ]
+  },
+  {
+    "title": "Electronic separation of biological cells by volume",
+    "authors": "M J Fulwyler",
+    "year": "1965",
+    "citation": "Fulwyler, M.J. (1965). Electronic separation of biological cells by volume. Science 150, 910- 911.",
+    "pages": "910-911",
+    "journal": "Science",
+    "volume": "150",
+    "sentences": [
+      "Immunohistochemistry, pioneered in the 1940s [CITATION #b11] and accelerated by the advent of monoclonal antibodies [CITATION #b111] and Fluorescence-Activated Cell Sorting (FACS; [CITATION #b51][CITATION] in the 1970s, made it possible to detect the presence and levels of specific proteins."
+    ]
+  },
+  {
+    "title": "Punctuated copy number evolution and clonal stasis in triple-negative breast cancer",
+    "authors": "R Gao;A Davis;T O Mcdonald;E Sei;X Shi;Y Wang;P C Tsai;A Casasent;J Waters;H Zhang",
+    "year": "2016",
+    "citation": "Gao, R., Davis, A., McDonald, T.O., Sei, E., Shi, X., Wang, Y., Tsai, P.C., Casasent, A., Waters, J., Zhang, H., et al. (2016). Punctuated copy number evolution and clonal stasis in triple-negative breast cancer. Nature Genetics 48, 1119-1130",
+    "pages": "1119-1130",
+    "journal": "Nature Genetics",
+    "volume": "48",
+    "sentences": [
+      "Genomic methods aim either to characterize the whole genome or capture specific predefined regions [CITATION]."
+    ]
+  },
+  {
+    "title": "Single-Cell Genomics Unveils Critical Regulators of Th17 Cell Pathogenicity",
+    "authors": "J T Gaublomme;N Yosef;Y Lee;R S Gertner;L V Yang;C Wu;P P Pandolfi;T Mak;R Satija;A K Shalek",
+    "year": "2015",
+    "citation": "Gaublomme, J.T., Yosef, N., Lee, Y., Gertner, R.S., Yang, L.V., Wu, C., Pandolfi, P.P., Mak, T., Satija, R., Shalek, A.K., et al. (2015). Single-Cell Genomics Unveils Critical Regulators of Th17 Cell Pathogenicity. Cell 163, 1400-1412.",
+    "pages": "1400-1412",
+    "journal": "Cell",
+    "volume": "163",
+    "sentences": [
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION][CITATION #b92][CITATION #b93][CITATION #b175][CITATION #b245] .",
+      "Similarly, co-variation analysis of a few hundred Th17 cells spanning a continuum from less to more pathogenic states revealed regulators that control pathogenicity, but not other features, such as cell differentiation [CITATION]."
+    ]
+  },
+  {
+    "title": "Dissecting the clonal origins of childhood acute lymphoblastic leukemia by single-cell genomics",
+    "authors": "C Gawad;W Koh;S R Quake",
+    "year": "2014",
+    "citation": "Gawad, C., Koh, W., and Quake, S.R. (2014). Dissecting the clonal origins of childhood acute lymphoblastic leukemia by single-cell genomics. PNAS 111, 17947-17952.",
+    "pages": "17947-17952",
+    "journal": "PNAS",
+    "volume": "111",
+    "sentences": [
+      "With the advent of high-throughput methods, single-cell genome analysis has been used to study the clonal structure and evolution of tumors in both breast cancer and acute lymphoblastic leukemia [CITATION], and to infer the order of earliest mutations that cause acute myeloid leukemia [CITATION #b40][CITATION #b99]."
+    ]
+  },
+  {
+    "title": "Multiplexed, targeted profiling of single-cell proteomes and transcriptomes in a single reaction",
+    "authors": "A S Genshaft;S Li;C J Gallant;S Darmanis;S M Prakadan;C G Ziegler;M Lundberg;S Fredriksson;J Hong;A Regev",
+    "year": "2016",
+    "citation": "Genshaft, A.S., Li, S., Gallant, C.J., Darmanis, S., Prakadan, S.M., Ziegler, C.G., Lundberg, M., Fredriksson, S., Hong, J., Regev, A., et al. (2016). Multiplexed, targeted profiling of single-cell proteomes and transcriptomes in a single reaction. Genome Biology 17, 188.",
+    "pages": "188",
+    "journal": "Genome Biology",
+    "volume": "17",
+    "sentences": [
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION #b19][CITATION #b45][CITATION #b48][CITATION #b64][CITATION][CITATION #b128].",
+      "Recent studies have simultaneously profiled the transcriptome together with either the genome [CITATION #b48][CITATION #b128], the epigenome , or protein signatures [CITATION #b45][CITATION #b64][CITATION]."
+    ]
+  },
+  {
+    "title": "Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry",
+    "authors": "C Giesen;H A Wang;D Schapiro;N Zivanovic;A Jacobs;B Hattendorf;P J Schuffler;D Grolimund;J M Buhmann;S Brandt",
+    "year": "2014",
+    "citation": "Giesen, C., Wang, H.A., Schapiro, D., Zivanovic, N., Jacobs, A., Hattendorf, B., Schuffler, P.J., Grolimund, D., Buhmann, J.M., Brandt, S., et al. (2014). Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry. Nature Methods 11, 417-422.",
+    "pages": "417-422",
+    "journal": "Nature Methods",
+    "volume": "11",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "With emerging highly multiplexed methods for in situ hybridization [CITATION #b36][CITATION #b186] or protein staining [CITATION #b6][CITATION], it should be possible to spatially map multiple cell types at once based on expression signatures to see how they relate to each other and to connect them with cell types defined by morphology or function.",
+      "In breast cancer tissues, spatial analysis of multiplex protein expression by imaging mass cytometry [CITATION]",
+      "Some approaches for protein detection, such as Imaging Mass Cytometry [CITATION] and Mass Ion Bean"
+    ]
+  },
+  {
+    "title": "Cellular Taxonomy of the Mouse Striatum as Revealed by Single-Cell RNA-Seq",
+    "authors": "O Gokce;G M Stanley;B Treutlein;N F Neff;J G Camp;R C Malenka;P E Rothwell;M V Fuccillo;T C Sudhof;S R Quake",
+    "year": "2016",
+    "citation": "Gokce, O., Stanley, G.M., Treutlein, B., Neff, N.F., Camp, J.G., Malenka, R.C., Rothwell, P.E., Fuccillo, M.V., Sudhof, T.C., and Quake, S.R. (2016). Cellular Taxonomy of the Mouse Striatum as Revealed by Single-Cell RNA-Seq. Cell Reports 16, 1126-1137.",
+    "pages": "1126-1137",
+    "journal": "Cell Reports",
+    "volume": "16",
+    "sentences": [
+      "In other complex brain regions such as the neocortex and hippocampus there are also a large number of transcriptionally defined types [CITATION #b46][CITATION][CITATION #b80][CITATION #b116][CITATION #b167]  , but it has been more difficult to find consensus between data modalities, and the relationship between transcriptomic types and anatomical or morphological types is unclear.",
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION].",
+      "Linear developmental trajectories have been reconstructed, for example, from single-cell protein expression during B-cell differentiation [CITATION #b20], and from single-cell RNA expression during myogenesis in vitro , early hematopoiesis , neurogenesis in vivo [CITATION #b80][CITATION #b193], and reprogramming from fibroblasts to neurons [CITATION].",
+      "In direct reprogramming to neurons, scRNA-seq revealed unexpected trajectories [CITATION]."
+    ]
+  },
+  {
+    "title": "De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data",
+    "authors": "D Grun;M J Muraro;J C Boisset;K Wiebrands;A Lyubimova;G Dharmadhikari;M Van Den Born;J Van Es;E Jansen;H Clevers",
+    "year": "2016",
+    "citation": "Grun, D., Muraro, M.J., Boisset, J.C., Wiebrands, K., Lyubimova, A., Dharmadhikari, G., van den Born, M., van Es, J., Jansen, E., Clevers, H., et al. (2016). De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266-277.",
+    "pages": "266-277",
+    "journal": "Cell Stem Cell",
+    "volume": "19",
+    "sentences": [
+      "Unsupervised clustering algorithms for high-dimensional data provide an initial framework [CITATION] [CITATION #b120][CITATION #b129][CITATION #b192][CITATION #b229], but substantial advances will be needed in order to select the 'right' features, the 'right' similarity metric, and the 'right' level of granularity for the question at hand, control for distinct biological processes, handle technical noise, and connect novel clusters with legacy knowledge."
+    ]
+  },
+  {
+    "title": "Trajectories of cellcycle progression from fixed cell populations",
+    "authors": "G Gut;M D Tadmor;D Pe'er;L Pelkmans;P Liberali",
+    "year": "2015",
+    "citation": "Gut, G., Tadmor, M.D., Pe'er, D., Pelkmans, L., and Liberali, P. (2015). Trajectories of cell- cycle progression from fixed cell populations. Nature methods 12, 951-954.",
+    "pages": "951-954",
+    "journal": "Nature methods",
+    "volume": "12",
+    "sentences": [
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION][CITATION #b102][CITATION #b113][CITATION #b129] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles.",
+      "Notably, the cell cycle could also be reconstructed by similar approaches when applied to imaging data of very few molecular markers along with salient spatial features [CITATION] or with morphology alone [CITATION #b22][CITATION #b58]."
+    ]
+  },
+  {
+    "title": "Div-Seq: Single-nucleus RNA-Seq reveals dynamics of rare adult newborn neurons",
+    "authors": "N Habib;Y Li;M Heidenreich;L Swiech;I Avraham-Davidi;J J Trombetta;C Hession;F Zhang;A Regev",
+    "year": "2016",
+    "citation": "Habib, N., Li, Y., Heidenreich, M., Swiech, L., Avraham-Davidi, I., Trombetta, J.J., Hession, C., Zhang, F., and Regev, A. (2016a). Div-Seq: Single-nucleus RNA-Seq reveals dynamics of rare adult newborn neurons. Science 353, 925-928.",
+    "pages": "925-928",
+    "journal": "Science",
+    "volume": "353",
+    "sentences": [
+      "In other complex brain regions such as the neocortex and hippocampus there are also a large number of transcriptionally defined types [CITATION #b46][CITATION #b73][CITATION][CITATION #b116][CITATION #b167]  , but it has been more difficult to find consensus between data modalities, and the relationship between transcriptomic types and anatomical or morphological types is unclear.",
+      "In adult mouse hippocampus, cell profiles show clear clusters corresponding to discrete functional regions as well as gradients following dorsal/ventral and medial/lateral axes [CITATION].",
+      "Linear developmental trajectories have been reconstructed, for example, from single-cell protein expression during B-cell differentiation [CITATION #b20], and from single-cell RNA expression during myogenesis in vitro , early hematopoiesis , neurogenesis in vivo [CITATION][CITATION #b193], and reprogramming from fibroblasts to neurons [CITATION #b73].",
+      "Computationally ordering cells along a time-course of development provides another way to infer regulators -a strategy that has been successful in, for example, differentiating B cells [CITATION #b20], myoblasts , neurons [CITATION][CITATION #b193], and T helper cells [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Div-Seq: A single nucleus RNA-Seq method reveals dynamics of rare adult newborn neurons in the CNS",
+    "authors": "N Habib;Y Li;M Heidenreich;L Swiech;J J Trombetta;F Zhang;A Regev",
+    "year": "2016",
+    "citation": "Habib, N., Li, Y., Heidenreich, M., Swiech, L., Trombetta, J.J., Zhang, F., and Regev, A. (2016b). Div-Seq: A single nucleus RNA-Seq method reveals dynamics of rare adult newborn neurons in the CNS. bioRxiv. https://doi.org/10.1101/045989",
+    "pages": "",
+    "journal": "bioRxiv",
+    "volume": "",
+    "sentences": [
+      "scRNA-seq is typically applied to freshly dissociated tissue, but emerging protocols use fixed cells [CITATION #b216] or nuclei isolated from frozen or lightly fixed tissue [CITATION][CITATION #b116]."
+    ]
+  },
+  {
+    "title": "Diffusion maps for high-dimensional single-cell analysis of differentiation data",
+    "authors": "L Haghverdi;F Buettner;F J Theis",
+    "year": "2015",
+    "citation": "Haghverdi, L., Buettner, F., and Theis, F.J. (2015). Diffusion maps for high-dimensional single-cell analysis of differentiation data. Bioinformatics 31, 2989-2998.",
+    "pages": "2989-2998",
+    "journal": "Bioinformatics",
+    "volume": "31",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION #b35][CITATION][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION #b73].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION #b164] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Diffusion pseudotime robustly reconstructs lineage branching",
+    "authors": "L Haghverdi;M Buttner;F A Wolf;F Buettner;F J Theis",
+    "year": "2016",
+    "citation": "Haghverdi, L., Buttner, M., Wolf, F.A., Buettner, F., and Theis, F.J. (2016). Diffusion pseudotime robustly reconstructs lineage branching. Nature Methods. 13, 845-845",
+    "pages": "845-845",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION #b35][CITATION #b82][CITATION][CITATION #b121][CITATION #b131] [CITATION #b185] [CITATION #b73].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION #b82][CITATION][CITATION #b121][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION #b164] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Scale: a chemical approach for fluorescence imaging and reconstruction of transparent mouse brain",
+    "authors": "H Hama;H Kurokawa;H Kawano;R Ando;T Shimogori;H Noda;K Fukami;A Sakaue-Sawano;A Miyawaki",
+    "year": "2011",
+    "citation": "Hama, H., Kurokawa, H., Kawano, H., Ando, R., Shimogori, T., Noda, H., Fukami, K., Sakaue-Sawano, A., and Miyawaki, A. (2011). Scale: a chemical approach for fluorescence imaging and reconstruction of transparent mouse brain. Nature Neuroscience 14, 1481- 1488.",
+    "pages": "1481-1488",
+    "journal": "Nature Neuroscience",
+    "volume": "14",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "CEL-Seq: single-cell RNA-Seq by multiplexed linear amplification",
+    "authors": "T Hashimshony;F Wagner;N Sher;Yanai;I",
+    "year": "2012",
+    "citation": "Hashimshony, T., Wagner, F., Sher, N., and Yanai, I. (2012). CEL-Seq: single-cell RNA-Seq by multiplexed linear amplification. Cell Reports 2, 666-673.",
+    "pages": "666-673",
+    "journal": "Cell Reports",
+    "volume": "2",
+    "sentences": [
+      "The first single-cell genomic characterization method to become feasible at largescale is trancriptome analysis by single cell RNA-Seq (Box 1; [CITATION] [CITATION #b166][CITATION #b174] .",
+      "Some may take a census of mRNA species by focusing on 3'-or 5'-ends [CITATION #b129], while others assess mRNA structure and splicing by collecting near-full-length sequence [CITATION][CITATION #b174]."
+    ]
+  },
+  {
+    "title": "An anatomically comprehensive atlas of the adult human brain transcriptome",
+    "authors": "M J Hawrylycz;E S Lein;A L Guillozet-Bongaarts;E H Shen;L Ng;J A Miller;L N Van De Lagemaat;K A Smith;A Ebbert;Z L Riley",
+    "year": "2012",
+    "citation": "Hawrylycz, M.J., Lein, E.S., Guillozet-Bongaarts, A.L., Shen, E.H., Ng, L., Miller, J.A., van de Lagemaat, L.N., Smith, K.A., Ebbert, A., Riley, Z.L., et al. (2012). An anatomically comprehensive atlas of the adult human brain transcriptome. Nature 489, 391-399.",
+    "pages": "391-399",
+    "journal": "Nature",
+    "volume": "489",
+    "sentences": [
+      "Today, it is surprisingly challenging to obtain definitive answers for most human genes beyond tissue-or organ-level resolution, although there have been pioneering efforts for the brain and immune system in mouse [CITATION][CITATION #b105] and for protein expression in human [CITATION #b217] ."
+    ]
+  },
+  {
+    "title": "Low Dimensionality in Gene Expression Data Enables the Accurate Extraction of Transcriptional Programs from Shallow Sequencing",
+    "authors": "G Heimberg;R Bhatnagar;H El-Samad;M Thomson",
+    "year": "2016",
+    "citation": "Heimberg, G., Bhatnagar, R., El-Samad, H., and Thomson, M. (2016). Low Dimensionality in Gene Expression Data Enables the Accurate Extraction of Transcriptional Programs from Shallow Sequencing. Cell Syst 2, 239-250.",
+    "pages": "239-250",
+    "journal": "Cell Syst",
+    "volume": "2",
+    "sentences": [
+      "With respect to depth of profiling, recent studies suggest the utility of a mixed strategy: relatively low coverage of the transcriptome can identify many cell types reliably [CITATION][CITATION #b192] and a smaller set of deep profiles can be help interpret the low-coverage data to further increase detection power."
+    ]
+  },
+  {
+    "title": "The molecular and mathematical basis of Waddington's epigenetic landscape: A framework for post-Darwinian biology",
+    "authors": "S Huang",
+    "year": "2012",
+    "citation": "Huang, S. (2012). The molecular and mathematical basis of Waddington's epigenetic landscape: A framework for post-Darwinian biology? BioEssays 34, 149-157.",
+    "pages": "149-157",
+    "journal": "BioEssays",
+    "volume": "34",
+    "sentences": [
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION #b69][CITATION][CITATION #b93][CITATION #b175][CITATION #b245] ."
+    ]
+  },
+  {
+    "title": "Hybrid T-helper cells: stabilizing the moderate center in a polarized system",
+    "authors": "S Huang",
+    "year": "2013",
+    "citation": "Huang, S. (2013). Hybrid T-helper cells: stabilizing the moderate center in a polarized system. PLoS Biology 11, e1001632.",
+    "pages": "",
+    "journal": "PLoS Biology",
+    "volume": "11",
+    "sentences": [
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION #b69][CITATION #b92][CITATION][CITATION #b175][CITATION #b245] ."
+    ]
+  },
+  {
+    "title": "Dissecting Immune Circuits by Linking CRISPR-Pooled Screens with Single-Cell RNA-Seq",
+    "authors": "D A Jaitin;A Weiner;I Yofe;D Lara-Astiaso;H Keren-Shaul;E David;T M Salame;A Tanay;A Van Oudenaarden;Amit;I",
+    "year": "2016",
+    "citation": "Jaitin, D.A., Weiner, A., Yofe, I., Lara-Astiaso, D., Keren-Shaul, H., David, E., Salame, T.M., Tanay, A., van Oudenaarden, A., and Amit, I. (2016). Dissecting Immune Circuits by Linking CRISPR-Pooled Screens with Single-Cell RNA-Seq. Cell 167, 1883-1896 e1815.",
+    "pages": "1883-1896",
+    "journal": "Cell",
+    "volume": "167",
+    "sentences": [
+      "Studies can be extended from naturally occurring variation among cells to engineered perturbations, by using pooled CRISPR libraries to manipulate genes and reading out both the perturbation and its effects on cellular phenotype in single cellsfor example, by single-cell RNA-Seq  [CITATION]."
+    ]
+  },
+  {
+    "title": "Optimal stopping rules for adaptive sequential meta-analysis in the presence of publication bias",
+    "authors": [
+      "Bergmann, U.",
+      "Adebayo, T.",
+      "Leung, P."
+    ],
+    "year": "2019",
+    "journal": "Statistics in Medicine",
+    "doi": "",
+    "citation": "Bergmann et al. (2019) Stat Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Clonal Evolution of Preleukemic Hematopoietic Stem Cells Precedes Human Acute Myeloid Leukemia",
+    "authors": "M Jan;T M Snyder;M R Corces-Zimmerman;P Vyas;I L Weissman;S R Quake;R Majeti",
+    "year": "2012",
+    "citation": "Jan, M., Snyder, T.M., Corces-Zimmerman, M.R., Vyas, P., Weissman, I.L., Quake, S.R., and Majeti, R. (2012). Clonal Evolution of Preleukemic Hematopoietic Stem Cells Precedes Human Acute Myeloid Leukemia. Science translational medicine 4, 149ra118",
+    "pages": "149-118",
+    "journal": "Science translational medicine",
+    "volume": "4",
+    "sentences": [
+      "With the advent of high-throughput methods, single-cell genome analysis has been used to study the clonal structure and evolution of tumors in both breast cancer and acute lymphoblastic leukemia [CITATION #b70], and to infer the order of earliest mutations that cause acute myeloid leukemia [CITATION #b40][CITATION]."
+    ]
+  },
+  {
+    "title": "Identification of transcriptional regulators in the mouse immune system",
+    "authors": "V Jojic;T Shay;K Sylvia;O Zuk;X Sun;J Kang;A Regev;D Koller;C Immunological Genome Project;A J Best",
+    "year": "2013",
+    "citation": "Jojic, V., Shay, T., Sylvia, K., Zuk, O., Sun, X., Kang, J., Regev, A., Koller, D., Immunological Genome Project, C., Best, A.J., et al. (2013). Identification of transcriptional regulators in the mouse immune system. Nature Immunology 14, 633-643.",
+    "pages": "633-643",
+    "journal": "Nature Immunology",
+    "volume": "14",
+    "sentences": [
+      "Through these remarkable efforts, biologists have achieved an impressive understanding of specific systems, such as the hematopoietic and immune systems [CITATION #b32][CITATION][CITATION #b105] or the neurons in the retina [CITATION #b182].",
+      "Cells arrive at their final differentiated cell types through partly asynchronous branching pathways of development [CITATION #b61], which are driven by and reflected in molecular changes, especially gene-expression patterns (see, for example, [CITATION #b32][CITATION]."
+    ]
+  },
+  {
+    "title": "Dynamics extracted from fixed cells reveal feedback linking cell growth to cell cycle",
+    "authors": "R Kafri;J Levy;M B Ginzberg;S Oh;G Lahav;M W Kirschner",
+    "year": "2013",
+    "citation": "Kafri, R., Levy, J., Ginzberg, M.B., Oh, S., Lahav, G., and Kirschner, M.W. (2013). Dynamics extracted from fixed cells reveal feedback linking cell growth to cell cycle. Nature 494, 480-483.",
+    "pages": "480-483",
+    "journal": "Nature",
+    "volume": "494",
+    "sentences": [
+      "Notably, the relative proportions of cells observed at different points along the developmental paths can help convey critical information, both about the duration of each phase [CITATION #b10][CITATION] and the balance of how progenitor cells are allocated among fates [CITATION #b10][CITATION #b121][CITATION #b149], especially when information about the rate of cell proliferation and/or death can be incorporated as inferred from the profiles.",
+      "As was initially shown for single-cell measurement of a few features of the cell cycle [CITATION], analysis of many systems could yield a near-continuous model of the process, provided that a sufficient number of cells is sampled.",
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION #b79][CITATION][CITATION #b113][CITATION #b129] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles."
+    ]
+  },
+  {
+    "title": "In situ sequencing for RNA analysis in preserved tissue and cells",
+    "authors": "R Ke;M Mignardi;A Pacureanu;J Svedlund;J Botling;C Wahlby;M Nilsson",
+    "year": "2013",
+    "citation": "Ke, R., Mignardi, M., Pacureanu, A., Svedlund, J., Botling, J., Wahlby, C., and Nilsson, M. (2013). In situ sequencing for RNA analysis in preserved tissue and cells. Nature Methods 10, 857-860.",
+    "pages": "857-860",
+    "journal": "Nature Methods",
+    "volume": "10",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Finally, more recent studies have performed RNA-seq in situ in cells and in preserved tissue sections [CITATION][CITATION #b119]."
+    ]
+  },
+  {
+    "title": "Bayesian approach to singlecell differential expression analysis",
+    "authors": "P V Kharchenko;L Silberstein;D T Scadden",
+    "year": "2014",
+    "citation": "Kharchenko, P.V., Silberstein, L., and Scadden, D.T. (2014). Bayesian approach to single- cell differential expression analysis. Nature Methods 11, 740-742.",
+    "pages": "740-742",
+    "journal": "Nature Methods",
+    "volume": "11",
+    "sentences": [
+      "In an atlas where cells are represented as points in a high-dimensional space, 'similar' cells should be 'close' in some appropriate sense, although not identical, owing to differences in physiological states (e.g., cell-cycle stage), the inherent noise in molecular systems [CITATION #b57][CITATION][CITATION #b107] , and measurement errors [CITATION #b146][CITATION][CITATION #b107] [CITATION #b189][CITATION #b233]."
+    ]
+  },
+  {
+    "title": "Beyond the transcriptome: completion of act one of the Immunological Genome Project",
+    "authors": "C C Kim;L L Lanier",
+    "year": "2013",
+    "citation": "Kim, C.C., and Lanier, L.L. (2013). Beyond the transcriptome: completion of act one of the Immunological Genome Project. Current Opinion in Immunology 25, 593-597.",
+    "pages": "593-597",
+    "journal": "Current Opinion in Immunology",
+    "volume": "25",
+    "sentences": [
+      "Through these remarkable efforts, biologists have achieved an impressive understanding of specific systems, such as the hematopoietic and immune systems [CITATION #b32][CITATION #b101][CITATION] or the neurons in the retina [CITATION #b182].",
+      "Today, it is surprisingly challenging to obtain definitive answers for most human genes beyond tissue-or organ-level resolution, although there have been pioneering efforts for the brain and immune system in mouse [CITATION #b87][CITATION] and for protein expression in human [CITATION #b217] ."
+    ]
+  },
+  {
+    "title": "RNA: state memory and mediator of cellular phenotype",
+    "authors": "J Kim;J Eberwine",
+    "year": "2010",
+    "citation": "Kim, J., and Eberwine, J. (2010). RNA: state memory and mediator of cellular phenotype. Trends in Cell Biology 20, 311-318.",
+    "pages": "311-318",
+    "journal": "Trends in Cell Biology",
+    "volume": "20",
+    "sentences": [
+      "Thus, a cell 'type' might be defined as a region or a probability distribution [CITATION][CITATION #b205] either in the full-dimensional space or in a projection onto a lower-dimensional space that reflects salient features."
+    ]
+  },
+  {
+    "title": "SC3: consensus clustering of singlecell RNA-Seq data",
+    "authors": "V Y Kiselev;K Kirschner;M T Schaub;T Andrews;A Yiu;T Chandra;K N Natarajan;W Reik;M Barahona;A R Green",
+    "year": "2016",
+    "citation": "Kiselev, V.Y., Kirschner, K., Schaub, M.T., Andrews, T., Yiu, A., Chandra, T., Natarajan, K.N., Reik, W., Barahona, M., Green, A.R., et al. (2016). SC3: consensus clustering of single- cell RNA-Seq data. Nature Methods 14, 483-486",
+    "pages": "483-486",
+    "journal": "Nature Methods",
+    "volume": "14",
+    "sentences": [
+      "In recent studies of melanoma [CITATION #b218], glioblastoma [CITATION #b163], low-grade glioma [CITATION #b219], and myeloproliferative neoplasms [CITATION], single-cell RNA-seq of fresh tumors resected directly from patients readily distinguished among malignant, immune, stromal and endothelial cells.",
+      "Among the malignant cells, it identified distinct cell states -such as cancer stem cells [CITATION #b163][CITATION #b219], drug-resistant states [CITATION #b218], proliferating and quiescent cells [CITATION #b163][CITATION #b218][CITATION #b219] -and related them to each other, showing, for example, that only stem-like cells proliferate in lowgrade glioma [CITATION #b219] and that individual sub-clones can be readily identified in one patient [CITATION]."
+    ]
+  },
+  {
+    "title": "Droplet barcoding for single-cell transcriptomics applied to embryonic stem cells",
+    "authors": "A M Klein;L Mazutis;I Akartuna;N Tallapragada;A Veres;V Li;L Peshkin;D A Weitz;M W Kirschner",
+    "year": "2015",
+    "citation": "Klein, A.M., Mazutis, L., Akartuna, I., Tallapragada, N., Veres, A., Li, V., Peshkin, L., Weitz, D.A., and Kirschner, M.W. (2015). Droplet barcoding for single-cell transcriptomics applied to embryonic stem cells. Cell 161, 1187-1201.",
+    "pages": "1187-1201",
+    "journal": "Cell",
+    "volume": "161",
+    "sentences": [
+      "Now, massively parallel assays can process tens and hundreds of thousands of single cells simultaneously to measure their transcriptional profiles at rapidly decreasing costs [CITATION][CITATION #b129][CITATION #b192] with increasing accuracy and sensitivity [CITATION #b207][CITATION #b247]."
+    ]
+  },
+  {
+    "title": "Continuous cultures of fused cells secreting antibody of predefined specificity",
+    "authors": "G Kohler;C Milstein",
+    "year": "1975",
+    "citation": "Kohler, G., and Milstein, C. (1975). Continuous cultures of fused cells secreting antibody of predefined specificity. Nature 256, 495-497.",
+    "pages": "495-497",
+    "journal": "Nature",
+    "volume": "256",
+    "sentences": [
+      "Immunohistochemistry, pioneered in the 1940s [CITATION #b11] and accelerated by the advent of monoclonal antibodies [CITATION] and Fluorescence-Activated Cell Sorting (FACS; [CITATION #b51][CITATION #b65] in the 1970s, made it possible to detect the presence and levels of specific proteins."
+    ]
+  },
+  {
+    "title": "Single Cell RNA-Sequencing of Pluripotent States Unlocks Modular Transcriptional Variation",
+    "authors": "A A Kolodziejczyk;J K Kim;J C Tsang;T Ilicic;J Henriksson;K N Natarajan;A C Tuck;X Gao;M Buhler;P Liu",
+    "year": "2015",
+    "citation": "Kolodziejczyk, A.A., Kim, J.K., Tsang, J.C., Ilicic, T., Henriksson, J., Natarajan, K.N., Tuck, A.C., Gao, X., Buhler, M., Liu, P., et al. (2015). Single Cell RNA-Sequencing of Pluripotent States Unlocks Modular Transcriptional Variation. Cell Stem Cell 17, 471-485.",
+    "pages": "471-485",
+    "journal": "Cell Stem Cell",
+    "volume": "17",
+    "sentences": [
+      "This approach has made it possible to determine the relative rates of proliferation of different cell subpopulations within a dataset [CITATION][CITATION #b113][CITATION], a feat difficult to accomplish using bulk synchronized populations along the cell cycle [CITATION #b126].",
+      "Co-variation identified a role for pregnenolone biosynthesis in the response of Th2 cells to helminth infection [CITATION #b130], and new regulators of pluripotency in mouse embryonic stem cells [CITATION]."
+    ]
+  },
+  {
+    "title": "Single-cell RNA-seq reveals changes in cell cycle and differentiation programs upon aging of hematopoietic stem cells",
+    "authors": "M S Kowalczyk;I Tirosh;D Heckl;T N Rao;A Dixit;B J Haas;R K Schneider;A J Wagers;B L Ebert;A Regev",
+    "year": "2015",
+    "citation": "Kowalczyk, M.S., Tirosh, I., Heckl, D., Rao, T.N., Dixit, A., Haas, B.J., Schneider, R.K., Wagers, A.J., Ebert, B.L., and Regev, A. (2015). Single-cell RNA-seq reveals changes in cell cycle and differentiation programs upon aging of hematopoietic stem cells. Genome Research 25, 1860-1872.",
+    "pages": "1860-1872",
+    "journal": "Genome Research",
+    "volume": "25",
+    "sentences": [
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION #b79][CITATION #b102][CITATION][CITATION #b129] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles.",
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION #b129], primary immune cells [CITATION #b146][CITATION], and healthy and disease tissues [CITATION #b163][CITATION #b218][CITATION #b219].",
+      "This approach has made it possible to determine the relative rates of proliferation of different cell subpopulations within a dataset [CITATION #b112][CITATION][CITATION #b112], a feat difficult to accomplish using bulk synchronized populations along the cell cycle [CITATION #b126]."
+    ]
+  },
+  {
+    "title": "Lineage tracing",
+    "authors": "K Kretzschmar;F M Watt",
+    "year": "2012",
+    "citation": "Kretzschmar, K., and Watt, F.M. (2012). Lineage tracing. Cell 148, 33-45.",
+    "pages": "33-45",
+    "journal": "Cell",
+    "volume": "148",
+    "sentences": [
+      "Various alternative approaches have been developed [CITATION]."
+    ]
+  },
+  {
+    "title": "Conditional density-based analysis of T cell signaling in singlecell data",
+    "authors": "S Krishnaswamy;M H Spitzer;M Mingueneau;S C Bendall;O Litvin;E Stone;D Pe'er;G P Nolan",
+    "year": "2014",
+    "citation": "Krishnaswamy, S., Spitzer, M.H., Mingueneau, M., Bendall, S.C., Litvin, O., Stone, E., Pe'er, D., and Nolan, G.P. (2014). Conditional density-based analysis of T cell signaling in single- cell data. Science 346, 1250689.",
+    "pages": "",
+    "journal": "Science",
+    "volume": "346",
+    "sentences": [
+      "the levels of regulatory molecules vary naturally -sometimes subtly, sometimes dramatically -due to both stochastic and controlled phenomena within a single genetic background, providing rich information from which to reconstruct cellular circuits [CITATION][CITATION #b181] [CITATION #b202].",
+      "An elegant example is a recent analysis of signaling pathways downstream from the T cell receptor, where single-cell proteomics data has shown how the same cellular circuitry processes signals differently in na\u00efve and antigen-exposed T cells [CITATION]."
+    ]
+  },
+  {
+    "title": "Neuronal subtypes and diversity revealed by singlenucleus RNA sequencing of the human brain",
+    "authors": "B B Lake;R Ai;G E Kaeser;N S Salathia;Y C Yung;R Liu;A Wildberg;D Gao;H L Fung;S Chen",
+    "year": "2016",
+    "citation": "Lake, B.B., Ai, R., Kaeser, G.E., Salathia, N.S., Yung, Y.C., Liu, R., Wildberg, A., Gao, D., Fung, H.L., Chen, S., et al. (2016). Neuronal subtypes and diversity revealed by single- nucleus RNA sequencing of the human brain. Science 352, 1586-1590.",
+    "pages": "1586-1590",
+    "journal": "Science",
+    "volume": "352",
+    "sentences": [
+      "In other complex brain regions such as the neocortex and hippocampus there are also a large number of transcriptionally defined types [CITATION #b46][CITATION #b73][CITATION #b80][CITATION][CITATION #b167]  , but it has been more difficult to find consensus between data modalities, and the relationship between transcriptomic types and anatomical or morphological types is unclear.",
+      "scRNA-seq is typically applied to freshly dissociated tissue, but emerging protocols use fixed cells [CITATION #b216] or nuclei isolated from frozen or lightly fixed tissue [CITATION #b81][CITATION]."
+    ]
+  },
+  {
+    "title": "The new genomics: global views of biology",
+    "authors": "E S Lander",
+    "year": "1996",
+    "citation": "Lander, E.S. (1996). The new genomics: global views of biology. Science 274, 536-539.",
+    "pages": "536-539",
+    "journal": "Science",
+    "volume": "274",
+    "sentences": [
+      "By 'genomic approaches' we mean methods for large-scale profiling of the genome and its products, including DNA sequence, chromatin architecture, RNA transcripts, proteins, and metabolites [CITATION]."
+    ]
+  },
+  {
+    "title": "Immunological method for mapping genes on Drosophila polytene chromosomes",
+    "authors": "P R Langer-Safer;M Levine;D C Ward",
+    "year": "1982",
+    "citation": "Langer-Safer, P.R., Levine, M., and Ward, D.C. (1982). Immunological method for mapping genes on Drosophila polytene chromosomes. PNAS 79, 4381-4385.",
+    "pages": "4381-4385",
+    "journal": "PNAS",
+    "volume": "79",
+    "sentences": [
+      "In the 1980s, Fluorescence in situ Hybridization (FISH; [CITATION] enhanced the ability to characterize cells by detecting specific DNA loci and RNA transcripts."
+    ]
+  },
+  {
+    "title": "Highly multiplexed subcellular RNA sequencing in situ",
+    "authors": "J H Lee;E R Daugharthy;J Scheiman;R Kalhor;J L Yang;T C Ferrante;R Terry;S S Jeanty;C Li;R Amamoto",
+    "year": "2014",
+    "citation": "Lee, J.H., Daugharthy, E.R., Scheiman, J., Kalhor, R., Yang, J.L., Ferrante, T.C., Terry, R., Jeanty, S.S., Li, C., Amamoto, R., et al. (2014). Highly multiplexed subcellular RNA sequencing in situ. Science 343, 1360-1363.",
+    "pages": "1360-1363",
+    "journal": "Science",
+    "volume": "343",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Finally, more recent studies have performed RNA-seq in situ in cells and in preserved tissue sections [CITATION #b103][CITATION].",
+      "Many in situ methods can benefit from tissue clearing and/or expansion to improve detection and spatial resolution [CITATION #b33][CITATION #b34][CITATION #b143][CITATION]."
+    ]
+  },
+  {
+    "title": "Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis",
+    "authors": "J H Levine;E F Simonds;S C Bendall;K L Davis;A D Amir El;M D Tadmor;O Litvin;H G Fienberg;A Jager;E R Zunder",
+    "year": "2015",
+    "citation": "Levine, J.H., Simonds, E.F., Bendall, S.C., Davis, K.L., Amir el, A.D., Tadmor, M.D., Litvin, O., Fienberg, H.G., Jager, A., Zunder, E.R., et al. (2015). Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis. Cell 162, 184-197.",
+    "pages": "184-197",
+    "journal": "Cell",
+    "volume": "162",
+    "sentences": [
+      "Unsupervised clustering algorithms for high-dimensional data provide an initial framework [CITATION #b75] [CITATION][CITATION #b129][CITATION #b192][CITATION #b229], but substantial advances will be needed in order to select the 'right' features, the 'right' similarity metric, and the 'right' level of granularity for the question at hand, control for distinct biological processes, handle technical noise, and connect novel clusters with legacy knowledge.",
+      "From initial studies of a limited number of patients, it should be possible to derive signatures of key cell types and states and use them to deconvolute cellular proportions in conventional bulk-tissue or blood samples [CITATION][CITATION #b218].",
+      "A study involving signatures of cell-signaling assays by single-cell mass cytometry of healthy hematopoietic cells led to more accurate classification of hematopoietic stem and progenitor cells (HSPCs) in Acute Myeloid Leukemia; a previous classification was error-prone, because the 'classical' cell-surface markers of healthy cells do not correctly identify the corresponding population in disease, whereas a richer signature allows accurate identification [CITATION].",
+      "To associate patterns observed in a few (5-20) patients with effects on clinical phenotypes, single-cell based signatures were used to deconvolute hundreds of bulk tumor profiles that had been collected with rich clinical information [CITATION][CITATION #b163][CITATION #b218].",
+      "and related methods allow multiplexed measurement of proteins based on antibodies barcoded with heavy metals [CITATION #b20][CITATION]."
+    ]
+  },
+  {
+    "title": "Temporal mixture modelling of single-cell RNA-seq data resolves a CD4+ T cell fate bifurcation",
+    "authors": "T L\u00f6nnberg;V Svensson;K R James;D Fernandez-Ruiz;I Sebina;R Montandon;M S F Soon;L G Fogg;M J T Stubbington;F Bagger",
+    "year": "2017",
+    "citation": "L\u00f6nnberg, T., Svensson, V., James, K.R., Fernandez-Ruiz, D., Sebina, I., Montandon, R., Soon, M.S.F., Fogg, L.G., Stubbington, M.J.T., Otzen Bagger, F., et al. (2017). Temporal mixture modelling of single-cell RNA-seq data resolves a CD4+ T cell fate bifurcation. bioRxiv. https://doi.org/10.1101/074971",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Notably, the relative proportions of cells observed at different points along the developmental paths can help convey critical information, both about the duration of each phase [CITATION #b10][CITATION #b102] and the balance of how progenitor cells are allocated among fates [CITATION #b10][CITATION][CITATION #b149], especially when information about the rate of cell proliferation and/or death can be incorporated as inferred from the profiles.",
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION #b35][CITATION #b82][CITATION #b83][CITATION][CITATION #b131] [CITATION #b185] [CITATION #b73].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION #b82][CITATION #b83][CITATION][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION #b164] and when T helper cell commit to their fate [CITATION].",
+      "Computationally ordering cells along a time-course of development provides another way to infer regulators -a strategy that has been successful in, for example, differentiating B cells [CITATION #b20], myoblasts , neurons [CITATION #b80][CITATION #b193], and T helper cells [CITATION]."
+    ]
+  },
+  {
+    "title": "Transcriptome in vivo analysis (TIVA) of spatially defined single cells in live tissue",
+    "authors": "D Lovatt;B K Ruble;J Lee;H Dueck;T K Kim;S Fisher;C Francis;J M Spaethling;J A Wolf;M S Grady",
+    "year": "2014",
+    "citation": "Lovatt, D., Ruble, B.K., Lee, J., Dueck, H., Kim, T.K., Fisher, S., Francis, C., Spaethling, J.M., Wolf, J.A., Grady, M.S., et al. (2014). Transcriptome in vivo analysis (TIVA) of spatially defined single cells in live tissue. Nature Methods 11, 190-196.",
+    "pages": "190-196",
+    "journal": "Nature Methods",
+    "volume": "11",
+    "sentences": [
+      "Finally, there has been progress in scRNA-Seq with RNA isolated from live cells in their natural microenvironment using transcriptome in vivo analysis [CITATION]."
+    ]
+  },
+  {
+    "title": "Tracking single hematopoietic stem cells in vivo using high-throughput sequencing in conjunction with viral genetic barcoding",
+    "authors": "R Lu;N F Neff;S R Quake;I L Weissman",
+    "year": "2011",
+    "citation": "Lu, R., Neff, N.F., Quake, S.R., and Weissman, I.L. (2011). Tracking single hematopoietic stem cells in vivo using high-throughput sequencing in conjunction with viral genetic barcoding. Nature Biotechnology 29, 928-933.",
+    "pages": "928-933",
+    "journal": "Nature Biotechnology",
+    "volume": "29",
+    "sentences": [
+      "In mice, cells can be genetically marked with different colors or DNA barcodes [CITATION][CITATION #b155][CITATION #b165], and their offspring traced during development."
+    ]
+  },
+  {
+    "title": "Combined analysis reveals a core set of cycling genes",
+    "authors": "Y Lu;S Mahony;P V Benos;R Rosenfeld;I Simon;L L Breeden;Z Bar-Joseph",
+    "year": "2007",
+    "citation": "Lu, Y., Mahony, S., Benos, P.V., Rosenfeld, R., Simon, I., Breeden, L.L., and Bar-Joseph, Z. (2007). Combined analysis reveals a core set of cycling genes. Genome Biology 8, R146.",
+    "pages": "R146",
+    "journal": "Genome Biology",
+    "volume": "8",
+    "sentences": [
+      "This approach has made it possible to determine the relative rates of proliferation of different cell subpopulations within a dataset [CITATION #b112][CITATION #b113][CITATION #b112], a feat difficult to accomplish using bulk synchronized populations along the cell cycle [CITATION]."
+    ]
+  },
+  {
+    "title": "Single-cell in situ RNA profiling by sequential hybridization",
+    "authors": "E Lubeck;A F Coskun;T Zhiyentayev;M Ahmad;L Cai",
+    "year": "2014",
+    "citation": "Lubeck, E., Coskun, A.F., Zhiyentayev, T., Ahmad, M., and Cai, L. (2014). Single-cell in situ RNA profiling by sequential hybridization. Nature Methods 11, 360-361.",
+    "pages": "360-361",
+    "journal": "Nature Methods",
+    "volume": "11",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "G&T-seq: parallel sequencing of single-cell genomes and transcriptomes",
+    "authors": "I C Macaulay;W Haerty;P Kumar;Y I Li;T X Hu;M J Teng;M Goolam;N Saurat;P Coupland;L M Shirley",
+    "year": "2015",
+    "citation": "Macaulay, I.C., Haerty, W., Kumar, P., Li, Y.I., Hu, T.X., Teng, M.J., Goolam, M., Saurat, N., Coupland, P., Shirley, L.M., et al. (2015). G&T-seq: parallel sequencing of single-cell genomes and transcriptomes. Nature Methods 12, 519-522.",
+    "pages": "519-522",
+    "journal": "Nature Methods",
+    "volume": "12",
+    "sentences": [
+      "Various groups are also developing single-cell multi-omic methods to simultaneously measure several types of molecular profiles in the same cell  [CITATION #b19][CITATION #b45][CITATION #b48][CITATION #b64][CITATION #b71][CITATION].",
+      "Recent studies have simultaneously profiled the transcriptome together with either the genome [CITATION #b48][CITATION], the epigenome , or protein signatures [CITATION #b45][CITATION #b64][CITATION #b71]."
+    ]
+  },
+  {
+    "title": "Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets",
+    "authors": "E Z Macosko;A Basu;R Satija;J Nemesh;K Shekhar;M Goldman;I Tirosh;A R Bialas;N Kamitaki;E M Martersteck",
+    "year": "2015",
+    "citation": "Macosko, E.Z., Basu, A., Satija, R., Nemesh, J., Shekhar, K., Goldman, M., Tirosh, I., Bialas, A.R., Kamitaki, N., Martersteck, E.M., et al. (2015). Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202-1214.",
+    "pages": "1202-1214",
+    "journal": "Cell",
+    "volume": "161",
+    "sentences": [
+      "Now, massively parallel assays can process tens and hundreds of thousands of single cells simultaneously to measure their transcriptional profiles at rapidly decreasing costs [CITATION #b110][CITATION][CITATION #b192] with increasing accuracy and sensitivity [CITATION #b207][CITATION #b247].",
+      "Unsupervised clustering algorithms for high-dimensional data provide an initial framework [CITATION #b75] [CITATION #b120][CITATION][CITATION #b192][CITATION #b229], but substantial advances will be needed in order to select the 'right' features, the 'right' similarity metric, and the 'right' level of granularity for the question at hand, control for distinct biological processes, handle technical noise, and connect novel clusters with legacy knowledge.",
+      "The mouse retina provides an ideal testing ground to test this correspondence because cell types follow highly stereotyped spatial patterns [CITATION] .",
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION #b79][CITATION #b102][CITATION #b113][CITATION] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles.",
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION], primary immune cells [CITATION #b146][CITATION #b113], and healthy and disease tissues [CITATION #b163][CITATION #b218][CITATION #b219].",
+      "Some may take a census of mRNA species by focusing on 3'-or 5'-ends [CITATION], while others assess mRNA structure and splicing by collecting near-full-length sequence [CITATION #b86][CITATION #b174].",
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION #b230], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION #b222] [CITATION] and microwell-based [CITATION #b59][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "Single-cell RNA sequencing reveals T helper cells synthesizing steroids de novo to contribute to immune homeostasis",
+    "authors": "B Mahata;X Zhang;A A Kolodziejczyk;V Proserpio;L Haim-Vilmovsky;A E Taylor;D Hebenstreit;F A Dingler;V Moignard;B Gottgens",
+    "year": "2014",
+    "citation": "Mahata, B., Zhang, X., Kolodziejczyk, A.A., Proserpio, V., Haim-Vilmovsky, L., Taylor, A.E., Hebenstreit, D., Dingler, F.A., Moignard, V., Gottgens, B., et al. (2014). Single-cell RNA sequencing reveals T helper cells synthesizing steroids de novo to contribute to immune homeostasis. Cell Reports 7, 1130-1142.",
+    "pages": "1130-1142",
+    "journal": "Cell Reports",
+    "volume": "7",
+    "sentences": [
+      "Co-variation identified a role for pregnenolone biosynthesis in the response of Th2 cells to helminth infection [CITATION], and new regulators of pluripotency in mouse embryonic stem cells [CITATION #b112]."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Microfluidic single-cell mRNA isolation and analysis",
+    "authors": "J S Marcus;W F Anderson;S R Quake",
+    "year": "2006",
+    "citation": "Marcus, J.S., Anderson, W.F., and Quake, S.R. (2006). Microfluidic single-cell mRNA isolation and analysis. Analytical Chemistry 78, 3084-3089.",
+    "pages": "3084-3089",
+    "journal": "Analytical Chemistry",
+    "volume": "78",
+    "sentences": [
+      "Initial efforts first used microarrays and then RNA-seq to profile RNA from small numbers of single cells, which were obtained either by manual picking from in situ fixed tissue, using flowsorting or, later on, with microfluidic devices, adapted from devices developed initially for qPCR-based approaches [CITATION #b41][CITATION #b44][CITATION][CITATION #b142][CITATION #b244]."
+    ]
+  },
+  {
+    "title": "High burden and pervasive positive selection of somatic mutations in normal human skin",
+    "authors": "I Martincorena;A Roshan;M Gerstung;P Ellis;P Van Loo;S Mclaren;D C Wedge;A Fullam;L B Alexandrov;J M Tubio",
+    "year": "2015",
+    "citation": "Martincorena, I., Roshan, A., Gerstung, M., Ellis, P., Van Loo, P., McLaren, S., Wedge, D.C., Fullam, A., Alexandrov, L.B., Tubio, J.M., et al. (2015). High burden and pervasive positive selection of somatic mutations in normal human skin. Science 348, 880-886.",
+    "pages": "880-886",
+    "journal": "Science",
+    "volume": "348",
+    "sentences": [
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION #b21][CITATION][CITATION #b176][CITATION #b194] or as a molecular clock [CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Simple mathematical models with very complicated dynamics",
+    "authors": "R M May",
+    "year": "1976",
+    "citation": "May, R.M. (1976). Simple mathematical models with very complicated dynamics. Nature 261, 459-467.",
+    "pages": "459-467",
+    "journal": "Nature",
+    "volume": "261",
+    "sentences": [
+      "The reconstruction algorithms themselves could incorporate insights from theoretical studies of dynamical systems, and learned models could be analyzed in light of such frameworks [CITATION #b61][CITATION][CITATION #b215]."
+    ]
+  },
+  {
+    "title": "A unifying concept: the history of cell theory",
+    "authors": "P Mazzarello",
+    "year": "1999",
+    "citation": "Mazzarello, P. (1999). A unifying concept: the history of cell theory. Nat Cell Biol 1, E13-15.",
+    "pages": "13-15",
+    "journal": "Nat Cell Biol",
+    "volume": "1",
+    "sentences": [
+      "composed of one or more cells; that cells are the basic unit of structure and function in life; and that all cells are derived from pre-existing cells [CITATION]; Figure 1)."
+    ]
+  },
+  {
+    "title": "Whole organism lineage tracing by combinatorial and cumulative genome editing",
+    "authors": "A Mckenna;G M Findlay;J A Gagnon;M S Horwitz;A F Schier;J Shendure",
+    "year": "2016",
+    "citation": "McKenna, A., Findlay, G.M., Gagnon, J.A., Horwitz, M.S., Schier, A.F., and Shendure, J. (2016). Whole organism lineage tracing by combinatorial and cumulative genome editing. Science. 353, aaf7907",
+    "pages": "7907",
+    "journal": "Science",
+    "volume": "353",
+    "sentences": [
+      "For example, one might use synthetic circuits that introduce a molecular barcode only in cells expressing an RNA pattern characteristic of the cell type in order to recognize its descendants [CITATION].",
+      "Recent work has used iterative CRISPR-based genome editing to generate random genetic scars in the fetal genome and use them to reconstruct lineages in the adult animal [CITATION]."
+    ]
+  },
+  {
+    "title": "On the nature and differential distribution of mRNAs in hippocampal neurites: implications for neuronal functioning",
+    "authors": "K Miyashiro;M Dichter;J Eberwine",
+    "year": "1994",
+    "citation": "Miyashiro, K., Dichter, M., and Eberwine, J. (1994). On the nature and differential distribution of mRNAs in hippocampal neurites: implications for neuronal functioning. PNAS 91, 10800-10804.",
+    "pages": "10800-10804",
+    "journal": "PNAS",
+    "volume": "91",
+    "sentences": [
+      "Initial efforts first used microarrays and then RNA-seq to profile RNA from small numbers of single cells, which were obtained either by manual picking from in situ fixed tissue, using flowsorting or, later on, with microfluidic devices, adapted from devices developed initially for qPCR-based approaches [CITATION #b41][CITATION #b44][CITATION #b133][CITATION][CITATION #b244]."
+    ]
+  },
+  {
+    "title": "Highperformance multiplexed fluorescence in situ hybridization in culture and tissue with matrix imprinting and clearing",
+    "authors": "J R Moffitt;J Hao;D Bambah-Mukku;T Lu;C Dulac;X Zhuang",
+    "year": "2016",
+    "citation": "Moffitt, J.R., Hao, J., Bambah-Mukku, D., Lu, T., Dulac, C., and Zhuang, X. (2016a). High- performance multiplexed fluorescence in situ hybridization in culture and tissue with matrix imprinting and clearing. PNAS 113, 14456-14461.",
+    "pages": "14456-14461",
+    "journal": "PNAS",
+    "volume": "113",
+    "sentences": [
+      "Many in situ methods can benefit from tissue clearing and/or expansion to improve detection and spatial resolution [CITATION #b33][CITATION #b34][CITATION][CITATION #b119]."
+    ]
+  },
+  {
+    "title": "Highthroughput single-cell gene-expression profiling with multiplexed error-robust fluorescence in situ hybridization",
+    "authors": "J R Moffitt;J Hao;G Wang;K H Chen;H P Babcock;X Zhuang",
+    "year": "2016",
+    "citation": "Moffitt, J.R., Hao, J., Wang, G., Chen, K.H., Babcock, H.P., and Zhuang, X. (2016b). High- throughput single-cell gene-expression profiling with multiplexed error-robust fluorescence in situ hybridization. PNAS 113, 11046-11051.",
+    "pages": "11046-11051",
+    "journal": "PNAS",
+    "volume": "113",
+    "sentences": [
+      "Some strategies for RNA detection, such as MERFISH [CITATION #b36][CITATION] or Seq-FISH [CITATION #b186], combine multiplex hybridization with microscopy-based quantification to assess distributions at both the cellular and subcellular level; other early studies have performed in situ transcription [CITATION #b213], followed by direct manual harvesting of cDNA from individual cells [CITATION #b41][CITATION #b213]."
+    ]
+  },
+  {
+    "title": "Decoding the regulatory network of early blood development from single-cell gene expression measurements",
+    "authors": "F Buettner;I C Macaulay;W Jawaid;E Diamanti",
+    "year": "2015",
+    "citation": "Buettner, F., Macaulay, I.C., Jawaid, W., Diamanti, E., et al. (2015). Decoding the regulatory network of early blood development from single-cell gene expression measurements. Nature Biotechnology 33, 269-276.",
+    "pages": "269-276",
+    "journal": "Nature Biotechnology",
+    "volume": "33",
+    "sentences": [
+      "In an atlas where cells are represented as points in a high-dimensional space, 'similar' cells should be 'close' in some appropriate sense, although not identical, owing to differences in physiological states (e.g., cell-cycle stage), the inherent noise in molecular systems [CITATION #b57][CITATION #b104][CITATION #b107] , and measurement errors [CITATION][CITATION #b104][CITATION #b107] [CITATION #b189][CITATION #b233].",
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION][CITATION #b79][CITATION #b102][CITATION #b113][CITATION #b129] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles.",
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION #b129], primary immune cells [CITATION][CITATION #b113], and healthy and disease tissues [CITATION #b163][CITATION #b218][CITATION #b219]."
+    ]
+  },
+  {
+    "title": "Transition states and cell fate decisions in epigenetic landscapes",
+    "authors": "N Moris;C Pina;A M Arias",
+    "year": "2016",
+    "citation": "Moris, N., Pina, C., and Arias, A.M. (2016). Transition states and cell fate decisions in epigenetic landscapes. Nature Reviews Genetics 17, 693-703.",
+    "pages": "693-703",
+    "journal": "Nature Reviews Genetics",
+    "volume": "17",
+    "sentences": [
+      "Notably, the relative proportions of cells observed at different points along the developmental paths can help convey critical information, both about the duration of each phase [CITATION #b10][CITATION #b102] and the balance of how progenitor cells are allocated among fates [CITATION #b10][CITATION #b121][CITATION], especially when information about the rate of cell proliferation and/or death can be incorporated as inferred from the profiles."
+    ]
+  },
+  {
+    "title": "Establishment of human tumor xenografts in immunodeficient mice",
+    "authors": "C L Morton;P J Houghton",
+    "year": "2007",
+    "citation": "Morton, C.L., and Houghton, P.J. (2007). Establishment of human tumor xenografts in immunodeficient mice. Nature Protocols 2, 247-250.",
+    "pages": "247-250",
+    "journal": "Nature Protocols",
+    "volume": "2",
+    "sentences": [
+      "In humans, where such methods cannot be applied, human cell lineages can be monitored experimentally in vitro, or by transplantation of human cells to immunosuppressed mice [CITATION][CITATION #b160][CITATION #b177], or can be inferred from in vivo samples by measuring the DNA differences between individual sampled cells, arising from random mutations during cell division, and using the genetic distances to construct cellular phylogenies, or lineages [CITATION #b19][CITATION #b191]."
+    ]
+  },
+  {
+    "title": "Single-cell Hi-C reveals cell-to-cell variability in chromosome structure",
+    "authors": "T Nagano;Y Lubling;T J Stevens;S Schoenfelder;E Yaffe;W Dean;E D Laue;A Tanay;P Fraser",
+    "year": "2013",
+    "citation": "Nagano, T., Lubling, Y., Stevens, T.J., Schoenfelder, S., Yaffe, E., Dean, W., Laue, E.D., Tanay, A., and Fraser, P. (2013). Single-cell Hi-C reveals cell-to-cell variability in chromosome structure. Nature 502, 59-64.",
+    "pages": "59-64",
+    "journal": "Nature",
+    "volume": "502",
+    "sentences": [
+      "Epigenomic methods may capture regions based on distinctive histone modifications (single-cell ChIP-Seq; [CITATION #b179], accessibility (single-cell ATAC-Seq;  , or likewise characterize DNA methylation patterns (single-cell DNAme-Seq; [CITATION #b60][CITATION #b77][CITATION #b147][CITATION #b197] or 3D organization (single-cell Hi-C; [CITATION][CITATION #b171]."
+    ]
+  },
+  {
+    "title": "Sir William Henry Perkin, pioneer in color",
+    "authors": "M C Nagel",
+    "year": "1981",
+    "citation": "Nagel, M.C. (1981). Sir William Henry Perkin, pioneer in color. Journal of Chemical Education 58, 305.",
+    "pages": "305",
+    "journal": "Journal of Chemical Education",
+    "volume": "58",
+    "sentences": [
+      "So too was the invention of synthetic dyes by chemists [CITATION], which biologists rapidly found stained cellular components in different ways [CITATION #b200]."
+    ]
+  },
+  {
+    "title": "Diverse and heritable lineage imprinting of early haematopoietic progenitors",
+    "authors": "S H Naik;L Perie;E Swart;C Gerlach;N Van Rooij;R J De Boer;T N Schumacher",
+    "year": "2013",
+    "citation": "Naik, S.H., Perie, L., Swart, E., Gerlach, C., van Rooij, N., de Boer, R.J., and Schumacher, T.N. (2013). Diverse and heritable lineage imprinting of early haematopoietic progenitors. Nature 496, 229-232.",
+    "pages": "229-232",
+    "journal": "Nature",
+    "volume": "496",
+    "sentences": [
+      "In mice, cells can be genetically marked with different colors or DNA barcodes [CITATION #b125][CITATION][CITATION #b165], and their offspring traced during development."
+    ]
+  },
+  {
+    "title": "A human colon cancer cell capable of initiating tumour growth in immunodeficient mice",
+    "authors": "C A O'brien;A Pollett;S Gallinger;J E Dick",
+    "year": "2007",
+    "citation": "O'Brien, C.A., Pollett, A., Gallinger, S., and Dick, J.E. (2007). A human colon cancer cell capable of initiating tumour growth in immunodeficient mice. Nature 445, 106-110.",
+    "pages": "106-110",
+    "journal": "Nature",
+    "volume": "445",
+    "sentences": [
+      "In humans, where such methods cannot be applied, human cell lineages can be monitored experimentally in vitro, or by transplantation of human cells to immunosuppressed mice [CITATION #b150][CITATION][CITATION #b177], or can be inferred from in vivo samples by measuring the DNA differences between individual sampled cells, arising from random mutations during cell division, and using the genetic distances to construct cellular phylogenies, or lineages [CITATION #b19][CITATION #b191]."
+    ]
+  },
+  {
+    "title": "Single-cell analysis of mixed-lineage states leading to a binary cell fate choice",
+    "authors": "A Olsson;M Venkatasubramanian;V K Chaudhri;B J Aronow;N Salomonis;H Singh;H L Grimes",
+    "year": "2016",
+    "citation": "Olsson, A., Venkatasubramanian, M., Chaudhri, V.K., Aronow, B.J., Salomonis, N., Singh, H., and Grimes, H.L. (2016). Single-cell analysis of mixed-lineage states leading to a binary cell fate choice. Nature. 537, 698-702",
+    "pages": "698-702",
+    "journal": "Nature",
+    "volume": "537",
+    "sentences": [
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION][CITATION #b164] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "The emergence of modern statistics in agricultural science: analysis of variance, experimental design and the reshaping of research at Rothamsted Experimental Station, 1919-1933",
+    "authors": "G Parolini",
+    "year": "2015",
+    "citation": "Parolini, G. (2015). The emergence of modern statistics in agricultural science: analysis of variance, experimental design and the reshaping of research at Rothamsted Experimental Station, 1919-1933. Journal of the History of Biology 48, 301-335.",
+    "pages": "1919-1933",
+    "journal": "Journal of the History of Biology",
+    "volume": "48",
+    "sentences": [
+      "We return below to the question of how  [CITATION]."
+    ]
+  },
+  {
+    "title": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma",
+    "authors": "A P Patel;I Tirosh;J J Trombetta;A K Shalek;S M Gillespie;H Wakimoto;D P Cahill;B V Nahed;W T Curry;R L Martuza",
+    "year": "2014",
+    "citation": "Patel, A.P., Tirosh, I., Trombetta, J.J., Shalek, A.K., Gillespie, S.M., Wakimoto, H., Cahill, D.P., Nahed, B.V., Curry, W.T., Martuza, R.L., et al. (2014). Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396-1401.",
+    "pages": "1396-1401",
+    "journal": "Science",
+    "volume": "344",
+    "sentences": [
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION #b129], primary immune cells [CITATION #b146][CITATION #b113], and healthy and disease tissues [CITATION][CITATION #b218][CITATION #b219].",
+      "In recent studies of melanoma [CITATION #b218], glioblastoma [CITATION], low-grade glioma [CITATION #b219], and myeloproliferative neoplasms [CITATION #b109], single-cell RNA-seq of fresh tumors resected directly from patients readily distinguished among malignant, immune, stromal and endothelial cells.",
+      "Among the malignant cells, it identified distinct cell states -such as cancer stem cells [CITATION][CITATION #b219], drug-resistant states [CITATION #b218], proliferating and quiescent cells [CITATION][CITATION #b218][CITATION #b219] -and related them to each other, showing, for example, that only stem-like cells proliferate in lowgrade glioma [CITATION #b219] and that individual sub-clones can be readily identified in one patient [CITATION #b109].",
+      "To associate patterns observed in a few (5-20) patients with effects on clinical phenotypes, single-cell based signatures were used to deconvolute hundreds of bulk tumor profiles that had been collected with rich clinical information [CITATION #b120][CITATION][CITATION #b218]."
+    ]
+  },
+  {
+    "title": "Transcriptional Heterogeneity and Lineage Commitment in Myeloid Progenitors",
+    "authors": "F Paul;Y Arkin;A Giladi;D A Jaitin;E Kenigsberg;H Keren-Shaul;D Winter;D Lara-Astiaso;M Gury;A Weiner",
+    "year": "2015",
+    "citation": "Paul, F., Arkin, Y., Giladi, A., Jaitin, D.A., Kenigsberg, E., Keren-Shaul, H., Winter, D., Lara-Astiaso, D., Gury, M., Weiner, A., et al. (2015). Transcriptional Heterogeneity and Lineage Commitment in Myeloid Progenitors. Cell 163, 1663-1677.",
+    "pages": "1663-1677",
+    "journal": "",
+    "volume": "163",
+    "sentences": [
+      "The optimal amount and type of information to collect will emerge based on a balance of technological feasibility and the biological insight provided by each layer [CITATION #b39] [CITATION].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION #b185], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Retracing the in vivo haematopoietic tree using single-cell methods",
+    "authors": "L Perie;K R Duffy",
+    "year": "2016",
+    "citation": "Perie, L., and Duffy, K.R. (2016). Retracing the in vivo haematopoietic tree using single-cell methods. FEBS Letters 590, 4068-4083.",
+    "pages": "4068-4083",
+    "journal": "FEBS Letters",
+    "volume": "590",
+    "sentences": [
+      "In mice, cells can be genetically marked with different colors or DNA barcodes [CITATION #b125][CITATION #b155][CITATION], and their offspring traced during development."
+    ]
+  },
+  {
+    "title": "Smart-seq2 for sensitive full-length transcriptome profiling in single cells",
+    "authors": "S Picelli;A K Bjorklund;O R Faridani;S Sagasser;G Winberg;R Sandberg",
+    "year": "2013",
+    "citation": "Picelli, S., Bjorklund, A.K., Faridani, O.R., Sagasser, S., Winberg, G., and Sandberg, R. (2013). Smart-seq2 for sensitive full-length transcriptome profiling in single cells. Nature Methods 10, 1096-1098.",
+    "pages": "1096-1098",
+    "journal": "Nature Methods",
+    "volume": "10",
+    "sentences": [
+      "The first single-cell genomic characterization method to become feasible at largescale is trancriptome analysis by single cell RNA-Seq (Box 1; [CITATION #b86] [CITATION][CITATION #b174] ."
+    ]
+  },
+  {
+    "title": "Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex",
+    "authors": "A A Pollen;T J Nowakowski;J Shuga;X Wang;A A Leyrat;J H Lui;N Li;L Szpankowski;B Fowler;P Chen",
+    "year": "2014",
+    "citation": "Pollen, A.A., Nowakowski, T.J., Shuga, J., Wang, X., Leyrat, A.A., Lui, J.H., Li, N., Szpankowski, L., Fowler, B., Chen, P., et al. (2014). Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nature Biotechnology 32, 1053-1058.",
+    "pages": "1053-1058",
+    "journal": "Nature Biotechnology",
+    "volume": "32",
+    "sentences": [
+      "In other complex brain regions such as the neocortex and hippocampus there are also a large number of transcriptionally defined types [CITATION #b46][CITATION #b73][CITATION #b80][CITATION #b116][CITATION]  , but it has been more difficult to find consensus between data modalities, and the relationship between transcriptomic types and anatomical or morphological types is unclear."
+    ]
+  },
+  {
+    "title": "Massively multiplex single-cell Hi-C",
+    "authors": "V Ramani;X Deng;K L Gunderson;F J Steemers;C M Disteche;W S Noble;Z Duan;J Shendure",
+    "year": "2016",
+    "citation": "Ramani, V., Deng, X., Gunderson, K.L., Steemers, F.J., Disteche, C.M., Noble, W.S., Duan, Z., and Shendure, J. (2016). Massively multiplex single-cell Hi-C. Nature Methods 14, 263- 266",
+    "pages": "263-266",
+    "journal": "Nature Methods",
+    "volume": "14",
+    "sentences": [
+      "Epigenomic methods may capture regions based on distinctive histone modifications (single-cell ChIP-Seq; [CITATION #b179], accessibility (single-cell ATAC-Seq;  , or likewise characterize DNA methylation patterns (single-cell DNAme-Seq; [CITATION #b60][CITATION #b77][CITATION #b147][CITATION #b197] or 3D organization (single-cell Hi-C; [CITATION #b153][CITATION].",
+      "Combinatorial barcoding strategies have been used to capture measures of accessibility and 3D organization in tens of thousands of single cells [CITATION]."
+    ]
+  },
+  {
+    "title": "A draft network of ligand-receptormediated multicellular signalling in human",
+    "authors": "J A Ramilowski;T Goldberg;J Harshbarger;E Kloppmann;M Lizio;V P Satagopam;M Itoh;H Kawaji;P Carninci;B Rost",
+    "year": "2015",
+    "citation": "Ramilowski, J.A., Goldberg, T., Harshbarger, J., Kloppmann, E., Lizio, M., Satagopam, V.P., Itoh, M., Kawaji, H., Carninci, P., Rost, B., et al. (2015). A draft network of ligand-receptor- mediated multicellular signalling in human. Nat Commun 6, 7866.",
+    "pages": "7866",
+    "journal": "Nat Commun",
+    "volume": "6",
+    "sentences": [
+      "Cell-cell interactomes have also been inferred from profiles of purified cell populations, based on the secreted and cell surface molecules that they express [CITATION]."
+    ]
+  },
+  {
+    "title": "Histology of the Nervous System of Man and Vertebrates",
+    "authors": "S Ramo\u0301n Y Cajal",
+    "year": "1995",
+    "citation": "Ramo\u0301n y Cajal, S. (1995). Histology of the Nervous System of Man and Vertebrates. Oxford University Press",
+    "publisher": "Oxford University Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "In pioneering work beginning in 1887, Santiago Ram\u00f3n y Cajal applied a remarkable staining process discovered by Camillo Golgi to show that the brain is composed of distinct neuronal cells, rather than a continuous syncytium, with stunningly diverse architectures found in specific anatomical regions [CITATION]; the pair shared the 1906 Nobel Prize in Physiology or Medicine for their work."
+    ]
+  },
+  {
+    "title": "Full-length mRNA-Seq from single-cell levels of RNA and individual circulating tumor cells",
+    "authors": "D Ramskold;S Luo;Y C Wang;R Li;Q Deng;O R Faridani;G A Daniels;I Khrebtukova;J F Loring;L C Laurent",
+    "year": "2012",
+    "citation": "Ramskold, D., Luo, S., Wang, Y.C., Li, R., Deng, Q., Faridani, O.R., Daniels, G.A., Khrebtukova, I., Loring, J.F., Laurent, L.C., et al. (2012). Full-length mRNA-Seq from single-cell levels of RNA and individual circulating tumor cells. Nature Biotechnology 30, 777-782.",
+    "pages": "777-782",
+    "journal": "Nature Biotechnology",
+    "volume": "30",
+    "sentences": [
+      "The first single-cell genomic characterization method to become feasible at largescale is trancriptome analysis by single cell RNA-Seq (Box 1; [CITATION #b86] [CITATION #b166][CITATION] .",
+      "Some may take a census of mRNA species by focusing on 3'-or 5'-ends [CITATION #b129], while others assess mRNA structure and splicing by collecting near-full-length sequence [CITATION #b86][CITATION].",
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION #b230], FACS-based sorting into multi-well plates [CITATION] , microfluidic devices [CITATION #b222] [CITATION #b129] and microwell-based [CITATION #b59][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "An animated landscape representation of CD4+ T-cell differentiation, variability, and plasticity: insights into the behavior of populations versus cells",
+    "authors": "J A Rebhahn;N Deng;G Sharma;A M Livingstone;S Huang;T R Mosmann",
+    "year": "2014",
+    "citation": "Rebhahn, J.A., Deng, N., Sharma, G., Livingstone, A.M., Huang, S., and Mosmann, T.R. (2014). An animated landscape representation of CD4+ T-cell differentiation, variability, and plasticity: insights into the behavior of populations versus cells. European Journal of Immunology 44, 2216-2229.",
+    "pages": "2216-2229",
+    "journal": "European Journal of Immunology",
+    "volume": "44",
+    "sentences": [
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION #b69][CITATION #b92][CITATION #b93][CITATION][CITATION #b245] ."
+    ]
+  },
+  {
+    "title": "Cell lineage analysis of the mammalian female germline",
+    "authors": "Y Reizel;S Itzkovitz;R Adar;J Elbaz;A Jinich;N Chapal-Ilani;Y E Maruvka;N Nevo;Z Marx;I Horovitz",
+    "year": "2012",
+    "citation": "Reizel, Y., Itzkovitz, S., Adar, R., Elbaz, J., Jinich, A., Chapal-Ilani, N., Maruvka, Y.E., Nevo, N., Marx, Z., Horovitz, I., et al. (2012). Cell lineage analysis of the mammalian female germline. PLoS Genetics 8, e1002477.",
+    "pages": "",
+    "journal": "PLoS Genetics",
+    "volume": "8",
+    "sentences": [
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION #b21][CITATION #b136][CITATION][CITATION #b194] or as a molecular clock [CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Mouse xenograft models vs GEM models for human cancer therapeutics",
+    "authors": "A Richmond;Y Su",
+    "year": "2008",
+    "citation": "Richmond, A., and Su, Y. (2008). Mouse xenograft models vs GEM models for human cancer therapeutics. Disease Models & Mechanisms 1, 78-82.",
+    "pages": "78-82",
+    "journal": "Disease Models & Mechanisms",
+    "volume": "1",
+    "sentences": [
+      "In humans, where such methods cannot be applied, human cell lineages can be monitored experimentally in vitro, or by transplantation of human cells to immunosuppressed mice [CITATION #b150][CITATION #b160][CITATION], or can be inferred from in vivo samples by measuring the DNA differences between individual sampled cells, arising from random mutations during cell division, and using the genetic distances to construct cellular phylogenies, or lineages [CITATION #b19][CITATION #b191]."
+    ]
+  },
+  {
+    "title": "Maps of random walks on complex networks reveal community structure",
+    "authors": "M Rosvall;C T Bergstrom",
+    "year": "2008",
+    "citation": "Rosvall, M., and Bergstrom, C.T. (2008). Maps of random walks on complex networks reveal community structure. PNAS 105, 1118-1123.",
+    "pages": "1118-1123",
+    "journal": "PNAS",
+    "volume": "105",
+    "sentences": [
+      "Computational approaches could then allow iterative refinement of cellular characterization based on both a cell's molecular profile and information about its neighborhood; methods perfected in the analysis of networks could provide a helpful starting point [CITATION #b23][CITATION]."
+    ]
+  },
+  {
+    "title": "Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state",
+    "authors": "A Rotem;O Ram;N Shoresh;R A Sperling;A Goren;D A Weitz;B E Bernstein",
+    "year": "2015",
+    "citation": "Rotem, A., Ram, O., Shoresh, N., Sperling, R.A., Goren, A., Weitz, D.A., and Bernstein, B.E. (2015a). Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state. Nature Biotechnology 33, 1165-1172.",
+    "pages": "1165-1172",
+    "journal": "Nature Biotechnology",
+    "volume": "33",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Epigenomic methods may capture regions based on distinctive histone modifications (single-cell ChIP-Seq; [CITATION], accessibility (single-cell ATAC-Seq;  , or likewise characterize DNA methylation patterns (single-cell DNAme-Seq; [CITATION #b60][CITATION #b77][CITATION #b147][CITATION #b197] or 3D organization (single-cell Hi-C; [CITATION #b153][CITATION #b171].",
+      "Other methods, such as single-cell analysis of chromatin organization (by either single-cell ATAC-Seq;  or single-cell ChIP-Seq [CITATION], currently yield rather sparse data, which presents analytic challenges and benefits from large numbers of profiled cells.",
+      "Computational analyses have begun to address these issues by pooling of signal across cells and across genomic regions or loci [CITATION] and by imputation ."
+    ]
+  },
+  {
+    "title": "High-Throughput Single-Cell Labeling (Hi-SCL) for RNA-Seq Using Drop-Based Microfluidics",
+    "authors": "A Rotem;O Ram;N Shoresh;R A Sperling;M Schnall-Levin;H Zhang;A Basu;B E Bernstein;D A Weitz",
+    "year": "2015",
+    "citation": "Rotem, A., Ram, O., Shoresh, N., Sperling, R.A., Schnall-Levin, M., Zhang, H., Basu, A., Bernstein, B.E., and Weitz, D.A. (2015b). High-Throughput Single-Cell Labeling (Hi-SCL) for RNA-Seq Using Drop-Based Microfluidics. PloS One 10, e0116328.",
+    "pages": "",
+    "journal": "PloS One",
+    "volume": "10",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Causal proteinsignaling networks derived from multiparameter single-cell data",
+    "authors": "K Sachs;O Perez;D Pe'er;D A Lauffenburger;G P Nolan",
+    "year": "2005",
+    "citation": "Sachs, K., Perez, O., Pe'er, D., Lauffenburger, D.A., and Nolan, G.P. (2005). Causal protein- signaling networks derived from multiparameter single-cell data. Science 308, 523-529.",
+    "pages": "523-529",
+    "journal": "Science",
+    "volume": "308",
+    "sentences": [
+      "the levels of regulatory molecules vary naturally -sometimes subtly, sometimes dramatically -due to both stochastic and controlled phenomena within a single genetic background, providing rich information from which to reconstruct cellular circuits [CITATION #b115][CITATION] [CITATION #b202]."
+    ]
+  },
+  {
+    "title": "The types of retinal ganglion cells: current status and implications for neuronal classification",
+    "authors": "J R Sanes;R H Masland",
+    "year": "2015",
+    "citation": "Sanes, J.R., and Masland, R.H. (2015). The types of retinal ganglion cells: current status and implications for neuronal classification. Annual Review of Neuroscience 38, 221-246.",
+    "pages": "221-246",
+    "journal": "Annual Review of Neuroscience",
+    "volume": "38",
+    "sentences": [
+      "Through these remarkable efforts, biologists have achieved an impressive understanding of specific systems, such as the hematopoietic and immune systems [CITATION #b32][CITATION #b101][CITATION #b105] or the neurons in the retina [CITATION].",
+      "Cell-type taxonomies are often represented as hierarchies based on morphological, physiological, and molecular differences [CITATION].",
+      "Cellular neuroanatomy is deeply rooted in the concept of cell types defined by their morphologies (a proxy for connectivity) and electrophysiological properties [CITATION #b12], and extensive efforts continue to classify the types in complicated structures like the retina and neocortex  [CITATION]."
+    ]
+  },
+  {
+    "title": "Spatial reconstruction of single-cell gene expression data",
+    "authors": "R Satija;J A Farrell;D Gennert;A F Schier;A Regev",
+    "year": "2015",
+    "citation": "Satija, R., Farrell, J.A., Gennert, D., Schier, A.F., and Regev, A. (2015). Spatial reconstruction of single-cell gene expression data. Nature Biotechnology 33, 495-502.",
+    "pages": "495-502",
+    "journal": "Nature Biotechnology",
+    "volume": "33",
+    "sentences": [
+      "Single-cell analyses of tissues from early embryos [CITATION][CITATION #b184] to adult demonstrate how physical locations can be imprinted in transcriptional profiles [CITATION #b55] and can be used to infer tissue organization (Figure 2D).",
+      "In the early zebrafish embryo, for example, a cell's expression profile specifies its location to within a small neighborhood of ~100 cells; the related expression patterns of individual genes in turn fall into only nine spatial archetypes [CITATION]."
+    ]
+  },
+  {
+    "title": "Resolving early mesoderm diversification through single-cell expression profiling",
+    "authors": "A Scialdone;Y Tanaka;W Jawaid;V Moignard;N K Wilson;I C Macaulay;J C Marioni;B Gottgens",
+    "year": "2016",
+    "citation": "Scialdone, A., Tanaka, Y., Jawaid, W., Moignard, V., Wilson, N.K., Macaulay, I.C., Marioni, J.C., and Gottgens, B. (2016). Resolving early mesoderm diversification through single-cell expression profiling. Nature 535, 289-293.",
+    "pages": "289-293",
+    "journal": "Nature",
+    "volume": "535",
+    "sentences": [
+      "Single-cell analyses of tissues from early embryos [CITATION #b183][CITATION] to adult demonstrate how physical locations can be imprinted in transcriptional profiles [CITATION #b55] and can be used to infer tissue organization (Figure 2D).",
+      "In the early mouse embryo, key spatial gradients can be recovered by a 'pseudospace' inferred from reduced dimensions of single cell profiles [CITATION]."
+    ]
+  },
+  {
+    "title": "Wishbone identifies bifurcating developmental trajectories from single-cell data",
+    "authors": "M Setty;M D Tadmor;S Reich-Zeliger;O Angel;T M Salame;P Kathail;K Choi;S Bendall;N Friedman;D Pe'er",
+    "year": "2016",
+    "citation": "Setty, M., Tadmor, M.D., Reich-Zeliger, S., Angel, O., Salame, T.M., Kathail, P., Choi, K., Bendall, S., Friedman, N., and Pe'er, D. (2016). Wishbone identifies bifurcating developmental trajectories from single-cell data. Nature Biotechnology 34, 637-645.",
+    "pages": "637-645",
+    "journal": "Nature Biotechnology",
+    "volume": "34",
+    "sentences": [
+      "Recent studies provide proofs-of-principle for how simultaneous and orthogonal biological processes can be inferred from single-cell RNA-seq data (Figure 3; [CITATION #b7][CITATION #b20][CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION] [CITATION #b73].",
+      "Bifurcated trajectories have also been reconstructed in the differentiation of embryonic stem cells, T helper cells, and hematopoietic cells [CITATION #b35][CITATION #b82][CITATION #b83][CITATION #b121][CITATION #b131] [CITATION], and have helped address open questions about whether myeloid progenitor cells in bone marrow are already skewed towards distinct fates [CITATION #b161][CITATION #b164] and when T helper cell commit to their fate [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Situ Transcription Profiling of Single Cells Reveals Spatial Organization of Cells in the Mouse Hippocampus",
+    "authors": "S Shah;E Lubeck;W Zhou;L Cai",
+    "year": "2016",
+    "citation": "Shah, S., Lubeck, E., Zhou, W., and Cai, L. (2016). In Situ Transcription Profiling of Single Cells Reveals Spatial Organization of Cells in the Mouse Hippocampus. Neuron 92, 342- 357.",
+    "pages": "342-357",
+    "journal": "",
+    "volume": "92",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "With emerging highly multiplexed methods for in situ hybridization [CITATION #b36][CITATION] or protein staining [CITATION #b6][CITATION #b72], it should be possible to spatially map multiple cell types at once based on expression signatures to see how they relate to each other and to connect them with cell types defined by morphology or function.",
+      "Some strategies for RNA detection, such as MERFISH [CITATION #b36][CITATION #b144] or Seq-FISH [CITATION], combine multiplex hybridization with microscopy-based quantification to assess distributions at both the cellular and subcellular level; other early studies have performed in situ transcription [CITATION #b213], followed by direct manual harvesting of cDNA from individual cells [CITATION #b41][CITATION #b213]."
+    ]
+  },
+  {
+    "title": "Single-cell RNA-seq reveals dynamic paracrine control of cellular variation",
+    "authors": "A K Shalek;R Satija;J Shuga;J J Trombetta;D Gennert;D Lu;P Chen;R S Gertner;J T Gaublomme;N Yosef",
+    "year": "2014",
+    "citation": "Shalek, A.K., Satija, R., Shuga, J., Trombetta, J.J., Gennert, D., Lu, D., Chen, P., Gertner, R.S., Gaublomme, J.T., Yosef, N., et al. (2014). Single-cell RNA-seq reveals dynamic paracrine control of cellular variation. Nature 510, 363-369.",
+    "pages": "363-369",
+    "journal": "Nature",
+    "volume": "510",
+    "sentences": [
+      "In an atlas where cells are represented as points in a high-dimensional space, 'similar' cells should be 'close' in some appropriate sense, although not identical, owing to differences in physiological states (e.g., cell-cycle stage), the inherent noise in molecular systems [CITATION #b57][CITATION #b104][CITATION #b107] , and measurement errors [CITATION #b146][CITATION #b104][CITATION #b107] [CITATION][CITATION #b233].",
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION #b79][CITATION #b102][CITATION #b113][CITATION #b129] [CITATION #b218] to the response of immune cells to pathogen components  [CITATION] -can be traced in single-cell profiles.",
+      "In the response of dendritic cells to pathogen components, single-cell profiling uncovered a small subset (<1%) of 'precocious' cells: these early-appearing cells express a distinctive module of genes, initiate production of interferon beta, and coordinate the subsequent response of other cells through paracrine signaling [CITATION]."
+    ]
+  },
+  {
+    "title": "The Human Cell Lineage Flagship Initiative",
+    "authors": "E Shapiro",
+    "year": "2010",
+    "citation": "Shapiro, E. (2010). The Human Cell Lineage Flagship Initiative. http://www.lineage- flagship.eu/ (Accessed November 28, 2017)",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The desirability of having much deeper knowledge about cells has been well recognized for a long time [CITATION #b25][CITATION #b56][CITATION][CITATION #b230]."
+    ]
+  },
+  {
+    "title": "Single-cell sequencing-based technologies will revolutionize whole-organism science",
+    "authors": "E Shapiro;T Biezuner;S Linnarsson",
+    "year": "2013",
+    "citation": "Shapiro, E., Biezuner, T., and Linnarsson, S. (2013). Single-cell sequencing-based technologies will revolutionize whole-organism science. Nature Reviews Genetics 14, 618- 630.",
+    "pages": "618-630",
+    "journal": "Nature Reviews Genetics",
+    "volume": "14",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION][CITATION #b212][CITATION #b214].",
+      "New computational methods will be required both to discover types and to better classify cells and, ultimately, to refine the concepts themselves [CITATION][CITATION #b201][CITATION #b208][CITATION #b233].",
+      "In humans, where such methods cannot be applied, human cell lineages can be monitored experimentally in vitro, or by transplantation of human cells to immunosuppressed mice [CITATION #b150][CITATION #b160][CITATION #b177], or can be inferred from in vivo samples by measuring the DNA differences between individual sampled cells, arising from random mutations during cell division, and using the genetic distances to construct cellular phylogenies, or lineages [CITATION #b19][CITATION]."
+    ]
+  },
+  {
+    "title": "Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics",
+    "authors": "K Shekhar;S W Lapan;I E Whitney;N M Tran;E Z Macosko;M Kowalczyk;X Adiconis;J Z Levin;J Nemesh;M Goldman",
+    "year": "2016",
+    "citation": "Shekhar, K., Lapan, S.W., Whitney, I.E., Tran, N.M., Macosko, E.Z., Kowalczyk, M., Adiconis, X., Levin, J.Z., Nemesh, J., Goldman, M., et al. (2016). Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308- 1323 e1330.",
+    "pages": "1308-1323",
+    "journal": "Cell",
+    "volume": "166",
+    "sentences": [
+      "Now, massively parallel assays can process tens and hundreds of thousands of single cells simultaneously to measure their transcriptional profiles at rapidly decreasing costs [CITATION #b110][CITATION #b129][CITATION] with increasing accuracy and sensitivity [CITATION #b207][CITATION #b247].",
+      "Unsupervised clustering algorithms for high-dimensional data provide an initial framework [CITATION #b75] [CITATION #b120][CITATION #b129][CITATION][CITATION #b229], but substantial advances will be needed in order to select the 'right' features, the 'right' similarity metric, and the 'right' level of granularity for the question at hand, control for distinct biological processes, handle technical noise, and connect novel clusters with legacy knowledge.",
+      "Analysis of 31,000 retinal bipolar cells [CITATION] automatically re-discovered the 13 subtypes that had been defined over the past quartercentury based on morphology and lamination, while also revealing two new subtypes with distinct morphological and laminar characteristics.",
+      "These subtypes included one with a 'bipolar' expression pattern and developmental history, but a unipolar morphology in the adult [CITATION], which has distinct functional characteristics in the neural circuits of the retina (Della [CITATION #b47].",
+      "With respect to depth of profiling, recent studies suggest the utility of a mixed strategy: relatively low coverage of the transcriptome can identify many cell types reliably [CITATION #b88][CITATION] and a smaller set of deep profiles can be help interpret the low-coverage data to further increase detection power."
+    ]
+  },
+  {
+    "title": "Single-Cell RNA-Seq with Waterfall Reveals Molecular Cascades underlying Adult Neurogenesis",
+    "authors": "J Shin;D A Berg;Y Zhu;J Y Shin;J Song;M A Bonaguidi;G Enikolopov;D W Nauen;K M Christian;G L Ming",
+    "year": "2015",
+    "citation": "Shin, J., Berg, D.A., Zhu, Y., Shin, J.Y., Song, J., Bonaguidi, M.A., Enikolopov, G., Nauen, D.W., Christian, K.M., Ming, G.L., et al. (2015). Single-Cell RNA-Seq with Waterfall Reveals Molecular Cascades underlying Adult Neurogenesis. Cell Stem Cell 17, 360-372.",
+    "pages": "360-372",
+    "journal": "Cell Stem Cell",
+    "volume": "17",
+    "sentences": [
+      "Linear developmental trajectories have been reconstructed, for example, from single-cell protein expression during B-cell differentiation [CITATION #b20], and from single-cell RNA expression during myogenesis in vitro , early hematopoiesis , neurogenesis in vivo [CITATION #b80][CITATION], and reprogramming from fibroblasts to neurons [CITATION #b73].",
+      "Computationally ordering cells along a time-course of development provides another way to infer regulators -a strategy that has been successful in, for example, differentiating B cells [CITATION #b20], myoblasts , neurons [CITATION #b80][CITATION], and T helper cells [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "Cell lineage analysis of acute leukemia relapse uncovers the role of replication-rate heterogeneity and microsatellite instability",
+    "authors": "L I Shlush;N Chapal-Ilani;R Adar;N Pery;Y Maruvka;A Spiro;R Shouval;J M Rowe;M Tzukerman;D Bercovich",
+    "year": "2012",
+    "citation": "Shlush, L.I., Chapal-Ilani, N., Adar, R., Pery, N., Maruvka, Y., Spiro, A., Shouval, R., Rowe, J.M., Tzukerman, M., Bercovich, D., et al. (2012). Cell lineage analysis of acute leukemia relapse uncovers the role of replication-rate heterogeneity and microsatellite instability. Blood 120, 603-612.",
+    "pages": "603-612",
+    "journal": "Blood",
+    "volume": "120",
+    "sentences": [
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION #b21][CITATION #b136][CITATION #b176][CITATION] or as a molecular clock [CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity",
+    "authors": "S A Smallwood;H J Lee;C Angermueller;F Krueger;H Saadeh;J Peat;S R Andrews;O Stegle;W Reik;G Kelsey",
+    "year": "2014",
+    "citation": "Smallwood, S.A., Lee, H.J., Angermueller, C., Krueger, F., Saadeh, H., Peat, J., Andrews, S.R., Stegle, O., Reik, W., and Kelsey, G. (2014). Single-cell genome-wide bisulfite sequencing for assessing epigenetic heterogeneity. Nature Methods 11, 817-820. 52",
+    "pages": "817-820",
+    "journal": "Nature Methods",
+    "volume": "11",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Epigenomic methods may capture regions based on distinctive histone modifications (single-cell ChIP-Seq; [CITATION #b179], accessibility (single-cell ATAC-Seq;  , or likewise characterize DNA methylation patterns (single-cell DNAme-Seq; [CITATION #b60][CITATION #b77][CITATION #b147][CITATION] or 3D organization (single-cell Hi-C; [CITATION #b153][CITATION #b171]."
+    ]
+  },
+  {
+    "title": "Joseph von Gerlach (1820-1896)",
+    "authors": "F W Stahnisch",
+    "year": "2015",
+    "citation": "Stahnisch, F.W. (2015). Joseph von Gerlach (1820-1896). Journal of Neurology 262, 1397- 1399.",
+    "pages": "1820-1896",
+    "journal": "Journal of Neurology",
+    "volume": "262",
+    "sentences": [
+      "So too was the invention of synthetic dyes by chemists [CITATION #b154], which biologists rapidly found stained cellular components in different ways [CITATION]."
+    ]
+  },
+  {
+    "title": "Computational and analytical challenges in single-cell transcriptomics",
+    "authors": "O Stegle;S A Teichmann;J C Marioni",
+    "year": "2015",
+    "citation": "Stegle, O., Teichmann, S.A., and Marioni, J.C. (2015). Computational and analytical challenges in single-cell transcriptomics. Nature Reviews Genetics 16, 133-145.",
+    "pages": "133-145",
+    "journal": "Nature Reviews Genetics",
+    "volume": "16",
+    "sentences": [
+      "New computational methods will be required both to discover types and to better classify cells and, ultimately, to refine the concepts themselves [CITATION #b191][CITATION][CITATION #b208][CITATION #b233]."
+    ]
+  },
+  {
+    "title": "Cellular noise regulons underlie fluctuations in Saccharomyces cerevisiae",
+    "authors": "J Stewart-Ornstein;J S Weissman;H El-Samad",
+    "year": "2012",
+    "citation": "Stewart-Ornstein, J., Weissman, J.S., and El-Samad, H. (2012). Cellular noise regulons underlie fluctuations in Saccharomyces cerevisiae. Molecular Cell 45, 483-493.",
+    "pages": "483-493",
+    "journal": "Molecular Cell",
+    "volume": "45",
+    "sentences": [
+      "the levels of regulatory molecules vary naturally -sometimes subtly, sometimes dramatically -due to both stochastic and controlled phenomena within a single genetic background, providing rich information from which to reconstruct cellular circuits [CITATION #b115][CITATION #b181] [CITATION]."
+    ]
+  },
+  {
+    "title": "Perspectives on cell reprogramming with RNA",
+    "authors": "J Y Sul;T K Kim;J H Lee;J Eberwine",
+    "year": "2012",
+    "citation": "Sul, J.Y., Kim, T.K., Lee, J.H., and Eberwine, J. (2012). Perspectives on cell reprogramming with RNA. Trends in Biotechnology 30, 243-249.",
+    "pages": "243-249",
+    "journal": "Trends in Biotechnology",
+    "volume": "30",
+    "sentences": [
+      "Thus, a cell 'type' might be defined as a region or a probability distribution [CITATION #b106][CITATION] either in the full-dimensional space or in a projection onto a lower-dimensional space that reflects salient features."
+    ]
+  },
+  {
+    "title": "Whole-Brain Imaging with Single-Cell Resolution Using Chemical Cocktails and Computational Analysis",
+    "authors": "E A Susaki;K Tainaka;D Perrin;F Kishino;T Tawara;T M Watanabe;C Yokoyama;H Onoe;M Eguchi;S Yamaguchi",
+    "year": "2014",
+    "citation": "Susaki, E.A., Tainaka, K., Perrin, D., Kishino, F., Tawara, T., Watanabe, T.M., Yokoyama, C., Onoe, H., Eguchi, M., Yamaguchi, S., et al. (2014). Whole-Brain Imaging with Single- Cell Resolution Using Chemical Cocktails and Computational Analysis. Cell 157, 726-739.",
+    "pages": "726-739",
+    "journal": "Cell",
+    "volume": "157",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "Power Analysis of Single Cell RNA -Sequencing Experiments",
+    "authors": "V Svensson;K N Natarajan;L.-H Ly;R J Miragaia;C Labalette;I C Macaulay;A Cvejic;S A Teichmann",
+    "year": "2016",
+    "citation": "Svensson, V., Natarajan, K.N., Ly, L.-H., Miragaia, R.J., Labalette, C., Macaulay, I.C., Cvejic, A., and Teichmann, S.A. (2016). Power Analysis of Single Cell RNA -Sequencing Experiments. Nature Methods 14, 381-387",
+    "pages": "381-387",
+    "journal": "Nature Methods",
+    "volume": "14",
+    "sentences": [
+      "Now, massively parallel assays can process tens and hundreds of thousands of single cells simultaneously to measure their transcriptional profiles at rapidly decreasing costs [CITATION #b110][CITATION #b129][CITATION #b192] with increasing accuracy and sensitivity [CITATION][CITATION #b247].",
+      "Power analyses provides a framework for comparing the sensitivity and accuracy of these approaches [CITATION][CITATION #b247]."
+    ]
+  },
+  {
+    "title": "Scaling single-cell genomics from phenomenology to mechanism",
+    "authors": "A Tanay;A Regev",
+    "year": "2017",
+    "citation": "Tanay, A., and Regev, A. (2017). Scaling single-cell genomics from phenomenology to mechanism. Nature 541, 331-338.",
+    "pages": "331-338",
+    "journal": "Nature",
+    "volume": "541",
+    "sentences": [
+      "New computational methods will be required both to discover types and to better classify cells and, ultimately, to refine the concepts themselves [CITATION #b191][CITATION #b201][CITATION][CITATION #b233].",
+      "Beyond transcriptome analysis, single-cell multi-omic profiles (Box 1) will improve the inference of cellular circuitry by connecting regulatory mechanisms and their targets [CITATION]."
+    ]
+  },
+  {
+    "title": "Mitochondrial DNA mutations in human colonic crypt stem cells",
+    "authors": "G A Taylor;S M Plusa;S J Needham;L C Greaves",
+    "year": "2003",
+    "citation": "Taylor, G.A., Plusa, S.M., Needham, S.J., Greaves, L.C., et al. (2003). Mitochondrial DNA mutations in human colonic crypt stem cells. Journal of Clinical Investigation 112, 1351- 1360.",
+    "pages": "1351-1360",
+    "journal": "Journal of Clinical Investigation",
+    "volume": "112",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION][CITATION #b214].",
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION #b21][CITATION #b136][CITATION #b176][CITATION #b194] or as a molecular clock [CITATION][CITATION #b214]."
+    ]
+  },
+  {
+    "title": "In situ transcription: specific synthesis of complementary DNA in fixed tissue sections",
+    "authors": "L H Tecott;J D Barchas;J H Eberwine",
+    "year": "1988",
+    "citation": "Tecott, L.H., Barchas, J.D., and Eberwine, J.H. (1988). In situ transcription: specific synthesis of complementary DNA in fixed tissue sections. Science 240, 1661-1664.",
+    "pages": "1661-1664",
+    "journal": "Science",
+    "volume": "240",
+    "sentences": [
+      "Some strategies for RNA detection, such as MERFISH [CITATION #b36][CITATION #b144] or Seq-FISH [CITATION #b186], combine multiplex hybridization with microscopy-based quantification to assess distributions at both the cellular and subcellular level; other early studies have performed in situ transcription [CITATION], followed by direct manual harvesting of cDNA from individual cells [CITATION #b41][CITATION]."
+    ]
+  },
+  {
+    "title": "Stochastic homeostasis in human airway epithelium is achieved by neutral competition of basal cell progenitors",
+    "authors": "V H Teixeira;P Nadarajan;T A Graham;C P Pipinikas;J M Brown;M Falzon;E Nye;R Poulsom;D Lawrence;N A Wright",
+    "year": "2013",
+    "citation": "Teixeira, V.H., Nadarajan, P., Graham, T.A., Pipinikas, C.P., Brown, J.M., Falzon, M., Nye, E., Poulsom, R., Lawrence, D., Wright, N.A., et al. (2013). Stochastic homeostasis in human airway epithelium is achieved by neutral competition of basal cell progenitors. eLife 2, e00966.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION #b231]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION].",
+      "or repeat expansions at microsatellite loci) at each cell division [CITATION #b19][CITATION #b21][CITATION #b136][CITATION #b176][CITATION #b194] or as a molecular clock [CITATION #b212][CITATION]."
+    ]
+  },
+  {
+    "title": "Structural Stability and Morphogenesis",
+    "authors": "R Thom",
+    "year": "1989",
+    "citation": "Thom, R. (1989). Structural Stability and Morphogenesis Addison Wesley Publishing Company.",
+    "publisher": "Addison Wesley Publishing Company",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The reconstruction algorithms themselves could incorporate insights from theoretical studies of dynamical systems, and learned models could be analyzed in light of such frameworks [CITATION #b61][CITATION #b137][CITATION]."
+    ]
+  },
+  {
+    "title": "Fixed single-cell transcriptomic characterization of human radial glial diversity",
+    "authors": "E R Thomsen;J K Mich;Z Yao;R D Hodge;A M Doyle;S Jang;S I Shehata;A M Nelson;N V Shapovalova;B P Levi",
+    "year": "2016",
+    "citation": "Thomsen, E.R., Mich, J.K., Yao, Z., Hodge, R.D., Doyle, A.M., Jang, S., Shehata, S.I., Nelson, A.M., Shapovalova, N.V., Levi, B.P., et al. (2016). Fixed single-cell transcriptomic characterization of human radial glial diversity. Nature Methods 13, 87-93.",
+    "pages": "87-93",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "scRNA-seq is typically applied to freshly dissociated tissue, but emerging protocols use fixed cells [CITATION] or nuclei isolated from frozen or lightly fixed tissue [CITATION #b81][CITATION #b116]."
+    ]
+  },
+  {
+    "title": "A subcellular map of the human proteome",
+    "authors": "P J Thul;L Akesson;M Wiking;D Mahdessian;A Geladaki;H Ait Blal;T Alm;A Asplund;L Bjork;L M Breckels",
+    "year": "2017",
+    "citation": "Thul, P.J., Akesson, L., Wiking, M., Mahdessian, D., Geladaki, A., Ait Blal, H., Alm, T., Asplund, A., Bjork, L., Breckels, L.M., et al. (2017). A subcellular map of the human proteome. Science DOI: 10.1126/science.aal3321",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Today, it is surprisingly challenging to obtain definitive answers for most human genes beyond tissue-or organ-level resolution, although there have been pioneering efforts for the brain and immune system in mouse [CITATION #b87][CITATION #b105] and for protein expression in human [CITATION] ."
+    ]
+  },
+  {
+    "title": "Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq",
+    "authors": "I Tirosh;B Izar;S M Prakadan;M H Wadsworth;D Treacy;J J Trombetta;A Rotem;C Rodman;C Lian;G Murphy",
+    "year": "2016",
+    "citation": "Tirosh, I., Izar, B., Prakadan, S.M., Wadsworth, M.H., 2nd, Treacy, D., Trombetta, J.J., Rotem, A., Rodman, C., Lian, C., Murphy, G., et al. (2016a). Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq. Science 352, 189-196.",
+    "pages": "189-196",
+    "journal": "Science",
+    "volume": "352",
+    "sentences": [
+      "Recent studies have shown that cyclical processes and transient responses -from the cell cycle [CITATION #b146][CITATION #b79][CITATION #b102][CITATION #b113][CITATION #b129] [CITATION] to the response of immune cells to pathogen components  [CITATION #b189] -can be traced in single-cell profiles.",
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION #b129], primary immune cells [CITATION #b146][CITATION #b113], and healthy and disease tissues [CITATION #b163][CITATION][CITATION #b219].",
+      "From initial studies of a limited number of patients, it should be possible to derive signatures of key cell types and states and use them to deconvolute cellular proportions in conventional bulk-tissue or blood samples [CITATION #b120][CITATION].",
+      "In recent studies of melanoma [CITATION], glioblastoma [CITATION #b163], low-grade glioma [CITATION #b219], and myeloproliferative neoplasms [CITATION #b109], single-cell RNA-seq of fresh tumors resected directly from patients readily distinguished among malignant, immune, stromal and endothelial cells.",
+      "Among the malignant cells, it identified distinct cell states -such as cancer stem cells [CITATION #b163][CITATION #b219], drug-resistant states [CITATION], proliferating and quiescent cells [CITATION #b163][CITATION][CITATION #b219] -and related them to each other, showing, for example, that only stem-like cells proliferate in lowgrade glioma [CITATION #b219] and that individual sub-clones can be readily identified in one patient [CITATION #b109].",
+      "Among the non-malignant cells, it found distinct functional states for T-cells, and revealed that, while activation and exhaustion programs are coupled, the exhausted state is also controlled by an independent regulatory program in both human tumors [CITATION]) and a mouse model [CITATION #b195].",
+      "To associate patterns observed in a few (5-20) patients with effects on clinical phenotypes, single-cell based signatures were used to deconvolute hundreds of bulk tumor profiles that had been collected with rich clinical information [CITATION #b120][CITATION #b163][CITATION].",
+      "In tumors from melanoma patients, gene-expression analysis (involving single-cell data obtained from some patients and bulk tumor data from many more patients, deconvoluted based on signatures learned from the single cells) found genes that are expressed in one cell type, but whose expression levels are correlated with the proportion of a different cell type that does not express them; this analysis revealed that high expression of the complement system in cancer-associated fibroblasts in the tumor microenvironment is correlated with increased infiltration of T cells [CITATION]."
+    ]
+  },
+  {
+    "title": "Single-cell RNA-seq supports a developmental hierarchy in IDH-mutant oligodendroglioma",
+    "authors": "I Tirosh;A S Venteicher;C Hebert;L E Escalante;A P Patel;K Yizhak;J M Fisher;C Rodman;C Mount;M Filbin",
+    "year": "2016",
+    "citation": "Tirosh, I., Venteicher, A.S., Hebert, C., Escalante, L.E., Patel, A.P., Yizhak, K., Fisher, J.M., Rodman, C., Mount, C., Filbin, M., et al. (2016b). Single-cell RNA-seq supports a developmental hierarchy in IDH-mutant oligodendroglioma. Nature 539, 309-313.",
+    "pages": "309-313",
+    "journal": "Nature",
+    "volume": "539",
+    "sentences": [
+      "For example, in the cell cycle, analysis of single-cell profiles readily shows a robust, reproducible and evolutionarily conserved program that can be resolved in a near-continuous way across human and mouse cell lines [CITATION #b129], primary immune cells [CITATION #b146][CITATION #b113], and healthy and disease tissues [CITATION #b163][CITATION #b218][CITATION].",
+      "In recent studies of melanoma [CITATION #b218], glioblastoma [CITATION #b163], low-grade glioma [CITATION], and myeloproliferative neoplasms [CITATION #b109], single-cell RNA-seq of fresh tumors resected directly from patients readily distinguished among malignant, immune, stromal and endothelial cells.",
+      "Among the malignant cells, it identified distinct cell states -such as cancer stem cells [CITATION #b163][CITATION], drug-resistant states [CITATION #b218], proliferating and quiescent cells [CITATION #b163][CITATION #b218][CITATION] -and related them to each other, showing, for example, that only stem-like cells proliferate in lowgrade glioma [CITATION] and that individual sub-clones can be readily identified in one patient [CITATION #b109].",
+      "Concomitant measurement of DNA mutations and transcriptional profiles in cancer cells may allow similar causal connections to be drawn, as has been recently shown for mutations in the CIC gene and the expression of its regulatory targets [CITATION]."
+    ]
+  },
+  {
+    "title": "Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq",
+    "authors": "B Treutlein;D G Brownfield;A R Wu;N F Neff;G L Mantalas;F H Espinoza;T J Desai;M A Krasnow;S R Quake",
+    "year": "2014",
+    "citation": "Treutlein, B., Brownfield, D.G., Wu, A.R., Neff, N.F., Mantalas, G.L., Espinoza, F.H., Desai, T.J., Krasnow, M.A., and Quake, S.R. (2014). Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371-375.",
+    "pages": "371-375",
+    "journal": "Nature",
+    "volume": "509",
+    "sentences": [
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION #b230], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION] [CITATION #b129] and microwell-based [CITATION #b59][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "BASiCS: Bayesian Analysis of Single-Cell Sequencing Data",
+    "authors": "C A Vallejos;J C Marioni;S Richardson",
+    "year": "2015",
+    "citation": "Vallejos, C.A., Marioni, J.C., and Richardson, S. (2015). BASiCS: Bayesian Analysis of Single-Cell Sequencing Data. PLoS Computational Biology 11, e1004333.",
+    "pages": "",
+    "journal": "PLoS Computational Biology",
+    "volume": "11",
+    "sentences": [
+      "Unsupervised clustering algorithms for high-dimensional data provide an initial framework [CITATION #b75] [CITATION #b120][CITATION #b129][CITATION #b192][CITATION], but substantial advances will be needed in order to select the 'right' features, the 'right' similarity metric, and the 'right' level of granularity for the question at hand, control for distinct biological processes, handle technical noise, and connect novel clusters with legacy knowledge."
+    ]
+  },
+  {
+    "title": "Amplified RNA synthesized from limited quantities of heterogeneous cDNA",
+    "authors": "R N Van Gelder;M E Von Zastrow;A Yool;W C Dement;J D Barchas;J H Eberwine",
+    "year": "1990",
+    "citation": "Van Gelder, R.N., von Zastrow, M.E., Yool, A., Dement, W.C., Barchas, J.D., and Eberwine, J.H. (1990). Amplified RNA synthesized from limited quantities of heterogeneous cDNA. PNAS 87, 1663-1667.",
+    "pages": "1663-1667",
+    "journal": "PNAS",
+    "volume": "87",
+    "sentences": [
+      "The desirability of having much deeper knowledge about cells has been well recognized for a long time [CITATION #b25][CITATION #b56][CITATION #b190][CITATION].",
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION #b222] [CITATION #b129] and microwell-based [CITATION #b59][CITATION #b241] approaches."
+    ]
+  },
+  {
+    "title": "Massive and parallel expression profiling using microarrayed single-cell sequencing",
+    "authors": "S Vickovic;P L Stahl;F Salmen;S Giatrellis;J O Westholm;A Mollbrink;J F Navarro;J Custodio;M Bienko;L A Sutton",
+    "year": "2016",
+    "citation": "Vickovic, S., Stahl, P.L., Salmen, F., Giatrellis, S., Westholm, J.O., Mollbrink, A., Navarro, J.F., Custodio, J., Bienko, M., Sutton, L.A., et al. (2016). Massive and parallel expression profiling using microarrayed single-cell sequencing. Nat Commun 7, 13182.",
+    "pages": "13182",
+    "journal": "Nat Commun",
+    "volume": "7",
+    "sentences": [
+      "In some cases, it is even possible to register these sorted cells to their spatial positions in images [CITATION].",
+      "Techniques are being developed to assay: in situ gene expression in tissues at single-cell and even sub-cellular resolution [CITATION #b36][CITATION #b103][CITATION #b119][CITATION #b127][CITATION #b186][CITATION]; the distribution of scores of proteins at cellular or sub-cellular resolution [CITATION #b6][CITATION #b33][CITATION #b72][CITATION #b84][CITATION #b206][CITATION #b119]; various aspects of chromatin state  [CITATION #b60][CITATION #b77] [CITATION #b147][CITATION #b179][CITATION #b180][CITATION #b197]; and DNA mutations to allow precise reconstruction of cell lineages [CITATION #b19][CITATION #b21][CITATION #b191][CITATION #b212][CITATION #b214].",
+      "Various methods are also used, for example, to measure transcriptomes in situ with barcoded arrays [CITATION]."
+    ]
+  },
+  {
+    "title": "The Strategy of the Genes London",
+    "authors": "C H Waddington",
+    "year": "1957",
+    "citation": "Waddington, C.H. (1957). The Strategy of the Genes London: Allen & Unwin",
+    "publisher": "Allen & Unwin",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It should therefore be possible to reconstruct development as trajectories in high-dimensional space, mirroring Waddington's landscape [CITATION #b61][CITATION] -just as it would be possible to infer the ski lifts and trails on a 16 mountain from snapshots of the positions of enough skiers.",
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION #b69][CITATION #b92][CITATION #b93][CITATION #b175][CITATION #b245] ."
+    ]
+  },
+  {
+    "title": "Uncovering the vectors of cellular identity with single-cell genomics",
+    "authors": "A Wagner;A Regev;Yosef;N",
+    "year": "2016",
+    "citation": "Wagner, A., Regev, A., and Yosef, N. (2016). Uncovering the vectors of cellular identity with single-cell genomics. Nature Biotechnology 34, 1145-1160.",
+    "pages": "1145-1160",
+    "journal": "Nature Biotechnology",
+    "volume": "34",
+    "sentences": [
+      "In an atlas where cells are represented as points in a high-dimensional space, 'similar' cells should be 'close' in some appropriate sense, although not identical, owing to differences in physiological states (e.g., cell-cycle stage), the inherent noise in molecular systems [CITATION #b57][CITATION #b104][CITATION #b107] , and measurement errors [CITATION #b146][CITATION #b104][CITATION #b107] [CITATION #b189][CITATION].",
+      "New computational methods will be required both to discover types and to better classify cells and, ultimately, to refine the concepts themselves [CITATION #b191][CITATION #b201][CITATION #b208][CITATION].",
+      "The molecular phenotype of a cell reflects a superposition of these various processes and their interactions [CITATION]."
+    ]
+  },
+  {
+    "title": "Show, attend and tell: Neural image caption generation with visual attention",
+    "authors": "K Xu;J Ba;R Kiros;K Cho;A Courville;R Salakhutdinov;R S Zemel;Y Bengio",
+    "year": "2015",
+    "citation": "Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhutdinov, R., Zemel, R.S., and Bengio, Y. (2015). Show, attend and tell: Neural image caption generation with visual attention. arXiv: https://arxiv.org/abs/1502.03044",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Combining molecular profiles with tissue architecture will require new computational methods, drawing perhaps on advances in machine vision [CITATION] ."
+    ]
+  },
+  {
+    "title": "An Automated Microwell Platform for Large-Scale Single Cell RNA-Seq",
+    "authors": "J Yuan;P A Sims",
+    "year": "2016",
+    "citation": "Yuan, J., and Sims, P.A. (2016). An Automated Microwell Platform for Large-Scale Single Cell RNA-Seq. Scientific Reports 6, 33883.",
+    "pages": "33883",
+    "journal": "Scientific Reports",
+    "volume": "6",
+    "sentences": [
+      "Strategies for single-cell isolation span manual cell picking, initially used in microarray studies [CITATION #b56][CITATION #b230], FACS-based sorting into multi-well plates [CITATION #b174] , microfluidic devices [CITATION #b222] [CITATION #b129] and microwell-based [CITATION #b59][CITATION] approaches."
+    ]
+  },
+  {
+    "title": "A microfluidic processor for gene expression profiling of single human embryonic stem cells",
+    "authors": "J F Zhong;Y Chen;J S Marcus;A Scherer;S R Quake;C R Taylor;L P Weiner",
+    "year": "2008",
+    "citation": "Zhong, J.F., Chen, Y., Marcus, J.S., Scherer, A., Quake, S.R., Taylor, C.R., and Weiner, L.P. (2008). A microfluidic processor for gene expression profiling of single human embryonic stem cells. Lab Chip 8, 68-74.",
+    "pages": "68-74",
+    "journal": "Lab Chip",
+    "volume": "8",
+    "sentences": [
+      "Initial efforts first used microarrays and then RNA-seq to profile RNA from small numbers of single cells, which were obtained either by manual picking from in situ fixed tissue, using flowsorting or, later on, with microfluidic devices, adapted from devices developed initially for qPCR-based approaches [CITATION #b41][CITATION #b44][CITATION #b133][CITATION #b142][CITATION]."
+    ]
+  },
+  {
+    "title": "Quasi-potential landscape in complex multi-stable systems",
+    "authors": "J X Zhou;M D Aliyu;E Aurell;S Huang",
+    "year": "2012",
+    "citation": "Zhou, J.X., Aliyu, M.D., Aurell, E., and Huang, S. (2012). Quasi-potential landscape in complex multi-stable systems. Journal of the Royal Society: Interface. 9, 3539-3553.",
+    "pages": "3539-3553",
+    "journal": "Journal of the Royal Society: Interface",
+    "volume": "9",
+    "sentences": [
+      "Finally, we will likely learn about the nature of stable states: while we often think of stable states as discrete attractor basins [CITATION #b232], there may also be troughs that reflect a continuous spectrum of stable states (e.g., the ratio of two processes may vary across cells, but are stable in each; [CITATION #b10][CITATION #b69][CITATION #b92][CITATION #b93][CITATION #b175][CITATION] ."
+    ]
+  },
+  {
+    "title": "Comparative analysis of single-cell RNA sequencing methods",
+    "authors": "C Ziegenhain;B Vieth;S Parekh;B Reinius;M Smets;H Leonhardt;I Hellmann;W Enard",
+    "year": "2016",
+    "citation": "Ziegenhain, C., Vieth, B., Parekh, S., Reinius, B., Smets, M., Leonhardt, H., Hellmann, I., and Enard, W. (2016). Comparative analysis of single-cell RNA sequencing methods. Molecular Cell 65, 631-643",
+    "pages": "631-643",
+    "journal": "Molecular Cell",
+    "volume": "65",
+    "sentences": [
+      "Now, massively parallel assays can process tens and hundreds of thousands of single cells simultaneously to measure their transcriptional profiles at rapidly decreasing costs [CITATION #b110][CITATION #b129][CITATION #b192] with increasing accuracy and sensitivity [CITATION #b207][CITATION].",
+      "Power analyses provides a framework for comparing the sensitivity and accuracy of these approaches [CITATION #b207][CITATION]."
+    ]
+  }
+]

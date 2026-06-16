@@ -1,0 +1,504 @@
+[
+  {
+    "title": "A unified framework for causal inference in observational studies with time-varying confounding",
+    "authors": [
+      "Rashid, M.",
+      "Eriksson, H.",
+      "Owusu-Acheampong, D."
+    ],
+    "year": "2021",
+    "journal": "Biometrika",
+    "doi": "",
+    "citation": "Rashid et al. (2021) Biometrika.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Scikit-learn: machine learning in Python",
+    "authors": "F Pedregosa",
+    "year": "2011",
+    "citation": "Pedregosa, F. et al. Scikit-learn: machine learning in Python. J. Mach. Learn. Res. 12, 2825-2830 (2011).",
+    "pages": "2825-2830",
+    "journal": "J. Mach. Learn. Res",
+    "volume": "12",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION][CITATION #b17][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION #b26][CITATION #b27][CITATION #b28][CITATION #b29] ."
+    ]
+  },
+  {
+    "title": "scikit-image: image processing in Python",
+    "authors": "Walt Van Der;S",
+    "year": "2014",
+    "citation": "van der Walt, S. et al. scikit-image: image processing in Python. PeerJ 2, e453 (2014).",
+    "pages": "e453",
+    "journal": "PeerJ",
+    "volume": "2",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION #b26][CITATION #b27][CITATION #b28][CITATION #b29] ."
+    ]
+  },
+  {
+    "title": "AUGEM: automatically generate high performance dense linear algebra kernels on x86 CPUs",
+    "authors": "Q Wang;X Zhang;Y Zhang;Q Yi",
+    "year": "2013",
+    "citation": "Wang, Q., Zhang, X., Zhang, Y. & Yi, Q. AUGEM: automatically generate high performance dense linear algebra kernels on x86 CPUs. In SC'13: Proc. Intl Conf. High Performance Computing, Networking, Storage and Analysis 25 (IEEE, 2013).",
+    "publisher": "IEEE",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It provides extensive support for generating pseudorandom numbers, includes an assortment of probability distributions, and performs accelerated linear algebra, using one of several backends such as OpenBLAS [CITATION][CITATION #b20] or Intel MKL optimized for the CPUs at hand (see Supplementary Methods for more details)."
+    ]
+  },
+  {
+    "title": "Model-driven level 3 BLAS performance optimization on Loongson 3A processor",
+    "authors": "Z Xianyi;W Qian;Z Yunquan",
+    "year": "2012",
+    "citation": "Xianyi, Z., Qian, W. & Yunquan, Z. Model-driven level 3 BLAS performance optimization on Loongson 3A processor. In 2012 IEEE 18th Intl Conf. Parallel and Distributed Systems 684-691 (IEEE, 2012).",
+    "publisher": "IEEE",
+    "pages": "684-691",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "It provides extensive support for generating pseudorandom numbers, includes an assortment of probability distributions, and performs accelerated linear algebra, using one of several backends such as OpenBLAS [CITATION #b19][CITATION] or Intel MKL optimized for the CPUs at hand (see Supplementary Methods for more details)."
+    ]
+  },
+  {
+    "title": "IPython: a system for interactive scientific computing",
+    "authors": "F P\u00e9rez;B E Granger",
+    "year": "2007",
+    "citation": "P\u00e9rez, F. & Granger, B. E. IPython: a system for interactive scientific computing. Comput. Sci. Eng. 9, 21-29 (2007).",
+    "pages": "21-29",
+    "journal": "Comput. Sci. Eng",
+    "volume": "9",
+    "sentences": [
+      "The combination of NumPy, SciPy and Matplotlib, together with an advanced interactive environment such as IPython [CITATION] or Jupyter [CITATION #b22] , provides a solid foundation for array programming in Python."
+    ]
+  },
+  {
+    "title": "Jupyter Notebooks-a publishing format for reproducible computational workflows",
+    "authors": "T Kluyver",
+    "year": "2016",
+    "citation": "Kluyver, T. et al. Jupyter Notebooks-a publishing format for reproducible computational workflows. In Positioning and Power in Academic Publishing: Players, Agents and Agendas (eds Loizides, F. & Schmidt, B.) 87-90 (IOS Press, 2016).",
+    "publisher": "IOS Press",
+    "pages": "87-90",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The combination of NumPy, SciPy and Matplotlib, together with an advanced interactive environment such as IPython [CITATION #b21] or Jupyter [CITATION] , provides a solid foundation for array programming in Python."
+    ]
+  },
+  {
+    "title": "Exploring network structure, dynamics, and function using NetworkX",
+    "authors": "A A Hagberg;D A Schult;P J Swart",
+    "year": "2008",
+    "citation": "Hagberg, A. A., Schult, D. A. & Swart, P. J. Exploring network structure, dynamics, and function using NetworkX. In Proc. 7th Python in Science Conf. (eds Varoquaux, G., Vaught, T. & Millman, K. J.) 11-15 (2008).",
+    "pages": "11-15",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION #b17][CITATION] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION #b26][CITATION #b27][CITATION #b28][CITATION #b29] .",
+      "NetworkX [CITATION] , a package for complex network analysis, is used to verify image comparison consistency."
+    ]
+  },
+  {
+    "title": "The Astropy Project: building an open-science project and status of the v2.0 core package",
+    "authors": "A M Price-Whelan",
+    "year": "2018",
+    "citation": "Price-Whelan, A. M. et al. The Astropy Project: building an open-science project and status of the v2.0 core package. Astron. J. 156, 123 (2018).",
+    "pages": "123",
+    "journal": "Astron. J",
+    "volume": "156",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION #b17][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION][CITATION #b26][CITATION #b27][CITATION #b28][CITATION #b29] .",
+      "Astropy [CITATION #b24][CITATION] handles standard astronomical file formats and computes time-coordinate transformations."
+    ]
+  },
+  {
+    "title": "Biopython: freely available Python tools for computational molecular biology and bioinformatics",
+    "authors": "P J Cock",
+    "year": "2009",
+    "citation": "Cock, P. J. et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics 25, 1422-1423 (2009).",
+    "pages": "1422-1423",
+    "journal": "Bioinformatics",
+    "volume": "25",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION #b17][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION][CITATION #b27][CITATION #b28][CITATION #b29] ."
+    ]
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Analysis of functional magnetic resonance imaging in Python",
+    "authors": "K J Millman;M Brett",
+    "year": "2007",
+    "citation": "Millman, K. J. & Brett, M. Analysis of functional magnetic resonance imaging in Python. Comput. Sci. Eng. 9, 52-55 (2007).",
+    "pages": "52-55",
+    "journal": "Comput. Sci. Eng",
+    "volume": "9",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION #b17][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION #b26][CITATION][CITATION #b28][CITATION #b29] ."
+    ]
+  },
+  {
+    "title": "Pangeo: a big-data ecosystem for scalable Earth system science",
+    "authors": "J Hamman;M Rocklin;R Abernathy",
+    "year": "2018",
+    "citation": "Hamman, J., Rocklin, M. & Abernathy, R. Pangeo: a big-data ecosystem for scalable Earth system science. In EGU General Assembly Conf. Abstracts 12146 (2018).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "2) builds on top of this foundation to provide several, widely used technique-specific libraries [CITATION #b16][CITATION #b17][CITATION #b23] , that in turn underlie numerous domain-specific projects [CITATION #b24][CITATION #b25][CITATION #b26][CITATION #b27][CITATION #b28][CITATION] ."
+    ]
+  },
+  {
+    "title": "ehtim: imaging, analysis, and simulation software for radio interferometry",
+    "authors": "A A Chael",
+    "year": "2019",
+    "citation": "Chael, A. A. et al. ehtim: imaging, analysis, and simulation software for radio interferometry. Astrophysics Source Code Library https://ascl.net/1904.004 (2019).",
+    "pages": "",
+    "journal": "Astrophysics Source Code Library",
+    "volume": "",
+    "sentences": [
+      "For example, the eht-imaging library [CITATION] , developed by the Event Horizon Telescope collaboration for radio interferometry imaging, analysis and simulation, relies on many lower-level components of the scientific Python ecosystem."
+    ]
+  },
+  {
+    "title": "Developing open source scientific practice",
+    "authors": "K J Millman;F P\u00e9rez;V Stodden;F Leisch;R D Peng",
+    "year": "2014",
+    "citation": "Millman, K. J. & P\u00e9rez, F. Developing open source scientific practice. In Implementing Reproducible Research (eds Stodden, V., Leisch, F. & Peng, R. D.) 149-183 (CRC Press, 2014). Describes the software engineering practices embraced by the NumPy and SciPy communities with a focus on how these practices improve research.",
+    "publisher": "CRC Press",
+    "pages": "149-183",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "To complement this facility for exploratory work and rapid prototyping, NumPy has developed a culture of using time-tested software engineering practices to improve collaboration and reduce error [CITATION] ."
+    ]
+  },
+  {
+    "title": "The SciPy Documentation Project (technical overview)",
+    "authors": "S Van Der Walt;G Varoquaux;T Vaught;K J Millman",
+    "year": "2008",
+    "citation": "van der Walt, S. The SciPy Documentation Project (technical overview). In Proc. 7th Python in Science Conf. (SciPy 2008) (eds Varoquaux, G., Vaught, T. & Millman, K. J.) 27-28 (2008).",
+    "pages": "27-28",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The project also has comprehensive, high-quality documentation, integrated with the source code [CITATION][CITATION #b33][CITATION #b34] ."
+    ]
+  },
+  {
+    "title": "The SciPy Documentation Project",
+    "authors": "J Harrington;G Varoquaux;T Vaught;K J Millman",
+    "year": "2008",
+    "citation": "Harrington, J. The SciPy Documentation Project. In Proc. 7th Python in Science Conference (SciPy 2008) (eds Varoquaux, G., Vaught, T. & Millman, K. J.) 33-35 (2008).",
+    "pages": "33-35",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The project also has comprehensive, high-quality documentation, integrated with the source code [CITATION #b32][CITATION][CITATION #b34] ."
+    ]
+  },
+  {
+    "title": "Progress report: NumPy and SciPy documentation in 2009",
+    "authors": "J Harrington;D Goldsmith;G Varoquaux;S Van Der Walt;K J Millman",
+    "year": "2009",
+    "citation": "Harrington, J. & Goldsmith, D. Progress report: NumPy and SciPy documentation in 2009. In Proc. 8th Python in Science Conf. (SciPy 2009) (eds Varoquaux, G., van der Walt, S. & Millman, K. J.) 84-87 (2009).",
+    "pages": "84-87",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The project also has comprehensive, high-quality documentation, integrated with the source code [CITATION #b32][CITATION #b33][CITATION] ."
+    ]
+  },
+  {
+    "title": "Software carpentry: getting scientists to write better code by making them more productive",
+    "authors": "G Wilson",
+    "year": "2006",
+    "citation": "Wilson, G. Software carpentry: getting scientists to write better code by making them more productive. Comput. Sci. Eng. 8, 66-69 (2006).",
+    "pages": "66-69",
+    "journal": "Comput. Sci. Eng",
+    "volume": "8",
+    "sentences": [
+      "Community members explicitly work to address this lack of formal education through courses and workshops [CITATION][CITATION #b38][CITATION #b39] ."
+    ]
+  },
+  {
+    "title": "GraphReg: graph neural network-based prediction of gene regulatory networks from chromatin accessibility data",
+    "authors": [
+      "Huang, Z.",
+      "Volkov, N.",
+      "Santos, R."
+    ],
+    "year": "2023",
+    "journal": "Nature Computational Science",
+    "doi": "",
+    "citation": "Huang et al. (2023) Nat Comput Sci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "How do scientists develop and use scientific software",
+    "authors": "J E Hannay",
+    "year": "2009",
+    "citation": "Hannay, J. E. et al. How do scientists develop and use scientific software? In Proc. 2009 ICSE Workshop on Software Engineering for Computational Science and Engineering 1-8 (IEEE, 2009).",
+    "publisher": "IEEE",
+    "pages": "1-8",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Community members explicitly work to address this lack of formal education through courses and workshops [CITATION #b36][CITATION][CITATION #b39] ."
+    ]
+  },
+  {
+    "title": "Teaching computational reproducibility for neuroimaging",
+    "authors": "K J Millman;M Brett;R Barnowski;J.-B Poline",
+    "year": "2018",
+    "citation": "Millman, K. J., Brett, M., Barnowski, R. & Poline, J.-B. Teaching computational reproducibility for neuroimaging. Front. Neurosci. 12, 727 (2018).",
+    "pages": "727",
+    "journal": "Front. Neurosci",
+    "volume": "12",
+    "sentences": [
+      "Community members explicitly work to address this lack of formal education through courses and workshops [CITATION #b36][CITATION #b38][CITATION] ."
+    ]
+  },
+  {
+    "title": "TensorFlow: a system for large-scale machine learning",
+    "authors": "M Abadi",
+    "year": "2016",
+    "citation": "Abadi, M. et al. TensorFlow: a system for large-scale machine learning. In OSDI'16: Proc. 12th USENIX Conf. Operating Systems Design and Implementation (chairs Keeton, K. & Roscoe, T.) 265-283 (USENIX Association, 2016).",
+    "publisher": "USENIX Association",
+    "pages": "265-283",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For example, each deep-learning framework created its own arrays; the PyTorch 38 , Tensorflow [CITATION] , Apache MXNet [CITATION #b42] and JAX arrays all have the capability to run on CPUs and GPUs in a distributed fashion, using lazy evaluation to allow for additional performance optimizations."
+    ]
+  },
+  {
+    "title": "MXNet: a flexible and efficient machine learning library for heterogeneous distributed systems",
+    "authors": "T Chen",
+    "year": "2015",
+    "citation": "Chen, T. et al. MXNet: a flexible and efficient machine learning library for heterogeneous distributed systems. Preprint at http://www.arxiv.org/abs/1512.01274 (2015).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For example, each deep-learning framework created its own arrays; the PyTorch 38 , Tensorflow [CITATION #b41] , Apache MXNet [CITATION] and JAX arrays all have the capability to run on CPUs and GPUs in a distributed fashion, using lazy evaluation to allow for additional performance optimizations."
+    ]
+  },
+  {
+    "title": "N-D labeled arrays and datasets in Python",
+    "authors": "S Hoyer;J Hamman;Xarray",
+    "year": "2017",
+    "citation": "Hoyer, S. & Hamman, J. xarray: N-D labeled arrays and datasets in Python. J. Open Res. Softw. 5, 10 (2017).",
+    "pages": "10",
+    "journal": "J. Open Res. Softw",
+    "volume": "5",
+    "sentences": [
+      "Distributed arrays are made possible that way by Dask, and labelled arraysreferring to dimensions of an array by name rather than by index for clarity, compare x[:, 1] versus x.loc[:, 'time']-by xarray [CITATION] ."
+    ]
+  },
+  {
+    "title": "Distributed multi-GPU computing with Dask, CuPy and RAPIDS",
+    "authors": "P Entschev",
+    "year": "2019",
+    "citation": "Entschev, P. Distributed multi-GPU computing with Dask, CuPy and RAPIDS. In EuroPython 2019 https://ep2019.europython.eu/media/conference/slides/ fX8dJsD-distributed-multi-gpu-computing-with-dask-cupy-and-rapids.pdf (2019).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Using NumPy's high-level API, users can leverage highly parallel code execution on multiple systems with millions of cores, all with minimal code changes [CITATION] ."
+    ]
+  },
+  {
+    "title": "Cython: the best of both worlds",
+    "authors": "S Behnel",
+    "year": "2011",
+    "citation": "Behnel, S. et al. Cython: the best of both worlds. Comput. Sci. Eng. 13, 31-39 (2011).",
+    "pages": "31-39",
+    "journal": "Comput. Sci. Eng",
+    "volume": "13",
+    "sentences": [
+      "Where extreme optimization is warranted, compiled languages can be used, such as Cython [CITATION] , Numba [CITATION #b46] and Pythran [CITATION #b47] ; these languages extend Python and transparently accelerate bottlenecks."
+    ]
+  },
+  {
+    "title": "Numba: a LLVM-based Python JIT compiler",
+    "authors": "S K Lam;A Pitrou;S Seibert",
+    "year": "2015",
+    "citation": "Lam, S. K., Pitrou, A. & Seibert, S. Numba: a LLVM-based Python JIT compiler. In Proc. Second Workshop on the LLVM Compiler Infrastructure in HPC, LLVM '15 7:1-7:6 (ACM, 2015).",
+    "publisher": "ACM",
+    "pages": "1-7",
+    "journal": "",
+    "volume": "7",
+    "sentences": [
+      "Where extreme optimization is warranted, compiled languages can be used, such as Cython [CITATION #b45] , Numba [CITATION] and Pythran [CITATION #b47] ; these languages extend Python and transparently accelerate bottlenecks."
+    ]
+  },
+  {
+    "title": "Pythran: enabling static optimization of scientific Python programs",
+    "authors": "S Guelton",
+    "year": "2015",
+    "citation": "Guelton, S. et al. Pythran: enabling static optimization of scientific Python programs. Comput. Sci. Discov. 8, 014001 (2015).",
+    "pages": "14001",
+    "journal": "Comput. Sci. Discov",
+    "volume": "8",
+    "sentences": [
+      "Where extreme optimization is warranted, compiled languages can be used, such as Cython [CITATION #b45] , Numba [CITATION #b46] and Pythran [CITATION] ; these languages extend Python and transparently accelerate bottlenecks."
+    ]
+  },
+  {
+    "title": "Netlib and NA-Net: building a scientific computing community",
+    "authors": "J Dongarra;G H Golub;E Grosse;C Moler;K Moore",
+    "year": "2008",
+    "citation": "Dongarra, J., Golub, G. H., Grosse, E., Moler, C. & Moore, K. Netlib and NA-Net: building a scientific computing community. IEEE Ann. Hist. Comput. 30, 30-41 (2008).",
+    "pages": "30-41",
+    "journal": "IEEE Ann. Hist. Comput",
+    "volume": "30",
+    "sentences": [
+      "These user-developers frequently had to write code from scratch to solve their own or their colleagues' problems-often in low-level languages that preceded Python, such as Fortran [CITATION] and C."
+    ]
+  },
+  {
+    "title": "Basis System, Part I: Running a Basis Program-A Tutorial for Beginners UCRL-MA-118543",
+    "authors": "K A Barrett;Y H Chiu;J F Painter;Z C Motteler;P Dubois",
+    "year": "1995",
+    "citation": "Barrett, K. A., Chiu, Y. H., Painter, J. F., Motteler, Z. C. & Dubois, P. F. Basis System, Part I: Running a Basis Program-A Tutorial for Beginners UCRL-MA-118543, Vol. 1 (Lawrence Livermore National Laboratory 1995).",
+    "pages": "",
+    "journal": "",
+    "volume": "1",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION][CITATION #b50][CITATION #b51][CITATION #b52] , Yorick [CITATION #b53] , R [CITATION #b54] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "Part II: Basis Language Reference Manual UCRL-MA-118543",
+    "authors": "P F Dubois;Z Motteler;Basis;System",
+    "year": "1995",
+    "citation": "Dubois, P. F. & Motteler, Z. Basis System, Part II: Basis Language Reference Manual UCRL-MA-118543, Vol. 2 (Lawrence Livermore National Laboratory, 1995).",
+    "pages": "",
+    "journal": "",
+    "volume": "2",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION][CITATION #b51][CITATION #b52] , Yorick [CITATION #b53] , R [CITATION #b54] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "Part III: EZN User Manual UCRL-MA-118543",
+    "authors": "Y H Chiu;P F Dubois;Basis;System",
+    "year": "1995",
+    "citation": "Chiu, Y. H. & Dubois, P. F. Basis System, Part III: EZN User Manual UCRL-MA-118543, Vol. 3 (Lawrence Livermore National Laboratory, 1995).",
+    "pages": "",
+    "journal": "",
+    "volume": "3",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION #b50][CITATION][CITATION #b52] , Yorick [CITATION #b53] , R [CITATION #b54] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "Part IV: EZD User Manual UCRL-MA-118543",
+    "authors": "Y H Chiu;P F Dubois;Basis;System",
+    "year": "1995",
+    "citation": "Chiu, Y. H. & Dubois, P. F. Basis System, Part IV: EZD User Manual UCRL-MA-118543, Vol. 4 (Lawrence Livermore National Laboratory, 1995).",
+    "pages": "",
+    "journal": "",
+    "volume": "4",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION #b50][CITATION #b51][CITATION] , Yorick [CITATION #b53] , R [CITATION #b54] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "Using the Yorick interpreted language",
+    "authors": "D H Munro;P F Dubois",
+    "year": "1995",
+    "citation": "Munro, D. H. & Dubois, P. F. Using the Yorick interpreted language. Comput. Phys. 9, 609-615 (1995).",
+    "pages": "609-615",
+    "journal": "Comput. Phys",
+    "volume": "9",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION #b50][CITATION #b51][CITATION #b52] , Yorick [CITATION] , R [CITATION #b54] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "R: a language for data analysis and graphics",
+    "authors": "R Ihaka;R Gentleman",
+    "year": "1996",
+    "citation": "Ihaka, R. & Gentleman, R. R: a language for data analysis and graphics. J. Comput. Graph. Stat. 5, 299-314 (1996).",
+    "pages": "299-314",
+    "journal": "J. Comput. Graph. Stat",
+    "volume": "5",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION #b50][CITATION #b51][CITATION #b52] , Yorick [CITATION #b53] , R [CITATION] and APL [CITATION #b55] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "A programming language",
+    "authors": "K E Iverson",
+    "year": "1962",
+    "citation": "Iverson, K. E. A programming language. In Proc. 1962 Spring Joint Computer Conf. 345-351 (1962).",
+    "pages": "345-351",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The design of this new tool was informed by other powerful interactive programming languages for scientific computing such as Basis [CITATION #b49][CITATION #b50][CITATION #b51][CITATION #b52] , Yorick [CITATION #b53] , R [CITATION #b54] and APL [CITATION] , as well as commercial languages and environments such as IDL (Interactive Data Language) and MATLAB."
+    ]
+  },
+  {
+    "title": "LSST data management software development practices and tools",
+    "authors": "T Jenness",
+    "year": "2018",
+    "citation": "Jenness, T. et al. LSST data management software development practices and tools. In Proc. SPIE 10707, Software and Cyberinfrastructure for Astronomy V 1070709 (SPIE and International Society for Optics and Photonics, 2018).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The scale of scientific data gathering will continue to increase, with the adoption of devices and instruments such as light-sheet microscopes and the Large Synoptic Survey Telescope (LSST) [CITATION] ."
+    ]
+  },
+  {
+    "title": "The Rust language",
+    "authors": "N D Matsakis;F S Klock",
+    "year": "2014",
+    "citation": "Matsakis, N. D. & Klock, F. S. The Rust language. Ada Letters 34, 103-104 (2014).",
+    "pages": "103-104",
+    "journal": "Ada Letters",
+    "volume": "34",
+    "sentences": [
+      "New generation languages, interpreters and compilers, such as Rust [CITATION] , Julia [CITATION #b58] and LLVM [CITATION #b59] , will create new concepts and data structures, and determine their viability."
+    ]
+  },
+  {
+    "title": "LLVM: a compilation framework for lifelong program analysis and transformation",
+    "authors": "C Lattner;V Adve",
+    "year": "2004",
+    "citation": "Lattner, C. & Adve, V. LLVM: a compilation framework for lifelong program analysis and transformation. In Proc. 2004 Intl Symp. Code Generation and Optimization (CGO'04) 75-88 (IEEE, 2004).",
+    "publisher": "IEEE",
+    "pages": "75-88",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "New generation languages, interpreters and compilers, such as Rust [CITATION #b57] , Julia [CITATION #b58] and LLVM [CITATION] , will create new concepts and data structures, and determine their viability."
+    ]
+  }
+]

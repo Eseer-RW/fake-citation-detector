@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Chemistry and physics of carbon",
+    "authors": "I L Spain",
+    "year": "1981",
+    "citation": "I.L. Spain, in Chemistry and physics of carbon, edited by P.L. Walker & P.A. Thrower 16, 119 (Marcel Dekker Inc, New York, 1981).",
+    "publisher": "Marcel Dekker Inc",
+    "pages": "119",
+    "journal": "",
+    "volume": "16",
+    "sentences": [
+      "These properties were found to be the same for all studied FLG films and are notably different from the electronic structure of both multilayer graphene [CITATION #b14] and bulk graphite [CITATION #b4][CITATION][CITATION #b6]."
+    ]
+  },
+  {
+    "title": "Proc. IEEE 91",
+    "authors": "M R Stan",
+    "year": "2003",
+    "citation": "M. R. Stan et al, Proc. IEEE 91, 1940 (2003).",
+    "pages": "1940",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Graphene transistors show a rather modest on-off resistance ratio (less than \u224830 at 300K; limited because of thermally excited carriers) but this is a fundamental limitation for any material without a band gap exceeding k B T. Nevertheless, such on-off ratios are considered sufficient for logic circuits [CITATION] and it is feasible to increase the ratio further by, e.g., using p-n junctions, local gates [CITATION #b2] or the point contact geometry."
+    ]
+  },
+  {
+    "title": "Efficient sparse attention mechanisms for long-context language modelling with linear memory complexity",
+    "authors": [
+      "Petrov, A.",
+      "Kim, S.",
+      "Nwosu, E."
+    ],
+    "year": "2023",
+    "journal": "Journal of Machine Learning Research",
+    "doi": "",
+    "citation": "Petrov et al. (2023) JMLR.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Long-run effects of early childhood nutrition interventions on human capital formation: evidence from randomised trials in sub-Saharan Africa",
+    "authors": [
+      "Ogundimu, F.",
+      "Svensson, L.",
+      "Prakash, N."
+    ],
+    "year": "2020",
+    "journal": "American Economic Review",
+    "doi": "",
+    "citation": "Ogundimu et al. (2020) Am Econ Rev.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Longitudinal assessment of systemic inflammatory markers in post-acute COVID-19 sequelae: a multicentre cohort study",
+    "authors": [
+      "Harrison, M.",
+      "Okonkwo, T.",
+      "Lindstr\u00f6m, E."
+    ],
+    "year": "2021",
+    "journal": "The Lancet Infectious Diseases",
+    "doi": "",
+    "citation": "Harrison et al. (2021) Lancet Infect Dis.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  }
+]

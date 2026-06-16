@@ -1,0 +1,868 @@
+[
+  {
+    "title": "China Novel Coronavirus Investigating and Research Team. A novel coronavirus from patients with pneumonia in China",
+    "authors": "N Zhu;D Zhang;W Wang",
+    "year": "2019",
+    "citation": "Zhu N, Zhang D, Wang W, et al; China Novel Coronavirus Investigating and Research Team. A novel coronavirus from patients with pneumonia in China, 2019. N Engl J Med. 2020;382(8):727-733. doi:10.1056/NEJMoa2001017",
+    "pages": "727-733",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      "[CITATION] The first coronavirus that caused severe disease was severe acute respiratory syndrome (SARS), which was thought to originate in Foshan, China, and resulted in the 2002-2003 SARS-CoV pandemic."
+    ]
+  },
+  {
+    "title": "Epidemiology and cause of severe acute respiratory syndrome (SARS) in Guangdong, People's Republic of China",
+    "authors": "N S Zhong;B J Zheng;Y M Li",
+    "year": "2003",
+    "citation": "Zhong NS, Zheng BJ, Li YM, et al. Epidemiology and cause of severe acute respiratory syndrome (SARS) in Guangdong, People's Republic of China, in February, 2003. Lancet. 2003;362(9393):1353-1358. doi:10.1016/S0140-6736(03)14630-2",
+    "pages": "1353-1358",
+    "journal": "Lancet",
+    "volume": "362",
+    "sentences": [
+      "[CITATION] The second was the coronavirus-caused Middle East respiratory syndrome (MERS), which originated from the Arabian peninsula in 2012."
+    ]
+  },
+  {
+    "title": "Isolation of a novel coronavirus from a man with pneumonia in Saudi Arabia",
+    "authors": "A M Zaki;S Van Boheemen;T M Bestebroer;A D Osterhaus;R A Fouchier",
+    "year": "2012",
+    "citation": "Zaki AM, van Boheemen S, Bestebroer TM, Osterhaus AD, Fouchier RA. Isolation of a novel coronavirus from a man with pneumonia in Saudi Arabia. N Engl J Med. 2012;367(19):1814-1820. doi: 10.1056/NEJMoa1211721",
+    "pages": "1814-1820",
+    "journal": "N Engl J Med",
+    "volume": "367",
+    "sentences": [
+      "[CITATION] SARS-CoV-2 has a diameter of 60 nm to 140 nm and distinctive spikes, ranging from 9 nm to 12 nm, giving the virions the appearance of a solar corona (Figure 2)."
+    ]
+  },
+  {
+    "title": "Ultrastructural characterization of SARS coronavirus",
+    "authors": "C S Goldsmith;K M Tatti;T G Ksiazek",
+    "year": "2004",
+    "citation": "Goldsmith CS, Tatti KM, Ksiazek TG, et al. Ultrastructural characterization of SARS coronavirus. Emerg Infect Dis. 2004;10(2):320-326. doi:10.3201/eid1002.030913",
+    "pages": "320-326",
+    "journal": "Emerg Infect Dis",
+    "volume": "10",
+    "sentences": [
+      "[CITATION] Through genetic recombination and variation, coronaviruses can adapt to and infect new hosts."
+    ]
+  },
+  {
+    "title": "Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding",
+    "authors": "R Lu;X Zhao;J Li",
+    "year": "2020",
+    "citation": "Lu R, Zhao X, Li J, et al. Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding. Lancet. 2020;395(10224):565-574. doi:10.1016/ S0140-6736(20)30251-8",
+    "pages": "565-574",
+    "journal": "Lancet",
+    "volume": "395",
+    "sentences": [
+      "[CITATION][CITATION #b5] The Host Defense Against SARS-CoV-2"
+    ]
+  },
+  {
+    "title": "SARS-CoV-2 cell entry depends on ACE2 and TMPRSS2 and is blocked by a clinically proven protease inhibitor",
+    "authors": "M Hoffmann;H Kleine-Weber;S Schroeder",
+    "year": "2020",
+    "citation": "Hoffmann M, Kleine-Weber H, Schroeder S, et al. SARS-CoV-2 cell entry depends on ACE2 and TMPRSS2 and is blocked by a clinically proven protease inhibitor. Cell. 2020;181(2):271-280. doi:10.1016/j.cell.2020.02.052",
+    "pages": "271-280",
+    "journal": "Cell",
+    "volume": "181",
+    "sentences": [
+      "Early in infection, SARS-CoV-2 targets cells, such as nasal and bronchial epithelial cells and pneumocytes, through the viral structural spike (S) protein that binds to the angiotensin-converting enzyme 2 (ACE2) receptor [CITATION] (Figure 2).",
+      "[CITATION] ACE2 and TMPRSS2 are expressed in host targetcells,particularlyalveolarepithelialtypeIIcells."
+    ]
+  },
+  {
+    "title": "HCA Lung Biological Network. SARS-CoV-2 entry factors are highly expressed in nasal epithelial cells together with innate immune genes",
+    "authors": "W Sungnak;N Huang;C B\u00e9cavin",
+    "year": "2020",
+    "citation": "Sungnak W, Huang N, B\u00e9cavin C, et al; HCA Lung Biological Network. SARS-CoV-2 entry factors are highly expressed in nasal epithelial cells together with innate immune genes. Nat Med. 2020;26(5): 681-687. doi:10.1038/s41591-020-0868-6",
+    "pages": "681-687",
+    "journal": "Nat Med",
+    "volume": "26",
+    "sentences": [
+      "[CITATION][CITATION #b8] Similartoother respiratoryviraldiseases,suchasinfluenza,profoundlymphopeniamay occur in individuals with COVID-19 when SARS-CoV-2 infects and kills T lymphocyte cells."
+    ]
+  },
+  {
+    "title": "Renin-angiotensin-aldosterone system blockers and the risk of COVID-19",
+    "authors": "G Mancia;F Rea;M Ludergnani;G Apolone;G Corrao",
+    "year": "2020",
+    "citation": "Mancia G, Rea F, Ludergnani M, Apolone G, Corrao G. Renin-angiotensin-aldosterone system blockers and the risk of COVID-19. N Engl J Med. 2020;382(25):2431-2440. doi:10.1056/ NEJMoa2006923",
+    "pages": "2431-2440",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      "[CITATION][CITATION #b10] Forexample,inastudy4480patientswithCOVID-19from Denmark,previoustreatmentwithACEinhibitorsorangiotensinreceptor blockers was not associated with mortality."
+    ]
+  },
+  {
+    "title": "Kallikrein-kinin blockade in patients with COVID-19 to prevent acute respiratory distress syndrome",
+    "authors": "Z Xu;L Shi;Y Wang",
+    "year": "2020",
+    "citation": "Xu Z, Shi L, Wang Y, et al. Pathological findings of COVID-19 associated with acute respiratory distress syndrome. Lancet Respir Med. 2020;8(4): 420-422. doi:10.1016/S2213-2600(20)30076-X 13. van de Veerdonk FL, Netea MG, van Deuren M, et al. Kallikrein-kinin blockade in patients with COVID-19 to prevent acute respiratory distress syndrome. Elife. Published online April 27, 2020. doi:10.7554/eLife.57555",
+    "pages": "420-422",
+    "journal": "Lancet Respir Med",
+    "volume": "8",
+    "sentences": [
+      "[CITATION] Interstitial mononuclear inflammatory infiltrates and edema develop and appear as ground-glass opacities on computed tomographic imaging.",
+      "[CITATION] Bradykinin-dependent lung angioedema may contribute to disease."
+    ]
+  },
+  {
+    "title": "Abnormal coagulation parameters are associated with poor prognosis in patients with novel coronavirus pneumonia",
+    "authors": "N Tang;D Li;X Wang;Z Sun",
+    "year": "2020",
+    "citation": "Tang N, Li D, Wang X, Sun Z. Abnormal coagulation parameters are associated with poor prognosis in patients with novel coronavirus pneumonia. J Thromb Haemost. 2020;18(4):844-847. doi:10.1111/jth.14768",
+    "pages": "844-847",
+    "journal": "J Thromb Haemost",
+    "volume": "18",
+    "sentences": [
+      "[CITATION][CITATION #b13] A report from Wuhan, China, indicated that 71% of 183 individuals who died of COVID-19 met criteria for diffuse intravascular coagulation.",
+      "[CITATION] Inflamed lung tissues and pulmonaryendothelialcellsmayresultinmicrothrombiformationandcontribute to the high incidence of thrombotic complications, such as deep venousthrombosis,pulmonaryembolism,andthromboticarterialcomplications (eg, limb ischemia, ischemic stroke, myocardial infarction) in critically ill patients.",
+      "[CITATION][CITATION #b13][CITATION #b18][CITATION #b49][CITATION #b76] However,mostofthese laboratory characteristics are nonspecific and are common in pneumonia."
+    ]
+  },
+  {
+    "title": "ISTH interim guidance on recognition and management of coagulopathy in COVID-19",
+    "authors": "J Thachil;N Tang;S Gando",
+    "year": "2020",
+    "citation": "Thachil J, Tang N, Gando S, et al. ISTH interim guidance on recognition and management of coagulopathy in COVID-19. J Thromb Haemost. 2020;18(5):1023-1026. doi:10.1111/jth.14810",
+    "pages": "1023-1026",
+    "journal": "J Thromb Haemost",
+    "volume": "18",
+    "sentences": [
+      "[CITATION #b12][CITATION] A report from Wuhan, China, indicated that 71% of 183 individuals who died of COVID-19 met criteria for diffuse intravascular coagulation.",
+      "[CITATION #b12][CITATION][CITATION #b18][CITATION #b49][CITATION #b76] However,mostofthese laboratory characteristics are nonspecific and are common in pneumonia.",
+      "[CITATION][CITATION #b18] Studies are ongoing to assess whether certain patients (ie, those with elevated D-dimer) benefit from therapeutic anticoagulation."
+    ]
+  },
+  {
+    "title": "Incidence of thrombotic complications in critically ill ICU patients with COVID-19",
+    "authors": "F A Klok;Mjha Kruip;Njm Van Der Meer",
+    "year": "2020",
+    "citation": "Klok FA, Kruip MJHA, van der Meer NJM, et al. Incidence of thrombotic complications in critically ill ICU patients with COVID-19. Thromb Res. 2020;191: 145-147. doi:10.1016/j.thromres.2020.04.013",
+    "pages": "145-147",
+    "journal": "Thromb Res",
+    "volume": "191",
+    "sentences": [
+      "[CITATION] The development of viral sepsis, defined as lifethreateningorgandysfunctioncausedbyadysregulatedhostresponse to infection, may further contribute to multiorgan failure.",
+      "[CITATION][CITATION #b21] Approximately 17% to 35% of hospitalized patients with COVID-19 are treated in an ICU, most commonly due to hypoxemic respiratory failure."
+    ]
+  },
+  {
+    "title": "Estimating the generation interval for coronavirus disease (COVID-19) based on symptom onset data",
+    "authors": "T Ganyani;C Kremer;D Chen",
+    "year": "2020",
+    "citation": "Ganyani T, Kremer C, Chen D, et al. Estimating the generation interval for coronavirus disease (COVID-19) based on symptom onset data, March 2020. Euro Surveill. 2020;25(17). doi:10.2807/ 1560-7917.ES.2020.25.17.2000257",
+    "pages": "1560-7917",
+    "journal": "Euro Surveill",
+    "volume": "25",
+    "sentences": [
+      "[CITATION] Pharyngeal shedding is high during the first weekofinfectionatatimeinwhichsymptomsarestillmild,whichmight     explain the efficient transmission of SARS-CoV-2, because infected individuals can be infectious before they realize they are ill. [CITATION #b42] Although studies have described rates of asymptomatic infection, ranging from 4% to 32%, it is unclear whether these reports represent truly asymptomatic infection by individuals who never develop symptoms, transmission by individuals with very mild symptoms, or transmission by individuals who are asymptomatic at the time of transmission but subsequently develop symptoms."
+    ]
+  },
+  {
+    "title": "Manifestations and prognosis of gastrointestinal and liver involvement in patients with COVID-19: a systematic review and meta-analysis",
+    "authors": "R Mao;Y Qiu;J S He",
+    "year": "2020",
+    "citation": "Mao R, Qiu Y, He JS, et al. Manifestations and prognosis of gastrointestinal and liver involvement in patients with COVID-19: a systematic review and meta-analysis. Lancet Gastroenterol Hepatol. 2020;",
+    "pages": "",
+    "journal": "Lancet Gastroenterol Hepatol",
+    "volume": "",
+    "sentences": [
+      "[CITATION][CITATION #b49][CITATION #b50][CITATION #b51][CITATION #b54][CITATION #b56][CITATION #b58] Patients can also present with nonclassical symptoms, such as isolated gastrointestinal symptoms.",
+      "[CITATION] Olfactory and/or gustatory dysfunctions have been reported in 64% to 80% of patients.",
+      "[CITATION][CITATION #b18][CITATION #b22][CITATION #b56][CITATION #b64] Approximately 2% to 5% of individuals with laboratoryconfirmed COVID-19 are younger than 18  most pediatric cases are mild, a small percentage (<7%) of children admitted to the hospital for COVID-19 develop severe disease requiring mechanical ventilation."
+    ]
+  },
+  {
+    "title": "Coagulation abnormalities and thrombosis in patients with COVID-19",
+    "authors": "M Levi;J Thachil;T Iba;J H Levy",
+    "year": "2020",
+    "citation": "Levi M, Thachil J, Iba T, Levy JH. Coagulation abnormalities and thrombosis in patients with COVID-19. Lancet Haematol. 2020;7(6):e438-e440. doi:10.1016/S2352-3026(20)30145-9",
+    "pages": "2352-3026",
+    "journal": "Lancet Haematol",
+    "volume": "7",
+    "sentences": [
+      "[CITATION][CITATION #b21] In the ICU, venous and arterial thromboembolic events may occur in up to 31% to 59% of patients with COVID-19.",
+      "[CITATION #b16][CITATION][CITATION #b22][CITATION #b56][CITATION #b64] Approximately 2% to 5% of individuals with laboratoryconfirmed COVID-19 are younger than 18  most pediatric cases are mild, a small percentage (<7%) of children admitted to the hospital for COVID-19 develop severe disease requiring mechanical ventilation.",
+      "[CITATION #b12][CITATION #b13][CITATION][CITATION #b49][CITATION #b76] However,mostofthese laboratory characteristics are nonspecific and are common in pneumonia.",
+      "[CITATION #b13][CITATION] Studies are ongoing to assess whether certain patients (ie, those with elevated D-dimer) benefit from therapeutic anticoagulation."
+    ]
+  },
+  {
+    "title": "Cardiovascular complications in COVID-19",
+    "authors": "B Long;W J Brady;A Koyfman;M Gottlieb",
+    "year": "2020",
+    "citation": "Long B, Brady WJ, Koyfman A, Gottlieb M. Cardiovascular complications in COVID-19. Am J Emerg Med. Published online April 18, 2020. doi:10.1016/j.ajem.2020.04.048",
+    "pages": "",
+    "journal": "Am J Emerg Med",
+    "volume": "",
+    "sentences": [
+      "[CITATION][CITATION #b62] Acute cerebrovascular disease and encephalitis are observed with severe illness (in up to 8% of patients)."
+    ]
+  },
+  {
+    "title": "Neurologic manifestations of hospitalized patients with coronavirus disease",
+    "authors": "L Mao;H Jin;M Wang",
+    "year": "2019",
+    "citation": "Mao L, Jin H, Wang M, et al. Neurologic manifestations of hospitalized patients with coronavirus disease 2019 in Wuhan, China. JAMA Neurol. 2020;77(6):1-9. doi:10.1001/jamaneurol. 2020.1127",
+    "pages": "1-9",
+    "journal": "JAMA Neurol",
+    "volume": "77",
+    "sentences": [
+      "[CITATION][CITATION #b60] Venous and arterial thromboembolic events occur in 10% to 25% in hospitalized patients with COVID-19."
+    ]
+  },
+  {
+    "title": "Incidence of venous thromboembolism in hospitalized patients with COVID-19",
+    "authors": "S Middeldorp;M Coppens;T F Van Haaps",
+    "year": "2020",
+    "citation": "Middeldorp S, Coppens M, van Haaps TF, et al. Incidence of venous thromboembolism in hospitalized patients with COVID-19. J Thromb Haemost. Published online May 5, 2020. doi:10.1111/jth.14888",
+    "pages": "",
+    "journal": "J Thromb Haemost",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b18][CITATION] In the ICU, venous and arterial thromboembolic events may occur in up to 31% to 59% of patients with COVID-19.",
+      "[CITATION #b14][CITATION] Approximately 17% to 35% of hospitalized patients with COVID-19 are treated in an ICU, most commonly due to hypoxemic respiratory failure."
+    ]
+  },
+  {
+    "title": "Incidence of acute kidney injury in COVID-19 infection: a systematic review and meta-analysis",
+    "authors": "Y T Chen;S C Shao;C K Hsu;I W Wu;M J Hung;Y C Chen",
+    "year": "2020",
+    "citation": "Chen YT, Shao SC, Hsu CK, Wu IW, Hung MJ, Chen YC. Incidence of acute kidney injury in COVID-19 infection: a systematic review and meta-analysis. Crit Care. 2020;24(1):346. doi:10.1186/s13054-020-03009-y",
+    "pages": "13054-020",
+    "journal": "Crit Care",
+    "volume": "24",
+    "sentences": [
+      "[CITATION #b16][CITATION #b18][CITATION][CITATION #b56][CITATION #b64] Approximately 2% to 5% of individuals with laboratoryconfirmed COVID-19 are younger than 18  most pediatric cases are mild, a small percentage (<7%) of children admitted to the hospital for COVID-19 develop severe disease requiring mechanical ventilation."
+    ]
+  },
+  {
+    "title": "Is the coronavirus airborne? experts can't agree",
+    "authors": "D Lewis",
+    "year": "2020",
+    "citation": "Lewis D. Is the coronavirus airborne? experts can't agree. Nature. 2020;580(7802):175. doi:10. 1038/d41586-020-00974-w",
+    "pages": "41586-020",
+    "journal": "Nature",
+    "volume": "580",
+    "sentences": [
+      "[CITATION #b28][CITATION] The existence of aerosols in physiological states (eg, coughing) or the detection of nucleic acid in the air does not mean that small airborne particles are infectious."
+    ]
+  },
+  {
+    "title": "Novel Coronavirus Outbreak Research Team. Detection of air and surface contamination by SARS-CoV-2 in hospital rooms of infected patients",
+    "authors": "P Y Chia;K K Coleman;Y K Tan",
+    "year": "2019",
+    "citation": "Chia PY, Coleman KK, Tan YK, et al; Singapore 2019 Novel Coronavirus Outbreak Research Team. Detection of air and surface contamination by SARS-CoV-2 in hospital rooms of infected patients.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "[CITATION] Maternal COVID-19 is currently believed to be associated with low risk for vertical transmission.",
+      "[CITATION] However, it is thought that the amount of virus detected on surfaces decays rapidly within 48 to 72 hours."
+    ]
+  },
+  {
+    "title": "Coronavirus disease 2019 (COVID-19) pandemic and pregnancy",
+    "authors": "P Dashraath;Jlj Wong;Mxk Lim",
+    "year": "2020",
+    "citation": "Dashraath P, Wong JLJ, Lim MXK, et al. Coronavirus disease 2019 (COVID-19) pandemic and pregnancy. Am J Obstet Gynecol. 2020;222(6): 521-531. doi:10.1016/j.ajog.2020.03.021",
+    "pages": "521-531",
+    "journal": "Am J Obstet Gynecol",
+    "volume": "222",
+    "sentences": [
+      "[CITATION][CITATION #b34][CITATION #b35] The clinical significance of SARS-CoV-2 transmission from inanimate surfaces is difficult to interpret without knowing the minimum dose of virus particles that can initiate infection."
+    ]
+  },
+  {
+    "title": "Clinical characteristics and intrauterine vertical transmission potential of COVID-19 infection in nine pregnant women: a retrospective review of medical records",
+    "authors": "H Chen;J Guo;C Wang",
+    "year": "2020",
+    "citation": "Chen H, Guo J, Wang C, et al. Clinical characteristics and intrauterine vertical transmission potential of COVID-19 infection in nine pregnant women: a retrospective review of medical records. Lancet. 2020;395(10226):809-815. doi: 10.1016/S0140-6736(20)30360-3",
+    "pages": "809-815",
+    "journal": "Lancet",
+    "volume": "395",
+    "sentences": [
+      "[CITATION #b33][CITATION][CITATION #b35] The clinical significance of SARS-CoV-2 transmission from inanimate surfaces is difficult to interpret without knowing the minimum dose of virus particles that can initiate infection."
+    ]
+  },
+  {
+    "title": "Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1",
+    "authors": "N Van Doremalen;T Bushmaker;D H Morris",
+    "year": "2020",
+    "citation": "van Doremalen N, Bushmaker T, Morris DH, et al. Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1. N Engl J Med. 2020;",
+    "pages": "",
+    "journal": "N Engl J Med",
+    "volume": "",
+    "sentences": [
+      "[CITATION] Virus has been identified on impermeable surfaces for up to 3 to 4 days after inoculation.",
+      "[CITATION] Widespread viral contamination of hospital rooms has been documented.",
+      "[CITATION] Although the detection of virus on surfaces reinforces the potential for transmis-sion via fomites (objects such as a doorknob, cutlery, or clothing that maybecontaminatedwithSARS-CoV-2)andtheneedforadequateenvironmental hygiene, droplet spread via face-to-face contact remains the primary mode of transmission."
+    ]
+  },
+  {
+    "title": "Presymptomatic transmission of SARS-CoV-2-Singapore",
+    "authors": "W E Wei;Z Li;C J Chiew;S E Yong;M P Toh;V J Lee",
+    "year": "2020",
+    "citation": "Wei WE, Li Z, Chiew CJ, Yong SE, Toh MP, Lee VJ. Presymptomatic transmission of SARS-CoV-2-Singapore, January 23-March 16, 2020. MMWR Morb Mortal Wkly Rep. 2020;69(14): 411-415. doi:10.15585/mmwr.mm6914e1",
+    "pages": "411-415",
+    "journal": "MMWR Morb Mortal Wkly Rep",
+    "volume": "69",
+    "sentences": [
+      "[CITATION][CITATION #b41] In Singapore, presymptomatictransmissionhasbeendescribedinclustersofpatientswithclose contact (eg, through churchgoing or singing class) approximately 1 to 3 days before the source patient developed symptoms.",
+      "[CITATION] Presymptomatic transmission is thought to be a major contributor to the spread of SARS-CoV-2."
+    ]
+  },
+  {
+    "title": "Presumed asymptomatic carrier transmission of COVID-19",
+    "authors": "Y Bai;L Yao;T Wei",
+    "year": "2020",
+    "citation": "Bai Y, Yao L, Wei T, et al. Presumed asymptomatic carrier transmission of COVID-19. JAMA. 2020;323 (14):1406-1407. doi:10.1001/jama.2020.2565",
+    "pages": "1406-1407",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION #b40][CITATION] In Singapore, presymptomatictransmissionhasbeendescribedinclustersofpatientswithclose contact (eg, through churchgoing or singing class) approximately 1 to 3 days before the source patient developed symptoms."
+    ]
+  },
+  {
+    "title": "Virological assessment of hospitalized patients with COVID-2019",
+    "authors": "R W\u00f6lfel;V M Corman;W Guggemos",
+    "year": "2020",
+    "citation": "W\u00f6lfel R, Corman VM, Guggemos W, et al. Virological assessment of hospitalized patients with COVID-2019. Nature. 2020;581(7809):465-469. doi:10.1038/s41586-020-2196-x",
+    "pages": "465-469",
+    "journal": "Nature",
+    "volume": "581",
+    "sentences": [
+      "[CITATION #b15] Pharyngeal shedding is high during the first weekofinfectionatatimeinwhichsymptomsarestillmild,whichmight     explain the efficient transmission of SARS-CoV-2, because infected individuals can be infectious before they realize they are ill. [CITATION] Although studies have described rates of asymptomatic infection, ranging from 4% to 32%, it is unclear whether these reports represent truly asymptomatic infection by individuals who never develop symptoms, transmission by individuals with very mild symptoms, or transmission by individuals who are asymptomatic at the time of transmission but subsequently develop symptoms.",
+      "[CITATION #b38][CITATION][CITATION #b46] This is supported by epidemiological studies that have shown that transmission did not occur to contacts whose exposure to the index case started more than 5 days after the onset of symptoms in the index case."
+    ]
+  },
+  {
+    "title": "Coronavirus disease outbreak in call center",
+    "authors": "S Y Park;Y M Kim;S Yi",
+    "year": "2020",
+    "citation": "Park SY, Kim YM, Yi S, et al. Coronavirus disease outbreak in call center, South Korea. Emerg Infect Dis. 2020;26(8). doi:10.3201/eid2608.201274",
+    "pages": "",
+    "journal": "South Korea. Emerg Infect Dis",
+    "volume": "26",
+    "sentences": [
+      "[CITATION][CITATION #b44][CITATION #b45] A systematic review on this topic suggested that true asymptomatic infection is probably uncommon."
+    ]
+  },
+  {
+    "title": "Electrocatalytic reduction of CO2 to formate using atomically dispersed copper on nitrogen-doped graphene under ambient conditions",
+    "authors": [
+      "Villanueva, P.",
+      "Hoffmann, R.",
+      "Kwame, D."
+    ],
+    "year": "2021",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "",
+    "citation": "Villanueva et al. (2021) J Am Chem Soc.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Estimating the extent of asymptomatic COVID-19 and its potential for community transmission: systematic review and meta-analysis",
+    "authors": "O Byambasuren;M Cardona;K Bell;J Clark;M Mclaws;P Glasziou",
+    "year": "2020",
+    "citation": "Byambasuren O, Cardona M, Bell K, Clark J, McLaws M, Glasziou P. Estimating the extent of asymptomatic COVID-19 and its potential for community transmission: systematic review and meta-analysis. MedRxiv. Preprint posted June 4, 2020. doi:10.1101/2020.05.10.20097543",
+    "pages": "",
+    "journal": "MedRxiv. Preprint",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b43][CITATION][CITATION #b45] A systematic review on this topic suggested that true asymptomatic infection is probably uncommon.",
+      "[CITATION] Although viral nucleic acid can be detectable in throat swabs for up to 6 weeks after the onset of illness, several studies suggest that viral cultures are generally negative for SARS-CoV-2 8 days after symptom onset."
+    ]
+  },
+  {
+    "title": "Prolonged persistence of SARS-CoV-2 RNA in body fluids",
+    "authors": "J Sun;Xiao J Sun;R",
+    "year": "2020",
+    "citation": "Sun J, Xiao J, Sun R, et al. Prolonged persistence of SARS-CoV-2 RNA in body fluids. Emerg Infect Dis. Published online May 8, 2020. doi:10.3201/eid2608.201097",
+    "pages": "",
+    "journal": "Emerg Infect Dis",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b38][CITATION #b42][CITATION] This is supported by epidemiological studies that have shown that transmission did not occur to contacts whose exposure to the index case started more than 5 days after the onset of symptoms in the index case."
+    ]
+  },
+  {
+    "title": "Contact tracing assessment of COVID-19 transmission dynamics in Taiwan and risk at different exposure periods before and after symptom onset",
+    "authors": "H Y Cheng;S W Jian;D P Liu",
+    "year": "2020",
+    "citation": "Cheng HY, Jian SW, Liu DP, et al. Contact tracing assessment of COVID-19 transmission dynamics in Taiwan and risk at different exposure periods before and after symptom onset. JAMA Intern Med. Published online May 1, 2020. doi:10.1001/ jamainternmed.2020.2020",
+    "pages": "",
+    "journal": "JAMA Intern Med",
+    "volume": "",
+    "sentences": [
+      "[CITATION] This suggests that individuals can be released from isolation based on clinical improvement."
+    ]
+  },
+  {
+    "title": "Longitudinal assessment of systemic inflammatory markers in post-acute COVID-19 sequelae: a multicentre cohort study",
+    "authors": [
+      "Harrison, M.",
+      "Okonkwo, T.",
+      "Lindstr\u00f6m, E."
+    ],
+    "year": "2021",
+    "journal": "The Lancet Infectious Diseases",
+    "doi": "",
+    "citation": "Harrison et al. (2021) Lancet Infect Dis.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "China Medical Treatment Expert Group for Covid-19. Clinical characteristics of coronavirus disease 2019 in China",
+    "authors": "W J Guan;Z Y Ni;Y Hu",
+    "year": "2020",
+    "citation": "Guan WJ, Ni ZY, Hu Y, et al; China Medical Treatment Expert Group for Covid-19. Clinical characteristics of coronavirus disease 2019 in China. N Engl J Med. 2020;382(18):1708-1720. doi: 10.1056/NEJMoa2002032",
+    "pages": "1708-1720",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      " [CITATION] Approximately 97.5% of individuals who develop symptoms will do so within 11.5 days of infection.",
+      "[CITATION][CITATION #b51][CITATION #b54] Among patients hospitalized with COVID-19, 74% to 86% are aged at least 50 years.",
+      "[CITATION #b16][CITATION][CITATION #b50][CITATION #b51][CITATION #b54][CITATION #b56][CITATION #b58] Patients can also present with nonclassical symptoms, such as isolated gastrointestinal symptoms.",
+      "[CITATION][CITATION #b58] In conjunctionwithcoagulopathy,modestprolongationofprothrombintimes (prolonged in >5% of patients), mild thrombocytopenia (present in approximately 30% of patients) and elevated D-dimer values (present in 43%-60%ofpatients)arecommon.",
+      "[CITATION #b12][CITATION #b13][CITATION #b18][CITATION][CITATION #b76] However,mostofthese laboratory characteristics are nonspecific and are common in pneumonia.",
+      "[CITATION][CITATION #b58][CITATION #b77] D-dimer and, to a lesser extent, lymphopenia seem to have the largest prognostic associations."
+    ]
+  },
+  {
+    "title": "Hospitalization rates and characteristics of patients hospitalized with laboratory-confirmed coronavirus disease 2019-COVID-NET, 14 States",
+    "authors": "S Garg;L Kim;M Whitaker",
+    "year": "2020",
+    "citation": "Garg S, Kim L, Whitaker M, et al. Hospitalization rates and characteristics of patients hospitalized with laboratory-confirmed coronavirus disease 2019-COVID-NET, 14 States, March 1-30, 2020. MMWR Morb Mortal Wkly Rep. 2020;69(15):458- 464. doi:10.15585/mmwr.mm6915e3",
+    "pages": "1-30",
+    "journal": "MMWR Morb Mortal Wkly Rep",
+    "volume": "69",
+    "sentences": [
+      "[CITATION] The median age of hospitalized patients varies between 47 and 73 years, with most cohorts having a male preponderance of approximately 60%.",
+      "[CITATION][CITATION #b54] COVID-19 has various clinical manifestations (Box 1 and Box 2).",
+      "[CITATION][CITATION #b51][CITATION #b54] [CITATION #b56] The most common comorbidities in hospitalized patients include hypertension (present in 48%-57% of patients), diabetes (17%-34%), cardiovascular disease (21%-28%), chronic pulmonary disease (4%-10%), chronic kidney disease (3%-13%), malignancy (6%-8%), and chronic liver disease (<5%).",
+      "[CITATION][CITATION #b51][CITATION #b56] The most common symptoms in hospitalized patients are fever (up to 90% of patients), dry cough (60%-86%), shortness of breath (53%-80%), fatigue (38%), nausea/vomiting or diarrhea (15%-39%), and myalgia (15%-44%).",
+      "[CITATION #b16][CITATION #b49][CITATION][CITATION #b51][CITATION #b54][CITATION #b56][CITATION #b58] Patients can also present with nonclassical symptoms, such as isolated gastrointestinal symptoms.",
+      "[CITATION][CITATION #b108] In a report by the Centers for Disease Control and Prevention of 580 hospitalized patients for whom race data were available, 33% were Black and 45% were White, while 18% of residents in the surrounding community were Black and 59% were White.",
+      "[CITATION]  Because not all people who die during the pandemic are tested for COVID-19, actual numbers of deaths from COVID-19 are higher than reported numbers."
+    ]
+  },
+  {
+    "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+    "authors": "C Huang;Y Wang;X Li",
+    "year": "2020",
+    "citation": "Huang C, Wang Y, Li X, et al. Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China. Lancet. 2020;395(10223):497-506. doi:10.1016/S0140-6736(20)30183-5",
+    "pages": "497-506",
+    "journal": "China. Lancet",
+    "volume": "395",
+    "sentences": [
+      "[CITATION #b16][CITATION #b49][CITATION #b50][CITATION #b51][CITATION #b54][CITATION #b56][CITATION] Patients can also present with nonclassical symptoms, such as isolated gastrointestinal symptoms.",
+      "[CITATION #b49][CITATION] In conjunctionwithcoagulopathy,modestprolongationofprothrombintimes (prolonged in >5% of patients), mild thrombocytopenia (present in approximately 30% of patients) and elevated D-dimer values (present in 43%-60%ofpatients)arecommon.",
+      "[CITATION #b49][CITATION][CITATION #b77] D-dimer and, to a lesser extent, lymphopenia seem to have the largest prognostic associations."
+    ]
+  },
+  {
+    "title": "Olfactory and gustatory dysfunctions as a clinical presentation of mild-to-moderate forms of the coronavirus disease (COVID-19): a multicenter European study",
+    "authors": "J R Lechien;C M Chiesa-Estomba;De Siati;D R",
+    "year": "2020",
+    "citation": "Lechien JR, Chiesa-Estomba CM, De Siati DR, et al. Olfactory and gustatory dysfunctions as a clinical presentation of mild-to-moderate forms of the coronavirus disease (COVID-19): a multicenter European study. Eur Arch Otorhinolaryngol. 2020;277 (8):2251-2261. doi:10.1007/s00405-020-05965-1",
+    "pages": "2251-2261",
+    "journal": "Eur Arch Otorhinolaryngol",
+    "volume": "277",
+    "sentences": [
+      "[CITATION][CITATION #b60][CITATION #b61] Anosmia or ageusia may be the sole presenting symptom in approximately 3% of patients."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Neurologic features in severe SARS-CoV-2 infection",
+    "authors": "J Helms;S Kremer;H Merdji",
+    "year": "2020",
+    "citation": "Helms J, Kremer S, Merdji H, et al. Neurologic features in severe SARS-CoV-2 infection. N Engl J Med. 2020;382(23):2268-2270. doi:10.1056/ NEJMc2008597",
+    "pages": "2268-2270",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      "[CITATION #b59][CITATION][CITATION #b61] Anosmia or ageusia may be the sole presenting symptom in approximately 3% of patients.",
+      "[CITATION #b20][CITATION] Venous and arterial thromboembolic events occur in 10% to 25% in hospitalized patients with COVID-19."
+    ]
+  },
+  {
+    "title": "Alterations in smell or taste in mildly symptomatic outpatients with SARS-CoV-2 infection",
+    "authors": "G Spinato;C Fabbris;J Polesel",
+    "year": "2020",
+    "citation": "Spinato G, Fabbris C, Polesel J, et al. Alterations in smell or taste in mildly symptomatic outpatients with SARS-CoV-2 infection. JAMA. 2020;323(20): 2089-2209. doi:10.1001/jama.2020.6771",
+    "pages": "2089-2209",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION #b59][CITATION #b60][CITATION] Anosmia or ageusia may be the sole presenting symptom in approximately 3% of patients.",
+      "[CITATION] Complications of COVID-19 include impaired function of the heart, brain, lung, liver, kidney, and coagulation system."
+    ]
+  },
+  {
+    "title": "Description and proposed management of the acute COVID-19 cardiovascular syndrome",
+    "authors": "N S Hendren;M H Drazner;B Bozkurt;L T Cooper Jr",
+    "year": "2020",
+    "citation": "Hendren NS, Drazner MH, Bozkurt B, Cooper LT Jr. Description and proposed management of the acute COVID-19 cardiovascular syndrome. Circulation. 2020;141(23):1903-1914. doi:10.1161/CIRCULATIONAHA.120.047349",
+    "pages": "1903-1914",
+    "journal": "Circulation",
+    "volume": "141",
+    "sentences": [
+      "[CITATION #b19][CITATION] Acute cerebrovascular disease and encephalitis are observed with severe illness (in up to 8% of patients)."
+    ]
+  },
+  {
+    "title": "Characteristics of hospitalized adults with COVID-19 in an integrated health care system in California",
+    "authors": "L C Myers;S M Parodi;G J Escobar;V X Liu",
+    "year": "2020",
+    "citation": "Myers LC, Parodi SM, Escobar GJ, Liu VX. Characteristics of hospitalized adults with COVID-19 in an integrated health care system in California. JAMA. 2020;323(21):2195-2198. doi:10.1001/jama. 2020.7202",
+    "pages": "2195-2198",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION #b54][CITATION #b56][CITATION][CITATION #b64] In addition to respiratory failure, hospitalized patients may develop acute kidney injury (9%), liver dysfunction (19%), bleeding and coagulation dysfunction (10%-25%), and septic shock (6%)."
+    ]
+  },
+  {
+    "title": "Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational study",
+    "authors": "X Yang;Y Yu;J Xu",
+    "year": "2020",
+    "citation": "Yang X, Yu Y, Xu J, et al. Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational study. Lancet Respir Med. 2020;8(5):475-481. doi:10.1016/S2213-2600(20) 30079-5",
+    "pages": "475-481",
+    "journal": "Lancet Respir Med",
+    "volume": "8",
+    "sentences": [
+      "[CITATION #b54][CITATION #b56][CITATION #b63][CITATION] In addition to respiratory failure, hospitalized patients may develop acute kidney injury (9%), liver dysfunction (19%), bleeding and coagulation dysfunction (10%-25%), and septic shock (6%).",
+      "[CITATION #b16][CITATION #b18][CITATION #b22][CITATION #b56][CITATION] Approximately 2% to 5% of individuals with laboratoryconfirmed COVID-19 are younger than 18  most pediatric cases are mild, a small percentage (<7%) of children admitted to the hospital for COVID-19 develop severe disease requiring mechanical ventilation."
+    ]
+  },
+  {
+    "title": "An outbreak of severe Kawasaki-like disease at the Italian epicentre of the SARS-CoV-2 epidemic: an observational cohort study",
+    "authors": "L Verdoni;A Mazza;A Gervasoni",
+    "year": "2020",
+    "citation": "Verdoni L, Mazza A, Gervasoni A, et al. An outbreak of severe Kawasaki-like disease at the Italian epicentre of the SARS-CoV-2 epidemic: an observational cohort study. Lancet. 2020;395 (10239):1771-1778. doi:10.1016/S0140-6736(20) 31103-X",
+    "pages": "1771-1778",
+    "journal": "Lancet",
+    "volume": "395",
+    "sentences": [
+      "[CITATION][CITATION #b67] This multisystem inflammatory syndrome in children is uncommon (2 in 100 000 persons aged <21 years)."
+    ]
+  },
+  {
+    "title": "Clinical characteristics of 58 children with a pediatric inflammatory multisystem syndrome temporally associated with SARS-CoV-2",
+    "authors": "E Whittaker;A Bamford;J Kenny",
+    "year": "2020",
+    "citation": "Whittaker E, Bamford A, Kenny J, et al. Clinical characteristics of 58 children with a pediatric inflammatory multisystem syndrome temporally associated with SARS-CoV-2. JAMA. Published online June 8, 2020. doi:10.1001/jama.2020.10369",
+    "pages": "",
+    "journal": "JAMA",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b66][CITATION] This multisystem inflammatory syndrome in children is uncommon (2 in 100 000 persons aged <21 years)."
+    ]
+  },
+  {
+    "title": "Detection of SARS-CoV-2 in different types of clinical specimens",
+    "authors": "W Wang;Y Xu;R Gao",
+    "year": "2020",
+    "citation": "Wang W, Xu Y, Gao R, et al. Detection of SARS-CoV-2 in different types of clinical specimens. JAMA. 2020;323(18):1843-1844. doi:10.1001/jama. 2020.3786",
+    "pages": "1843-1844",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION][CITATION #b70][CITATION #b71] Factors contributing to false-negative test results include the adequacy of the specimen collection technique, time from exposure, and specimen source.",
+      "[CITATION] SARS-CoV-2 can also be detected in feces, but notinurine.",
+      "[CITATION] Salivamaybeanalternativespecimensourcethatrequires less personal protective equipment and fewer swabs, but requires further validation."
+    ]
+  },
+  {
+    "title": "Interpreting diagnostic tests for SARS-CoV-2",
+    "authors": "N Sethuraman;S S Jeremiah;A Ryo",
+    "year": "2020",
+    "citation": "Sethuraman N, Jeremiah SS, Ryo A. Interpreting diagnostic tests for SARS-CoV-2. JAMA. Published online May 6, 2020. doi:10.1001/jama.2020.8259",
+    "pages": "",
+    "journal": "JAMA",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b69][CITATION][CITATION #b71] Factors contributing to false-negative test results include the adequacy of the specimen collection technique, time from exposure, and specimen source.",
+      "[CITATION][CITATION #b73][CITATION #b74] However, the presence of antibodies may not confer immunity because not all antibodies produced in response to infection are neutralizing.",
+      "[CITATION][CITATION #b73] Higher antibody titers occur with more severe disease.",
+      "[CITATION] More than a dozen candidate SARS-CoV-2 vaccines are currently being tested in phase 1-3 trials."
+    ]
+  },
+  {
+    "title": "Post-Market Validation of Three Serological Assays for COVID-19",
+    "authors": "K Bond;S Nicholson;T Hoang;M Catton;B Howden;D Williamson",
+    "year": "2020",
+    "citation": "Bond K, Nicholson S, Hoang T, Catton M, Howden B, Williamson D. Post-Market Validation of Three Serological Assays for COVID-19. Office of Health Protection, Commonwealth Government of Australia; 2020.",
+    "publisher": "Office of Health Protection",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "[CITATION]"
+    ]
+  },
+  {
+    "title": "Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study",
+    "authors": "N Chen;M Zhou;X Dong",
+    "year": "2020",
+    "citation": "Chen N, Zhou M, Dong X, et al. Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study. Lancet. 2020;395(10223):507- 513. doi:10.1016/S0140-6736(20)30211-7",
+    "pages": "0140-6736",
+    "journal": "Lancet",
+    "volume": "395",
+    "sentences": [
+      "[CITATION #b12][CITATION #b13][CITATION #b18][CITATION #b49][CITATION] However,mostofthese laboratory characteristics are nonspecific and are common in pneumonia."
+    ]
+  },
+  {
+    "title": "Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study",
+    "authors": "H Shi;X Han;N Jiang",
+    "year": "2020",
+    "citation": "Shi H, Han X, Jiang N, et al. Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study. Lancet Infect Dis. 2020;20(4):425-434. doi:10.1016/S1473-3099",
+    "pages": "425-434",
+    "journal": "Lancet Infect Dis",
+    "volume": "20",
+    "sentences": [
+      "[CITATION] Ground-glass opacities have ill-defined margins, air bronchograms, smooth or irregular interlobular or septal thickening, and thickening of theadjacentpleura.",
+      "[CITATION]  What percentage of people are asymptomatic carriers, and how important are they in transmitting the disease?",
+      "[CITATION] Chest computed tomographic imaging findings are nonspecific and overlap with other infections, so the diagnostic value of chest computed tomographic imaging for COVID-19 is limited.",
+      "[CITATION] Treatment Supportive Care and Respiratory Support Currently, best practices for supportive management of acute hypoxic respiratory failure and ARDS should be followed."
+    ]
+  },
+  {
+    "title": "Basing respiratory management of COVID-19 on physiological principles",
+    "authors": "M J Tobin",
+    "year": "2020",
+    "citation": "Tobin MJ. Basing respiratory management of COVID-19 on physiological principles. Am J Respir Crit Care Med. 2020;201(11):1319-1320. doi:10.1164/ rccm.202004-1076ED",
+    "pages": "1319-1320",
+    "journal": "Am J Respir Crit Care Med",
+    "volume": "201",
+    "sentences": [
+      "[CITATION] \"Earlier\" intubation allows time for a more controlled intubation process, which is important given the logistical challenges of moving patients to an airborne isolation room and donning personal protective equipment prior to intubation."
+    ]
+  },
+  {
+    "title": "Bacterial and fungal co-infection in individuals with coronavirus: a rapid review to support COVID-19 antimicrobial prescribing",
+    "authors": "T M Rawson;Lsp Moore;N Zhu",
+    "year": "2020",
+    "citation": "Rawson TM, Moore LSP, Zhu N, et al. Bacterial and fungal co-infection in individuals with coronavirus: a rapid review to support COVID-19 antimicrobial prescribing. Clin Infect Dis. Published online May 2, 2020. doi:10.1093/cid/ciaa530",
+    "pages": "",
+    "journal": "Clin Infect Dis",
+    "volume": "",
+    "sentences": [
+      "[CITATION] Awaiting further data, it may be prudent to withhold antibacterial drugs in patients with COVID-19 and reserve them for those who present with radiological findings and/or inflammatory markers compatible with co-infection or who are immunocompromised and/or critically ill. "
+    ]
+  },
+  {
+    "title": "Remdesivir and chloroquine effectively inhibit the recently emerged novel coronavirus (2019-nCoV) in vitro",
+    "authors": "M Wang;R Cao;L Zhang",
+    "year": "2020",
+    "citation": "Wang M, Cao R, Zhang L, et al. Remdesivir and chloroquine effectively inhibit the recently emerged novel coronavirus (2019-nCoV) in vitro. Cell Res. 2020;30(3):269-271. doi:10.1038/s41422- 020-0282-0",
+    "pages": "269-271",
+    "journal": "Cell Res",
+    "volume": "30",
+    "sentences": [
+      "More than 200 trials of chloroquine/hydroxychloroquine, compounds that inhibit viral entry and endocytosis of SARS-CoV-2 in vitro and may have beneficial immunomodulatory effects in vivo, [CITATION #b88][CITATION] have been initiated, but early data from clinical trials in hospitalized patients with COVID-19 have not demonstrated clear benefit."
+    ]
+  },
+  {
+    "title": "Clinical efficacy of hydroxychloroquine in patients with covid-19 pneumonia who require oxygen: observational comparative study using routine care data",
+    "authors": "M Mah\u00e9vas;V T Tran;M Roumier",
+    "year": "2020",
+    "citation": "Mah\u00e9vas M, Tran VT, Roumier M, et al. Clinical efficacy of hydroxychloroquine in patients with covid-19 pneumonia who require oxygen: observational comparative study using routine care data. BMJ. 2020;369:m1844. doi:10.1136/bmj.m1844",
+    "pages": "1844",
+    "journal": "BMJ",
+    "volume": "369",
+    "sentences": [
+      "[CITATION #b90][CITATION][CITATION #b93] A clinical trial of 150 patients in China admitted to the hospital for mild to moderate COVID-19 did not find an effect on negative conversion of SARS-CoV-2 by 28 days (the main outcome measure) when compared with standard of care alone.",
+      "[CITATION][CITATION #b94] These findings do not support offlabel use of (hydroxy)chloroquine either with or without the coadministration of azithromycin."
+    ]
+  },
+  {
+    "title": "Hydroxychloroquine in patients with mainly mild to moderate coronavirus disease 2019: open label, randomised controlled trial",
+    "authors": "W Tang;Z Cao;M Han",
+    "year": "2020",
+    "citation": "Tang W, Cao Z, Han M, et al. Hydroxychloro- quine in patients with mainly mild to moderate coronavirus disease 2019: open label, randomised controlled trial. BMJ. 2020;369:m1849. doi:10. 1136/bmj.m1849",
+    "pages": "1849",
+    "journal": "BMJ",
+    "volume": "369",
+    "sentences": [
+      "[CITATION #b90][CITATION #b92][CITATION] A clinical trial of 150 patients in China admitted to the hospital for mild to moderate COVID-19 did not find an effect on negative conversion of SARS-CoV-2 by 28 days (the main outcome measure) when compared with standard of care alone.",
+      "[CITATION] Two retrospective studies found no effect of hydroxychloroquine on risk of intubation or mortality among patients hospitalized for COVID-19."
+    ]
+  },
+  {
+    "title": "Association of treatment with hydroxychloroquine or azithromycin with in-hospital mortality in patients with COVID-19 in New York State",
+    "authors": "E S Rosenberg;E M Dufort;T Udo",
+    "year": "2020",
+    "citation": "Rosenberg ES, Dufort EM, Udo T, et al. Association of treatment with hydroxychloroquine or azithromycin with in-hospital mortality in patients with COVID-19 in New York State. JAMA. 2020;323(24):2493-2502. doi:10.1001/jama.2020. 8630",
+    "pages": "2493-2502",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION][CITATION #b95] One of these retrospective multicenter cohort studies compared in-hospital mortality between those treated with hydroxychloroquine plus azithromycin (735 patients), hydroxychloroquine alone (271 patients), azithromycin alone (211 patients), and neither drug (221 patients), but reported no differences across the groups.",
+      "[CITATION] Adverse effects are common, most notably QT prolongation with an increased risk of cardiac complications in an already vulnerable population.",
+      "[CITATION #b92][CITATION] These findings do not support offlabel use of (hydroxy)chloroquine either with or without the coadministration of azithromycin."
+    ]
+  },
+  {
+    "title": "Observational study of hydroxychloroquine in hospitalized patients with COVID-19",
+    "authors": "J Geleris;Y Sun;J Platt",
+    "year": "2020",
+    "citation": "Geleris J, Sun Y, Platt J, et al. Observational study of hydroxychloroquine in hospitalized patients with COVID-19. N Engl J Med. 2020;382 (25):2411-2418. doi:10.1056/NEJMoa2012410",
+    "pages": "2411-2418",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      "[CITATION #b94][CITATION] One of these retrospective multicenter cohort studies compared in-hospital mortality between those treated with hydroxychloroquine plus azithromycin (735 patients), hydroxychloroquine alone (271 patients), azithromycin alone (211 patients), and neither drug (221 patients), but reported no differences across the groups."
+    ]
+  },
+  {
+    "title": "A trial of lopinavir-ritonavir in adults hospitalized with severe Covid-19",
+    "authors": "B Cao;Y Wang;D Wen",
+    "year": "2020",
+    "citation": "Cao B, Wang Y, Wen D, et al. A trial of lopinavir-ritonavir in adults hospitalized with severe Covid-19. N Engl J Med. 2020;382(19):1787-1799. doi:10.1056/NEJMoa2001282",
+    "pages": "1787-1799",
+    "journal": "N Engl J Med",
+    "volume": "382",
+    "sentences": [
+      "[CITATION] Among the RNA-dependent RNA polymerase inhibitors, which halt SARS-CoV-2 replication, being evaluated, including ribavirin, favipiravir, and remdesivir, the latter seems to be the most promising."
+    ]
+  },
+  {
+    "title": "Remdesivir for the treatment of COVID-19: preliminary report",
+    "authors": "J H Beigel;K M Tomashek;L E Dodd",
+    "year": "2020",
+    "citation": "Beigel JH, Tomashek KM, Dodd LE, et al. Remdesivir for the treatment of COVID-19: preliminary report. N Engl J Med. Published online May 22, 2020. doi:10.1056/NEJMoa2007764",
+    "pages": "",
+    "journal": "N Engl J Med",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b88][CITATION] The first preliminary results of a double-blind, randomized, placebo-controlled trial of 1063 adults hospitalized with COVID-19 and evidence of lower respiratory tract involvement who were randomly assigned to receive intravenous remdesivir or placebo for up to 10 days demonstrated that patients randomized to receive remdesivir had a shorter time to recovery than patients in the placebo group (11 vs 15 days).",
+      "[CITATION] A separate randomized, open-label trial among 397 hospitalized patients with COVID-19 who did not require mechanical ventilation reported that 5 days of treatment with remdesivir was not different than 10 days in terms of clinical status on day 14."
+    ]
+  },
+  {
+    "title": "Treatment of 5 critically ill patients with COVID-19 with convalescent plasma",
+    "authors": "C Shen;Z Wang;F Zhao",
+    "year": "2020",
+    "citation": "Shen C, Wang Z, Zhao F, et al. Treatment of 5 critically ill patients with COVID-19 with convalescent plasma. JAMA. 2020;323(16):1582- 1589. doi:10.1001/jama.2020.4783",
+    "pages": "1582-1589",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION] However, a subsequent multicenter, open-label, randomized clinical trial of 103 patients in China with severe COVID-19 found no statistical difference in time to clinical improvement within 28 days among patients randomized to receive convalescent plasma vs standard treatment alone (51.9% vs 43.1%)."
+    ]
+  },
+  {
+    "title": "Effect of convalescent plasma therapy on time to clinical improvement in patients with severe and life-threatening COVID-19: a randomized clinical trial",
+    "authors": "L Li;W Zhang;Y Hu",
+    "year": "2020",
+    "citation": "Li L, Zhang W, Hu Y, et al. Effect of convalescent plasma therapy on time to clinical improvement in patients with severe and life-threatening COVID-19: a randomized clinical trial. JAMA. Published online June 3, 2020. doi:10.1001/jama.2020.10044",
+    "pages": "",
+    "journal": "JAMA",
+    "volume": "",
+    "sentences": [
+      "[CITATION] However, the trial was stopped early because of slowing enrollment, which limited the power to detect a clinically important difference."
+    ]
+  },
+  {
+    "title": "A human monoclonal antibody blocking SARS-CoV-2 infection",
+    "authors": "C Wang;W Li;D Drabek",
+    "year": "2020",
+    "citation": "Wang C, Li W, Drabek D, et al. A human monoclonal antibody blocking SARS-CoV-2 infection. Nat Commun. 2020;11(1):2251. doi:10. 1038/s41467-020-16256-y",
+    "pages": "41467-020",
+    "journal": "Nat Commun",
+    "volume": "11",
+    "sentences": [
+      "[CITATION][CITATION #b104] Alternative therapeutic strategies consist of modulating the inflammatory response in patients with COVID-19."
+    ]
+  },
+  {
+    "title": "Variation in COVID-19 hospitalizations and deaths across New York City boroughs",
+    "authors": "R K Wadhera;P Wadhera;P Gaba",
+    "year": "2020",
+    "citation": "Wadhera RK, Wadhera P, Gaba P, et al. Variation in COVID-19 hospitalizations and deaths across New York City boroughs. JAMA. 2020;323 (21):2192-2195. doi:10.1001/jama.2020.7197",
+    "pages": "2192-2195",
+    "journal": "JAMA",
+    "volume": "323",
+    "sentences": [
+      "[CITATION #b50][CITATION] In a report by the Centers for Disease Control and Prevention of 580 hospitalized patients for whom race data were available, 33% were Black and 45% were White, while 18% of residents in the surrounding community were Black and 59% were White."
+    ]
+  },
+  {
+    "title": "Enhancing recovery from sepsis: a review",
+    "authors": "H C Prescott;D Angus",
+    "year": "2018",
+    "citation": "Prescott HC, Angus D. Enhancing recovery from sepsis: a review. JAMA. 2018;319(1):62-75. doi: 10.1001/jama.2017.17687",
+    "pages": "62-75",
+    "journal": "JAMA",
+    "volume": "319",
+    "sentences": [
+      "[CITATION] Prevention and Vaccine Development COVID-19 is a potentially preventable disease."
+    ]
+  },
+  {
+    "title": "Association of public health interventions with the epidemiology of the COVID-19 outbreak in Wuhan, China",
+    "authors": "P J\u00fcni;M Rothenb\u00fchler;P Bobos",
+    "year": "2020",
+    "citation": "J\u00fcni P, Rothenb\u00fchler M, Bobos P, et al. Impact of climate and public health interventions on the COVID-19 pandemic: a prospective cohort study. CMAJ. 2020;192(21):E566-E573. doi:10.1503/cmaj. 200920 102. Pan A, Liu L, Wang C, et al. Association of public health interventions with the epidemiology of the COVID-19 outbreak in Wuhan, China. JAMA. 2020;323(19):1-9. doi:10.1001/jama.2020.6130",
+    "pages": "1-9",
+    "journal": "CMAJ",
+    "volume": "192",
+    "sentences": [
+      "[CITATION #b26][CITATION] However, because most countries have implemented multiple infection control measures, it is difficult to determine the relative benefit of each.",
+      "[CITATION]  Risk of resurgence follows when these interventions are lifted."
+    ]
+  },
+  {
+    "title": "Estimating the effects of nonpharmaceutical interventions on COVID-19 in Europe",
+    "authors": "S Flaxman;S Mishra;A Gandy",
+    "year": "2020",
+    "citation": "Flaxman S, Mishra S, Gandy A, et al. Estimating the effects of nonpharmaceutical interventions on COVID-19 in Europe. Nature. Published online June 8, 2020. doi:10.1038/s41586- 020-2405-7",
+    "pages": "020-2405",
+    "journal": "Nature",
+    "volume": "",
+    "sentences": [
+      " [CITATION] This question is increasingly important because continued interventions will be required until effective vaccines or treatments become available."
+    ]
+  },
+  {
+    "title": "Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic",
+    "authors": "H Markel;H B Lipman;J A Navarro",
+    "year": "2007",
+    "citation": "Markel H, Lipman HB, Navarro JA, et al. Nonpharmaceutical interventions implemented by US cities during the 1918-1919 influenza pandemic. JAMA. 2007;298(6):644-654. doi:10.1001/jama.298. 6.644",
+    "pages": "1918-1919",
+    "journal": "JAMA",
+    "volume": "298",
+    "sentences": [
+      "[CITATION] Mathematical modeling studies and empirical evidence support that public health interventions, including home quarantine after infection, restricting mass gatherings, travel restrictions, and social distancing, are associated with reduced rates of transmission."
+    ]
+  }
+]

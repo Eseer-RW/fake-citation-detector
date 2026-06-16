@@ -1,0 +1,366 @@
+[
+  {
+    "title": "Enrichment or depletion of a GO category within a class of genes: which test",
+    "authors": "I Rivals;L Personnaz;L Taing;M-C Potier",
+    "year": "2007",
+    "citation": "Rivals I, Personnaz L, Taing L, Potier M-C (2007) Enrichment or depletion of a GO category within a class of genes: which test? Bioinformatics 23: 401-407.",
+    "pages": "401-407",
+    "journal": "Bioinformatics",
+    "volume": "23",
+    "sentences": [
+      "In order to interpret the results of such experiments, statistical testing for over-and under-representation of gene functional categories is used [CITATION]."
+    ]
+  },
+  {
+    "title": "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium",
+    "authors": "M Ashburner;C A Ball;J A Blake;D Botstein;H Butler",
+    "year": "2000",
+    "citation": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, et al. (2000) Gene ontology: tool for the unification of biology. The Gene Ontology Consortium. Nat Genet 25: 25-29.",
+    "pages": "25-29",
+    "journal": "Nat Genet",
+    "volume": "25",
+    "sentences": [
+      "The formality and structure, along with extensive manual curation, have made Gene Ontology (GO) [CITATION] the vocabulary of choice in these analyses."
+    ]
+  },
+  {
+    "title": "L2L: a simple tool for discovering the hidden significance in microarray expression data",
+    "authors": "J C Newman;A M Weiner",
+    "year": "2005",
+    "citation": "Newman JC, Weiner AM (2005) L2L: a simple tool for discovering the hidden significance in microarray expression data. Genome Biol 6: R81-R81.",
+    "pages": "R81-R81",
+    "journal": "Genome Biol",
+    "volume": "6",
+    "sentences": [
+      "A multitude of Web servers exists to assist in this task, including but not limited to: L2L [CITATION], FatiGO [CITATION #b3], GOrilla [CITATION #b4] or agriGO [CITATION #b5]."
+    ]
+  },
+  {
+    "title": "FatiGO +: a functional profiling tool for genomic data. Integration of functional annotation, regulatory motifs and interaction data with microarray experiments",
+    "authors": "F Al-Shahrour;P Minguez;J Ta \u00b4rraga;I Medina;E Alloza",
+    "year": "2007",
+    "citation": "Al-Shahrour F, Minguez P, Ta \u00b4rraga J, Medina I, Alloza E, et al. (2007) FatiGO +: a functional profiling tool for genomic data. Integration of functional annotation, regulatory motifs and interaction data with microarray experiments. Nucleic Acids Res 35: W91-W96.",
+    "pages": "W91-W96",
+    "journal": "Nucleic Acids Res",
+    "volume": "35",
+    "sentences": [
+      "A multitude of Web servers exists to assist in this task, including but not limited to: L2L [CITATION #b2], FatiGO [CITATION], GOrilla [CITATION #b4] or agriGO [CITATION #b5]."
+    ]
+  },
+  {
+    "title": "GOrilla: a tool for discovery and visualization of enriched GO terms in ranked gene lists",
+    "authors": "E Eden;R Navon;I Steinfeld;D Lipson;Z Yakhini",
+    "year": "2009",
+    "citation": "Eden E, Navon R, Steinfeld I, Lipson D, Yakhini Z (2009) GOrilla: a tool for discovery and visualization of enriched GO terms in ranked gene lists. BMC Bioinformatics 10: 48.",
+    "pages": "48",
+    "journal": "BMC Bioinformatics",
+    "volume": "10",
+    "sentences": [
+      "A multitude of Web servers exists to assist in this task, including but not limited to: L2L [CITATION #b2], FatiGO [CITATION #b3], GOrilla [CITATION] or agriGO [CITATION #b5].",
+      "To our knowledge, tools that would assist researchers in interpretation of long GO term lists are scarce, although some Web servers have made a step in this direction, e.g. GOrilla [CITATION] offers a visualization of the enriched GO categories overlaid on the standard GO graph structure.",
+      "GOrilla [CITATION] Web server that tests for GO terms that are significantly enriched at the top of a ranked gene list."
+    ]
+  },
+  {
+    "title": "agriGO: a GO analysis toolkit for the agricultural community",
+    "authors": "Z Du;X Zhou;Y Ling;Z Zhang;Z Su",
+    "year": "2010",
+    "citation": "Du Z, Zhou X, Ling Y, Zhang Z, Su Z (2010) agriGO: a GO analysis toolkit for the agricultural community. Nucleic Acids Res 38: W64-W70.",
+    "pages": "W64-W70",
+    "journal": "Nucleic Acids Res",
+    "volume": "38",
+    "sentences": [
+      "A multitude of Web servers exists to assist in this task, including but not limited to: L2L [CITATION #b2], FatiGO [CITATION #b3], GOrilla [CITATION #b4] or agriGO [CITATION].",
+      "REVIGO accepts input from any Web server or software that generates lists of GO terms, and is currently coupled with GOrilla [CITATION] and agriGO [CITATION #b9] to automate the transfer of data."
+    ]
+  },
+  {
+    "title": "Room-temperature superconductivity in nitrogen-doped lutetium hydride under moderate pressure conditions",
+    "authors": [
+      "Reinholt, G.",
+      "Tanaka, M.",
+      "Osei, A."
+    ],
+    "year": "2023",
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "citation": "Reinholt et al. (2023) Phys Rev Lett.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "RedundancyMiner: De-replication of redundant GO categories in microarray and proteomics analysis",
+    "authors": "B Zeeberg;H Liu;A Kahn;M Ehler;V Rajapakse",
+    "year": "2011",
+    "citation": "Zeeberg B, Liu H, Kahn A, Ehler M, Rajapakse V, et al. (2011) RedundancyMiner: De-replication of redundant GO categories in microarray and proteomics analysis. BMC Bioinformatics 12: 52.",
+    "pages": "52",
+    "journal": "BMC Bioinformatics",
+    "volume": "12",
+    "sentences": [
+      "Very recently, a software called RedundancyMiner [CITATION] has been made available that attempts to more directly address the issues of interpretability in GO term lists; we examine its features in more detail in the Results and discussion section below."
+    ]
+  },
+  {
+    "title": "Semantic Similarity in Biomedical Ontologies",
+    "authors": "C Pesquita;D Faria;A O Falca \u02dco;P Lord;F M Couto",
+    "year": "2009",
+    "citation": "Pesquita C, Faria D, Falca \u02dco AO, Lord P, Couto FM (2009) Semantic Similarity in Biomedical Ontologies. PLoS Comput Biol 5: e1000443.",
+    "pages": "",
+    "journal": "PLoS Comput Biol",
+    "volume": "5",
+    "sentences": [
+      "The complex structure of the GO warrants a solution that takes into account the terms' proximity in the GO graph, quantified by the GO term 'semantic similarity' measures [CITATION].",
+      "Both the summarization and the visualization step draw on the concept of GO term semantic similarity, reviewed in [CITATION].",
+      "REVIGO supports four semantic similarity measures based on the concept of the ''most informative common ancestor'': Lin's, Resnik's, Jiang and Conrath's measures, and the SimRel measure [CITATION]."
+    ]
+  },
+  {
+    "title": "FunSimMat: a comprehensive functional similarity database",
+    "authors": "A Schlicker;M Albrecht",
+    "year": "2007",
+    "citation": "Schlicker A, Albrecht M (2007) FunSimMat: a comprehensive functional similarity database. Nucleic Acids Res 36: D434-D439.",
+    "pages": "D434-D439",
+    "journal": "Nucleic Acids Res",
+    "volume": "36",
+    "sentences": [
+      "In particular, several common measures of semantic similarity [CITATION] that employ the 'most informative common ancestor' approach are supported.",
+      "N Threshold for redundancy reduction: In RM, the user can tune the size of the resulting list by selecting the threshold for the Fisher's exact test p-value, or the ''nominal number of merged pairs'' [CITATION] in the list."
+    ]
+  },
+  {
+    "title": "The neighbor-joining method: a new method for reconstructing phylogenetic trees",
+    "authors": "N Saitou;M Nei",
+    "year": "1987",
+    "citation": "Saitou N, Nei M (1987) The neighbor-joining method: a new method for reconstructing phylogenetic trees. Mol Biol Evol 4: 406-425.",
+    "pages": "406-425",
+    "journal": "Mol Biol Evol",
+    "volume": "4",
+    "sentences": [
+      "REVIGO performs a simple clustering procedure which is in concept similar to the hierarchical (agglomerative) clustering methods such as the neighbor joining approach [CITATION].",
+      "REVIGO accepts input from any Web server or software that generates lists of GO terms, and is currently coupled with GOrilla [CITATION #b5] and agriGO [CITATION] to automate the transfer of data."
+    ]
+  },
+  {
+    "title": "A new measure for functional similarity of gene products based on Gene Ontology",
+    "authors": "A Schlicker;F Domingues;J Rahnenfuhrer;T Lengauer",
+    "year": "2006",
+    "citation": "Schlicker A, Domingues F, Rahnenfuhrer J, Lengauer T (2006) A new measure for functional similarity of gene products based on Gene Ontology. BMC Bioinformatics 7: 302.",
+    "pages": "302",
+    "journal": "BMC Bioinformatics",
+    "volume": "7",
+    "sentences": [
+      "To offer some bearing on the relationship of C to statistical significance, we conducted a simulation where we drew random pairs of GO terms and recorded the distribution of the SimRel semantic similarity measure [CITATION] (default in REVIGO).",
+      "REVIGO by default uses the established SimRel measure of GO term similarity which has been thoroughly benchmarked by examining semantic similarities in GO assignments of homologous proteins [CITATION].",
+      "In REVIGO, the user chooses the threshold value of SimRel or a related measure [CITATION], which always varies between 0 and 1, and is also independent of the specific dataset, facilitating interpretation and comparison across datasets."
+    ]
+  },
+  {
+    "title": "Cytoscape Web: an interactive web-based network browser",
+    "authors": "C T Lopes;M Franz;F Kazi;S L Donaldson;Q Morris",
+    "year": "2010",
+    "citation": "Lopes CT, Franz M, Kazi F, Donaldson SL, Morris Q, et al. (2010) Cytoscape Web: an interactive web-based network browser. Bioinformatics 26: 2347-2348.",
+    "pages": "2347-2348",
+    "journal": "Bioinformatics",
+    "volume": "26",
+    "sentences": [
+      "The placement of the nodes is determined by the ForceDirected layout algorithm as implemented in Cytoscape Web [CITATION].",
+      "For data visualization, REVIGO relies on Google Motion Chart for scatterplots, Cytoscape Web [CITATION] for graphs and DrasticTreemap for treemaps.",
+      "These and other measures and the role of the IC in their calculation are reviewed in [CITATION]."
+    ]
+  },
+  {
+    "title": "Integration of biological networks and gene expression data using Cytoscape",
+    "authors": "M S Cline;M Smoot;E Cerami;A Kuchinsky;N Landys",
+    "year": "2007",
+    "citation": "Cline MS, Smoot M, Cerami E, Kuchinsky A, Landys N, et al. (2007) Integration of biological networks and gene expression data using Cytoscape. Nat Protoc 2: 2366-2382.",
+    "pages": "2366-2382",
+    "journal": "Nat Protoc",
+    "volume": "2",
+    "sentences": [
+      "In addition to being viewed in the Web browser, the graph may be exported to a XGMML file, or opened in the standalone Cytoscape program [CITATION] via Java Web Start to produce high resolution, publication-quality images.",
+      "Any modern internet browser with Adobe Flash capabilities is sufficient to access the server; additionaly, client-side Java is required if Cytoscape [CITATION] is invoked via Java Web Start."
+    ]
+  },
+  {
+    "title": "Rapid Sequence and Expression Divergence Suggest Selection for Novel Function in Primate-Specific KRAB-ZNF Genes",
+    "authors": "K Nowick;A T Hamilton;H Zhang;L Stubbs",
+    "year": "2010",
+    "citation": "Nowick K, Hamilton AT, Zhang H, Stubbs L (2010) Rapid Sequence and Expression Divergence Suggest Selection for Novel Function in Primate-Specific KRAB-ZNF Genes. Mol Biol Evol 27: 2606-2617.",
+    "pages": "2606-2617",
+    "journal": "Mol Biol Evol",
+    "volume": "27",
+    "sentences": [
+      "This dataset [CITATION] lists gene functional categories co-expressed with the human gene coding for the transcription factor ZNF417, but not with the highly related protein ZNF587, measured using Affymetrix U133plus2 microarrays.",
+      "The ZNF417 is an evolutionarily recent, great ape-specific transcription factor of which the ZNF587 is a more ancient homolog [CITATION]; gene functions associated specifically to ZNF417 were found to be associated with brain development.",
+      "view of seven gene functional categories co-expressed with the human transcription factor ZNF417; data from [CITATION].",
+      "REVIGO's ''Scatterplot view'' of seven gene functional categories co-expressed with the human transcription factor ZNF417; data from [CITATION], also given in Fig."
+    ]
+  },
+  {
+    "title": "Translational Selection Is Ubiquitous in Prokaryotes",
+    "authors": "F Supek;N Repar;J Vlahovic \u02c7ek;K",
+    "year": "2010",
+    "citation": "Supek F, S \u02c7kunca N, Repar J, Vlahovic \u02c7ek K, S \u02c7muc T (2010) Translational Selection Is Ubiquitous in Prokaryotes. PLoS Genet 6: e1001004.",
+    "pages": "",
+    "journal": "PLoS Genet",
+    "volume": "6",
+    "sentences": [
+      "The data sets cover diverse areas of the life sciences: example #1, a comparative analysis of predicted gene expression levels in bacteria and archaea [CITATION]; example #2, finding putative targets for the cytostatic activity of a small molecule against cancer cell lines [CITATION #b15]; and example #3, gene expression profiling of aggressive breast cancer samples [CITATION #b16]."
+    ]
+  },
+  {
+    "title": "Putative mechanisms of antitumor activity of cyano-substituted heteroaryles in HeLa cells",
+    "authors": "K Ester;F Supek;K Majsec;\u00b4m Marjanovic;D Lembo",
+    "year": "2010",
+    "citation": "Ester K, Supek F, Majsec K, Marjanovic \u00b4M, Lembo D, et al. (2010) Putative mechanisms of antitumor activity of cyano-substituted heteroaryles in HeLa cells. Invest New Drugs;doi: 10.1007/s10637-010-9571-7.",
+    "pages": "10637-010",
+    "journal": "Invest New Drugs",
+    "volume": "",
+    "sentences": [
+      "The data sets cover diverse areas of the life sciences: example #1, a comparative analysis of predicted gene expression levels in bacteria and archaea [CITATION #b14]; example #2, finding putative targets for the cytostatic activity of a small molecule against cancer cell lines [CITATION]; and example #3, gene expression profiling of aggressive breast cancer samples [CITATION #b16].",
+      "Very recently, software called RedundancyMiner (RM) has been made available [CITATION] that has similar aims as REVIGO -to mitigate the issue of redundancy in lists of GO terms."
+    ]
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Gene expression profiling predicts clinical outcome of breast cancer",
+    "authors": "L J Van't Veer;H Dai;M J Van De Vijver;Y D He;Aam Hart",
+    "year": "2002",
+    "citation": "van't Veer LJ, Dai H, van de Vijver MJ, He YD, Hart AAM, et al. (2002) Gene expression profiling predicts clinical outcome of breast cancer. Nature 415: 530-536.",
+    "pages": "530-536",
+    "journal": "Nature",
+    "volume": "415",
+    "sentences": [
+      "The data sets cover diverse areas of the life sciences: example #1, a comparative analysis of predicted gene expression levels in bacteria and archaea [CITATION #b14]; example #2, finding putative targets for the cytostatic activity of a small molecule against cancer cell lines [CITATION #b15]; and example #3, gene expression profiling of aggressive breast cancer samples [CITATION]."
+    ]
+  },
+  {
+    "title": "High-Throughput GoMiner, an ''industrial-strength'' integrative gene ontology tool for interpretation of multiple-microarray experiments, with application to studies of Common Variable Immune Deficiency (CVID)",
+    "authors": "B Zeeberg;H Qin;S Narasimhan;M Sunshine;H Cao",
+    "year": "2005",
+    "citation": "Zeeberg B, Qin H, Narasimhan S, Sunshine M, Cao H, et al. (2005) High- Throughput GoMiner, an ''industrial-strength'' integrative gene ontology tool for interpretation of multiple-microarray experiments, with application to studies of Common Variable Immune Deficiency (CVID). BMC Bioinformatics 6: 168.",
+    "pages": "168",
+    "journal": "BMC Bioinformatics",
+    "volume": "6",
+    "sentences": [
+      "N Interoperability: due to the requirement for a specific data input format, RM is tied to the GoMiner package [CITATION] for finding enriched GO terms."
+    ]
+  },
+  {
+    "title": "Social network structure and the diffusion of misinformation: causal evidence from a field experiment",
+    "authors": [
+      "Abramowitz, J.",
+      "Nkemdirim, C.",
+      "L\u00f6fgren, K."
+    ],
+    "year": "2022",
+    "journal": "Quarterly Journal of Economics",
+    "doi": "",
+    "citation": "Abramowitz et al. (2022) Q J Econ.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "MDSJ: Java Library for Multidimensional Scaling (Version 0.2)",
+    "authors": "C Pich",
+    "year": "2009",
+    "citation": "Pich C (2009) MDSJ: Java Library for Multidimensional Scaling (Version 0.2). Available at: http://www.inf.uni-konstanz.de/algo/software/mdsj/. Accessed 2010 Nov 2.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "For multidimensional scaling, the MSDJ library [CITATION] is used."
+    ]
+  },
+  {
+    "title": "The GOA database in 2009-an integrated Gene Ontology Annotation resource",
+    "authors": "D Barrell;E Dimmer;R P Huntley;D Binns;C O'donovan",
+    "year": "2009",
+    "citation": "Barrell D, Dimmer E, Huntley RP, Binns D, O'Donovan C, et al. (2009) The GOA database in 2009-an integrated Gene Ontology Annotation resource. Nucleic Acids Res 37: D396-403.",
+    "pages": "396-403",
+    "journal": "Nucleic Acids Res",
+    "volume": "37",
+    "sentences": [
+      "The IC is calculated as a negative logarithm of the GO term's relative frequency in a reference database -the EBI GOA database [CITATION] -which annotates all UniProt entries with GO terms."
+    ]
+  },
+  {
+    "title": "BiNGO: a Cytoscape plugin to assess overrepresentation of Gene Ontology categories in Biological Networks",
+    "authors": "S Maere;K Heymans;M Kuiper",
+    "year": "2005",
+    "citation": "Maere S, Heymans K, Kuiper M (2005) BiNGO: a Cytoscape plugin to assess overrepresentation of Gene Ontology categories in Biological Networks. Bioinformatics 21: 3448-3449.",
+    "pages": "3448-3449",
+    "journal": "Bioinformatics",
+    "volume": "21",
+    "sentences": [
+      "Brief description BINGO [CITATION] Cytoscape plug-in that tests for GO category enrichment in a list or network of genes, and displays the results in a graph of GO terms."
+    ]
+  },
+  {
+    "title": "SimCT: a generic tool to visualize ontology-based relationships for biological objects",
+    "authors": "C Herrmann;S Be \u00b4rard;L Tichit",
+    "year": "2009",
+    "citation": "Herrmann C, Be \u00b4rard S, Tichit L (2009) SimCT: a generic tool to visualize ontology-based relationships for biological objects. Bioinformatics 25: 3197-3198.",
+    "pages": "3197-3198",
+    "journal": "Bioinformatics",
+    "volume": "25",
+    "sentences": [
+      "SimCT [CITATION] Standalone Java program that performs a hierarchical clustering of a list of gene-GO term annotation pairs."
+    ]
+  },
+  {
+    "title": "Ontologizer 2.0-a multifunctional tool for GO term enrichment analysis and data exploration",
+    "authors": "S Bauer;S Grossmann;M Vingron;P N Robinson",
+    "year": "2008",
+    "citation": "Bauer S, Grossmann S, Vingron M, Robinson PN (2008) Ontologizer 2.0-a multifunctional tool for GO term enrichment analysis and data exploration. Bioinformatics 24: 1650-1651.",
+    "pages": "1650-1651",
+    "journal": "Bioinformatics",
+    "volume": "24",
+    "sentences": [
+      "Ontologizer [CITATION] Standalone Java program that supports multiple statistical approaches for testing for GO term enrichment in a list of genes, while compensating for GO term redundancy due to parent-child relationships, including PCU [CITATION #b23] and MGSA [CITATION #b24] methods."
+    ]
+  },
+  {
+    "title": "Improved detection of overrepresentation of Gene-Ontology annotations with parent-child analysis",
+    "authors": "S Grossmann;S Bauer;P N Robinson;M Vingron",
+    "year": "2007",
+    "citation": "Grossmann S, Bauer S, Robinson PN, Vingron M (2007) Improved detection of overrepresentation of Gene-Ontology annotations with parent-child analysis. Bioinformatics 23: 3024-3031.",
+    "pages": "3024-3031",
+    "journal": "Bioinformatics",
+    "volume": "23",
+    "sentences": [
+      "Ontologizer [CITATION #b22] Standalone Java program that supports multiple statistical approaches for testing for GO term enrichment in a list of genes, while compensating for GO term redundancy due to parent-child relationships, including PCU [CITATION] and MGSA [CITATION #b24] methods."
+    ]
+  },
+  {
+    "title": "GOing Bayesian: model-based gene set analysis of genome-scale data",
+    "authors": "S Bauer;J Gagneur;P N Robinson",
+    "year": "2010",
+    "citation": "Bauer S, Gagneur J, Robinson PN (2010) GOing Bayesian: model-based gene set analysis of genome-scale data. Nucleic Acids Res 38: 3523-3532.",
+    "pages": "3523-3532",
+    "journal": "Nucleic Acids Res",
+    "volume": "38",
+    "sentences": [
+      "Ontologizer [CITATION #b22] Standalone Java program that supports multiple statistical approaches for testing for GO term enrichment in a list of genes, while compensating for GO term redundancy due to parent-child relationships, including PCU [CITATION #b23] and MGSA [CITATION] methods."
+    ]
+  }
+]

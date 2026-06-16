@@ -1,0 +1,3080 @@
+[
+  {
+    "title": "Nucleotide-sequence of bacteriophage Lambda DNA",
+    "authors": "F Sanger;A R Coulson;G F Hong;D F Hill;G B Petersen",
+    "year": "1982",
+    "citation": "Sanger, F., Coulson, A. R., Hong, G. F., Hill, D. F. & Petersen, G. B. Nucleotide-sequence of bacteriophage Lambda DNA. J. Mol. Biol. 162, 729\u00b1773 (1982).",
+    "pages": "729-773",
+    "journal": "J. Mol. Biol",
+    "volume": "162",
+    "sentences": [
+      "(1) The sequencing of the bacterial viruses FX174 4,5 and lambda [CITATION] , the animal virus SV40 [CITATION #b6] and the human mitochondrion [CITATION #b7] between 1977 and 1982."
+    ]
+  },
+  {
+    "title": "Complete nucleotide sequence of SV40 DNA",
+    "authors": "W Fiers",
+    "year": "1978",
+    "citation": "Fiers, W. et al. Complete nucleotide sequence of SV40 DNA. Nature 273, 113\u00b1120 (1978).",
+    "pages": "113-120",
+    "journal": "Nature",
+    "volume": "273",
+    "sentences": [
+      "(1) The sequencing of the bacterial viruses FX174 4,5 and lambda [CITATION #b5] , the animal virus SV40 [CITATION] and the human mitochondrion [CITATION #b7] between 1977 and 1982."
+    ]
+  },
+  {
+    "title": "Sequence and organization of the human mitochondrial genome",
+    "authors": "S Anderson",
+    "year": "1981",
+    "citation": "Anderson, S. et al. Sequence and organization of the human mitochondrial genome. Nature 290, 457\u00b1465 (1981).",
+    "pages": "457-465",
+    "journal": "Nature",
+    "volume": "290",
+    "sentences": [
+      "(1) The sequencing of the bacterial viruses FX174 4,5 and lambda [CITATION #b5] , the animal virus SV40 [CITATION #b6] and the human mitochondrion [CITATION] between 1977 and 1982."
+    ]
+  },
+  {
+    "title": "Construction of a genetic linkage map in man using restriction fragment length polymorphisms",
+    "authors": "D Botstein;R L White;M Skolnick;R W Davis",
+    "year": "1980",
+    "citation": "Botstein, D., White, R. L., Skolnick, M. & Davis, R. W. Construction of a genetic linkage map in man using restriction fragment length polymorphisms. Am. J. Hum. Genet. 32, 314\u00b1331 (1980).",
+    "pages": "314-331",
+    "journal": "Am. J. Hum. Genet",
+    "volume": "32",
+    "sentences": [
+      "When the approach was \u00aerst proposed in the early 1980s [CITATION] , a researcher wishing to perform positional cloning had to generate genetic markers to trace inheritance; perform chromosomal walking to obtain genomic DNA covering the region; and analyse a region of around 1 Mb by either direct sequencing or indirect gene identi\u00aecation methods."
+    ]
+  },
+  {
+    "title": "Random-clone strategy for genomic restriction mapping in yeast",
+    "authors": "M V Olson",
+    "year": "1986",
+    "citation": "Olson, M. V. et al. Random-clone strategy for genomic restriction mapping in yeast. Proc. Natl Acad. Sci. USA 83, 7826\u00b17830 (1986).",
+    "pages": "7826-7830",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "83",
+    "sentences": [
+      "(3) The programmes to create physical maps of clones covering the yeast [CITATION] and worm [CITATION #b10] genomes to allow isolation of genes and regions based solely on their chromosomal position, launched by Olson and Sulston in the mid-1980s."
+    ]
+  },
+  {
+    "title": "Toward a physical map of the genome of the nematode Caenorhabditis elegans",
+    "authors": "A Coulson;J Sulston;S Brenner;J Karn",
+    "year": "1986",
+    "citation": "Coulson, A., Sulston, J., Brenner, S. & Karn, J. Toward a physical map of the genome of the nematode Caenorhabditis elegans. Proc. Natl Acad. Sci. USA 83, 7821\u00b17825 (1986).",
+    "pages": "7821-7825",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "83",
+    "sentences": [
+      "(3) The programmes to create physical maps of clones covering the yeast [CITATION #b9] and worm [CITATION] genomes to allow isolation of genes and regions based solely on their chromosomal position, launched by Olson and Sulston in the mid-1980s.",
+      "Pre-publication data releases had been pioneered in mapping projects in the worm [CITATION] and mouse genomes [CITATION #b29][CITATION #b80] and were prominently adopted in the sequencing of the worm, providing a direct model for the human sequencing efforts."
+    ]
+  },
+  {
+    "title": "A new troponin T and cDNA clones for 13 different muscle proteins, found by shotgun sequencing",
+    "authors": "S D Putney;W C Herlihy;P Schimmel",
+    "year": "1983",
+    "citation": "Putney, S. D., Herlihy, W. C. & Schimmel, P. A new troponin T and cDNA clones for 13 different muscle proteins, found by shotgun sequencing. Nature 302, 718\u00b1721 (1983).",
+    "pages": "718-721",
+    "journal": "Nature",
+    "volume": "302",
+    "sentences": [
+      "(4) The development of random shotgun sequencing of complementary DNA fragments for high-throughput gene discovery by Schimmel [CITATION] and Schimmel and Sutcliffe [CITATION #b12] , later dubbed expressed sequence tags (ESTs) and pursued with automated sequencing by Venter and others 14\u00b120 ."
+    ]
+  },
+  {
+    "title": "Gene expression in rat brain",
+    "authors": "R J Milner;J G Sutcliffe",
+    "year": "1983",
+    "citation": "Milner, R. J. & Sutcliffe, J. G. Gene expression in rat brain. Nucleic Acids Res. 11, 5497\u00b15520 (1983).",
+    "pages": "5497-5520",
+    "journal": "Nucleic Acids Res",
+    "volume": "11",
+    "sentences": [
+      "(4) The development of random shotgun sequencing of complementary DNA fragments for high-throughput gene discovery by Schimmel [CITATION #b11] and Schimmel and Sutcliffe [CITATION] , later dubbed expressed sequence tags (ESTs) and pursued with automated sequencing by Venter and others 14\u00b120 ."
+    ]
+  },
+  {
+    "title": "The mammalian gene collection",
+    "authors": "R L Strausberg;E A Feingold;R D Klausner;F S Collins",
+    "year": "1999",
+    "citation": "Strausberg, R. L., Feingold, E. A., Klausner, R. D. & Collins, F. S. The mammalian gene collection. Science 286, 455\u00b1457 (1999).",
+    "pages": "455-457",
+    "journal": "Science",
+    "volume": "286",
+    "sentences": [
+      "The Mammalian Gene Collection project has been underway for a year [CITATION] and expects to produce 10,000\u00b115,000 human full-length cDNAs over the coming year, which will be available without restrictions on use."
+    ]
+  },
+  {
+    "title": "An STS-based map of the human genome",
+    "authors": "T J Hudson",
+    "year": "1995",
+    "citation": "Hudson, T. J. et al. An STS-based map of the human genome. Science 270, 1945\u00b11954 (1995).",
+    "pages": "1945-1954",
+    "journal": "Science",
+    "volume": "270",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION #b99] , one YAC and radiation hybrid map [CITATION] , and two genetic maps [CITATION #b100][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION #b102] .",
+      "Figure 5 Positions of markers on previous maps of the genome (the Genethon 101 genetic map and Marsh\u00aeeld genetic map (http://research.marsh\u00aeeldclinic.org/genetics/ genotyping_service/mgsver2.htm), the GeneMap99 radiation hybrid map [CITATION #b99] , and the Whitehead YAC and radiation hybrid map [CITATION] ) plotted against their derived position on the draft sequence for chromosome 2."
+    ]
+  },
+  {
+    "title": "A comprehensive genetic map of the mouse genome",
+    "authors": "W F Dietrich",
+    "year": "1996",
+    "citation": "Dietrich, W. F. et al. A comprehensive genetic map of the mouse genome. Nature 380, 149\u00b1152 (1996).",
+    "pages": "149-152",
+    "journal": "Nature",
+    "volume": "380",
+    "sentences": [
+      "Pre-publication data releases had been pioneered in mapping projects in the worm [CITATION #b10] and mouse genomes [CITATION][CITATION #b80] and were prominently adopted in the sequencing of the worm, providing a direct model for the human sequencing efforts.",
+      "Such genetic maps in rat, mouse and human have a de\u00aecit of polymorphic (CA) n repeats on chromosome X [CITATION][CITATION #b100] ."
+    ]
+  },
+  {
+    "title": "The complete DNA sequence of yeast chromosome III",
+    "authors": "S G Oliver",
+    "year": "1992",
+    "citation": "Oliver, S. G. et al. The complete DNA sequence of yeast chromosome III. Nature 357, 38\u00b146 (1992).",
+    "pages": "38-46",
+    "journal": "Nature",
+    "volume": "357",
+    "sentences": [
+      "The second was sequencing of the yeast [CITATION] and worm [CITATION #b32] genomes, as well as targeted regions of mammalian genomes 34\u00b137 ."
+    ]
+  },
+  {
+    "title": "2.2 Mb of contiguous nucleotide sequence from chromosome III of C. elegans",
+    "authors": "R Wilson",
+    "year": "1994",
+    "citation": "Wilson, R. et al. 2.2 Mb of contiguous nucleotide sequence from chromosome III of C. elegans. Nature 368, 32\u00b138 (1994).",
+    "pages": "32-38",
+    "journal": "Nature",
+    "volume": "368",
+    "sentences": [
+      "The second was sequencing of the yeast [CITATION #b31] and worm [CITATION] genomes, as well as targeted regions of mammalian genomes 34\u00b137 ."
+    ]
+  },
+  {
+    "title": "The human growth hormone locus: nucleotide sequence, biology, and evolution",
+    "authors": "E Y Chen",
+    "year": "1989",
+    "citation": "Chen, E. Y. et al. The human growth hormone locus: nucleotide sequence, biology, and evolution. Genomics 4, 479\u00b1497 (1989).",
+    "pages": "479-497",
+    "journal": "Genomics",
+    "volume": "4",
+    "sentences": [
+      "The copies are so similar (99% identity) that paralogous recombination events can occur, giving rise to contiguous gene syndromes: Smith\u00b1Magenis syndrome and Charcot\u00b1 Marie\u00b1Tooth syndrome 1A, respectively [CITATION][CITATION #b233] ."
+    ]
+  },
+  {
+    "title": "Automated DNA sequencing of the human HPRT locus",
+    "authors": "A Edwards",
+    "year": "1990",
+    "citation": "Edwards, A. et al. Automated DNA sequencing of the human HPRT locus. Genomics 6, 593\u00b1608 (1990).",
+    "pages": "593-608",
+    "journal": "Genomics",
+    "volume": "6",
+    "sentences": [
+      "The practice of sequencing from both ends of double-stranded clones (`double-barrelled' shotgun sequencing) was introduced by Ansorge and others [CITATION] in 1990, allowing the use of `linking information' between sequence fragments.",
+      "The application of shotgun sequencing was also extended by applying it to larger and larger DNA molecules\u00d0from plasmids (, 4 kilobases (kb)) to cosmid clones [CITATION]  (40 kb), to arti\u00aecial chromosomes cloned in bacteria and yeast [CITATION #b54] (100\u00b1500 kb) and bacterial genomes [CITATION #b55] (1\u00b12 megabases (Mb))."
+    ]
+  },
+  {
+    "title": "A strategy for sequencing the genome 5 years early",
+    "authors": "E Marshall",
+    "year": "1995",
+    "citation": "Marshall, E. A strategy for sequencing the genome 5 years early. Science 267, 783\u00b1784 (1995).",
+    "pages": "783-784",
+    "journal": "Science",
+    "volume": "267",
+    "sentences": [
+      "In 1995, genome scientists considered a proposal [CITATION] that would have involved producing a draft genome sequence of the human genome in a \u00aerst phase and then returning to \u00aenish the sequence in a second phase."
+    ]
+  },
+  {
+    "title": "Cloning and stable maintenance of 300-kilobase-pair fragments of human DNA in Escherichia coli using an F-factor-based vector",
+    "authors": "H Shizuya",
+    "year": "1992",
+    "citation": "Shizuya, H. et al. Cloning and stable maintenance of 300-kilobase-pair fragments of human DNA in Escherichia coli using an F-factor-based vector. Proc. Natl Acad. Sci. USA 89, 8794\u00b18797 (1992).",
+    "pages": "8794-8797",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "89",
+    "sentences": [
+      "They also introduced bacterial arti\u00aecial chromosomes (BACs) [CITATION] , a new largeinsert cloning system that proved to be more stable than the cosmids and yeast arti\u00aecial chromosomes (YACs) [CITATION #b40] that had been used previously."
+    ]
+  },
+  {
+    "title": "Cloning of large segments of exogenous DNA into yeast by means of arti\u00aecial chromosome vectors",
+    "authors": "D T Burke;G F Carle;M V Olson",
+    "year": "1987",
+    "citation": "Burke, D. T., Carle, G. F. & Olson, M. V. Cloning of large segments of exogenous DNA into yeast by means of arti\u00aecial chromosome vectors. Science 236, 806\u00b1812 (1987).",
+    "pages": "806-812",
+    "journal": "Science",
+    "volume": "236",
+    "sentences": [
+      "They also introduced bacterial arti\u00aecial chromosomes (BACs) [CITATION #b39] , a new largeinsert cloning system that proved to be more stable than the cosmids and yeast arti\u00aecial chromosomes (YACs) [CITATION] that had been used previously."
+    ]
+  },
+  {
+    "title": "Analysis of the quality and utility of random shotgun sequencing at low redundancies",
+    "authors": "J Bouck;W Miller;J H Gorrell;D Muzny;R A Gibbs",
+    "year": "1998",
+    "citation": "Bouck, J., Miller, W., Gorrell, J. H., Muzny, D. & Gibbs, R. A. Analysis of the quality and utility of random shotgun sequencing at low redundancies. Genome Res. 8, 1074\u00b11084 (1998).",
+    "pages": "1074-1084",
+    "journal": "Genome Res",
+    "volume": "8",
+    "sentences": [
+      "Experiments showed that sequencing clones covering about 90% of the human genome to a redundancy of about four-to \u00aevefold (`halfshotgun' coverage; see Box 1) would accomplish this [CITATION][CITATION #b45] ."
+    ]
+  },
+  {
+    "title": "New goals for the U. S. Human Genome Project: 1998\u00b12003",
+    "authors": "F S Collins",
+    "year": "1998",
+    "citation": "Collins, F. S. et al. New goals for the U. S. Human Genome Project: 1998\u00b12003. Science 282, 682\u00b1689 (1998).",
+    "pages": "682-689",
+    "journal": "Science",
+    "volume": "282",
+    "sentences": [
+      "Experiments showed that sequencing clones covering about 90% of the human genome to a redundancy of about four-to \u00aevefold (`halfshotgun' coverage; see Box 1) would accomplish this [CITATION #b44][CITATION] .",
+      "The structure of large highly paralogous regions presents one of the `serious and unanticipated challenges' to producing a \u00aenished sequence of the genome [CITATION] ."
+    ]
+  },
+  {
+    "title": "A rapid method for determining sequences in DNA by primed synthesis with DNA polymerase",
+    "authors": "F Sanger;A R Coulson",
+    "year": "1975",
+    "citation": "Sanger, F. & Coulson, A. R. A rapid method for determining sequences in DNA by primed synthesis with DNA polymerase. J. Mol. Biol. 94, 441\u00b1448 (1975).",
+    "pages": "441-448",
+    "journal": "J. Mol. Biol",
+    "volume": "94",
+    "sentences": [
+      "Soon after the invention of DNA sequencing methods [CITATION][CITATION #b47] , the shotgun sequencing strategy was introduced ; it has remained the fundamental method for large-scale genome sequencing for the past 20 years."
+    ]
+  },
+  {
+    "title": "A new method for sequencing DNA",
+    "authors": "A M Maxam;W Gilbert",
+    "year": "1977",
+    "citation": "Maxam, A. M. & Gilbert, W. A new method for sequencing DNA. Proc. Natl Acad. Sci. USA 74, 560\u00b1 564 (1977).",
+    "pages": "560-564",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "74",
+    "sentences": [
+      "Soon after the invention of DNA sequencing methods [CITATION #b46][CITATION] , the shotgun sequencing strategy was introduced ; it has remained the fundamental method for large-scale genome sequencing for the past 20 years."
+    ]
+  },
+  {
+    "title": "Identi\u00aecation of the breast cancer susceptibility gene BRCA2",
+    "authors": "R Wooster",
+    "year": "1995",
+    "citation": "Wooster, R. et al. Identi\u00aecation of the breast cancer susceptibility gene BRCA2. Nature 378, 789\u00b1792 (1995).",
+    "pages": "789-792",
+    "journal": "Nature",
+    "volume": "378",
+    "sentences": [
+      "The application of shotgun sequencing was also extended by applying it to larger and larger DNA molecules\u00d0from plasmids (, 4 kilobases (kb)) to cosmid clones [CITATION #b36]  (40 kb), to arti\u00aecial chromosomes cloned in bacteria and yeast [CITATION] (100\u00b1500 kb) and bacterial genomes [CITATION #b55] (1\u00b12 megabases (Mb))."
+    ]
+  },
+  {
+    "title": "Whole-genome random sequencing and assembly of Haemophilus in\u00afuenzae Rd",
+    "authors": "R D Fleischmann",
+    "year": "1995",
+    "citation": "Fleischmann, R. D. et al. Whole-genome random sequencing and assembly of Haemophilus in\u00afuenzae Rd. Science 269, 496\u00b1512 (1995).",
+    "pages": "496-512",
+    "journal": "Science",
+    "volume": "269",
+    "sentences": [
+      "The application of shotgun sequencing was also extended by applying it to larger and larger DNA molecules\u00d0from plasmids (, 4 kilobases (kb)) to cosmid clones [CITATION #b36]  (40 kb), to arti\u00aecial chromosomes cloned in bacteria and yeast [CITATION #b54] (100\u00b1500 kb) and bacterial genomes [CITATION] (1\u00b12 megabases (Mb))."
+    ]
+  },
+  {
+    "title": "Genomic mapping by \u00aengerprinting random clones: a mathematical analysis",
+    "authors": "E S Lander;M S Waterman",
+    "year": "1988",
+    "citation": "Lander, E. S. & Waterman, M. S. Genomic mapping by \u00aengerprinting random clones: a mathematical analysis. Genomics 2, 231\u00b1239 (1988).",
+    "pages": "231-239",
+    "journal": "Genomics",
+    "volume": "2",
+    "sentences": [
+      "Mathematical analysis of the expected number of gaps as a function of coverage is similarly straightforward [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human whole-genome shotgun sequencing",
+    "authors": "J L Weber;E W Myers",
+    "year": "1997",
+    "citation": "Weber, J. L. & Myers, E. W. Human whole-genome shotgun sequencing. Genome Res. 7, 401\u00b1409 (1997).",
+    "pages": "401-409",
+    "journal": "Genome Res",
+    "volume": "7",
+    "sentences": [
+      "Weber and Myers [CITATION] stimulated these discussions with a speci\u00aec proposal for a whole-genome shotgun approach, together with an analysis suggesting that the method could work and be more ef\u00aecient."
+    ]
+  },
+  {
+    "title": "Against a whole-genome shotgun",
+    "authors": "P Green",
+    "year": "1997",
+    "citation": "Green, P. Against a whole-genome shotgun. Genome Res. 7, 410\u00b1417 (1997).",
+    "pages": "410-417",
+    "journal": "Genome Res",
+    "volume": "7",
+    "sentences": [
+      "Green [CITATION] challenged these conclusions and argued that the potential bene\u00aets did not outweigh the likely risks."
+    ]
+  },
+  {
+    "title": "Shotgun sequencing of the human genome",
+    "authors": "J C Venter",
+    "year": "1998",
+    "citation": "Venter, J. C. et al. Shotgun sequencing of the human genome. Science 280, 1540\u00b11542 (1998).",
+    "pages": "1540-1542",
+    "journal": "Science",
+    "volume": "280",
+    "sentences": [
+      "Their plan [CITATION][CITATION #b60] uses a mixed strategy, involving combining some coverage with wholegenome shotgun data generated by the company together with the publicly available hierarchical shotgun data generated by the International Human Genome Sequencing Consortium."
+    ]
+  },
+  {
+    "title": "The sequence of the human genome",
+    "authors": "J C Venter",
+    "year": "2001",
+    "citation": "Venter, J. C. et al. The sequence of the human genome. Science 291, 1304\u00b11351 (2001).",
+    "pages": "1304-1351",
+    "journal": "Science",
+    "volume": "291",
+    "sentences": [
+      "Their plan [CITATION #b59][CITATION] uses a mixed strategy, involving combining some coverage with wholegenome shotgun data generated by the company together with the publicly available hierarchical shotgun data generated by the International Human Genome Sequencing Consortium."
+    ]
+  },
+  {
+    "title": "Fluorescence detection in automated DNA sequence analysis",
+    "authors": "L M Smith",
+    "year": "1986",
+    "citation": "Smith, L. M. et al. Fluorescence detection in automated DNA sequence analysis. Nature 321, 674\u00b1 679 (1986).",
+    "pages": "674-679",
+    "journal": "Nature",
+    "volume": "321",
+    "sentences": [
+      "Laboratory innovations included four-colour \u00afuorescence-based sequence detection [CITATION] , improved \u00afuorescent dyes 63\u00b166 , dye-labelled terminators [CITATION #b66] , polymerases speci\u00aecally designed for sequencing , cycle sequencing [CITATION #b70] and capillary gel electrophoresis ."
+    ]
+  },
+  {
+    "title": "A system for rapid DNA sequencing with \u00afuorescent chain-terminating dideoxynucleotides",
+    "authors": "J M Prober",
+    "year": "1987",
+    "citation": "Prober, J. M. et al. A system for rapid DNA sequencing with \u00afuorescent chain-terminating dideoxynucleotides. Science 238, 336\u00b1341 (1987).",
+    "pages": "336-341",
+    "journal": "Science",
+    "volume": "238",
+    "sentences": [
+      "Laboratory innovations included four-colour \u00afuorescence-based sequence detection [CITATION #b61] , improved \u00afuorescent dyes 63\u00b166 , dye-labelled terminators [CITATION] , polymerases speci\u00aecally designed for sequencing , cycle sequencing [CITATION #b70] and capillary gel electrophoresis ."
+    ]
+  },
+  {
+    "title": "Improved double-stranded DNA sequencing using the linear polymerase chain reaction",
+    "authors": "V Murray",
+    "year": "1989",
+    "citation": "Murray, V. Improved double-stranded DNA sequencing using the linear polymerase chain reaction. Nucleic Acids Res. 17, 8889 (1989).",
+    "pages": "8889",
+    "journal": "Nucleic Acids Res",
+    "volume": "17",
+    "sentences": [
+      "Laboratory innovations included four-colour \u00afuorescence-based sequence detection [CITATION #b61] , improved \u00afuorescent dyes 63\u00b166 , dye-labelled terminators [CITATION #b66] , polymerases speci\u00aecally designed for sequencing , cycle sequencing [CITATION] and capillary gel electrophoresis ."
+    ]
+  },
+  {
+    "title": "Automation for genomics, part one: preparation for sequencing",
+    "authors": "D Meldrum",
+    "year": "2000",
+    "citation": "Meldrum, D. Automation for genomics, part one: preparation for sequencing. Genome Res. 10, 1081\u00b11092 (2000).",
+    "pages": "1081-1092",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "These studies contributed to substantial improvements in the automation, quality and throughput of collecting raw DNA sequence [CITATION][CITATION #b75] ."
+    ]
+  },
+  {
+    "title": "Automation for genomics, part two: sequencers, microarrays, and future trends",
+    "authors": "D Meldrum",
+    "year": "2000",
+    "citation": "Meldrum, D. Automation for genomics, part two: sequencers, microarrays, and future trends. Genome Res. 10, 1288\u00b11303 (2000).",
+    "pages": "1288-1303",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "These studies contributed to substantial improvements in the automation, quality and throughput of collecting raw DNA sequence [CITATION #b74][CITATION] .",
+      "More revolutionary methods, such as mass spectrometry, singlemolecule sequencing and nanopore approaches [CITATION] , have not yet been fully developed, but hold great promise and deserve strong encouragement."
+    ]
+  },
+  {
+    "title": "Base-calling of automated sequencer traces using phred. II. Error probabilities",
+    "authors": "B Ewing;P Green",
+    "year": "1998",
+    "citation": "Ewing, B. & Green, P. Base-calling of automated sequencer traces using phred. II. Error probabilities. Genome Res. 8, 186\u00b1194 (1998).",
+    "pages": "186-194",
+    "journal": "Genome Res",
+    "volume": "8",
+    "sentences": [
+      "The PHRED software package [CITATION][CITATION #b77] introduced the concept of assigning a `base-quality score' to each base, on the basis of the probability of an erroneous call.",
+      "Raw sequence traces were processed and assembled with the PHRED and PHRAP software packages [CITATION][CITATION #b77] (P. Green, unpublished)."
+    ]
+  },
+  {
+    "title": "Base-calling of automated sequencer traces using phred. I. Accuracy assessment",
+    "authors": "B Ewing;L Hillier;M C Wendl;P Green",
+    "year": "1998",
+    "citation": "Ewing, B., Hillier, L., Wendl, M. C. & Green, P. Base-calling of automated sequencer traces using phred. I. Accuracy assessment. Genome Res. 8, 175\u00b1185 (1998).",
+    "pages": "175-185",
+    "journal": "Genome Res",
+    "volume": "8",
+    "sentences": [
+      "The PHRED software package [CITATION #b76][CITATION] introduced the concept of assigning a `base-quality score' to each base, on the basis of the probability of an erroneous call.",
+      "Raw sequence traces were processed and assembled with the PHRED and PHRAP software packages [CITATION #b76][CITATION] (P. Green, unpublished)."
+    ]
+  },
+  {
+    "title": "Genomic sequence information should be released immediately and freely in the public domain",
+    "authors": "D R Bentley",
+    "year": "1996",
+    "citation": "Bentley, D. R. Genomic sequence information should be released immediately and freely in the public domain. Science 274, 533\u00b1534 (1996).",
+    "pages": "533-534",
+    "journal": "Science",
+    "volume": "274",
+    "sentences": [
+      "The centres adopted a policy that all genomic sequence data should be made publicly available without restriction within 24 hours of assembly [CITATION][CITATION #b79] ."
+    ]
+  },
+  {
+    "title": "Statement on the rapid release of genomic DNA sequence",
+    "authors": "M Guyer",
+    "year": "1998",
+    "citation": "Guyer, M. Statement on the rapid release of genomic DNA sequence. Genome Res. 8, 413 (1998).",
+    "pages": "413",
+    "journal": "Genome Res",
+    "volume": "8",
+    "sentences": [
+      "The centres adopted a policy that all genomic sequence data should be made publicly available without restriction within 24 hours of assembly [CITATION #b78][CITATION] ."
+    ]
+  },
+  {
+    "title": "A genetic map of the mouse suitable for typing intraspeci\u00aec crosses",
+    "authors": "W Dietrich",
+    "year": "1992",
+    "citation": "Dietrich, W. et al. A genetic map of the mouse suitable for typing intraspeci\u00aec crosses. Genetics 131, 423\u00b1447 (1992).",
+    "pages": "423-447",
+    "journal": "Genetics",
+    "volume": "131",
+    "sentences": [
+      "Pre-publication data releases had been pioneered in mapping projects in the worm [CITATION #b10] and mouse genomes [CITATION #b29][CITATION] and were prominently adopted in the sequencing of the worm, providing a direct model for the human sequencing efforts."
+    ]
+  },
+  {
+    "title": "Bacterial arti\u00aecial chromosome libraries for mouse sequencing and functional analysis",
+    "authors": "K Osoegawa",
+    "year": "2000",
+    "citation": "Osoegawa, K. et al. Bacterial arti\u00aecial chromosome libraries for mouse sequencing and functional analysis. Genome Res. 10, 116\u00b1128 (2000).",
+    "pages": "116-128",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "Fingerprint data were reviewed [CITATION #b85][CITATION #b89] to evaluate overlaps and to assess clone \u00aedelity (to bias against rearranged clones [CITATION][CITATION #b95] )."
+    ]
+  },
+  {
+    "title": "High throughput \u00aengerprint analysis of large-insert clones",
+    "authors": "M A Marra",
+    "year": "1997",
+    "citation": "Marra, M. A. et al. High throughput \u00aengerprint analysis of large-insert clones. Genome Res. 7, 1072\u00b1 1084 (1997).",
+    "pages": "1072-1084",
+    "journal": "Genome Res",
+    "volume": "7",
+    "sentences": [
+      "The comparison was feasible because the experimental sizing of restriction fragments was highly accurate (to within 0.5\u00b11.5% of the true size, for 95% of fragments from 600 to 12,000 base pairs (bp)) [CITATION][CITATION #b84] .",
+      "[CITATION][CITATION #b451] to analyse the restriction enzyme digestion patterns of many large-insert clones."
+    ]
+  },
+  {
+    "title": "A map for sequence analysis of the Arabidopsis thaliana genome",
+    "authors": "M Marra",
+    "year": "1999",
+    "citation": "Marra, M. et al. A map for sequence analysis of the Arabidopsis thaliana genome. Nature Genet. 22, 265\u00b1270 (1999).",
+    "pages": "265-270",
+    "journal": "Nature Genet",
+    "volume": "22",
+    "sentences": [
+      "The comparison was feasible because the experimental sizing of restriction fragments was highly accurate (to within 0.5\u00b11.5% of the true size, for 95% of fragments from 600 to 12,000 base pairs (bp)) [CITATION #b83][CITATION] ."
+    ]
+  },
+  {
+    "title": "A physical map of the human Y chromosome",
+    "authors": "C A Tilford",
+    "year": "2001",
+    "citation": "Tilford, C. A. et al. A physical map of the human Y chromosome. Nature 409, 943\u00b1945 (2001).",
+    "pages": "943-945",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "A few derive from the Y chromosome, for which the map was constructed separately [CITATION] .",
+      "Detailed examination and sequence \u00aenishing may be required to sort out these regions precisely, as has been done with chromosome Y [CITATION] ."
+    ]
+  },
+  {
+    "title": "The physical maps for sequencing human chromosomes 1, 6, 9, 10, 13, 20 and X",
+    "authors": "D R Bentley",
+    "year": "2001",
+    "citation": "Bentley, D. R. et al. The physical maps for sequencing human chromosomes 1, 6, 9, 10, 13, 20 and X. Nature 409, 942\u00b1943 (2001).",
+    "pages": "942-943",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "Fingerprint data were reviewed [CITATION #b85][CITATION] to evaluate overlaps and to assess clone \u00aedelity (to bias against rearranged clones [CITATION #b82][CITATION #b95] ).",
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION #b99] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION #b100][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION][CITATION #b102] ."
+    ]
+  },
+  {
+    "title": "A high-resolution map of human chromosome 12",
+    "authors": "K T Montgomery",
+    "year": "2001",
+    "citation": "Montgomery, K. T. et al. A high-resolution map of human chromosome 12. Nature 409, 945\u00b1946 (2001).",
+    "pages": "945-946",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "STS content information and BAC end sequence information were also used [CITATION][CITATION #b91] ."
+    ]
+  },
+  {
+    "title": "A physical map of human chromosome 14",
+    "authors": "T Bru \u00c8ls",
+    "year": "2001",
+    "citation": "Bru \u00c8ls, T. et al. A physical map of human chromosome 14. Nature 409, 947\u00b1948 (2001).",
+    "pages": "947-948",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "STS content information and BAC end sequence information were also used [CITATION #b90][CITATION] ."
+    ]
+  },
+  {
+    "title": "The DNA sequence of human chromosome 21",
+    "authors": "M Hattori",
+    "year": "2000",
+    "citation": "Hattori, M. et al. The DNA sequence of human chromosome 21. Nature 405, 311\u00b1319 (2000).",
+    "pages": "311-319",
+    "journal": "Nature",
+    "volume": "405",
+    "sentences": [
+      "The initial papers on these chromosomes [CITATION][CITATION #b93] noted some instances of interchromosomal duplication near each centromere.",
+      "Although it is also possible that these regions simply have greater tolerance for large insertions, many large gene-poor `deserts' have been identi\u00aeed [CITATION] and there is no accumulation of duplicated segments within these regions.",
+      "Two chromosomes, 22 and 21, have already been assembled in this `essentially complete' form in this manner [CITATION][CITATION #b93] , and chromosomes 20, Y, 19, 14 and 7 are likely to reach this status in the next few months."
+    ]
+  },
+  {
+    "title": "The DNA sequence of human chromosome 22",
+    "authors": "I Dunham",
+    "year": "1999",
+    "citation": "Dunham, I. et al. The DNA sequence of human chromosome 22. Nature 402, 489\u00b1495 (1999).",
+    "pages": "489-495",
+    "journal": "Nature",
+    "volume": "402",
+    "sentences": [
+      "The initial papers on these chromosomes [CITATION #b92][CITATION] noted some instances of interchromosomal duplication near each centromere.",
+      "For human, the comparable \u00aegures are only about 70% and 20%, respectively [CITATION][CITATION #b305] .",
+      "This would suggest a rate of spurious predictions of about 13% (63/477), although the true rate is likely to be much lower because many of these may correspond to unannotated portions of existing gene predictions or to currently unannotated genes (of which there are estimated to be about 100 on this chromosome [CITATION] ).",
+      "Two chromosomes, 22 and 21, have already been assembled in this `essentially complete' form in this manner [CITATION #b92][CITATION] , and chromosomes 20, Y, 19, 14 and 7 are likely to reach this status in the next few months."
+    ]
+  },
+  {
+    "title": "An improved approach for construction of bacterial arti\u00aecial chromosome libraries",
+    "authors": "K Osoegawa",
+    "year": "1998",
+    "citation": "Osoegawa, K. et al. An improved approach for construction of bacterial arti\u00aecial chromosome libraries. Genomics 52, 1\u00b18 (1998).",
+    "pages": "1-8",
+    "journal": "Genomics",
+    "volume": "52",
+    "sentences": [
+      "Fingerprint data were reviewed [CITATION #b85][CITATION #b89] to evaluate overlaps and to assess clone \u00aedelity (to bias against rearranged clones [CITATION #b82][CITATION] )."
+    ]
+  },
+  {
+    "title": "An STS-based radiation hybrid map of the human genome",
+    "authors": "E A Stewart",
+    "year": "1997",
+    "citation": "Stewart, E. A. et al. An STS-based radiation hybrid map of the human genome. Genome Res. 7, 422\u00b1 433 (1997).",
+    "pages": "433",
+    "journal": "Genome Res",
+    "volume": "7",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION][CITATION #b99] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION #b100][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION #b102] ."
+    ]
+  },
+  {
+    "title": "A physical map of 30,000 human genes",
+    "authors": "P Deloukas",
+    "year": "1998",
+    "citation": "Deloukas, P. et al. A physical map of 30,000 human genes. Science 282, 744\u00b1746 (1998).",
+    "pages": "744-746",
+    "journal": "Science",
+    "volume": "282",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION #b100][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION #b102] .",
+      "Figure 5 Positions of markers on previous maps of the genome (the Genethon 101 genetic map and Marsh\u00aeeld genetic map (http://research.marsh\u00aeeldclinic.org/genetics/ genotyping_service/mgsver2.htm), the GeneMap99 radiation hybrid map [CITATION] , and the Whitehead YAC and radiation hybrid map [CITATION #b28] ) plotted against their derived position on the draft sequence for chromosome 2."
+    ]
+  },
+  {
+    "title": "A comprehensive genetic map of the human genome based on 5,264 microsatellites",
+    "authors": "C Dib",
+    "year": "1996",
+    "citation": "Dib, C. et al. A comprehensive genetic map of the human genome based on 5,264 microsatellites. Nature 380, 152\u00b1154 (1996).",
+    "pages": "152-154",
+    "journal": "Nature",
+    "volume": "380",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION #b99] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION #b102] .",
+      "Genetic markers based on SSRs\u00d0particularly (CA) n repeats\u00d0have been the workhorse of most human diseasemapping studies [CITATION][CITATION #b101] .",
+      "Such genetic maps in rat, mouse and human have a de\u00aecit of polymorphic (CA) n repeats on chromosome X [CITATION #b29][CITATION] ."
+    ]
+  },
+  {
+    "title": "Comprehensive human genetic maps: individual and sex-speci\u00aec variation in recombination",
+    "authors": "K W Broman;J C Murray;V C Shef\u00aeeld;R L White;J L Weber",
+    "year": "1998",
+    "citation": "Broman, K. W., Murray, J. C., Shef\u00aeeld, V. C., White, R. L. & Weber, J. L. Comprehensive human genetic maps: individual and sex-speci\u00aec variation in recombination. Am. J. Hum. Genet. 63, 861\u00b1 869 (1998).",
+    "pages": "869",
+    "journal": "Am. J. Hum. Genet",
+    "volume": "63",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION #b99] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION #b100][CITATION] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION #b102] .",
+      "The genetic and physical maps are integrated by 5,282 polymorphic loci from the Marsh\u00aeeld genetic map [CITATION] , whose positions are known in terms of centimorgans (cM) and Mb along the chromosomes.",
+      "Genetic markers based on SSRs\u00d0particularly (CA) n repeats\u00d0have been the workhorse of most human diseasemapping studies [CITATION #b100][CITATION] ."
+    ]
+  },
+  {
+    "title": "Integration of cytogenetic landmarks into the draft sequence of the human genome",
+    "authors": "The Bac Resource;Consortium",
+    "year": "2001",
+    "citation": "The BAC Resource Consortium. Integration of cytogenetic landmarks into the draft sequence of the human genome. Nature 409, 953\u00b1958 (2001).",
+    "pages": "953-958",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "The \u00aengerprint clone contigs were then mapped to chromosomal locations, using sequence matches to mapped STSs from four human radiation hybrid maps [CITATION #b94][CITATION #b98][CITATION #b99] , one YAC and radiation hybrid map [CITATION #b28] , and two genetic maps [CITATION #b100][CITATION #b101] , together with data from FISH [CITATION #b85][CITATION #b89][CITATION] .",
+      "The BAC Resource Consortium [CITATION] established dense connections between the maps using more than 7,500 sequenced large-insert clones that had been cytogenetically mapped by FISH; the average density of the map is 2.3 clones per Mb.",
+      "For example, 98% of large-insert clones mapping to the darkest G-bands are in 200-kb regions of low GC content (average 37%), whereas more than 80% of clones mapping to the lightest Gbands are in regions of high GC content (average 45%) [CITATION] ."
+    ]
+  },
+  {
+    "title": "GigAssembler: an algorithm for the initial assembly of the human working draft",
+    "authors": "W J Kent;D Haussler",
+    "year": "2001",
+    "citation": "Kent, W. J. & Haussler, D. GigAssembler: an algorithm for the initial assembly of the human working draft . Technical Report UCSC-CRL-00-17 (Univ. California at Santa Cruz, Santa Cruz, California, 2001).",
+    "pages": "00-17",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "6), using the computer program GigAssembler [CITATION] .",
+      "We assessed the accuracy of the assembly by using a set of 148 draft clones comprising 22.4 Mb for which \u00aenished sequence subsequently became available [CITATION] .",
+      "The initial sequence contigs lack information about order and orientation, and GigAssembler attempts to use linking data to infer such information as far as possible [CITATION] ."
+    ]
+  },
+  {
+    "title": "Parameters of the human genome",
+    "authors": "N E Morton",
+    "year": "1991",
+    "citation": "Morton, N. E. Parameters of the human genome. Proc. Natl Acad. Sci. USA 88, 7474\u00b17476 (1991).",
+    "pages": "7474-7476",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "88",
+    "sentences": [
+      "\u00b3\u00b3 Including heterochromatic regions and acrocentric short arm(s) [CITATION] ."
+    ]
+  },
+  {
+    "title": "Integration of telomere sequences with the draft human genome sequence",
+    "authors": "H C Riethman",
+    "year": "2001",
+    "citation": "Riethman, H. C. et al. Integration of telomere sequences with the draft human genome sequence. Nature 409, 953\u00b1958 (2001).",
+    "pages": "953-958",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "As another measure of the representation of the BAC libraries, Riethman [CITATION] has found BAC or cosmid clones that link to telomeric half-YACs or to the telomeric sequence itself for 40 of the 41 nonsatellite telomeres."
+    ]
+  },
+  {
+    "title": "RefSeq and LocusLink: NCBI gene-centered resources",
+    "authors": "K D Pruit;D R Maglott",
+    "year": "2001",
+    "citation": "Pruit, K. D. & Maglott, D. R. RefSeq and LocusLink: NCBI gene-centered resources. Nucleic Acids Res. 29, 137\u00b1140 (2001).",
+    "pages": "137-140",
+    "journal": "Nucleic Acids Res",
+    "volume": "29",
+    "sentences": [
+      "We also examined the extent of genome coverage by aligning the cDNA sequences for genes in the RefSeq dataset [CITATION] to the draft genome sequence.",
+      "The `known' genes studied were those in the RefSeq database [CITATION] , a manually curated collection designed to contain nonredundant representatives of most full-length human mRNA sequences in GenBank (RefSeq intentionally contains some alternative splice forms of the same genes)."
+    ]
+  },
+  {
+    "title": "Guide to the draft human genome",
+    "authors": "T G Wolfsberg;J Mcentyre;G D Schuler",
+    "year": "2001",
+    "citation": "Wolfsberg, T. G., McEntyre, J. & Schuler, G. D. Guide to the draft human genome. Nature 409, 824\u00b1 826 (2001).",
+    "pages": "824-826",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "An introduction to using the draft genome sequence, as well as associated databases and analytical tools, is provided in an accompanying paper [CITATION] ."
+    ]
+  },
+  {
+    "title": "Statistical analysis of vertebrate sequences reveals that long genes are scarce in GC-rich isochores",
+    "authors": "L Duret;D Mouchiroud;C Gautier",
+    "year": "1995",
+    "citation": "Duret, L., Mouchiroud, D. & Gautier, C. Statistical analysis of vertebrate sequences reveals that long genes are scarce in GC-rich isochores. J. Mol. Evol. 40, 308\u00b1317 (1995).",
+    "pages": "308-317",
+    "journal": "J. Mol. Evol",
+    "volume": "40",
+    "sentences": [
+      "Previous efforts to study human gene structure [CITATION][CITATION #b274][CITATION #b275] have been hampered by limited sample sizes and strong biases in favour of compact genes."
+    ]
+  },
+  {
+    "title": "The mosaic genome of warm-blooded vertebrates",
+    "authors": "G Bernardi",
+    "year": "1985",
+    "citation": "Bernardi, G. et al. The mosaic genome of warm-blooded vertebrates. Science 228, 953\u00b1958 (1985).",
+    "pages": "953-958",
+    "journal": "Science",
+    "volume": "228",
+    "sentences": [
+      "Bernardi and colleagues [CITATION][CITATION #b118] proposed that the long-range variation in GC content may re\u00afect that the genome is composed of a mosaic of compositionally homogeneous regions that they dubbed `isochores'."
+    ]
+  },
+  {
+    "title": "Isochores and the evolutionary genomics of vertebrates",
+    "authors": "G Bernardi",
+    "year": "2000",
+    "citation": "Bernardi, G. Isochores and the evolutionary genomics of vertebrates. Gene 241, 3\u00b117 (2000).",
+    "pages": "3-17",
+    "journal": "Gene",
+    "volume": "241",
+    "sentences": [
+      "Bernardi and colleagues [CITATION #b117][CITATION] proposed that the long-range variation in GC content may re\u00afect that the genome is composed of a mosaic of compositionally homogeneous regions that they dubbed `isochores'."
+    ]
+  },
+  {
+    "title": "Base compositional structure of genomes",
+    "authors": "J W Fickett;D C Torney;D R Wolf",
+    "year": "1992",
+    "citation": "Fickett, J. W., Torney, D. C. & Wolf, D. R. Base compositional structure of genomes. Genomics 13, 1056\u00b11064 (1992).",
+    "pages": "1056-1064",
+    "journal": "Genomics",
+    "volume": "13",
+    "sentences": [
+      "Fickett et al. [CITATION] have explored a model in which the underlying preference for a particular GC content drifts continuously throughout the genome, an approach that bears further examination."
+    ]
+  },
+  {
+    "title": "Stochastic models for heterogeneous DNA sequences",
+    "authors": "G A Churchill",
+    "year": "1989",
+    "citation": "Churchill, G. A. Stochastic models for heterogeneous DNA sequences. Bull. Math. Biol. 51, 79\u00b194 (1989).",
+    "pages": "79-94",
+    "journal": "Bull. Math. Biol",
+    "volume": "51",
+    "sentences": [
+      "Churchill [CITATION] has proposed that the boundaries between GC content domains can in some cases be predicted by a hidden Markov model, with one state representing a GC-rich region and one representing an AT-rich region."
+    ]
+  },
+  {
+    "title": "CpG islands in vertebrate genomes",
+    "authors": "M Gardiner-Garden;M Frommer",
+    "year": "1987",
+    "citation": "Gardiner-Garden, M. & Frommer, M. CpG islands in vertebrate genomes. J. Mol. Biol. 196, 261\u00b1282 (1987).",
+    "pages": "261-282",
+    "journal": "J. Mol. Biol",
+    "volume": "196",
+    "sentences": [
+      "To identify CpG islands, we used the de\u00aenition proposed by Gardiner-Garden and Frommer [CITATION] and embodied in a computer program."
+    ]
+  },
+  {
+    "title": "Number of CpG islands and genes in human and mouse",
+    "authors": "F Antequera;A Bird",
+    "year": "1993",
+    "citation": "Antequera, F. & Bird, A. Number of CpG islands and genes in human and mouse. Proc. Natl Acad. Sci. USA 90, 11995\u00b111999 (1993).",
+    "pages": "11995-11999",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "90",
+    "sentences": [
+      "An estimate of 70,000\u00b180,000 genes was made by extrapolating from the number of CpG islands and the frequency of their association with known genes [CITATION] ."
+    ]
+  },
+  {
+    "title": "Analysis of expressed sequence tags indicates 35,000 human genes",
+    "authors": "B Ewing;P Green",
+    "year": "2000",
+    "citation": "Ewing, B. & Green, P. Analysis of expressed sequence tags indicates 35,000 human genes. Nature Genet. 25, 232\u00b1234 (2000).",
+    "pages": "232-234",
+    "journal": "Nature Genet",
+    "volume": "25",
+    "sentences": [
+      "The most rigorous analyses [CITATION] exclude as spurious any ESTs that appear only once in the data set and carefully calibrate sensitivity and speci\u00aecity."
+    ]
+  },
+  {
+    "title": "Comparison of human genetic and sequence-based physical maps",
+    "authors": "A Yu",
+    "year": "2001",
+    "citation": "Yu, A. Comparison of human genetic and sequence-based physical maps. Nature 409, 951\u00b1953 (2001).",
+    "pages": "951-953",
+    "journal": "Nature",
+    "volume": "409",
+    "sentences": [
+      "Finer variation is examined in an accompanying paper [CITATION] ."
+    ]
+  },
+  {
+    "title": "Chromosome size-dependent control of meiotic recombination",
+    "authors": "D B Kaback;V Guacci;D Barber;J W Mahon",
+    "year": "1992",
+    "citation": "Kaback, D. B., Guacci, V., Barber, D. & Mahon, J. W. Chromosome size-dependent control of meiotic recombination. Science 256, 228\u00b1232 (1992).",
+    "pages": "228-232",
+    "journal": "Science",
+    "volume": "256",
+    "sentences": [
+      "A similar trend has been seen in the yeast genome [CITATION][CITATION #b132] , despite the fact that the physical scale is nearly 200 times as small.",
+      "Moreover, experimental studies have shown that lengthening or shortening yeast chromosomes results in a compensatory change in recombination rate [CITATION] ."
+    ]
+  },
+  {
+    "title": "Physical maps of the 6 smallest chromosomes of Saccharomyces cerevisiae at a resolution of 2.6-kilobase pairs",
+    "authors": "L Riles",
+    "year": "1993",
+    "citation": "Riles, L. et al. Physical maps of the 6 smallest chromosomes of Saccharomyces cerevisiae at a resolution of 2.6-kilobase pairs. Genetics 134, 81\u00b1150 (1993).",
+    "pages": "81-150",
+    "journal": "Genetics",
+    "volume": "134",
+    "sentences": [
+      "A similar trend has been seen in the yeast genome [CITATION #b131][CITATION] , despite the fact that the physical scale is nearly 200 times as small."
+    ]
+  },
+  {
+    "title": "Further studies on bivalent chiasma frequency in human males with normal karyotypes",
+    "authors": "D A Laurie;M A Hulten",
+    "year": "1985",
+    "citation": "Laurie, D. A. & Hulten, M. A. Further studies on bivalent chiasma frequency in human males with normal karyotypes. Ann. Hum. Genet. 49, 189\u00b1201 (1985).",
+    "pages": "189-201",
+    "journal": "Ann. Hum. Genet",
+    "volume": "49",
+    "sentences": [
+      "A higher rate would increase the likelihood of at least one crossover during meiosis on each chromosome arm, as is generally observed in human chiasmata counts [CITATION] ."
+    ]
+  },
+  {
+    "title": "Meiotic chromosomes: it takes two to tango",
+    "authors": "G S Roeder",
+    "year": "1997",
+    "citation": "Roeder, G. S. Meiotic chromosomes: it takes two to tango. Genes Dev. 11, 2600\u00b12621 (1997).",
+    "pages": "2600-2621",
+    "journal": "Genes Dev",
+    "volume": "11",
+    "sentences": [
+      "Evidence from yeast mutants in which interference is abolished shows that interference plays a key role in distributing a limited number of crossovers among the various chromosome arms in yeast [CITATION] ."
+    ]
+  },
+  {
+    "title": "Meiosis-induced double-strand break sites determined by yeast chromatin structure",
+    "authors": "T.-C Wu;M Lichten",
+    "year": "1994",
+    "citation": "Wu, T.-C. & Lichten, M. Meiosis-induced double-strand break sites determined by yeast chromatin structure. Science 263, 515\u00b1518 (1994).",
+    "pages": "515-518",
+    "journal": "Science",
+    "volume": "263",
+    "sentences": [
+      "DSBs in yeast have been associated with open chromatin [CITATION][CITATION #b137] , rather than with speci\u00aec DNA sequence motifs."
+    ]
+  },
+  {
+    "title": "Global mapping of meiotic recombination hotspots and coldspots in the yeast Saccharomyces cerevisiae",
+    "authors": "J L Gerton",
+    "year": "2000",
+    "citation": "Gerton, J. L. et al. Global mapping of meiotic recombination hotspots and coldspots in the yeast Saccharomyces cerevisiae. Proc. Natl Acad. Sci. USA 97, 11383\u00b111390 (2000).",
+    "pages": "11383-11390",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "97",
+    "sentences": [
+      "DSBs in yeast have been associated with open chromatin [CITATION #b136][CITATION] , rather than with speci\u00aec DNA sequence motifs."
+    ]
+  },
+  {
+    "title": "The modulation of DNA content: proximate causes and ultimate consequences",
+    "authors": "T R Gregory;P D Hebert",
+    "year": "1999",
+    "citation": "Gregory, T. R. & Hebert, P. D. The modulation of DNA content: proximate causes and ultimate consequences. Genome Res. 9, 317\u00b1324 (1999).",
+    "pages": "317-324",
+    "journal": "Genome Res",
+    "volume": "9",
+    "sentences": [
+      "For example, Homo sapiens has a genome that is 200 times as large as that of the yeast S. cerevisiae, but 200 times as small as that of Amoeba dubia [CITATION #b138][CITATION] ."
+    ]
+  },
+  {
+    "title": "Interspersed repeats and other mementos of transposable elements in mammalian genomes",
+    "authors": "A F Smit",
+    "year": "1999",
+    "citation": "Smit, A. F. Interspersed repeats and other mementos of transposable elements in mammalian genomes. Curr. Opin. Genet. Dev. 9, 657\u00b1663 (1999).",
+    "pages": "657-663",
+    "journal": "Curr. Opin. Genet. Dev",
+    "volume": "9",
+    "sentences": [
+      "Most human repeat sequence is derived from transposable elements [CITATION][CITATION #b142] .",
+      "Notably, the same pattern is seen for the Alu-like B1 and the tRNA-derived SINEs in mouse and for MIR in human [CITATION] .",
+      "The alternative is that SINEs initially insert with the same proclivity for AT-rich DNA as LINEs, but that the distribution is subsequently reshaped by evolutionary forces [CITATION][CITATION #b178] .",
+      "It is also consistent with the observation that SINE density in AT-rich DNA is higher near genes [CITATION] .",
+      "from transposons [CITATION][CITATION #b208] ."
+    ]
+  },
+  {
+    "title": "Jr Mobile elements and the human genome",
+    "authors": "E L Prak;H K Haig",
+    "year": "2000",
+    "citation": "Prak, E. L. & Haig, H. K. Jr Mobile elements and the human genome. Nature Rev. Genet. 1, 134\u00b1144 (2000).",
+    "pages": "134-144",
+    "journal": "Nature Rev. Genet",
+    "volume": "1",
+    "sentences": [
+      "Most human repeat sequence is derived from transposable elements [CITATION #b141][CITATION] ."
+    ]
+  },
+  {
+    "title": "SINEs and LINEs share common 39 sequences: a review",
+    "authors": "N Okada;M Hamada;I Ogiwara;K Ohshima",
+    "year": "1997",
+    "citation": "Okada, N., Hamada, M., Ogiwara, I. & Ohshima, K. SINEs and LINEs share common 39 sequences: a review. Gene 205, 229\u00b1243 (1997).",
+    "pages": "229-243",
+    "journal": "Gene",
+    "volume": "205",
+    "sentences": [
+      "The LINE machinery is believed to be responsible for most reverse transcription in the genome, including the retrotransposition of the non-autonomous SINEs [CITATION] and the creation of processed pseudogenes [CITATION #b144][CITATION #b145] .",
+      "Indeed, most SINEs `live' by sharing the 39 end with a resident LINE element [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human LINE retrotransposons generate processed pseudogenes",
+    "authors": "C Esnault;J Maestre;T Heidmann",
+    "year": "2000",
+    "citation": "Esnault, C., Maestre, J. & Heidmann, T. Human LINE retrotransposons generate processed pseudogenes. Nature Genet. 24, 363\u00b1367 (2000).",
+    "pages": "363-367",
+    "journal": "Nature Genet",
+    "volume": "24",
+    "sentences": [
+      "The LINE machinery is believed to be responsible for most reverse transcription in the genome, including the retrotransposition of the non-autonomous SINEs [CITATION #b143] and the creation of processed pseudogenes [CITATION][CITATION #b145] ."
+    ]
+  },
+  {
+    "title": "Human L1 retrotransposition: cis-preference vs. trans-complementation",
+    "authors": "W Wei",
+    "year": "2001",
+    "citation": "Wei, W. et al. Human L1 retrotransposition: cis-preference vs. trans-complementation. Mol. Cell. Biol. 21, 1429\u00b11439 (2001)",
+    "pages": "1429-1439",
+    "journal": "Mol. Cell. Biol",
+    "volume": "21",
+    "sentences": [
+      "The LINE machinery is believed to be responsible for most reverse transcription in the genome, including the retrotransposition of the non-autonomous SINEs [CITATION #b143] and the creation of processed pseudogenes [CITATION #b144][CITATION] ."
+    ]
+  },
+  {
+    "title": "Poised for contagion: evolutionary origins of the infectious abilities of invertebrate retroviruses",
+    "authors": "H S Malik;S Henikoff;T H Eickbush",
+    "year": "2000",
+    "citation": "Malik, H. S., Henikoff, S. & Eickbush, T. H. Poised for contagion: evolutionary origins of the infectious abilities of invertebrate retroviruses. Genome Res. 10, 1307\u00b11318 (2000).",
+    "pages": "1307-1318",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "Exogenous retroviruses seem to have arisen from endogenous retrotransposons by acquisition of a cellular envelope gene (env) [CITATION] ."
+    ]
+  },
+  {
+    "title": "The origin of interspersed repeats in the human genome",
+    "authors": "A F Smit",
+    "year": "1996",
+    "citation": "Smit, A. F. The origin of interspersed repeats in the human genome. Curr. Opin. Genet. Dev. 6, 743\u00b1 748 (1996).",
+    "pages": "743-748",
+    "journal": "Curr. Opin. Genet. Dev",
+    "volume": "6",
+    "sentences": [
+      "In earlier times, the reigning transposons were LINE2 and MIR [CITATION][CITATION #b157] ."
+    ]
+  },
+  {
+    "title": "The age and evolution of non-LTR retrotransposable elements",
+    "authors": "H S Malik;W D Burke;T H Eickbush",
+    "year": "1999",
+    "citation": "Malik, H. S., Burke, W. D. & Eickbush, T. H. The age and evolution of non-LTR retrotransposable elements. Mol. Biol. Evol. 16, 793\u00b1805 (1999).",
+    "pages": "793-805",
+    "journal": "Mol. Biol. Evol",
+    "volume": "16",
+    "sentences": [
+      "LINEs and SINEs rely almost exclusively on vertical transmission within the host genome [CITATION] (but see refs 148,  155)."
+    ]
+  },
+  {
+    "title": "Generation time and genome evolution in primates",
+    "authors": "V M Sarich;A C Wilson",
+    "year": "1973",
+    "citation": "Sarich, V. M. & Wilson, A. C. Generation time and genome evolution in primates. Science 179, 1144\u00b11147 (1973).",
+    "pages": "1144-1147",
+    "journal": "Science",
+    "volume": "179",
+    "sentences": [
+      "The relative-rate test [CITATION] can be used to calculate the sequence divergence that accumulated in a lineage after a given timepoint, on the basis of comparison with a sibling species that diverged at that time and an outgroup species."
+    ]
+  },
+  {
+    "title": "Ancestral, mammalian-wide subfamilies of LINE-1 repetitive sequences",
+    "authors": "A F Smit;G Toth;A D Riggs;J Jurka",
+    "year": "1995",
+    "citation": "Smit, A. F., Toth, G., Riggs, A. D., & Jurka, J. Ancestral, mammalian-wide subfamilies of LINE-1 repetitive sequences. J. Mol. Biol. 246, 401\u00b1417 (1995).",
+    "pages": "401-417",
+    "journal": "J. Mol. Biol",
+    "volume": "246",
+    "sentences": [
+      "In earlier times, the reigning transposons were LINE2 and MIR [CITATION #b147][CITATION] ."
+    ]
+  },
+  {
+    "title": "Identi\u00aecation of a new, abundant superfamily of mammalian LTR-transposons",
+    "authors": "A F Smit",
+    "year": "1993",
+    "citation": "Smit, A. F. Identi\u00aecation of a new, abundant superfamily of mammalian LTR-transposons. Nucleic Acids Res. 21, 1863\u00b11872 (1993).",
+    "pages": "1863-1872",
+    "journal": "Nucleic Acids Res",
+    "volume": "21",
+    "sentences": [
+      "For example, the most proli\u00aec elements (ERVL and MaLRs) \u00afourished for more than 100 Myr but appear to have died out about 40 Myr ago [CITATION][CITATION #b163] ."
+    ]
+  },
+  {
+    "title": "Isolation of novel human endogenous retrovirus-like elements with foamy virus-related pol sequence",
+    "authors": "A Cordonnier;J F Casella;T Heidmann",
+    "year": "1995",
+    "citation": "Cordonnier, A., Casella, J. F. & Heidmann, T. Isolation of novel human endogenous retrovirus-like elements with foamy virus-related pol sequence. J. Virol. 69, 5890\u00b15897 (1995).",
+    "pages": "5890-5897",
+    "journal": "J. Virol",
+    "volume": "69",
+    "sentences": [
+      "For example, the most proli\u00aec elements (ERVL and MaLRs) \u00afourished for more than 100 Myr but appear to have died out about 40 Myr ago [CITATION #b162][CITATION] ."
+    ]
+  },
+  {
+    "title": "Human-speci\u00aec integrations of the HERV-K endogenous retrovirus family",
+    "authors": "P Medstrand;D L Mager",
+    "year": "1998",
+    "citation": "Medstrand, P. & Mager, D. L. Human-speci\u00aec integrations of the HERV-K endogenous retrovirus family. J. Virol. 72, 9782\u00b19787 (1998).",
+    "pages": "9782-9787",
+    "journal": "J. Virol",
+    "volume": "72",
+    "sentences": [
+      "Only a single LTR retroposon family (HERVK10) is known to have transposed since our divergence from the chimpanzee 7 Myr ago, with only one known copy (in the HLA region) that is not shared between all humans [CITATION] ."
+    ]
+  },
+  {
+    "title": "A whole-genome assembly of Drosophila",
+    "authors": "E W Myers",
+    "year": "2000",
+    "citation": "Myers, E. W. et al. A whole-genome assembly of Drosophila. Science 287, 2196\u00b12204 (2000).",
+    "pages": "2196-2204",
+    "journal": "Science",
+    "volume": "287",
+    "sentences": [
+      "(For the \u00afy, we analysed the 114 Mb of un\u00aenished `large' contigs produced by the whole-genome shotgun assembly [CITATION] , which are reported to represent euchromatic sequence."
+    ]
+  },
+  {
+    "title": "High intrinsic rate of DNA loss in Drosophila",
+    "authors": "D A Petrov;E R Lozovskaya;D L Hartl",
+    "year": "1996",
+    "citation": "Petrov, D. A., Lozovskaya, E. R. & Hartl, D. L. High intrinsic rate of DNA loss in Drosophila. Nature 384, 346\u00b1349 (1996).",
+    "pages": "346-349",
+    "journal": "Nature",
+    "volume": "384",
+    "sentences": [
+      "have suggested that small deletions occur at a rate that is 75-fold higher in \u00afies than in mammals; the half-life of such nonfunctional DNA is estimated at 12 Myr for \u00afies and 800 Myr for mammals [CITATION] ."
+    ]
+  },
+  {
+    "title": "Rates of nucleotide substitution in primates and rodents and the generation-time effect hypothesis",
+    "authors": "W H Li;D L Ellsworth;J Krushkal;B H Chang;D Hewett-Emmett",
+    "year": "1996",
+    "citation": "Li, W. H., Ellsworth, D. L., Krushkal, J., Chang, B. H. & Hewett-Emmett, D. Rates of nucleotide substitution in primates and rodents and the generation-time effect hypothesis. Mol. Phylogenet. Evol. 5, 182\u00b1187 (1996).",
+    "pages": "182-187",
+    "journal": "Mol. Phylogenet. Evol",
+    "volume": "5",
+    "sentences": [
+      "There is considerable evidence that the rate of substitution per Myr is higher in rodent lineages than in the hominid lineages [CITATION #b138][CITATION][CITATION #b168] ."
+    ]
+  },
+  {
+    "title": "Toward a phylogenetic classi\u00aecation of primates based on DNA evidence complemented by fossil evidence",
+    "authors": "M Goodman",
+    "year": "1998",
+    "citation": "Goodman, M. et al. Toward a phylogenetic classi\u00aecation of primates based on DNA evidence complemented by fossil evidence. Mol. Phylogenet. Evol. 9, 585\u00b1598 (1998).",
+    "pages": "585-598",
+    "journal": "Mol. Phylogenet. Evol",
+    "volume": "9",
+    "sentences": [
+      "There is considerable evidence that the rate of substitution per Myr is higher in rodent lineages than in the hominid lineages [CITATION #b138][CITATION #b167][CITATION] .",
+      "We used the best available estimates to calibrate substitution levels and time [CITATION] ."
+    ]
+  },
+  {
+    "title": "The impact of L1 retrotransposons on the human genome",
+    "authors": "H H Kazazian;J V Jr & Moran",
+    "year": "1998",
+    "citation": "Kazazian, H. H. Jr & Moran, J. V. The impact of L1 retrotransposons on the human genome. Nature Genet. 19, 19\u00b124 (1998).",
+    "pages": "19-24",
+    "journal": "Nature Genet",
+    "volume": "19",
+    "sentences": [
+      "These evolutionary \u00aendings are consistent with the empirical observations that new spontaneous mutations are 30 times more likely to be caused by LINE insertions in mouse than in human (,3% versus 0.1%) [CITATION] and 60 times more likely to be caused by transposable elements in general."
+    ]
+  },
+  {
+    "title": "NeSL-1, an ancient lineage of site-speci\u00aec non-LTR retrotransposons from Caenorhabditis elegans",
+    "authors": "H S Malik;T H Eickbush",
+    "year": "2000",
+    "citation": "Malik, H. S. & Eickbush, T. H. NeSL-1, an ancient lineage of site-speci\u00aec non-LTR retrotransposons from Caenorhabditis elegans. Genetics 154, 193\u00b1203 (2000).",
+    "pages": "193-203",
+    "journal": "Genetics",
+    "volume": "154",
+    "sentences": [
+      "Evolutionary forces affected by such factors include inbreeding and genetic drift, which might affect the persistence of active transposable elements [CITATION] ."
+    ]
+  },
+  {
+    "title": "The end of the LINE?: lack of recent L1 activity in a group of South American rodents",
+    "authors": "N C Casavant",
+    "year": "2000",
+    "citation": "Casavant, N. C. et al. The end of the LINE?: lack of recent L1 activity in a group of South American rodents. Genetics 154, 1809\u00b11817 (2000).",
+    "pages": "1809-1817",
+    "journal": "Genetics",
+    "volume": "154",
+    "sentences": [
+      "Studies in additional mammalian lineages may shed light on the forces responsible for the differences in the activity of transposable elements [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human L1 retrotransposon encodes a conserved endonuclease required for retrotransposition",
+    "authors": "Q Feng;J V Moran;H H Kazazian;J D Boeke",
+    "year": "1996",
+    "citation": "Feng, Q., Moran, J. V., Kazazian, H. H. Jr & Boeke, J. D. Human L1 retrotransposon encodes a conserved endonuclease required for retrotransposition. Cell 87, 905\u00b1916 (1996).",
+    "pages": "905-916",
+    "journal": "Cell",
+    "volume": "87",
+    "sentences": [
+      "Mechanistically, selective targeting is nicely explained by the fact that the preferred cleavage site of the LINE endonuclease is TTTT/A (where the slash indicates the point of cleavage), which is used to prime reverse transcription from the poly(A) tail of LINE RNA [CITATION] ."
+    ]
+  },
+  {
+    "title": "High-resolution cartography of recently integrated human chromosome 19-speci\u00aec Alu fossils",
+    "authors": "S S Arcot",
+    "year": "1998",
+    "citation": "Arcot, S. S. et al. High-resolution cartography of recently integrated human chromosome 19-speci\u00aec Alu fossils. J. Mol. Biol. 281, 843\u00b1856 (1998).",
+    "pages": "843-856",
+    "journal": "J. Mol. Biol",
+    "volume": "281",
+    "sentences": [
+      "The alternative is that SINEs initially insert with the same proclivity for AT-rich DNA as LINEs, but that the distribution is subsequently reshaped by evolutionary forces [CITATION #b141][CITATION] ."
+    ]
+  },
+  {
+    "title": "Does SINE evolution preclude Alu function?",
+    "authors": "C W Schmid",
+    "year": "1998",
+    "citation": "Schmid, C. W. Does SINE evolution preclude Alu function? Nucleic Acids Res. 26, 4541\u00b14550 (1998).",
+    "pages": "4541-4550",
+    "journal": "Nucleic Acids Res",
+    "volume": "26",
+    "sentences": [
+      "Schmid [CITATION] has proposed such a function for SINEs."
+    ]
+  },
+  {
+    "title": "Directional mutation pressure and neutral molecular evolution",
+    "authors": "N Sueoka",
+    "year": "1988",
+    "citation": "Sueoka, N. Directional mutation pressure and neutral molecular evolution. Proc. Natl Acad. Sci. USA 85, 2653\u00b12657 (1988).",
+    "pages": "2653-2657",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "85",
+    "sentences": [
+      "Another theory proposes that many substitutions are due to differences in DNA repair mechanisms, possibly related to transcriptional activity and thereby to gene density and GC content [CITATION][CITATION #b188][CITATION #b189] ."
+    ]
+  },
+  {
+    "title": "Mutation rates differ among regions of the mammalian genome",
+    "authors": "K H Wolfe;P M Sharp;W H Li",
+    "year": "1989",
+    "citation": "Wolfe, K. H., Sharp, P. M. & Li, W. H. Mutation rates differ among regions of the mammalian genome. Nature 337, 283\u00b1285 (1989).",
+    "pages": "283-285",
+    "journal": "Nature",
+    "volume": "337",
+    "sentences": [
+      "This bias could be due to a reported tendency for GC-rich regions to replicate earlier in the cell cycle than AT-rich regions and for guanine pools, which are limiting for DNA replication, to become depleted late in the cell cycle, thereby resulting in a small but signi\u00aecant shift in substitution towards a base pairs [CITATION][CITATION #b187] ."
+    ]
+  },
+  {
+    "title": "DNA precursor asymmetries, replication \u00aedelity, and variable genome evolution",
+    "authors": "C K Mathews;J Ji",
+    "year": "1992",
+    "citation": "Mathews, C. K. & Ji, J. DNA precursor asymmetries, replication \u00aedelity, and variable genome evolution. Bioessays 14, 295\u00b1301 (1992).",
+    "pages": "295-301",
+    "journal": "Bioessays",
+    "volume": "14",
+    "sentences": [
+      "This bias could be due to a reported tendency for GC-rich regions to replicate earlier in the cell cycle than AT-rich regions and for guanine pools, which are limiting for DNA replication, to become depleted late in the cell cycle, thereby resulting in a small but signi\u00aecant shift in substitution towards a base pairs [CITATION #b185][CITATION] ."
+    ]
+  },
+  {
+    "title": "Organization of mutations along the genome: a prime determinant of genome evolution",
+    "authors": "G P Holmquist;J Filipski",
+    "year": "1994",
+    "citation": "Holmquist, G. P. & Filipski, J. Organization of mutations along the genome: a prime determinant of genome evolution. Trends Ecol. Evol. 9, 65\u00b168 (1994).",
+    "pages": "65-68",
+    "journal": "Trends Ecol. Evol",
+    "volume": "9",
+    "sentences": [
+      "Another theory proposes that many substitutions are due to differences in DNA repair mechanisms, possibly related to transcriptional activity and thereby to gene density and GC content [CITATION #b184][CITATION][CITATION #b189] ."
+    ]
+  },
+  {
+    "title": "Evidence of selection on silent site base composition in mammals: potential implications for the evolution of isochores and junk DNA",
+    "authors": "A Eyre-Walker",
+    "year": "1999",
+    "citation": "Eyre-Walker, A. Evidence of selection on silent site base composition in mammals: potential implications for the evolution of isochores and junk DNA. Genetics 152, 675\u00b1683 (1999).",
+    "pages": "675-683",
+    "journal": "Genetics",
+    "volume": "152",
+    "sentences": [
+      "Another theory proposes that many substitutions are due to differences in DNA repair mechanisms, possibly related to transcriptional activity and thereby to gene density and GC content [CITATION #b184][CITATION #b188][CITATION] .",
+      "Recent observations on SNPs [CITATION] con\u00aerm that the mutation pattern in GC-rich DNA is biased towards a base pairs; it should be possible to perform similar analyses throughout the genome with the availability of 1.4 million SNPs [CITATION #b96][CITATION #b190] ."
+    ]
+  },
+  {
+    "title": "Unexpectedly similar rates of nucleotide substitution found in male and female hominids",
+    "authors": "H B Bohossian;H Skaletsky;D C Page",
+    "year": "2000",
+    "citation": "Bohossian, H. B., Skaletsky, H. & Page, D. C. Unexpectedly similar rates of nucleotide substitution found in male and female hominids. Nature 406, 622\u00b1625 (2000).",
+    "pages": "622-625",
+    "journal": "Nature",
+    "volume": "406",
+    "sentences": [
+      "However, Page and colleagues [CITATION] have challenged these estimates as too high."
+    ]
+  },
+  {
+    "title": "Unit-length LINE-1 transcripts in human teratocarcinoma cells",
+    "authors": "J Skowronski;T G Fanning;M F Singer",
+    "year": "1988",
+    "citation": "Skowronski, J., Fanning, T. G. & Singer, M. F. Unit-length LINE-1 transcripts in human teratocarcinoma cells. Mol. Cell. Biol. 8, 1385\u00b11397 (1988).",
+    "pages": "1385-1397",
+    "journal": "Mol. Cell. Biol",
+    "volume": "8",
+    "sentences": [
+      "Within the L1Hs family, there are two subsets referred to as Ta and pre-Ta, de\u00aened by a diagnostic trinucleotide [CITATION][CITATION #b193] ."
+    ]
+  },
+  {
+    "title": "L1 (LINE-1) retrotransposon evolution and ampli\u00aecation in recent human history",
+    "authors": "S Boissinot;P Chevret;A V Furano",
+    "year": "2000",
+    "citation": "Boissinot, S., Chevret, P. & Furano, A. V. L1 (LINE-1) retrotransposon evolution and ampli\u00aecation in recent human history. Mol. Biol. Evol. 17, 915\u00b1928 (2000).",
+    "pages": "915-928",
+    "journal": "Mol. Biol. Evol",
+    "volume": "17",
+    "sentences": [
+      "Within the L1Hs family, there are two subsets referred to as Ta and pre-Ta, de\u00aened by a diagnostic trinucleotide [CITATION #b192][CITATION] .",
+      "These subsets are also of great interest for population genetics because at least 50% are still segregating as polymorphisms in the human population [CITATION][CITATION #b196] ; they provide powerful markers for tracing population history because they represent unique (non-recurrent and non-revertible) genetic events that can be used (along with similarly polymorphic Alus) for reconstructing human migrations."
+    ]
+  },
+  {
+    "title": "Human L1 retrotransposition: insights and peculiarities learned from a cultured cell retrotransposition assay",
+    "authors": "J V Moran",
+    "year": "1999",
+    "citation": "Moran, J. V. Human L1 retrotransposition: insights and peculiarities learned from a cultured cell retrotransposition assay. Genetica 107, 39\u00b151 (1999).",
+    "pages": "39-51",
+    "journal": "Genetica",
+    "volume": "107",
+    "sentences": [
+      "All active L1 elements are thought to belong to these two subsets, because they account for all 14 known cases of human disease arising from new L1 transposition (with 13 belonging to the Ta subset and one to the pre-Ta subset) [CITATION][CITATION #b195] .",
+      "Although this possibility had been suggested on the basis of cell culture models [CITATION][CITATION #b202] , these are the \u00aerst documented examples."
+    ]
+  },
+  {
+    "title": "Haemophilia A resulting from de novo insertion of L1 sequences represents a novel mechanism for mutation in man",
+    "authors": "H H Kazazian Jr",
+    "year": "1988",
+    "citation": "Kazazian, H. H. Jr et al. Haemophilia A resulting from de novo insertion of L1 sequences represents a novel mechanism for mutation in man. Nature 332, 164\u00b1166 (1988).",
+    "pages": "164-166",
+    "journal": "Nature",
+    "volume": "332",
+    "sentences": [
+      "All active L1 elements are thought to belong to these two subsets, because they account for all 14 known cases of human disease arising from new L1 transposition (with 13 belonging to the Ta subset and one to the pre-Ta subset) [CITATION #b194][CITATION] ."
+    ]
+  },
+  {
+    "title": "Reading between the LINEs: Human genomic variation introduced by LINE-1 retrotransposition",
+    "authors": "F Sheen",
+    "year": "2000",
+    "citation": "Sheen, F.-m. et al. Reading between the LINEs: Human genomic variation introduced by LINE-1 retrotransposition. Genome Res. 10, 1496\u00b11508 (2000).",
+    "pages": "1496-1508",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "These subsets are also of great interest for population genetics because at least 50% are still segregating as polymorphisms in the human population [CITATION #b193][CITATION] ; they provide powerful markers for tracing population history because they represent unique (non-recurrent and non-revertible) genetic events that can be used (along with similarly polymorphic Alus) for reconstructing human migrations."
+    ]
+  },
+  {
+    "title": "Many human L1 elements are capable of retrotransposition",
+    "authors": "D M Sassaman",
+    "year": "1997",
+    "citation": "Sassaman, D. M. et al. Many human L1 elements are capable of retrotransposition. Nature Genet. 16, 37\u00b143 (1997).",
+    "pages": "37-43",
+    "journal": "Nature Genet",
+    "volume": "16",
+    "sentences": [
+      "A cultured cell retrotransposition assay has revealed that eight of these elements remain retrotransposition-competent [CITATION][CITATION #b201][CITATION #b202] ."
+    ]
+  },
+  {
+    "title": "Full-length human L1 insertions retain the capacity for high frequency retrotransposition in cultured cells",
+    "authors": "M L Kimberland",
+    "year": "1999",
+    "citation": "Kimberland, M. L. et al. Full-length human L1 insertions retain the capacity for high frequency retrotransposition in cultured cells. Hum. Mol. Genet. 8, 1557\u00b11560 (1999).",
+    "pages": "1557-1560",
+    "journal": "Hum. Mol. Genet",
+    "volume": "8",
+    "sentences": [
+      "A cultured cell retrotransposition assay has revealed that eight of these elements remain retrotransposition-competent [CITATION #b199][CITATION][CITATION #b202] ."
+    ]
+  },
+  {
+    "title": "High frequency retrotransposition in cultured mammalian cells",
+    "authors": "J V Moran",
+    "year": "1996",
+    "citation": "Moran, J. V. et al. High frequency retrotransposition in cultured mammalian cells. Cell 87, 917\u00b1927 (1996).",
+    "pages": "917-927",
+    "journal": "Cell",
+    "volume": "87",
+    "sentences": [
+      "A cultured cell retrotransposition assay has revealed that eight of these elements remain retrotransposition-competent [CITATION #b199][CITATION #b201][CITATION] .",
+      "Although this possibility had been suggested on the basis of cell culture models [CITATION #b194][CITATION] , these are the \u00aerst documented examples."
+    ]
+  },
+  {
+    "title": "Jr Exon shuf\u00afing by L1 retrotransposition",
+    "authors": "J V Moran;R J Deberardinis;H H Kazazian",
+    "year": "1999",
+    "citation": "Moran, J. V., DeBerardinis, R. J. & Kazazian, H. H. Jr Exon shuf\u00afing by L1 retrotransposition. Science 283, 1530\u00b11534 (1999).",
+    "pages": "1530-1534",
+    "journal": "Science",
+    "volume": "283",
+    "sentences": [
+      "This process, termed L1-mediated transduction, provides a means for the mobilization of DNA sequences around the genome and may be a mechanism for `exon shuf\u00afing' [CITATION] ."
+    ]
+  },
+  {
+    "title": "Frequent human genomic DNA transduction driven by LINE-1 retrotransposition",
+    "authors": "O K Pickeral;W Makalowski;M S Boguski;J D Boeke",
+    "year": "2000",
+    "citation": "Pickeral, O. K., Makalowski, W., Boguski, M. S. & Boeke, J. D. Frequent human genomic DNA transduction driven by LINE-1 retrotransposition. Genome Res. 10, 411\u00b1415 (2000).",
+    "pages": "411-415",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "The length of the transduced sequence was 30\u00b1970 bp, supporting the suggestion that 0.5\u00b1 1.0% of the human genome may have arisen by LINE-based transduction of 39 \u00afanking sequences [CITATION][CITATION #b205] ."
+    ]
+  },
+  {
+    "title": "Disruption of the APC gene by a retrotransposal insertion of L1 sequence in a colon cancer",
+    "authors": "Y Miki",
+    "year": "1992",
+    "citation": "Miki, Y. et al. Disruption of the APC gene by a retrotransposal insertion of L1 sequence in a colon cancer. Cancer Res. 52, 643\u00b1645 (1992).",
+    "pages": "643-645",
+    "journal": "Cancer Res",
+    "volume": "52",
+    "sentences": [
+      "The length of the transduced sequence was 30\u00b1970 bp, supporting the suggestion that 0.5\u00b1 1.0% of the human genome may have arisen by LINE-based transduction of 39 \u00afanking sequences [CITATION #b204][CITATION] .",
+      "L1 transcription is generally con\u00aened to the germline [CITATION #b206][CITATION #b207] , but transcription from other promoters could explain a somatic L1 retrotransposition event that resulted in colon cancer [CITATION] ."
+    ]
+  },
+  {
+    "title": "Developmental and cell type speci\u00aecity of LINE-1 expression in mouse testis: implications for transposition",
+    "authors": "D Branciforte;S L Martin",
+    "year": "1994",
+    "citation": "Branciforte, D. & Martin, S. L. Developmental and cell type speci\u00aecity of LINE-1 expression in mouse testis: implications for transposition. Mol. Cell. Biol. 14, 2584\u00b12592 (1994).",
+    "pages": "2584-2592",
+    "journal": "Mol. Cell. Biol",
+    "volume": "14",
+    "sentences": [
+      "L1 transcription is generally con\u00aened to the germline [CITATION][CITATION #b207] , but transcription from other promoters could explain a somatic L1 retrotransposition event that resulted in colon cancer [CITATION #b205] ."
+    ]
+  },
+  {
+    "title": "Tightly regulated, developmentally speci\u00aec expression of the \u00aerst open reading frame from LINE-1 during mouse embryogenesis",
+    "authors": "S A Trelogan;S L Martin",
+    "year": "1995",
+    "citation": "Trelogan, S. A. & Martin, S. L. Tightly regulated, developmentally speci\u00aec expression of the \u00aerst open reading frame from LINE-1 during mouse embryogenesis. Proc. Natl Acad. Sci. USA 92, 1520\u00b1 1524 (1995).",
+    "pages": "1520-1524",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "92",
+    "sentences": [
+      "L1 transcription is generally con\u00aened to the germline [CITATION #b206][CITATION] , but transcription from other promoters could explain a somatic L1 retrotransposition event that resulted in colon cancer [CITATION #b205] ."
+    ]
+  },
+  {
+    "title": "Sectorial mutagenesis by transposable elements",
+    "authors": "J Jurka;V V Kapitonov",
+    "year": "1999",
+    "citation": "Jurka, J. & Kapitonov, V. V. Sectorial mutagenesis by transposable elements. Genetica 107, 239\u00b1248 (1999).",
+    "pages": "239-248",
+    "journal": "Genetica",
+    "volume": "107",
+    "sentences": [
+      "from transposons [CITATION #b141][CITATION] ."
+    ]
+  },
+  {
+    "title": "Precise excision of TTAA-speci\u00aec lepidopteran transposons piggyBac (IFP2) and tagalong (TFP3) from the baculovirus genome in cell lines from two species of Lepidoptera",
+    "authors": "M J Fraser;T Ciszczon;T Elick;C Bauser",
+    "year": "1996",
+    "citation": "Fraser, M. J., Ciszczon, T., Elick, T. & Bauser, C. Precise excision of TTAA-speci\u00aec lepidopteran transposons piggyBac (IFP2) and tagalong (TFP3) from the baculovirus genome in cell lines from two species of Lepidoptera. Insect Mol. Biol. 5, 141\u00b1151 (1996).",
+    "pages": "141-151",
+    "journal": "Insect Mol. Biol",
+    "volume": "5",
+    "sentences": [
+      "The ORF encodes a novel protein (partially published as pID 6453533) whose closest homologue is the transposase of the piggyBac DNA transposon, which is found in insects and has the same characteristic TTAA target-site duplications [CITATION] as MER85."
+    ]
+  },
+  {
+    "title": "Genomes were forged by massive bombardments with retroelements and retrosequences",
+    "authors": "J Brosius",
+    "year": "1999",
+    "citation": "Brosius, J. Genomes were forged by massive bombardments with retroelements and retrosequences. Genetica 107, 209\u00b1238 (1999).",
+    "pages": "209-238",
+    "journal": "Genetica",
+    "volume": "107",
+    "sentences": [
+      "There are at least eight human and eight mouse genes for which evidence strongly supports such an origin [CITATION] (see http://www-i\u00ae.uni-muenster.de/exapted-retrogenes/ tables.html).",
+      "Other genes employ regulatory elements derived from repeat elements [CITATION] ."
+    ]
+  },
+  {
+    "title": "Equilibrium distribution of microsatellite repeat length resulting from a balance between slippage events and point mutations",
+    "authors": "S Kruglyak;R T Durrett;M D Schug;C F Aquadro",
+    "year": "1998",
+    "citation": "Kruglyak, S., Durrett, R. T., Schug, M. D. & Aquadro, C. F. Equilibrium distribution of microsatellite repeat length resulting from a balance between slippage events and point mutations. Proc. Natl Acad. Sci. USA 95, 10774\u00b110778 (1998).",
+    "pages": "10774-10778",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "95",
+    "sentences": [
+      "With the exception of poly(A) tails from reverse transcribed messages, SSRs are thought to arise by slippage during DNA replication [CITATION][CITATION #b212] ."
+    ]
+  },
+  {
+    "title": "Microsatellites in different eukaryotic genomes: survey and analysis",
+    "authors": "G Toth;Z Gaspari;J Jurka",
+    "year": "2000",
+    "citation": "Toth, G., Gaspari, Z. & Jurka, J. Microsatellites in different eukaryotic genomes: survey and analysis. Genome Res. 10, 967\u00b1981 (2000).",
+    "pages": "967-981",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "With the exception of poly(A) tails from reverse transcribed messages, SSRs are thought to arise by slippage during DNA replication [CITATION #b211][CITATION] ."
+    ]
+  },
+  {
+    "title": "Heterogeneous mutation processes in human microsatellite DNA sequences",
+    "authors": "H Ellegren",
+    "year": "2000",
+    "citation": "Ellegren, H. Heterogeneous mutation processes in human microsatellite DNA sequences. Nature Genet. 24, 400\u00b1402 (2000).",
+    "pages": "400-402",
+    "journal": "Nature Genet",
+    "volume": "24",
+    "sentences": [
+      "Overall, trinucleotide SSRs are much less frequent than dinucleotide SSRs [CITATION] ."
+    ]
+  },
+  {
+    "title": "Structure of chromosomal duplicons and their role in mediating human genomic disorders",
+    "authors": "Y Ji;E E Eichler;S Schwartz;R D Nicholls",
+    "year": "2000",
+    "citation": "Ji, Y., Eichler, E. E., Schwartz, S. & Nicholls, R. D. Structure of chromosomal duplicons and their role in mediating human genomic disorders. Genome Res. 10, 597\u00b1610 (2000).",
+    "pages": "597-610",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "This category includes several duplicated segments, also known as low copy repeat sequences, that mediate recurrent chromosomal structural rearrangements associated with genetic disease [CITATION][CITATION #b216] .",
+      "Several papers have analysed \u00aenished segments within pericentromeric regions of chromosomes 2 (160 kb), 10 (400 kb) and 16 (300 kb), all of which show extensive interchromosomal segmental duplication [CITATION][CITATION #b218][CITATION #b231][CITATION #b232] ."
+    ]
+  },
+  {
+    "title": "Pathological consequences of sequence duplications in the human genome",
+    "authors": "R D Mazzarella;D Schlessinger",
+    "year": "1998",
+    "citation": "Mazzarella, R. & D. Schlessinger, D. Pathological consequences of sequence duplications in the human genome. Genome Res. 8, 1007\u00b11021 (1998).",
+    "pages": "1007-1021",
+    "journal": "Genome Res",
+    "volume": "8",
+    "sentences": [
+      "This category includes several duplicated segments, also known as low copy repeat sequences, that mediate recurrent chromosomal structural rearrangements associated with genetic disease [CITATION #b214][CITATION] ."
+    ]
+  },
+  {
+    "title": "The mosaic structure of human pericentromeric DNA: a strategy for characterizing complex regions of the human genome",
+    "authors": "J E Horvath;S Schwartz;E E Eichler",
+    "year": "2000",
+    "citation": "Horvath, J. E., Schwartz, S. & Eichler, E. E. The mosaic structure of human pericentromeric DNA: a strategy for characterizing complex regions of the human genome. Genome Res. 10, 839\u00b1852 (2000).",
+    "pages": "839-852",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "Several papers have analysed \u00aenished segments within pericentromeric regions of chromosomes 2 (160 kb), 10 (400 kb) and 16 (300 kb), all of which show extensive interchromosomal segmental duplication [CITATION #b214][CITATION][CITATION #b231][CITATION #b232] ."
+    ]
+  },
+  {
+    "title": "Members of the olfactory receptor gene family are contained in large blocks of DNA duplicated polymorphically near the ends of human chromosomes",
+    "authors": "B J Trask",
+    "year": "1998",
+    "citation": "Trask, B. J. et al. Members of the olfactory receptor gene family are contained in large blocks of DNA duplicated polymorphically near the ends of human chromosomes. Hum. Mol. Genet. 7, 13\u00b126 (1998).",
+    "pages": "13-26",
+    "journal": "Hum. Mol. Genet",
+    "volume": "7",
+    "sentences": [
+      "There is evidence of structural polymorphism in the human population, such as the presence or absence of olfactory receptor segments located within the telomeric regions of several human chromosomes [CITATION][CITATION #b226] ."
+    ]
+  },
+  {
+    "title": "Large multi-chromosomal duplications encompass many members of the olfactory receptor gene family in the human genome",
+    "authors": "B J Trask",
+    "year": "1998",
+    "citation": "Trask, B. J. et al. Large multi-chromosomal duplications encompass many members of the olfactory receptor gene family in the human genome. Hum. Mol. Genet. 7, 2007\u00b12020 (1998).",
+    "pages": "2007-2020",
+    "journal": "Hum. Mol. Genet",
+    "volume": "7",
+    "sentences": [
+      "There is evidence of structural polymorphism in the human population, such as the presence or absence of olfactory receptor segments located within the telomeric regions of several human chromosomes [CITATION #b225][CITATION] ."
+    ]
+  },
+  {
+    "title": "Molecular structure and evolution of an alpha satellite/non-alpha satellite junction at 16p11",
+    "authors": "J E Horvath",
+    "year": "2000",
+    "citation": "Horvath, J. E. et al. Molecular structure and evolution of an alpha satellite/non-alpha satellite junction at 16p11. Hum. Mol. Genet. 9, 113\u00b1123 (2000).",
+    "pages": "113-123",
+    "journal": "Hum. Mol. Genet",
+    "volume": "9",
+    "sentences": [
+      "Several papers have analysed \u00aenished segments within pericentromeric regions of chromosomes 2 (160 kb), 10 (400 kb) and 16 (300 kb), all of which show extensive interchromosomal segmental duplication [CITATION #b214][CITATION #b218][CITATION][CITATION #b232] ."
+    ]
+  },
+  {
+    "title": "Genomic sequence and transcriptional pro\u00aele of the boundary between pericentromeric satellites and genes on human chromosome arm 10q",
+    "authors": "J Guy",
+    "year": "2000",
+    "citation": "Guy, J. et al. Genomic sequence and transcriptional pro\u00aele of the boundary between pericentromeric satellites and genes on human chromosome arm 10q. Hum. Mol. Genet. 9, 2029\u00b12042 (2000).",
+    "pages": "2029-2042",
+    "journal": "Hum. Mol. Genet",
+    "volume": "9",
+    "sentences": [
+      "Distinct insertions are typically separated by AT-rich or GC-rich minisatellite-like repeats that have been hypothesized to have a functional role in targeting duplications to these regions [CITATION][CITATION #b240] .",
+      "Several papers have analysed \u00aenished segments within pericentromeric regions of chromosomes 2 (160 kb), 10 (400 kb) and 16 (300 kb), all of which show extensive interchromosomal segmental duplication [CITATION #b214][CITATION #b218][CITATION #b231][CITATION] ."
+    ]
+  },
+  {
+    "title": "The human COX10 gene is disrupted during homologous recombination between the 24 kb proximal and distal CMT1A-REPs",
+    "authors": "L T Reiter;T Murakami;T Koeuth;R A Gibbs;J R Lupski",
+    "year": "1997",
+    "citation": "Reiter, L. T., Murakami, T., Koeuth, T., Gibbs, R. A. & Lupski, J. R. The human COX10 gene is disrupted during homologous recombination between the 24 kb proximal and distal CMT1A-REPs. Hum. Mol. Genet. 6, 1595\u00b11603 (1997).",
+    "pages": "1595-1603",
+    "journal": "Hum. Mol. Genet",
+    "volume": "6",
+    "sentences": [
+      "The copies are so similar (99% identity) that paralogous recombination events can occur, giving rise to contiguous gene syndromes: Smith\u00b1Magenis syndrome and Charcot\u00b1 Marie\u00b1Tooth syndrome 1A, respectively [CITATION #b33][CITATION] ."
+    ]
+  },
+  {
+    "title": "CAGGG repeats and the pericentromeric duplication of the hominoid genome",
+    "authors": "E E Eichler;N Archidiacono;M Rocchi",
+    "year": "1999",
+    "citation": "Eichler, E. E., Archidiacono, N. & Rocchi, M. CAGGG repeats and the pericentromeric duplication of the hominoid genome. Genome Res. 9, 1048\u00b11058 (1999).",
+    "pages": "1048-1058",
+    "journal": "Genome Res",
+    "volume": "9",
+    "sentences": [
+      "Distinct insertions are typically separated by AT-rich or GC-rich minisatellite-like repeats that have been hypothesized to have a functional role in targeting duplications to these regions [CITATION #b232][CITATION] ."
+    ]
+  },
+  {
+    "title": "Comparative Genomics: Empirical and Analytical Approaches to Gene Order Dynamics, Map Alignment and the Evolution of Gene Families",
+    "authors": "C O'keefe;E Eichler",
+    "year": "2000",
+    "citation": "O'Keefe, C. & Eichler, E. in Comparative Genomics: Empirical and Analytical Approaches to Gene Order Dynamics, Map Alignment and the Evolution of Gene Families (eds Sankoff, D. & Nadeau, J.) 29\u00b146 (Kluwer Academic, Dordrecht, 2000).",
+    "pages": "",
+    "journal": "J.) 29\u00b146 (Kluwer Academic",
+    "volume": "",
+    "sentences": [
+      "Phylogenetic analysis has suggested a two-step mechanism for the origin and dispersal of these segments, whereby an initial segmental duplication in the pericentromeric region of one chromosome occurs and is then redistributed as part of a larger cassette to other such regions [CITATION] ."
+    ]
+  },
+  {
+    "title": "The new genomics: Global views of biology",
+    "authors": "E S Lander",
+    "year": "1996",
+    "citation": "Lander, E. S. The new genomics: Global views of biology. Science 274, 536\u00b1539 (1996).",
+    "pages": "536-539",
+    "journal": "Science",
+    "volume": "274",
+    "sentences": [
+      "The ultimate goal is to compile a complete list of all human genes and their encoded proteins, to serve as a `periodic table' for biomedical research [CITATION] ."
+    ]
+  },
+  {
+    "title": "Noncoding RNA genes",
+    "authors": "S R Eddy",
+    "year": "1999",
+    "citation": "Eddy, S. R. Noncoding RNA genes. Curr. Op. Genet. Dev. 9, 695\u00b1699 (1999).",
+    "pages": "695-699",
+    "journal": "Curr. Op. Genet. Dev",
+    "volume": "9",
+    "sentences": [
+      "Although biologists often speak of a tight coupling between `genes   and their encoded protein products', it is important to remember that thousands of human genes produce noncoding RNAs (ncRNAs) as their ultimate product [CITATION] ."
+    ]
+  },
+  {
+    "title": "The complete atomic structure of the large ribosomal subunit at 2.4 angstrom resolution",
+    "authors": "N Ban;P Nissen;J Hansen;P B Moore;T A Steitz",
+    "year": "2000",
+    "citation": "Ban, N., Nissen, P., Hansen, J., Moore, P. B. & Steitz, T. A. The complete atomic structure of the large ribosomal subunit at 2.4 angstrom resolution. Science 289, 905\u00b1920 (2000).",
+    "pages": "905-920",
+    "journal": "Science",
+    "volume": "289",
+    "sentences": [
+      "(1) Transfer RNAs (tRNAs) are the adapters that translate the triplet nucleic acid code of RNA into the amino-acid sequence of proteins; (2) ribosomal RNAs (rRNAs) are also central to the translational machinery, and recent X-ray crystallography results strongly indicate that peptide bond formation is catalysed by rRNA, not protein [CITATION][CITATION #b245] ; (3) small nucleolar RNAs (snoRNAs) are required for rRNA processing and base modi\u00aecation in the nucleolus [CITATION #b246][CITATION #b247] ; and (4) small nuclear RNAs (snRNAs) are critical components of spliceosomes, the large ribonucleoprotein (RNP) complexes that splice introns out of pre-mRNAs in the nucleus."
+    ]
+  },
+  {
+    "title": "The structural basis of ribosome activity in peptide bond synthesis",
+    "authors": "P Nissen;J Hansen;N Ban;P B Moore;T A Steitz",
+    "year": "2000",
+    "citation": "Nissen, P., Hansen, J., Ban, N., Moore, P. B. & Steitz, T. A. The structural basis of ribosome activity in peptide bond synthesis. Science 289, 920\u00b1930 (2000).",
+    "pages": "920-930",
+    "journal": "Science",
+    "volume": "289",
+    "sentences": [
+      "(1) Transfer RNAs (tRNAs) are the adapters that translate the triplet nucleic acid code of RNA into the amino-acid sequence of proteins; (2) ribosomal RNAs (rRNAs) are also central to the translational machinery, and recent X-ray crystallography results strongly indicate that peptide bond formation is catalysed by rRNA, not protein [CITATION #b244][CITATION] ; (3) small nucleolar RNAs (snoRNAs) are required for rRNA processing and base modi\u00aecation in the nucleolus [CITATION #b246][CITATION #b247] ; and (4) small nuclear RNAs (snRNAs) are critical components of spliceosomes, the large ribonucleoprotein (RNP) complexes that splice introns out of pre-mRNAs in the nucleus."
+    ]
+  },
+  {
+    "title": "Guided tours: from precursor snoRNA to functional snoRNP",
+    "authors": "L B Weinstein;J A Steitz",
+    "year": "1999",
+    "citation": "Weinstein, L. B. & Steitz, J. A. Guided tours: from precursor snoRNA to functional snoRNP. Curr. Opin. Cell Biol. 11, 378\u00b1384 (1999).",
+    "pages": "378-384",
+    "journal": "Curr. Opin. Cell Biol",
+    "volume": "11",
+    "sentences": [
+      "(1) Transfer RNAs (tRNAs) are the adapters that translate the triplet nucleic acid code of RNA into the amino-acid sequence of proteins; (2) ribosomal RNAs (rRNAs) are also central to the translational machinery, and recent X-ray crystallography results strongly indicate that peptide bond formation is catalysed by rRNA, not protein [CITATION #b244][CITATION #b245] ; (3) small nucleolar RNAs (snoRNAs) are required for rRNA processing and base modi\u00aecation in the nucleolus [CITATION][CITATION #b247] ; and (4) small nuclear RNAs (snRNAs) are critical components of spliceosomes, the large ribonucleoprotein (RNP) complexes that splice introns out of pre-mRNAs in the nucleus.",
+      "These come in two families: C/D box snoRNAs (mostly involved in guiding site-speci\u00aec 29-O-ribose methylations of other RNAs) and H/ACA snoRNAs (mostly involved in guiding site-speci\u00aec pseudouridylations) [CITATION][CITATION #b247] ."
+    ]
+  },
+  {
+    "title": "Modi\u00aecation and Editing of RNA",
+    "authors": "J.-P Bachellerie;J Cavaille",
+    "year": "1998",
+    "citation": "Bachellerie, J.-P. & Cavaille, J. in Modi\u00aecation and Editing of RNA (ed. Benne, H. G. a. R.) 255\u00b1272 (ASM, Washington DC, 1998).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "(1) Transfer RNAs (tRNAs) are the adapters that translate the triplet nucleic acid code of RNA into the amino-acid sequence of proteins; (2) ribosomal RNAs (rRNAs) are also central to the translational machinery, and recent X-ray crystallography results strongly indicate that peptide bond formation is catalysed by rRNA, not protein [CITATION #b244][CITATION #b245] ; (3) small nucleolar RNAs (snoRNAs) are required for rRNA processing and base modi\u00aecation in the nucleolus [CITATION #b246][CITATION] ; and (4) small nuclear RNAs (snRNAs) are critical components of spliceosomes, the large ribonucleoprotein (RNP) complexes that splice introns out of pre-mRNAs in the nucleus.",
+      "These come in two families: C/D box snoRNAs (mostly involved in guiding site-speci\u00aec 29-O-ribose methylations of other RNAs) and H/ACA snoRNAs (mostly involved in guiding site-speci\u00aec pseudouridylations) [CITATION #b246][CITATION] ."
+    ]
+  },
+  {
+    "title": "Classi\u00aecation of introns: U2-type or U12-type",
+    "authors": "C Burge;P A Sharp",
+    "year": "1997",
+    "citation": "Burge, C. & Sharp, P. A. Classi\u00aecation of introns: U2-type or U12-type. Cell 91, 875\u00b1879 (1997).",
+    "pages": "875-879",
+    "journal": "Cell",
+    "volume": "91",
+    "sentences": [
+      "Humans have both a major, U2 snRNA-dependent spliceosome that splices most introns, and a minor, U12 snRNA-dependent spliceosome that splices a rare class of introns that often have AT/AC dinucleotides at the splice sites instead of the canonical GT/AG splice site consensus [CITATION] ."
+    ]
+  },
+  {
+    "title": "The Human Xist gene\u00d0analysis of a 17 kb inactive X-speci\u00aec RNA that contains conserved repeats and is highly localized within the nucleus",
+    "authors": "C J Brown",
+    "year": "1992",
+    "citation": "Brown, C. J. et al. The Human Xist gene\u00d0analysis of a 17 kb inactive X-speci\u00aec RNA that contains conserved repeats and is highly localized within the nucleus. Cell 71, 527\u00b1542 (1992).",
+    "pages": "527-542",
+    "journal": "Cell",
+    "volume": "71",
+    "sentences": [
+      "Other ncRNAs include both RNAs of known biochemical function (such as telomerase RNA and the 7SL signal recognition particle RNA) and ncRNAs of enigmatic function (such as the large Xist transcript implicated in X dosage compensation [CITATION] , or the small vault RNAs found in the bizarre vault ribonucleoprotein complex [CITATION #b250] , which is three times the mass of the ribosome but has unknown function)."
+    ]
+  },
+  {
+    "title": "Vaults are the answer, what is the question?",
+    "authors": "V A Kickhoefer;S K Vasu;L H Rome",
+    "year": "1996",
+    "citation": "Kickhoefer, V. A., Vasu, S. K. & Rome, L. H. Vaults are the answer, what is the question? Trends Cell Biol. 6, 174\u00b1178 (1996).",
+    "pages": "174-178",
+    "journal": "Trends Cell Biol",
+    "volume": "6",
+    "sentences": [
+      "Other ncRNAs include both RNAs of known biochemical function (such as telomerase RNA and the 7SL signal recognition particle RNA) and ncRNAs of enigmatic function (such as the large Xist transcript implicated in X dosage compensation [CITATION #b249] , or the small vault RNAs found in the bizarre vault ribonucleoprotein complex [CITATION] , which is three times the mass of the ribosome but has unknown function)."
+    ]
+  },
+  {
+    "title": "Compilation of tRNA sequences and sequences of tRNA genes",
+    "authors": "M Sprinzl;C Horn;M Brown;A Ioudovitch;S Steinberg",
+    "year": "1998",
+    "citation": "Sprinzl, M., Horn, C., Brown, M., Ioudovitch, A. & Steinberg, S. Compilation of tRNA sequences and sequences of tRNA genes. Nucleic Acids Res. 26, 148\u00b1153 (1998).",
+    "pages": "148-153",
+    "journal": "Nucleic Acids Res",
+    "volume": "26",
+    "sentences": [
+      "The draft genome sequence contains 37 of 38 human tRNA species listed in a tRNA database [CITATION] , allowing for up to one mismatch."
+    ]
+  },
+  {
+    "title": "Repeated genes in eukaryotes",
+    "authors": "E O Long;I B Dawid",
+    "year": "1980",
+    "citation": "Long, E. O. & Dawid, I. B. Repeated genes in eukaryotes. Annu. Rev. Biochem. 49, 727\u00b1764 (1980).",
+    "pages": "727-764",
+    "journal": "Annu. Rev. Biochem",
+    "volume": "49",
+    "sentences": [
+      "For example, the frog Xenopus laevis, which must load each oocyte with a remarkable 40 ng of tRNA, has thousands of tRNA genes [CITATION] ."
+    ]
+  },
+  {
+    "title": "The Molecular Biology of the Yeast Saccharomyces",
+    "authors": "C Guthrie;J Abelson",
+    "year": "1982",
+    "citation": "Guthrie, C. & Abelson, J. in The Molecular Biology of the Yeast Saccharomyces: Metabolism and Gene Expression (eds Strathern, J. & Broach J.) 487\u00b1528 (Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York, 1982).",
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "In eukaryotes, the rules proposed by Guthrie and Abelson [CITATION] predict that about 46 tRNA species will be suf\u00aecient to read the 61 sense codons (counting the initiator and elongator methionine tRNAs as two species)."
+    ]
+  },
+  {
+    "title": "Codon usage and tRNA content in unicellular and multicellular organisms",
+    "authors": "T Ikemura",
+    "year": "1985",
+    "citation": "Ikemura, T. Codon usage and tRNA content in unicellular and multicellular organisms. Mol. Biol. Evol. 2, 13\u00b134 (1985).",
+    "pages": "13-34",
+    "journal": "Mol. Biol. Evol",
+    "volume": "2",
+    "sentences": [
+      "As in all other organisms, human protein-coding genes show codon bias\u00d0preferential use of one synonymous codon over another [CITATION] (Fig."
+    ]
+  },
+  {
+    "title": "Coevolution of codon usage and transfer-RNA abundance",
+    "authors": "M Bulmer",
+    "year": "1987",
+    "citation": "Bulmer, M. Coevolution of codon usage and transfer-RNA abundance. Nature 325, 728\u00b1730 (1987).",
+    "pages": "728-730",
+    "journal": "Nature",
+    "volume": "325",
+    "sentences": [
+      "This is presumably driven by selective pressure for ef\u00aecient or accurate translation [CITATION] ."
+    ]
+  },
+  {
+    "title": "tRNA gene number and codon usage in the C. elegans genome are co-adapted for optimal translation of highly expressed genes",
+    "authors": "L Duret",
+    "year": "2000",
+    "citation": "Duret, L. tRNA gene number and codon usage in the C. elegans genome are co-adapted for optimal translation of highly expressed genes. Trends Genet. 16, 287\u00b1289 (2000).",
+    "pages": "287-289",
+    "journal": "Trends Genet",
+    "volume": "16",
+    "sentences": [
+      "In many organisms, tRNA abundance in turn appears to be roughly correlated with tRNA gene copy number, so tRNA gene copy number has been used as a proxy for tRNA abundance [CITATION] ."
+    ]
+  },
+  {
+    "title": "Codon usage and genome evolution",
+    "authors": "P M Sharp;G Matassi",
+    "year": "1994",
+    "citation": "Sharp, P. M. & Matassi, G. Codon usage and genome evolution. Curr. Opin. Genet. Dev. 4, 851\u00b1860 (1994).",
+    "pages": "851-860",
+    "journal": "Curr. Opin. Genet. Dev",
+    "volume": "4",
+    "sentences": [
+      "Differing codon biases between human genes is more a function of their location in regions of different GC composition [CITATION] ."
+    ]
+  },
+  {
+    "title": "A primate transfer-RNA gene cluster and the evolution of human chromosome 1",
+    "authors": "R A Buckland",
+    "year": "1992",
+    "citation": "Buckland, R. A. A primate transfer-RNA gene cluster and the evolution of human chromosome 1. Cytogenet. Cell Genet. 61, 1\u00b14 (1992).",
+    "pages": "1-4",
+    "journal": "Cytogenet. Cell Genet",
+    "volume": "61",
+    "sentences": [
+      "tRNA genes have sometimes been seen in clusters at small scales [CITATION][CITATION #b262] but we can now see striking clustering on a genome-wide scale."
+    ]
+  },
+  {
+    "title": "Human tRNA-Glu genes: their copy number and organization",
+    "authors": "E S Gonos;J P Goddard",
+    "year": "1990",
+    "citation": "Gonos, E. S. & Goddard, J. P. Human tRNA-Glu genes: their copy number and organization. FEBS Lett. 276, 138\u00b1142 (1990).",
+    "pages": "138-142",
+    "journal": "FEBS Lett",
+    "volume": "276",
+    "sentences": [
+      "tRNA genes have sometimes been seen in clusters at small scales [CITATION #b261][CITATION] but we can now see striking clustering on a genome-wide scale."
+    ]
+  },
+  {
+    "title": "The human ribosomal RNA genes: structure and organization of the complete repeating unit",
+    "authors": "J E Sylvester",
+    "year": "1986",
+    "citation": "Sylvester, J. E. et al. The human ribosomal RNA genes: structure and organization of the complete repeating unit. Hum. Genet. 73, 193\u00b1198 (1986).",
+    "pages": "193-198",
+    "journal": "Hum. Genet",
+    "volume": "73",
+    "sentences": [
+      "The genes for LSU and SSU rRNA occur in the human genome as a 44-kb tandem repeat unit [CITATION] ."
+    ]
+  },
+  {
+    "title": "Characterization of human 5S ribosomal RNA genes",
+    "authors": "P D Sorensen;S Frederiksen",
+    "year": "1991",
+    "citation": "Sorensen, P. D. & Frederiksen, S. Characterization of human 5S ribosomal RNA genes. Nucleic Acids Res. 19, 4147\u00b14151 (1991).",
+    "pages": "4147-4151",
+    "journal": "Nucleic Acids Res",
+    "volume": "19",
+    "sentences": [
+      "The 5S rDNA genes also occur in tandem arrays, the largest of which is on chromosome 1 between 1q41.11 and 1q42.13, close to the telomere [CITATION][CITATION #b265] .",
+      "There are 200\u00b1300 true 5S genes in these arrays [CITATION][CITATION #b267] ."
+    ]
+  },
+  {
+    "title": "Genomic organization of human 5S rDNA and sequence of one tandem repeat",
+    "authors": "R D Little;D C Braaten",
+    "year": "1989",
+    "citation": "Little, R. D. & Braaten, D. C. Genomic organization of human 5S rDNA and sequence of one tandem repeat. Genomics 4, 376\u00b1383 (1989).",
+    "pages": "376-383",
+    "journal": "Genomics",
+    "volume": "4",
+    "sentences": [
+      "There are 200\u00b1300 true 5S genes in these arrays [CITATION #b264][CITATION] ."
+    ]
+  },
+  {
+    "title": "The numerous modi\u00aeed nucleotides in eukaryotic ribosomal RNA",
+    "authors": "B E H Maden",
+    "year": "1990",
+    "citation": "Maden, B. E. H. The numerous modi\u00aeed nucleotides in eukaryotic ribosomal RNA. Prog. Nucleic Acid Res. Mol. Biol. 39, 241\u00b1303 (1990).",
+    "pages": "241-303",
+    "journal": "Prog. Nucleic Acid Res. Mol. Biol",
+    "volume": "39",
+    "sentences": [
+      "There are 105\u00b1107 methylations and around 95 pseudouridylations in human rRNA [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human genes for U2 small nuclear RNA map to a major adenovirus 12 modi\u00aecation site on chromosome 17",
+    "authors": "V Lindgren;A Ares;A M Weiner;U Francke",
+    "year": "1985",
+    "citation": "Lindgren, V., Ares, A., Weiner, A. M. & Francke, U. Human genes for U2 small nuclear RNA map to a major adenovirus 12 modi\u00aecation site on chromosome 17. Nature 314, 115\u00b1116 (1985).",
+    "pages": "115-116",
+    "journal": "Nature",
+    "volume": "314",
+    "sentences": [
+      "The U1 RNA genes are clustered with about 30 copies at the RNU1 locus at 1p36.1, but this cluster is thought to be loose and irregularly organized; no two U1 genes have been cloned on the same cosmid [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human genes encoding U3 snRNA associate with coiled bodies in interphase cells and are clustered on chromosome 17p11. 2 in a complex inverted repeat structure",
+    "authors": "L I Gao;M R Frey;A G Matera",
+    "year": "1997",
+    "citation": "Gao, L. I., Frey, M. R. & Matera, A. G. Human genes encoding U3 snRNA associate with coiled bodies in interphase cells and are clustered on chromosome 17p11. 2 in a complex inverted repeat structure. Nucleic Acids Res. 25, 4740\u00b14747 (1997).",
+    "pages": "4740-4747",
+    "journal": "Nucleic Acids Res",
+    "volume": "25",
+    "sentences": [
+      "Similarly, the U3 snoRNA genes (included in the aggregate count of C/D snoRNAs in Table 20) are clustered at the RNU3 locus at 17p11.2, not in a tandem array, but in a complex inverted repeat structure of about 5\u00b110 copies per haploid genome [CITATION] ."
+    ]
+  },
+  {
+    "title": "A survey on intron and exon lengths",
+    "authors": "J D Hawkins",
+    "year": "1988",
+    "citation": "Hawkins, J. D. A survey on intron and exon lengths. Nucleic Acids Res. 16, 9893\u00b19908 (1988).",
+    "pages": "9893-9908",
+    "journal": "Nucleic Acids Res",
+    "volume": "16",
+    "sentences": [
+      "Previous efforts to study human gene structure [CITATION #b115][CITATION][CITATION #b275] have been hampered by limited sample sizes and strong biases in favour of compact genes."
+    ]
+  },
+  {
+    "title": "Prediction of complete gene structures in human genomic DNA",
+    "authors": "C Burge;S Karlin",
+    "year": "1997",
+    "citation": "Burge, C. & Karlin, S. Prediction of complete gene structures in human genomic DNA. J. Mol. Biol. 268, 78\u00b194 (1997).",
+    "pages": "78-94",
+    "journal": "J. Mol. Biol",
+    "volume": "268",
+    "sentences": [
+      "Previous efforts to study human gene structure [CITATION #b115][CITATION #b274][CITATION] have been hampered by limited sample sizes and strong biases in favour of compact genes.",
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION #b300][CITATION #b301] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION] , Genie [CITATION #b302][CITATION #b303] and FGENES [CITATION #b304] ).",
+      "Ensembl starts with ab initio predictions produced by Genscan [CITATION] and then attempts to con\u00aerm them by virtue of similarity to proteins, mRNAs, ESTs and protein motifs (contained in the Pfam database [CITATION #b307] ) from any organism."
+    ]
+  },
+  {
+    "title": "Titins: giant proteins in charge of muscle ultrastructure and elasticity",
+    "authors": "S Labeit;B Kolmerer",
+    "year": "1995",
+    "citation": "Labeit, S. & Kolmerer, B. Titins: giant proteins in charge of muscle ultrastructure and elasticity. Science 270, 293\u00b1296 (1995).",
+    "pages": "293-296",
+    "journal": "Science",
+    "volume": "270",
+    "sentences": [
+      "The titin gene [CITATION] has the longest currently known coding sequence at 80,780 bp; it also has the largest number of exons (178) and longest single exon (17,106 bp)."
+    ]
+  },
+  {
+    "title": "Architectural limits on split genes",
+    "authors": "D A Sterner;T Carlo;S M Berget",
+    "year": "1996",
+    "citation": "Sterner, D. A., Carlo, T. & Berget, S. M. Architectural limits on split genes. Proc. Natl Acad. Sci. USA 93, 15081\u00b115085 (1996).",
+    "pages": "15081-15085",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "93",
+    "sentences": [
+      "The conservation of preferred exon size across all three species supports suggestions of a conserved exon-based component of the splicing machinery [CITATION] ."
+    ]
+  },
+  {
+    "title": "General splicing factor SF2/ ASF promotes alternative splicing by binding to an exonic splicing enhancer",
+    "authors": "Q Sun;A Mayeda;R K Hampson;A R Krainer;F M Rottman",
+    "year": "1993",
+    "citation": "Sun, Q., Mayeda, A., Hampson, R. K., Krainer, A. R. & Rottman, F. M. General splicing factor SF2/ ASF promotes alternative splicing by binding to an exonic splicing enhancer. Genes Dev. 7, 2598\u00b1 2608 (1993).",
+    "pages": "2598-2608",
+    "journal": "Genes Dev",
+    "volume": "7",
+    "sentences": [
+      "Purine-rich sequences may enhance splicing [CITATION][CITATION #b279] , and it is possible that such sequences are required or strongly selected for to ensure correct splicing of very short exons."
+    ]
+  },
+  {
+    "title": "Polypurine sequences within a downstream exon function as a splicing enhancer",
+    "authors": "K Tanaka;A Watakabe;Y Shimura",
+    "year": "1994",
+    "citation": "Tanaka, K., Watakabe, A. & Shimura, Y. Polypurine sequences within a downstream exon function as a splicing enhancer. Mol. Cell. Biol. 14, 1347\u00b11354 (1994).",
+    "pages": "1347-1354",
+    "journal": "Mol. Cell. Biol",
+    "volume": "14",
+    "sentences": [
+      "Purine-rich sequences may enhance splicing [CITATION #b278][CITATION] , and it is possible that such sequences are required or strongly selected for to ensure correct splicing of very short exons."
+    ]
+  },
+  {
+    "title": "An intron splicing enhancer containing a G-rich repeat facilitates inclusion of a vertebrate micro-exon",
+    "authors": "T Carlo;D A Sterner;S M Berget",
+    "year": "1996",
+    "citation": "Carlo, T., Sterner, D. A. & Berget, S. M. An intron splicing enhancer containing a G-rich repeat facilitates inclusion of a vertebrate micro-exon. RNA 2, 342\u00b1353 (1996).",
+    "pages": "342-353",
+    "journal": "RNA",
+    "volume": "2",
+    "sentences": [
+      "Previous studies have shown that short exons require intronic, but not exonic, splicing enhancers [CITATION] ."
+    ]
+  },
+  {
+    "title": "Analysis of canonical and non-canonical splice sites in mammalian genomes",
+    "authors": "M Burset;I A Seledtsov;V V Solovyev",
+    "year": "2000",
+    "citation": "Burset, M., Seledtsov, I. A. & Solovyev, V. V. Analysis of canonical and non-canonical splice sites in mammalian genomes. Nucleic Acids Res. 28, 4364\u00b14375 (2000).",
+    "pages": "4364-4375",
+    "journal": "Nucleic Acids Res",
+    "volume": "28",
+    "sentences": [
+      "The large number of con\u00aermed human introns allows us to analyse variant splice sites, con\u00aerming and extending recent reports [CITATION] ."
+    ]
+  },
+  {
+    "title": "Evolutionary fates and origins of U12-type introns",
+    "authors": "C B Burge;R A Padgett;P A Sharp",
+    "year": "1998",
+    "citation": "Burge, C. B., Padgett, R. A. & Sharp, P. A. Evolutionary fates and origins of U12-type introns. Mol. Cell 2, 773\u00b1785 (1998).",
+    "pages": "773-785",
+    "journal": "Mol. Cell",
+    "volume": "2",
+    "sentences": [
+      "About 0.10% use AT\u00b1AC, which is a rare alternative pattern primarily recognized by the variant U12 splicing machinery [CITATION] ."
+    ]
+  },
+  {
+    "title": "The gene guessing game",
+    "authors": "I Dunham",
+    "year": "2000",
+    "citation": "Dunham, I. The gene guessing game. Yeast 17, 218\u00b1224 (2000).",
+    "pages": "218-224",
+    "journal": "Yeast",
+    "volume": "17",
+    "sentences": [
+      "In the past year, 440 additional exons (10%) have been added to existing gene annotations by the chromosome 22 annotation group, although the number of con\u00aermed genes has increased by only 17 and some previously identi\u00aeed gene predictions have been merged [CITATION] .",
+      "These estimates are between 30,500 and 35,500, depending on the precise assumptions used [CITATION] ."
+    ]
+  },
+  {
+    "title": "Researchers take a gamble on the human genome",
+    "authors": "P Smaglik",
+    "year": "2000",
+    "citation": "Smaglik, P. Researchers take a gamble on the human genome. Nature 405, 264 (2000).",
+    "pages": "264",
+    "journal": "Nature",
+    "volume": "405",
+    "sentences": [
+      "As human sequence information has accumulated, it has been possible to derive estimates on the basis of sampling techniques [CITATION] ."
+    ]
+  },
+  {
+    "title": "Gene index analysis of the human genome estimates approximately 120,000 genes",
+    "authors": "F Liang",
+    "year": "2000",
+    "citation": "Liang, F. et al. Gene index analysis of the human genome estimates approximately 120,000 genes. Nature Genet. 25, 239\u00b1240 (2000).",
+    "pages": "239-240",
+    "journal": "Nature Genet",
+    "volume": "25",
+    "sentences": [
+      "130) to 120,000 genes [CITATION] ."
+    ]
+  },
+  {
+    "title": "Estimate of human gene number provided by genome-wide analysis using Tetraodon nigroviridis DNA sequence",
+    "authors": "H Roest Crollius",
+    "year": "2000",
+    "citation": "Roest Crollius, H. et al. Estimate of human gene number provided by genome-wide analysis using Tetraodon nigroviridis DNA sequence. Nature Genet. 25, 235\u00b1238 (2000).",
+    "pages": "235-238",
+    "journal": "Nature Genet",
+    "volume": "25",
+    "sentences": [
+      "Comparison of whole-genome shotgun sequence from the puf-fer\u00aesh T. nigroviridis with the human genome [CITATION] can be used to estimate the density of exons (detected as conserved sequences between \u00aesh and human).",
+      "The sequence coverage from the puffer\u00aesh T. nigroviridis has already proven valuable in identifying potential exons [CITATION] ; this work is expected to continue from its current state of onefold coverage to reach at least \u00aevefold coverage later this year."
+    ]
+  },
+  {
+    "title": "Genome sequence of the nematode C. elegans: A platform for investigating biology",
+    "authors": "C The;Elegans Sequencing;Consortium",
+    "year": "1998",
+    "citation": "The C. elegans Sequencing Consortium. Genome sequence of the nematode C. elegans: A platform for investigating biology. Science 282, 2012\u00b12018 (1998).",
+    "pages": "2012-2018",
+    "journal": "Science",
+    "volume": "282",
+    "sentences": [
+      "Both the worm and \u00afy gene sets contain a substantial number of such genes [CITATION][CITATION #b294] ."
+    ]
+  },
+  {
+    "title": "Comparative genomics of the eukaryotes",
+    "authors": "G M Rubin",
+    "year": "2000",
+    "citation": "Rubin, G. M. et al. Comparative genomics of the eukaryotes. Science 287, 2204\u00b12215 (2000).",
+    "pages": "2204-2215",
+    "journal": "Science",
+    "volume": "287",
+    "sentences": [
+      "In particular, they tend to have low expression levels as assayed both by direct studies and by a paucity of corresponding ESTs, and are less likely to produce a visible phenotype in loss-of-function genetic experiments [CITATION][CITATION #b296] .",
+      "Both the worm and \u00afy gene sets contain a substantial number of such genes [CITATION #b293][CITATION] .",
+      "Such comparisons shed useful light on the commonalities and differences among these eukaryotes [CITATION][CITATION #b324][CITATION #b325] ."
+    ]
+  },
+  {
+    "title": "Functional genomic analysis of C. elegans chromosome I by systematic RNA interference",
+    "authors": "A G Fraser",
+    "year": "2000",
+    "citation": "Fraser, A. G. et al. Functional genomic analysis of C. elegans chromosome I by systematic RNA interference. Nature 408, 325\u00b1330 (2000).",
+    "pages": "325-330",
+    "journal": "Nature",
+    "volume": "408",
+    "sentences": [
+      "In particular, they tend to have low expression levels as assayed both by direct studies and by a paucity of corresponding ESTs, and are less likely to produce a visible phenotype in loss-of-function genetic experiments [CITATION #b294][CITATION] ."
+    ]
+  },
+  {
+    "title": "Randomised controlled trial of personalised dietary intervention based on gut microbiome profiling in patients with inflammatory bowel disease",
+    "authors": [
+      "Gupta, N.",
+      "Andersen, L.",
+      "Okafor, C."
+    ],
+    "year": "2022",
+    "journal": "New England Journal of Medicine",
+    "doi": "",
+    "citation": "Gupta et al. (2022) N Engl J Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "PairWise and SearchWise: \u00aending the optimal alignment in a simultaneous comparison of a protein pro\u00aele against all DNA translation frames",
+    "authors": "E Birney;J D Thompson;T J Gibson",
+    "year": "1996",
+    "citation": "Birney, E., Thompson, J. D. & Gibson, T. J. PairWise and SearchWise: \u00aending the optimal alignment in a simultaneous comparison of a protein pro\u00aele against all DNA translation frames. Nucleic Acids Res. 24, 2730\u00b12739 (1996).",
+    "pages": "2730-2739",
+    "journal": "Nucleic Acids Res",
+    "volume": "24",
+    "sentences": [
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION][CITATION #b301] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION #b275] , Genie [CITATION #b302][CITATION #b303] and FGENES [CITATION #b304] )."
+    ]
+  },
+  {
+    "title": "Gene recognition via spliced sequence alignment",
+    "authors": "M S Gelfand;A A Mironov;P A Pevzner",
+    "year": "1996",
+    "citation": "Gelfand, M. S., Mironov, A. A. & Pevzner, P. A. Gene recognition via spliced sequence alignment. Proc. Natl Acad. Sci. USA 93, 9061\u00b19066 (1996).",
+    "pages": "9061-9066",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "93",
+    "sentences": [
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION #b300][CITATION] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION #b275] , Genie [CITATION #b302][CITATION #b303] and FGENES [CITATION #b304] )."
+    ]
+  },
+  {
+    "title": "A generalized hidden Markov model for the recognition of human genes in DNA",
+    "authors": "D Kulp;D Haussler;M G Reese;F H Eeckman",
+    "year": "1996",
+    "citation": "Kulp, D., Haussler, D., Reese, M. G. & Eeckman, F. H. A generalized hidden Markov model for the recognition of human genes in DNA. ISMB 4, 134\u00b1142 (1996).",
+    "pages": "134-142",
+    "journal": "",
+    "volume": "4",
+    "sentences": [
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION #b300][CITATION #b301] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION #b275] , Genie [CITATION][CITATION #b303] and FGENES [CITATION #b304] ).",
+      "To reduce fragmentation, we next merged Ensembl-based gene predictions with overlapping gene predictions from another program, Genie [CITATION] ."
+    ]
+  },
+  {
+    "title": "Genie\u00d0gene \u00aending in Drosophila melanogaster",
+    "authors": "M G Reese;D Kulp;H Tammana;D Haussler",
+    "year": "2000",
+    "citation": "Reese, M. G., Kulp, D., Tammana, H. & Haussler, D. Genie\u00d0gene \u00aending in Drosophila melanogaster. Genome Res. 10, 529\u00b1538 (2000).",
+    "pages": "529-538",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION #b300][CITATION #b301] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION #b275] , Genie [CITATION #b302][CITATION] and FGENES [CITATION #b304] ).",
+      "In \u00afy, ab initio methods can correctly predict around 90% of individual exons and can correctly predict all coding exons of a gene in about 40% of cases [CITATION] ."
+    ]
+  },
+  {
+    "title": "The Gene-Finder computer tools for analysis of human and model organisms genome sequences",
+    "authors": "V Solovyev;A Salamov",
+    "year": "1997",
+    "citation": "Solovyev, V. & Salamov, A. The Gene-Finder computer tools for analysis of human and model organisms genome sequences. ISMB 5, 294\u00b1302 (1997).",
+    "pages": "294-302",
+    "journal": "",
+    "volume": "5",
+    "sentences": [
+      "Current gene prediction methods employ combinations of three basic approaches: direct evidence of transcription provided by ESTs or mRNAs 297\u00b1299 ; indirect evidence based on sequence similarity to previously identi\u00aeed genes and proteins [CITATION #b300][CITATION #b301] ; and ab initio recognition of groups of exons on the basis of hidden Markov models (HMMs) that combine statistical information about splice sites, coding bias and exon and intron lengths (for example, Genscan [CITATION #b275] , Genie [CITATION #b302][CITATION #b303] and FGENES [CITATION] )."
+    ]
+  },
+  {
+    "title": "An assessment of gene prediction accuracy in large DNA sequences",
+    "authors": "R Guigo;P Agarwal;J F Abril;M Burset;J W Fickett",
+    "year": "2000",
+    "citation": "Guigo, R., Agarwal, P., Abril, J. F., Burset, M. & Fickett, J. W. An assessment of gene prediction accuracy in large DNA sequences. Genome Res. 10, 1631\u00b11642 (2000).",
+    "pages": "1631-1642",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "For human, the comparable \u00aegures are only about 70% and 20%, respectively [CITATION #b93][CITATION] ."
+    ]
+  },
+  {
+    "title": "Open annotation offers a democratic solution to genome sequencing",
+    "authors": "T Hubbard;E Birney",
+    "year": "2000",
+    "citation": "Hubbard, T. & Birney, E. Open annotation offers a democratic solution to genome sequencing. Nature 403, 825 (2000).",
+    "pages": "825",
+    "journal": "Nature",
+    "volume": "403",
+    "sentences": [
+      "We began with predictions produced by the Ensembl system [CITATION] ."
+    ]
+  },
+  {
+    "title": "The Pfam protein families database",
+    "authors": "A Bateman",
+    "year": "2000",
+    "citation": "Bateman, A. et al. The Pfam protein families database. Nucleic Acids Res. 28, 263\u00b1266 (2000).",
+    "pages": "263-266",
+    "journal": "Nucleic Acids Res",
+    "volume": "28",
+    "sentences": [
+      "Ensembl starts with ab initio predictions produced by Genscan [CITATION #b275] and then attempts to con\u00aerm them by virtue of similarity to proteins, mRNAs, ESTs and protein motifs (contained in the Pfam database [CITATION] ) from any organism.",
+      "The second two databases (Pfam [CITATION] and Prosite Pro\u00aele 327 ) contain information (in the form of pro\u00aeles or HMMs) about families of structural domains\u00d0for example, protein kinase domains.",
+      "The searches used Pfam release 5.2 [CITATION] , Prints release 26.1 [CITATION #b326] , Prosite release 16 [CITATION #b327] and Prosite preliminary pro\u00aeles."
+    ]
+  },
+  {
+    "title": "Using GeneWise in the Drosophila annotation experiment",
+    "authors": "E Birney;R Durbin",
+    "year": "2000",
+    "citation": "Birney, E. & Durbin, R. Using GeneWise in the Drosophila annotation experiment. Genome Res. 10, 547\u00b1548 (2000).",
+    "pages": "547-548",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "It then attempts to extend protein matches using the GeneWise computer program [CITATION] ."
+    ]
+  },
+  {
+    "title": "Small open reading frames: beautiful needles in the haystack",
+    "authors": "M A Basrai;P Hieter;J D Boeke",
+    "year": "1997",
+    "citation": "Basrai, M. A., Hieter, P. & Boeke, J. D. Small open reading frames: beautiful needles in the haystack. Genome Res. 7, 768\u00b1771 (1997).",
+    "pages": "768-771",
+    "journal": "Genome Res",
+    "volume": "7",
+    "sentences": [
+      "Single-exon genes encoding small proteins may also have been missed, because EST evidence that supports them cannot be distinguished from genomic contamination in the EST dataset and because homology may be hard to detect for small proteins [CITATION] ."
+    ]
+  },
+  {
+    "title": "Comparison of the complete protein sets of worm and yeast: orthology and divergence",
+    "authors": "S A Chervitz",
+    "year": "1998",
+    "citation": "Chervitz, S. A. et al. Comparison of the complete protein sets of worm and yeast: orthology and divergence. Science 282, 2022\u00b12028 (1998).",
+    "pages": "2022-2028",
+    "journal": "Science",
+    "volume": "282",
+    "sentences": [
+      "Such comparisons shed useful light on the commonalities and differences among these eukaryotes [CITATION #b294][CITATION][CITATION #b325] ."
+    ]
+  },
+  {
+    "title": "Origin of multicellular eukaryotes\u00d0insights from proteome comparisons",
+    "authors": "L Aravind;G Subramanian",
+    "year": "1999",
+    "citation": "Aravind, L. & Subramanian, G. Origin of multicellular eukaryotes\u00d0insights from proteome comparisons. Curr. Opin. Genet. Dev. 9, 688\u00b1694 (1999).",
+    "pages": "688-694",
+    "journal": "Curr. Opin. Genet. Dev",
+    "volume": "9",
+    "sentences": [
+      "Such comparisons shed useful light on the commonalities and differences among these eukaryotes [CITATION #b294][CITATION #b324][CITATION] ."
+    ]
+  },
+  {
+    "title": "PRINTS-S: the database formerly known as PRINTS",
+    "authors": "T K Attwood",
+    "year": "2000",
+    "citation": "Attwood, T. K. et al. PRINTS-S: the database formerly known as PRINTS. Nucleic Acids Res. 28, 225\u00b1 227 (2000).",
+    "pages": "225-227",
+    "journal": "Nucleic Acids Res",
+    "volume": "28",
+    "sentences": [
+      "The \u00aerst two databases (PRINTS [CITATION] and Prosite [CITATION #b327] ) primarily contain information about motifs corresponding to speci\u00aec family subtypes, such as type II receptor tyrosine kinases (RTK-II) in particular or tyrosine kinases in general.",
+      "The searches used Pfam release 5.2 [CITATION #b307] , Prints release 26.1 [CITATION] , Prosite release 16 [CITATION #b327] and Prosite preliminary pro\u00aeles."
+    ]
+  },
+  {
+    "title": "The PROSITE database, its status in 1999",
+    "authors": "K Hofmann;P Bucher;L Falquet;A Bairoch",
+    "year": "1999",
+    "citation": "Hofmann, K., Bucher, P., Falquet, L. & Bairoch, A. The PROSITE database, its status in 1999. Nucleic Acids Res. 27, 215\u00b1219 (1999).",
+    "pages": "215-219",
+    "journal": "Nucleic Acids Res",
+    "volume": "27",
+    "sentences": [
+      "The \u00aerst two databases (PRINTS [CITATION #b326] and Prosite [CITATION] ) primarily contain information about motifs corresponding to speci\u00aec family subtypes, such as type II receptor tyrosine kinases (RTK-II) in particular or tyrosine kinases in general.",
+      "The searches used Pfam release 5.2 [CITATION #b307] , Prints release 26.1 [CITATION #b326] , Prosite release 16 [CITATION] and Prosite preliminary pro\u00aeles."
+    ]
+  },
+  {
+    "title": "Gapped BLAST and PSI-BLAST: a new generation of protein database search programs",
+    "authors": "S F Altschul",
+    "year": "1997",
+    "citation": "Altschul, S. F. et al. Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic Acids Res. 25, 3389\u00b13402 (1997).",
+    "pages": "3389-3402",
+    "journal": "Nucleic Acids Res",
+    "volume": "25",
+    "sentences": [
+      "We obtained further insight into the evolutionary conservation of proteins by comparing each sequence to the complete nonredundant database of protein sequences maintained at NCBI, using the BLASTP computer program [CITATION] and then breaking down the matches according to organismal taxonomy (Fig.",
+      "Additional searches for probable homologues with lower sequence conservation were performed using the PSI-BLAST program, run for three iterations using the same cut-off for inclusion of sequences into the pro\u00aele [CITATION] ."
+    ]
+  },
+  {
+    "title": "Electrocatalytic reduction of CO2 to formate using atomically dispersed copper on nitrogen-doped graphene under ambient conditions",
+    "authors": [
+      "Villanueva, P.",
+      "Hoffmann, R.",
+      "Kwame, D."
+    ],
+    "year": "2021",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "",
+    "citation": "Villanueva et al. (2021) J Am Chem Soc.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "No footprints of primordial introns in a eukaryotic genome",
+    "authors": "Y I Wolf;F A Kondrashov;E V Koonin",
+    "year": "2000",
+    "citation": "Wolf, Y. I., Kondrashov, F. A. & Koonin, E. V. No footprints of primordial introns in a eukaryotic genome. Trends Genet. 16, 333\u00b1334 (2000).",
+    "pages": "333-334",
+    "journal": "Trends Genet",
+    "volume": "16",
+    "sentences": [
+      "Similar observations indicating probable lineage-speci\u00aec horizontal gene transfers, as well as intron insertion in the acquired genes, have been made in the worm genome [CITATION] ."
+    ]
+  },
+  {
+    "title": "Identi\u00aecation of common molecular subsequences",
+    "authors": "T F Smith;M S Waterman",
+    "year": "1981",
+    "citation": "Smith, T. F. & Waterman, M. S. Identi\u00aecation of common molecular subsequences. J. Mol. Biol. 147, 195\u00b1197 (1981).",
+    "pages": "195-197",
+    "journal": "J. Mol. Biol",
+    "volume": "147",
+    "sentences": [
+      "Brie\u00afy, we performed all-against-all sequence comparison [CITATION] for the combined protein sets of human, yeast, \u00afy and worm."
+    ]
+  },
+  {
+    "title": "A genomic perspective on protein families",
+    "authors": "R L Tatusov;E V Koonin;D J Lipman",
+    "year": "1997",
+    "citation": "Tatusov, R. L., Koonin, E. V. & Lipman, D. J. A genomic perspective on protein families. Science 278, 631\u00b1637 (1997).",
+    "pages": "631-637",
+    "journal": "Science",
+    "volume": "278",
+    "sentences": [
+      "These were then used to identify orthologous groups across three organisms [CITATION] ."
+    ]
+  },
+  {
+    "title": "Eukaryotic signalling domain homologues in archaea and bacteria. Ancient ancestry and horizontal gene transfer",
+    "authors": "C P Ponting;L Aravind;J Schultz;P Bork;E V Koonin",
+    "year": "1999",
+    "citation": "Ponting, C. P., Aravind, L., Schultz, J., Bork, P. & Koonin, E. V. Eukaryotic signalling domain homologues in archaea and bacteria. Ancient ancestry and horizontal gene transfer. J. Mol. Biol. 289, 729\u00b1745 (1999).",
+    "pages": "729-745",
+    "journal": "J. Mol. Biol",
+    "volume": "289",
+    "sentences": [
+      "Only one of the 94 families represents enzymes, which is consistent with the ancient origins of most enzymes [CITATION] ."
+    ]
+  },
+  {
+    "title": "Evolution of the rodent eosinophil-associated Rnase gene family by rapid gene sorting and positive selection",
+    "authors": "J Zhang;K D Dyer;H F Rosenberg",
+    "year": "2000",
+    "citation": "Zhang, J., Dyer, K. D. & Rosenberg, H. F. Evolution of the rodent eosinophil-associated Rnase gene family by rapid gene sorting and positive selection. Proc. Natl Acad. Sci. USA 97, 4701\u00b14706 (2000).",
+    "pages": "4701-4706",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "97",
+    "sentences": [
+      "These enzymes evolved rapidly, possibly to combat vertebrate pathogens [CITATION] ."
+    ]
+  },
+  {
+    "title": "Ependymin, a brain extracellular glycoprotein, and CNS plasticity",
+    "authors": "V E Shashoua",
+    "year": "1991",
+    "citation": "Shashoua, V. E. Ependymin, a brain extracellular glycoprotein, and CNS plasticity. Ann. NY Acad. Sci. 627, 94\u00b1114 (1991).",
+    "pages": "94-114",
+    "journal": "Ann. NY Acad. Sci",
+    "volume": "627",
+    "sentences": [
+      "Ependymins are major glycoproteins of \u00aesh brains that have been claimed to be involved in long-term memory formation [CITATION] ."
+    ]
+  },
+  {
+    "title": "SMART: a web-based tool for the study of genetically mobile domains",
+    "authors": "J Schultz;R R Copley;T Doerks;C P Ponting;P Bork",
+    "year": "2000",
+    "citation": "Schultz, J., Copley, R. R., Doerks, T., Ponting, C. P. & Bork, P. SMART: a web-based tool for the study of genetically mobile domains. Nucleic Acids Res. 28, 231\u00b1234 (2000).",
+    "pages": "231-234",
+    "journal": "Nucleic Acids Res",
+    "volume": "28",
+    "sentences": [
+      "[CITATION] and the percentages of repeat-containing proteins were estimated using Prospero [CITATION #b452] and a P-value threshold of 10 -5 .",
+      "We quanti\u00aeed the number of distinct protein architectures found in yeast, worm, \u00afy and human by using the SMART annotation resource [CITATION] (Fig."
+    ]
+  },
+  {
+    "title": "The impact of comparative genomics on our understanding of evolution",
+    "authors": "E V Koonin;L Aravind;A S Kondrashov",
+    "year": "2000",
+    "citation": "Koonin, E. V., Aravind, L. & Kondrashov, A. S. The impact of comparative genomics on our understanding of evolution. Cell 101, 573\u00b1576 (2000).",
+    "pages": "573-576",
+    "journal": "Cell",
+    "volume": "101",
+    "sentences": [
+      "Such `domain accretion' [CITATION] is seen in many human proteins when compared with proteins from other eukaryotes."
+    ]
+  },
+  {
+    "title": "Members of the immunoglobulin superfamily in bacteria",
+    "authors": "A Bateman;S R Eddy;C Chothia",
+    "year": "1996",
+    "citation": "Bateman, A., Eddy, S. R. & Chothia, C. Members of the immunoglobulin superfamily in bacteria. Protein Sci. 5, 1939\u00b11941 (1996).",
+    "pages": "1939-1941",
+    "journal": "Protein Sci",
+    "volume": "5",
+    "sentences": [
+      "Classic (as opposed to divergent) IG domains are completely absent from the yeast and mustard weed proteomes and, although prokaryotic homologues exist, they have probably been transferred horizontally from metazoans [CITATION] ."
+    ]
+  },
+  {
+    "title": "Branchless encodes a Drosophila FGF homolog that controls tracheal cell migration and the pattern of branching",
+    "authors": "D Sutherland;C Samakovlis;M A Krasnow",
+    "year": "1996",
+    "citation": "Sutherland, D., Samakovlis, C. & Krasnow, M. A. Branchless encodes a Drosophila FGF homolog that controls tracheal cell migration and the pattern of branching. Cell 87, 1091\u00b11101 (1996).",
+    "pages": "1091-1101",
+    "journal": "Cell",
+    "volume": "87",
+    "sentences": [
+      "A \u00afy FGF protein, branchless, is involved in developing respiratory organs (tracheae) in embryos [CITATION] ."
+    ]
+  },
+  {
+    "title": "The molecular basis of lung morphogenesis",
+    "authors": "D Warburton",
+    "year": "2000",
+    "citation": "Warburton, D. et al. The molecular basis of lung morphogenesis. Mech. Dev. 92, 55\u00b181 (2000).",
+    "pages": "55-81",
+    "journal": "Mech. Dev",
+    "volume": "92",
+    "sentences": [
+      "Thus, developmental triggers of morphogenesis in vertebrates have evolved from related but simpler systems in invertebrates [CITATION] ."
+    ]
+  },
+  {
+    "title": "The human olfactory subgenome: from sequence to structure to evolution",
+    "authors": "T Fuchs;G Glusman;S Horn-Saban;D Lancet;Y Pilpel",
+    "year": "2001",
+    "citation": "Fuchs, T., Glusman, G., Horn-Saban, S., Lancet, D. & Pilpel, Y. The human olfactory subgenome: from sequence to structure to evolution. Hum. Genet. 108, 1\u00b113 (2001).",
+    "pages": "1-13",
+    "journal": "Hum. Genet",
+    "volume": "108",
+    "sentences": [
+      "Finally, the olfactory receptor genes comprise a huge gene family of about 1,000 genes and pseudogenes [CITATION][CITATION #b345] .",
+      "About 60% of the olfactory receptors in the draft genome sequence have disrupted ORFs and appear to be pseudogenes, consistent with recent reports [CITATION][CITATION #b346] suggesting massive functional gene loss in the last 10 Myr [CITATION #b347][CITATION #b348] ."
+    ]
+  },
+  {
+    "title": "The olfactory receptor gene family: data mining, classi\u00aecation and nomenclature",
+    "authors": "G Glusman",
+    "year": "2000",
+    "citation": "Glusman, G. et al. The olfactory receptor gene family: data mining, classi\u00aecation and nomenclature. Mamm. Genome 11, 1016\u00b11023 (2000).",
+    "pages": "1016-1023",
+    "journal": "Mamm. Genome",
+    "volume": "11",
+    "sentences": [
+      "Finally, the olfactory receptor genes comprise a huge gene family of about 1,000 genes and pseudogenes [CITATION #b344][CITATION] ."
+    ]
+  },
+  {
+    "title": "Distribution of olfactory receptor genes in the human genome",
+    "authors": "S Rouquier",
+    "year": "1998",
+    "citation": "Rouquier, S. et al. Distribution of olfactory receptor genes in the human genome. Nature Genet. 18, 243\u00b1250 (1998).",
+    "pages": "243-250",
+    "journal": "Nature Genet",
+    "volume": "18",
+    "sentences": [
+      "About 60% of the olfactory receptors in the draft genome sequence have disrupted ORFs and appear to be pseudogenes, consistent with recent reports [CITATION #b344][CITATION] suggesting massive functional gene loss in the last 10 Myr [CITATION #b347][CITATION #b348] ."
+    ]
+  },
+  {
+    "title": "Primate evolution of an olfactory receptor cluster: Diversi\u00aecation by gene conversion and recent emergence of a pseudogene",
+    "authors": "D Sharon",
+    "year": "1999",
+    "citation": "Sharon, D. et al. Primate evolution of an olfactory receptor cluster: Diversi\u00aecation by gene conversion and recent emergence of a pseudogene. Genomics 61, 24\u00b136 (1999).",
+    "pages": "24-36",
+    "journal": "Genomics",
+    "volume": "61",
+    "sentences": [
+      "About 60% of the olfactory receptors in the draft genome sequence have disrupted ORFs and appear to be pseudogenes, consistent with recent reports [CITATION #b344][CITATION #b346] suggesting massive functional gene loss in the last 10 Myr [CITATION][CITATION #b348] ."
+    ]
+  },
+  {
+    "title": "Dichotomy of single-nucleotide polymorphism haplotypes in olfactory receptor genes and pseudogenes",
+    "authors": "Y Gilad",
+    "year": "2000",
+    "citation": "Gilad, Y. et al. Dichotomy of single-nucleotide polymorphism haplotypes in olfactory receptor genes and pseudogenes. Nature Genet. 26, 221\u00b1224 (2000).",
+    "pages": "221-224",
+    "journal": "Nature Genet",
+    "volume": "26",
+    "sentences": [
+      "About 60% of the olfactory receptors in the draft genome sequence have disrupted ORFs and appear to be pseudogenes, consistent with recent reports [CITATION #b344][CITATION #b346] suggesting massive functional gene loss in the last 10 Myr [CITATION #b347][CITATION] ."
+    ]
+  },
+  {
+    "title": "Embryos, and Evolution",
+    "authors": "J Gearhart;M Kirschner;Cells",
+    "year": "1997",
+    "citation": "Gearhart, J. & Kirschner, M. Cells, Embryos, and Evolution (Blackwell Science, Malden, Massachu- setts, 1997).",
+    "publisher": "Blackwell Science",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The emergence of major variations in the developmental body plans that accompanied the early radiation of the animals [CITATION] could have been driven by lineage-speci\u00aec proliferation of such transcription factors."
+    ]
+  },
+  {
+    "title": "The syntenic relationship of the zebra\u00aesh and human genomes",
+    "authors": "W B Barbazuk",
+    "year": "2000",
+    "citation": "Barbazuk, W. B. et al. The syntenic relationship of the zebra\u00aesh and human genomes. Genome Res. 10, 1351\u00b11358 (2000).",
+    "pages": "1351-1358",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "In fact, conserved segments have been observed in even more distant species: humans show conserved segments with \u00aesh [CITATION][CITATION #b351] and even with invertebrates such as \u00afy and worm [CITATION #b352] .",
+      "From a study of 523 orthologues, it was possible to project 418 conserved segments [CITATION] ."
+    ]
+  },
+  {
+    "title": "Estimation of synteny conservation and genome compaction between puffer\u00aesh (Fugu) and human",
+    "authors": "A Mclysaght;A J Enright;L Skrabanek;K H Wolfe",
+    "year": "2000",
+    "citation": "McLysaght, A., Enright, A. J., Skrabanek, L. & Wolfe, K. H. Estimation of synteny conservation and genome compaction between puffer\u00aesh (Fugu) and human. Yeast 17, 22\u00b136 (2000).",
+    "pages": "22-36",
+    "journal": "Yeast",
+    "volume": "17",
+    "sentences": [
+      "In fact, conserved segments have been observed in even more distant species: humans show conserved segments with \u00aesh [CITATION #b350][CITATION] and even with invertebrates such as \u00afy and worm [CITATION #b352] ."
+    ]
+  },
+  {
+    "title": "Linkage of TATA-binding protein and proteasome subunit C5 genes in mice and humans reveals synteny conserved between mammals and invertebrates",
+    "authors": "Z Trachtulec",
+    "year": "1997",
+    "citation": "Trachtulec, Z. et al. Linkage of TATA-binding protein and proteasome subunit C5 genes in mice and humans reveals synteny conserved between mammals and invertebrates. Genomics 44, 1\u00b17 (1997).",
+    "pages": "1-7",
+    "journal": "Genomics",
+    "volume": "44",
+    "sentences": [
+      "In fact, conserved segments have been observed in even more distant species: humans show conserved segments with \u00aesh [CITATION #b350][CITATION #b351] and even with invertebrates such as \u00afy and worm [CITATION] ."
+    ]
+  },
+  {
+    "title": "Maps of linkage and synteny homologies between mouse and man",
+    "authors": "J H Nadeau",
+    "year": "1989",
+    "citation": "Nadeau, J. H. Maps of linkage and synteny homologies between mouse and man. Trends Genet. 5, 82\u00b186 (1989).",
+    "pages": "82-86",
+    "journal": "Trends Genet",
+    "volume": "5",
+    "sentences": [
+      "Two types of linkage conservation are commonly described [CITATION] .",
+      "Subsequent estimates based on increasingly detailed comparative maps have remained close to this projection [CITATION][CITATION #b355][CITATION #b356] (http://www.informatics.jax.org)."
+    ]
+  },
+  {
+    "title": "Lengths of chromosomal segments conserved since divergence of man and mouse",
+    "authors": "J H Nadeau;B A Taylor",
+    "year": "1984",
+    "citation": "Nadeau, J. H. & Taylor, B. A. Lengths of chromosomal segments conserved since divergence of man and mouse. Proc. Natl Acad. Sci. USA 81, 814\u00b1818 (1984).",
+    "pages": "814-818",
+    "journal": "Proc. Natl Acad. Sci. USA",
+    "volume": "81",
+    "sentences": [
+      "Thus, we estimate that true number of conserved segments is around 190\u00b1230, in good agreement with the original Nadeau\u00b1Taylor prediction [CITATION] ."
+    ]
+  },
+  {
+    "title": "A genetic linkage map of the mouse: current applications and future prospects",
+    "authors": "N G Copeland",
+    "year": "1993",
+    "citation": "Copeland, N. G. et al. A genetic linkage map of the mouse: current applications and future prospects. Science 262, 57\u00b166 (1993).",
+    "pages": "57-66",
+    "journal": "Science",
+    "volume": "262",
+    "sentences": [
+      "Subsequent estimates based on increasingly detailed comparative maps have remained close to this projection [CITATION #b353][CITATION][CITATION #b356] (http://www.informatics.jax.org)."
+    ]
+  },
+  {
+    "title": "Human/mouse homology relationships",
+    "authors": "R W Debry;M F Seldin",
+    "year": "1996",
+    "citation": "DeBry, R. W. & Seldin, M. F. Human/mouse homology relationships. Genomics 33, 337\u00b1351 (1996).",
+    "pages": "337-351",
+    "journal": "Genomics",
+    "volume": "33",
+    "sentences": [
+      "Subsequent estimates based on increasingly detailed comparative maps have remained close to this projection [CITATION #b353][CITATION #b355][CITATION] (http://www.informatics.jax.org)."
+    ]
+  },
+  {
+    "title": "The lengths of undiscovered conserved segments in comparative maps",
+    "authors": "J H Nadeau;D Sankoff",
+    "year": "1998",
+    "citation": "Nadeau, J. H. & Sankoff, D. The lengths of undiscovered conserved segments in comparative maps. Mamm. Genome 9, 491\u00b1495 (1998).",
+    "pages": "491-495",
+    "journal": "Mamm. Genome",
+    "volume": "9",
+    "sentences": [
+      "The distribution of segment lengths has corresponded reasonably well to the truncated negative exponential curve predicted by the random breakage model [CITATION] ."
+    ]
+  },
+  {
+    "title": "Chromosome evolution: The junction of mammalian chromosomes in the formation of mouse chromosome 10",
+    "authors": "M T Pletcher",
+    "year": "2000",
+    "citation": "Pletcher, M. T. et al. Chromosome evolution: The junction of mammalian chromosomes in the formation of mouse chromosome 10. Genome Res. 10, 1463\u00b11467 (2000).",
+    "pages": "1463-1467",
+    "journal": "Genome Res",
+    "volume": "10",
+    "sentences": [
+      "The occurrence of breakpoints may be promoted by homologous recombination among repeated sequences [CITATION] ."
+    ]
+  },
+  {
+    "title": "Mammalian phylogeny: shaking the tree",
+    "authors": "M J Novacek",
+    "year": "1992",
+    "citation": "Novacek, M. J. Mammalian phylogeny: shaking the tree. Nature 356, 121\u00b1125 (1992).",
+    "pages": "121-125",
+    "journal": "Nature",
+    "volume": "356",
+    "sentences": [
+      "With about 200 conserved segments between mouse and human and about 100 Myr of evolution from their common ancestor [CITATION] , we obtain an estimated rate of about 1.0 chromosomal rearrangement being \u00aexed per Myr."
+    ]
+  },
+  {
+    "title": "Genome maps 10. Comparative genomics. Mammalian radiations. Wall chart",
+    "authors": "S J O'brien",
+    "year": "1999",
+    "citation": "O'Brien, S. J. et al. Genome maps 10. Comparative genomics. Mammalian radiations. Wall chart. Science 286, 463\u00b1478 (1999).",
+    "pages": "463-478",
+    "journal": "Science",
+    "volume": "286",
+    "sentences": [
+      "By comparison, very few rearrangements have been observed among primates, and studies of a broader array of mammalian orders, including cats, cows, sheep and pigs, suggest an average rate of chromosome alteration of only about 0.2 rearrangements per Myr in these lineages [CITATION] ."
+    ]
+  },
+  {
+    "title": "Toward a uni\u00aeed genetic map of higher plants, transcending the monocot-dicot divergence",
+    "authors": "A H Paterson",
+    "year": "1996",
+    "citation": "Paterson, A. H. et al. Toward a uni\u00aeed genetic map of higher plants, transcending the monocot-dicot divergence. Nature Genet. 14, 380\u00b1382 (1996).",
+    "pages": "380-382",
+    "journal": "Nature Genet",
+    "volume": "14",
+    "sentences": [
+      "Recent estimates of rearrangement rates in plants have suggested bimodality, with some pairs showing rates of 0.15\u00b10.41 rearrangements per Myr, and others showing higher rates of 1.1\u00b11.3 rearrangements per Myr [CITATION] ."
+    ]
+  },
+  {
+    "title": "Differentiation between natural and cultivated populations of Medicago sativa (Leguminosae) from Spain: analysis with random ampli\u00aeed polymorphic DNA (RAPD) markers and comparison to allozymes",
+    "authors": "E Jenczewski;J M Prosperi;J Ronfort",
+    "year": "1999",
+    "citation": "Jenczewski, E., Prosperi, J. M. & Ronfort, J. Differentiation between natural and cultivated populations of Medicago sativa (Leguminosae) from Spain: analysis with random ampli\u00aeed polymorphic DNA (RAPD) markers and comparison to allozymes. Mol. Ecol. 8, 1317\u00b11330 (1999).",
+    "pages": "1317-1330",
+    "journal": "Mol. Ecol",
+    "volume": "8",
+    "sentences": [
+      "Alfalfa (Medicago sativa) is a naturally occurring autotetraploid [CITATION] , and Nicotiana tabacum, some species of cotton (Gossypium) and several of the common brassicas are allotetraploids containing pairs of `homeologous' chromosome pairs."
+    ]
+  },
+  {
+    "title": "Evolution by Gene Duplication",
+    "authors": "S Ohno",
+    "year": "1970",
+    "citation": "Ohno, S. Evolution by Gene Duplication (George Allen and Unwin, London, 1970).",
+    "publisher": "George Allen and Unwin",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Ohno [CITATION] suggested that WGD has played a key role in evolution."
+    ]
+  },
+  {
+    "title": "Molecular evidence for an ancient duplication of the entire yeast genome",
+    "authors": "K H Wolfe;D C Shields",
+    "year": "1997",
+    "citation": "Wolfe, K. H. & Shields, D. C. Molecular evidence for an ancient duplication of the entire yeast genome. Nature 387, 708\u00b1713 (1997).",
+    "pages": "708-713",
+    "journal": "Nature",
+    "volume": "387",
+    "sentences": [
+      "For example, the ancient duplication in the yeast genome appears to have been followed by loss of more than 90% of the newly duplicated genes [CITATION] ."
+    ]
+  },
+  {
+    "title": "Eukaryote genome duplication\u00d0where's the evidence?",
+    "authors": "L Skrabanek;K H Wolfe",
+    "year": "1998",
+    "citation": "Skrabanek, L. & Wolfe, K. H. Eukaryote genome duplication\u00d0where's the evidence? Curr. Opin. Genet. Dev. 8, 694\u00b1700 (1998).",
+    "pages": "694-700",
+    "journal": "Curr. Opin. Genet. Dev",
+    "volume": "8",
+    "sentences": [
+      "However, other authors have disputed this interpretation [CITATION] , suggesting that these cases may re\u00afect unrelated duplications of speci\u00aec regions rather than successive WGD."
+    ]
+  },
+  {
+    "title": "Phylogenies of developmentally important proteins do not support the hypothesis of two rounds of genome duplication early in vertebrate history",
+    "authors": "A L Hughes",
+    "year": "1999",
+    "citation": "Hughes, A. L. Phylogenies of developmentally important proteins do not support the hypothesis of two rounds of genome duplication early in vertebrate history. J. Mol. Evol. 48, 565\u00b1576 (1999).",
+    "pages": "565-576",
+    "journal": "J. Mol. Evol",
+    "volume": "48",
+    "sentences": [
+      "More probatively, if two successive rounds of genome duplication occurred, phylogenetic analysis of the proteins having 4:1:1 ratios between human, \u00afy and worm would be expected to show more trees with the topology (A,B)(C,D) for the human sequences than (A,(B,(C,D))) [CITATION] ."
+    ]
+  },
+  {
+    "title": "Genetic dissection of complex traits",
+    "authors": "E S Lander;N J Schork",
+    "year": "1994",
+    "citation": "Lander, E. S. & Schork, N. J. Genetic dissection of complex traits. Science 265, 2037\u00b12048 (1994).",
+    "pages": "2037-2048",
+    "journal": "Science",
+    "volume": "265",
+    "sentences": [
+      "SNPs can also be used to study linkage disequilibrium in the human genome [CITATION] .",
+      "In principle, these genetic tools should make it possible to perform association studies and linkage disequilibrium studies [CITATION] to identify the genes that confer even relatively modest risk for common diseases."
+    ]
+  },
+  {
+    "title": "Genetic variability in the gene encoding calpain-10 is associated with type 2 diabetes mellitus",
+    "authors": "Y Horikawa",
+    "year": "2000",
+    "citation": "Horikawa, Y. et al. Genetic variability in the gene encoding calpain-10 is associated with type 2 diabetes mellitus. Nature Genet. 26, 163\u00b1175 (2000).",
+    "pages": "163-175",
+    "journal": "Nature Genet",
+    "volume": "26",
+    "sentences": [
+      "It can provide a powerful tool for mapping disease genes [CITATION][CITATION #b378] and for probing population history 379\u00b1381 ."
+    ]
+  },
+  {
+    "title": "The diastrophic dysplasia gene encodes a novel sulfate transporter: positional cloning by \u00aene-structure linkage disequilibrium mapping",
+    "authors": "J Hastbacka",
+    "year": "1994",
+    "citation": "Hastbacka, J. et al. The diastrophic dysplasia gene encodes a novel sulfate transporter: positional cloning by \u00aene-structure linkage disequilibrium mapping. Cell 78, 1073\u00b11087 (1994).",
+    "pages": "1073-1087",
+    "journal": "Cell",
+    "volume": "78",
+    "sentences": [
+      "It can provide a powerful tool for mapping disease genes [CITATION #b377][CITATION] and for probing population history 379\u00b1381 ."
+    ]
+  },
+  {
+    "title": "Positional cloning moves from perditional to traditional",
+    "authors": "F S Collins",
+    "year": "1995",
+    "citation": "Collins, F. S. Positional cloning moves from perditional to traditional. Nature Genet. 9, 347\u00b1350 (1995).",
+    "pages": "347-350",
+    "journal": "Nature Genet",
+    "volume": "9",
+    "sentences": [
+      "A key application of human genome research has been the ability to \u00aend disease genes of unknown biochemical function by positional cloning [CITATION] ."
+    ]
+  },
+  {
+    "title": "Epigenetic regulation of microglial activation in neurodegenerative disease: mechanisms and therapeutic targets",
+    "authors": [
+      "Patel, R.",
+      "Yamamoto, K.",
+      "Ferreira, A."
+    ],
+    "year": "2020",
+    "journal": "Nature Neuroscience",
+    "doi": "",
+    "citation": "Patel et al. (2020) Nat Neurosci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Genetic basis of total colourblindness among the Pingelapese islanders",
+    "authors": "O H Sundin",
+    "year": "2000",
+    "citation": "Sundin, O. H. et al. Genetic basis of total colourblindness among the Pingelapese islanders. Nature Genet. 25, 289\u00b1293 (2000).",
+    "pages": "289-293",
+    "journal": "Nature Genet",
+    "volume": "25",
+    "sentences": [
+      "The CNGB3 gene was rapidly shown to be the cause of achromatopsia in other families [CITATION][CITATION #b408] ."
+    ]
+  },
+  {
+    "title": "Mutations in the CNGB3 gene encoding the beta-subunit of the cone photoreceptor cGMP-gated channel are responsible for achromatopsia (ACHM3) linked to chromosome 8q21",
+    "authors": "S Kohl",
+    "year": "2000",
+    "citation": "Kohl, S. et al. Mutations in the CNGB3 gene encoding the beta-subunit of the cone photoreceptor cGMP-gated channel are responsible for achromatopsia (ACHM3) linked to chromosome 8q21. Hum. Mol. Genet. 9, 2107\u00b12116 (2000).",
+    "pages": "2107-2116",
+    "journal": "Hum. Mol. Genet",
+    "volume": "9",
+    "sentences": [
+      "The CNGB3 gene was rapidly shown to be the cause of achromatopsia in other families [CITATION #b407][CITATION] ."
+    ]
+  },
+  {
+    "title": "Familial Alzheimer's disease in kindreds with missense mutations in a gene on chromosome 1 related to the Alzheimer's disease type 3 gene",
+    "authors": "E I Rogaev",
+    "year": "1995",
+    "citation": "Rogaev, E. I. et al. Familial Alzheimer's disease in kindreds with missense mutations in a gene on chromosome 1 related to the Alzheimer's disease type 3 gene. Nature 376, 775\u00b1778 (1995).",
+    "pages": "775-778",
+    "journal": "Nature",
+    "volume": "376",
+    "sentences": [
+      "Another example is provided by the presenilin-1 and presenilin-2 genes, in which mutations can cause early-onset Alzheimer's disease [CITATION][CITATION #b424] ."
+    ]
+  },
+  {
+    "title": "Cloning of a gene bearing missense mutations in early-onset familial Alzheimer's disease",
+    "authors": "R Sherrington",
+    "year": "1995",
+    "citation": "Sherrington, R. et al. Cloning of a gene bearing missense mutations in early-onset familial Alzheimer's disease. Nature 375, 754\u00b1760 (1995).",
+    "pages": "754-760",
+    "journal": "Nature",
+    "volume": "375",
+    "sentences": [
+      "Another example is provided by the presenilin-1 and presenilin-2 genes, in which mutations can cause early-onset Alzheimer's disease [CITATION #b423][CITATION] ."
+    ]
+  },
+  {
+    "title": "The therapeutic reactivation of fetal haemoglobin",
+    "authors": "N F Olivieri;D J Weatherall",
+    "year": "1998",
+    "citation": "Olivieri, N. F. & Weatherall, D. J. The therapeutic reactivation of fetal haemoglobin. Hum. Mol. Genet. 7, 1655\u00b11658 (1998).",
+    "pages": "1655-1658",
+    "journal": "Hum. Mol. Genet",
+    "volume": "7",
+    "sentences": [
+      "Second, the paralogue may provide an opportunity for therapeutic intervention, as exempli\u00aeed by attempts to reactivate the fetally expressed haemoglobin genes in individuals with sickle cell disease or b-thalassaemia, caused by mutations in the b-globin gene [CITATION] ."
+    ]
+  },
+  {
+    "title": "Research & development. Basic science and pharmaceutical innovation",
+    "authors": "J Drews",
+    "year": "1999",
+    "citation": "Drews, J. Research & development. Basic science and pharmaceutical innovation. Nature Biotechnol. 17, 406 (1999).",
+    "pages": "406",
+    "journal": "Nature Biotechnol",
+    "volume": "17",
+    "sentences": [
+      "A recent compendium [CITATION][CITATION #b427] lists 483 drug targets as accounting for virtually all drugs on the market."
+    ]
+  },
+  {
+    "title": "Drug discovery: a historical perspective",
+    "authors": "J Drews",
+    "year": "2000",
+    "citation": "Drews, J. Drug discovery: a historical perspective. Science 287, 1960\u00b11964 (2000).",
+    "pages": "1960-1964",
+    "journal": "Science",
+    "volume": "287",
+    "sentences": [
+      "A recent compendium [CITATION #b426][CITATION] lists 483 drug targets as accounting for virtually all drugs on the market.",
+      "The target list [CITATION] was used to identify 603 entries in the SwissProt database with unique accession numbers."
+    ]
+  },
+  {
+    "title": "Characterization of the human cysteinyl leukotriene 2 receptor",
+    "authors": "C E Heise",
+    "year": "2000",
+    "citation": "Heise, C. E. et al. Characterization of the human cysteinyl leukotriene 2 receptor. J. Biol. Chem. 275, 30531\u00b130536 (2000).",
+    "pages": "30531-30536",
+    "journal": "J. Biol. Chem",
+    "volume": "275",
+    "sentences": [
+      "This led to the cloning of a gene with 38% amino-acid identity to the only other receptor that had previously been identi\u00aeed [CITATION] ."
+    ]
+  },
+  {
+    "title": "BACE maps to chromosome 11 and a BACE homolog, BACE2, reside in the obligate Down Syndrome region of chromosome 21",
+    "authors": "W Fan",
+    "year": "1999",
+    "citation": "Fan, W. et al. BACE maps to chromosome 11 and a BACE homolog, BACE2, reside in the obligate Down Syndrome region of chromosome 21. Science 286, 1255a (1999).",
+    "pages": "1255",
+    "journal": "Science",
+    "volume": "286",
+    "sentences": [
+      "Computational searching of the public human draft genome sequence recently identi\u00aeed a new sequence homologous to BACE, encoding a protein now named BACE2 [CITATION][CITATION #b431] ."
+    ]
+  },
+  {
+    "title": "BACE maps to chromosome 11 and a BACE homolog, BACE2, reside in the obligate Down Syndrome region of chromosome 21",
+    "authors": "A J Saunders;T. -W Kim;R E Tanzi",
+    "year": "1999",
+    "citation": "Saunders, A. J., Kim, T. -W. & Tanzi, R. E. BACE maps to chromosome 11 and a BACE homolog, BACE2, reside in the obligate Down Syndrome region of chromosome 21. Science 286, 1255a (1999).",
+    "pages": "1255",
+    "journal": "Science",
+    "volume": "286",
+    "sentences": [
+      "Computational searching of the public human draft genome sequence recently identi\u00aeed a new sequence homologous to BACE, encoding a protein now named BACE2 [CITATION #b430][CITATION] ."
+    ]
+  },
+  {
+    "title": "The good taste of genomics",
+    "authors": "S Firestein",
+    "year": "2000",
+    "citation": "Firestein, S. The good taste of genomics. Nature 404, 552\u00b1553 (2000).",
+    "pages": "552-553",
+    "journal": "Nature",
+    "volume": "404",
+    "sentences": [
+      "To cite one satisfying example, the publicly available sequence was used to solve a mystery that had vexed investigators for several decades: the molecular basis of bitter taste [CITATION] ."
+    ]
+  },
+  {
+    "title": "Public-private project to deliver mouse genome in 6 months",
+    "authors": "E Marshall",
+    "year": "2000",
+    "citation": "Marshall, E. Public-private project to deliver mouse genome in 6 months. Science 290, 242\u00b1243 (2000).",
+    "pages": "242-243",
+    "journal": "Science",
+    "volume": "290",
+    "sentences": [
+      "A public-private consortium is speeding this effort, by producing freely accessible whole-genome shotgun coverage that can be readily used for cross-species comparison [CITATION] ."
+    ]
+  },
+  {
+    "title": "Human-mouse genome comparisons to locate regulatory sites",
+    "authors": "W W Wasserman;M Palumbo;W Thompson;J W Fickett;C E Lawrence",
+    "year": "2000",
+    "citation": "Wasserman, W. W., Palumbo, M., Thompson, W., Fickett, J. W. & Lawrence, C. E. Human-mouse genome comparisons to locate regulatory sites. Nature Genet. 26, 225\u00b1228 (2000).",
+    "pages": "225-228",
+    "journal": "Nature Genet",
+    "volume": "26",
+    "sentences": [
+      "Comparative genomics of multiple vertebrates offers the best hope for large-scale identi\u00aecation of such regulatory sites [CITATION] ."
+    ]
+  },
+  {
+    "title": "Nucleotide and amino acid sequences, developmental regulation and phylogenetic footprints",
+    "authors": "D A Tagle",
+    "year": "1988",
+    "citation": "Tagle, D. A. et al. Embryonic epsilon and gamma globin genes of a prosimian primate (Galago crassicaudatus). Nucleotide and amino acid sequences, developmental regulation and phylogenetic footprints. J. Mol. Biol. 203, 439\u00b1455 (1988).",
+    "pages": "439-455",
+    "journal": "J. Mol. Biol",
+    "volume": "203",
+    "sentences": [
+      "Previous studies of sequence alignment of regulatory domains of orthologous genes in multiple species has shown a remarkable correlation between sequence conservation, dubbed `phylogenetic footprints' [CITATION] , and the presence of binding motifs for transcription factors."
+    ]
+  },
+  {
+    "title": "Genomic imprinting in mammals: an interplay between chromatin and DNA methylation?",
+    "authors": "R Feil;S Khosla",
+    "year": "1999",
+    "citation": "Feil, R. & Khosla, S. Genomic imprinting in mammals: an interplay between chromatin and DNA methylation? Trends Genet. 15, 431\u00b1434 (1999).",
+    "pages": "431-434",
+    "journal": "Trends Genet",
+    "volume": "15",
+    "sentences": [
+      "It will also be of considerable interest to study epigenetic modi\u00aecations such as cytosine methylation on a genome-wide scale, and to determine their biological consequences [CITATION][CITATION #b447] ."
+    ]
+  },
+  {
+    "title": "DNA methylation in health and disease",
+    "authors": "K D Robertson;A P Wolffe",
+    "year": "2000",
+    "citation": "Robertson, K. D. & Wolffe, A. P. DNA methylation in health and disease. Nature Rev. Genet. 1, 11\u00b119 (2000).",
+    "pages": "11-19",
+    "journal": "Nature Rev. Genet",
+    "volume": "1",
+    "sentences": [
+      "It will also be of considerable interest to study epigenetic modi\u00aecations such as cytosine methylation on a genome-wide scale, and to determine their biological consequences [CITATION #b446][CITATION] ."
+    ]
+  },
+  {
+    "title": "From genomics to epigenomics: a loftier view of life",
+    "authors": "S Beck;A Olek;J Walter",
+    "year": "1999",
+    "citation": "Beck, S., Olek, A. & Walter, J. From genomics to epigenomics: a loftier view of life. Nature Biotechnol. 17, 1144\u00b11144 (1999).",
+    "pages": "1144-1144",
+    "journal": "Nature Biotechnol",
+    "volume": "17",
+    "sentences": [
+      "Towards this end, a pilot Human Epigenome Project has been launched [CITATION][CITATION #b449] ."
+    ]
+  },
+  {
+    "title": "Mapping a subtext in our genetic book",
+    "authors": "M Hagmann",
+    "year": "2000",
+    "citation": "Hagmann, M. Mapping a subtext in our genetic book. Science 288, 945\u00b1946 (2000).",
+    "pages": "945-946",
+    "journal": "Science",
+    "volume": "288",
+    "sentences": [
+      "Towards this end, a pilot Human Epigenome Project has been launched [CITATION #b448][CITATION] ."
+    ]
+  },
+  {
+    "title": "Collected Poems 1909\u00b11962 (Harcourt Brace",
+    "authors": "T S Eliot;T S Eliot",
+    "year": "1963",
+    "citation": "Eliot, T. S. in T. S. Eliot. Collected Poems 1909\u00b11962 (Harcourt Brace, New York, 1963).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "S. Eliot [CITATION]"
+    ]
+  },
+  {
+    "title": "FPC: a system for building contigs from restriction \u00aengerprinted clones",
+    "authors": "C Soderland;I Longden;R Mott",
+    "year": "1997",
+    "citation": "Soderland, C., Longden, I. & Mott, R. FPC: a system for building contigs from restriction \u00aengerprinted clones. Comput. Appl. Biosci. 13, 523\u00b1535 (1997).",
+    "pages": "523-535",
+    "journal": "Comput. Appl. Biosci",
+    "volume": "13",
+    "sentences": [
+      "[CITATION #b83][CITATION] to analyse the restriction enzyme digestion patterns of many large-insert clones."
+    ]
+  },
+  {
+    "title": "Approximate statistics of gapped alignments",
+    "authors": "R Mott;R Tribe",
+    "year": "1999",
+    "citation": "Mott, R. & Tribe, R. Approximate statistics of gapped alignments. J. Comp. Biol. 6, 91\u00b1112 (1999).",
+    "pages": "91-112",
+    "journal": "J. Comp. Biol",
+    "volume": "6",
+    "sentences": [
+      "[CITATION #b339] and the percentages of repeat-containing proteins were estimated using Prospero [CITATION] and a P-value threshold of 10 -5 ."
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Randomised controlled trial of personalised dietary intervention based on gut microbiome profiling in patients with inflammatory bowel disease",
+    "authors": [
+      "Gupta, N.",
+      "Andersen, L.",
+      "Okafor, C."
+    ],
+    "year": "2022",
+    "journal": "New England Journal of Medicine",
+    "doi": "",
+    "citation": "Gupta et al. (2022) N Engl J Med.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Long-run effects of early childhood nutrition interventions on human capital formation: evidence from randomised trials in sub-Saharan Africa",
+    "authors": [
+      "Ogundimu, F.",
+      "Svensson, L.",
+      "Prakash, N."
+    ],
+    "year": "2020",
+    "journal": "American Economic Review",
+    "doi": "",
+    "citation": "Ogundimu et al. (2020) Am Econ Rev.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "GraphReg: graph neural network-based prediction of gene regulatory networks from chromatin accessibility data",
+    "authors": [
+      "Huang, Z.",
+      "Volkov, N.",
+      "Santos, R."
+    ],
+    "year": "2023",
+    "journal": "Nature Computational Science",
+    "doi": "",
+    "citation": "Huang et al. (2023) Nat Comput Sci.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Electron Device Letters",
+    "authors": "S K Banerjee;L F Register;E Tutuc;D Reddy;A H Macdonald",
+    "year": "2009",
+    "citation": "S. K. Banerjee, L. F. Register, E. Tutuc, D. Reddy, A. H. MacDonald, Electron Device Letters, IEEE 30, 158 (2009).",
+    "pages": "158",
+    "journal": "IEEE",
+    "volume": "30",
+    "sentences": [
+      "One proposed device that could meet the silicon roadmap requirements beyond the 15 nm node by Banerjee et al. [CITATION] The device is a 'BisFET' (bilayer pseudospin FET) device which is made up of two graphene layers separated by a thin dielectric."
+    ]
+  }
+]

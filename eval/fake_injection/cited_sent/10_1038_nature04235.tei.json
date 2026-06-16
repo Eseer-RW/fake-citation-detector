@@ -1,0 +1,294 @@
+[
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Condensed-matter simulation of a three-dimensional anomaly",
+    "authors": "G W Semenoff",
+    "year": "1984",
+    "citation": "Semenoff, G. W. Condensed-matter simulation of a three-dimensional anomaly. Phys. Rev. Lett. 53, 2449- 2452 (1984).",
+    "pages": "2449-2452",
+    "journal": "Phys. Rev. Lett",
+    "volume": "53",
+    "sentences": [
+      "[CITATION][CITATION #b1] Indeed, a distinctive half-integer QHE [CITATION #b2][CITATION #b3][CITATION #b4] has been predicted theoretically, as has been the existence of a non-zero Berry's phase of the electron wavefunction, a consequence of the exceptional topology of the graphene band structure."
+    ]
+  },
+  {
+    "title": "Model for a quantum hall effect without Landau levels: condensed-matter realization of the \"parity anomaly",
+    "authors": "F D M Haldane",
+    "year": "1988",
+    "citation": "Haldane, F. D. M. Model for a quantum hall effect without Landau levels: condensed-matter realization of the \"parity anomaly\". Phys. Rev. Lett. 61, 2015-2018 (1988).",
+    "pages": "2015-2018",
+    "journal": "Phys. Rev. Lett",
+    "volume": "61",
+    "sentences": [
+      "[CITATION #b0][CITATION] Indeed, a distinctive half-integer QHE [CITATION #b2][CITATION #b3][CITATION #b4] has been predicted theoretically, as has been the existence of a non-zero Berry's phase of the electron wavefunction, a consequence of the exceptional topology of the graphene band structure.",
+      "Landau level (LL) formation for electrons in such system under a perpendicular magnetic field, B, has been studied theoretically using an analogy to the 2+1 dimensional Quantum Electro Dynamics (QED) [CITATION][CITATION #b2] , where the Landau level energy is given by"
+    ]
+  },
+  {
+    "title": "Hall conductivity of a twodimensional graphite system",
+    "authors": "Y Zheng;T Ando",
+    "year": "2002",
+    "citation": "Zheng, Y. & Ando, T. Hall conductivity of a two- dimensional graphite system. Phys. Rev. B 65, 245420 (2002).",
+    "pages": "",
+    "journal": "Phys. Rev. B",
+    "volume": "65",
+    "sentences": [
+      "[CITATION #b0][CITATION #b1] Indeed, a distinctive half-integer QHE [CITATION][CITATION #b3][CITATION #b4] has been predicted theoretically, as has been the existence of a non-zero Berry's phase of the electron wavefunction, a consequence of the exceptional topology of the graphene band structure.",
+      "Landau level (LL) formation for electrons in such system under a perpendicular magnetic field, B, has been studied theoretically using an analogy to the 2+1 dimensional Quantum Electro Dynamics (QED) [CITATION #b1][CITATION] , where the Landau level energy is given by",
+      "The sequence of half-integer multiples of quantum Hall plateaus has been predicted by several theories which combine 'relativistic' Landau levels with the particle-hole symmetry of graphene [CITATION][CITATION #b3][CITATION #b4] ."
+    ]
+  },
+  {
+    "title": "Unconventional integer quantum Hall effect in graphene",
+    "authors": "V P Gusynin;S G Sharapov",
+    "year": "2005",
+    "citation": "Gusynin, V. P. & Sharapov, S. G. Unconventional inte- ger quantum Hall effect in graphene. cond- mat/0506575, http://xxx.lanl.gov/abs/cond-mat/0506575 (2005).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b0][CITATION #b1] Indeed, a distinctive half-integer QHE [CITATION #b2][CITATION][CITATION #b4] has been predicted theoretically, as has been the existence of a non-zero Berry's phase of the electron wavefunction, a consequence of the exceptional topology of the graphene band structure.",
+      "The sequence of half-integer multiples of quantum Hall plateaus has been predicted by several theories which combine 'relativistic' Landau levels with the particle-hole symmetry of graphene [CITATION #b2][CITATION][CITATION #b4] ."
+    ]
+  },
+  {
+    "title": "Electronic properties of two-dimensional carbon",
+    "authors": "N M R Peres;F Guinea;A H Neto",
+    "year": "2005",
+    "citation": "Peres, N. M. R., Guinea, F. & Neto, A. H. C. Electronic properties of two-dimensional carbon. cond- mat/0506709, http://xxx.lanl.gov/abs/cond-mat/0506709 (2005).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "[CITATION #b0][CITATION #b1] Indeed, a distinctive half-integer QHE [CITATION #b2][CITATION #b3][CITATION] has been predicted theoretically, as has been the existence of a non-zero Berry's phase of the electron wavefunction, a consequence of the exceptional topology of the graphene band structure.",
+      "The sequence of half-integer multiples of quantum Hall plateaus has been predicted by several theories which combine 'relativistic' Landau levels with the particle-hole symmetry of graphene [CITATION #b2][CITATION #b3][CITATION] ."
+    ]
+  },
+  {
+    "title": "Berry's phase and absence of back scattering in carbon nanotubes",
+    "authors": "T Ando;T Nakaishi;R Saito",
+    "year": "1998",
+    "citation": "Ando, T. Nakaishi, T. & Saito, R. Berry's phase and absence of back scattering in carbon nanotubes. J. Phys. Soc. Jpn. 67, 2857-2862 (1998).",
+    "pages": "2857-2862",
+    "journal": "J. Phys. Soc. Jpn",
+    "volume": "67",
+    "sentences": [
+      "[CITATION][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION #b8][CITATION #b9][CITATION #b10][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally.",
+      "A direct implication of Berry's phase in graphene is discussed in the context of the quantum phase of a spin-1/2 pseudo-spinor that describes the sublattice symmetry [CITATION][CITATION #b14] ."
+    ]
+  },
+  {
+    "title": "Manifestation of Berry's phase in metal physics",
+    "authors": "G P Mikitik;Y V Sharlai",
+    "year": "1999",
+    "citation": "Mikitik, G. P. & Sharlai, Y. V. Manifestation of Berry's phase in metal physics. Phys. Rev. Lett. 82, 2147-2150 (1999).",
+    "pages": "2147-2150",
+    "journal": "Phys. Rev. Lett",
+    "volume": "82",
+    "sentences": [
+      "[CITATION #b5][CITATION] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION #b8][CITATION #b9][CITATION #b10][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally.",
+      "2c  As noted by several workers, a consequence of the combination of time reversal symmetry with the novel Dirac point structure can be viewed in terms of Berry's phase arising from the band degeneracy point [CITATION][CITATION #b13] ."
+    ]
+  },
+  {
+    "title": "Electric field effect in atomically thin carbon films",
+    "authors": "K S Novoselov",
+    "year": "2004",
+    "citation": "Novoselov, K. S. et al. Electric field effect in atomically thin carbon films. Science 306, 666-669 (2004).",
+    "pages": "666-669",
+    "journal": "Science",
+    "volume": "306",
+    "sentences": [
+      "[CITATION #b5][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION][CITATION #b8][CITATION #b9][CITATION #b10][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally.",
+      "Previous studies of mesoscopic graphite samples consisting of a few layers of graphene exhibited magneto-oscillations associated with the LL formation by electron-like and hole-like carriers tuned by the electric field effect [CITATION][CITATION #b8][CITATION #b10] .",
+      "Mobilities are higher than 10 4 cm 2 /Vs for the entire gate voltage range, considerably exceeding the quality of previously studied graphene samples [CITATION][CITATION #b8] .",
+      "Such a non-zero Berry's phase was not observed in the previous few layer graphite specimens [CITATION][CITATION #b10][CITATION #b17] , although there have been claims of hints of a phase shift in earlier measurements on bulk graphite [CITATION #b16] ."
+    ]
+  },
+  {
+    "title": "Ultranthin epitaxial graphite: 2D electron gas properties and a route toward graphene-based nanoelectronics",
+    "authors": "C Berger",
+    "year": "2004",
+    "citation": "Berger, C. et al. Ultranthin epitaxial graphite: 2D electron gas properties and a route toward graphene-based nanoelectronics. J. Phys. Chem. B 108, 19912-19916 (2004).",
+    "pages": "19912-19916",
+    "journal": "J. Phys. Chem. B",
+    "volume": "108",
+    "sentences": [
+      "[CITATION #b5][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION][CITATION #b9][CITATION #b10][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally.",
+      "Previous studies of mesoscopic graphite samples consisting of a few layers of graphene exhibited magneto-oscillations associated with the LL formation by electron-like and hole-like carriers tuned by the electric field effect [CITATION #b7][CITATION][CITATION #b10] .",
+      "Mobilities are higher than 10 4 cm 2 /Vs for the entire gate voltage range, considerably exceeding the quality of previously studied graphene samples [CITATION #b7][CITATION] .",
+      "The unique behaviour of electrons in this newly discovered 2+1 dimensional QED system not only opens up many interesting questions in mesoscopic transport in electronic systems with non-zero Berry's phase but may also provides the basis for novel carbon based electric and magnetic field effect device applications, such as ballistic metallic/semiconducting graphene ribbon devices [CITATION] and electric field effective spin transport devices utilizing spin-polarized edge state [CITATION #b19] ."
+    ]
+  },
+  {
+    "title": "Fabrication and electric-field-dependent transport measurements of mesoscopic graphite devices",
+    "authors": "Y Zhang;J P Small;W V Pontius;P Kim",
+    "year": "2005",
+    "citation": "Zhang, Y., Small, J. P., Pontius, W. V. & Kim, P. Fabri- cation and electric-field-dependent transport measure- ments of mesoscopic graphite devices. Appl. Phys. Lett. 86, 073104 (2005).",
+    "pages": "73104",
+    "journal": "Appl. Phys. Lett",
+    "volume": "86",
+    "sentences": [
+      "[CITATION #b5][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION #b8][CITATION][CITATION #b10][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally."
+    ]
+  },
+  {
+    "title": "Electric field modulation of galvanomagnetic properties of mesoscopic graphite",
+    "authors": "Y Zhang;J P Small;E S Amori;P Kim",
+    "year": "2005",
+    "citation": "Zhang, Y., Small, J. P., Amori, E. S. & Kim, P. Electric field modulation of galvanomagnetic properties of mesoscopic graphite. Phys. Rev. Lett. 94, 176803 (2005).",
+    "pages": "",
+    "journal": "Phys. Rev. Lett",
+    "volume": "94",
+    "sentences": [
+      "[CITATION #b5][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION #b8][CITATION #b9][CITATION][CITATION #b11] now permit such exotic 2D electron systems to be probed experimentally.",
+      "Previous studies of mesoscopic graphite samples consisting of a few layers of graphene exhibited magneto-oscillations associated with the LL formation by electron-like and hole-like carriers tuned by the electric field effect [CITATION #b7][CITATION #b8][CITATION] .",
+      "Such a non-zero Berry's phase was not observed in the previous few layer graphite specimens [CITATION #b7][CITATION][CITATION #b17] , although there have been claims of hints of a phase shift in earlier measurements on bulk graphite [CITATION #b16] ."
+    ]
+  },
+  {
+    "title": "Coulomb oscillations and Hall effect in quasi-2D graphite quantum dots",
+    "authors": "J S Bunch;Y Yaish;M Brink;K Bolotin;P L Mceuen",
+    "year": "2005",
+    "citation": "Bunch, J. S., Yaish, Y., Brink, M., Bolotin, K., McEuen, P. L. Coulomb oscillations and Hall effect in quasi-2D graphite quantum dots. Nano Lett. 5, 287-290 (2005).",
+    "pages": "287-290",
+    "journal": "Nano Lett",
+    "volume": "5",
+    "sentences": [
+      "[CITATION #b5][CITATION #b6] Recent advances in micromechanical extraction and fabrication techniques for graphite structures [CITATION #b7][CITATION #b8][CITATION #b9][CITATION #b10][CITATION] now permit such exotic 2D electron systems to be probed experimentally."
+    ]
+  },
+  {
+    "title": "Are Transport Anomalies in \"Electron Waveguides\" Classical?",
+    "authors": "M L Roukes;A Scherer;Van Der;B P Gaag",
+    "year": "1990",
+    "citation": "Roukes, M. L., Scherer, A, & Van der Gaag, B. P. Are Transport Anomalies in \"Electron Waveguides\" Classi- cal? Phys. Rev. Lett. 64, 1154-1157 (1990).",
+    "pages": "1154-1157",
+    "journal": "Phys. Rev. Lett",
+    "volume": "64",
+    "sentences": [
+      "Although this structure is reproducible for any given sample, its shape varies from device to device, suggesting potentially mesoscopic effects depending on the details of the sample geometry [CITATION] ."
+    ]
+  },
+  {
+    "title": "The anomalous Hall effect and magnetic monopoles in momentum space",
+    "authors": "Z Fang",
+    "year": "2003",
+    "citation": "Fang, Z. et al. The anomalous Hall effect and magnetic monopoles in momentum space. Science 302, 92-95 (2003).",
+    "pages": "92-95",
+    "journal": "Science",
+    "volume": "302",
+    "sentences": [
+      "2c  As noted by several workers, a consequence of the combination of time reversal symmetry with the novel Dirac point structure can be viewed in terms of Berry's phase arising from the band degeneracy point [CITATION #b6][CITATION] ."
+    ]
+  },
+  {
+    "title": "Diorder, pseudospins, and backscattering in carbon nanotubes",
+    "authors": "P L Mceuen;M Bockrath;D H Cobden;Y Yoon;S G Louie",
+    "year": "1999",
+    "citation": "McEuen, P. L. Bockrath, M., Cobden, D. H., Yoon, Y. & Louie, S. G. Diorder, pseudospins, and backscattering in carbon nanotubes. Phys. Rev. Lett. 83, 5098-5101 (1999).",
+    "pages": "5098-5101",
+    "journal": "Phys. Rev. Lett",
+    "volume": "83",
+    "sentences": [
+      "A direct implication of Berry's phase in graphene is discussed in the context of the quantum phase of a spin-1/2 pseudo-spinor that describes the sublattice symmetry [CITATION #b5][CITATION] ."
+    ]
+  },
+  {
+    "title": "Magnetic oscillations in planar systems with the Dirac-like spectrum of quasiparticle excitations",
+    "authors": "S G Sharapov;V P Gusynin;H Beck",
+    "year": "2004",
+    "citation": "Sharapov, S. G., Gusynin, V. P. & Beck, H. Magnetic oscillations in planar systems with the Dirac-like spec- trum of quasiparticle excitations. Phys. Rev. B. 69, 075104 (2004).",
+    "pages": "75104",
+    "journal": "Phys. Rev. B",
+    "volume": "69",
+    "sentences": [
+      "It can further be probed in the magnetic field regime where a semi-classical magnetooscillation description holds [CITATION][CITATION #b16] : Remarkably, the resulting \u03b2 is very close to 0.5 (upper inset to Fig 3b), providing further manifestation for the existence of a non-zero Berry's phase in graphene and the presence of Dirac particles."
+    ]
+  },
+  {
+    "title": "Efficient sparse attention mechanisms for long-context language modelling with linear memory complexity",
+    "authors": [
+      "Petrov, A.",
+      "Kim, S.",
+      "Nwosu, E."
+    ],
+    "year": "2023",
+    "journal": "Journal of Machine Learning Research",
+    "doi": "",
+    "citation": "Petrov et al. (2023) JMLR.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Phase analysis of quantum oscillations in graphite",
+    "authors": "I A Luk'yanchuk;Y Kopelevich",
+    "year": "2004",
+    "citation": "Luk'yanchuk, I. A. & Kopelevich, Y. Phase analysis of quantum oscillations in graphite, Phys. Rev. Lett. 93, 166402 (2004).",
+    "pages": "",
+    "journal": "Phys. Rev. Lett",
+    "volume": "93",
+    "sentences": [
+      "It can further be probed in the magnetic field regime where a semi-classical magnetooscillation description holds [CITATION #b15][CITATION] : Remarkably, the resulting \u03b2 is very close to 0.5 (upper inset to Fig 3b), providing further manifestation for the existence of a non-zero Berry's phase in graphene and the presence of Dirac particles.",
+      "Such a non-zero Berry's phase was not observed in the previous few layer graphite specimens [CITATION #b7][CITATION #b10][CITATION #b17] , although there have been claims of hints of a phase shift in earlier measurements on bulk graphite [CITATION] ."
+    ]
+  },
+  {
+    "title": "Two dimensional electron and hole gases at the surface of graphite",
+    "authors": "S V Morozov",
+    "year": "2005",
+    "citation": "Morozov, S. V. et al. Two dimensional electron and hole gases at the surface of graphite. cond-mat/0505319, http://xxx.lanl.gov/abs/cond-mat/0505319 (2005).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Such a non-zero Berry's phase was not observed in the previous few layer graphite specimens [CITATION #b7][CITATION #b10][CITATION] , although there have been claims of hints of a phase shift in earlier measurements on bulk graphite [CITATION #b16] ."
+    ]
+  },
+  {
+    "title": "Quantum spin Hall effect in graphene",
+    "authors": "C Kane;E J Mele",
+    "year": "2005",
+    "citation": "Kane, C. L & Mele, E. J. Quantum spin Hall effect in graphene. cond-mat/0411737, http://xxx.lanl.gov/abs/cond-mat/0411737 (2005).",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "The unique behaviour of electrons in this newly discovered 2+1 dimensional QED system not only opens up many interesting questions in mesoscopic transport in electronic systems with non-zero Berry's phase but may also provides the basis for novel carbon based electric and magnetic field effect device applications, such as ballistic metallic/semiconducting graphene ribbon devices [CITATION #b8] and electric field effective spin transport devices utilizing spin-polarized edge state [CITATION] ."
+    ]
+  },
+  {
+    "title": "Benchmarking single-cell RNA-seq integration methods across tissue types and sequencing platforms",
+    "authors": [
+      "Larsson, P.",
+      "Diallo, A.",
+      "Whitfield, J."
+    ],
+    "year": "2021",
+    "journal": "Genome Biology",
+    "doi": "",
+    "citation": "Larsson et al. (2021) Genome Biol.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  }
+]

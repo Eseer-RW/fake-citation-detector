@@ -1,0 +1,280 @@
+[
+  {
+    "title": "Epidemiological methods for studying genes and environmental factors in complex diseases",
+    "authors": "D Clayton;P M Mckeigue",
+    "year": "2001",
+    "citation": "Clayton D, McKeigue PM (2001). Epidemiological methods for studying genes and environmental fac- tors in complex diseases. Lancet 358: 1356-1360. PMID: 11684236",
+    "pages": "1356-1360",
+    "journal": "Lancet",
+    "volume": "358",
+    "sentences": [
+      "While retrospective case-control studies of particular diseases [CITATION] or existing prospective studies of particular risk factors can help to address this challenge [CITATION #b1][CITATION #b2], a complementary approach is to establish large prospective cohorts designed to study a much wider range of known and novel risk factors for a wide range of diseases [CITATION #b3]."
+    ]
+  },
+  {
+    "title": "Merging and emerging cohorts: not worth the wait",
+    "authors": "W C Willett;W J Blot;G A Colditz;A R Folsom;B E Henderson;M J Stampfer",
+    "year": "2007",
+    "citation": "Willett WC, Blot WJ, Colditz GA, Folsom AR, Henderson BE, Stampfer MJ (2007). Merging and emerg- ing cohorts: not worth the wait. Nature 445: 257-258. PMID: 17230171",
+    "pages": "257-258",
+    "journal": "Nature",
+    "volume": "445",
+    "sentences": [
+      "While retrospective case-control studies of particular diseases [CITATION #b0] or existing prospective studies of particular risk factors can help to address this challenge [CITATION][CITATION #b2], a complementary approach is to establish large prospective cohorts designed to study a much wider range of known and novel risk factors for a wide range of diseases [CITATION #b3]."
+    ]
+  },
+  {
+    "title": "Merging and emerging cohorts: necessary but not sufficient",
+    "authors": "F S Collins;T A Manolio",
+    "year": "2007",
+    "citation": "Collins FS, Manolio TA (2007). Merging and emerging cohorts: necessary but not sufficient. Nature 445: 259. PMID: 17230172",
+    "pages": "259",
+    "journal": "Nature",
+    "volume": "445",
+    "sentences": [
+      "While retrospective case-control studies of particular diseases [CITATION #b0] or existing prospective studies of particular risk factors can help to address this challenge [CITATION #b1][CITATION], a complementary approach is to establish large prospective cohorts designed to study a much wider range of known and novel risk factors for a wide range of diseases [CITATION #b3]."
+    ]
+  },
+  {
+    "title": "The causes of cancer: quantitative estimates of avoidable risks of cancer in the United States today",
+    "authors": "R Doll;R Peto",
+    "year": "1981",
+    "citation": "Doll R, Peto R (1981). The causes of cancer: quantitative estimates of avoidable risks of cancer in the United States today. Journal of the National Cancer Institute 66: 1191-1308. PMID: 7017215",
+    "pages": "1191-1308",
+    "journal": "Journal of the National Cancer Institute",
+    "volume": "66",
+    "sentences": [
+      "While retrospective case-control studies of particular diseases [CITATION #b0] or existing prospective studies of particular risk factors can help to address this challenge [CITATION #b1][CITATION #b2], a complementary approach is to establish large prospective cohorts designed to study a much wider range of known and novel risk factors for a wide range of diseases [CITATION]."
+    ]
+  },
+  {
+    "title": "UK Biobank: from concept to reality",
+    "authors": "W Ollier;T Sprosen;T Peakman",
+    "year": "2005",
+    "citation": "Ollier W, Sprosen T, Peakman T (2005). UK Biobank: from concept to reality. Pharmacogenomics 6: 639-646. PMID: 16143003",
+    "pages": "639-646",
+    "journal": "Pharmacogenomics",
+    "volume": "6",
+    "sentences": [
+      "UK (United Kingdom) Biobank is a very large, population-based prospective study, established to allow detailed investigations of the genetic and nongenetic determinants of the diseases of middle and old age [CITATION][CITATION #b5]."
+    ]
+  },
+  {
+    "title": "Association between childhood adversity exposure and telomere attrition across the lifespan: a systematic review and meta-analysis",
+    "authors": [
+      "Kowalski, B.",
+      "Mensah, F.",
+      "Tran, H."
+    ],
+    "year": "2018",
+    "journal": "JAMA Psychiatry",
+    "doi": "",
+    "citation": "Kowalski et al. (2018) JAMA Psychiatry.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Protocol for a large-scale prospective epidemiological resource",
+    "authors": "Uk;Biobank",
+    "year": "2006",
+    "citation": "UK Biobank (2006). Protocol for a large-scale prospective epidemiological resource. www.ukbiobank. ac.uk/resources/.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "UK (United Kingdom) Biobank is a very large, population-based prospective study, established to allow detailed investigations of the genetic and nongenetic determinants of the diseases of middle and old age [CITATION #b4][CITATION].",
+      "Projected numbers of cases of a range of common conditions expected to occur among 500,000 UK Biobank participants during 20 years of follow-up (Table 1) suggest that reliable assessment of the main determinants of most of these conditions (and others that are similarly common) should be possible during the current decade [CITATION][CITATION #b8]."
+    ]
+  },
+  {
+    "title": "Size matters: just how big is BIG?: Quantifying realistic sample size requirements for human genome epidemiology",
+    "authors": "P R Burton;A L Hansell;I Fortier;T A Manolio;M J Khoury",
+    "year": "2009",
+    "citation": "Burton PR, Hansell AL, Fortier I, Manolio TA, Khoury MJ, et al (2009). Size matters: just how big is BIG?: Quantifying realistic sample size requirements for human genome epidemiology. Int J Epidemiol 38: 263-273. doi: 10.1093/ije/dyn147 PMID: 18676414",
+    "pages": "263-273",
+    "journal": "Int J Epidemiol",
+    "volume": "38",
+    "sentences": [
+      "The large size of the cohort was based on statistical power calculations for nested case-control studies [CITATION], showing that 5,000-10,000 cases of any particular condition would be required for the reliable detection of odds ratios (ORs) for the main effects of different exposures of 1.3-1.5 (the upper end of the range reported from genome-wide association studies of various conditions [CITATION #b7]), and around 20,000 cases for detection of interactions with ORs of at least 2.0."
+    ]
+  },
+  {
+    "title": "What makes a good genetic association study?",
+    "authors": "A T Hattersley;M I Mccarthy",
+    "year": "2005",
+    "citation": "Hattersley AT, McCarthy MI (2005). What makes a good genetic association study? Lancet 366: 1315-1323. PMID: 16214603",
+    "pages": "1315-1323",
+    "journal": "Lancet",
+    "volume": "366",
+    "sentences": [
+      "The large size of the cohort was based on statistical power calculations for nested case-control studies [CITATION #b6], showing that 5,000-10,000 cases of any particular condition would be required for the reliable detection of odds ratios (ORs) for the main effects of different exposures of 1.3-1.5 (the upper end of the range reported from genome-wide association studies of various conditions [CITATION]), and around 20,000 cases for detection of interactions with ORs of at least 2.0."
+    ]
+  },
+  {
+    "title": "What makes UK Biobank special?",
+    "authors": "R Collins",
+    "year": "2012",
+    "citation": "Collins R (2012). What makes UK Biobank special? Lancet 379:1173-1174. doi: 10.1016/S0140-6736 (12)60404-8 PMID: 22463865",
+    "pages": "1173-1174",
+    "journal": "Lancet",
+    "volume": "379",
+    "sentences": [
+      "Projected numbers of cases of a range of common conditions expected to occur among 500,000 UK Biobank participants during 20 years of follow-up (Table 1) suggest that reliable assessment of the main determinants of most of these conditions (and others that are similarly common) should be possible during the current decade [CITATION #b5][CITATION]."
+    ]
+  },
+  {
+    "title": "The UK Biobank sample handling and storage protocol for the collection, processing and archiving of human blood and urine",
+    "authors": "P Elliott;T C Peakman",
+    "year": "2008",
+    "citation": "Elliott P, Peakman TC (2008). The UK Biobank sample handling and storage protocol for the collection, processing and archiving of human blood and urine. Int J Epidemiol 37: 234-244. doi: 10.1093/ije/ dym276 PMID: 18381398",
+    "pages": "234-244",
+    "journal": "Int J Epidemiol",
+    "volume": "37",
+    "sentences": [
+      "Multiple aliquots of different sample fractions are stored in UK Biobank's automated laboratory, allowing for a wide range of future assays [CITATION]."
+    ]
+  },
+  {
+    "title": "Development and evaluation of the Oxford WebQ: a low cost web-based method for assessment of previous 24 hour dietary intake in large prospective studies",
+    "authors": "B Liu;H Young;F L Crowe;V S Benson;E A Spencer",
+    "year": "2011",
+    "citation": "Liu B, Young H, Crowe FL, Benson VS, Spencer EA, et al (2011). Development and evaluation of the Oxford WebQ: a low cost web-based method for assessment of previous 24 hour dietary intake in large prospective studies. Public Health Nutrition June: 1-8.",
+    "pages": "1-8",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Data are already available both from a detailed dietary web questionnaire [CITATION], completed up to four times by over 200,000 participants, and from the first repeat of the entire baseline assessment in around 20,000 participants [CITATION #b11]."
+    ]
+  },
+  {
+    "title": "Underestimation of risk associations due to regression dilution in long-term follow-up of prospective studies",
+    "authors": "R Clarke;M Shipley;S Lewington;L Youngman;R Collins",
+    "year": "1999",
+    "citation": "Clarke R, Shipley M, Lewington S, Youngman L, Collins R, et al (1999). Underestimation of risk associ- ations due to regression dilution in long-term follow-up of prospective studies. Am J Epidemiol 150: 341-353. PMID: 10453810",
+    "pages": "341-353",
+    "journal": "Am J Epidemiol",
+    "volume": "150",
+    "sentences": [
+      "Data are already available both from a detailed dietary web questionnaire [CITATION #b10], completed up to four times by over 200,000 participants, and from the first repeat of the entire baseline assessment in around 20,000 participants [CITATION].",
+      "Ensuring that the resource and its access arrangements are widely communicated is an important task, requiring a dedicated communications team to manage UK Biobank's Repeat of baseline assessment 20,000-25,000 As above every few years, to allow correction for regression dilution due to measurement error and within person fluctuations in exposure levels [CITATION]."
+    ]
+  },
+  {
+    "title": "Gut microbiome dysbiosis as a mediator of systemic inflammation in type 2 diabetes: evidence from a prospective twin study",
+    "authors": [
+      "Nakamura, S.",
+      "Osei-Bonsu, E.",
+      "Walters, D."
+    ],
+    "year": "2019",
+    "journal": "Cell Metabolism",
+    "doi": "",
+    "citation": "Nakamura et al. (2019) Cell Metab.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "One in 30 people in the UK take part in cohort studies",
+    "authors": "J Pell;J Valentine;H Inskip",
+    "year": "2014",
+    "citation": "Pell J, Valentine J, Inskip H (2014). One in 30 people in the UK take part in cohort studies. Lancet 383: 1015-1016. doi: 10.1016/S0140-6736(14)60412-8 PMID: 24656186",
+    "pages": "1015-1016",
+    "journal": "Lancet",
+    "volume": "383",
+    "sentences": [
+      "Participant recruitment, retention, and engagement with enhancement projects has benefited from the willingness of very large numbers of British people to take part in observational research without the prospect of direct personal gain [CITATION]."
+    ]
+  },
+  {
+    "title": "Design and implementation of a high-throughput biological sample processing facility using modern manufacturing principles",
+    "authors": "P Downey;T C Peakman",
+    "year": "2008",
+    "citation": "Downey P, Peakman TC (2008). Design and implementation of a high-throughput biological sample processing facility using modern manufacturing principles. Int J Epidemiol 37 (Suppl 1): i46-i50. doi: 10.1093/ije/dyn031 PMID: 18381393",
+    "pages": "46-50",
+    "journal": "Int J Epidemiol",
+    "volume": "37",
+    "sentences": [
+      "Biological samples were also processed and handled centrally, requiring the development of bespoke laboratory information management and automated robotic systems to facilitate rapid, error-free sample storage in, and extraction from, the freezers (at rates of up to 1,500 samples per day) according to particular sample and participant characteristics [CITATION]."
+    ]
+  },
+  {
+    "title": "Biorepositories-at the bleeding edge",
+    "authors": "T A Manolio",
+    "year": "2008",
+    "citation": "Manolio TA (2008). Biorepositories-at the bleeding edge. Int J Epidemiol 37: 231-233. doi: 10.1093/ ije/dym282 PMID: 18381397",
+    "pages": "231-233",
+    "journal": "Int J Epidemiol",
+    "volume": "37",
+    "sentences": [
+      "UK Biobank has consulted widely not only with the scientific community but also with the public, its participants, and other interested parties [CITATION][CITATION #b17]."
+    ]
+  },
+  {
+    "title": "UK Biobank: a project in search of a protocol?",
+    "authors": "V Barbour",
+    "year": "2003",
+    "citation": "Barbour V (2003). UK Biobank: a project in search of a protocol? Lancet 361: 1734-1738.",
+    "pages": "1734-1738",
+    "journal": "Lancet",
+    "volume": "361",
+    "sentences": [
+      "UK Biobank has consulted widely not only with the scientific community but also with the public, its participants, and other interested parties [CITATION #b16][CITATION]."
+    ]
+  },
+  {
+    "title": "Ethics and Governance Framework. www.ukbiobank.ac.uk/resources",
+    "authors": "Uk;Biobank",
+    "year": "2007",
+    "citation": "UK Biobank (2007). Ethics and Governance Framework. www.ukbiobank.ac.uk/resources/. Accessed 12 October 2014.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This has informed the development of its Ethics and Governance Framework, which lays out its principles and policies [CITATION], as well as its access procedures [CITATION #b19]."
+    ]
+  },
+  {
+    "title": "Room-temperature superconductivity in nitrogen-doped lutetium hydride under moderate pressure conditions",
+    "authors": [
+      "Reinholt, G.",
+      "Tanaka, M.",
+      "Osei, A."
+    ],
+    "year": "2023",
+    "journal": "Physical Review Letters",
+    "doi": "",
+    "citation": "Reinholt et al. (2023) Phys Rev Lett.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Access Procedures: Application and review procedures for access to the UK Biobank Resource",
+    "authors": "Uk;Biobank",
+    "year": "2011",
+    "citation": "UK Biobank (2011). Access Procedures: Application and review procedures for access to the UK Bio- bank Resource. www.ukbiobank.ac.uk/resources/. Accessed 12 October 2014.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "This has informed the development of its Ethics and Governance Framework, which lays out its principles and policies [CITATION #b18], as well as its access procedures [CITATION]."
+    ]
+  },
+  {
+    "title": "Enhancing the feasibility of large cohort studies",
+    "authors": "T A Manolio;R Collins",
+    "year": "2010",
+    "citation": "Manolio TA, Collins R (2010). Enhancing the feasibility of large cohort studies. JAMA 304: 2290-2291. doi: 10.1001/jama.2010.1686 PMID: 21098774",
+    "pages": "2290-2291",
+    "journal": "JAMA",
+    "volume": "304",
+    "sentences": [
+      "The key lessons learned from establishing UK Biobank are that such large-scale studies require not only a clear scientific focus but also streamlined governance; effective working between academic and management disciplines; centralised infrastructure with industrial approaches to collection and processing of data and samples; close partnership with major funders; a wide network of scientific advisors; high-quality, pragmatic legal and ethical advice; and widespread public support [CITATION]."
+    ]
+  }
+]

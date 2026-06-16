@@ -1,0 +1,1715 @@
+[
+  {
+    "title": "A new genomic blueprint of the human gut Microbiota",
+    "authors": "A Almeida;A L Mitchell;M Boland;S C Forster;G B Gloor;A Tarkowska;T D Lawley;R D Finn",
+    "year": "2019",
+    "citation": "Almeida A, Mitchell AL, Boland M, Forster SC, Gloor GB, Tarkowska A, Lawley TD, Finn RD. 2019. A new genomic blueprint of the human gut Microbiota. Nature 568:499-504. DOI: https://doi.org/10.1038/s41586- 019-0965-1, PMID: 30745586",
+    "pages": "499-504",
+    "journal": "Nature",
+    "volume": "568",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION][CITATION #b39][CITATION #b95][CITATION #b98][CITATION #b101][CITATION #b150].",
+      "The latter is especially supported by the corresponding growth of fragmentary, draft, and finished microbial isolate genomes, and their consistent annotation and clustering into genome groups and pan-genomes [CITATION #b12][CITATION][CITATION #b98].",
+      "This is supported by the extent to which 'dark matter' not previously characterized in the laboratory pervades host-associated and (especially) environmental metagenomes [CITATION #b95], with most communities containing a plurality, majority, or sometimes supermajority of novel and/or uncharacterized sequences [CITATION][CITATION #b98]."
+    ]
+  },
+  {
+    "title": "Efficient sparse attention mechanisms for long-context language modelling with linear memory complexity",
+    "authors": [
+      "Petrov, A.",
+      "Kim, S.",
+      "Nwosu, E."
+    ],
+    "year": "2023",
+    "journal": "Journal of Machine Learning Research",
+    "doi": "",
+    "citation": "Petrov et al. (2023) JMLR.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "A unified catalog of 204,938 reference genomes from the human gut microbiome",
+    "authors": "A Almeida;S Nayfach;M Boland;F Strozzi;M Beracochea;Z J Shi;K S Pollard;E Sakharova;D H Parks;P Hugenholtz;N Segata;N C Kyrpides;R D Finn",
+    "year": "2021",
+    "citation": "Almeida A, Nayfach S, Boland M, Strozzi F, Beracochea M, Shi ZJ, Pollard KS, Sakharova E, Parks DH, Hugenholtz P, Segata N, Kyrpides NC, Finn RD. 2021. A unified catalog of 204,938 reference genomes from the human gut microbiome. Nature Biotechnology 39:105-114. DOI: https://doi.org/10.1038/s41587-020- 0603-3, PMID: 32690973",
+    "pages": "105-114",
+    "journal": "Nature Biotechnology",
+    "volume": "39",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION][CITATION #b11][CITATION #b39][CITATION #b95][CITATION #b98][CITATION #b101][CITATION #b150].",
+      "The latter is especially supported by the corresponding growth of fragmentary, draft, and finished microbial isolate genomes, and their consistent annotation and clustering into genome groups and pan-genomes [CITATION][CITATION #b11][CITATION #b98].",
+      "A final area of improvement for bioBakery, relatedly, is the increased integration between reference-based and assembly-based approaches -begun here via PhyloPhlAn 3 -in order to better leverage MAGs [CITATION], SGBs [CITATION #b98], and novel gene families."
+    ]
+  },
+  {
+    "title": "Basic local alignment search tool",
+    "authors": "S F Altschul;W Gish;W Miller;E W Myers;D J Lipman",
+    "year": "1990",
+    "citation": "Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. 1990. Basic local alignment search tool. Journal of Molecular Biology 215:403-410. DOI: https://doi.org/10.1016/S0022-2836(05)80360-2, PMID: 2231712",
+    "pages": "403-410",
+    "journal": "Journal of Molecular Biology",
+    "volume": "215",
+    "sentences": [
+      "By default, reconstructed sequences are mapped against the markers database using BLASTn [CITATION], multiple sequence alignment is performed by MAFFT [CITATION #b60] and phylogenetic trees are produced by RAxML [CITATION #b115]."
+    ]
+  },
+  {
+    "title": "FastQC: A Quality Control Tool for High Throughput Sequence Data",
+    "authors": "S O Andrews",
+    "year": "2010",
+    "citation": "Andrews S O. 2010. FastQC: A Quality Control Tool for High Throughput Sequence Data.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Removal of overrepresented sequences (default:>0.1% frequency) using FastQC [CITATION] and low-complexity sequences using TRF [CITATION #b22]."
+    ]
+  },
+  {
+    "title": "Gene ontology: tool for the unification of biology the gene ontology consortium",
+    "authors": "M Ashburner;C A Ball;J A Blake;D Botstein;H Butler;J M Cherry;A P Davis;K Dolinski;S S Dwight;J T Eppig;M A Harris;D P Hill;L Issel-Tarver;A Kasarskis;S Lewis;J C Matese;J E Richardson;M Ringwald;G M Rubin;G Sherlock",
+    "year": "2000",
+    "citation": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, Davis AP, Dolinski K, Dwight SS, Eppig JT, Harris MA, Hill DP, Issel-Tarver L, Kasarskis A, Lewis S, Matese JC, Richardson JE, Ringwald M, Rubin GM, Sherlock G. 2000. Gene ontology: tool for the unification of biology the gene ontology consortium. Nature Genetics 25:25-29. DOI: https://doi.org/10.1038/75556, PMID: 10802651",
+    "pages": "25-29",
+    "journal": "Nature Genetics",
+    "volume": "25",
+    "sentences": [
+      "Each cluster representative was used for extracting the nucleotide sequence from the source reference genome and the several functional annotations from different systems (GO terms [CITATION], KEGG modules [CITATION #b56], KO identifiers, Pfam accessions [CITATION #b37], EC numbers [CITATION #b19], and eggNOG accessions [CITATION #b100] associated with the UniProtKB entry."
+    ]
+  },
+  {
+    "title": "Compact graphical representation of phylogenetic data and metadata with GraPhlAn",
+    "authors": "F Asnicar;G Weingart;T L Tickle;C Huttenhower;N Segata",
+    "year": "2015",
+    "citation": "Asnicar F, Weingart G, Tickle TL, Huttenhower C, Segata N. 2015. Compact graphical representation of phylogenetic data and metadata with GraPhlAn. PeerJ 3:e1029. DOI: https://doi.org/10.7717/peerj.1029",
+    "pages": "e1029",
+    "journal": "PeerJ",
+    "volume": "3",
+    "sentences": [
+      "The phylogenetic tree generated by PhyloPhlAn was plotted with GraPhlAn [CITATION]."
+    ]
+  },
+  {
+    "title": "Studying vertical microbiome transmission from mothers to infants by Strain-Level metagenomic profiling",
+    "authors": "F Asnicar;S Manara;M Zolfo;D T Truong;M Scholz;F Armanini;P Ferretti;V Gorfer;A Pedrotti;A Tett;N Segata",
+    "year": "2017",
+    "citation": "Asnicar F, Manara S, Zolfo M, Truong DT, Scholz M, Armanini F, Ferretti P, Gorfer V, Pedrotti A, Tett A, Segata N. 2017. Studying vertical microbiome transmission from mothers to infants by Strain-Level metagenomic profiling. mSystems 2:e00164-16. DOI: https://doi.org/10.1128/mSystems.00164-16, PMID: 28144631",
+    "pages": "00164-16",
+    "journal": "",
+    "volume": "2",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Precise phylogenetic analysis of microbial isolates and genomes from metagenomes using PhyloPhlAn 3.0",
+    "authors": "F Asnicar;A M Thomas;F Beghini;C Mengoni;S Manara;P Manghi;Q Zhu;M Bolzan;F Cumbo;U May;J G Sanders;M Zolfo;E Kopylova;E Pasolli;R Knight;S Mirarab;C Huttenhower;N Segata",
+    "year": "2020",
+    "citation": "Asnicar F, Thomas AM, Beghini F, Mengoni C, Manara S, Manghi P, Zhu Q, Bolzan M, Cumbo F, May U, Sanders JG, Zolfo M, Kopylova E, Pasolli E, Knight R, Mirarab S, Huttenhower C, Segata N. 2020. Precise phylogenetic analysis of microbial isolates and genomes from metagenomes using PhyloPhlAn 3.0. Nature Communications 11:2500. DOI: https://doi.org/10.1038/s41467-020-16366-7, PMID: 32427907",
+    "pages": "41467-020",
+    "journal": "Nature Communications",
+    "volume": "11",
+    "sentences": [
+      "Assembly-based analyses are now reaching a point of integrating microbial communities and isolate genomics as well, particularly for phylogeny [CITATION][CITATION #b148].",
+      "These efforts have also led to increased consistency in microbial systematics and phylogeny, facilitating the types of automated, high-throughput analyses necessary when manual curation cannot keep up with such rapid growth [CITATION][CITATION #b31].",
+      "These functionalities are incorporated into (i) StrainPhlAn 3, which infers strain-level genotypes by reconstructing sample-specific consensus sequences from MetaPhlAn 3 markers [CITATION #b149] (ii) PanPhlAn 3, which identifies strain-specific combination of genes from species' pangenomes; and (iii) PhyloPhlAn 3, which performs precise phylogenetic placement of isolate and metagenomeassembled genomes (MAGs) using global and species-specific core genes [CITATION] (see Materials and methods).",
+      "StrainPhlAn 3 can thus rapidly reconstruct complex strain-level phylogenies from metagenomes (5,700 s using 20 CPUs), and with the integration of PhyloPhlAn 3's improvements specifically for strain-level manipulation of alignments and phylogenies [CITATION], surpasses the previous version of the software in accuracy and sensitivity (67.4% more strain profiled, Figure 4-figure supplement 1A-B).",
+      "StrainPhlan 3 and PanPhlAn 3 can thus be combined with PhyloPhlAn 3 [CITATION] and HUMAnN 3 to provide multiple, complementary, culture-independent means to investigate the strain-level diversity of taxa in the microbiome, from new data or by re-using thousands of publicly available metagenomes.",
+      "PhyloPhlAn 3, as previously reported [CITATION], provides a comprehensive means to interpret the draft genomes produced by assembly-based metagenomic tools.",
+      "StrainPhlAn 3 improves the original implementation in several aspects: (i) the integration of an improved and validated pipeline for consensus sequence generation [CITATION #b149], (ii) the integration of PhyloPhlAn 3 [CITATION] which improves the quality of the phylogenetic modeling and the flexibility of the analysis, and (iii) a refined algorithm for filtering samples not supported by enough species' markers and markers not enough conserved across strains and samples.",
+      "The methods, performance, and examples of PhyloPhlAn are described elsewhere [CITATION] and refers to the same version incorporated into bioBakery 3."
+    ]
+  },
+  {
+    "title": "The ENZYME database in 2000",
+    "authors": "A Bairoch",
+    "year": "2000",
+    "citation": "Bairoch A. 2000. The ENZYME database in 2000. Nucleic Acids Research 28:304-305. DOI: https://doi.org/10. 1093/nar/28.1.304, PMID: 10592255",
+    "pages": "304-305",
+    "journal": "Nucleic Acids Research",
+    "volume": "28",
+    "sentences": [
+      "Each cluster representative was used for extracting the nucleotide sequence from the source reference genome and the several functional annotations from different systems (GO terms [CITATION #b15], KEGG modules [CITATION #b56], KO identifiers, Pfam accessions [CITATION #b37], EC numbers [CITATION], and eggNOG accessions [CITATION #b100] associated with the UniProtKB entry."
+    ]
+  },
+  {
+    "title": "Large-scale comparative metagenomics of Blastocystis, a common member of the human gut microbiome",
+    "authors": "F Beghini;E Pasolli;T D Truong;L Putignani;` Caccio;Sm;N Segata",
+    "year": "2017",
+    "citation": "Beghini F, Pasolli E, Truong TD, Putignani L, Caccio `SM, Segata N. 2017. Large-scale comparative metagenomics of Blastocystis, a common member of the human gut microbiome. The ISME Journal 11:2848-2863. DOI: https://doi.org/10.1038/ismej.2017.139, PMID: 28837129",
+    "pages": "2848-2863",
+    "journal": "The ISME Journal",
+    "volume": "11",
+    "sentences": [
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION][CITATION #b58][CITATION #b123].",
+      "Critically, all these analyses (and the use of the word 'microbiome' throughout this manuscript) are equally applicable to both bacterial and non-bacterial community members (e.g. viruses and eukaryotes) [CITATION][CITATION #b93][CITATION #b145]."
+    ]
+  },
+  {
+    "title": "Bioboxes: standardised containers for interchangeable bioinformatics software",
+    "authors": "P Belmann;J Dro \u00a8ge;A Bremges;A C Mchardy;A Sczyrba;M D Barton",
+    "year": "2015",
+    "citation": "Belmann P, Dro \u00a8ge J, Bremges A, McHardy AC, Sczyrba A, Barton MD. 2015. Bioboxes: standardised containers for interchangeable bioinformatics software. GigaScience 4:47. DOI: https://doi.org/10.1186/s13742-015-0087- 0, PMID: 26473029",
+    "pages": "13742-015",
+    "journal": "",
+    "volume": "4",
+    "sentences": [
+      "Finally, alongside the default MetaPhlAn output format, profiles can be now reported using the CAMI output format defined by [CITATION][CITATION #b23] that can be used for performing benchmarks with the OPAL framework [CITATION #b81].",
+      "When not directly available from the tool (MetaPhlAn 2 and Bracken), output profiles were converted into the CAMI output format as described by the BioBoxes RFC [CITATION][CITATION #b23] in order to benchmark with the OPAL framework [CITATION #b81] (version 1.0.5)."
+    ]
+  },
+  {
+    "title": "Tandem repeats finder: a program to analyze DNA sequences",
+    "authors": "G Benson",
+    "year": "1999",
+    "citation": "Benson G. 1999. Tandem repeats finder: a program to analyze DNA sequences. Nucleic Acids Research 27:573- 580. DOI: https://doi.org/10.1093/nar/27.2.573, PMID: 9862982",
+    "pages": "573-580",
+    "journal": "Nucleic Acids Research",
+    "volume": "27",
+    "sentences": [
+      "Removal of overrepresented sequences (default:>0.1% frequency) using FastQC [CITATION #b14] and low-complexity sequences using TRF [CITATION]."
+    ]
+  },
+  {
+    "title": "Toward a predictive understanding of earth's Microbiomes to Address 21st Century Challenges",
+    "authors": "M J Blaser;Z G Cardon;M K Cho;J L Dangl;T J Donohue;J L Green;R Knight;M E Maxon;T R Northen;K S Pollard;E L Brodie",
+    "year": "2016",
+    "citation": "Blaser MJ, Cardon ZG, Cho MK, Dangl JL, Donohue TJ, Green JL, Knight R, Maxon ME, Northen TR, Pollard KS, Brodie EL. 2016. Toward a predictive understanding of earth's Microbiomes to Address 21st Century Challenges. mBio 7:e00714-16. DOI: https://doi.org/10.1128/mBio.00714-16, PMID: 27178263",
+    "pages": "00714-16",
+    "journal": "",
+    "volume": "7",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Trimmomatic: a flexible trimmer for illumina sequence data",
+    "authors": "A M Bolger;M Lohse;B Usadel",
+    "year": "2014",
+    "citation": "Bolger AM, Lohse M, Usadel B. 2014. Trimmomatic: a flexible trimmer for illumina sequence data. Bioinformatics 30:2114-2120. DOI: https://doi.org/10.1093/bioinformatics/btu170, PMID: 24695404",
+    "pages": "2114-2120",
+    "journal": "Bioinformatics",
+    "volume": "30",
+    "sentences": [
+      "Trimming of (1) low-quality bases (default: 4-mer windows with mean Phred quality <20), ( 2) truncated reads (default:<50% of pre-trimmed length), and (3) adapter and barcode contaminants using Trimmomatic [CITATION]."
+    ]
+  },
+  {
+    "title": "Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2",
+    "authors": "E Bolyen;J R Rideout;M R Dillon;N A Bokulich;C C Abnet;G A Al-Ghalith;Alexander H Alm;E J Arumugam;M Asnicar;F Bai;Y Bisanz;J E Bittinger;K Brejnrod;A Brislawn;C J Brown;C T Callahan;B J Caraballo-Rodr\u0131 \u00b4guez;A M Chase;J Cope;E K",
+    "year": "2019",
+    "citation": "Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet CC, Al-Ghalith GA, Alexander H, Alm EJ, Arumugam M, Asnicar F, Bai Y, Bisanz JE, Bittinger K, Brejnrod A, Brislawn CJ, Brown CT, Callahan BJ, Caraballo-Rodr\u0131 \u00b4guez AM, Chase J, Cope EK, et al. 2019. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nature Biotechnology 37:852-857. DOI: https://doi.org/10.1038/s41587-019-0209-9, PMID: 31341288",
+    "pages": "852-857",
+    "journal": "Nature Biotechnology",
+    "volume": "37",
+    "sentences": [
+      "In a few cases, platforms such as bioBakery [CITATION #b79], QIIME 2 [CITATION], or MEGAN [CITATION #b83] integrate several such methods within an overarching environment."
+    ]
+  },
+  {
+    "title": "Random forests",
+    "authors": "L Breiman",
+    "year": "2001",
+    "citation": "Breiman L. 2001. Random forests. Machine Learning 45:5-32.",
+    "pages": "5-32",
+    "journal": "Machine Learning",
+    "volume": "45",
+    "sentences": [
+      "We used MetAML [CITATION #b96] to feed species-level and pathway-level relative abundances to a Random Forest model [CITATION]."
+    ]
+  },
+  {
+    "title": "Human contamination in bacterial genomes has created thousands of spurious proteins",
+    "authors": "F P Breitwieser;M Pertea;A V Zimin;S L Salzberg",
+    "year": "2019",
+    "citation": "Breitwieser FP, Pertea M, Zimin AV, Salzberg SL. 2019. Human contamination in bacterial genomes has created thousands of spurious proteins. Genome Research 29:954-960. DOI: https://doi.org/10.1101/gr.245373.118, PMID: 31064768",
+    "pages": "954-960",
+    "journal": "Genome Research",
+    "volume": "29",
+    "sentences": [
+      "Depletion of host-derived sequences by mapping with bowtie2 [CITATION #b65] against an expanded human reference genome (including known 'decoy' and contaminant sequences [CITATION] and optionally other hosts (e.g. mouse) reference genomes and/or transcriptomes."
+    ]
+  },
+  {
+    "title": "Fast and sensitive protein alignment using DIAMOND",
+    "authors": "B Buchfink;C Xie;D H Huson",
+    "year": "2015",
+    "citation": "Buchfink B, Xie C, Huson DH. 2015. Fast and sensitive protein alignment using DIAMOND. Nature Methods 12: 59-60. DOI: https://doi.org/10.1038/nmeth.3176, PMID: 25402007",
+    "pages": "59-60",
+    "journal": "Nature Methods",
+    "volume": "12",
+    "sentences": [
+      "Briefly, we first identified and translated open reading frames (ORFs) within the CAMI genomes using Prodigal [CITATION #b52], and then aligned the translated ORFs against the v3 UniRef90 and UniRef50 sequence databases using DIAMOND [CITATION]."
+    ]
+  },
+  {
+    "title": "DADA2: high-resolution sample inference from Illumina amplicon data",
+    "authors": "B J Callahan;P J Mcmurdie;M J Rosen;A W Han;A J Johnson;S P Holmes",
+    "year": "2016",
+    "citation": "Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. 2016. DADA2: high-resolution sample inference from Illumina amplicon data. Nature Methods 13:581-583. DOI: https://doi.org/10.1038/nmeth.3869, PMID: 27214047",
+    "pages": "581-583",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "Similarly, methods for amplicon-based community profiling have progressed from noise-and chimera-prone stitching and clustering to near-exact sequence variant tracking [CITATION]."
+    ]
+  },
+  {
+    "title": "GTDB-Tk: a toolkit to classify genomes with the genome taxonomy database",
+    "authors": "P-A Chaumeil;A J Mussig;P Hugenholtz;D H Parks",
+    "year": "2019",
+    "citation": "Chaumeil P-A, Mussig AJ, Hugenholtz P, Parks DH. 2019. GTDB-Tk: a toolkit to classify genomes with the genome taxonomy database. Bioinformatics 36:1925-1927. DOI: https://doi.org/10.1093/bioinformatics/ btz848",
+    "pages": "1925-1927",
+    "journal": "Bioinformatics",
+    "volume": "36",
+    "sentences": [
+      "These efforts have also led to increased consistency in microbial systematics and phylogeny, facilitating the types of automated, high-throughput analyses necessary when manual curation cannot keep up with such rapid growth [CITATION #b18][CITATION]."
+    ]
+  },
+  {
+    "title": "Rapid pneumococcal evolution in response to clinical interventions",
+    "authors": "N J Croucher;S R Harris;C Fraser;M A Quail;J Burton;M Van Der Linden;L Mcgee;A Von Gottberg;J H Song;K S Ko;B Pichon;S Baker;C M Parry;L M Lambertsen;D Shahinas;D R Pillai;T J Mitchell;G Dougan;A Tomasz;K P Klugman",
+    "year": "2011",
+    "citation": "Croucher NJ, Harris SR, Fraser C, Quail MA, Burton J, van der Linden M, McGee L, von Gottberg A, Song JH, Ko KS, Pichon B, Baker S, Parry CM, Lambertsen LM, Shahinas D, Pillai DR, Mitchell TJ, Dougan G, Tomasz A, Klugman KP, et al. 2011. Rapid pneumococcal evolution in response to clinical interventions. Science 331:430- 434. DOI: https://doi.org/10.1126/science.1198545, PMID: 21273480",
+    "pages": "430-434",
+    "journal": "Science",
+    "volume": "331",
+    "sentences": [
+      "The genomic epidemiology of pathogens has driven the latter -recently in viral outbreaks such as COVID-19 [CITATION #b74] and Ebola [CITATION #b44], and in many bacterial conditions such as cholera [CITATION #b136] or pneumonia [CITATION]."
+    ]
+  },
+  {
+    "title": "The pfam protein families database in 2019",
+    "authors": "S El-Gebali;J Mistry;A Bateman;S R Eddy;A Luciani;S C Potter;M Qureshi;L J Richardson;G A Salazar;A Smart;Ell Sonnhammer;L Hirsh;L Paladin;D Piovesan;Sce Tosatto;R D Finn",
+    "year": "2019",
+    "citation": "El-Gebali S, Mistry J, Bateman A, Eddy SR, Luciani A, Potter SC, Qureshi M, Richardson LJ, Salazar GA, Smart A, Sonnhammer ELL, Hirsh L, Paladin L, Piovesan D, Tosatto SCE, Finn RD. 2019. The pfam protein families database in 2019. Nucleic Acids Research 47:D427-D432. DOI: https://doi.org/10.1093/nar/gky995, PMID: 30357350",
+    "pages": "D427-D432",
+    "journal": "Nucleic Acids Research",
+    "volume": "47",
+    "sentences": [
+      "ChocoPhlAn 3 also retrieves and includes relevant data present in the UniProtKB entries (retrieved from ftp.uniprot.org/pub/ databases/uniprot/ as XML files such as functional, phylogenomic, and protein domain annotations (KEGG, KO, EggNOG, GO, EC, Pfam) [CITATION][CITATION #b50][CITATION #b57] , accessions for cross-referencing entries with external databases (Gen-Bank, ENA, and BioCyc) [CITATION #b32][CITATION #b59][CITATION #b67], name of the gene that encodes for the protein, and proteome accession."
+    ]
+  },
+  {
+    "title": "Gut microbiome development along the colorectal adenoma-carcinoma sequence",
+    "authors": "Q Feng;S Liang;H Jia;A Stadlmayr;L Tang;Z Lan;D Zhang;H Xia;X Xu;Z Jie;L Su;X Li;X Li;J Li;L Xiao;U Huber-Scho \u00a8nauer;D Niederseer;X Xu;J Y Al-Aama;H Yang",
+    "year": "2015",
+    "citation": "Feng Q, Liang S, Jia H, Stadlmayr A, Tang L, Lan Z, Zhang D, Xia H, Xu X, Jie Z, Su L, Li X, Li X, Li J, Xiao L, Huber-Scho \u00a8nauer U, Niederseer D, Xu X, Al-Aama JY, Yang H, et al. 2015. Gut microbiome development along the colorectal adenoma-carcinoma sequence. Nature Communications 6:6528. DOI: https://doi.org/10.1038/ ncomms7528, PMID: 25758642",
+    "pages": "6528",
+    "journal": "Nature Communications",
+    "volume": "6",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION][CITATION #b46] [CITATION #b135][CITATION #b137][CITATION #b140][CITATION #b144][CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Mother-to-Infant microbial transmission from different body sites shapes the developing infant gut microbiome",
+    "authors": "P Ferretti;E Pasolli;A Tett;F Asnicar;V Gorfer;S Fedi;F Armanini;D T Truong;S Manara;M Zolfo;F Beghini;R Bertorelli;De Sanctis;V Bariletti;I Canto;R Clementi;R Cologna;M Crifo;`t Cusumano;G Gottardi;S",
+    "year": "2018",
+    "citation": "Ferretti P, Pasolli E, Tett A, Asnicar F, Gorfer V, Fedi S, Armanini F, Truong DT, Manara S, Zolfo M, Beghini F, Bertorelli R, De Sanctis V, Bariletti I, Canto R, Clementi R, Cologna M, Crifo `T, Cusumano G, Gottardi S, et al. 2018. Mother-to-Infant microbial transmission from different body sites shapes the developing infant gut microbiome. Cell Host & Microbe 24:133-145. DOI: https://doi.org/10.1016/j.chom.2018.06.005, PMID: 30001516",
+    "pages": "133-145",
+    "journal": "Cell Host & Microbe",
+    "volume": "24",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147].",
+      "Strain-level characterization of taxa directly from metagenomes is an effective cultivation-free means to profile the population structure of a microbial species across geography or other conditions [CITATION #b108][CITATION #b129] and to track strain transmission [CITATION].",
+      "StrainPhlAn 3 also extends the ability of reference-based approaches to infer the genetic identity of strains across samples as previously explored [CITATION][CITATION #b129].",
+      "Mother-infant pairs showed a similar dynamic (Figure 4B), with sporadic vertical transmission (~33.3%) [CITATION][CITATION #b62][CITATION #b141] mixed with strain loss, replacement, and acquisition from other environmental or human sources [CITATION #b62].",
+      "Phylogenetic trees produced by StrainPhlan 3 can also be used to identify identical strains across samples, which can be exploited, for example, in strain transmission analyses [CITATION][CITATION #b113]."
+    ]
+  },
+  {
+    "title": "Pfam: the protein families database",
+    "authors": "R D Finn;A Bateman;J Clements;P Coggill;R Y Eberhardt;S R Eddy;A Heger;K Hetherington;L Holm;J Mistry;E L Sonnhammer;J Tate;M Punta",
+    "year": "2014",
+    "citation": "Finn RD, Bateman A, Clements J, Coggill P, Eberhardt RY, Eddy SR, Heger A, Hetherington K, Holm L, Mistry J, Sonnhammer EL, Tate J, Punta M. 2014. Pfam: the protein families database. Nucleic Acids Research 42:D222- D230. DOI: https://doi.org/10.1093/nar/gkt1223, PMID: 24288371",
+    "pages": "D222-D230",
+    "journal": "Nucleic Acids Research",
+    "volume": "42",
+    "sentences": [
+      "Each cluster representative was used for extracting the nucleotide sequence from the source reference genome and the several functional annotations from different systems (GO terms [CITATION #b15], KEGG modules [CITATION #b56], KO identifiers, Pfam accessions [CITATION], EC numbers [CITATION #b19], and eggNOG accessions [CITATION #b100] associated with the UniProtKB entry."
+    ]
+  },
+  {
+    "title": "Microbial degradation of complex carbohydrates in the gut",
+    "authors": "H J Flint;K P Scott;S H Duncan;P Louis;E Forano",
+    "year": "2012",
+    "citation": "Flint HJ, Scott KP, Duncan SH, Louis P, Forano E. 2012. Microbial degradation of complex carbohydrates in the gut. Gut Microbes 3:289-306. DOI: https://doi.org/10.4161/gmic.19897, PMID: 22572875",
+    "pages": "289-306",
+    "journal": "Gut Microbes",
+    "volume": "3",
+    "sentences": [
+      "This pathway encodes functions for extracellular breakdown of starch by an amylopullulanase enzyme, which has both pullulanase and a-amylase activity [CITATION]."
+    ]
+  },
+  {
+    "title": "A human gut bacterial genome and culture collection for improved metagenomic analyses",
+    "authors": "S C Forster;N Kumar;B O Anonye;A Almeida;E Viciani;M D Stares;M Dunn;T T Mkandawire;A Zhu;Y Shao;L J Pike;T Louie;H P Browne;A L Mitchell;B A Neville;R D Finn;T D Lawley",
+    "year": "2019",
+    "citation": "Forster SC, Kumar N, Anonye BO, Almeida A, Viciani E, Stares MD, Dunn M, Mkandawire TT, Zhu A, Shao Y, Pike LJ, Louie T, Browne HP, Mitchell AL, Neville BA, Finn RD, Lawley TD. 2019. A human gut bacterial genome and culture collection for improved metagenomic analyses. Nature Biotechnology 37:186-192. DOI: https:// doi.org/10.1038/s41587-018-0009-7, PMID: 30718869",
+    "pages": "186-192",
+    "journal": "Nature Biotechnology",
+    "volume": "37",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION #b11][CITATION][CITATION #b95][CITATION #b98][CITATION #b101][CITATION #b150]."
+    ]
+  },
+  {
+    "title": "Species-level functional profiling of metagenomes and metatranscriptomes",
+    "authors": "E A Franzosa;L J Mciver;G Rahnavard;L R Thompson;M Schirmer;G Weingart;K S Lipson;R Knight;J G Caporaso;N Segata;C Huttenhower",
+    "year": "2018",
+    "citation": "Franzosa EA, McIver LJ, Rahnavard G, Thompson LR, Schirmer M, Weingart G, Lipson KS, Knight R, Caporaso JG, Segata N, Huttenhower C. 2018. Species-level functional profiling of metagenomes and metatranscriptomes. Nature Methods 15:962-968. DOI: https://doi.org/10.1038/s41592-018-0176-y, PMID: 30377376",
+    "pages": "962-968",
+    "journal": "Nature Methods",
+    "volume": "15",
+    "sentences": [
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION #b58][CITATION #b123].",
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "(D) Compared with HUMAnN 2 [CITATION] and Carnelian [CITATION #b88], HUMAnN 3 produces more accurate estimates of EC abundances and displays a higher species true positive rate compared to ChocoPhlAn 3 from the set of 16.8 k species pangenomes.",
+      "We compared its performance against HUMAnN 2 [CITATION], and the recently published Carnelian [CITATION #b88] when profiling the 30 CAMI and five additional synthetic metagenomes introduced above (see Materials and methods and Figure 1).",
+      "As previously noted [CITATION], HUMAnN's within-species function sensitivity is naturally lower for species below 1x coverage in a sample, as many of their genes will not have been sampled at all during the sequencing process.",
+      "This phenomenon also explains the greater runtime variability of HUMAnN, as runtimes vary inversely with the (a priori unknown) fraction of sample reads explained before the translated search tier [CITATION].",
+      "As previously noted [CITATION], the challenge of differentiating globally homologous UniRef90 protein sequences using short sequencing reads results in a reduction of community and per-species accuracy relative to broader gene families.",
+      "Notably, bioBakery provides one of very few environments currently capable of integrating both metagenomes and metatranscriptomes to begin overcoming these uncertainties [CITATION].",
+      "Coverage filtering (new option 1) was already implemented in HUMAnN 2 for postprocessing translated search results, where it was shown to increase UniRef90-level specificity considerably at a small cost to sensitivity [CITATION].",
+      "We applied procedures for community genome annotation developed during HUMAnN2 benchmarking to aid in gold-standard construction [CITATION].",
+      "We evaluated HUMAnN 3, HUMAnN 2 [CITATION], and Carnelian [CITATION #b88] on 30 CAMI metagenomes and the five synphlan-nonhuman metagenomes."
+    ]
+  },
+  {
+    "title": "CAMISIM: simulating metagenomes and microbial communities",
+    "authors": "A Fritz;P Hofmann;S Majda;E Dahms;J Dro \u00a8ge;J Fiedler;T R Lesker;P Belmann;M Z Demaere;A E Darling;A Sczyrba;A Bremges;A C Mchardy",
+    "year": "2019",
+    "citation": "Fritz A, Hofmann P, Majda S, Dahms E, Dro \u00a8ge J, Fiedler J, Lesker TR, Belmann P, DeMaere MZ, Darling AE, Sczyrba A, Bremges A, McHardy AC. 2019. CAMISIM: simulating metagenomes and microbial communities. Microbiome 7:17. DOI: https://doi.org/10.1186/s40168-019-0633-6, PMID: 30736849",
+    "pages": "40168-019",
+    "journal": "",
+    "volume": "7",
+    "sentences": [
+      "MetaPhlAn 3 incorporates 13.5 k species (more than twice as much as MetaPhlAn 2) with a completely new set of 1.1M marker genes (84 \u00b1 47 mean \u00b1 SD markers per species) selected by  [CITATION] representing diverse human-associated microbiomes and five datasets of non-human-associated microbiomes (Supplementary file 1).",
+      "We evaluated the taxonomic profiling performance of MetaPhlAn 3 using 118 synthetic metagenomes spanning 113 synthetic samples from the 2nd CAMI Challenge [CITATION][CITATION #b109] through the OPAL benchmarking framework [CITATION #b81].",
+      "The first set included synthetic metagenomes and goldstandard taxonomic profiles from the CAMI challenge representing five human body site-specific microbiomes and the murine gut microbiome [CITATION][CITATION #b109].",
+      "We profiled a total of 118 synthetic metagenomes spanning different ecosystems: (i) 49 synthetic metagenomes (10 Airways, 10 Gastrointestinal Tract, 10 Oral, 10 Skin, 9 Urogenital tract) provided by the 2nd CAMI challenge [CITATION #b109] resemble the composition of the Human Microbiome as described by the Human Microbiome Project [CITATION #b130] 64 synthetic metagenomes generated by CAMISIM and modeled after the murine gut microbiome [CITATION]; (iii) five synthetic metagenomes including non-human associated species (see above)."
+    ]
+  },
+  {
+    "title": "Adjusting for age improves identification of gut microbiome alterations in multiple diseases",
+    "authors": "T S Ghosh;M Das;I B Jeffery;O 'toole;P W",
+    "year": "2020",
+    "citation": "Ghosh TS, Das M, Jeffery IB, O'Toole PW. 2020. Adjusting for age improves identification of gut microbiome alterations in multiple diseases. eLife 9:e50240. DOI: https://doi.org/10.7554/eLife.50240, PMID: 32159510",
+    "pages": "",
+    "journal": "",
+    "volume": "9",
+    "sentences": [
+      "Age was also added to the feature-set, as this covariate has been shown to improve microbiome predictions in CRC [CITATION]."
+    ]
+  },
+  {
+    "title": "Metagenomic analysis of the human distal gut microbiome",
+    "authors": "S R Gill;M Pop;R T Deboy;P B Eckburg;P J Turnbaugh;B S Samuel;J I Gordon;D A Relman;C M Fraser-Liggett;K E Nelson",
+    "year": "2006",
+    "citation": "Gill SR, Pop M, Deboy RT, Eckburg PB, Turnbaugh PJ, Samuel BS, Gordon JI, Relman DA, Fraser-Liggett CM, Nelson KE. 2006. Metagenomic analysis of the human distal gut microbiome. Science 312:1355-1359. DOI: https://doi.org/10.1126/science.1124234, PMID: 16741115",
+    "pages": "1355-1359",
+    "journal": "Science",
+    "volume": "312",
+    "sentences": [
+      "Since early studies of environmental and host-associated microbial communities [CITATION][CITATION #b131][CITATION #b133], it has been clear that many aspects of intercellular and inter-species signaling, short-and long-term evolution, and regulatory programs are exercised by microbes in their natural settings and extremely difficult to recapitulate in a controlled setting."
+    ]
+  },
+  {
+    "title": "Genomic surveillance elucidates ebola virus origin and transmission during the 2014 outbreak",
+    "authors": "S K Gire;A Goba;K G Andersen;R S Sealfon;D J Park;L Kanneh;S Jalloh;M Momoh;M Fullah;G Dudas;S Wohl;L M Moses;N L Yozwiak;S Winnicki;C B Matranga;C M Malboeuf;J Qu;A D Gladden;S F Schaffner;X Yang",
+    "year": "2014",
+    "citation": "Gire SK, Goba A, Andersen KG, Sealfon RS, Park DJ, Kanneh L, Jalloh S, Momoh M, Fullah M, Dudas G, Wohl S, Moses LM, Yozwiak NL, Winnicki S, Matranga CB, Malboeuf CM, Qu J, Gladden AD, Schaffner SF, Yang X, et al. 2014. Genomic surveillance elucidates ebola virus origin and transmission during the 2014 outbreak. Science 345:1369-1372. DOI: https://doi.org/10.1126/science.1259657, PMID: 25214632",
+    "pages": "1369-1372",
+    "journal": "Science",
+    "volume": "345",
+    "sentences": [
+      "The genomic epidemiology of pathogens has driven the latter -recently in viral outbreaks such as COVID-19 [CITATION #b74] and Ebola [CITATION], and in many bacterial conditions such as cholera [CITATION #b136] or pneumonia [CITATION #b33]."
+    ]
+  },
+  {
+    "title": "Gut microbiome modulates response to anti-PD-1 immunotherapy in melanoma patients",
+    "authors": "V Gopalakrishnan;C N Spencer;L Nezi;A Reuben;M C Andrews;T V Karpinets;P A Prieto;D Vicente;K Hoffman;S C Wei;A P Cogdill;L Zhao;C W Hudgens;D S Hutchinson;T Manzo;Petaccia De Macedo;M Cotechini;T Kumar;T Chen;W S Reddy;S M",
+    "year": "2018",
+    "citation": "Gopalakrishnan V, Spencer CN, Nezi L, Reuben A, Andrews MC, Karpinets TV, Prieto PA, Vicente D, Hoffman K, Wei SC, Cogdill AP, Zhao L, Hudgens CW, Hutchinson DS, Manzo T, Petaccia de Macedo M, Cotechini T, Kumar T, Chen WS, Reddy SM, et al. 2018. Gut microbiome modulates response to anti-PD-1 immunotherapy in melanoma patients. Science 359:97-103. DOI: https://doi.org/10.1126/science.aan4236, PMID: 29097493",
+    "pages": "97-103",
+    "journal": "Science",
+    "volume": "359",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION][CITATION #b66] [CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Association of Flavonifractor plautii, a Flavonoid-Degrading bacterium, with the gut microbiome of colorectal Cancer patients in India",
+    "authors": "A Gupta;D B Dhakan;A Maji;R Saxena;P Vp;S Mahajan;J Pulikkan;J Kurian;A M Gomez;J Scaria;K R Amato;A K Sharma;V K Sharma",
+    "year": "2019",
+    "citation": "Gupta A, Dhakan DB, Maji A, Saxena R, P K VP, Mahajan S, Pulikkan J, Kurian J, Gomez AM, Scaria J, Amato KR, Sharma AK, Sharma VK. 2019. Association of Flavonifractor plautii, a Flavonoid-Degrading bacterium, with the gut microbiome of colorectal Cancer patients in India. mSystems 4:e00438-19. DOI: https://doi.org/10.1128/ mSystems.00438-19, PMID: 31719139",
+    "pages": "00438-19",
+    "journal": "",
+    "volume": "4",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION] [CITATION #b135][CITATION #b137][CITATION #b140][CITATION #b144][CITATION #b147].",
+      "To the previous meta-analysis, we added two more datasets that became available afterward [CITATION][CITATION #b140]."
+    ]
+  },
+  {
+    "title": "Systematic assessment of secondary bile acid metabolism in gut microbes reveals distinct metabolic capabilities in inflammatory bowel disease",
+    "authors": "A Heinken;D A Ravcheev;F Baldini;L Heirendt;Rmt Fleming;I Thiele",
+    "year": "2019",
+    "citation": "Heinken A, Ravcheev DA, Baldini F, Heirendt L, Fleming RMT, Thiele I. 2019. Systematic assessment of secondary bile acid metabolism in gut microbes reveals distinct metabolic capabilities in inflammatory bowel disease. Microbiome 7:75. DOI: https://doi.org/10.1186/s40168-019-0689-3, PMID: 31092280",
+    "pages": "40168-019",
+    "journal": "",
+    "volume": "7",
+    "sentences": [
+      "Finally, although not addressed in depth by this study, shotgun meta-omics have increasingly also been combined with other community profiling techniques such as metabolomics [CITATION][CITATION #b71][CITATION #b118] and proteomics [CITATION #b139] to provide richer pictures of microbial community membership, function, and ecology."
+    ]
+  },
+  {
+    "title": "Fpc: Flexible Procedures for Clustering",
+    "authors": "C Hennig",
+    "year": "2010",
+    "citation": "Hennig C. 2010. Fpc: Flexible Procedures for Clustering.",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "Prediction strength analysis performed on the phylogenetic distance matrix using the prediction.strength function included in the 'fpc' R package [CITATION] version 2.2 revealed the presence of 4 optimal clusters (strength threshold 0.8)."
+    ]
+  },
+  {
+    "title": "ART: a next-generation sequencing read simulator",
+    "authors": "W Huang;L Li;J R Myers;G T Marth",
+    "year": "2012",
+    "citation": "Huang W, Li L, Myers JR, Marth GT. 2012. ART: a next-generation sequencing read simulator. Bioinformatics 28: 593-594. DOI: https://doi.org/10.1093/bioinformatics/btr708, PMID: 22199392",
+    "pages": "593-594",
+    "journal": "Bioinformatics",
+    "volume": "28",
+    "sentences": [
+      "We constructed additional synthetic metagenomes by sampling sequencing reads from curated microbial genome sets using ART [CITATION] with an Illumina HiSeq 2500 error model."
+    ]
+  },
+  {
+    "title": "eggNOG 4.5: a hierarchical orthology framework with improved functional annotations for eukaryotic, prokaryotic and viral sequences",
+    "authors": "J Huerta-Cepas;D Szklarczyk;K Forslund;H Cook;D Heller;M C Walter;T Rattei;D R Mende;S Sunagawa;M Kuhn;L J Jensen;C Von Mering;P Bork",
+    "year": "2016",
+    "citation": "Huerta-Cepas J, Szklarczyk D, Forslund K, Cook H, Heller D, Walter MC, Rattei T, Mende DR, Sunagawa S, Kuhn M, Jensen LJ, von Mering C, Bork P. 2016. eggNOG 4.5: a hierarchical orthology framework with improved functional annotations for eukaryotic, prokaryotic and viral sequences. Nucleic Acids Research 44:D286-D293. DOI: https://doi.org/10.1093/nar/gkv1248, PMID: 26582926",
+    "pages": "D286-D293",
+    "journal": "Nucleic Acids Research",
+    "volume": "44",
+    "sentences": [
+      "ChocoPhlAn 3 also retrieves and includes relevant data present in the UniProtKB entries (retrieved from ftp.uniprot.org/pub/ databases/uniprot/ as XML files such as functional, phylogenomic, and protein domain annotations (KEGG, KO, EggNOG, GO, EC, Pfam) [CITATION #b34][CITATION][CITATION #b57] , accessions for cross-referencing entries with external databases (Gen-Bank, ENA, and BioCyc) [CITATION #b32][CITATION #b59][CITATION #b67], name of the gene that encodes for the protein, and proteome accession."
+    ]
+  },
+  {
+    "title": "Prodigal: prokaryotic gene recognition and translation initiation site identification",
+    "authors": "D Hyatt;G L Chen;P F Locascio;M L Land;F W Larimer;L J Hauser",
+    "year": "2010",
+    "citation": "Hyatt D, Chen GL, Locascio PF, Land ML, Larimer FW, Hauser LJ. 2010. Prodigal: prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics 11:119. DOI: https://doi.org/10.1186/1471- 2105-11-119, PMID: 20211023",
+    "pages": "2105-11",
+    "journal": "BMC Bioinformatics",
+    "volume": "11",
+    "sentences": [
+      "Briefly, we first identified and translated open reading frames (ORFs) within the CAMI genomes using Prodigal [CITATION], and then aligned the translated ORFs against the v3 UniRef90 and UniRef50 sequence databases using DIAMOND [CITATION #b29]."
+    ]
+  },
+  {
+    "title": "Multi-omics of the gut microbial ecosystem in inflammatory bowel diseases",
+    "authors": "Ibdmdb Investigators;J Lloyd-Price;C Arze;A N Ananthakrishnan;M Schirmer;J Avila-Pacheco;T W Poon;E Andrews;N J Ajami;K S Bonham;C J Brislawn;D Casero;H Courtney;A Gonzalez;T G Graeber;A B Hall;K Lake;C J Landers;H Mallick;D R Plichta;M Prasad",
+    "year": "2019",
+    "citation": "IBDMDB Investigators, Lloyd-Price J, Arze C, Ananthakrishnan AN, Schirmer M, Avila-Pacheco J, Poon TW, Andrews E, Ajami NJ, Bonham KS, Brislawn CJ, Casero D, Courtney H, Gonzalez A, Graeber TG, Hall AB, Lake K, Landers CJ, Mallick H, Plichta DR, Prasad M, et al. 2019. Multi-omics of the gut microbial ecosystem in inflammatory bowel diseases. Nature 569:655-662. DOI: https://doi.org/10.1038/s41586-019-1237-9, PMID: 31142855",
+    "pages": "655-662",
+    "journal": "Nature",
+    "volume": "569",
+    "sentences": [
+      "More recently, metagenomic functional profiles have been joined by metatranscriptomics to also capture community regulation of gene expression [CITATION].",
+      "This relative absence of biomarkers for active UC may result both from its generally more benign phenotype [CITATION] and from the smaller number of active UC samples (n = 23) compared with active CD samples (n = 76); as a result, we focused our subsequent analyses on expression differences within the CD subcohort.",
+      "Hence, while many species (and their encoded functions) are known to be lost entirely during active IBD [CITATION], it seems to be rare MetaPhlAn 3 species catalog detects more species compared to MetaPhlAn 2 (CRC mean median increase 37.1%, controls mean median increase 36.3%).",
+      "Conversely, the only transcript differentially regulated in ulcerative colitis, underexpressed F. prausnitzii galactonate dehydratase, contrasts its utility in polysaccharide degradation under non-inflamed conditions with the upregulation of alternative, more host-antagonistic energy sources in E. coli during inflammation [CITATION].",
+      "We applied MetaPhlAn 3 and HUMAnN 3 to 1635 metagenomes and 817 metatranscriptomes from the HMP2 Inflammatory Bowel Disease (IBD) Multi-omics Database (IBDMDB) [CITATION].",
+      "The effects of disease activity on the microbiome were previously quantified as a 'dysbiosis score' [CITATION] measuring ecological deviation from the control microbiome population.",
+      "Consistent with earlier analyses of the HMP2 dataset [CITATION], we did not detect significant differences in EC expression as a function of diagnosis alone (i.e. independent of disease activity), as non-active IBD meta-omes tend to be similar to those from control patients."
+    ]
+  },
+  {
+    "title": "Structure and function of CutC choline lyase from human Microbiota bacterium Klebsiella pneumoniae",
+    "authors": "G Kalnins;J Kuka;S Grinberga;M Makrecka-Kuka;E Liepinsh;M Dambrova;K Tars",
+    "year": "2015",
+    "citation": "Kalnins G, Kuka J, Grinberga S, Makrecka-Kuka M, Liepinsh E, Dambrova M, Tars K. 2015. Structure and function of CutC choline lyase from human Microbiota bacterium Klebsiella pneumoniae. Journal of Biological Chemistry 290:21732-21740. DOI: https://doi.org/10.1074/jbc.M115.670471, PMID: 26187464",
+    "pages": "21732-21740",
+    "journal": "Journal of Biological Chemistry",
+    "volume": "290",
+    "sentences": [
+      "Specifically, we previously showed that the abundance of the microbial gene encoding for the choline trimethylamine-lyase (cutC) responsible for production of the disease-associated trimethylamine and trimethylamine N-oxide [CITATION][CITATION #b63][CITATION #b91][CITATION #b103] (TMA/TMAO) is significantly higher in CRC patients ."
+    ]
+  },
+  {
+    "title": "High-Specificity targeted functional profiling in microbial communities with ShortBRED",
+    "authors": "J Kaminski;M K Gibson;E A Franzosa;N Segata;G Dantas;C Huttenhower",
+    "year": "2015",
+    "citation": "Kaminski J, Gibson MK, Franzosa EA, Segata N, Dantas G, Huttenhower C. 2015. High-Specificity targeted functional profiling in microbial communities with ShortBRED. PLOS Computational Biology 11:e1004557. DOI: https://doi.org/10.1371/journal.pcbi.1004557, PMID: 26682918",
+    "pages": "",
+    "journal": "PLOS Computational Biology",
+    "volume": "11",
+    "sentences": [
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION #b58][CITATION #b123].",
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION][CITATION #b86][CITATION #b88].",
+      "This association was previously detected using a customized ShortBRED database [CITATION] due to the lack of appropriate reference sequences previously available to HUMAnN 2."
+    ]
+  },
+  {
+    "title": "Data, information, knowledge and principle: back to metabolism in KEGG",
+    "authors": "M Kanehisa;S Goto;Y Sato;M Kawashima;M Furumichi;M Tanabe",
+    "year": "2014",
+    "citation": "Kanehisa M, Goto S, Sato Y, Kawashima M, Furumichi M, Tanabe M. 2014. Data, information, knowledge and principle: back to metabolism in KEGG. Nucleic Acids Research 42:D199-D205. DOI: https://doi.org/10.1093/ nar/gkt1076, PMID: 24214961",
+    "pages": "D199-D205",
+    "journal": "Nucleic Acids Research",
+    "volume": "42",
+    "sentences": [
+      "Each cluster representative was used for extracting the nucleotide sequence from the source reference genome and the several functional annotations from different systems (GO terms [CITATION #b15], KEGG modules [CITATION], KO identifiers, Pfam accessions [CITATION #b37], EC numbers [CITATION #b19], and eggNOG accessions [CITATION #b100] associated with the UniProtKB entry."
+    ]
+  },
+  {
+    "title": "KEGG: kyoto encyclopedia of genes and genomes",
+    "authors": "M Kanehisa;S Goto",
+    "year": "2000",
+    "citation": "Kanehisa M, Goto S. 2000. KEGG: kyoto encyclopedia of genes and genomes. Nucleic Acids Research 28:27-30. DOI: https://doi.org/10.1093/nar/28.1.27, PMID: 10592173",
+    "pages": "27-30",
+    "journal": "Nucleic Acids Research",
+    "volume": "28",
+    "sentences": [
+      "ChocoPhlAn 3 also retrieves and includes relevant data present in the UniProtKB entries (retrieved from ftp.uniprot.org/pub/ databases/uniprot/ as XML files such as functional, phylogenomic, and protein domain annotations (KEGG, KO, EggNOG, GO, EC, Pfam) [CITATION #b34][CITATION #b50][CITATION] , accessions for cross-referencing entries with external databases (Gen-Bank, ENA, and BioCyc) [CITATION #b32][CITATION #b59][CITATION #b67], name of the gene that encodes for the protein, and proteome accession."
+    ]
+  },
+  {
+    "title": "Analysis of 1321 Eubacterium rectale genomes from metagenomes uncovers complex phylogeographic population structure and subspecies functional adaptations",
+    "authors": "N Karcher;E Pasolli;F Asnicar;K D Huang;A Tett;S Manara;F Armanini;D Bain;S H Duncan;P Louis;M Zolfo;P Manghi;M Valles-Colomer;`r Raffaeta;O Rota-Stabelli;M C Collado;G Zeller;D Falush;F Maixner;A W Walker",
+    "year": "2020",
+    "citation": "Karcher N, Pasolli E, Asnicar F, Huang KD, Tett A, Manara S, Armanini F, Bain D, Duncan SH, Louis P, Zolfo M, Manghi P, Valles-Colomer M, Raffaeta `R, Rota-Stabelli O, Collado MC, Zeller G, Falush D, Maixner F, Walker AW, et al. 2020. Analysis of 1321 Eubacterium rectale genomes from metagenomes uncovers complex phylogeographic population structure and subspecies functional adaptations. Genome Biology 21:138. DOI: https://doi.org/10.1186/s13059-020-02042-y, PMID: 32513234",
+    "pages": "13059-020",
+    "journal": "Genome Biology",
+    "volume": "21",
+    "sentences": [
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION][CITATION #b123]."
+    ]
+  },
+  {
+    "title": "The BioCyc collection of microbial genomes and metabolic pathways",
+    "authors": "P D Karp;R Billington;R Caspi;C A Fulcher;M Latendresse;A Kothari;I M Keseler;M Krummenacker;P E Midford;Q Ong;W K Ong;S M Paley;P Subhraveti",
+    "year": "2019",
+    "citation": "Karp PD, Billington R, Caspi R, Fulcher CA, Latendresse M, Kothari A, Keseler IM, Krummenacker M, Midford PE, Ong Q, Ong WK, Paley SM, Subhraveti P. 2019. The BioCyc collection of microbial genomes and metabolic pathways. Briefings in Bioinformatics 20:1085-1093. DOI: https://doi.org/10.1093/bib/bbx085, PMID: 2 9447345",
+    "pages": "1085-1093",
+    "journal": "Briefings in Bioinformatics",
+    "volume": "20",
+    "sentences": [
+      "ChocoPhlAn 3 also retrieves and includes relevant data present in the UniProtKB entries (retrieved from ftp.uniprot.org/pub/ databases/uniprot/ as XML files such as functional, phylogenomic, and protein domain annotations (KEGG, KO, EggNOG, GO, EC, Pfam) [CITATION #b34][CITATION #b50][CITATION #b57] , accessions for cross-referencing entries with external databases (Gen-Bank, ENA, and BioCyc) [CITATION #b32][CITATION][CITATION #b67], name of the gene that encodes for the protein, and proteome accession."
+    ]
+  },
+  {
+    "title": "MAFFT multiple sequence alignment software version 7: improvements in performance and usability",
+    "authors": "K Katoh;D M Standley",
+    "year": "2013",
+    "citation": "Katoh K, Standley DM. 2013. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. Molecular Biology and Evolution 30:772-780. DOI: https://doi.org/10.1093/molbev/ mst010, PMID: 23329690",
+    "pages": "772-780",
+    "journal": "Molecular Biology and Evolution",
+    "volume": "30",
+    "sentences": [
+      "By default, reconstructed sequences are mapped against the markers database using BLASTn [CITATION #b13], multiple sequence alignment is performed by MAFFT [CITATION] and phylogenetic trees are produced by RAxML [CITATION #b115]."
+    ]
+  },
+  {
+    "title": "Finding Groups in Data: An Introduction to Cluster Analysis",
+    "authors": "L Kaufman;P J Rousseeuw",
+    "year": "2009",
+    "citation": "Kaufman L, Rousseeuw PJ. 2009. Finding Groups in Data: An Introduction to Cluster Analysis. John Wiley & Sons . DOI: https://doi.org/10.1002/9780470316801",
+    "publisher": "John Wiley & Sons",
+    "pages": "",
+    "journal": "",
+    "volume": "",
+    "sentences": [
+      "PAM clustering was subsequently applied on the phylogenetic distance matrix using the 'cluster' R package [CITATION] version 2.1."
+    ]
+  },
+  {
+    "title": "Selective maternal seeding and environment shape the human gut microbiome",
+    "authors": "K Korpela;P Costea;L P Coelho;S Kandels-Lewis;G Willemsen;D I Boomsma;N Segata;P Bork",
+    "year": "2018",
+    "citation": "Korpela K, Costea P, Coelho LP, Kandels-Lewis S, Willemsen G, Boomsma DI, Segata N, Bork P. 2018. Selective maternal seeding and environment shape the human gut microbiome. Genome Research 28:561-568. DOI: https://doi.org/10.1101/gr.233940.117, PMID: 29496731",
+    "pages": "561-568",
+    "journal": "Genome Research",
+    "volume": "28",
+    "sentences": [
+      "Mother-infant pairs showed a similar dynamic (Figure 4B), with sporadic vertical transmission (~33.3%) [CITATION #b36][CITATION][CITATION #b141] mixed with strain loss, replacement, and acquisition from other environmental or human sources [CITATION]."
+    ]
+  },
+  {
+    "title": "Elevated trimethylamine-N-oxide (TMAO) is associated with poor prognosis in primary sclerosing cholangitis patients with normal liver function",
+    "authors": "M Kummen;M Vesterhus;M Tr\u00f8seid;B Moum;A Svardal;K M Boberg;P Aukrust;T H Karlsen;R K Berge;J R Hov",
+    "year": "2017",
+    "citation": "Kummen M, Vesterhus M, Tr\u00f8seid M, Moum B, Svardal A, Boberg KM, Aukrust P, Karlsen TH, Berge RK, Hov JR. 2017. Elevated trimethylamine-N-oxide (TMAO) is associated with poor prognosis in primary sclerosing cholangitis patients with normal liver function. United European Gastroenterology Journal 5:532-541. DOI: https://doi.org/10.1177/2050640616663453, PMID: 28588885",
+    "pages": "532-541",
+    "journal": "United European Gastroenterology Journal",
+    "volume": "5",
+    "sentences": [
+      "Specifically, we previously showed that the abundance of the microbial gene encoding for the choline trimethylamine-lyase (cutC) responsible for production of the disease-associated trimethylamine and trimethylamine N-oxide [CITATION #b54][CITATION][CITATION #b91][CITATION #b103] (TMA/TMAO) is significantly higher in CRC patients ."
+    ]
+  },
+  {
+    "title": "lmerTest Package: Tests in Linear Mixed Effects Models",
+    "authors": "A Kuznetsova;P B Brockhoff;Rhb Christensen",
+    "year": "2017",
+    "citation": "Kuznetsova A, Brockhoff PB, Christensen RHB. 2017. lmerTest Package: Tests in Linear Mixed Effects Models. Journal of Statistical Software 82:1-26. DOI: https://doi.org/10.18637/jss.v082.i13",
+    "pages": "1-26",
+    "journal": "Journal of Statistical Software",
+    "volume": "82",
+    "sentences": [
+      "We then compared community-level EC expression with other sample properties using a mixed effects model implemented in R's lmerTest package [CITATION] (using subject as a random effect to account for repeated longitudinal sampling):"
+    ]
+  },
+  {
+    "title": "Fast gapped-read alignment with bowtie 2",
+    "authors": "B Langmead;S L Salzberg",
+    "year": "2012",
+    "citation": "Langmead B, Salzberg SL. 2012. Fast gapped-read alignment with bowtie 2. Nature Methods 9:357-359. DOI: https://doi.org/10.1038/nmeth.1923, PMID: 22388286",
+    "pages": "357-359",
+    "journal": "Nature Methods",
+    "volume": "9",
+    "sentences": [
+      "Depletion of host-derived sequences by mapping with bowtie2 [CITATION] against an expanded human reference genome (including known 'decoy' and contaminant sequences [CITATION #b28] and optionally other hosts (e.g. mouse) reference genomes and/or transcriptomes.",
+      "The raw reads in a metagenomic sample are mapped by MetaPhlAn 3 to a database of 1.1M markers using bowtie2 [CITATION].",
+      "HUMAnN 3 implements a number of new options for fine-tuning the steps in its tiered search (e.g. passing custom search parameters to bowtie2 [CITATION] in the pangenome and translated search steps, respectively).",
+      "It maps metagenomes against the pangenome of a species of interest using bowtie2 [CITATION]."
+    ]
+  },
+  {
+    "title": "Richness of human gut microbiome correlates with metabolic markers",
+    "authors": "Le Chatelier;E Nielsen;T Qin;J Prifti;E Hildebrand;F Falony;G Almeida;M Arumugam;M Batto;J-M Kennedy;S Leonard;P Li;J Burgdorf;K Grarup;N J\u00f8rgensen;T Brandslund;I Nielsen;H B Juncker;A S Bertalan;M Levenez;F",
+    "year": "2013",
+    "citation": "Le Chatelier E, Nielsen T, Qin J, Prifti E, Hildebrand F, Falony G, Almeida M, Arumugam M, Batto J-M, Kennedy S, Leonard P, Li J, Burgdorf K, Grarup N, J\u00f8rgensen T, Brandslund I, Nielsen HB, Juncker AS, Bertalan M, Levenez F, et al. 2013. Richness of human gut microbiome correlates with metabolic markers. Nature 500:541- 546. DOI: https://doi.org/10.1038/nature12506",
+    "pages": "541-546",
+    "journal": "Nature",
+    "volume": "500",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION] [CITATION #b147]."
+    ]
+  },
+  {
+    "title": "The european nucleotide archive",
+    "authors": "R Leinonen;R Akhtar;E Birney;L Bower;A Cerdeno-Ta \u00b4rraga;Y Cheng;Cleland I Faruque;N Goodgame;N Gibson;R Hoad;G Jang;M Pakseresht;N Plaister;S Radhakrishnan;R Reddy;K Sobhany;S;Ten Hoopen;P Vaughan;R Zalunin;V",
+    "year": "2011",
+    "citation": "Leinonen R, Akhtar R, Birney E, Bower L, Cerdeno-Ta \u00b4rraga A, Cheng Y, Cleland I, Faruque N, Goodgame N, Gibson R, Hoad G, Jang M, Pakseresht N, Plaister S, Radhakrishnan R, Reddy K, Sobhany S, Ten Hoopen P, Vaughan R, Zalunin V, et al. 2011. The european nucleotide archive. Nucleic Acids Research 39:D28-D31. DOI: https://doi.org/10.1093/nar/gkq967, PMID: 20972220",
+    "pages": "D28-D31",
+    "journal": "Nucleic Acids Research",
+    "volume": "39",
+    "sentences": [
+      "ChocoPhlAn 3 also retrieves and includes relevant data present in the UniProtKB entries (retrieved from ftp.uniprot.org/pub/ databases/uniprot/ as XML files such as functional, phylogenomic, and protein domain annotations (KEGG, KO, EggNOG, GO, EC, Pfam) [CITATION #b34][CITATION #b50][CITATION #b57] , accessions for cross-referencing entries with external databases (Gen-Bank, ENA, and BioCyc) [CITATION #b32][CITATION #b59][CITATION], name of the gene that encodes for the protein, and proteome accession."
+    ]
+  },
+  {
+    "title": "An integrated metagenome catalog reveals new insights into the murine gut microbiome",
+    "authors": "T R Lesker;A C Durairaj;Ejc Ga \u00b4lvez;I Lagkouvardos;J F Baines;T Clavel;A Sczyrba;A C Mchardy;T Strowig",
+    "year": "2020",
+    "citation": "Lesker TR, Durairaj AC, Ga \u00b4lvez EJC, Lagkouvardos I, Baines JF, Clavel T, Sczyrba A, McHardy AC, Strowig T. 2020. An integrated metagenome catalog reveals new insights into the murine gut microbiome. Cell Reports 30:2909-2922. DOI: https://doi.org/10.1016/j.celrep.2020.02.036, PMID: 32130896",
+    "pages": "2909-2922",
+    "journal": "Cell Reports",
+    "volume": "30",
+    "sentences": [
+      "While not a primary focus of this study, metagenomic assembly methods enabling the former types of analyses, including novel organism discovery or gene cataloging [CITATION][CITATION #b117], have also advanced tremendously [CITATION #b69][CITATION #b90]."
+    ]
+  },
+  {
+    "title": "MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de bruijn graph",
+    "authors": "D Li;C M Liu;R Luo;K Sadakane;T W Lam",
+    "year": "2015",
+    "citation": "Li D, Liu CM, Luo R, Sadakane K, Lam TW. 2015. MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de bruijn graph. Bioinformatics 31:1674-1676. DOI: https://doi. org/10.1093/bioinformatics/btv033, PMID: 25609793",
+    "pages": "1674-1676",
+    "journal": "Bioinformatics",
+    "volume": "31",
+    "sentences": [
+      "While not a primary focus of this study, metagenomic assembly methods enabling the former types of analyses, including novel organism discovery or gene cataloging [CITATION #b68][CITATION #b117], have also advanced tremendously [CITATION][CITATION #b90]."
+    ]
+  },
+  {
+    "title": "Calibration of uncertainty estimates in Bayesian deep learning under distribution shift",
+    "authors": [
+      "Martinez, C.",
+      "Johansson, F.",
+      "Adeyemi, K."
+    ],
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems",
+    "doi": "",
+    "citation": "Martinez et al. (2022) NeurIPS.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences",
+    "authors": "W Li;A Godzik",
+    "year": "2006",
+    "citation": "Li W, Godzik A. 2006. Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22:1658-1659. DOI: https://doi.org/10.1093/bioinformatics/btl158, PMID: 16731699",
+    "pages": "1658-1659",
+    "journal": "Bioinformatics",
+    "volume": "22",
+    "sentences": [
+      "UniRef90 clusters are generated by clustering unique sequences (UniRef100, which combines identical UniProtKB proteins in a single cluster) via CD-HIT [CITATION] until August 2019, and via MMseqs2 [CITATION #b116] afterward."
+    ]
+  },
+  {
+    "title": "Strains, functions and dynamics in the expanded human microbiome project",
+    "authors": "J Lloyd-Price;A Mahurkar;G Rahnavard;J Crabtree;J Orvis;A B Hall;A Brady;H H Creasy;C Mccracken;M G Giglio;D Mcdonald;E A Franzosa;R Knight;O White;C Huttenhower",
+    "year": "2017",
+    "citation": "Lloyd-Price J, Mahurkar A, Rahnavard G, Crabtree J, Orvis J, Hall AB, Brady A, Creasy HH, McCracken C, Giglio MG, McDonald D, Franzosa EA, Knight R, White O, Huttenhower C. 2017. Strains, functions and dynamics in the expanded human microbiome project. Nature 550:61-66. DOI: https://doi.org/10.1038/nature23889, PMID: 28953883",
+    "pages": "61-66",
+    "journal": "Nature",
+    "volume": "550",
+    "sentences": [
+      "Finally, although not addressed in depth by this study, shotgun meta-omics have increasingly also been combined with other community profiling techniques such as metabolomics [CITATION #b47][CITATION][CITATION #b118] and proteomics [CITATION #b139] to provide richer pictures of microbial community membership, function, and ecology."
+    ]
+  },
+  {
+    "title": "Longitudinal assessment of systemic inflammatory markers in post-acute COVID-19 sequelae: a multicentre cohort study",
+    "authors": [
+      "Harrison, M.",
+      "Okonkwo, T.",
+      "Lindstr\u00f6m, E."
+    ],
+    "year": "2021",
+    "journal": "The Lancet Infectious Diseases",
+    "doi": "",
+    "citation": "Harrison et al. (2021) Lancet Infect Dis.",
+    "sentences": [
+      "As demonstrated in previous work [CITATION], this approach has been validated across multiple settings."
+    ],
+    "_is_fake": true
+  },
+  {
+    "title": "UniFrac: a new phylogenetic method for comparing microbial communities",
+    "authors": "C Lozupone;R Knight",
+    "year": "2005",
+    "citation": "Lozupone C, Knight R. 2005. UniFrac: a new phylogenetic method for comparing microbial communities. Applied and Environmental Microbiology 71:8228-8235. DOI: https://doi.org/10.1128/AEM.71.12.8228-8235. 2005, PMID: 16332807",
+    "pages": "8228-8235",
+    "journal": "Applied and Environmental Microbiology",
+    "volume": "71",
+    "sentences": [
+      "To support post-profiling analyses, a convenience R script for computing weighted and unweighted UniFrac distances [CITATION] from MetaPhlAn profiles is now available in the software repository (metaphlan/utils/calculate_unifrac.R), alongside the phylogeny (in Newick format) comprising all MetaPhlAn 3 taxa."
+    ]
+  },
+  {
+    "title": "Bracken: estimating species abundance in metagenomics data",
+    "authors": "J Lu;F P Breitwieser;P Thielen;S L Salzberg",
+    "year": "2017",
+    "citation": "Lu J, Breitwieser FP, Thielen P, Salzberg SL. 2017. Bracken: estimating species abundance in metagenomics data. PeerJ Computer Science 3:e104. DOI: https://doi.org/10.7717/peerj-cs.104",
+    "pages": "e104",
+    "journal": "PeerJ Computer Science",
+    "volume": "3",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "MetaPhlAn 3 showed increased performance compared with the previous version MetaPhlAn 2 [CITATION #b128], mOTUs2 [CITATION #b82], and Bracken 2.5 [CITATION].",
+      "In addition to MetaPhlAn 3, the comparative evaluation considered MetaPhlAn 2.7 [CITATION #b128], mOTUs 2.51 [CITATION #b82] (latest database available as of July 2020), and Bracken 2.5 (using a database built after the April 2019 RefSeq release) [CITATION][CITATION #b138].",
+      "To assess the performance of MetaPhlAn 3, we compared it with its previous version, MetaPhlAn 2 [CITATION #b128], alongside mOTUs2 [CITATION #b82] and Bracken [CITATION][CITATION #b138]."
+    ]
+  },
+  {
+    "title": "Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding",
+    "authors": "R Lu;X Zhao;J Li;P Niu;B Yang;H Wu;W Wang;H Song;B Huang;N Zhu;Y Bi;X Ma;F Zhan;L Wang;T Hu;H Zhou;Z Hu;W Zhou;L Zhao;J Chen",
+    "year": "2020",
+    "citation": "Lu R, Zhao X, Li J, Niu P, Yang B, Wu H, Wang W, Song H, Huang B, Zhu N, Bi Y, Ma X, Zhan F, Wang L, Hu T, Zhou H, Hu Z, Zhou W, Zhao L, Chen J, et al. 2020. Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding. The Lancet 395:565-574. DOI: https://doi.org/ 10.1016/S0140-6736(20)30251-8, PMID: 32007145",
+    "pages": "565-574",
+    "journal": "The Lancet",
+    "volume": "395",
+    "sentences": [
+      "The genomic epidemiology of pathogens has driven the latter -recently in viral outbreaks such as COVID-19 [CITATION] and Ebola [CITATION #b44], and in many bacterial conditions such as cholera [CITATION #b136] or pneumonia [CITATION #b33]."
+    ]
+  },
+  {
+    "title": "ConStrains identifies microbial strains in metagenomic datasets",
+    "authors": "C Luo;R Knight;H Siljander;M Knip;R J Xavier;D Gevers",
+    "year": "2015",
+    "citation": "Luo C, Knight R, Siljander H, Knip M, Xavier RJ, Gevers D. 2015. ConStrains identifies microbial strains in metagenomic datasets. Nature Biotechnology 33:1045-1052. DOI: https://doi.org/10.1038/nbt.3319, PMID: 26344404",
+    "pages": "1045-1052",
+    "journal": "Nature Biotechnology",
+    "volume": "33",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88]."
+    ]
+  },
+  {
+    "title": "Microbial genomes from non-human primate gut metagenomes expand the primateassociated bacterial tree of life with over 1000 novel species",
+    "authors": "S Manara;F Asnicar;F Beghini;D Bazzani;F Cumbo;M Zolfo;E Nigro;N Karcher;P Manghi;M I Metzger;E Pasolli;N Segata",
+    "year": "2019",
+    "citation": "Manara S, Asnicar F, Beghini F, Bazzani D, Cumbo F, Zolfo M, Nigro E, Karcher N, Manghi P, Metzger MI, Pasolli E, Segata N. 2019. Microbial genomes from non-human primate gut metagenomes expand the primate- associated bacterial tree of life with over 1000 novel species. Genome Biology 20:299. DOI: https://doi.org/10. 1186/s13059-019-1923-9, PMID: 31883524",
+    "pages": "13059-019",
+    "journal": "Genome Biology",
+    "volume": "20",
+    "sentences": [
+      "Since metagenomes can simultaneously access all community members with relatively little bias, such studies are now possible with organisms previously overlooked due to the absence of obviously associated phenotypes or convenient culture techniques [CITATION][CITATION #b98]."
+    ]
+  },
+  {
+    "title": "Comprehensive benchmarking and ensemble approaches for metagenomic classifiers",
+    "authors": "Abr Mcintyre;R Ounit;E Afshinnekoo;R J Prill;E He \u00b4naff;Alexander N Minot;S S Danko;D Foox;J Ahsanuddin;S Tighe;S Hasan;N A Subramanian;P Moffat;K Levy;S Lonardi;S Greenfield;N Colwell;R R Rosen;G L Mason;C E",
+    "year": "2017",
+    "citation": "McIntyre ABR, Ounit R, Afshinnekoo E, Prill RJ, He \u00b4naff E, Alexander N, Minot SS, Danko D, Foox J, Ahsanuddin S, Tighe S, Hasan NA, Subramanian P, Moffat K, Levy S, Lonardi S, Greenfield N, Colwell RR, Rosen GL, Mason CE. 2017. Comprehensive benchmarking and ensemble approaches for metagenomic classifiers. Genome Biology 18:182. DOI: https://doi.org/10.1186/s13059-017-1299-7, PMID: 28934964",
+    "pages": "13059-017",
+    "journal": "Genome Biology",
+    "volume": "18",
+    "sentences": [
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION][CITATION #b81][CITATION #b82][CITATION #b109][CITATION #b128][CITATION #b142]."
+    ]
+  },
+  {
+    "title": "bioBakery: a meta'omic analysis environment",
+    "authors": "L J Mciver;G Abu-Ali;E A Franzosa;R Schwager;X C Morgan;L Waldron;N Segata;C Huttenhower",
+    "year": "2018",
+    "citation": "McIver LJ, Abu-Ali G, Franzosa EA, Schwager R, Morgan XC, Waldron L, Segata N, Huttenhower C. 2018. bioBakery: a meta'omic analysis environment. Bioinformatics 34:1235-1237. DOI: https://doi.org/10.1093/ bioinformatics/btx754, PMID: 29194469",
+    "pages": "1235-1237",
+    "journal": "Bioinformatics",
+    "volume": "34",
+    "sentences": [
+      "In a few cases, platforms such as bioBakery [CITATION], QIIME 2 [CITATION #b26], or MEGAN [CITATION #b83] integrate several such methods within an overarching environment.",
+      "Following the standard bioBakery workflow [CITATION] for combined meta-omic sequencing data, we processed the HMP2 metagenomes using HUMAnN 3.0.0.alpha.1 (including taxonomic prescreening performed by MetaPhlAn 3)."
+    ]
+  },
+  {
+    "title": "Identification and assembly of genomes and genetic elements in complex metagenomic samples without using reference genomes",
+    "authors": "Metahit Consortium;H B Nielsen;M Almeida;A S Juncker;S Rasmussen;J Li;S Sunagawa;D R Plichta;L Gautier;A G Pedersen;Le Chatelier;E Pelletier;E Bonde;I Nielsen;T Manichanh;C Arumugam;M Batto;J M;Quintanilha Dos Santos;M B Blom;N Borruel;N Burgdorf;K S",
+    "year": "2014",
+    "citation": "MetaHIT Consortium, Nielsen HB, Almeida M, Juncker AS, Rasmussen S, Li J, Sunagawa S, Plichta DR, Gautier L, Pedersen AG, Le Chatelier E, Pelletier E, Bonde I, Nielsen T, Manichanh C, Arumugam M, Batto JM, Quintanilha Dos Santos MB, Blom N, Borruel N, Burgdorf KS, et al. 2014. Identification and assembly of genomes and genetic elements in complex metagenomic samples without using reference genomes. Nature Biotechnology 32:822-828. DOI: https://doi.org/10.1038/nbt.2939, PMID: 24997787",
+    "pages": "822-828",
+    "journal": "Nature Biotechnology",
+    "volume": "32",
+    "sentences": [
+      "We performed an additional step of curation for markers for species with genomes obtained with Co-Abundance gene Groups (CAGs) [CITATION]."
+    ]
+  },
+  {
+    "title": "Assessing taxonomic metagenome profilers with OPAL",
+    "authors": "F Meyer;A Bremges;P Belmann;S Janssen;A C Mchardy;D Koslicki",
+    "year": "2019",
+    "citation": "Meyer F, Bremges A, Belmann P, Janssen S, McHardy AC, Koslicki D. 2019. Assessing taxonomic metagenome profilers with OPAL. Genome Biology 20:51. DOI: https://doi.org/10.1186/s13059-019-1646-y, PMID: 30 832730",
+    "pages": "13059-019",
+    "journal": "Genome Biology",
+    "volume": "20",
+    "sentences": [
+      "We evaluated the taxonomic profiling performance of MetaPhlAn 3 using 118 synthetic metagenomes spanning 113 synthetic samples from the 2nd CAMI Challenge [CITATION #b41][CITATION #b109] through the OPAL benchmarking framework [CITATION].",
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION #b78][CITATION][CITATION #b82][CITATION #b109][CITATION #b128][CITATION #b142].",
+      "Finally, alongside the default MetaPhlAn output format, profiles can be now reported using the CAMI output format defined by [CITATION #b21][CITATION #b23] that can be used for performing benchmarks with the OPAL framework [CITATION].",
+      "When not directly available from the tool (MetaPhlAn 2 and Bracken), output profiles were converted into the CAMI output format as described by the BioBoxes RFC [CITATION #b21][CITATION #b23] in order to benchmark with the OPAL framework [CITATION] (version 1.0.5)."
+    ]
+  },
+  {
+    "title": "Microbial abundance, activity and population genomic profiling with mOTUs2",
+    "authors": "A Milanese;D R Mende;L Paoli;G Salazar;H J Ruscheweyh;M Cuenca;P Hingamp;R Alves;P I Costea;L P Coelho;Tsb Schmidt;A Almeida;A L Mitchell;R D Finn;J Huerta-Cepas;P Bork;G Zeller;S Sunagawa",
+    "year": "2019",
+    "citation": "Milanese A, Mende DR, Paoli L, Salazar G, Ruscheweyh HJ, Cuenca M, Hingamp P, Alves R, Costea PI, Coelho LP, Schmidt TSB, Almeida A, Mitchell AL, Finn RD, Huerta-Cepas J, Bork P, Zeller G, Sunagawa S. 2019. Microbial abundance, activity and population genomic profiling with mOTUs2. Nature Communications 10: 1014. DOI: https://doi.org/10.1038/s41467-019-08844-4, PMID: 30833550",
+    "pages": "41467-019",
+    "journal": "Nature Communications",
+    "volume": "10",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "MetaPhlAn 3 showed increased performance compared with the previous version MetaPhlAn 2 [CITATION #b128], mOTUs2 [CITATION], and Bracken 2.5 [CITATION #b73].",
+      "In addition to MetaPhlAn 3, the comparative evaluation considered MetaPhlAn 2.7 [CITATION #b128], mOTUs 2.51 [CITATION] (latest database available as of July 2020), and Bracken 2.5 (using a database built after the April 2019 RefSeq release) [CITATION #b73][CITATION #b138].",
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION #b78][CITATION #b81][CITATION][CITATION #b109][CITATION #b128][CITATION #b142].",
+      "To assess the performance of MetaPhlAn 3, we compared it with its previous version, MetaPhlAn 2 [CITATION #b128], alongside mOTUs2 [CITATION] and Bracken [CITATION #b73][CITATION #b138]."
+    ]
+  },
+  {
+    "title": "Analysis of 16S rRNA environmental sequences using MEGAN",
+    "authors": "S Mitra;M Sta \u00a8rk;D H Huson",
+    "year": "2011",
+    "citation": "Mitra S, Sta \u00a8rk M, Huson DH. 2011. Analysis of 16S rRNA environmental sequences using MEGAN. BMC Genomics 12:S17. DOI: https://doi.org/10.1186/1471-2164-12-S3-S17, PMID: 22369513",
+    "pages": "1471-2164",
+    "journal": "BMC Genomics",
+    "volume": "12",
+    "sentences": [
+      "In a few cases, platforms such as bioBakery [CITATION #b79], QIIME 2 [CITATION #b26], or MEGAN [CITATION] integrate several such methods within an overarching environment."
+    ]
+  },
+  {
+    "title": "Biodiversity and functional genomics in the human microbiome",
+    "authors": "X C Morgan;N Segata;C Huttenhower",
+    "year": "2013",
+    "citation": "Morgan XC, Segata N, Huttenhower C. 2013. Biodiversity and functional genomics in the human microbiome. Trends in Genetics 29:51-58. DOI: https://doi.org/10.1016/j.tig.2012.09.005, PMID: 23140990",
+    "pages": "51-58",
+    "journal": "Trends in Genetics",
+    "volume": "29",
+    "sentences": [
+      "in microbial ecology (Human Microbiome Project , shotgun metagenomics provide a complementary means of taxonomic profiling to amplicon-based (e.g. 16S rRNA gene) sequencing, as well as functional profiling of genes or biochemical pathways [CITATION][CITATION #b102][CITATION #b111]."
+    ]
+  },
+  {
+    "title": "Sporulation capability and amylosome conservation among diverse human colonic and Rumen isolates of the keystone starch-degrader Ruminococcus bromii",
+    "authors": "I Mukhopadhya;S Mora\u0131 \u00a8s;J Laverde-Gomez;P O Sheridan;A W Walker;W Kelly;A V Klieve;D Ouwerkerk;S H Duncan;P Louis;N Koropatkin;D Cockburn;R Kibler;P J Cooper;C Sandoval;E Crost;N Juge;E A Bayer;H J Flint",
+    "year": "2018",
+    "citation": "Mukhopadhya I, Mora\u0131 \u00a8s S, Laverde-Gomez J, Sheridan PO, Walker AW, Kelly W, Klieve AV, Ouwerkerk D, Duncan SH, Louis P, Koropatkin N, Cockburn D, Kibler R, Cooper PJ, Sandoval C, Crost E, Juge N, Bayer EA, Flint HJ. 2018. Sporulation capability and amylosome conservation among diverse human colonic and Rumen isolates of the keystone starch-degrader Ruminococcus bromii. Environmental Microbiology 20:324-336. DOI: https://doi.org/10.1111/1462-2920.14000, PMID: 29159997",
+    "pages": "324-336",
+    "journal": "Environmental Microbiology",
+    "volume": "20",
+    "sentences": [
+      "R. bromii is prevalent in over half of typical gut microbiomes, but large-scale comparative genomic analyses of this species are not available with only one previous investigation [CITATION] limited to the five reference genomes available at the time."
+    ]
+  },
+  {
+    "title": "Automated and accurate estimation of gene family abundance from shotgun metagenomes",
+    "authors": "S Nayfach;P H Bradley;S K Wyman;T J Laurent;A Williams;J A Eisen;K S Pollard;T J Sharpton",
+    "year": "2015",
+    "citation": "Nayfach S, Bradley PH, Wyman SK, Laurent TJ, Williams A, Eisen JA, Pollard KS, Sharpton TJ. 2015. Automated and accurate estimation of gene family abundance from shotgun metagenomes. PLOS Computational Biology 11:e1004573. DOI: https://doi.org/10.1371/journal.pcbi.1004573, PMID: 26565399",
+    "pages": "",
+    "journal": "PLOS Computational Biology",
+    "volume": "11",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION][CITATION #b88]."
+    ]
+  },
+  {
+    "title": "An integrated metagenomics pipeline for strain profiling reveals novel patterns of bacterial transmission and biogeography",
+    "authors": "S Nayfach;B Rodriguez-Mueller;N Garud;K S Pollard",
+    "year": "2016",
+    "citation": "Nayfach S, Rodriguez-Mueller B, Garud N, Pollard KS. 2016. An integrated metagenomics pipeline for strain profiling reveals novel patterns of bacterial transmission and biogeography. Genome Research 26:1612-1625. DOI: https://doi.org/10.1101/gr.201863.115, PMID: 27803195",
+    "pages": "1612-1625",
+    "journal": "Genome Research",
+    "volume": "26",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88]."
+    ]
+  },
+  {
+    "title": "Carnelian uncovers hidden functional patterns across diverse study populations from whole metagenome sequencing reads",
+    "authors": "S Nazeen;Y W Yu;B Berger",
+    "year": "2020",
+    "citation": "Nazeen S, Yu YW, Berger B. 2020. Carnelian uncovers hidden functional patterns across diverse study populations from whole metagenome sequencing reads. Genome Biology 21:47. DOI: https://doi.org/10.1186/s13059-020- 1933-7, PMID: 32093762",
+    "pages": "13059-020",
+    "journal": "Genome Biology",
+    "volume": "21",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION].",
+      "(D) Compared with HUMAnN 2 [CITATION #b40] and Carnelian [CITATION], HUMAnN 3 produces more accurate estimates of EC abundances and displays a higher species true positive rate compared to ChocoPhlAn 3 from the set of 16.8 k species pangenomes.",
+      "We compared its performance against HUMAnN 2 [CITATION #b40], and the recently published Carnelian [CITATION] when profiling the 30 CAMI and five additional synthetic metagenomes introduced above (see Materials and methods and Figure 1).",
+      "While HUMAnN 2 and 3 can both natively estimate the relative abundances of a wide variety of functional features from a metagenome (by first quantifying and then manipulating UniRef90 or UniRef50 abundances), we selected level-4 enzyme commission (EC) categories as a basis for comparison with Carnelian, as the method's authors provided a precomputed index for EC quantification [CITATION].",
+      "We evaluated HUMAnN 3, HUMAnN 2 [CITATION #b40], and Carnelian [CITATION] on 30 CAMI metagenomes and the five synphlan-nonhuman metagenomes."
+    ]
+  },
+  {
+    "title": "Database resources of the national center for biotechnology information",
+    "authors": "Ncbi Resource Coordinators;N R Coordinators",
+    "year": "2014",
+    "citation": "NCBI Resource Coordinators, Coordinators NR. 2014. Database resources of the national center for biotechnology information. Nucleic Acids Research 42:7-17. DOI: https://doi.org/10.1093/nar/gkt1146, PMID: 24259429",
+    "pages": "7-17",
+    "journal": "Nucleic Acids Research",
+    "volume": "42",
+    "sentences": [
+      "Most of these tools leverage an updated ChocoPhlAn 3 database of systematically organized and annotated microbial genomes and gene family clusters, newly derived from UniProt/UniRef [CITATION #b119] and NCBI [CITATION].",
+      "We adopted the NCBI taxonomy database [CITATION] for use by ChocoPhlAn as it is the one on which our genomic repository, UniProt, is also based."
+    ]
+  },
+  {
+    "title": "metaSPAdes: a new versatile metagenomic assembler",
+    "authors": "S Nurk;D Meleshko;A Korobeynikov;P A Pevzner",
+    "year": "2017",
+    "citation": "Nurk S, Meleshko D, Korobeynikov A, Pevzner PA. 2017. metaSPAdes: a new versatile metagenomic assembler. Genome Research 27:824-834. DOI: https://doi.org/10.1101/gr.213959.116, PMID: 28298430",
+    "pages": "824-834",
+    "journal": "",
+    "volume": "27",
+    "sentences": [
+      "While not a primary focus of this study, metagenomic assembly methods enabling the former types of analyses, including novel organism discovery or gene cataloging [CITATION #b68][CITATION #b117], have also advanced tremendously [CITATION #b69][CITATION]."
+    ]
+  },
+  {
+    "title": "Trimethylamine N-oxide (TMAO) as a new potential therapeutic target for insulin resistance and Cancer",
+    "authors": "J Oellgaard;S A Winther;T S Hansen;P Rossing;B J Von Scholten",
+    "year": "2017",
+    "citation": "Oellgaard J, Winther SA, Hansen TS, Rossing P, von Scholten BJ. 2017. Trimethylamine N-oxide (TMAO) as a new potential therapeutic target for insulin resistance and Cancer. Current Pharmaceutical Design 23:3699- 3712. DOI: https://doi.org/10.2174/1381612823666170622095324, PMID: 28641532",
+    "pages": "3699-3712",
+    "journal": "Current Pharmaceutical Design",
+    "volume": "23",
+    "sentences": [
+      "Specifically, we previously showed that the abundance of the microbial gene encoding for the choline trimethylamine-lyase (cutC) responsible for production of the disease-associated trimethylamine and trimethylamine N-oxide [CITATION #b54][CITATION #b63][CITATION][CITATION #b103] (TMA/TMAO) is significantly higher in CRC patients ."
+    ]
+  },
+  {
+    "title": "The vegan package",
+    "authors": "J Oksanen;R Kindt;P Legendre;B O'hara;G L Simpson;P Solymos;H H Stevens;H Wagner;M J Oksanen;M Suggests",
+    "year": "2008",
+    "citation": "Oksanen J, Kindt R, Legendre P, O'Hara B, Simpson GL, Solymos P, Stevens HH, Wagner H, Oksanen MJ, Suggests M. 2008. The vegan package. Community Ecology Package 10:10.",
+    "pages": "10",
+    "journal": "Community Ecology Package",
+    "volume": "10",
+    "sentences": [
+      "Multidimensional scaling analysis was performed on the Weighted UniFrac distance (vegan 'cmdscale' and rbiom 'unifrac' function [CITATION] computed on the relative abundance data adjusted for study batch effect with MMUPHin [CITATION #b76] and normalized using arcsin-square root."
+    ]
+  },
+  {
+    "title": "Genome-resolved metagenomics of eukaryotic populations during early colonization of premature infants and in hospital rooms",
+    "authors": "M R Olm;P T West;B Brooks;B A Firek;R Baker;M J Morowitz;J F Banfield",
+    "year": "2019",
+    "citation": "Olm MR, West PT, Brooks B, Firek BA, Baker R, Morowitz MJ, Banfield JF. 2019. Genome-resolved metagenomics of eukaryotic populations during early colonization of premature infants and in hospital rooms. Microbiome 7:26. DOI: https://doi.org/10.1186/s40168-019-0638-1, PMID: 30770768",
+    "pages": "40168-019",
+    "journal": "",
+    "volume": "7",
+    "sentences": [
+      "Critically, all these analyses (and the use of the word 'microbiome' throughout this manuscript) are equally applicable to both bacterial and non-bacterial community members (e.g. viruses and eukaryotes) [CITATION #b20][CITATION][CITATION #b145]."
+    ]
+  },
+  {
+    "title": "Mash: fast genome and metagenome distance estimation using MinHash",
+    "authors": "B D Ondov;T J Treangen;P Melsted;A B Mallonee;N H Bergman;S Koren;A M Phillippy",
+    "year": "2016",
+    "citation": "Ondov BD, Treangen TJ, Melsted P, Mallonee AB, Bergman NH, Koren S, Phillippy AM. 2016. Mash: fast genome and metagenome distance estimation using MinHash. Genome Biology 17:1-14. DOI: https://doi.org/ 10.1186/s13059-016-0997-x, PMID: 27323842",
+    "pages": "1-14",
+    "journal": "Genome Biology",
+    "volume": "17",
+    "sentences": [
+      "For species having more than 200 reference genomes available, the pangenome is made using a representative subset of 200 genomes maximizing the Mash distances between them [CITATION]."
+    ]
+  },
+  {
+    "title": "Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life",
+    "authors": "D H Parks;C Rinke;M Chuvochina;P A Chaumeil;B J Woodcroft;P N Evans;P Hugenholtz;G W Tyson",
+    "year": "2017",
+    "citation": "Parks DH, Rinke C, Chuvochina M, Chaumeil PA, Woodcroft BJ, Evans PN, Hugenholtz P, Tyson GW. 2017. Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life. Nature Microbiology 2:1533-1542. DOI: https://doi.org/10.1038/s41564-017-0012-7, PMID: 28894102",
+    "pages": "1533-1542",
+    "journal": "Nature Microbiology",
+    "volume": "2",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION #b11][CITATION #b39][CITATION][CITATION #b98][CITATION #b101][CITATION #b150].",
+      "This is supported by the extent to which 'dark matter' not previously characterized in the laboratory pervades host-associated and (especially) environmental metagenomes [CITATION], with most communities containing a plurality, majority, or sometimes supermajority of novel and/or uncharacterized sequences [CITATION #b11][CITATION #b98]."
+    ]
+  },
+  {
+    "title": "Machine learning Meta-analysis of large metagenomic datasets: tools and biological insights",
+    "authors": "E Pasolli;D T Truong;F Malik;L Waldron;N Segata",
+    "year": "2016",
+    "citation": "Pasolli E, Truong DT, Malik F, Waldron L, Segata N. 2016. Machine learning Meta-analysis of large metagenomic datasets: tools and biological insights. PLOS Computational Biology 12:e1004977. DOI: https://doi.org/10. 1371/journal.pcbi.1004977, PMID: 27400279",
+    "pages": "",
+    "journal": "PLOS Computational Biology",
+    "volume": "12",
+    "sentences": [
+      "As in previous studies [CITATION] , RFs using functional features performed similarly (0.69 cross validation and 0.71 LODO ROC AUC on pathways relative abundance), indicating a tight link",
+      "We used MetAML [CITATION] to feed species-level and pathway-level relative abundances to a Random Forest model [CITATION #b27]."
+    ]
+  },
+  {
+    "title": "Accessible, curated metagenomic data through ExperimentHub",
+    "authors": "E Pasolli;L Schiffer;P Manghi;A Renson;V Obenchain;D T Truong;F Beghini;F Malik;M Ramos;J B Dowd;C Huttenhower;M Morgan;N Segata;L Waldron",
+    "year": "2017",
+    "citation": "Pasolli E, Schiffer L, Manghi P, Renson A, Obenchain V, Truong DT, Beghini F, Malik F, Ramos M, Dowd JB, Huttenhower C, Morgan M, Segata N, Waldron L. 2017. Accessible, curated metagenomic data through ExperimentHub. Nature Methods 14:1023-1024. DOI: https://doi.org/10.1038/nmeth.4468, PMID: 29088129",
+    "pages": "1023-1024",
+    "journal": "Nature Methods",
+    "volume": "14",
+    "sentences": [
+      "The resulting integrated profiles are available for download (Supplementary file 5) and included in the new release of curatedMeta-genomicData [CITATION]."
+    ]
+  },
+  {
+    "title": "Extensive unexplored human microbiome diversity revealed by over 150,000 genomes from metagenomes spanning age, geography, and lifestyle",
+    "authors": "E Pasolli;F Asnicar;S Manara;M Zolfo;N Karcher;F Armanini;F Beghini;P Manghi;A Tett;P Ghensi;M C Collado;B L Rice;C Dulong;X C Morgan;C D Golden;C Quince;C Huttenhower;N Segata",
+    "year": "2019",
+    "citation": "Pasolli E, Asnicar F, Manara S, Zolfo M, Karcher N, Armanini F, Beghini F, Manghi P, Tett A, Ghensi P, Collado MC, Rice BL, DuLong C, Morgan XC, Golden CD, Quince C, Huttenhower C, Segata N. 2019. Extensive unexplored human microbiome diversity revealed by over 150,000 genomes from metagenomes spanning age, geography, and lifestyle. Cell 176:649-662. DOI: https://doi.org/10.1016/j.cell.2019.01.001, PMID: 30661755",
+    "pages": "649-662",
+    "journal": "Cell",
+    "volume": "176",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION #b11][CITATION #b39][CITATION #b95][CITATION][CITATION #b101][CITATION #b150].",
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION #b58][CITATION #b123].",
+      "The latter is especially supported by the corresponding growth of fragmentary, draft, and finished microbial isolate genomes, and their consistent annotation and clustering into genome groups and pan-genomes [CITATION #b12][CITATION #b11][CITATION].",
+      "From the meta-analysis of 7783 gut metagenomes integrated for a previous study [CITATION], we considered the 4077 metagenomes in which R. bromii was found present with a relative abundance above 0.05% according to MetaPhlAn 3.",
+      "Sub-clade prediction (see Materials and methods) highlighted two sub-species clades that are particularly divergent within the phylogeny (Figure 4-figure supplement 1C-D); interestingly, the first one (Cluster 1) is mainly composed of strains retrieved from Chinese subjects and from cohorts with a rural and a more pre-industrial traditional lifestyle and diet [CITATION] 4A; Cluster 1; Fisher's exact test p<2.2e-16).",
+      "This is supported by the extent to which 'dark matter' not previously characterized in the laboratory pervades host-associated and (especially) environmental metagenomes [CITATION #b95], with most communities containing a plurality, majority, or sometimes supermajority of novel and/or uncharacterized sequences [CITATION #b11][CITATION].",
+      "Since metagenomes can simultaneously access all community members with relatively little bias, such studies are now possible with organisms previously overlooked due to the absence of obviously associated phenotypes or convenient culture techniques [CITATION #b77][CITATION].",
+      "This is true both for reference-based and for assembly-based approaches, the latter of which are often also stymied by highly diverse taxa [CITATION].",
+      "A final area of improvement for bioBakery, relatedly, is the increased integration between reference-based and assembly-based approaches -begun here via PhyloPhlAn 3 -in order to better leverage MAGs [CITATION #b12], SGBs [CITATION], and novel gene families.",
+      "We initially filtered out species having taxonomies previously tagged as low quality using the species-level genome bin (SGB) system [CITATION].",
+      "A set of MAGs previously analyzed [CITATION] can also be included to provide phylogenetic contextualization of newly assembled MAGs.",
+      "For Ruminococcus bromii population genetic analysis, from the 9316 metagenomes spanning 46 datasets considered by [CITATION], we selected 4077 samples in which R. bromii was found present with a relative abundance above 0.05%."
+    ]
+  },
+  {
+    "title": "Chronic intestinal inflammation induces stress-response genes in commensal Escherichia coli",
+    "authors": "L G Patwa;T J Fan;S Tchaptchet;Y Liu;Y A Lussier;R B Sartor;J J Hansen",
+    "year": "2011",
+    "citation": "Patwa LG, Fan TJ, Tchaptchet S, Liu Y, Lussier YA, Sartor RB, Hansen JJ. 2011. Chronic intestinal inflammation induces stress-response genes in commensal Escherichia coli. Gastroenterology 141:1842-1851. DOI: https:// doi.org/10.1053/j.gastro.2011.06.064, PMID: 21726510",
+    "pages": "1842-1851",
+    "journal": "Gastroenterology",
+    "volume": "141",
+    "sentences": [
+      "Related observations were made previously using a mouse model of colitis monocolonized with commensal E. coli [CITATION]."
+    ]
+  },
+  {
+    "title": "A library of human gut bacterial isolates paired with longitudinal multiomics data enables mechanistic microbiome research",
+    "authors": "M Poyet;M Groussin;S M Gibbons;J Avila-Pacheco;X Jiang;S M Kearney;A R Perrotta;B Berdy;S Zhao;T D Lieberman;P K Swanson;M Smith;S Roesemann;J E Alexander;S A Rich;J Livny;H Vlamakis;C Clish;K Bullock;A Deik",
+    "year": "2019",
+    "citation": "Poyet M, Groussin M, Gibbons SM, Avila-Pacheco J, Jiang X, Kearney SM, Perrotta AR, Berdy B, Zhao S, Lieberman TD, Swanson PK, Smith M, Roesemann S, Alexander JE, Rich SA, Livny J, Vlamakis H, Clish C, Bullock K, Deik A, et al. 2019. A library of human gut bacterial isolates paired with longitudinal multiomics data enables mechanistic microbiome research. Nature Medicine 25:1442-1452. DOI: https://doi.org/10.1038/ s41591-019-0559-3, PMID: 31477907",
+    "pages": "1442-1452",
+    "journal": "Nature Medicine",
+    "volume": "25",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION #b11][CITATION #b39][CITATION #b95][CITATION #b98][CITATION][CITATION #b150]."
+    ]
+  },
+  {
+    "title": "Shotgun metagenomics, from sampling to analysis",
+    "authors": "C Quince;A W Walker;J T Simpson;N J Loman;N Segata",
+    "year": "2017",
+    "citation": "Quince C, Walker AW, Simpson JT, Loman NJ, Segata N. 2017. Shotgun metagenomics, from sampling to analysis. Nature Biotechnology 35:833-844. DOI: https://doi.org/10.1038/nbt.3935, PMID: 28898207",
+    "pages": "833-844",
+    "journal": "Nature Biotechnology",
+    "volume": "35",
+    "sentences": [
+      "in microbial ecology (Human Microbiome Project , shotgun metagenomics provide a complementary means of taxonomic profiling to amplicon-based (e.g. 16S rRNA gene) sequencing, as well as functional profiling of genes or biochemical pathways [CITATION #b84][CITATION][CITATION #b111].",
+      "Methods enabling such analyses of meta-omic sequencing have developed in roughly two complementary types, either relying on metagenomic assembly or using largely assembly-independent, reference-based approaches [CITATION].",
+      "The visibility of species with particularly high genetic diversity within individual communities also remains limited; in most cases, only the most dominant strain of each taxon per community is currently analyzable, again for both experimental (e.g. sequencing depth) and analytical reasons [CITATION]."
+    ]
+  },
+  {
+    "title": "Uncovering the trimethylamine-producing Bacteria of the human gut Microbiota",
+    "authors": "S Rath;B Heidrich;D H Pieper;M Vital",
+    "year": "2017",
+    "citation": "Rath S, Heidrich B, Pieper DH, Vital M. 2017. Uncovering the trimethylamine-producing Bacteria of the human gut Microbiota. Microbiome 5:54. DOI: https://doi.org/10.1186/s40168-017-0271-9, PMID: 28506279",
+    "pages": "40168-017",
+    "journal": "",
+    "volume": "5",
+    "sentences": [
+      "Specifically, we previously showed that the abundance of the microbial gene encoding for the choline trimethylamine-lyase (cutC) responsible for production of the disease-associated trimethylamine and trimethylamine N-oxide [CITATION #b54][CITATION #b63][CITATION #b91][CITATION] (TMA/TMAO) is significantly higher in CRC patients ."
+    ]
+  },
+  {
+    "title": "Potential TMA-Producing Bacteria are ubiquitously found in mammalia",
+    "authors": "S Rath;T Rud;D H Pieper;M Vital",
+    "year": "2019",
+    "citation": "Rath S, Rud T, Pieper DH, Vital M. 2019. Potential TMA-Producing Bacteria are ubiquitously found in mammalia. Frontiers in Microbiology 10:2966. DOI: https://doi.org/10.3389/fmicb.2019.02966, PMID: 31998260",
+    "pages": "2966",
+    "journal": "Frontiers in Microbiology",
+    "volume": "10",
+    "sentences": [
+      "This enzyme contributes directly to trimethylamine (TMA) formation [CITATION], one of the more noteworthy microbial metabolites implicated in human disease via its transformation to proatherogenic trimethylamine-oxide (TMAO) [CITATION #b121]."
+    ]
+  },
+  {
+    "title": "FragGeneScan: predicting genes in short and error-prone reads",
+    "authors": "M Rho;H Tang;Y Ye",
+    "year": "2010",
+    "citation": "Rho M, Tang H, Ye Y. 2010. FragGeneScan: predicting genes in short and error-prone reads. Nucleic Acids Research 38:e191. DOI: https://doi.org/10.1093/nar/gkq747, PMID: 20805240",
+    "pages": "e191",
+    "journal": "Nucleic Acids Research",
+    "volume": "38",
+    "sentences": [
+      "py translate' wrapping FragGeneScan [CITATION] version 1.31 with the '-n 3' option."
+    ]
+  },
+  {
+    "title": "EMBOSS: the european molecular biology open software suite",
+    "authors": "P Rice;I Longden;A Bleasby",
+    "year": "2000",
+    "citation": "Rice P, Longden I, Bleasby A. 2000. EMBOSS: the european molecular biology open software suite. Trends in Genetics 16:276-277. DOI: https://doi.org/10.1016/S0168-9525(00)02024-2, PMID: 10827456",
+    "pages": "276-277",
+    "journal": "Trends in Genetics",
+    "volume": "16",
+    "sentences": [
+      "A phylogenetic distance matrix was produced by the dismat function from the EMBOSS package [CITATION] (Kimura 2-parameter distance correction) using the multiple sequence alignment file produced by StrainPhlAn."
+    ]
+  },
+  {
+    "title": "Dysbiotic gut Microbiota causes transmissible crohn's disease-like ileitis independent of failure in antimicrobial defence",
+    "authors": "M Schaubeck;T Clavel;J Calasan;I Lagkouvardos;S B Haange;N Jehmlich;M Basic;A Dupont;M Hornef;M Von Bergen;A Bleich;D Haller",
+    "year": "2016",
+    "citation": "Schaubeck M, Clavel T, Calasan J, Lagkouvardos I, Haange SB, Jehmlich N, Basic M, Dupont A, Hornef M, von Bergen M, Bleich A, Haller D. 2016. Dysbiotic gut Microbiota causes transmissible crohn's disease-like ileitis independent of failure in antimicrobial defence. Gut 65:225-237. DOI: https://doi.org/10.1136/gutjnl-2015- 309333, PMID: 25887379",
+    "pages": "225-237",
+    "journal": "Gut",
+    "volume": "65",
+    "sentences": [
+      "Hungatella hathewayi was uniquely responsible for many of these, an organism not previously associated with IBD in humans [CITATION]."
+    ]
+  },
+  {
+    "title": "Strainlevel microbial epidemiology and population genomics from shotgun metagenomics",
+    "authors": "M Scholz;D V Ward;E Pasolli;T Tolio;M Zolfo;F Asnicar;D T Truong;A Tett;A L Morrow;N Segata",
+    "year": "2016",
+    "citation": "Scholz M, Ward DV, Pasolli E, Tolio T, Zolfo M, Asnicar F, Truong DT, Tett A, Morrow AL, Segata N. 2016. Strain- level microbial epidemiology and population genomics from shotgun metagenomics. Nature Methods 13:435- 438. DOI: https://doi.org/10.1038/nmeth.3802, PMID: 26999001",
+    "pages": "435-438",
+    "journal": "Nature Methods",
+    "volume": "13",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "Strain-level characterization of taxa directly from metagenomes is an effective cultivation-free means to profile the population structure of a microbial species across geography or other conditions [CITATION][CITATION #b129] and to track strain transmission [CITATION #b36].",
+      "PanPhlAn performs strain-level metagenomic profiling by identifying the species-specific gene repertoire composition inside individual metagenomic samples [CITATION]."
+    ]
+  },
+  {
+    "title": "Critical assessment of metagenome Interpretation-a benchmark of metagenomics software",
+    "authors": "A Sczyrba;P Hofmann;P Belmann;D Koslicki;S Janssen;J Dro \u00a8ge;I Gregor;S Majda;J Fiedler;E Dahms;A Bremges;A Fritz;R Garrido-Oter;T S J\u00f8rgensen;N Shapiro;P D Blood;A Gurevich;Y Bai;D Turaev;M Z Demaere",
+    "year": "2017",
+    "citation": "Sczyrba A, Hofmann P, Belmann P, Koslicki D, Janssen S, Dro \u00a8ge J, Gregor I, Majda S, Fiedler J, Dahms E, Bremges A, Fritz A, Garrido-Oter R, J\u00f8rgensen TS, Shapiro N, Blood PD, Gurevich A, Bai Y, Turaev D, DeMaere MZ, et al. 2017. Critical assessment of metagenome Interpretation-a benchmark of metagenomics software. Nature Methods 14:1063-1071. DOI: https://doi.org/10.1038/nmeth.4458, PMID: 28967888",
+    "pages": "1063-1071",
+    "journal": "Nature Methods",
+    "volume": "14",
+    "sentences": [
+      "We evaluated the taxonomic profiling performance of MetaPhlAn 3 using 118 synthetic metagenomes spanning 113 synthetic samples from the 2nd CAMI Challenge [CITATION #b41][CITATION] through the OPAL benchmarking framework [CITATION #b81].",
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION #b78][CITATION #b81][CITATION #b82][CITATION][CITATION #b128][CITATION #b142].",
+      "The first set included synthetic metagenomes and goldstandard taxonomic profiles from the CAMI challenge representing five human body site-specific microbiomes and the murine gut microbiome [CITATION #b41][CITATION].",
+      "We profiled a total of 118 synthetic metagenomes spanning different ecosystems: (i) 49 synthetic metagenomes (10 Airways, 10 Gastrointestinal Tract, 10 Oral, 10 Skin, 9 Urogenital tract) provided by the 2nd CAMI challenge [CITATION] resemble the composition of the Human Microbiome as described by the Human Microbiome Project [CITATION #b130] 64 synthetic metagenomes generated by CAMISIM and modeled after the murine gut microbiome [CITATION #b41]; (iii) five synthetic metagenomes including non-human associated species (see above)."
+    ]
+  },
+  {
+    "title": "Metagenomic microbial community profiling using unique clade-specific marker genes",
+    "authors": "N Segata;L Waldron;A Ballarini;V Narasimhan;O Jousson;C Huttenhower",
+    "year": "2012",
+    "citation": "Segata N, Waldron L, Ballarini A, Narasimhan V, Jousson O, Huttenhower C. 2012. Metagenomic microbial community profiling using unique clade-specific marker genes. Nature Methods 9:811-814. DOI: https://doi. org/10.1038/nmeth.2066, PMID: 22688413",
+    "pages": "811-814",
+    "journal": "Nature Methods",
+    "volume": "9",
+    "sentences": [
+      "MetaPhlAn estimates the relative abundance of microbial taxa in a metagenome using the coverage of clade-specific marker genes [CITATION][CITATION #b128].",
+      "The clade's coverages are then normalized across all detected clades to obtain the relative abundance of each taxon as previously described [CITATION][CITATION #b128]."
+    ]
+  },
+  {
+    "title": "Computational meta'omics for microbial community studies",
+    "authors": "N Segata;D Boernigen;T L Tickle;X C Morgan;W S Garrett;C Huttenhower",
+    "year": "2013",
+    "citation": "Segata N, Boernigen D, Tickle TL, Morgan XC, Garrett WS, Huttenhower C. 2013. Computational meta'omics for microbial community studies. Molecular Systems Biology 9:666. DOI: https://doi.org/10.1038/msb.2013.22, PMID: 23670539",
+    "pages": "666",
+    "journal": "Molecular Systems Biology",
+    "volume": "9",
+    "sentences": [
+      "in microbial ecology (Human Microbiome Project , shotgun metagenomics provide a complementary means of taxonomic profiling to amplicon-based (e.g. 16S rRNA gene) sequencing, as well as functional profiling of genes or biochemical pathways [CITATION #b84][CITATION #b102][CITATION]."
+    ]
+  },
+  {
+    "title": "Toward an efficient method of identifying core genes for evolutionary and functional microbial phylogenies",
+    "authors": "N Segata;C Huttenhower",
+    "year": "2011",
+    "citation": "Segata N, Huttenhower C. 2011. Toward an efficient method of identifying core genes for evolutionary and functional microbial phylogenies. PLOS ONE 6:e24704. DOI: https://doi.org/10.1371/journal.pone.0024704, PMID: 21931822",
+    "pages": "",
+    "journal": "PLOS ONE",
+    "volume": "6",
+    "sentences": [
+      "This currently includes 99,227 genomes and 87.3M gene families, almost 100-fold greater than the data types included in the first bioBakery release [CITATION]."
+    ]
+  },
+  {
+    "title": "Stunted microbiota and opportunistic pathogen colonization in caesarean-section birth",
+    "authors": "Y Shao;S C Forster;E Tsaliki;K Vervier;A Strang;N Simpson;N Kumar;M D Stares;A Rodger;P Brocklehurst;N Field;T D Lawley",
+    "year": "2019",
+    "citation": "Shao Y, Forster SC, Tsaliki E, Vervier K, Strang A, Simpson N, Kumar N, Stares MD, Rodger A, Brocklehurst P, Field N, Lawley TD. 2019. Stunted microbiota and opportunistic pathogen colonization in caesarean-section birth. Nature 574:117-121. DOI: https://doi.org/10.1038/s41586-019-1560-1",
+    "pages": "117-121",
+    "journal": "Nature",
+    "volume": "574",
+    "sentences": [
+      "Phylogenetic trees produced by StrainPhlan 3 can also be used to identify identical strains across samples, which can be exploited, for example, in strain transmission analyses [CITATION #b36][CITATION]."
+    ]
+  },
+  {
+    "title": "Commensal Bifidobacterium promotes antitumor immunity and facilitates anti-PD-L1 efficacy",
+    "authors": "A Sivan;L Corrales;N Hubert;J B Williams;K Aquino-Michaels;Z M Earley;F W Benyamin;Y M Lei;B Jabri;M L Alegre;E B Chang;T F Gajewski",
+    "year": "2015",
+    "citation": "Sivan A, Corrales L, Hubert N, Williams JB, Aquino-Michaels K, Earley ZM, Benyamin FW, Lei YM, Jabri B, Alegre ML, Chang EB, Gajewski TF. 2015. Commensal Bifidobacterium promotes antitumor immunity and facilitates anti-PD-L1 efficacy. Science 350:1084-1089. DOI: https://doi.org/10.1126/science.aac4255, PMID: 26541606",
+    "pages": "1084-1089",
+    "journal": "Science",
+    "volume": "350",
+    "sentences": [
+      "Bifidobacterium breve and other Bifidobacterium spp have been shown to encode amylopullulanases and attach to starch particles, and they have also been reported for their potential protective role against carcinogenesis here and previously [CITATION]."
+    ]
+  },
+  {
+    "title": "RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies",
+    "authors": "A Stamatakis",
+    "year": "2014",
+    "citation": "Stamatakis A. 2014. RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies. Bioinformatics 30:1312-1313. DOI: https://doi.org/10.1093/bioinformatics/btu033",
+    "pages": "1312-1313",
+    "journal": "Bioinformatics",
+    "volume": "30",
+    "sentences": [
+      "By default, reconstructed sequences are mapped against the markers database using BLASTn [CITATION #b13], multiple sequence alignment is performed by MAFFT [CITATION #b60] and phylogenetic trees are produced by RAxML [CITATION].",
+      "We used RAxML version 8.2.4 [CITATION] to generate phylogenetic distances between samples from PanPhlAN results."
+    ]
+  },
+  {
+    "title": "Clustering huge protein sequence sets in linear time",
+    "authors": "M Steinegger;So",
+    "year": "2018",
+    "citation": "Steinegger M, So \u00a8ding J. 2018. Clustering huge protein sequence sets in linear time. Nature Communications 9: 2542. DOI: https://doi.org/10.1038/s41467-018-04964-5, PMID: 29959318",
+    "pages": "41467-018",
+    "journal": "Nature Communications",
+    "volume": "9",
+    "sentences": [
+      "UniRef90 clusters are generated by clustering unique sequences (UniRef100, which combines identical UniProtKB proteins in a single cluster) via CD-HIT [CITATION #b70] until August 2019, and via MMseqs2 [CITATION] afterward."
+    ]
+  },
+  {
+    "title": "Compendium of 4,941 rumen metagenome-assembled genomes for rumen microbiome biology and enzyme discovery",
+    "authors": "R D Stewart;M D Auffret;A Warr;A W Walker;R Roehe;M Watson",
+    "year": "2019",
+    "citation": "Stewart RD, Auffret MD, Warr A, Walker AW, Roehe R, Watson M. 2019. Compendium of 4,941 rumen metagenome-assembled genomes for rumen microbiome biology and enzyme discovery. Nature Biotechnology 37:953-961. DOI: https://doi.org/10.1038/s41587-019-0202-3",
+    "pages": "953-961",
+    "journal": "Nature Biotechnology",
+    "volume": "37",
+    "sentences": [
+      "While not a primary focus of this study, metagenomic assembly methods enabling the former types of analyses, including novel organism discovery or gene cataloging [CITATION #b68][CITATION], have also advanced tremendously [CITATION #b69][CITATION #b90]."
+    ]
+  },
+  {
+    "title": "Gut microbiota and intestinal FXR mediate the clinical benefits of metformin",
+    "authors": "L Sun;C Xie;G Wang;Y Wu;Q Wu;X Wang;J Liu;Y Deng;J Xia;B Chen;S Zhang;C Yun;G Lian;X Zhang;H Zhang;W H Bisson;J Shi;X Gao;P Ge;C Liu",
+    "year": "2018",
+    "citation": "Sun L, Xie C, Wang G, Wu Y, Wu Q, Wang X, Liu J, Deng Y, Xia J, Chen B, Zhang S, Yun C, Lian G, Zhang X, Zhang H, Bisson WH, Shi J, Gao X, Ge P, Liu C, et al. 2018. Gut microbiota and intestinal FXR mediate the clinical benefits of metformin. Nature Medicine 24:1919-1929. DOI: https://doi.org/10.1038/s41591-018-0222- 4",
+    "pages": "1919-1929",
+    "journal": "Nature Medicine",
+    "volume": "24",
+    "sentences": [
+      "Finally, although not addressed in depth by this study, shotgun meta-omics have increasingly also been combined with other community profiling techniques such as metabolomics [CITATION #b47][CITATION #b71][CITATION] and proteomics [CITATION #b139] to provide richer pictures of microbial community membership, function, and ecology."
+    ]
+  },
+  {
+    "title": "UniRef: comprehensive and non-redundant UniProt reference clusters",
+    "authors": "B E Suzek;H Huang;P Mcgarvey;R Mazumder;C H Wu;W Ch",
+    "year": "2007",
+    "citation": "Suzek BE, Huang H, McGarvey P, Mazumder R, Wu CH, Ch W. 2007. UniRef: comprehensive and non-redundant UniProt reference clusters. Bioinformatics 23:1282-1288. DOI: https://doi.org/10.1093/bioinformatics/btm098",
+    "pages": "1282-1288",
+    "journal": "Bioinformatics",
+    "volume": "23",
+    "sentences": [
+      "Most of these tools leverage an updated ChocoPhlAn 3 database of systematically organized and annotated microbial genomes and gene family clusters, newly derived from UniProt/UniRef [CITATION] and NCBI [CITATION #b89]."
+    ]
+  },
+  {
+    "title": "UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity searches",
+    "authors": "B E Suzek;Y Wang;H Huang;P B Mcgarvey;C H Wu;W Ch;Uniprot The;Consortium",
+    "year": "2015",
+    "citation": "Suzek BE, Wang Y, Huang H, McGarvey PB, Wu CH, Ch W, the UniProt Consortium. 2015. UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity searches. Bioinformatics 31:926-932. DOI: https://doi.org/10.1093/bioinformatics/btu739",
+    "pages": "926-932",
+    "journal": "Bioinformatics",
+    "volume": "31",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147].",
+      "ChocoPhlAn 3 is based on a genomic repository of 99.2 k high-quality, fully annotated reference microbial genomes from 16.8 k species available in the UniProt Proteomes portal as of January 2019 (The UniProt and the corresponding functionally-annotated 87.3M UniRef90 gene families [CITATION].",
+      "In brief, UniProtKB are clustered at different thresholds of sequence identity (100, 90, 50) and made available through the UniProt Reference Clusters (UniRef) resource [CITATION].",
+      "Sequences in Uni-Ref90 clusters have at least 90% sequence identity [CITATION]."
+    ]
+  },
+  {
+    "title": "Intestinal microbial metabolism of phosphatidylcholine and cardiovascular risk",
+    "authors": "Whw Tang;Z Wang;B S Levison;R A Koeth;E B Britt;X Fu;Y Wu;S L Hazen",
+    "year": "2013",
+    "citation": "Tang WHW, Wang Z, Levison BS, Koeth RA, Britt EB, Fu X, Wu Y, Hazen SL. 2013. Intestinal microbial metabolism of phosphatidylcholine and cardiovascular risk. New England Journal of Medicine 368:1575-1584. DOI: https://doi.org/10.1056/NEJMoa1109400",
+    "pages": "1575-1584",
+    "journal": "New England Journal of Medicine",
+    "volume": "368",
+    "sentences": [
+      "This enzyme contributes directly to trimethylamine (TMA) formation [CITATION #b104], one of the more noteworthy microbial metabolites implicated in human disease via its transformation to proatherogenic trimethylamine-oxide (TMAO) [CITATION]."
+    ]
+  },
+  {
+    "title": "A defined commensal consortium elicits CD8 T cells and anti-cancer immunity",
+    "authors": "T Tanoue;S Morita;D R Plichta;A N Skelly;W Suda;Y Sugiura;S Narushima;H Vlamakis;I Motoo;K Sugita;A Shiota;K Takeshita;K Yasuma-Mitobe;D Riethmacher;T Kaisho;J M Norman;D Mucida;M Suematsu;T Yaguchi;V Bucci",
+    "year": "2019",
+    "citation": "Tanoue T, Morita S, Plichta DR, Skelly AN, Suda W, Sugiura Y, Narushima S, Vlamakis H, Motoo I, Sugita K, Shiota A, Takeshita K, Yasuma-Mitobe K, Riethmacher D, Kaisho T, Norman JM, Mucida D, Suematsu M, Yaguchi T, Bucci V, et al. 2019. A defined commensal consortium elicits CD8 T cells and anti-cancer immunity. Nature 565:600-605. DOI: https://doi.org/10.1038/s41586-019-0878-z",
+    "pages": "600-605",
+    "journal": "Nature",
+    "volume": "565",
+    "sentences": [
+      "Among them, three additional species not identified in previous MetaPhlAn-2-based analysis were among those most strongly associated with CRC (effect size >0.35): Dialister pneumosintes, Ruthenibacterium lactatiformans, and Eisenbergiella tayi (Figure 2B Dialister pneumosintes is typically oral, further reinforcing the role of oral taxa in CRC, and R. lactatiformans was reported as part of a consortium of bacteria able to increase colonic IFNg+T cells [CITATION]."
+    ]
+  },
+  {
+    "title": "The Prevotella copri complex comprises four distinct clades underrepresented in westernized populations",
+    "authors": "A Tett;K D Huang;F Asnicar;H Fehlner-Peach;E Pasolli;N Karcher;F Armanini;P Manghi;K Bonham;M Zolfo;De Filippis;F Magnabosco;C Bonneau;R Lusingu;J Amuasi;J;Reinhard K Rattei;T Boulund;F Engstrand;L Zink;A",
+    "year": "2019",
+    "citation": "Tett A, Huang KD, Asnicar F, Fehlner-Peach H, Pasolli E, Karcher N, Armanini F, Manghi P, Bonham K, Zolfo M, De Filippis F, Magnabosco C, Bonneau R, Lusingu J, Amuasi J, Reinhard K, Rattei T, Boulund F, Engstrand L, Zink A, et al. 2019. The Prevotella copri complex comprises four distinct clades underrepresented in westernized populations. Cell Host & Microbe 26:666-679. DOI: https://doi.org/10.1016/j.chom.2019.08.018, PMID: 31607556",
+    "pages": "666-679",
+    "journal": "Cell Host & Microbe",
+    "volume": "26",
+    "sentences": [
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION #b129], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION #b58][CITATION]."
+    ]
+  },
+  {
+    "title": "Multiple levels of the unknown in microbiome research",
+    "authors": "A M Thomas;N Segata",
+    "year": "2019",
+    "citation": "Thomas AM, Segata N. 2019. Multiple levels of the unknown in microbiome research. BMC Biology 17:48. DOI: https://doi.org/10.1186/s12915-019-0667-z",
+    "pages": "12915-019",
+    "journal": "BMC Biology",
+    "volume": "17",
+    "sentences": [
+      "The challenge, of course, is that each metagenome combines many different noise sources: there is no single, whole genome to finish; host, microbial, and contaminant sequences are not always easily differentiated; there is no one set of 'true' underlying variants (since each organism might be represented by multiple strains); and millions of microbial gene products remain functionally uncharacterized [CITATION]."
+    ]
+  },
+  {
+    "title": "MetaPhlAn2 for enhanced metagenomic taxonomic profiling",
+    "authors": "D T Truong;E A Franzosa;T L Tickle;M Scholz;G Weingart;E Pasolli;A Tett;C Huttenhower;N Segata",
+    "year": "2015",
+    "citation": "Truong DT, Franzosa EA, Tickle TL, Scholz M, Weingart G, Pasolli E, Tett A, Huttenhower C, Segata N. 2015. MetaPhlAn2 for enhanced metagenomic taxonomic profiling. Nature Methods 12:902-903. DOI: https://doi. org/10.1038/nmeth.3589",
+    "pages": "902-903",
+    "journal": "Nature Methods",
+    "volume": "12",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "MetaPhlAn estimates the relative abundance of microbial taxa in a metagenome using the coverage of clade-specific marker genes [CITATION #b110][CITATION].",
+      "MetaPhlAn 3 showed increased performance compared with the previous version MetaPhlAn 2 [CITATION], mOTUs2 [CITATION #b82], and Bracken 2.5 [CITATION #b73].",
+      "In addition to MetaPhlAn 3, the comparative evaluation considered MetaPhlAn 2.7 [CITATION], mOTUs 2.51 [CITATION #b82] (latest database available as of July 2020), and Bracken 2.5 (using a database built after the April 2019 RefSeq release) [CITATION #b73][CITATION #b138].",
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION #b78][CITATION #b81][CITATION #b82][CITATION #b109][CITATION][CITATION #b142].",
+      "The clade's coverages are then normalized across all detected clades to obtain the relative abundance of each taxon as previously described [CITATION #b110][CITATION].",
+      "To assess the performance of MetaPhlAn 3, we compared it with its previous version, MetaPhlAn 2 [CITATION], alongside mOTUs2 [CITATION #b82] and Bracken [CITATION #b73][CITATION #b138]."
+    ]
+  },
+  {
+    "title": "Microbial strain-level population structure and genetic diversity from metagenomes",
+    "authors": "D T Truong;A Tett;E Pasolli;C Huttenhower;N Segata",
+    "year": "2017",
+    "citation": "Truong DT, Tett A, Pasolli E, Huttenhower C, Segata N. 2017. Microbial strain-level population structure and genetic diversity from metagenomes. Genome Research 27:626-638. DOI: https://doi.org/10.1101/gr.216242. 116, PMID: 28167665",
+    "pages": "626-638",
+    "journal": "Genome Research",
+    "volume": "27",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147].",
+      "Methods have been developed to focus on all variants of particular taxa of interest within a set of communities [CITATION #b98][CITATION], to discover new variants of gene families or biochemical activities [CITATION #b40][CITATION #b55], or to link the presence and evolution of closely related strains within or between communities over time, space, and around the globe [CITATION #b20][CITATION #b58][CITATION #b123].",
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION #b138], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "Strain-level characterization of taxa directly from metagenomes is an effective cultivation-free means to profile the population structure of a microbial species across geography or other conditions [CITATION #b108][CITATION] and to track strain transmission [CITATION #b36].",
+      "StrainPhlAn 3 also extends the ability of reference-based approaches to infer the genetic identity of strains across samples as previously explored [CITATION #b36][CITATION].",
+      "StrainPhlAn performs genotyping at the strain level by reconstructing sample-specific consensus sequences of MetaPhlAn markers and using them for multiple-sequence alignment and phylogenetic modeling [CITATION]."
+    ]
+  },
+  {
+    "title": "The human microbiome project",
+    "authors": "P J Turnbaugh;R E Ley;M Hamady;C M Fraser-Liggett;R Knight;J I Gordon",
+    "year": "2007",
+    "citation": "Turnbaugh PJ, Ley RE, Hamady M, Fraser-Liggett CM, Knight R, Gordon JI. 2007. The human microbiome project. Nature 449:804-810. DOI: https://doi.org/10.1038/nature06244, PMID: 17943116",
+    "pages": "804-810",
+    "journal": "Nature",
+    "volume": "449",
+    "sentences": [
+      "We profiled a total of 118 synthetic metagenomes spanning different ecosystems: (i) 49 synthetic metagenomes (10 Airways, 10 Gastrointestinal Tract, 10 Oral, 10 Skin, 9 Urogenital tract) provided by the 2nd CAMI challenge [CITATION #b109] resemble the composition of the Human Microbiome as described by the Human Microbiome Project [CITATION] 64 synthetic metagenomes generated by CAMISIM and modeled after the murine gut microbiome [CITATION #b41]; (iii) five synthetic metagenomes including non-human associated species (see above)."
+    ]
+  },
+  {
+    "title": "Community structure and metabolism through reconstruction of microbial genomes from the environment",
+    "authors": "G W Tyson;J Chapman;P Hugenholtz;E E Allen;R J Ram;P M Richardson;V V Solovyev;E M Rubin;D S Rokhsar;J F Banfield",
+    "year": "2004",
+    "citation": "Tyson GW, Chapman J, Hugenholtz P, Allen EE, Ram RJ, Richardson PM, Solovyev VV, Rubin EM, Rokhsar DS, Banfield JF. 2004. Community structure and metabolism through reconstruction of microbial genomes from the environment. Nature 428:37-43. DOI: https://doi.org/10.1038/nature02340",
+    "pages": "37-43",
+    "journal": "Nature",
+    "volume": "428",
+    "sentences": [
+      "Since early studies of environmental and host-associated microbial communities [CITATION #b43][CITATION][CITATION #b133], it has been clear that many aspects of intercellular and inter-species signaling, short-and long-term evolution, and regulatory programs are exercised by microbes in their natural settings and extremely difficult to recapitulate in a controlled setting."
+    ]
+  },
+  {
+    "title": "Environmental genome shotgun sequencing of the sargasso sea",
+    "authors": "J C Venter;Remington K Heidelberg;J F Halpern;A L Rusch;D Eisen;J A Wu;D Paulsen;I Nelson;K E Nelson;W Fouts;D E Levy;S Knap;A H Lomas;M W;Nealson K White;O Peterson;J Hoffman;J Parsons;R Baden-Tillson;H",
+    "year": "2004",
+    "citation": "Venter JC, Remington K, Heidelberg JF, Halpern AL, Rusch D, Eisen JA, Wu D, Paulsen I, Nelson KE, Nelson W, Fouts DE, Levy S, Knap AH, Lomas MW, Nealson K, White O, Peterson J, Hoffman J, Parsons R, Baden-Tillson H, et al. 2004. Environmental genome shotgun sequencing of the sargasso sea. Science 304:66-74. DOI: https://doi.org/10.1126/science.1093857, PMID: 15001713",
+    "pages": "66-74",
+    "journal": "Science",
+    "volume": "304",
+    "sentences": [
+      "Since early studies of environmental and host-associated microbial communities [CITATION #b43][CITATION #b131][CITATION], it has been clear that many aspects of intercellular and inter-species signaling, short-and long-term evolution, and regulatory programs are exercised by microbes in their natural settings and extremely difficult to recapitulate in a controlled setting."
+    ]
+  },
+  {
+    "title": "Colorectal Cancer and the human gut microbiome: reproducibility with Whole-Genome shotgun sequencing",
+    "authors": "E Vogtmann;X Hua;G Zeller;S Sunagawa;A Y Voigt;R Hercog;J J Goedert;J Shi;P Bork;R Sinha",
+    "year": "2016",
+    "citation": "Vogtmann E, Hua X, Zeller G, Sunagawa S, Voigt AY, Hercog R, Goedert JJ, Shi J, Bork P, Sinha R. 2016. Colorectal Cancer and the human gut microbiome: reproducibility with Whole-Genome shotgun sequencing. PLOS ONE 11:e0155362. DOI: https://doi.org/10.1371/journal.pone.0155362, PMID: 27171425",
+    "pages": "",
+    "journal": "PLOS ONE",
+    "volume": "11",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION #b46] [CITATION][CITATION #b137][CITATION #b140][CITATION #b144][CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Genomic history of the seventh pandemic of cholera in africa",
+    "authors": "F X Weill;D Domman;E Njamkepo;C Tarr;J Rauzier;N Fawal;K H Keddy;H Salje;S Moore;A K Mukhopadhyay;R Bercion;F J Luquero;A Ngandjio;M Dosso;E Monakhova;B Garin;C Bouchier;C Pazzani;A Mutreja;R Grunow",
+    "year": "2017",
+    "citation": "Weill FX, Domman D, Njamkepo E, Tarr C, Rauzier J, Fawal N, Keddy KH, Salje H, Moore S, Mukhopadhyay AK, Bercion R, Luquero FJ, Ngandjio A, Dosso M, Monakhova E, Garin B, Bouchier C, Pazzani C, Mutreja A, Grunow R, et al. 2017. Genomic history of the seventh pandemic of cholera in africa. Science 358:785-789. DOI: https://doi.org/10.1126/science.aad5901, PMID: 29123067 What are proteomes. 2020. UniProt. https://www.uniprot.org/help/proteome",
+    "pages": "785-789",
+    "journal": "Science",
+    "volume": "358",
+    "sentences": [
+      "The genomic epidemiology of pathogens has driven the latter -recently in viral outbreaks such as COVID-19 [CITATION #b74] and Ebola [CITATION #b44], and in many bacterial conditions such as cholera [CITATION] or pneumonia [CITATION #b33]."
+    ]
+  },
+  {
+    "title": "Meta-analysis of fecal metagenomes reveals global microbial signatures that are specific for colorectal cancer",
+    "authors": "J Wirbel;P T Pyl;E Kartal;K Zych;A Kashani;A Milanese;J S Fleck;A Y Voigt;A Palleja;R Ponnudurai;S Sunagawa;L P Coelho;P Schrotz-King;E Vogtmann;N Habermann;E Nima \u02dccus;A M Thomas;P Manghi;S Gandini;D Serrano",
+    "year": "2019",
+    "citation": "Wirbel J, Pyl PT, Kartal E, Zych K, Kashani A, Milanese A, Fleck JS, Voigt AY, Palleja A, Ponnudurai R, Sunagawa S, Coelho LP, Schrotz-King P, Vogtmann E, Habermann N, NimA \u02dccus E, Thomas AM, Manghi P, Gandini S, Serrano D, et al. 2019. Meta-analysis of fecal metagenomes reveals global microbial signatures that are specific for colorectal cancer. Nature Medicine 25:679-689. DOI: https://doi.org/10.1038/s41591-019-0406-6",
+    "pages": "679-689",
+    "journal": "Nature Medicine",
+    "volume": "25",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION #b46] [CITATION #b135][CITATION][CITATION #b140][CITATION #b144][CITATION #b147].",
+      "This pattern has been found previously both with MetaPhlAn 2 and with mOTUs2 [CITATION], in large part due to low-level detection of typically oral microbes in addition to the baseline gut microbiome during CRC.",
+      "We applied the new MetaPhlAn 3 and HUMAnN 3 on a set of human gut metagenomes profiling colorectal cancer patients and controls, updating our previous meta-analyses performed with Meta-PhlAn 2 and HUMAnN 2 [CITATION].",
+      "Considering each cohort, we tested the taxonomical and the functional potential profiles in the CRC prediction problem in a standard cohort-specific cross-validation as well as on the more reproducible leave-one-dataset-out (LODO) setting [CITATION]."
+    ]
+  },
+  {
+    "title": "Improved metagenomic analysis with Kraken 2",
+    "authors": "D E Wood;J Lu;B Langmead",
+    "year": "2019",
+    "citation": "Wood DE, Lu J, Langmead B. 2019. Improved metagenomic analysis with Kraken 2. Genome Biology 20:257. DOI: https://doi.org/10.1186/s13059-019-1891-0",
+    "pages": "13059-019",
+    "journal": "Genome Biology",
+    "volume": "20",
+    "sentences": [
+      "Most such methods focus on addressing a single profiling task within (most often) metagenomes, such as taxonomic profiling [CITATION #b73][CITATION #b82][CITATION #b128][CITATION], strain identification [CITATION #b75][CITATION #b87][CITATION #b108][CITATION #b129], or functional profiling [CITATION #b40][CITATION #b55][CITATION #b86][CITATION #b88].",
+      "In addition to MetaPhlAn 3, the comparative evaluation considered MetaPhlAn 2.7 [CITATION #b128], mOTUs 2.51 [CITATION #b82] (latest database available as of July 2020), and Bracken 2.5 (using a database built after the April 2019 RefSeq release) [CITATION #b73][CITATION].",
+      "To assess the performance of MetaPhlAn 3, we compared it with its previous version, MetaPhlAn 2 [CITATION #b128], alongside mOTUs2 [CITATION #b82] and Bracken [CITATION #b73][CITATION]."
+    ]
+  },
+  {
+    "title": "Development of an enhanced metaproteomic approach for deepening the microbiome characterization of the human infant gut",
+    "authors": "W Xiong;R J Giannone;M J Morowitz;J F Banfield;R L Hettich",
+    "year": "2015",
+    "citation": "Xiong W, Giannone RJ, Morowitz MJ, Banfield JF, Hettich RL. 2015. Development of an enhanced metaproteomic approach for deepening the microbiome characterization of the human infant gut. Journal of Proteome Research 14:133-141. DOI: https://doi.org/10.1021/pr500936p, PMID: 25350865",
+    "pages": "133-141",
+    "journal": "Journal of Proteome Research",
+    "volume": "14",
+    "sentences": [
+      "Finally, although not addressed in depth by this study, shotgun meta-omics have increasingly also been combined with other community profiling techniques such as metabolomics [CITATION #b47][CITATION #b71][CITATION #b118] and proteomics [CITATION] to provide richer pictures of microbial community membership, function, and ecology."
+    ]
+  },
+  {
+    "title": "Metagenomic and metabolomic analyses reveal distinct stage-specific phenotypes of the gut microbiota in colorectal cancer",
+    "authors": "S Yachida;S Mizutani;H Shiroma;S Shiba;T Nakajima;T Sakamoto;H Watanabe;K Masuda;Y Nishimoto;M Kubo;F Hosoda;H Rokutan;M Matsumoto;H Takamaru;M Yamada;T Matsuda;M Iwasaki;T Yamaji;T Yachida;T Soga",
+    "year": "2019",
+    "citation": "Yachida S, Mizutani S, Shiroma H, Shiba S, Nakajima T, Sakamoto T, Watanabe H, Masuda K, Nishimoto Y, Kubo M, Hosoda F, Rokutan H, Matsumoto M, Takamaru H, Yamada M, Matsuda T, Iwasaki M, Yamaji T, Yachida T, Soga T, et al. 2019. Metagenomic and metabolomic analyses reveal distinct stage-specific phenotypes of the gut microbiota in colorectal cancer. Nature Medicine 25:968-976. DOI: https://doi.org/10.1038/s41591-019- 0458-7",
+    "pages": "968-976",
+    "journal": "Nature Medicine",
+    "volume": "25",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION #b46] [CITATION #b135][CITATION #b137][CITATION][CITATION #b144][CITATION #b147].",
+      "To the previous meta-analysis, we added two more datasets that became available afterward [CITATION #b46][CITATION]."
+    ]
+  },
+  {
+    "title": "Strain-Level analysis of Mother-to-Child bacterial transmission during the first few months of life",
+    "authors": "M Yassour;Jason E Hogstrom;L J Arthur;T D Tripathi;S Siljander;H Selvenius;J Oikarinen;S Hyo \u00a8ty;H Virtanen;S M Ilonen;J Ferretti;P Pasolli;E Tett;A Asnicar;F Segata;N Vlamakis;H Lander;E S Huttenhower;C Knip;M",
+    "year": "2018",
+    "citation": "Yassour M, Jason E, Hogstrom LJ, Arthur TD, Tripathi S, Siljander H, Selvenius J, Oikarinen S, Hyo \u00a8ty H, Virtanen SM, Ilonen J, Ferretti P, Pasolli E, Tett A, Asnicar F, Segata N, Vlamakis H, Lander ES, Huttenhower C, Knip M, et al. 2018. Strain-Level analysis of Mother-to-Child bacterial transmission during the first few months of life. Cell Host & Microbe 24:146-154. DOI: https://doi.org/10.1016/j.chom.2018.06.007, PMID: 30001517",
+    "pages": "146-154",
+    "journal": "Cell Host & Microbe",
+    "volume": "24",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION #b147].",
+      "Mother-infant pairs showed a similar dynamic (Figure 4B), with sporadic vertical transmission (~33.3%) [CITATION #b36][CITATION #b62][CITATION] mixed with strain loss, replacement, and acquisition from other environmental or human sources [CITATION #b62]."
+    ]
+  },
+  {
+    "title": "Benchmarking metagenomics tools for taxonomic classification",
+    "authors": "S H Ye;K J Siddle;D J Park;P C Sabeti",
+    "year": "2019",
+    "citation": "Ye SH, Siddle KJ, Park DJ, Sabeti PC. 2019. Benchmarking metagenomics tools for taxonomic classification. Cell 178:779-794. DOI: https://doi.org/10.1016/j.cell.2019.07.010, PMID: 31398336",
+    "pages": "779-794",
+    "journal": "Cell",
+    "volume": "178",
+    "sentences": [
+      "These three profiling tools have consistently been shown to outperform other methods across multiple evaluations [CITATION #b78][CITATION #b81][CITATION #b82][CITATION #b109][CITATION #b128][CITATION]."
+    ]
+  },
+  {
+    "title": "The SILVA and \"All-species Living Tree Project (LTP)\" taxonomic frameworks",
+    "authors": "P Yilmaz;L W Parfrey;P Yarza;J Gerken;E Pruesse;C Quast;T Schweer;J Peplies;W Ludwig;Glo;F O",
+    "year": "2014",
+    "citation": "Yilmaz P, Parfrey LW, Yarza P, Gerken J, Pruesse E, Quast C, Schweer T, Peplies J, Ludwig W, Glo \u00a8ckner FO. 2014. The SILVA and \"All-species Living Tree Project (LTP)\" taxonomic frameworks. Nucleic Acids Research 42: D643-D648. DOI: https://doi.org/10.1093/nar/gkt1209, PMID: 24293649",
+    "pages": "D643-D648",
+    "journal": "Nucleic Acids Research",
+    "volume": "42",
+    "sentences": [
+      "Depletion of microbial ribosomal and structural RNAs by mapping against SILVA [CITATION] in metatranscriptomes."
+    ]
+  },
+  {
+    "title": "Metagenomic analysis of faecal microbiome as a tool towards targeted non-invasive biomarkers for colorectal Cancer",
+    "authors": "J Yu;Q Feng;S H Wong;D Zhang;Q Y Liang;Y Qin;L Tang;H Zhao;J Stenvang;Y Li;X Wang;X Xu;N Chen;W K Wu;J Al-Aama;H J Nielsen;P Kiilerich;B A Jensen;T O Yau;Z Lan",
+    "year": "2017",
+    "citation": "Yu J, Feng Q, Wong SH, Zhang D, Liang QY, Qin Y, Tang L, Zhao H, Stenvang J, Li Y, Wang X, Xu X, Chen N, Wu WK, Al-Aama J, Nielsen HJ, Kiilerich P, Jensen BA, Yau TO, Lan Z, et al. 2017. Metagenomic analysis of faecal microbiome as a tool towards targeted non-invasive biomarkers for colorectal Cancer. Gut 66:70-78. DOI: https://doi.org/10.1136/gutjnl-2015-309800, PMID: 26408641",
+    "pages": "70-78",
+    "journal": "Gut",
+    "volume": "66",
+    "sentences": [
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION #b46] [CITATION #b135][CITATION #b137][CITATION #b140][CITATION][CITATION #b147]."
+    ]
+  },
+  {
+    "title": "Discovery of an expansive bacteriophage family that includes the most abundant viruses from the human gut",
+    "authors": "N Yutin;K S Makarova;A B Gussow;M Krupovic;A Segall;R A Edwards;E V Koonin",
+    "year": "2018",
+    "citation": "Yutin N, Makarova KS, Gussow AB, Krupovic M, Segall A, Edwards RA, Koonin EV. 2018. Discovery of an expansive bacteriophage family that includes the most abundant viruses from the human gut. Nature Microbiology 3:38-46. DOI: https://doi.org/10.1038/s41564-017-0053-y",
+    "pages": "38-46",
+    "journal": "Nature Microbiology",
+    "volume": "3",
+    "sentences": [
+      "Critically, all these analyses (and the use of the word 'microbiome' throughout this manuscript) are equally applicable to both bacterial and non-bacterial community members (e.g. viruses and eukaryotes) [CITATION #b20][CITATION #b93][CITATION]."
+    ]
+  },
+  {
+    "title": "Ruminococcus bromii is a keystone species for the degradation of resistant starch in the human colon",
+    "authors": "X Ze;S H Duncan;P Louis;H J Flint",
+    "year": "2012",
+    "citation": "Ze X, Duncan SH, Louis P, Flint HJ. 2012. Ruminococcus bromii is a keystone species for the degradation of resistant starch in the human colon. The ISME Journal 6:1535-1543. DOI: https://doi.org/10.1038/ismej.2012.4",
+    "pages": "1535-1543",
+    "journal": "The ISME Journal",
+    "volume": "6",
+    "sentences": [
+      "Ruminococcus bromii is a common gut microbe that is surprisingly understudied due to its fastidious anaerobicity and general non-pathogenicity [CITATION]."
+    ]
+  },
+  {
+    "title": "Potential of fecal Microbiota for early-stage detection of colorectal Cancer",
+    "authors": "G Zeller;J Tap;A Y Voigt;S Sunagawa;J R Kultima;P I Costea;A Amiot;J Bo \u00a8hm;F Brunetti;N Habermann;R Hercog;M Koch;A Luciani;D R Mende;M A Schneider;P Schrotz-King;C Tournigand;Tran Van Nhieu;J Yamada;T Zimmermann;J",
+    "year": "2014",
+    "citation": "Zeller G, Tap J, Voigt AY, Sunagawa S, Kultima JR, Costea PI, Amiot A, Bo \u00a8hm J, Brunetti F, Habermann N, Hercog R, Koch M, Luciani A, Mende DR, Schneider MA, Schrotz-King P, Tournigand C, Tran Van Nhieu J, Yamada T, Zimmermann J, et al. 2014. Potential of fecal Microbiota for early-stage detection of colorectal Cancer. Molecular Systems Biology 10:766. DOI: https://doi.org/10.15252/msb.20145645, PMID: 25432777",
+    "pages": "766",
+    "journal": "Molecular Systems Biology",
+    "volume": "10",
+    "sentences": [
+      "Shotgun metagenomic and metatranscriptomic (i.e. 'meta-omic') measurements can be used to address an increasing range of questions as diverse as the transmission and evolution of strains in situ [CITATION #b17][CITATION #b36][CITATION #b129][CITATION #b141], the mechanisms of multi-organism biochemical responses in the environment (Unified Microbiome Initiative [CITATION #b120][CITATION #b24], or the epidemiology of the human microbiome for biomarkers and therapy [CITATION #b45][CITATION #b66] [CITATION].",
+      "To illustrate the potential of bioBakery 3's updated profiling tools and to extend our understanding of the microbial signatures in colorectal cancer (CRC), we expanded our previous work to meta-analyze both existing and newly available CRC metagenomic cohorts for a total of 1262 samples (600 control and 662 CRC samples) from nine different datasets spanning eight different countries [CITATION #b35][CITATION #b46] [CITATION #b135][CITATION #b137][CITATION #b140][CITATION #b144][CITATION]."
+    ]
+  },
+  {
+    "title": "Phylogenomics of 10,575 genomes reveals evolutionary proximity between domains Bacteria and Archaea",
+    "authors": "Q Zhu;U Mai;W Pfeiffer;S Janssen;F Asnicar;J G Sanders;P Belda-Ferre;G A Al-Ghalith;E Kopylova;D Mcdonald;T Kosciolek;J B Yin;S Huang;N Salam;J-Y Jiao;Z Wu;Z Z Xu;K Cantrell;Y Yang;E Sayyari",
+    "year": "2019",
+    "citation": "Zhu Q, Mai U, Pfeiffer W, Janssen S, Asnicar F, Sanders JG, Belda-Ferre P, Al-Ghalith GA, Kopylova E, McDonald D, Kosciolek T, Yin JB, Huang S, Salam N, Jiao J-Y, Wu Z, Xu ZZ, Cantrell K, Yang Y, Sayyari E, et al. 2019. Phylogenomics of 10,575 genomes reveals evolutionary proximity between domains Bacteria and Archaea. Nature Communications 10:5477. DOI: https://doi.org/10.1038/s41467-019-13443-4",
+    "pages": "41467-019",
+    "journal": "Nature Communications",
+    "volume": "10",
+    "sentences": [
+      "Assembly-based analyses are now reaching a point of integrating microbial communities and isolate genomics as well, particularly for phylogeny [CITATION #b18][CITATION]."
+    ]
+  },
+  {
+    "title": "Detecting contamination in viromes using ViromeQC",
+    "authors": "M Zolfo;F Pinto;F Asnicar;P Manghi;A Tett;F D Bushman;N Segata",
+    "year": "2019",
+    "citation": "Zolfo M, Pinto F, Asnicar F, Manghi P, Tett A, Bushman FD, Segata N. 2019. Detecting contamination in viromes using ViromeQC. Nature Biotechnology 37:1408-1412. DOI: https://doi.org/10.1038/s41587-019-0334-5, PMID: 31748692",
+    "pages": "1408-1412",
+    "journal": "Nature Biotechnology",
+    "volume": "37",
+    "sentences": [
+      "These functionalities are incorporated into (i) StrainPhlAn 3, which infers strain-level genotypes by reconstructing sample-specific consensus sequences from MetaPhlAn 3 markers [CITATION] (ii) PanPhlAn 3, which identifies strain-specific combination of genes from species' pangenomes; and (iii) PhyloPhlAn 3, which performs precise phylogenetic placement of isolate and metagenomeassembled genomes (MAGs) using global and species-specific core genes [CITATION #b18] (see Materials and methods).",
+      "These components of metagenomes -and, for RNA viruses, metatranscriptomes -are often measured with surprising heterogeneity during the initial generation of sequencing data themselves [CITATION], suggesting necessary improvements in analytical quality control and normalization as well.",
+      "StrainPhlAn 3 improves the original implementation in several aspects: (i) the integration of an improved and validated pipeline for consensus sequence generation [CITATION], (ii) the integration of PhyloPhlAn 3 [CITATION #b18] which improves the quality of the phylogenetic modeling and the flexibility of the analysis, and (iii) a refined algorithm for filtering samples not supported by enough species' markers and markers not enough conserved across strains and samples."
+    ]
+  },
+  {
+    "title": ",520 reference genomes from cultivated human gut Bacteria enable functional microbiome analyses",
+    "authors": "Y Zou;W Xue;G Luo;Z Deng;P Qin;R Guo;H Sun;Y Xia;S Liang;Y Dai;D Wan;R Jiang;L Su;Q Feng;Z Jie;T Guo;Z Xia;C Liu;J Yu;Y Lin",
+    "year": "2001",
+    "citation": "Zou Y, Xue W, Luo G, Deng Z, Qin P, Guo R, Sun H, Xia Y, Liang S, Dai Y, Wan D, Jiang R, Su L, Feng Q, Jie Z, Guo T, Xia Z, Liu C, Yu J, Lin Y, et al. 2019. 1,520 reference genomes from cultivated human gut Bacteria enable functional microbiome analyses. Nature Biotechnology 37:179-185. DOI: https://doi.org/10.1038/ s41587-018-0008-8, PMID: 30718868",
+    "pages": "179-185",
+    "journal": "Nature Biotechnology",
+    "volume": "37",
+    "sentences": [
+      "Studies of microbial community biology continue to be enriched by the growth of culture-independent sequencing and high-throughput isolate genomics [CITATION #b12][CITATION #b11][CITATION #b39][CITATION #b95][CITATION #b98][CITATION #b101][CITATION]."
+    ]
+  }
+]
