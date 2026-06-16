@@ -167,13 +167,16 @@ def main():
                     help="lookup backend: 'solr' (default, OpenAlex) or 'mongo' (Crossref)")
     ap.add_argument("--doi-only", action="store_true",
                     help="only use DOI lookup (mongo backend only)")
+    ap.add_argument("--cited-sent-dir", default=None,
+                    help="path to cited_sent JSON directory (overrides default)")
     ap.add_argument("--no-crossref", action="store_true",
                     help="disable Crossref fallback (Solr backend only, fallback is on by default)")
     args = ap.parse_args()
 
-    json_files = sorted(CITED_SENT_DIR.glob("*.json"))
+    cited_dir = pathlib.Path(args.cited_sent_dir) if args.cited_sent_dir else CITED_SENT_DIR
+    json_files = sorted(cited_dir.glob("*.json"))
     if not json_files:
-        sys.exit(f"No cited_sent JSON files found under {CITED_SENT_DIR}")
+        sys.exit(f"No cited_sent JSON files found under {cited_dir}")
 
     if args.paper:
         json_files = [f for f in json_files if args.paper in f.name]
