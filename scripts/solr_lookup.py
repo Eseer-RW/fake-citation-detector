@@ -29,10 +29,14 @@ SIMILARITY_THRESHOLD = 0.85
 
 
 class MatchMethod(str, Enum):
-    DOI        = "doi"
-    TITLE_YEAR = "title_year"
-    TITLE_ONLY = "title_only"
-    NOT_FOUND  = "not_found"
+    DOI             = "doi"
+    TITLE_YEAR      = "title_year"
+    TITLE_ONLY      = "title_only"
+    NOT_FOUND       = "not_found"
+    # Crossref fallback methods (used when OpenAlex Solr does not find a citation)
+    XREF_DOI        = "xref_doi"
+    XREF_TITLE_YEAR = "xref_title_year"
+    XREF_TITLE_ONLY = "xref_title_only"
 
 
 @dataclass

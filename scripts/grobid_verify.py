@@ -14,6 +14,7 @@ Usage (from scripts/ directory):
     python3 grobid_verify.py --show-found            # also print matched citations
     python3 grobid_verify.py --backend mongo         # use MongoDB (needs text index)
     python3 grobid_verify.py --backend mongo --doi-only  # MongoDB, DOI-only
+    python3 grobid_verify.py --no-crossref               # skip Crossref fallback
 """
 import argparse
 import json
@@ -60,7 +61,7 @@ def make_citation_obj(entry: dict):
 
 
 def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
-                 verbose: bool = True):
+                 verbose: bool = True, crossref=None):
     """Verify all citations in one cited_sent JSON file. Returns list of result dicts."""
     citations = json.loads(json_path.read_text())
     paper_name = json_path.stem.replace(".tei", "")
@@ -77,6 +78,10 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
                 result = LookupResult(found=False, method=MatchMethod.NOT_FOUND)
         else:
             result = lookup.by_citation(obj)
+
+        # Crossref fallback: if Solr (or Mongo) did not find it, try Crossref
+        if not result.found and crossref is not None:
+            result = crossref.by_citation(obj)
 
         row = {
             "paper":      paper_name,
@@ -162,6 +167,8 @@ def main():
                     help="lookup backend: 'solr' (default, OpenAlex) or 'mongo' (Crossref)")
     ap.add_argument("--doi-only", action="store_true",
                     help="only use DOI lookup (mongo backend only)")
+    ap.add_argument("--no-crossref", action="store_true",
+                    help="disable Crossref fallback (Solr backend only, fallback is on by default)")
     args = ap.parse_args()
 
     json_files = sorted(CITED_SENT_DIR.glob("*.json"))
@@ -185,6 +192,12 @@ def main():
         print(f"Backend: Crossref MongoDB ({mode})")
         lookup = MongoLookup()
 
+    crossref = None
+    if args.backend == "solr" and not args.no_crossref:
+        from crossref_lookup import CrossrefLookup
+        crossref = CrossrefLookup()
+        print("Crossref fallback: enabled (citations not found in Solr will be tried against api.crossref.org)")
+
     # clear/create output file upfront so user knows where it is
     out_path = pathlib.Path(args.out) if args.out else None
     if out_path:
@@ -195,7 +208,7 @@ def main():
     for idx, path in enumerate(json_files, 1):
         print(f"\n[{idx}/{len(json_files)}] {path.stem[:60]}", flush=True)
         doi_only = args.doi_only if args.backend == "mongo" else False
-        results = verify_paper(path, lookup, doi_only=doi_only, verbose=True)
+        results = verify_paper(path, lookup, doi_only=doi_only, verbose=True, crossref=crossref)
         all_results.extend(results)
 
         # write this paper's results immediately
