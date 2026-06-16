@@ -161,7 +161,53 @@ Notably, the diagnostic check showed that "Funnel plots for detecting bias in me
 
 ---
 
-## 4. Key Finding: No Evidence of Fabricated Citations
+## 4. Fake Citation Detection Evaluation
+
+To measure the detector's ability to catch AI-hallucinated citations, 114 fake citations were injected into the 38-paper original dataset (3 per paper) and the full pipeline was run on the mixed set.
+
+### What the fake citations looked like
+
+Each fake was designed to resemble a real AI hallucination — plausible title, realistic authors, real journal name, sensible year — but does not exist in any database. Examples:
+
+```
+[2021] "Longitudinal assessment of systemic inflammatory markers in post-acute
+        COVID-19 sequelae: a multicentre cohort study"
+        Harrison, M.; Okonkwo, T.; Lindström, E. — The Lancet Infectious Diseases
+
+[2022] "ScaleFold: an efficient transformer architecture for protein tertiary
+        structure prediction from evolutionary sequence information"
+        Chen, W.; Korolev, I.; Bashir, M. — Nature Methods
+
+[2020] "Long-run effects of early childhood nutrition interventions on human
+        capital formation: evidence from randomised trials in sub-Saharan Africa"
+        Ogundimu, F.; Svensson, L.; Prakash, N. — American Economic Review
+
+[2023] "Room-temperature superconductivity in nitrogen-doped lutetium hydride
+        under moderate pressure conditions"
+        Reinholt, G.; Tanaka, M.; Osei, A. — Physical Review Letters
+```
+
+### Results
+
+| Metric | Value |
+|--------|------:|
+| Fake citations injected | 114 |
+| **Fakes detected (NOT\_FOUND)** | **114 (100%)** |
+| Fakes missed (incorrectly FOUND) | 0 (0%) |
+| Real citations found | 2,286 |
+| Real citations NOT\_FOUND (false positives) | 95 (4.0%) |
+
+**The detector caught every single hallucinated citation.** None of the 114 fakes matched anything in OpenAlex (492M works) or Crossref (160M works) at the 0.85 similarity threshold, despite being written to sound highly plausible.
+
+### What this means
+
+The 4.0% false positive rate (real citations flagged as NOT\_FOUND) represents the known baseline of legitimate references that simply are not indexed in either database — books, clinical assessment manuals, R packages, and grey literature. These are easily distinguishable from AI hallucinations by their consistent patterns (see Section 5).
+
+A citation flagged as NOT\_FOUND is therefore a strong signal: either it is a book/software reference outside the scope of journal databases, or it is a fabricated citation. The two cases can be distinguished by inspecting the title and journal — real books have coherent ISBNs and publisher names, while hallucinated citations tend to describe very specific empirical findings that "should" have produced a published paper.
+
+---
+
+## 5. Key Finding: No Evidence of Fabricated Citations
 
 Across **3,099 citations from 58 papers**, every NOT_FOUND citation has an identifiable explanation:
 
@@ -177,9 +223,9 @@ None of the not-found citations show the hallmarks of AI-fabricated citations (p
 
 ---
 
-## 5. Bug Fixes Applied
+## 6. Bug Fixes Applied
 
-### 5a. `solr_lookup.py` — title-matching improvements (applied before this run)
+### 6a. `solr_lookup.py` — title-matching improvements (applied before this run)
 
 Two GROBID output patterns that caused missed matches were identified and fixed via a `_title_variants()` fallback in `solr_lookup.py`:
 
@@ -191,7 +237,7 @@ These fixes recovered an estimated 10–15 citations that previously appeared in
 
 ---
 
-### 5b. `grobid_tool.py` — year parser and code correctness fixes
+### 6b. `grobid_tool.py` — year parser and code correctness fixes
 
 #### Year parsing (applied before this run)
 
@@ -219,7 +265,7 @@ Bug #3 is the most impactful for data quality: any paper using double-digit cita
 
 ---
 
-## 6. Conclusion
+## 7. Conclusion
 
 The GROBID + OpenAlex Solr + Crossref pipeline successfully verified **95.7%** of all citations across 58 papers from 18 different journals. The 4.3% unverified rate is consistent with normal citation practices — papers routinely cite books, software packages, and grey literature not indexed in journal databases. No citations in this dataset are flagged as potentially fabricated. The rate varies by field: economics papers score ~97% (clean DOI-bearing citations) while chemistry and bioinformatics papers score ~90–95% (more software and older literature).
 
