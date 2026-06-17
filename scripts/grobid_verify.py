@@ -22,6 +22,7 @@ import pathlib
 import re
 import sys
 import types
+from difflib import SequenceMatcher
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 
@@ -58,6 +59,36 @@ def make_citation_obj(entry: dict):
     except (ValueError, TypeError):
         obj.year = None
     return obj
+
+
+def validate_metadata(cited_year, cited_journal, db_year, db_journal) -> list[str]:
+    """Compare cited year/journal against database values; return list of discrepancy strings."""
+    def _clean(s) -> str:
+        s = (s or "").strip()
+        return "" if s == "—" else s
+
+    issues = []
+
+    # Year check: allow ±1 (online-first vs print year)
+    if cited_year and db_year:
+        try:
+            diff = abs(int(cited_year) - int(db_year))
+            if diff > 1:
+                issues.append(f"year off by {diff} (cited {cited_year}, db {db_year})")
+        except (ValueError, TypeError):
+            pass
+
+    # Journal check: skip if either side is blank
+    cited_j = _clean(cited_journal)
+    db_j    = _clean(db_journal)
+    if cited_j and db_j:
+        sim = SequenceMatcher(None, cited_j.lower(), db_j.lower()).ratio()
+        if sim < 0.7:
+            issues.append(
+                f"journal mismatch (cited '{cited_j}', db '{db_j}', sim {sim:.2f})"
+            )
+
+    return issues
 
 
 def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
@@ -109,24 +140,44 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
             else:
                 ct = rec.get("container-title", [""])
                 row["db_journal"] = ct[0] if isinstance(ct, list) else ct
+
+        discrepancies = []
+        if result.found:
+            discrepancies = validate_metadata(
+                row.get("year"), row.get("journal"),
+                row.get("db_year"), row.get("db_journal"),
+            )
+            row["status"] = "FOUND_MISMATCH" if discrepancies else "FOUND"
+        else:
+            row["status"] = "NOT_FOUND"
+        row["discrepancies"] = discrepancies
+
         results.append(row)
 
-        # live progress dot every 10 citations
+        # live progress every 10 citations
         if verbose and i % 10 == 0:
-            found_so_far = sum(1 for r in results if r["found"])
+            found_so_far = sum(1 for r in results if r["status"] == "FOUND")
             print(f"    {i}/{len(citations)} citations checked  "
                   f"({found_so_far} found so far)", flush=True)
 
     if verbose:
-        found     = sum(1 for r in results if r["found"])
-        not_found = len(results) - found
+        found     = sum(1 for r in results if r["status"] == "FOUND")
+        mismatch  = sum(1 for r in results if r["status"] == "FOUND_MISMATCH")
+        not_found = sum(1 for r in results if r["status"] == "NOT_FOUND")
         print(f"\n{'='*70}")
         print(f"Paper: {paper_name}  ({len(citations)} citations)")
-        print(f"  Found: {found}  |  Not found: {not_found}")
+        print(f"  Found: {found}  |  Mismatch: {mismatch}  |  Not found: {not_found}")
+        if mismatch:
+            print(f"\n  ⚠  FOUND_MISMATCH ({mismatch}):")
+            for r in results:
+                if r["status"] == "FOUND_MISMATCH":
+                    print(f"    [{r['year']}] {r['title'][:80]}")
+                    for issue in r["discrepancies"]:
+                        print(f"         → {issue}")
         if not_found:
             print(f"\n  ⚠  NOT FOUND ({not_found}):")
             for r in results:
-                if not r["found"]:
+                if r["status"] == "NOT_FOUND":
                     print(f"    [{r['year']}] {r['title'][:80]}")
                     if r["sentences"]:
                         print(f"         → \"{r['sentences'][0][:100]}\"")
@@ -137,17 +188,20 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
 def _format_rows(results: list, show_found: bool) -> list[str]:
     lines = []
     for r in results:
-        status = "FOUND" if r["found"] else "NOT_FOUND"
+        status = r["status"]
         lines.append(
-            f"{status:<10} [{r['method']:<12}] conf={r['confidence']:.2f} "
+            f"{status:<16} [{r['method']:<12}] conf={r['confidence']:.2f} "
             f"| {r['paper'][:30]:<30} | [{r['year']}] {r['title'][:60]}"
         )
-        if r["found"] and show_found:
+        if status == "FOUND_MISMATCH":
+            for issue in r.get("discrepancies", []):
+                lines.append(f"           ⚠ {issue}")
+        elif status == "FOUND" and show_found:
             lines.append(
-                f"           db:   {r.get('db_title','')[:60]}"
-                f" ({r.get('db_year','')})"
+                f"           db:   {r.get('db_title', '')[:60]}"
+                f" ({r.get('db_year', '')})"
             )
-        elif not r["found"] and r["sentences"]:
+        elif status == "NOT_FOUND" and r["sentences"]:
             lines.append(
                 f"           cited in: \"{r['sentences'][0][:80]}\""
             )
@@ -222,8 +276,9 @@ def main():
 
     # ── summary ──────────────────────────────────────────────────────────
     total     = len(all_results)
-    found     = sum(1 for r in all_results if r["found"])
-    not_found = total - found
+    found     = sum(1 for r in all_results if r["status"] == "FOUND")
+    mismatch  = sum(1 for r in all_results if r["status"] == "FOUND_MISMATCH")
+    not_found = sum(1 for r in all_results if r["status"] == "NOT_FOUND")
     by_method: dict[str, int] = {}
     for r in all_results:
         by_method[r["method"]] = by_method.get(r["method"], 0) + 1
@@ -236,12 +291,26 @@ def main():
         f"  Papers processed : {len(json_files)}",
         f"  Total citations  : {total}",
         f"  Found            : {found}  ({100*found/total:.1f}%)",
+        f"  Found (mismatch) : {mismatch}  ({100*mismatch/total:.1f}%)",
         f"  Not found        : {not_found}  ({100*not_found/total:.1f}%)",
         "",
         "  By match method:",
     ]
     for method, count in sorted(by_method.items()):
         summary.append(f"    {method:<15} {count:>5}  ({100*count/total:.1f}%)")
+
+    if mismatch:
+        summary += [
+            "",
+            f"  FOUND_MISMATCH detail ({mismatch}):",
+        ]
+        for r in all_results:
+            if r["status"] == "FOUND_MISMATCH":
+                summary.append(
+                    f"    {r['paper'][:40]}  [{r['year']}] {r['title'][:60]}"
+                )
+                for issue in r.get("discrepancies", []):
+                    summary.append(f"         → {issue}")
 
     print("\n".join(summary))
 

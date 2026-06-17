@@ -157,44 +157,137 @@ def inject_fakes(json_path: pathlib.Path, out_dir: pathlib.Path,
     return injected
 
 
+YEAR_SHIFT = 7
+
+_WRONG_JOURNALS = [
+    "Journal of Clinical Investigation",
+    "Nature Medicine",
+    "Cell",
+    "Science",
+    "PLOS ONE",
+    "JAMA Internal Medicine",
+    "BMJ Open",
+    "The Lancet Oncology",
+    "Annals of Internal Medicine",
+    "Proceedings of the National Academy of Sciences",
+]
+
+
+def inject_mismatches(
+    json_path: pathlib.Path,
+    out_dir: pathlib.Path,
+    per_paper: int = 2,
+) -> list[dict]:
+    """
+    Pick `per_paper` real citations that have a long title and a year, corrupt their
+    metadata (year +7, wrong journal), write the modified list to out_dir, and return
+    a record of each corruption for ground_truth_mismatches.json.
+
+    The title is left intact so Solr's title-only fallback can still find the paper
+    after the year shift causes title+year matching to fail.  The shifted year and
+    wrong journal are what validate_metadata() should flag as FOUND_MISMATCH.
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    citations = json.loads(json_path.read_text())
+
+    # Require a distinctive title (≥30 chars) so title-only Solr lookup can find it.
+    # Require year so there is something to shift.
+    candidates = [
+        (i, c) for i, c in enumerate(citations)
+        if len((c.get("title") or "").strip()) >= 30
+        and c.get("year") not in (None, "", "—")
+    ]
+
+    picks = random.sample(candidates, min(per_paper, len(candidates)))
+    modified = list(citations)
+    corrupted_records = []
+
+    for idx, original in picks:
+        entry = copy.deepcopy(original)
+
+        # Shift year
+        try:
+            original_year = int(original["year"])
+        except (ValueError, TypeError):
+            continue
+        entry["year"] = str(original_year + YEAR_SHIFT)
+
+        # Pick a wrong journal that doesn't match the original (case-insensitive)
+        original_journal = (original.get("journal") or "").strip()
+        pool = [j for j in _WRONG_JOURNALS
+                if j.lower() != original_journal.lower()]
+        entry["journal"] = random.choice(pool or _WRONG_JOURNALS)
+
+        modified[idx] = entry
+        corrupted_records.append({
+            "title":             original.get("title", ""),
+            "original_year":     original_year,
+            "corrupted_year":    original_year + YEAR_SHIFT,
+            "original_journal":  original_journal,
+            "corrupted_journal": entry["journal"],
+        })
+
+    (out_dir / json_path.name).write_text(json.dumps(modified, indent=2))
+    return corrupted_records
+
+
 def main():
     ap = argparse.ArgumentParser(
         description="Inject fake citations into cited_sent JSONs for detector evaluation")
     ap.add_argument("--cited-sent-dir", required=True,
                     help="Source cited_sent directory")
     ap.add_argument("--out-dir", required=True,
-                    help="Output directory (will contain cited_sent/ and ground_truth.json)")
+                    help="Output directory (will contain cited_sent/ and ground truth JSON)")
     ap.add_argument("--fakes-per-paper", type=int, default=3,
                     help="Number of fake citations to inject per paper (default 3)")
     ap.add_argument("--papers", type=int, default=None,
                     help="Only process this many papers (default: all)")
+    ap.add_argument("--inject-mismatches", action="store_true",
+                    help="Corrupt real citations instead of injecting phantoms: "
+                         "shifts year by +7 and replaces journal, leaving DOI intact "
+                         "so the record is found but validate_metadata() flags it")
     args = ap.parse_args()
 
-    src_dir = pathlib.Path(args.cited_sent_dir)
+    src_dir   = pathlib.Path(args.cited_sent_dir)
     out_cited = pathlib.Path(args.out_dir) / "cited_sent"
-    gt_path   = pathlib.Path(args.out_dir) / "ground_truth.json"
 
     json_files = sorted(src_dir.glob("*.json"))
     if args.papers:
         json_files = json_files[:args.papers]
-
     if not json_files:
         sys.exit(f"No JSON files found in {src_dir}")
 
-    ground_truth = {}   # paper_stem -> [fake titles injected]
-    total_fakes = 0
+    if args.inject_mismatches:
+        gt_path      = pathlib.Path(args.out_dir) / "ground_truth_mismatches.json"
+        ground_truth = {}
+        total        = 0
 
-    for path in json_files:
-        injected = inject_fakes(path, out_cited, args.fakes_per_paper, FAKE_CITATIONS)
-        ground_truth[path.stem] = injected
-        total_fakes += len(injected)
-        print(f"  {path.stem}: injected {len(injected)} fake(s)")
+        for path in json_files:
+            records = inject_mismatches(path, out_cited)
+            ground_truth[path.stem] = records
+            total += len(records)
+            print(f"  {path.stem}: corrupted {len(records)} citation(s)")
 
-    gt_path.write_text(json.dumps(ground_truth, indent=2))
+        gt_path.write_text(json.dumps(ground_truth, indent=2))
+        print(f"\nDone. {total} citations corrupted across {len(json_files)} papers.")
+        print(f"Ground truth written to: {gt_path}")
+        print(f"Modified JSONs written to: {out_cited}")
 
-    print(f"\nDone. {total_fakes} fake citations injected across {len(json_files)} papers.")
-    print(f"Ground truth written to: {gt_path}")
-    print(f"Modified JSONs written to: {out_cited}")
+    else:
+        gt_path      = pathlib.Path(args.out_dir) / "ground_truth.json"
+        ground_truth = {}
+        total        = 0
+
+        for path in json_files:
+            injected = inject_fakes(path, out_cited, args.fakes_per_paper, FAKE_CITATIONS)
+            ground_truth[path.stem] = injected
+            total += len(injected)
+            print(f"  {path.stem}: injected {len(injected)} fake(s)")
+
+        gt_path.write_text(json.dumps(ground_truth, indent=2))
+        print(f"\nDone. {total} fake citations injected across {len(json_files)} papers.")
+        print(f"Ground truth written to: {gt_path}")
+        print(f"Modified JSONs written to: {out_cited}")
 
 
 if __name__ == "__main__":
