@@ -22,7 +22,9 @@ import pathlib
 import re
 import sys
 import types
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
+from threading import Lock
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 
@@ -91,74 +93,114 @@ def validate_metadata(cited_year, cited_journal, db_year, db_journal) -> list[st
     return issues
 
 
+def _lookup_one(entry, lookup, doi_only, crossref, cache, cache_lock):
+    """Look up a single citation entry. Thread-safe via cache_lock."""
+    obj = make_citation_obj(entry)
+    cache_key = (obj.doi, obj.title, obj.year)
+
+    with cache_lock:
+        if cache_key in cache:
+            return cache[cache_key]
+
+    if doi_only:
+        from mongo_lookup import LookupResult, MatchMethod
+        result = lookup.by_doi(obj.doi) if obj.doi else \
+                 LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+    else:
+        result = lookup.by_citation(obj)
+
+    if not result.found and crossref is not None:
+        result = crossref.by_citation(obj)
+
+    with cache_lock:
+        cache[cache_key] = result
+    return result
+
+
+def _build_row(entry, result, paper_name):
+    """Build result dict from a citation entry and its lookup result."""
+    row = {
+        "paper":      paper_name,
+        "title":      entry.get("title", "—"),
+        "year":       entry.get("year", "—"),
+        "journal":    entry.get("journal", "—"),
+        "found":      result.found,
+        "method":     result.method.value,
+        "confidence": result.confidence,
+        "sentences":  entry.get("sentences", []),
+    }
+    if result.found and result.record:
+        rec = result.record
+        raw_title = rec.get("title") or rec.get("title_s")
+        if isinstance(raw_title, list):
+            raw_title = raw_title[0] if raw_title else ""
+        row["db_title"] = raw_title or ""
+        db_year = (
+            rec.get("publication_year") or
+            rec.get("published-print", {}).get("date-parts", [[None]])[0][0]
+        )
+        if not db_year:
+            pub_date = rec.get("publication_date") or rec.get("created", {}).get("date-time", "")
+            if pub_date and len(str(pub_date)) >= 4:
+                try:
+                    db_year = int(str(pub_date)[:4])
+                except ValueError:
+                    pass
+        row["db_year"] = db_year
+        pl = rec.get("primary_location")
+        if isinstance(pl, dict):
+            row["db_journal"] = pl.get("source", {}).get("display_name", "")
+        else:
+            ct = rec.get("container-title", [""])
+            row["db_journal"] = ct[0] if isinstance(ct, list) else ct
+
+    discrepancies = []
+    if result.found:
+        discrepancies = validate_metadata(
+            row.get("year"), row.get("journal"),
+            row.get("db_year"), row.get("db_journal"),
+        )
+        row["status"] = "FOUND_MISMATCH" if discrepancies else "FOUND"
+    else:
+        row["status"] = "NOT_FOUND"
+    row["discrepancies"] = discrepancies
+    return row
+
+
 def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
-                 verbose: bool = True, crossref=None):
-    """Verify all citations in one cited_sent JSON file. Returns list of result dicts."""
+                 verbose: bool = True, crossref=None, workers: int = 4,
+                 cache: dict = None, cache_lock=None):
+    """Verify all citations in one cited_sent JSON file. Returns list of result dicts.
+
+    Citations are looked up in parallel (up to `workers` threads) since each lookup
+    is an independent network request to Solr. Repeat citations are served from a
+    cache (per-paper by default; pass a shared cache+lock for cross-paper reuse).
+    """
     citations = json.loads(json_path.read_text())
     paper_name = json_path.stem.replace(".tei", "")
-    results = []
 
-    for i, entry in enumerate(citations, 1):
-        obj = make_citation_obj(entry)
+    if cache is None:
+        cache = {}
+    if cache_lock is None:
+        cache_lock = Lock()
+    results = [None] * len(citations)
+    completed = [0]
+    print_lock = Lock()
 
-        if doi_only:
-            from mongo_lookup import LookupResult, MatchMethod
-            if obj.doi:
-                result = lookup.by_doi(obj.doi)
-            else:
-                result = LookupResult(found=False, method=MatchMethod.NOT_FOUND)
-        else:
-            result = lookup.by_citation(obj)
+    def process(idx_entry):
+        idx, entry = idx_entry
+        result = _lookup_one(entry, lookup, doi_only, crossref, cache, cache_lock)
+        row = _build_row(entry, result, paper_name)
+        results[idx] = row
+        with print_lock:
+            completed[0] += 1
+            if verbose and completed[0] % 10 == 0:
+                found_so_far = sum(1 for r in results if r and r["status"] == "FOUND")
+                print(f"    {completed[0]}/{len(citations)} citations checked  "
+                      f"({found_so_far} found so far)", flush=True)
 
-        # Crossref fallback: if Solr (or Mongo) did not find it, try Crossref
-        if not result.found and crossref is not None:
-            result = crossref.by_citation(obj)
-
-        row = {
-            "paper":      paper_name,
-            "title":      entry.get("title", "—"),
-            "year":       entry.get("year", "—"),
-            "journal":    entry.get("journal", "—"),
-            "found":      result.found,
-            "method":     result.method.value,
-            "confidence": result.confidence,
-            "sentences":  entry.get("sentences", []),
-        }
-        if result.found and result.record:
-            rec = result.record
-            raw_title = rec.get("title") or rec.get("title_s")
-            if isinstance(raw_title, list):
-                raw_title = raw_title[0] if raw_title else ""
-            row["db_title"]   = raw_title or ""
-            row["db_year"]    = (
-                rec.get("publication_year") or
-                rec.get("published-print", {}).get("date-parts", [[None]])[0][0]
-            )
-            pl = rec.get("primary_location")
-            if isinstance(pl, dict):
-                row["db_journal"] = pl.get("source", {}).get("display_name", "")
-            else:
-                ct = rec.get("container-title", [""])
-                row["db_journal"] = ct[0] if isinstance(ct, list) else ct
-
-        discrepancies = []
-        if result.found:
-            discrepancies = validate_metadata(
-                row.get("year"), row.get("journal"),
-                row.get("db_year"), row.get("db_journal"),
-            )
-            row["status"] = "FOUND_MISMATCH" if discrepancies else "FOUND"
-        else:
-            row["status"] = "NOT_FOUND"
-        row["discrepancies"] = discrepancies
-
-        results.append(row)
-
-        # live progress every 10 citations
-        if verbose and i % 10 == 0:
-            found_so_far = sum(1 for r in results if r["status"] == "FOUND")
-            print(f"    {i}/{len(citations)} citations checked  "
-                  f"({found_so_far} found so far)", flush=True)
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        list(ex.map(process, enumerate(citations)))
 
     if verbose:
         found     = sum(1 for r in results if r["status"] == "FOUND")
@@ -225,6 +267,8 @@ def main():
                     help="path to cited_sent JSON directory (overrides default)")
     ap.add_argument("--no-crossref", action="store_true",
                     help="disable Crossref fallback (Solr backend only, fallback is on by default)")
+    ap.add_argument("--workers", type=int, default=4,
+                    help="parallel lookup threads per paper (default 4, set to 1 to disable)")
     args = ap.parse_args()
 
     cited_dir = pathlib.Path(args.cited_sent_dir) if args.cited_sent_dir else CITED_SENT_DIR
@@ -261,14 +305,22 @@ def main():
         out_path.write_text("")
         print(f"Results will be written incrementally to: {out_path}\n")
 
+    # Shared cache across all papers — same citation cited in multiple papers
+    # only hits Solr once (common for BWA, Cochrane handbook, Bradford Hill, etc.)
+    global_cache: dict = {}
+    global_cache_lock = Lock()
+
     all_results = []
+    doi_only = args.doi_only if args.backend == "mongo" else False
+
     for idx, path in enumerate(json_files, 1):
         print(f"\n[{idx}/{len(json_files)}] {path.stem[:60]}", flush=True)
-        doi_only = args.doi_only if args.backend == "mongo" else False
-        results = verify_paper(path, lookup, doi_only=doi_only, verbose=True, crossref=crossref)
+        results = verify_paper(
+            path, lookup, doi_only=doi_only, verbose=True, crossref=crossref,
+            workers=args.workers, cache=global_cache, cache_lock=global_cache_lock,
+        )
         all_results.extend(results)
 
-        # write this paper's results immediately
         if out_path:
             lines = _format_rows(results, args.show_found)
             with out_path.open("a") as f:
