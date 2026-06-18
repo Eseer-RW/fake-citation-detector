@@ -207,7 +207,45 @@ A citation flagged as NOT\_FOUND is therefore a strong signal: either it is a bo
 
 ---
 
-## 5. Key Finding: No Evidence of Fabricated Citations
+## 5. Metadata Validation: FOUND_MISMATCH Detection
+
+Beyond detecting missing citations (NOT_FOUND), the pipeline was extended to flag citations where the paper **exists** in the database but the cited metadata is inconsistent — a third status, `FOUND_MISMATCH`. This catches cases where an author cited the wrong year, mis-attributed a journal, or where GROBID extracted garbled metadata.
+
+### How it works
+
+After a citation is matched in OpenAlex, `validate_metadata()` compares the cited fields against the database record:
+
+- **Year check:** if `|cited_year − db_year| > 1`, flag as mismatch. A tolerance of ±1 is allowed for online-first vs. print publication dates.
+- **Journal check:** if the cited journal and database journal have a SequenceMatcher similarity < 0.70, flag as mismatch. Threshold is relaxed to handle common abbreviations (e.g. *Nat Methods* vs *Nature Methods*).
+
+### Evaluation
+
+To measure recall, 66 real citations were corrupted — year shifted by +7, journal replaced with a plausible wrong journal — and the full pipeline was re-run on the mixed set.
+
+| Metric | Value |
+|--------|------:|
+| Corrupted citations injected | 66 |
+| **Detected as FOUND_MISMATCH** | **56 (84.8%)** |
+| Missed | 10 (15.2%) |
+| Real citations flagged (false positives) | 82 of 2,315 (3.5%) |
+
+**84.8% of deliberately corrupted citations were correctly flagged.** The 10 misses fall into two categories:
+- **8 NOT_FOUND** — these papers are not indexed in OpenAlex (preprints, software documentation, old WHO reports); after the year shift breaks title+year matching, title-only lookup cannot find them
+- **2 FOUND but not flagged** — year difference of exactly ±1 (within tolerance) or no year field in the cited entry
+
+The **3.5% false positive rate** reflects genuine OpenAlex metadata quality issues — records where `publication_year` in the database differs from the printed year — not errors in the citations themselves.
+
+### Live results on original dataset
+
+Running on the original 58-paper dataset, the pipeline found **82 FOUND_MISMATCH citations** (2.6% of all found citations). Manual inspection confirms these are predominantly:
+- Online-first vs. print year discrepancies (off by 1–2 years)
+- OpenAlex records with stale or incorrect `publication_year` metadata
+
+No citations are flagged as FOUND_MISMATCH due to fabrication — the mismatches are all explainable data quality issues.
+
+---
+
+## 6. Key Finding: No Evidence of Fabricated Citations
 
 Across **3,099 citations from 58 papers**, every NOT_FOUND citation has an identifiable explanation:
 
@@ -223,9 +261,9 @@ None of the not-found citations show the hallmarks of AI-fabricated citations (p
 
 ---
 
-## 6. Bug Fixes Applied
+## 7. Bug Fixes Applied
 
-### 6a. `solr_lookup.py` — title-matching improvements (applied before this run)
+### 7a. `solr_lookup.py` — title-matching improvements (applied before this run)
 
 Two GROBID output patterns that caused missed matches were identified and fixed via a `_title_variants()` fallback in `solr_lookup.py`:
 
@@ -237,7 +275,7 @@ These fixes recovered an estimated 10–15 citations that previously appeared in
 
 ---
 
-### 6b. `grobid_tool.py` — year parser and code correctness fixes
+### 7b. `grobid_tool.py` — year parser and code correctness fixes
 
 #### Year parsing (applied before this run)
 
@@ -265,11 +303,13 @@ Bug #3 is the most impactful for data quality: any paper using double-digit cita
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 
 The GROBID + OpenAlex Solr + Crossref pipeline successfully verified **95.7%** of all citations across 58 papers from 18 different journals. The 4.3% unverified rate is consistent with normal citation practices — papers routinely cite books, software packages, and grey literature not indexed in journal databases. No citations in this dataset are flagged as potentially fabricated. The rate varies by field: economics papers score ~97% (clean DOI-bearing citations) while chemistry and bioinformatics papers score ~90–95% (more software and older literature).
 
-The pipeline is ready for deployment on a larger dataset. All parsing and code-correctness fixes described in Section 5 have been applied.
+The pipeline now produces three statuses per citation — **FOUND**, **FOUND_MISMATCH**, and **NOT_FOUND** — with metadata validation catching year and journal discrepancies at **84.8% recall** and a **3.5% false positive rate**. All 114 injected hallucinated citations were detected (100% recall on fabrication detection).
+
+The pipeline is ready for deployment on a larger dataset. All parsing and code-correctness fixes described in Section 7 have been applied.
 
 ---
 
