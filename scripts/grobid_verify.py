@@ -172,9 +172,17 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
                  cache: dict = None, cache_lock=None):
     """Verify all citations in one cited_sent JSON file. Returns list of result dicts.
 
-    Citations are looked up in parallel (up to `workers` threads) since each lookup
-    is an independent network request to Solr. Repeat citations are served from a
-    cache (per-paper by default; pass a shared cache+lock for cross-paper reuse).
+    When the Solr backend is used (lookup has by_title_batch), citations are processed
+    in three phases to minimise HTTP round-trips:
+
+      Phase 0 – cache: citations seen in earlier papers are served instantly.
+      Phase 1 – DOI lookups: parallel individual requests (~6 ms each).
+      Phase 2 – batch title lookups: all no-DOI citations sent as OR phrase queries,
+                 ~1 Solr request per 15 citations instead of 2–3 per citation.
+      Phase 3 – fallback: citations not found by batch go through title-variant
+                 rewriting + Crossref (parallel, workers threads).
+
+    For the Mongo/doi-only backend the original per-citation path is used unchanged.
     """
     citations = json.loads(json_path.read_text())
     paper_name = json_path.stem.replace(".tei", "")
@@ -183,25 +191,90 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
         cache = {}
     if cache_lock is None:
         cache_lock = Lock()
+
     results = [None] * len(citations)
-    completed = [0]
-    print_lock = Lock()
+    objs = [make_citation_obj(e) for e in citations]
 
-    def process(idx_entry):
-        idx, entry = idx_entry
-        result = _lookup_one(entry, lookup, doi_only, crossref, cache, cache_lock)
-        row = _build_row(entry, result, paper_name)
-        results[idx] = row
-        with print_lock:
-            completed[0] += 1
-            if verbose and completed[0] % 10 == 0:
-                found_so_far = sum(1 for r in results if r and r["status"] == "FOUND")
-                print(f"    {completed[0]}/{len(citations)} citations checked  "
-                      f"({found_so_far} found so far)", flush=True)
+    # ── Phase 0: serve from cross-paper cache ────────────────────────────
+    uncached = []
+    for i, (entry, obj) in enumerate(zip(citations, objs)):
+        key = (obj.doi, obj.title, obj.year)
+        with cache_lock:
+            hit = cache.get(key)
+        if hit is not None:
+            results[i] = _build_row(entry, hit, paper_name)
+        else:
+            uncached.append(i)
 
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        list(ex.map(process, enumerate(citations)))
+    # ── Choose path based on backend ─────────────────────────────────────
+    use_batch = (not doi_only) and hasattr(lookup, "by_title_batch")
 
+    if not use_batch:
+        # Original per-citation path (Mongo/doi-only backend)
+        def _old(i):
+            result = _lookup_one(citations[i], lookup, doi_only, crossref, cache, cache_lock)
+            results[i] = _build_row(citations[i], result, paper_name)
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            list(ex.map(_old, uncached))
+
+    else:
+        doi_idx    = [i for i in uncached if objs[i].doi]
+        no_doi_idx = [i for i in uncached if not objs[i].doi]
+
+        # ── Phase 1: DOI lookups in parallel (~6 ms each) ────────────────
+        def _doi(i):
+            obj = objs[i]
+            result = lookup.by_doi(obj.doi)
+            if not result.found and crossref:
+                result = crossref.by_citation(obj)
+            key = (obj.doi, obj.title, obj.year)
+            with cache_lock:
+                cache[key] = result
+            results[i] = _build_row(citations[i], result, paper_name)
+
+        if doi_idx:
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                list(ex.map(_doi, doi_idx))
+
+        # ── Phase 2: batch title lookups (1 request / 15 citations) ──────
+        still_missing = list(no_doi_idx)
+        if no_doi_idx:
+            if verbose:
+                print(f"    batch-looking up {len(no_doi_idx)} no-DOI citations "
+                      f"({len(no_doi_idx)//15 + 1} requests)…", flush=True)
+            batch_objs    = [objs[i] for i in no_doi_idx]
+            batch_results = lookup.by_title_batch(batch_objs)
+
+            still_missing = []
+            for i, obj, br in zip(no_doi_idx, batch_objs, batch_results):
+                if br.found:
+                    key = (obj.doi, obj.title, obj.year)
+                    with cache_lock:
+                        cache[key] = br
+                    results[i] = _build_row(citations[i], br, paper_name)
+                else:
+                    still_missing.append(i)
+
+            if verbose:
+                batch_found = len(no_doi_idx) - len(still_missing)
+                print(f"    batch found {batch_found}/{len(no_doi_idx)}; "
+                      f"{len(still_missing)} going to fallback", flush=True)
+
+        # ── Phase 3: fallback — full by_citation path ────────────────────
+        # The batch used a Lucene phrase query; individual edismax lookups
+        # are more flexible and can find titles that the phrase query missed.
+        # Reuse _lookup_one() so the logic (DOI → title+year → title-only →
+        # title variants → Crossref) is identical to the pre-batch code path.
+        def _fallback(i):
+            result = _lookup_one(citations[i], lookup, doi_only, crossref,
+                                 cache, cache_lock)
+            results[i] = _build_row(citations[i], result, paper_name)
+
+        if still_missing:
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                list(ex.map(_fallback, still_missing))
+
+    # ── Verbose per-paper summary ─────────────────────────────────────────
     if verbose:
         found     = sum(1 for r in results if r["status"] == "FOUND")
         mismatch  = sum(1 for r in results if r["status"] == "FOUND_MISMATCH")
