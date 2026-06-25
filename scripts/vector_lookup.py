@@ -219,6 +219,115 @@ class VectorLookup:
         """Convenience wrapper: accepts a citation namespace object."""
         return self.by_title(parsed.title, year=parsed.year)
 
+    # ------------------------------------------------------------------
+    # Recommendation API — returns ranked top-N candidates
+    # ------------------------------------------------------------------
+
+    def recommend(self,
+                  title: str,
+                  year: Optional[int] = None,
+                  n: int = 3,
+                  min_sim: float = 0.0) -> list[dict]:
+        """
+        Return the top-N most similar papers for the given title.
+
+        Unlike by_title(), this method:
+        - Never applies the binary threshold — it always returns up to N hits.
+        - Does NOT apply the year guard (so cross-era results are visible).
+        - Returns a list of dicts rather than SolrResult objects, so it can
+          be consumed without importing solr_lookup.
+
+        Each dict has:
+            title      : str
+            doi        : str | None
+            year       : int | None
+            journal    : str | None
+            similarity : float          (cosine sim, 0–1)
+            openalex_id: str | None
+
+        Parameters
+        ----------
+        title : str
+            The citation title to search for (may be noisy / partially wrong).
+        year : int | None
+            Publication year hint — used to narrow the Solr candidate pool
+            (±3 years).  Pass None to search across all years.
+        n : int
+            Number of results to return (default 3).
+        min_sim : float
+            Minimum similarity to include in results (default 0.0 = include all).
+        """
+        if not title or not title.strip():
+            return []
+
+        # Retrieve more candidates than needed so re-ranking has room to work
+        rows = max(self.candidates, n * 4)
+        docs = _solr_broad_search(title, year=year, rows=rows)
+        if not docs:
+            return []
+
+        titled_docs = [d for d in docs if _get_title(d)]
+        if not titled_docs:
+            return []
+
+        candidate_titles = [_get_title(d) for d in titled_docs]
+        all_texts        = [title] + candidate_titles
+        embeddings       = _embed_batch(all_texts)
+        query_emb        = embeddings[0]
+        cand_embs        = embeddings[1:]
+
+        sims = cand_embs @ query_emb  # (n_candidates,)
+
+        # Sort by similarity descending
+        ranked = sorted(
+            zip(sims.tolist(), titled_docs),
+            key=lambda x: x[0],
+            reverse=True,
+        )
+
+        results = []
+        for sim, doc in ranked[:n]:
+            if sim < min_sim:
+                break
+            pl = doc.get("primary_location") or {}
+            journal = None
+            if isinstance(pl, dict):
+                journal = (pl.get("source") or {}).get("display_name")
+            results.append({
+                "title":       _get_title(doc),
+                "doi":         doc.get("doi"),
+                "year":        doc.get("publication_year"),
+                "journal":     journal,
+                "similarity":  round(float(sim), 4),
+                "openalex_id": doc.get("id"),
+            })
+        return results
+
+    def recommend_from_raw(self,
+                           raw_citation: str,
+                           n: int = 3,
+                           min_sim: float = 0.0) -> tuple[dict, list[dict]]:
+        """
+        Parse a free-text citation string, then recommend top-N matches.
+
+        Returns
+        -------
+        (parsed, recommendations)
+            parsed          : dict with keys title/year/doi/source
+            recommendations : list of dicts from recommend()
+        """
+        from citation_parser import parse_citation
+        p = parse_citation(raw_citation)
+        parsed_dict = {
+            "title":  p.title,
+            "year":   p.year,
+            "doi":    p.doi,
+            "source": p.source,
+            "raw":    p.raw,
+        }
+        recs = self.recommend(p.title or raw_citation, year=p.year, n=n, min_sim=min_sim)
+        return parsed_dict, recs
+
 
 # ---------------------------------------------------------------------------
 # Standalone test
