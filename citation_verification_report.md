@@ -465,3 +465,90 @@ OpenAlex Solr: http://galaxy:8983/solr/openalexWorks/select  (492M works)
 GROBID:        http://localhost:8070                          (v0.7.x)
 Model:         all-MiniLM-L6-v2  (sentence-transformers, 384-dim, CPU)
 ```
+
+---
+
+## 2e. Worked Example: `verify_pdf.py` on a live paper
+
+The following is the exact input and output from running `verify_pdf.py` on a real JAMA COVID-19 paper (`10.1001/jama.2020.12839`) using the sample PDFs included in the repository.
+
+### Input
+
+```bash
+cd /home/rwang/fake-citation-detector/scripts
+python3 verify_pdf.py samples/openalex_pdfs/JAMA/10_1001_jama_2020_12839.pdf
+```
+
+### Output
+
+```
+verify_pdf: 10_1001_jama_2020_12839.pdf
+  Sending to GROBID… done (186 KB TEI)
+  Extracted 102 references from TEI
+  Connecting to Solr… ok
+  Loading vector model… ok
+  Verifying 102 citations…
+    Phase 1 (DOI):            74 found
+    Phase 2 (batch):          20/28 found
+    Phase 3 (indiv+Crossref):  3 found
+    Phase 4 (vector):          3/5 recovered
+
+======================================================================
+RESULTS
+======================================================================
+  Total citations  : 102
+  Found            : 100  (98%)
+  Not found        : 2
+
+──────────────────────────────────────────────────────────────────────
+NOT FOUND (2) — top-3 closest matches:
+──────────────────────────────────────────────────────────────────────
+
+  [1] Citation #73
+       raw   : Wilson KC, Chotirmall SH, Bai C, Rello J; International Task Force
+               for COVID-19 Evidence-Based Medicine. An official ATS/ERS/ESICM/SCCM/SRLF
+               statement: [...] management of COVID-19. Am J Respir Crit Care Med. 2020
+
+       #1  sim=0.7366
+           title : From national to international health policy making: Lessons from…
+           year  : 2023    doi: https://doi.org/10.18332/popmed/164331
+       #2  sim=0.6458
+           title : Updated guidance on the management of COVID-19: from an American…
+           year  : 2020    doi: https://doi.org/10.1183/16000617.0287-2020
+       #3  sim=0.5832
+           title : COVID-19: Interim Guidance on Rehabilitation in the Hospital and…
+           year  : 2020    doi: https://doi.org/10.7892/boris.146090
+
+  [2] Citation #74
+       raw   : Coronavirus disease 2019 (COVID-19) treatment guidelines. National
+               Institutes of Health. https://www.covid19treatmentguidelines.nih.gov/
+
+       #1  sim=0.8560
+           title : A scoping review on epidemiology, etiology, transmission, clinical…
+           year  : 2023    doi: https://doi.org/10.17613/rv6m-4c09
+       #2  sim=0.8082
+           title : Coronavirus Disease 2019 (COVID-19) pandemic, lessons to be learned
+           year  : 2023    doi: —
+       #3  sim=0.7936
+           title : An overview on the role of antibiotic therapy in the treatment of…
+           year  : 2023    doi: https://doi.org/10.23736/s2784-8477.21.01940-4
+```
+
+**Runtime: ~35 seconds.** The paper has 102 citations; 74 (72.5%) were found immediately by DOI exact-match in Phase 1. The remaining 28 went through the batch title search in Phase 2, which resolved 20 more. Three more were caught by individual Solr fallback and Crossref in Phase 3. Phase 4 vector search resolved 3 of the 5 still-missing citations.
+
+### Interpreting the NOT_FOUND output
+
+Both unresolved citations are **web documents, not journal articles**:
+
+- **Citation #73** is an ATS/ERS society statement that appears in the literature as a journal article but was cited here using an unofficial/task-force title variant that GROBID could not cleanly parse. The recommender's top hit (sim=0.74) is a related policy paper, and hit #2 (sim=0.65) is a 2020 ERS COVID guidance document — the most likely intended reference.
+
+- **Citation #74** is a live NIH web page (`covid19treatmentguidelines.nih.gov`) — not indexed in any academic database by definition. The similarity scores (~0.80–0.86) reflect topically related COVID treatment review papers, none of which is the actual citation target. A score below 0.90 for a web document is expected; it signals "best academic approximations, not the real thing."
+
+### What to do with the recommendations
+
+| Similarity | Interpretation |
+|---|---|
+| ≥ 0.90 | Almost certainly the intended paper — safe to accept |
+| 0.75–0.89 | Likely the intended paper or a close variant — worth checking the DOI |
+| 0.50–0.74 | Related topic, probably not the same paper — use as a starting point for manual search |
+| < 0.50 | Weak signal — paper may not be in OpenAlex, or the title was too corrupted to search meaningfully |
