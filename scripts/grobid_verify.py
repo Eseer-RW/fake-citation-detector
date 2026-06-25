@@ -169,11 +169,11 @@ def _build_row(entry, result, paper_name):
 
 def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
                  verbose: bool = True, crossref=None, workers: int = 4,
-                 cache: dict = None, cache_lock=None):
+                 cache: dict = None, cache_lock=None, vector_lookup=None):
     """Verify all citations in one cited_sent JSON file. Returns list of result dicts.
 
     When the Solr backend is used (lookup has by_title_batch), citations are processed
-    in three phases to minimise HTTP round-trips:
+    in four phases to minimise HTTP round-trips:
 
       Phase 0 – cache: citations seen in earlier papers are served instantly.
       Phase 1 – DOI lookups: parallel individual requests (~6 ms each).
@@ -181,6 +181,8 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
                  ~1 Solr request per 15 citations instead of 2–3 per citation.
       Phase 3 – fallback: citations not found by batch go through title-variant
                  rewriting + Crossref (parallel, workers threads).
+      Phase 4 – vector re-ranking: remaining NOT_FOUND citations are embedded with
+                 all-MiniLM-L6-v2 and re-ranked against a broad Solr edismax result set.
 
     For the Mongo/doi-only backend the original per-citation path is used unchanged.
     """
@@ -274,6 +276,32 @@ def verify_paper(json_path: pathlib.Path, lookup, doi_only: bool = False,
             with ThreadPoolExecutor(max_workers=workers) as ex:
                 list(ex.map(_fallback, still_missing))
 
+    # ── Phase 4: vector re-ranking for remaining NOT_FOUND ────────────────
+    if vector_lookup is not None:
+        vec_candidates = [
+            i for i in range(len(results))
+            if results[i] is not None
+            and results[i]["status"] == "NOT_FOUND"
+            and objs[i].title
+        ]
+        if vec_candidates:
+            if verbose:
+                print(f"    Phase 4: vector lookup for {len(vec_candidates)} "
+                      f"NOT_FOUND citations…", flush=True)
+            vec_found = 0
+            for i in vec_candidates:
+                obj = objs[i]
+                vr = vector_lookup.by_title(obj.title, year=obj.year)
+                if vr.found:
+                    key = (obj.doi, obj.title, obj.year)
+                    with cache_lock:
+                        cache[key] = vr
+                    results[i] = _build_row(citations[i], vr, paper_name)
+                    vec_found += 1
+            if verbose:
+                print(f"    Phase 4 vector: recovered {vec_found}/{len(vec_candidates)}",
+                      flush=True)
+
     # ── Verbose per-paper summary ─────────────────────────────────────────
     if verbose:
         found     = sum(1 for r in results if r["status"] == "FOUND")
@@ -340,6 +368,10 @@ def main():
                     help="path to cited_sent JSON directory (overrides default)")
     ap.add_argument("--no-crossref", action="store_true",
                     help="disable Crossref fallback (Solr backend only, fallback is on by default)")
+    ap.add_argument("--no-vector", action="store_true",
+                    help="disable vector re-ranking Phase 4 (Solr backend only, enabled by default)")
+    ap.add_argument("--vector-threshold", type=float, default=0.82,
+                    help="cosine similarity threshold for vector re-ranking (default 0.82)")
     ap.add_argument("--workers", type=int, default=4,
                     help="parallel lookup threads per paper (default 4, set to 1 to disable)")
     args = ap.parse_args()
@@ -372,6 +404,17 @@ def main():
         crossref = CrossrefLookup()
         print("Crossref fallback: enabled (citations not found in Solr will be tried against api.crossref.org)")
 
+    vector_lookup = None
+    if args.backend == "solr" and not args.no_vector:
+        try:
+            from vector_lookup import VectorLookup
+            vector_lookup = VectorLookup(threshold=args.vector_threshold)
+            print(f"Vector re-ranking: enabled (threshold={args.vector_threshold}, "
+                  f"model=all-MiniLM-L6-v2)")
+        except ImportError:
+            print("Vector re-ranking: DISABLED (sentence-transformers not installed; "
+                  "run: pip install sentence-transformers)")
+
     # clear/create output file upfront so user knows where it is
     out_path = pathlib.Path(args.out) if args.out else None
     if out_path:
@@ -391,6 +434,7 @@ def main():
         results = verify_paper(
             path, lookup, doi_only=doi_only, verbose=True, crossref=crossref,
             workers=args.workers, cache=global_cache, cache_lock=global_cache_lock,
+            vector_lookup=vector_lookup,
         )
         all_results.extend(results)
 

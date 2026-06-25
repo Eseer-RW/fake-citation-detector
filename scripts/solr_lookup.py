@@ -39,6 +39,8 @@ class MatchMethod(str, Enum):
     XREF_DOI        = "xref_doi"
     XREF_TITLE_YEAR = "xref_title_year"
     XREF_TITLE_ONLY = "xref_title_only"
+    # Vector re-ranking fallback (Phase 4: semantic similarity via sentence-transformers)
+    VECTOR          = "vector"
 
 
 @dataclass
