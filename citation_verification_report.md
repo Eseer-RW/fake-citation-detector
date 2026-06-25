@@ -328,3 +328,140 @@ The pipeline runs in two steps:
 **Step 3 — Verification:** `grobid_verify.py` takes each citation object and looks it up in the OpenAlex Solr index (492M works) to confirm the paper exists, using DOI exact-match first, then fuzzy title + year matching.
 
 *Pipeline: GROBID 0.7.1 → TEI-XML → cited_sent JSON → `grobid_verify.py` → OpenAlex Solr (`http://galaxy:8983/solr/openalexWorks/select`, 492M works)*
+
+---
+
+## 2c. Phase 4 — Vector Similarity Re-Ranking (added June 25, 2026)
+
+After the three existing phases (DOI → batch title → individual+Crossref), a fourth phase was added to recover citations that fail due to minor title corruption — word-order swaps, OCR ligature artifacts, truncated titles, or special characters mangled during PDF extraction. Exact string matching cannot handle these; semantic similarity can.
+
+### How it works
+
+For each still-unresolved citation with a title:
+
+1. **Broad Solr edismax query** — retrieve 40 candidate documents from OpenAlex using two critical parameters:
+   - `pf=title^20` (phrase boost): if the query appears as a phrase in a candidate title, that candidate receives a large score bonus, floating the actual target paper to the top of 40 candidates even when buried among millions of keyword matches
+   - `mm=3<70%` (minimum match): for queries longer than 3 tokens, at least 70% of tokens must appear in the candidate — reduces the match pool from ~70M to ~76K documents
+   - Optional `fq=publication_year:[year-3 TO year+3]` year filter
+
+2. **Sentence-transformer embedding** — query title and all 40 candidates are embedded with `all-MiniLM-L6-v2` (384-dimensional, ~80 MB, runs on CPU). Embedding 41 strings takes ~15 ms.
+
+3. **Cosine similarity re-ranking** — `cand_embs @ query_emb` (matrix multiply on L2-normalised vectors). Best candidate scored by similarity.
+
+4. **Year guard** — if the citation year is known, the matched document must also have a `publication_year` field in OpenAlex **and** `|cited_year − db_year| ≤ 2`. Documents with no year field are conservatively rejected (prevents a 2003 SARS paper from matching a 2020 COVID citation).
+
+5. **Accept or recommend** — if best similarity ≥ 0.82 (configurable): accept as `VECTOR` match. Otherwise: return ranked list of top-N candidates for human review.
+
+### Results on the diverse journal set (20 papers, 718 citations)
+
+Phase 4 was applied to all 26 citations still unresolved after Phases 1–3:
+
+| | Count |
+|--|--:|
+| NOT_FOUND entering Phase 4 | 26 |
+| **Recovered by Phase 4 (VECTOR match)** | **15 (57.7%)** |
+| Still NOT_FOUND after Phase 4 | 11 |
+| **Overall found rate (Phases 1–4)** | **93.7%** (673/718) |
+
+Without Phase 4, the found rate for the diverse set was 91.6%. The 15 recovered citations included papers with word-order swaps, truncated titles, and titles encoded with PDF ligature artifacts.
+
+### What Phase 4 cannot recover
+
+The 11 citations remaining NOT_FOUND after all four phases fall into familiar categories:
+- **R packages and software** (e.g. `markdown`, `cluster`, `multtest`) — not indexed in OpenAlex as academic works; similarity scores are low (~0.3–0.5) and correctly rejected
+- **Pre-digital papers** (e.g. 1925 French chemistry, 1935 inorganic chemistry) — not indexed digitally; confirmed by similarity scores ~0.2
+- **Genuinely ambiguous citations** where the title is a journal name only (e.g. `"Proc. Phys. Soc. London"`, 1967) — GROBID extracted only the journal name, not the article title
+
+---
+
+## 2d. Citation Recommendation System (added June 25, 2026)
+
+Beyond pass/fail verification, a recommendation engine was built to answer: *"given a wrong or suspicious citation, what is the closest real paper?"*
+
+### Components
+
+**`citation_parser.py`** — parses a raw free-text citation string (copy-pasted from a paper, possibly OCR-corrupted) into structured fields using a cascade:
+1. **Quoted title** — if the citation wraps a title in double-quotes, extract it directly
+2. **GROBID** — POST to `/api/processCitation`; returns structured XML with higher quality than heuristics
+3. **Heuristic** — split on `. ` sentence boundaries; score each chunk by word count and caps-ratio (author blocks are penalised); return highest-scoring chunk as the title
+
+**`vector_lookup.py` — `recommend()` method** — like the Phase 4 verifier, but with no threshold cutoff and no year guard. Returns the top-N most similar papers as plain dicts, always, regardless of similarity score. The score itself is the signal: ≥ 0.90 is essentially certain; ~0.20 means the paper is not in OpenAlex.
+
+**`recommend_citation.py`** — standalone CLI tool with three modes:
+
+```bash
+# Interactive — paste one citation at a time, model stays warm between queries
+python3 recommend_citation.py
+
+# Single citation
+python3 recommend_citation.py --raw "Zhu N et al. A Novel Coronavirus... N Engl J Med. 2020." --n 3
+
+# Batch from file, machine-readable JSONL output
+python3 recommend_citation.py --batch --file suspicious.txt --json > matches.jsonl
+```
+
+**`verify_pdf.py`** — end-to-end single-PDF tool. POSTs the PDF to GROBID, parses the TEI-XML directly (no intermediate file), runs all four phases, and prints NOT_FOUND citations with their top-3 recommendations in a single command.
+
+### Live test results
+
+**JAMA COVID paper** (`10.1001/jama.2020.12839`, 102 citations):
+
+| Phase | Found |
+|-------|------:|
+| DOI exact match | 74 |
+| Batch title search | 20 |
+| Individual + Crossref | 3 |
+| Vector | 3 |
+| **Total found** | **100 (98.0%)** |
+| NOT_FOUND | 2 |
+
+Runtime: ~35 seconds. The 2 NOT_FOUND were a WHO interim guidance document and an NIH treatment guidelines page — web documents, not journal articles, genuinely outside any academic index. The recommender correctly returned closely related COVID treatment papers as alternatives (similarity 0.75–0.88).
+
+**Example recommendation output** for a citation not found in any database:
+
+```
+NOT FOUND — top-3 closest matches:
+
+  [1] "Coronavirus disease 2019 (COVID-19) treatment guidelines. National Institutes of Health."
+       raw   : Coronavirus disease 2019 (COVID-19) treatment guidelines. Nationa…
+
+       #1  sim=0.8560
+           title : A scoping review on epidemiology, etiology, transmission, cli…
+           year  : 2023    doi: https://doi.org/10.17613/rv6m-4c09
+       #2  sim=0.8082
+           title : Coronavirus Disease 2019 (COVID-19) pandemic, lessons to be l…
+           year  : 2023    doi: —
+       #3  sim=0.7936
+           title : An overview on the role of antibiotic therapy in the treatme…
+           year  : 2023    doi: https://doi.org/10.23736/s2784-8477.21.01940-4
+```
+
+Similarity scores ≥ 0.75 (yellow) and ≥ 0.90 (green) signal high confidence; scores ~0.20 signal the paper is likely not in OpenAlex at all.
+
+---
+
+## Appendix update: Full pipeline (as of June 25, 2026)
+
+```
+PDF
+ │
+ ├─ verify_pdf.py  (single PDF, end-to-end)
+ │   └─ GROBID /api/processFulltextDocument → TEI-XML
+ │       └─ xml.etree.ElementTree parsing → citation objects
+ │
+ └─ grobid_verify.py  (batch, pre-processed cited_sent JSONs)
+     └─ citation objects from GROBID step2 pipeline
+
+Both feed into the same four-phase lookup:
+
+Phase 1  DOI exact match          solr_lookup.SolrLookup.by_doi()
+Phase 2  Batch title search       solr_lookup.SolrLookup.by_title_batch()
+Phase 3  Individual fallback      solr_lookup.SolrLookup.by_citation()
+         Crossref REST API        crossref_lookup.CrossrefLookup.by_citation()
+Phase 4  Vector re-ranking        vector_lookup.VectorLookup.by_title()
+         Recommendations          vector_lookup.VectorLookup.recommend()
+
+OpenAlex Solr: http://galaxy:8983/solr/openalexWorks/select  (492M works)
+GROBID:        http://localhost:8070                          (v0.7.x)
+Model:         all-MiniLM-L6-v2  (sentence-transformers, 384-dim, CPU)
+```

@@ -1,6 +1,8 @@
 # fake-citation-detector
 
-A research pipeline for extracting, parsing, and verifying citations in scientific papers. Given a PDF, it pulls out every reference, parses it into structured fields (authors, title, journal, year, DOI), and looks each one up against a local Crossref database to determine whether the citation is real and correctly described.
+A research pipeline for extracting, verifying, and recommending corrections for citations in scientific papers. Given a PDF, it uses GROBID to extract every reference, then verifies each one against OpenAlex (492M works) and Crossref (160M works) using a four-phase lookup — exact DOI, batch title search, individual fallback, and semantic vector similarity. Citations that cannot be verified get ranked recommendations of the closest real papers.
+
+**Current results across 78 papers, 3,817 citations: 95.7% verified rate. 100% recall on injected hallucinated citations.**
 
 ---
 
@@ -8,47 +10,86 @@ A research pipeline for extracting, parsing, and verifying citations in scientif
 
 ```
 fake-citation-detector/
-├── scripts/                   ← core regex-based parser pipeline
-│   ├── parse_refs.py          ← extract citation section from a PDF; entry point
-│   ├── parser.py              ← parse raw citation strings into structured fields
-│   ├── mongo_lookup.py        ← look up parsed citations in the Crossref database
-│   ├── batch_audit.py         ← run parse quality audit across all sample PDFs
-│   ├── store_parsed.py        ← parse all sample PDFs and write output to a text file
-│   ├── fetch_openalex.py      ← download sample PDFs from OpenAlex by journal
-│   ├── audit.py               ← single-paper audit helper
-│   ├── checkabstract.py       ← check MongoDB connection and inspect records
-│   ├── test_mongo.py          ← test MongoDB lookup against sample citations
-│   ├── test_real_citations.py ← end-to-end test: parse PDFs and verify via Crossref
-│   └── run_batch_openalex.sh  ← shell wrapper to run batch audit
-├── grobid/                    ← ML-based parser pipeline (alternative to scripts/)
-│   └── grobid_pdf_to_json/    ← see grobid/grobid_pdf_to_json/README.md
-├── parsed_citations_report.md ← analysis of parse results across 41 sample PDFs
-└── .env                       ← MongoDB credentials (gitignored — never commit)
+├── scripts/                        ← primary pipeline (GROBID + Solr + vector)
+│   │
+│   │  ── Verification pipeline ──
+│   ├── grobid_verify.py            ← batch verifier: folder of cited_sent JSONs → report
+│   ├── verify_pdf.py               ← end-to-end: single PDF → GROBID → verify → report
+│   ├── solr_lookup.py              ← OpenAlex Solr interface (DOI + batch title search)
+│   ├── vector_lookup.py            ← Phase 4: sentence-transformer re-ranking + recommendations
+│   ├── citation_parser.py          ← parse raw citation string → structured fields
+│   ├── crossref_lookup.py          ← Crossref REST API fallback
+│   │
+│   │  ── Recommendation / interactive tools ──
+│   ├── recommend_citation.py       ← CLI: paste a suspicious citation, get top-N real matches
+│   │
+│   │  ── Legacy regex pipeline (kept for reference) ──
+│   ├── parse_refs.py               ← extract reference section from PDF via pdftotext
+│   ├── parser.py                   ← regex citation parser (6 citation styles)
+│   ├── mongo_lookup.py             ← Crossref MongoDB lookup (legacy backend)
+│   ├── batch_audit.py              ← parse quality audit across sample PDFs
+│   ├── fetch_openalex.py           ← download sample PDFs from OpenAlex
+│   │
+│   └── samples/                    ← sample PDFs (gitignored — run fetch_openalex.py)
+│       ├── openalex_pdfs/          ← JAMA, Nature, Science, eLife, PLoS…
+│       ├── diverse_pdfs/           ← AER, JACS, Physical Review Letters, PLoS CompBio…
+│       └── arxiv_pdf/              ← arXiv preprints
+│
+├── grobid/
+│   └── grobid_pdf_to_json/         ← GROBID PDF→TEI→cited_sent JSON pipeline
+│       ├── step1_pdf_to_tei/       ← batch GROBID processing
+│       └── step2_tei_to_json/      ← TEI-XML → cited_sent JSON converter
+│
+├── citation_verification_report.md ← full results, error analysis, fake detection evaluation
+├── parsed_citations_report.md      ← legacy regex parser field coverage analysis
+└── .env                            ← credentials (gitignored — never commit)
 ```
 
 ---
 
 ## How it works
 
-### Regex parser (`scripts/`)
-
-The main pipeline has three stages:
+The pipeline runs in four phases. Each phase hands off only the citations it could not resolve to the next.
 
 ```
-PDF  ──►  parse_refs.py  ──►  parser.py  ──►  mongo_lookup.py
-          (extract ref         (structure      (verify against
-           section)             fields)         Crossref DB)
+PDF
+ │
+ ▼
+GROBID (/api/processFulltextDocument)
+ │  extracts all references as structured TEI-XML
+ │  fields: title, year, DOI, authors, raw citation string
+ │
+ ▼
+Phase 1 — DOI exact match (Solr)
+ │  doi:"10.xxxx/..." → certain match
+ │  ~13% of all citations resolved here
+ │
+ ▼
+Phase 2 — Batch title search (Solr edismax, 15 citations/request)
+ │  OR of Lucene phrase queries → fuzzy title+year client-side match
+ │  ~78% of all citations resolved here
+ │
+ ▼
+Phase 3 — Individual fallback + Crossref
+ │  Retry with title variants (ligature fix, author prefix strip, subtitle split)
+ │  If still unresolved: query Crossref REST API
+ │  ~4% of all citations resolved here
+ │
+ ▼
+Phase 4 — Vector similarity re-ranking
+ │  Broad Solr edismax query (40 candidates, phrase boost pf=title^20, mm=3<70%)
+ │  Embed query + candidates with all-MiniLM-L6-v2 (384-dim, ~15 ms on CPU)
+ │  Accept if cosine similarity ≥ 0.82; otherwise surface top-N as suggestions
+ │  Recovers ~2% of all citations; remaining NOT_FOUND get recommendations
+ │
+ ▼
+Output
+  ✓ FOUND        — citation verified (method + confidence score)
+  ⚠ FOUND_MISMATCH — verified but year or journal doesn't match cited metadata
+  ✗ NOT_FOUND    — with ranked list of top-3 closest real papers
 ```
 
-1. **`parse_refs.py`** — uses `pdftotext` to extract text from the PDF, then locates the references section by searching for standard headings ("References", "Bibliography", etc.). Returns the raw reference strings.
-
-2. **`parser.py`** — applies a series of regex strategies to parse each raw string into structured fields: authors, title, journal, year, volume, pages, DOI. Handles six citation styles: Nature compact, Science compact, APA, NLM/Vancouver, eLife, and APS physics.
-
-3. **`mongo_lookup.py`** — takes a parsed citation and searches a local MongoDB database loaded with Crossref metadata. Matches by DOI first, then falls back to fuzzy title+year matching. Returns whether the citation was found and how closely it matches.
-
-### GROBID pipeline (`grobid/`)
-
-An alternative parser that uses a machine-learning server (GROBID) instead of regex. Produces richer output — including the **body sentences that cited each reference** — at the cost of needing a Docker container to run. See [`grobid/grobid_pdf_to_json/README.md`](grobid/grobid_pdf_to_json/README.md) for setup and usage.
+Each citation that cannot be verified is passed to the recommendation engine, which returns the top-N most semantically similar papers from OpenAlex with cosine similarity scores. This lets a researcher quickly find what the author probably meant to cite.
 
 ---
 
@@ -56,16 +97,21 @@ An alternative parser that uses a machine-learning server (GROBID) instead of re
 
 ### Requirements
 
-- Python 3.9+
-- `pdftotext` (poppler): `sudo apt install poppler-utils` / `brew install poppler`
-- MongoDB instance loaded with Crossref data (host: `jupiter2:27017`, db: `crs`, collection: `crossref`)
+- Python 3.10+
+- GROBID server running locally: `http://localhost:8070` (or update `GROBID_URL` in `verify_pdf.py`)
+- OpenAlex Solr index: `http://galaxy:8983/solr/openalexWorks/select` (492M works)
 
 ### Install Python dependencies
 
 ```bash
+cd fake-citation-detector
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pymongo python-dotenv requests fitz PyMuPDF
+pip install requests numpy sentence-transformers
+# Optional (Crossref fallback):
+pip install crossref-commons
+# Optional (legacy regex pipeline):
+pip install pymongo python-dotenv PyMuPDF
 ```
 
 ### Configure credentials
@@ -73,87 +119,98 @@ pip install pymongo python-dotenv requests fitz PyMuPDF
 Create a `.env` file in the repo root (never commit this):
 
 ```
-MONGO_URI=mongodb://user:password@jupiter2:27017/
+MONGO_URI=mongodb://user:password@galaxy3:27017/
 ```
 
 ---
 
 ## Usage
 
-### Parse a single PDF
+### Verify a single PDF (recommended entry point)
 
 ```bash
 cd scripts
-python3 parse_refs.py paper.pdf
+python3 verify_pdf.py paper.pdf
+
+# Options:
+python3 verify_pdf.py paper.pdf --n 5           # top-5 suggestions per NOT_FOUND citation
+python3 verify_pdf.py paper.pdf --show-found    # also print matched citations
+python3 verify_pdf.py paper.pdf --no-vector     # skip Phase 4 (faster for large papers)
+python3 verify_pdf.py paper.pdf --out report.txt
 ```
 
-Also accepts a plain-text reference list or stdin:
+`verify_pdf.py` handles the full pipeline: GROBID → TEI parsing → 4-phase verification → recommendations. A typical 100-citation paper runs in 30–60 seconds.
+
+### Find the closest real paper for a suspicious citation
 
 ```bash
-python3 parse_refs.py references.txt
-python3 parse_refs.py          # paste text, then Ctrl+D
+# Interactive — paste citations one at a time:
+python3 recommend_citation.py
+
+# Single citation:
+python3 recommend_citation.py --raw "Smith J et al. COVID-19 hospitalised patients. JAMA 2020." --n 3
+
+# Batch mode from file, JSON output (for scripting):
+python3 recommend_citation.py --batch --file suspicious.txt --json > matches.jsonl
 ```
 
-### Parse all sample PDFs and save output
+### Batch verification across many papers
 
 ```bash
-cd scripts
-python3 store_parsed.py        # writes parsed_citations.txt
-```
+# Run grobid_verify.py on a folder of pre-processed cited_sent JSONs:
+python3 grobid_verify.py \
+  --cited-sent-dir ../grobid/grobid_pdf_to_json/step2_tei_to_json/out/cited_sent \
+  --backend solr \
+  --vector-threshold 0.75
 
-### Run the batch parse quality audit
+# Filter to one paper:
+python3 grobid_verify.py --paper jama_2020_12839
 
-```bash
-cd scripts
-python3 batch_audit.py         # writes results_openalex_v14.txt
+# Skip vector phase (faster):
+python3 grobid_verify.py --no-vector
 ```
 
 ### Download more sample PDFs from OpenAlex
 
 ```bash
-cd scripts
-python3 fetch_openalex.py                              # default journals, 10 per journal
+python3 fetch_openalex.py                              # default journals
 python3 fetch_openalex.py "Nature" "Cell" "PLOS ONE"   # custom journals
-python3 fetch_openalex.py --per-journal 5              # 5 papers per journal
+python3 fetch_openalex.py --per-journal 5
 ```
 
-PDFs are saved to `samples/openalex_pdfs/<JournalName>/` (gitignored).
+---
+
+## Results at a glance
+
+| Dataset | Papers | Citations | Found | Not found |
+|---------|-------:|----------:|------:|----------:|
+| Original set (38 high-impact papers) | 38 | 2,381 | 95.7% | 4.3% |
+| Diverse set (20 cross-field papers)  | 20 |   718 | 93.7% | 6.3% |
+| JAMA COVID paper (live test)         |  1 |   102 | 98.0% | 2.0% |
+
+NOT_FOUND breakdown: ~41% books/manuals, ~26% software/R packages, ~26% genuinely unindexed papers, ~7% GROBID parsing errors. **No fabricated citations detected** in any real paper tested.
+
+Fake citation detection: **114 injected hallucinated citations detected — 100% recall, 0 misses.**
 
 ---
 
-## Sample data
-
-41 PDFs across 6 journals were downloaded from OpenAlex and used to develop and validate the parser:
-
-| Journal | PDFs | Citations | DOI coverage |
-|---|---|---|---|
-| PLoS Medicine | 10 | 1,016 | 14% |
-| Nature | 11 | 626 | 3% |
-| PLoS ONE | 10 | 454 | 17% |
-| Science | 8 | 343 | 2% |
-| eLife | 3 | 253 | 81% |
-| JAMA | 1 | 107 | 80% |
-| **Total** | **41** | **2,799** | **19%** |
-
-Parse quality: 33 of 41 PDFs parse cleanly. The remaining 8 have issues from PDF-level problems (encryption, figure-label bleed), unusual formatting, or audit edge cases. See [`parsed_citations_report.md`](parsed_citations_report.md) for the full breakdown.
-
----
-
-## Key files explained
+## Key files
 
 | File | Purpose |
-|---|---|
-| `scripts/parser.py` | Core regex parser — edit this to improve citation field extraction |
-| `scripts/batch_audit.py` | Runs all 41 PDFs and flags bad-author, journal=title, noise, and future-year anomalies |
-| `scripts/mongo_lookup.py` | Crossref database interface — DOI lookup + fuzzy title/year matching |
-| `scripts/fetch_openalex.py` | Expands the sample set by downloading more PDFs from OpenAlex |
-| `parsed_citations_report.md` | Analysis of parse field coverage, DOI rates, and known failure cases |
-| `.env` | MongoDB URI — **never commit**, listed in `.gitignore` |
+|------|---------|
+| `verify_pdf.py` | End-to-end single-PDF tool — the main entry point |
+| `grobid_verify.py` | Batch verifier for pre-processed cited_sent JSON folders |
+| `solr_lookup.py` | OpenAlex Solr interface — DOI exact match + batched title search |
+| `vector_lookup.py` | Phase 4 vector re-ranking; `recommend()` for top-N suggestions |
+| `citation_parser.py` | Parse a raw citation string → title/year/doi (GROBID → heuristic cascade) |
+| `recommend_citation.py` | Interactive/batch CLI for finding the closest real paper |
+| `citation_verification_report.md` | Full results, error taxonomy, and evaluation methodology |
 
 ---
 
 ## Notes
 
-- The `scripts/samples/` directory (PDFs) is gitignored — run `fetch_openalex.py` to repopulate it.
-- DOI coverage is low overall (19%) because Nature and Science don't print DOIs inline in their reference lists. Title+year fuzzy matching is used as a fallback for those journals.
-- The GROBID pipeline (`grobid/`) is the preferred approach for new work — it handles more citation formats and also extracts citing sentences, which are useful for detecting fabricated references.
+- The `scripts/samples/` directory (PDFs) is gitignored — run `fetch_openalex.py` to repopulate.
+- The vector model (`all-MiniLM-L6-v2`, ~80 MB) is downloaded automatically on first use by `sentence-transformers`. Subsequent runs load it from cache in ~1 second.
+- The legacy regex pipeline (`parse_refs.py`, `parser.py`, `mongo_lookup.py`) is kept for reference. For new work, use `verify_pdf.py` — it is more accurate, handles more citation styles, and produces richer output.
+- Credentials (MongoDB URI) must only ever be stored in `.env` — never committed or shared.
