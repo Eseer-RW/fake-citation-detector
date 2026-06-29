@@ -103,24 +103,52 @@ def parse_tei_refs(tei_xml: str) -> list:
 
 # ── Download ─────────────────────────────────────────────────────────────────
 
+_ELIFE_ID_RE   = re.compile(r'elife[./](\d+)', re.I)
+_IEEE_ARNO_RE  = re.compile(r'/0*(\d{6,})(?:\.pdf)?$')
+
+def _candidate_urls(doi: str, url: str) -> list[str]:
+    """Return ordered list of URLs to try, with publisher-specific fixes applied."""
+    # PLOS ONE: always use the printable PDF endpoint
+    if "10.1371/" in doi:
+        return [f"https://journals.plos.org/plosone/article/file?id={doi}&type=printable"]
+
+    # eLife: CDN versioned PDF (try v1 → v4)
+    if "10.7554/" in doi:
+        m = _ELIFE_ID_RE.search(doi)
+        if m:
+            aid = m.group(1)
+            return [f"https://cdn.elifesciences.org/articles/{aid}/elife-{aid}-v{v}.pdf"
+                    for v in range(1, 5)]
+
+    # IEEE Access: strip the leading zero from the article number
+    if "ieeexplore.ieee.org" in url:
+        m = _IEEE_ARNO_RE.search(url)
+        if m:
+            return [f"https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={m.group(1)}"]
+
+    return [url]
+
+
 def download_pdf(doi: str, url: str, dest: pathlib.Path) -> Optional[pathlib.Path]:
     """Download a PDF; return path on success, None on failure. Skips if exists."""
-    for ext in (".pdf", ".xml", ".html"):
-        candidate = dest.with_suffix(ext)
-        if candidate.exists() and candidate.stat().st_size > 5_000:
-            return candidate
+    # Only treat an existing PDF as "done"; HTML/XML from a failed first attempt
+    # should not block a retry with a better URL.
+    pdf_candidate = dest.with_suffix(".pdf")
+    if pdf_candidate.exists() and pdf_candidate.stat().st_size > 5_000:
+        return pdf_candidate
 
-    try:
-        resp = requests.get(url, headers=DL_HEADERS, timeout=DOWNLOAD_TIMEOUT,
-                            allow_redirects=True)
-        if resp.status_code == 200 and len(resp.content) > 5_000:
-            ct = resp.headers.get("Content-Type", "")
-            ext = ".pdf" if "pdf" in ct else ".html" if "html" in ct else ".pdf"
-            fpath = dest.with_suffix(ext)
-            fpath.write_bytes(resp.content)
-            return fpath
-    except Exception as e:
-        pass
+    for try_url in _candidate_urls(doi, url):
+        try:
+            resp = requests.get(try_url, headers=DL_HEADERS, timeout=DOWNLOAD_TIMEOUT,
+                                allow_redirects=True)
+            if resp.status_code == 200 and len(resp.content) > 5_000:
+                ct = resp.headers.get("Content-Type", "")
+                ext = ".pdf" if "pdf" in ct else ".html" if "html" in ct else ".pdf"
+                fpath = dest.with_suffix(ext)
+                fpath.write_bytes(resp.content)
+                return fpath
+        except Exception:
+            pass
     return None
 
 
