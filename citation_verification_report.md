@@ -552,3 +552,87 @@ Both unresolved citations are **web documents, not journal articles**:
 | 0.75–0.89 | Likely the intended paper or a close variant — worth checking the DOI |
 | 0.50–0.74 | Related topic, probably not the same paper — use as a starting point for manual search |
 | < 0.50 | Weak signal — paper may not be in OpenAlex, or the title was too corrupted to search meaningfully |
+
+---
+
+## 9. Cross-Year / Cross-Field NOT-FOUND Rate Study (added June 29, 2026)
+
+To calibrate the detector and understand how NOT-FOUND rates vary by year and field, we ran the full 4-phase verification pipeline across a systematically sampled set of open-access papers from six journals spanning five research fields and six publication years (2020–2025).
+
+### Study design
+
+| Parameter | Value |
+|-----------|-------|
+| Journals | PLOS ONE, Nature Communications, eLife, JAMA Network Open, IEEE Access, ACS Omega |
+| Fields | Biology/Medicine, Multidisciplinary, Life Sciences, Clinical Medicine, CS/Engineering, Chemistry |
+| Years | 2020–2025 (6 years) |
+| Target sample | 10 papers × 6 journals × 6 years = 360 papers |
+| Papers successfully verified | **224** (136 inaccessible: JAMA Network Open Cloudflare-gated, ACS Omega 403) |
+| Total citations analysed | **20,564** |
+
+Papers were sampled from OpenAlex using the polite API ( filter), selecting open-access works with usable PDF URLs. PDFs were downloaded directly, processed through GROBID, and verified with all four phases (DOI exact match → batch title search → individual+Crossref → vector re-ranking).
+
+---
+
+### Results by year
+
+![NOT-FOUND rate by year](figures/fig1_by_year.png)
+
+| Year | Papers | Citations | Not found | Rate |
+|------|-------:|----------:|----------:|-----:|
+| 2020 | 40 | 3,674 | 209 | 5.7% |
+| 2021 | 39 | 3,466 | 200 | 5.8% |
+| 2022 | 40 | 4,020 | 220 | 5.5% |
+| 2023 | 40 | 3,638 | 181 | 5.0% |
+| 2024 | 35 | 3,448 | 99 | 2.9% |
+| 2025 | 30 | 2,318 | 70 | 3.0% |
+
+The NOT-FOUND rate held steady at ~5.5–5.8% from 2020–2022, then dropped sharply to ~3% in 2024–2025 — roughly a **2× improvement in two years**. This is driven by OpenAlex coverage growth rather than changes in citation behaviour: newer papers cite more recently published work, which is better indexed.
+
+---
+
+### Results by field
+
+![NOT-FOUND rate by field](figures/fig2_by_field.png)
+
+| Field | Journal | Papers | Citations | Not found | Rate |
+|-------|---------|-------:|----------:|----------:|-----:|
+| Biology/Medicine | PLOS ONE | 60 | 3,999 | 287 | **7.2%** |
+| CS/Engineering | IEEE Access | 44 | 7,162 | 460 | **6.4%** |
+| Life Sciences | eLife | 59 | 5,299 | 153 | 2.9% |
+| Multidisciplinary | Nature Comms | 60 | 4,021 | 79 | **2.0%** |
+| Chemistry | ACS Omega | 1 | 83 | 0 | 0.0% |
+
+The 3.6× gap between the highest (Biology/Medicine, 7.2%) and lowest (Multidisciplinary, 2.0%) fields reflects systematic differences in what gets cited:
+- **Biology/Medicine** frequently cites clinical guidelines, government reports, and WHO documents — gray literature that is not indexed in OpenAlex
+- **CS/Engineering** cites conference proceedings and technical reports that are harder to index than journal articles
+- **Multidisciplinary** (Nature Communications) cites high-impact journal articles that are well-covered
+
+---
+
+### Year × field matrix
+
+![NOT-FOUND rate heatmap](figures/fig3_heatmap.png)
+
+![NOT-FOUND rate trends by field](figures/fig4_trends.png)
+
+The most striking cell is **Biology/Medicine 2021 at 12.8%** — PLOS ONE papers from 2021 show nearly double the field average. This is almost certainly a COVID-19 artefact: early pandemic papers heavily cited WHO interim guidance, NIH guidelines, and preprints that were not yet formally indexed. By 2024 the same field drops to 3.6%, as those sources have since been incorporated into OpenAlex or replaced by peer-reviewed versions.
+
+CS/Engineering is noisier, oscillating between 4–8% with no clear trend, consistent with conference proceedings indexing being patchy across years.
+
+---
+
+### Implications for the detector
+
+These baselines are the key practical output of the study:
+
+| Context | Expected NOT-FOUND | Suspicious threshold |
+|---------|-------------------|---------------------|
+| Nature Comms, 2024–2025 | ~1–2% | > 5% |
+| eLife, 2024–2025 | ~2% | > 6% |
+| PLOS ONE, 2024–2025 | ~3–4% | > 8% |
+| IEEE Access, 2024 | ~4–5% | > 10% |
+| PLOS ONE, 2020–2021 | ~9–13% | > 18% |
+
+A NOT-FOUND rate significantly above the field+year baseline warrants closer inspection. A rate within baseline range is consistent with legitimate gray literature and indexing gaps — not fabrication.
+
