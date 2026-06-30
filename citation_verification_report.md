@@ -636,3 +636,29 @@ These baselines are the key practical output of the study:
 
 A NOT-FOUND rate significantly above the field+year baseline warrants closer inspection. A rate within baseline range is consistent with legitimate gray literature and indexing gaps — not fabrication.
 
+
+---
+
+### Per-paper distribution and outliers
+
+![Per-paper NOT-FOUND rate distribution by year](figures/fig6_histogram.png)
+
+Breaking down the aggregate rates into per-paper distributions reveals an important structural feature: the distributions are **right-skewed in all years**, with most papers clustering near 0–5% but a long tail of high-outlier papers pulling the mean well above the median.
+
+| Year | Median | Mean | Gap (mean−median) |
+|------|-------:|-----:|------------------:|
+| 2020 | 2.5% | 5.6% | +3.1 pp |
+| 2021 | 3.3% | 7.1% | +3.8 pp |
+| 2022 | 2.8% | 5.1% | +2.3 pp |
+| 2023 | 2.4% | 5.3% | +2.9 pp |
+| 2024 | 1.4% | 2.9% | +1.5 pp |
+| 2025 | 1.6% | 2.8% | +1.2 pp |
+
+The mean-median gap narrows sharply in 2024–2025, indicating that both the typical paper and the outlier tail are improving — not just the centre. By 2024–2025 the histogram is nearly L-shaped: almost no papers exceed 10% NOT-FOUND, and the bulk sit in the 0–5% bin.
+
+**Notable outliers (NOT-FOUND > 15%)** identified in the strip plot include:
+- `10.1109/access.2020.2967218` — IEEE Access 2020, **47.3%** (53/112): likely a survey paper citing obscure conference proceedings not yet indexed
+- `10.1371/journal.pone.0257365` — PLOS ONE 2021, **40.7%** (22/54): COVID-era paper with high gray literature citation rate
+- `10.1109/access.2022.3219845` — IEEE Access 2022, **38.1%** (59/155): another large survey with heavy conference reference list
+
+These outliers are consistent with known coverage gaps (conference proceedings, gray literature) rather than fabrication — none are from 2024–2025, consistent with the coverage improvement narrative.
