@@ -22,12 +22,17 @@ EMAIL = "rwang@university.edu"
 
 # ── Journals to sample ────────────────────────────────────────────────────────
 JOURNALS = [
-    {"name": "PLOS ONE",              "id": "S202381698",   "field": "biology_medicine"},
-    {"name": "Nature Communications", "id": "S64187185",    "field": "multidisciplinary"},
-    {"name": "eLife",                 "id": "S1336409049",  "field": "life_sciences"},
-    {"name": "JAMA Network Open",     "id": "S4210217848",  "field": "clinical_medicine"},
-    {"name": "IEEE Access",           "id": "S2485537415",  "field": "cs_engineering"},
-    {"name": "ACS Omega",             "id": "S4210239500",  "field": "chemistry"},
+    # ── High-quality / established journals ───────────────────────────────
+    {"name": "PLOS ONE",              "id": "S202381698",   "field": "biology_medicine",    "tier": "standard"},
+    {"name": "Nature Communications", "id": "S64187185",    "field": "multidisciplinary",   "tier": "high"},
+    {"name": "eLife",                 "id": "S1336409049",  "field": "life_sciences",        "tier": "high"},
+    {"name": "JAMA Network Open",     "id": "S4210217848",  "field": "clinical_medicine",   "tier": "standard"},
+    {"name": "IEEE Access",           "id": "S2485537415",  "field": "cs_engineering",       "tier": "standard"},
+    {"name": "ACS Omega",             "id": "S4210239500",  "field": "chemistry",             "tier": "standard"},
+    # ── High-volume / open-access megajournals (comparison group) ─────────
+    {"name": "Cureus",                "id": "S2738950867",  "field": "clinical_medicine",   "tier": "megajournal"},
+    {"name": "Heliyon",               "id": "S2898612692",  "field": "multidisciplinary",   "tier": "megajournal"},
+    {"name": "Frontiers in Psychology","id": "S9692511",    "field": "psychology",            "tier": "megajournal"},
 ]
 
 YEARS = list(range(2020, 2026))   # 2020–2025 inclusive
@@ -85,6 +90,7 @@ def fetch_sample(journal: dict, year: int, n: int,
             "journal_name":   journal["name"],
             "journal_id":     journal["id"],
             "field":          journal["field"],
+            "tier":           journal.get("tier", "standard"),
             "year":           year,
             "doi":            doi,
             "title":          (w.get("title") or "").strip(),
