@@ -31,7 +31,7 @@ JOURNALS = [
     {"name": "ACS Omega",             "id": "S4210239500",  "field": "chemistry",             "tier": "standard"},
     # ── High-volume / open-access megajournals (comparison group) ─────────
     {"name": "Cureus",                "id": "S2738950867",  "field": "clinical_medicine",   "tier": "megajournal"},
-    {"name": "Heliyon",               "id": "S2898612692",  "field": "multidisciplinary",   "tier": "megajournal"},
+    {"name": "F1000Research",        "id": "S4210239046",  "field": "multidisciplinary", "tier": "megajournal"},
     {"name": "Frontiers in Psychology","id": "S9692511",    "field": "psychology",            "tier": "megajournal"},
 ]
 
@@ -40,14 +40,18 @@ YEARS = list(range(2020, 2026))   # 2020–2025 inclusive
 
 def _oa_url(work: dict) -> str | None:
     """Extract the best OA PDF URL from an OpenAlex work record."""
+    def _is_pdf_url(u: str) -> bool:
+        ul = u.lower()
+        return ul.endswith(".pdf") or ul.endswith("/pdf")
+
     oa = work.get("open_access") or {}
     url = oa.get("oa_url") or ""
-    if url and url.lower().endswith(".pdf"):
+    if url and _is_pdf_url(url):
         return url
-    # Also check locations
+    # Prefer location pdf_urls that look like actual PDFs
     for loc in (work.get("locations") or []):
         u = loc.get("pdf_url") or ""
-        if u and u.lower().endswith(".pdf"):
+        if u and _is_pdf_url(u):
             return u
     # Fall back to any oa_url (may be landing page, not PDF — we'll try it)
     return url or None
