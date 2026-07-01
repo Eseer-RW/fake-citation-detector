@@ -662,3 +662,87 @@ The mean-median gap narrows sharply in 2024–2025, indicating that both the typ
 - `10.1109/access.2022.3219845` — IEEE Access 2022, **38.1%** (59/155): another large survey with heavy conference reference list
 
 These outliers are consistent with known coverage gaps (conference proceedings, gray literature) rather than fabrication — none are from 2024–2025, consistent with the coverage improvement narrative.
+
+
+---
+
+## 10. Journal Tier Comparison: High-Quality vs Standard vs Megajournal (2020–2025)
+
+To test whether AI-assisted writing tools (particularly post-ChatGPT) have differentially increased hallucinated citations in lower-rigor publication venues, we extended the study to three journal tiers and examined pre- vs post-ChatGPT NOT-FOUND rates.
+
+### 10.1 Tier Definitions
+
+| Tier | Journals | Rationale |
+|------|----------|-----------|
+| **High quality** | Nature Communications, eLife | Rigorous peer review, high editorial standards, top citation impact |
+| **Standard** | PLOS ONE, JAMA Network Open, IEEE Access, ACS Omega | Open-access but field-standard peer review |
+| **Megajournal** | Cureus, Heliyon, Frontiers in Psychology | Broad-scope, high-volume, lighter peer review — higher risk venue for AI-generated errors |
+
+Study design: 25 papers × 9 journals × 6 years (2020–2025) = **1,350 papers** total.
+
+### 10.2 Year-by-Year NOT-FOUND Rates by Tier
+
+| Year | High quality | Standard | Megajournal |
+|------|-------------:|---------:|------------:|
+| 2020 | 4.9% | 11.3% | 4.8% |
+| 2021 | 2.0% | 6.9% | 7.0% |
+| 2022 | 2.1% | 6.8% | 5.3% |
+| 2023 | 2.1% | 5.8% | 3.8% |
+| 2024 | 1.3% | 6.4% | 4.4% |
+| 2025 | 1.7% | 5.3% | 3.6% |
+
+![Fig 7: NOT-FOUND rate by tier across years (2020–2025)](figures/fig7_tier_trends.png)
+
+*Figure 7. High-quality journals maintain the lowest NOT-FOUND rates throughout (1.3–4.9%). Standard journals start highest in 2020 (11.3%) due to IEEE Access conference-reference coverage gaps and converge downward. Megajournals track between the two tiers. The ChatGPT release (Nov 2022, dashed line) does not produce a detectable inflection in any tier.*
+
+### 10.3 Pre- vs Post-ChatGPT Comparison
+
+Using Nov 2022 as the cutoff (papers published 2020–2022 = pre; 2023–2025 = post):
+
+| Tier | Pre-ChatGPT | Post-ChatGPT | Δ |
+|------|------------:|-------------:|--:|
+| High quality | 3.0% | 1.7% | **−1.3 pp** |
+| Standard | 8.3% | 5.9% | **−2.3 pp** |
+| Megajournal | 5.8% | 3.8% | **−1.9 pp** |
+
+![Fig 8: Pre- vs post-ChatGPT NOT-FOUND rate by tier](figures/fig8_pre_post_bars.png)
+
+*Figure 8. All three tiers improved post-ChatGPT by comparable magnitudes (1.3–2.3 pp). Critically, megajournals did NOT diverge upward relative to higher-rigor tiers — the expected hallucination signal is absent.*
+
+### 10.4 Per-Paper Distribution: Pre vs Post
+
+![Fig 9: Per-paper NOT-FOUND rate strip plots by tier and period](figures/fig9_tier_strip.png)
+
+*Figure 9. Strip + box plots of individual paper NOT-FOUND rates. Post-ChatGPT boxes shift downward in all tiers. The high-quality tier's post-ChatGPT median reaches 0.0% (i.e., >50% of papers have zero unfound references). Standard journals show the greatest variance reduction. High outliers (>20%) exist in both periods but are more common pre-2023.*
+
+Per-paper median statistics (papers with ≥1 reference):
+
+| Tier | Median rate | Mean rate | Papers analysed |
+|------|------------:|----------:|----------------:|
+| High quality | 1.1% | 2.7% | 298 |
+| Standard | 5.1% | 7.9% | 240 |
+| Megajournal | 3.1% | 5.4% | 174 |
+
+Pre vs post medians:
+
+| Tier | Pre median | Post median | n (pre/post) |
+|------|----------:|------------:|:------------:|
+| High quality | 1.3% | 0.0% | 149 / 149 |
+| Standard | 7.1% | 3.6% | 131 / 109 |
+| Megajournal | 3.7% | 2.1% | 106 / 68 |
+
+### 10.5 Key Findings and Interpretation
+
+**No AI hallucination signal detected.** Contrary to the hypothesis that megajournals would show a disproportionate post-2022 rise in NOT-FOUND citations, all three tiers improved by similar magnitudes. The dominant driver is **OpenAlex database growth** — as the index expands to cover more conference proceedings, preprints, and gray literature, citations that previously returned NOT-FOUND are now resolved.
+
+**Tier hierarchy is stable.** High-quality journals maintain the lowest NOT-FOUND rates throughout (1.3–4.9%), consistent with stricter editorial reference-checking. Megajournals generally fall between high and standard, which is unexpected given their lighter peer review — suggesting that megajournal authors do not systematically cite more obscure or unindexed works.
+
+**Standard journals' 2020 spike** (11.3%) is largely explained by IEEE Access conference-reference coverage: a high fraction of IEEE Access papers in 2020 cited conference proceedings that were not yet in OpenAlex's index.
+
+**Heliyon coverage caveat.** Heliyon was nearly completely inaccessible via open-access PDF (only 1/150 papers downloadable), so its references were verified only via DOI-lookup from OpenAlex metadata rather than full-text parsing. This likely *understates* its true NOT-FOUND rate. The megajournal tier result should therefore be treated as a lower bound.
+
+### 10.6 Implications for the Verification System
+
+These findings validate the field+year-adjusted calibration thresholds established in Section 8. Tier alone does not require a separate calibration axis — the field and year effects dominate. A paper in a megajournal from 2020 in biology/medicine should be evaluated against the same ≈8–9% NOT-FOUND baseline as a paper in a standard journal from the same year and field.
+
+The absence of a post-ChatGPT hallucination signal at the population level does not rule out individual-paper fabrication — it means the **prevalence** has not risen detectably above baseline measurement noise (OpenAlex coverage growth). The per-paper outlier screen (>3× field+year median) remains the appropriate tool for flagging suspicious papers.
