@@ -731,6 +731,12 @@ Pre vs post medians:
 | Standard | 7.1% | 3.6% | 131 / 109 |
 | Megajournal | 3.7% | 2.1% | 106 / 68 |
 
+### 10.4.1 Distribution Histograms by Tier
+
+![Fig 10: Per-paper NOT-FOUND rate histograms by tier (pre vs post ChatGPT)](figures/fig10_tier_histogram.png)
+
+*Figure 10. Paired histograms of per-paper NOT-FOUND rates for each tier, comparing pre-ChatGPT (2020–2022, faded) vs post-ChatGPT (2023–2025, solid). High-quality journals are overwhelmingly concentrated in the 0–5% bin in both periods, with the post period shifting further left (median 0.0%). Standard journals show the most notable shift: the 5–10% bin stays large but the heavy tail (15%+) shrinks markedly post-2023. Megajournals follow the same pattern at lower absolute rates, consistent with their intermediate NOT-FOUND baseline.*
+
 ### 10.5 Key Findings and Interpretation
 
 **No AI hallucination signal detected.** Contrary to the hypothesis that megajournals would show a disproportionate post-2022 rise in NOT-FOUND citations, all three tiers improved by similar magnitudes. The dominant driver is **OpenAlex database growth** — as the index expands to cover more conference proceedings, preprints, and gray literature, citations that previously returned NOT-FOUND are now resolved.
