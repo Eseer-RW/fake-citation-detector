@@ -676,7 +676,7 @@ To test whether AI-assisted writing tools (particularly post-ChatGPT) have diffe
 |------|----------|-----------|
 | **High quality** | Nature Communications, eLife | Rigorous peer review, high editorial standards, top citation impact |
 | **Standard** | PLOS ONE, JAMA Network Open, IEEE Access, ACS Omega | Open-access but field-standard peer review |
-| **Megajournal** | Cureus, Heliyon, Frontiers in Psychology | Broad-scope, high-volume, lighter peer review — higher risk venue for AI-generated errors |
+| **Megajournal** | Cureus, F1000Research, Frontiers in Psychology | Broad-scope, high-volume, lighter peer review — higher risk venue for AI-generated errors |
 
 Study design: 25 papers × 9 journals × 6 years (2020–2025) = **1,350 papers** total.
 
@@ -684,12 +684,12 @@ Study design: 25 papers × 9 journals × 6 years (2020–2025) = **1,350 papers*
 
 | Year | High quality | Standard | Megajournal |
 |------|-------------:|---------:|------------:|
-| 2020 | 4.9% | 11.3% | 4.8% |
-| 2021 | 2.0% | 6.9% | 7.0% |
-| 2022 | 2.1% | 6.8% | 5.3% |
-| 2023 | 2.1% | 5.8% | 3.8% |
-| 2024 | 1.3% | 6.4% | 4.4% |
-| 2025 | 1.7% | 5.3% | 3.6% |
+| 2020 | 4.9% | 11.3% | 4.1% |
+| 2021 | 2.0% | 6.9% | 6.5% |
+| 2022 | 2.1% | 6.8% | 5.7% |
+| 2023 | 2.1% | 5.8% | 3.9% |
+| 2024 | 1.3% | 6.4% | 5.0% |
+| 2025 | 1.7% | 5.3% | 3.3% |
 
 ![Fig 7: NOT-FOUND rate by tier across years (2020–2025)](figures/fig7_tier_trends.png)
 
@@ -703,7 +703,7 @@ Using Nov 2022 as the cutoff (papers published 2020–2022 = pre; 2023–2025 = 
 |------|------------:|-------------:|--:|
 | High quality | 3.0% | 1.7% | **−1.3 pp** |
 | Standard | 8.3% | 5.9% | **−2.3 pp** |
-| Megajournal | 5.8% | 3.8% | **−1.9 pp** |
+| Megajournal | 5.5% | 3.9% | **−1.7 pp** |
 
 ![Fig 8: Pre- vs post-ChatGPT NOT-FOUND rate by tier](figures/fig8_pre_post_bars.png)
 
@@ -745,7 +745,7 @@ Pre vs post medians:
 
 **Standard journals' 2020 spike** (11.3%) is largely explained by IEEE Access conference-reference coverage: a high fraction of IEEE Access papers in 2020 cited conference proceedings that were not yet in OpenAlex's index.
 
-**Heliyon coverage caveat.** Heliyon was nearly completely inaccessible via open-access PDF (only 1/150 papers downloadable), so its references were verified only via DOI-lookup from OpenAlex metadata rather than full-text parsing. This likely *understates* its true NOT-FOUND rate. The megajournal tier result should therefore be treated as a lower bound.
+**F1000Research PDF coverage.** F1000Research was substituted for Heliyon (which was nearly completely inaccessible via open-access PDF — only 1/150 papers downloadable — due to Elsevier's bot-blocking). F1000Research achieved 69% direct PDF coverage via PMC deposits and f1000research.com direct links, with the remaining 31% falling back to DOI-lookup only. F1000Research is a better megajournal comparison: it uses post-publication open peer review, publishes across all scientific fields, and has lower acceptance barriers than traditional journals.
 
 ### 10.6 Implications for the Verification System
 
