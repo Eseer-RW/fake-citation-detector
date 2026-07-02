@@ -721,7 +721,7 @@ Per-paper median statistics (papers with ≥1 reference):
 |------|------------:|----------:|----------------:|
 | High quality | 1.1% | 2.7% | 298 |
 | Standard | 5.1% | 7.9% | 240 |
-| Megajournal | 3.1% | 5.4% | 174 |
+| Megajournal | 3.1% | 5.5% | 220 |
 
 Pre vs post medians:
 
@@ -729,7 +729,7 @@ Pre vs post medians:
 |------|----------:|------------:|:------------:|
 | High quality | 1.3% | 0.0% | 149 / 149 |
 | Standard | 7.1% | 3.6% | 131 / 109 |
-| Megajournal | 3.7% | 2.1% | 106 / 68 |
+| Megajournal | 3.7% | 2.8% | 135 / 85 |
 
 ### 10.4.1 Distribution Histograms by Tier
 
