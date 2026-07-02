@@ -795,10 +795,23 @@ A back-of-envelope calculation: our 1,350-paper v3 sample spanning 2020–2025 w
 
 ### 11.3 The Gap Our Work Fills
 
-Existing studies detect fabrication directly (DOI existence checks, cross-referencing against known scholarly databases) and answer the question: *is this citation real?* Our study answers a different but complementary question: *what is the expected NOT-FOUND rate for a legitimate paper in this field and year?*
+Existing detection studies answer the question: *does this citation actually exist?* They produce a count — say, 4 non-existent citations out of 40. That is 10% NOT-FOUND. But that number is useless on its own, because whether 10% is suspicious depends entirely on the journal, field, and year.
 
-This calibration is the **necessary prerequisite for individual-paper screening**. To flag a paper as suspicious using the existence-check approach, you need to know how many of its citations should be unfindable under normal conditions — precisely what our field+year-adjusted baselines provide (Section 8). Without this baseline, even the Zhao et al. detection methodology risks false positives in fields with high legitimate NOT-FOUND rates (e.g., biology/medicine citing gray literature) and false negatives in fields with low baselines (e.g., multidisciplinary journals).
+Consider two papers, both with 10% NOT-FOUND:
+
+- A **biology/medicine paper from 2021** has an expected NOT-FOUND rate of ~12% from legitimate coverage gaps alone (gray literature, WHO reports, preprints not yet indexed). 10% is unremarkable — do not flag it.
+- A **Nature Communications paper from 2024** has an expected NOT-FOUND rate of ~1.3%. 10% is roughly 8× the baseline — almost certainly something is wrong.
+
+Without knowing the baseline, **there is no principled threshold**. A single global cutoff (e.g., "flag anything over 5%") generates floods of false positives in biology/medicine — where most papers legitimately hit 5–8% — while missing suspicious papers in well-indexed fields where even 4% would be anomalous.
+
+What our study provides is a **reference range lookup table**: for any paper, given its field and year, here is what a normal NOT-FOUND rate looks like. The detection rule then becomes: *flag if this paper's NOT-FOUND rate is more than 3× the expected baseline for its field and year* (Section 8). This threshold is both sensitive and specific, rather than an arbitrary global cutoff.
+
+The analogy is a blood test. A haemoglobin reading of 12 g/dL is meaningless without the reference range for that patient's age and sex — borderline low for an adult woman, normal for a male infant. Zhao et al. and Dellaert et al. run the blood test. Our study establishes the reference ranges. You need both to make a clinical decision.
+
+No existing study provides these field- and year-stratified baselines. That is the gap our work fills.
 
 ### 11.4 Summary
 
-The literature establishes that AI-hallucinated citations are a real, growing, and already measurable problem — approximately 1 in 458 published papers in 2025 contained fabricated references, with the rate doubling in the first months of 2026. Our study's null result at the population level is consistent with this: the prevalence, while alarming in trajectory, is still too sparse to shift aggregate NOT-FOUND rates when diluted across large paper samples. The two approaches are complementary: existence-check methods (Zhao et al., Dellaert et al.) detect fabrication directly; our calibrated NOT-FOUND baselines establish the anomaly threshold needed to make individual-paper screening actionable.
+The literature establishes that AI-hallucinated citations are a real, growing, and already measurable problem — approximately 1 in 458 published papers in 2025 contained fabricated references, with the rate doubling in the first months of 2026. Our study's null result at the population level is consistent with this: the fabrication prevalence is still too sparse to shift aggregate NOT-FOUND rates when diluted across large paper samples.
+
+The two approaches are complementary rather than competing. Existence-check methods (Zhao et al., Dellaert et al.) detect fabrication directly. Our field- and year-adjusted baselines answer the prior question every screener must ask: *how many missing citations would be normal for a paper like this?* Without that calibration, detection tools produce noisy, uncalibrated alerts that cannot be acted on reliably.
