@@ -647,14 +647,14 @@ Breaking down the aggregate rates into per-paper distributions reveals an import
 
 | Year | Median | Mean | Gap (mean−median) |
 |------|-------:|-----:|------------------:|
-| 2020 | 2.5% | 5.6% | +3.1 pp |
-| 2021 | 3.3% | 7.1% | +3.8 pp |
-| 2022 | 2.8% | 5.1% | +2.3 pp |
-| 2023 | 2.4% | 5.3% | +2.9 pp |
-| 2024 | 1.4% | 2.9% | +1.5 pp |
-| 2025 | 1.6% | 2.8% | +1.2 pp |
+| 2020 | 2.9% | 7.1% | +4.2 pp |
+| 2021 | 3.0% | 6.3% | +3.3 pp |
+| 2022 | 2.7% | 5.2% | +2.5 pp |
+| 2023 | 2.2% | 4.4% | +2.2 pp |
+| 2024 | 1.7% | 4.1% | +2.4 pp |
+| 2025 | 1.3% | 3.2% | +1.8 pp |
 
-The mean-median gap narrows sharply in 2024–2025, indicating that both the typical paper and the outlier tail are improving — not just the centre. By 2024–2025 the histogram is nearly L-shaped: almost no papers exceed 10% NOT-FOUND, and the bulk sit in the 0–5% bin.
+The mean-median gap narrows from 2020–2023, then stabilises in 2024–2025, indicating that both the typical paper and the outlier tail are improving. By 2024–2025 the histogram is nearly L-shaped: almost no papers exceed 20% NOT-FOUND, and the bulk sit in the 0–5% bin.
 
 **Notable outliers (NOT-FOUND > 15%)** identified in the strip plot include:
 - `10.1109/access.2020.2967218` — IEEE Access 2020, **47.3%** (53/112): likely a survey paper citing obscure conference proceedings not yet indexed
