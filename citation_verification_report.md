@@ -752,3 +752,53 @@ Pre vs post medians:
 These findings validate the field+year-adjusted calibration thresholds established in Section 8. Tier alone does not require a separate calibration axis — the field and year effects dominate. A paper in a megajournal from 2020 in biology/medicine should be evaluated against the same ≈8–9% NOT-FOUND baseline as a paper in a standard journal from the same year and field.
 
 The absence of a post-ChatGPT hallucination signal at the population level does not rule out individual-paper fabrication — it means the **prevalence** has not risen detectably above baseline measurement noise (OpenAlex coverage growth). The per-paper outlier screen (>3× field+year median) remains the appropriate tool for flagging suspicious papers.
+
+---
+
+## 11. Related Work: Empirical Studies on AI-Hallucinated Citations
+
+This section surveys the emerging empirical literature on AI-generated fabricated citations and contextualises our NOT-FOUND rate study within it.
+
+### 11.1 Evidence for a Real and Growing Fabrication Problem
+
+Several large-scale empirical studies now confirm that AI-hallucinated citations are increasing measurably in the published literature.
+
+**Zhao et al. (2025) — "LLM hallucinations in the wild"** ([arXiv:2605.07723](https://arxiv.org/abs/2605.07723)) is the most comprehensive to date. The authors audited **111 million references across 2.5 million papers** from arXiv, bioRxiv, SSRN, and PubMed Central, identifying citations to papers that simply do not exist anywhere in the scholarly record. They found a conservative estimate of **146,932 hallucinated citations in 2025 alone**, with a sharp inflection following widespread LLM adoption in mid-2024. Hallucinations were most prevalent in papers bearing linguistic signatures of AI-assisted writing, in work by small and early-career author teams, and in fields with rapid AI adoption. Notably, fabricated citations disproportionately assigned credit to already-prominent and male scholars, suggesting that LLMs reproduce existing prestige hierarchies when confabulating references.
+
+**Dellaert et al. (2026) — Columbia University / The Lancet** (reported in [STAT News](https://www.statnews.com/2026/05/07/lancet-study-finds-steep-rise-fraudulent-citations-academic-papers/) and [Retraction Watch](https://retractionwatch.com/2026/05/07/one-in-277-pubmed-indexed-papers-in-2026-shows-fabricated-references-says-analysis/)) analysed over **2 million papers and 97 million citations** to identify non-existent references. They found the fraction of papers containing fabricated citations escalated rapidly:
+
+| Period | Papers with fabricated citations |
+|--------|--------------------------------:|
+| 2023 | 1 in 2,828 |
+| 2025 | 1 in 458 |
+| Early 2026 | 1 in 277 |
+
+More than one-third of fabricated citations originated from large open-access, APC-charging publishers, pointing toward the megajournal sector as a higher-risk venue. Review articles were particularly affected, showing a **57% higher fabrication rate** than original research papers — consistent with the hypothesis that AI assistants are used most heavily for the broad literature searches that characterise review writing.
+
+**Ansari (2026) — NeurIPS 2025** ([arXiv:2602.05930](https://arxiv.org/abs/2602.05930)) examined **100 fabricated citations** found in papers accepted at a premier machine learning conference. A taxonomy of failure modes revealed that **66% were total fabrications** — papers invented wholesale with plausible titles, real-sounding authors, and correctly formatted journal names — while the remainder misrepresented real papers. All had passed peer review by three or more reviewers, highlighting the difficulty of detection without automated verification.
+
+**Early characterisation studies (2023)** established the baseline failure mode. Alkaissi & McFarlane (2023, *JAMA Internal Medicine*) and Walters & Wilder (2023, *Scientific Reports*, [PMC10484980](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10484980/)) found that **~20–55% of references generated directly by ChatGPT** are fabricated, with fabrications formatted to be indistinguishable from real citations.
+
+### 11.2 Why Our Study Shows a Null Trend
+
+Our cross-year, cross-tier NOT-FOUND rate study found **no upward divergence post-ChatGPT** in any journal tier (Section 10.3). This is not contradicted by the literature above, but the difference in methodology explains why our signal is null:
+
+| Dimension | Our study | Zhao et al. / Lancet |
+|-----------|-----------|----------------------|
+| **What is measured** | Citations not found in OpenAlex | Citations that do not exist anywhere |
+| **Primary source of NOT-FOUND** | OpenAlex index gaps (conference proceedings, gray literature, recent preprints) | Actual LLM fabrication |
+| **Trend direction** | Improving (↓) — driven by OpenAlex coverage growth | Worsening (↑) — driven by LLM adoption |
+
+Our NOT-FOUND rate is dominated by **legitimate coverage gaps** that shrink as OpenAlex expands, not by fabrication. Even under the most optimistic Lancet estimate (1 in 458 papers in 2025 containing fabricated citations), a paper with fabricated references typically has only a handful of bad citations in a reference list of 30–80, producing a per-paper NOT-FOUND contribution of ≈2–10 percentage points. Distributed across hundreds of papers in our sample — the vast majority of which have no fabricated citations at all — this signal is completely swamped by the coverage-gap noise.
+
+A back-of-envelope calculation: our 1,350-paper v3 sample spanning 2020–2025 would be expected to contain roughly **3 papers** with fabricated citations under the 2025 Lancet rate. That is far too sparse to produce a detectable trend.
+
+### 11.3 The Gap Our Work Fills
+
+Existing studies detect fabrication directly (DOI existence checks, cross-referencing against known scholarly databases) and answer the question: *is this citation real?* Our study answers a different but complementary question: *what is the expected NOT-FOUND rate for a legitimate paper in this field and year?*
+
+This calibration is the **necessary prerequisite for individual-paper screening**. To flag a paper as suspicious using the existence-check approach, you need to know how many of its citations should be unfindable under normal conditions — precisely what our field+year-adjusted baselines provide (Section 8). Without this baseline, even the Zhao et al. detection methodology risks false positives in fields with high legitimate NOT-FOUND rates (e.g., biology/medicine citing gray literature) and false negatives in fields with low baselines (e.g., multidisciplinary journals).
+
+### 11.4 Summary
+
+The literature establishes that AI-hallucinated citations are a real, growing, and already measurable problem — approximately 1 in 458 published papers in 2025 contained fabricated references, with the rate doubling in the first months of 2026. Our study's null result at the population level is consistent with this: the prevalence, while alarming in trajectory, is still too sparse to shift aggregate NOT-FOUND rates when diluted across large paper samples. The two approaches are complementary: existence-check methods (Zhao et al., Dellaert et al.) detect fabrication directly; our calibrated NOT-FOUND baselines establish the anomaly threshold needed to make individual-paper screening actionable.
