@@ -793,25 +793,26 @@ Our NOT-FOUND rate is dominated by **legitimate coverage gaps** that shrink as O
 
 A back-of-envelope calculation: our 1,350-paper v3 sample spanning 2020–2025 would be expected to contain roughly **3 papers** with fabricated citations under the 2025 Lancet rate. That is far too sparse to produce a detectable trend.
 
-### 11.3 The Gap Our Work Fills
+### 11.3 How Our Work Relates
 
-Existing detection studies answer the question: *does this citation actually exist?* They produce a count — say, 4 non-existent citations out of 40. That is 10% NOT-FOUND. But that number is useless on its own, because whether 10% is suspicious depends entirely on the journal, field, and year.
+It is worth being precise about what each approach actually measures, because the relationship is subtler than it first appears.
 
-Consider two papers, both with 10% NOT-FOUND:
+Zhao et al. and Dellaert et al. check whether each citation exists anywhere in a comprehensive multi-source scholarly corpus. If a citation is not found, it genuinely does not exist — it is fabricated. Their method operates at the level of individual citations and does not require field- or year-specific baselines to work: a non-existent citation is non-existent regardless of the field.
 
-- A **biology/medicine paper from 2021** has an expected NOT-FOUND rate of ~12% from legitimate coverage gaps alone (gray literature, WHO reports, preprints not yet indexed). 10% is unremarkable — do not flag it.
-- A **Nature Communications paper from 2024** has an expected NOT-FOUND rate of ~1.3%. 10% is roughly 8× the baseline — almost certainly something is wrong.
+**Our NOT-FOUND rate measures something different.** We check citations against OpenAlex, which is comprehensive for peer-reviewed journals but does not fully cover gray literature — books, government and NGO technical reports, theses, regional conference proceedings. A citation to a WHO policy document or an FDA technical report is real, but it will not be found in OpenAlex. This means our NOT-FOUND includes both fabricated citations *and* legitimately existing sources outside OpenAlex's scope.
 
-Without knowing the baseline, **there is no principled threshold**. A single global cutoff (e.g., "flag anything over 5%") generates floods of false positives in biology/medicine — where most papers legitimately hit 5–8% — while missing suspicious papers in well-indexed fields where even 4% would be anomalous.
+This is precisely why our field- and year-adjusted baselines are necessary **for our own detector**: we cannot treat every NOT-FOUND as suspicious, because a meaningful fraction are legitimate coverage gaps. The baselines tell us what NOT-FOUND rate to expect for a clean paper in a given field and year, so we can flag papers that deviate anomalously rather than simply citing gray literature.
 
-What our study provides is a **reference range lookup table**: for any paper, given its field and year, here is what a normal NOT-FOUND rate looks like. The detection rule then becomes: *flag if this paper's NOT-FOUND rate is more than 3× the expected baseline for its field and year* (Section 8). This threshold is both sensitive and specific, rather than an arbitrary global cutoff.
+| | Zhao et al. / Dellaert et al. | Our tool |
+|--|--|--|
+| **Database** | Comprehensive multi-source corpus | OpenAlex |
+| **NOT-FOUND means** | Citation does not exist anywhere | Citation not in OpenAlex (may still be real) |
+| **Needs field/year baseline?** | Minimally | Yes — to separate coverage gaps from fabrication |
 
-The analogy is a blood test. A haemoglobin reading of 12 g/dL is meaningless without the reference range for that patient's age and sex — borderline low for an adult woman, normal for a male infant. Zhao et al. and Dellaert et al. run the blood test. Our study establishes the reference ranges. You need both to make a clinical decision.
-
-No existing study provides these field- and year-stratified baselines. That is the gap our work fills.
+There is one area where our baselines add value even to an existence-check approach: **gray literature calibration**. Even a maximally comprehensive search will not find citations to unpublished reports, internal documents, or works that predate systematic digitisation. A biology paper that legitimately cites five WHO technical reports will look suspicious to any automated tool that expects all citations to resolve. Our baselines quantify how much of this is field-normal, providing the context needed to avoid flagging clean papers in gray-literature-heavy fields.
 
 ### 11.4 Summary
 
 The literature establishes that AI-hallucinated citations are a real, growing, and already measurable problem — approximately 1 in 458 published papers in 2025 contained fabricated references, with the rate doubling in the first months of 2026. Our study's null result at the population level is consistent with this: the fabrication prevalence is still too sparse to shift aggregate NOT-FOUND rates when diluted across large paper samples.
 
-The two approaches are complementary rather than competing. Existence-check methods (Zhao et al., Dellaert et al.) detect fabrication directly. Our field- and year-adjusted baselines answer the prior question every screener must ask: *how many missing citations would be normal for a paper like this?* Without that calibration, detection tools produce noisy, uncalibrated alerts that cannot be acted on reliably.
+The two approaches measure different things and are best understood as complementary. Existence-check methods (Zhao et al., Dellaert et al.) identify individual fabricated citations with high precision. Our OpenAlex-based, rate-level approach provides the field- and year-adjusted baselines needed to calibrate our own detector — and to quantify the gray-literature gap that even comprehensive existence checks cannot fully eliminate.
