@@ -93,32 +93,26 @@ class CrossrefLookup:
     # ── internal HTTP helper ─────────────────────────────────────────────────
 
     def _get(self, url: str, params: Optional[dict] = None) -> Optional[dict]:
-        """GET url with rate-limiting, error handling, and one 429 retry."""
+        """GET url with rate-limiting and error handling.
+        Sets _net_error on 429/timeout/5xx so by_citation circuit-breaks immediately.
+        """
         elapsed = time.monotonic() - self._last_req
         if elapsed < self.min_delay:
             time.sleep(self.min_delay - elapsed)
-        for attempt in range(2):
-            try:
-                resp = requests.get(url, params=params or {},
-                                    headers=self.headers, timeout=8)
-                self._last_req = time.monotonic()
-                if resp.status_code == 429 and attempt == 0:
-                    time.sleep(1.0)
-                    continue
-                resp.raise_for_status()
-                self._net_error = False
-                return resp.json()
-            except Exception as e:
-                if attempt == 0 and "429" in str(e):
-                    time.sleep(1.0)
-                    continue
-                # Flag network errors (timeouts, 5xx) — not 404 "not found"
-                msg = str(e)
-                if "timed out" in msg.lower() or "timeout" in msg.lower() or "500" in msg:
-                    self._net_error = True
-                print(f"    [crossref] request failed: {e}")
-                return None
-        return None
+        try:
+            resp = requests.get(url, params=params or {},
+                                headers=self.headers, timeout=8)
+            self._last_req = time.monotonic()
+            resp.raise_for_status()
+            self._net_error = False
+            return resp.json()
+        except Exception as e:
+            msg = str(e)
+            if ("429" in msg or "timed out" in msg.lower()
+                    or "timeout" in msg.lower() or "500" in msg):
+                self._net_error = True
+            print(f"    [crossref] request failed: {e}")
+            return None
 
     # ── public lookup methods ────────────────────────────────────────────────
 
@@ -293,11 +287,12 @@ def _thread_crossref() -> "CrossrefLookup":
     return _thread_local.lookup
 
 
-def batch_crossref(parsed_list: list, max_workers: int = 10) -> list:
+def batch_crossref(parsed_list: list, max_workers: int = 4) -> list:
     """
     Concurrent Crossref waterfall for a list of parsed citations.
     Returns SolrResults in the same order as input.
-    Each thread owns its own CrossrefLookup so rate-limiting is independent.
+    max_workers=4 keeps total load sane when multiple jobs run concurrently.
+    Each thread owns its own CrossrefLookup; 429s circuit-break the waterfall.
     """
     if not parsed_list:
         return []
