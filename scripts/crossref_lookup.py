@@ -216,7 +216,7 @@ class CrossrefLookup:
     # ── public lookup methods ─────────────────────────────────────────────────
 
     def by_doi(self, doi: str) -> SolrResult:
-        doi_clean = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi.strip(), flags=re.I)
+        doi_clean = re.sub(r'^https?://(?:dx.)?doi.org/', '', doi.strip(), flags=re.I).split('?')[0].split('#')[0].strip()
 
         # 1. Local index
         ldb = _LocalCrossrefDB.get()
