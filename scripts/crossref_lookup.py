@@ -92,19 +92,27 @@ class CrossrefLookup:
     # ── internal HTTP helper ─────────────────────────────────────────────────
 
     def _get(self, url: str, params: Optional[dict] = None) -> Optional[dict]:
-        """GET url with rate-limiting and error handling."""
+        """GET url with rate-limiting, error handling, and one 429 retry."""
         elapsed = time.monotonic() - self._last_req
         if elapsed < self.min_delay:
             time.sleep(self.min_delay - elapsed)
-        try:
-            resp = requests.get(url, params=params or {},
-                                headers=self.headers, timeout=15)
-            self._last_req = time.monotonic()
-            resp.raise_for_status()
-            return resp.json()
-        except Exception as e:
-            print(f"    [crossref] request failed: {e}")
-            return None
+        for attempt in range(2):
+            try:
+                resp = requests.get(url, params=params or {},
+                                    headers=self.headers, timeout=15)
+                self._last_req = time.monotonic()
+                if resp.status_code == 429 and attempt == 0:
+                    time.sleep(1.0)
+                    continue
+                resp.raise_for_status()
+                return resp.json()
+            except Exception as e:
+                if attempt == 0 and "429" in str(e):
+                    time.sleep(1.0)
+                    continue
+                print(f"    [crossref] request failed: {e}")
+                return None
+        return None
 
     # ── public lookup methods ────────────────────────────────────────────────
 
@@ -251,3 +259,35 @@ if __name__ == "__main__":
         # A book — should not be in Crossref normally
         r3 = cr.by_title("Manual for the Beck Depression Inventory-II", year=1996)
         print(f"\nBook lookup:  found={r3.found}  method={r3.method}")
+
+
+# ── concurrent batch lookup ──────────────────────────────────────────────────
+
+import threading
+from concurrent.futures import ThreadPoolExecutor
+
+_thread_local = threading.local()
+
+
+def _thread_crossref() -> "CrossrefLookup":
+    """Get (or lazily create) a per-thread CrossrefLookup instance (polite pool)."""
+    if not hasattr(_thread_local, "lookup"):
+        _thread_local.lookup = CrossrefLookup(email="rwang@insilicom.com")
+    return _thread_local.lookup
+
+
+def batch_crossref(parsed_list: list, max_workers: int = 10) -> list:
+    """
+    Concurrent Crossref waterfall for a list of parsed citations.
+    Returns SolrResults in the same order as input.
+    Each thread owns its own CrossrefLookup so rate-limiting is independent.
+    """
+    if not parsed_list:
+        return []
+
+    def _lookup(parsed):
+        return _thread_crossref().by_citation(parsed)
+
+    n = min(max_workers, len(parsed_list))
+    with ThreadPoolExecutor(max_workers=n) as pool:
+        return list(pool.map(_lookup, parsed_list))

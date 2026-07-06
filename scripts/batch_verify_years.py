@@ -194,20 +194,25 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         for j, r in enumerate(batch_out):
             if r.found: results[titled[j]] = r
 
-    # Phase 3: individual fallback + Crossref
+    # Phase 3: individual Solr fallback, then concurrent Crossref burst
     for i in [i for i in range(n) if results[i] is None]:
-        ref = refs[i]
-        r = solr.by_citation(ref)
+        r = solr.by_citation(refs[i])
         if r.found:
             results[i] = r
-            continue
-        if ref.doi or ref.title:
-            try:
-                from crossref_lookup import CrossrefLookup
-                r = CrossrefLookup().by_citation(ref)
-                if r.found: results[i] = r
-            except Exception:
-                pass
+
+    crossref_idx = [
+        i for i in range(n)
+        if results[i] is None and (refs[i].doi or refs[i].title)
+    ]
+    if crossref_idx:
+        try:
+            from crossref_lookup import batch_crossref
+            xr_results = batch_crossref([refs[i] for i in crossref_idx], max_workers=10)
+            for i, r in zip(crossref_idx, xr_results):
+                if r.found:
+                    results[i] = r
+        except Exception as exc:
+            print(f"    [crossref-batch] failed: {exc}")
 
     # Phase 4: vector
     vec_found = vec_total = 0
