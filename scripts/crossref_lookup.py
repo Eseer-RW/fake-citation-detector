@@ -260,8 +260,13 @@ class CrossrefLookup:
                             record=_row_to_record(row),
                             confidence=round(sim, 4),
                         )
+            else:
+                # Title absent from 179M-record local dump → gray literature,
+                # news articles, reports, or datasets with no Crossref DOI.
+                # Skip the API call to avoid burning rate-limit quota on misses.
+                return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
-        # 2. API fallback
+        # 2. API fallback (only when local index is unavailable or title_norm empty)
         params: dict = {
             "query.title": title,
             "rows": candidates,
