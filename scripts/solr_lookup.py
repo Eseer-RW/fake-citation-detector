@@ -64,7 +64,7 @@ def _get_title(doc: dict) -> Optional[str]:
     return None
 
 
-def _solr_get(params: dict, timeout: int = 30) -> dict:
+def _solr_get(params: dict, timeout: int = 8) -> dict:
     """Fire a GET request to Solr and return the parsed JSON response."""
     # Always disable facets — the collection has expensive default facets
     params.setdefault("facet", "false")
