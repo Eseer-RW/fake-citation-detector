@@ -198,7 +198,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     # Phase 3: concurrent Solr individual fallback, then concurrent Crossref burst
     phase3_idx = [i for i in range(n) if results[i] is None]
     if phase3_idx:
-        with ThreadPoolExecutor(max_workers=min(10, len(phase3_idx))) as pool:
+        with ThreadPoolExecutor(max_workers=min(4, len(phase3_idx))) as pool:
             p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
         for i, r in zip(phase3_idx, p3_sol):
             if r.found:
@@ -211,7 +211,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     if crossref_idx:
         try:
             from crossref_lookup import batch_crossref
-            xr_results = batch_crossref([refs[i] for i in crossref_idx], max_workers=10)
+            xr_results = batch_crossref([refs[i] for i in crossref_idx])
             for i, r in zip(crossref_idx, xr_results):
                 if r.found:
                     results[i] = r
@@ -250,7 +250,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
 
 # ── Main loop ────────────────────────────────────────────────────────────────
 
-def run_pipeline(manifest_path: str, out_path: str, no_vector: bool = False):
+def run_pipeline(manifest_path: str, out_path: str, no_vector: bool = False, workers: int = 1):
     manifest = [json.loads(l) for l in pathlib.Path(manifest_path).open()]
     out_file  = pathlib.Path(out_path)
     done_dois = set()
@@ -276,65 +276,56 @@ def run_pipeline(manifest_path: str, out_path: str, no_vector: bool = False):
     DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
     total = len(manifest)
+    pending = [(idx, p) for idx, p in enumerate(manifest, 1)
+               if p["doi"] not in done_dois]
+
+    def _process_paper(args):
+        idx, paper = args
+        doi   = paper["doi"]
+        url   = paper["oa_url"]
+        field = paper["field"]
+        year  = paper["year"]
+
+        print(f"[{idx}/{total}] {paper['journal_name']} {year}  {doi[:50]}", flush=True)
+
+        safe_doi = doi.replace("/", "_").replace(".", "_")
+        dest = DOWNLOAD_DIR / field / str(year) / safe_doi
+        dest.parent.mkdir(parents=True, exist_ok=True)
+
+        pdf_path = download_pdf(doi, url, dest)
+        if pdf_path is None:
+            print(f"  ✗ download failed")
+            return {**paper, "status": "download_failed", "total": 0, "found": 0, "not_found": 0}
+
+        if pdf_path.suffix != ".pdf":
+            print(f"  ✗ not a PDF ({pdf_path.suffix}) — skipping GROBID")
+            return {**paper, "status": "not_pdf", "total": 0, "found": 0, "not_found": 0}
+
+        tei = grobid_process(pdf_path)
+        if not tei:
+            print(f"  ✗ GROBID failed")
+            return {**paper, "status": "grobid_failed", "total": 0, "found": 0, "not_found": 0}
+
+        refs = parse_tei_refs(tei)
+        if not refs:
+            print(f"  ✗ no references extracted")
+            return {**paper, "status": "no_refs", "total": 0, "found": 0, "not_found": 0}
+
+        counts = verify_refs(refs, solr, vector_lookup)
+        pct = 100 * counts["found"] / counts["total"] if counts["total"] else 0
+        print(f"  ✓ {counts['total']} refs  found={counts['found']} ({pct:.0f}%)  "
+              f"not_found={counts['not_found']}")
+        return {**paper, "status": "ok", **counts}
+
     with out_file.open("a") as out_fh:
-        for idx, paper in enumerate(manifest, 1):
-            doi = paper["doi"]
-            if doi in done_dois:
-                continue
-
-            journal = paper["journal_name"]
-            year    = paper["year"]
-            field   = paper["field"]
-            url     = paper["oa_url"]
-
-            print(f"[{idx}/{total}] {journal} {year}  {doi[:50]}", flush=True)
-
-            # Download
-            safe_doi = doi.replace("/", "_").replace(".", "_")
-            dest = DOWNLOAD_DIR / field / str(year) / safe_doi
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            pdf_path = download_pdf(doi, url, dest)
-            if pdf_path is None:
-                print(f"  ✗ download failed")
-                row = {**paper, "status": "download_failed",
-                       "total": 0, "found": 0, "not_found": 0}
+        if workers == 1:
+            for args in pending:
+                row = _process_paper(args)
                 out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
-                continue
-
-            # GROBID
-            if pdf_path.suffix != ".pdf":
-                print(f"  ✗ not a PDF ({pdf_path.suffix}) — skipping GROBID")
-                row = {**paper, "status": "not_pdf",
-                       "total": 0, "found": 0, "not_found": 0}
-                out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
-                continue
-
-            tei = grobid_process(pdf_path)
-            if not tei:
-                print(f"  ✗ GROBID failed")
-                row = {**paper, "status": "grobid_failed",
-                       "total": 0, "found": 0, "not_found": 0}
-                out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
-                continue
-
-            refs = parse_tei_refs(tei)
-            if not refs:
-                print(f"  ✗ no references extracted")
-                row = {**paper, "status": "no_refs",
-                       "total": 0, "found": 0, "not_found": 0}
-                out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
-                continue
-
-            # Verify
-            counts = verify_refs(refs, solr, vector_lookup)
-            pct = 100 * counts["found"] / counts["total"] if counts["total"] else 0
-            print(f"  ✓ {counts['total']} refs  found={counts['found']} ({pct:.0f}%)  "
-                  f"not_found={counts['not_found']}")
-
-            row = {**paper, "status": "ok", **counts}
-            out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
-
-            time.sleep(0.5)
+        else:
+            with ThreadPoolExecutor(max_workers=workers) as pool:
+                for row in pool.map(_process_paper, pending):
+                    out_fh.write(json.dumps(row) + "\n"); out_fh.flush()
 
 
 # ── Summarise ────────────────────────────────────────────────────────────────
@@ -412,6 +403,8 @@ def main():
                     help="JSONL manifest from sample_papers.py")
     ap.add_argument("--out",        default="cross_year_results.jsonl")
     ap.add_argument("--no-vector",  action="store_true")
+    ap.add_argument("--workers",   type=int, default=1,
+                    help="Papers to process concurrently (default 1)")
     ap.add_argument("--summarise",  metavar="RESULTS_JSONL",
                     help="Skip download/verify; just print summary table from existing results.")
     args = ap.parse_args()
@@ -424,7 +417,7 @@ def main():
         ap.print_help()
         sys.exit(1)
 
-    run_pipeline(args.manifest, args.out, no_vector=args.no_vector)
+    run_pipeline(args.manifest, args.out, no_vector=args.no_vector), workers=args.workers)
     print("\nDone. Run with --summarise to print comparison tables.")
 
 
