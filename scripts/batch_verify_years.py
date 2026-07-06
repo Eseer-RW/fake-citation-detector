@@ -211,7 +211,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     # Phase 3: Solr individual for citations local Crossref missed (much smaller set now)
     phase3_idx = [i for i in range(n) if results[i] is None]
     if phase3_idx:
-        with ThreadPoolExecutor(max_workers=min(2, len(phase3_idx))) as pool:
+        with ThreadPoolExecutor(max_workers=1) as pool:
             p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
         for i, r in zip(phase3_idx, p3_sol):
             if r.found:
