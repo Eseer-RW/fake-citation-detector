@@ -88,6 +88,7 @@ class CrossrefLookup:
         self.threshold = similarity_threshold
         self.min_delay = min_delay
         self._last_req = 0.0
+        self._net_error = False   # set True on timeout/5xx; by_citation checks this
 
     # ── internal HTTP helper ─────────────────────────────────────────────────
 
@@ -99,17 +100,22 @@ class CrossrefLookup:
         for attempt in range(2):
             try:
                 resp = requests.get(url, params=params or {},
-                                    headers=self.headers, timeout=15)
+                                    headers=self.headers, timeout=8)
                 self._last_req = time.monotonic()
                 if resp.status_code == 429 and attempt == 0:
                     time.sleep(1.0)
                     continue
                 resp.raise_for_status()
+                self._net_error = False
                 return resp.json()
             except Exception as e:
                 if attempt == 0 and "429" in str(e):
                     time.sleep(1.0)
                     continue
+                # Flag network errors (timeouts, 5xx) — not 404 "not found"
+                msg = str(e)
+                if "timed out" in msg.lower() or "timeout" in msg.lower() or "500" in msg:
+                    self._net_error = True
                 print(f"    [crossref] request failed: {e}")
                 return None
         return None
@@ -192,26 +198,33 @@ class CrossrefLookup:
     def by_citation(self, parsed) -> SolrResult:
         """
         Full waterfall: DOI → title+year → title only → title variants.
-        Same strategy as SolrLookup.by_citation.
+        Circuit-breaks on timeout/5xx so one stuck ref doesn't double the wait.
         """
         doi   = getattr(parsed, 'doi',   None)
         title = getattr(parsed, 'title', None)
         year  = getattr(parsed, 'year',  None)
+        self._net_error = False   # reset per-citation
 
         if doi:
             r = self.by_doi(doi)
             if r.found:
                 return r
+            if self._net_error:
+                return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
         if title and year:
             r = self.by_title(title, year=year)
             if r.found:
                 return r
+            if self._net_error:
+                return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
         if title:
             r = self.by_title(title)
             if r.found:
                 return r
+            if self._net_error:
+                return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
         if title:
             for variant in self._title_variants(title):
@@ -219,9 +232,13 @@ class CrossrefLookup:
                     r = self.by_title(variant, year=year)
                     if r.found:
                         return r
+                    if self._net_error:
+                        return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
                 r = self.by_title(variant)
                 if r.found:
                     return r
+                if self._net_error:
+                    return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
         return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 

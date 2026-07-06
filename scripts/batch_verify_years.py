@@ -27,6 +27,7 @@ import sys
 import time
 import types
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from typing import Optional
 
 import numpy as np
@@ -194,11 +195,14 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         for j, r in enumerate(batch_out):
             if r.found: results[titled[j]] = r
 
-    # Phase 3: individual Solr fallback, then concurrent Crossref burst
-    for i in [i for i in range(n) if results[i] is None]:
-        r = solr.by_citation(refs[i])
-        if r.found:
-            results[i] = r
+    # Phase 3: concurrent Solr individual fallback, then concurrent Crossref burst
+    phase3_idx = [i for i in range(n) if results[i] is None]
+    if phase3_idx:
+        with ThreadPoolExecutor(max_workers=min(10, len(phase3_idx))) as pool:
+            p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
+        for i, r in zip(phase3_idx, p3_sol):
+            if r.found:
+                results[i] = r
 
     crossref_idx = [
         i for i in range(n)
