@@ -195,28 +195,27 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         for j, r in enumerate(batch_out):
             if r.found: results[titled[j]] = r
 
-    # Phase 3: concurrent Solr individual fallback, then concurrent Crossref burst
-    phase3_idx = [i for i in range(n) if results[i] is None]
-    if phase3_idx:
-        with ThreadPoolExecutor(max_workers=min(4, len(phase3_idx))) as pool:
-            p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
-        for i, r in zip(phase3_idx, p3_sol):
-            if r.found:
-                results[i] = r
-
-    crossref_idx = [
-        i for i in range(n)
-        if results[i] is None and (refs[i].doi or refs[i].title)
-    ]
-    if crossref_idx:
+    # Phase 2.5: local Crossref index first (179M records, SQLite, no Solr load)
+    # batch_crossref tries local DB (DOI then title) before falling back to API
+    local_idx = [i for i in range(n) if results[i] is None and (refs[i].doi or refs[i].title)]
+    if local_idx:
         try:
             from crossref_lookup import batch_crossref
-            xr_results = batch_crossref([refs[i] for i in crossref_idx])
-            for i, r in zip(crossref_idx, xr_results):
+            xr_results = batch_crossref([refs[i] for i in local_idx])
+            for i, r in zip(local_idx, xr_results):
                 if r.found:
                     results[i] = r
         except Exception as exc:
             print(f"    [crossref-batch] failed: {exc}")
+
+    # Phase 3: Solr individual for citations local Crossref missed (much smaller set now)
+    phase3_idx = [i for i in range(n) if results[i] is None]
+    if phase3_idx:
+        with ThreadPoolExecutor(max_workers=min(2, len(phase3_idx))) as pool:
+            p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
+        for i, r in zip(phase3_idx, p3_sol):
+            if r.found:
+                results[i] = r
 
     # Phase 4: vector
     vec_found = vec_total = 0
@@ -417,7 +416,7 @@ def main():
         ap.print_help()
         sys.exit(1)
 
-    run_pipeline(args.manifest, args.out, no_vector=args.no_vector), workers=args.workers)
+    run_pipeline(args.manifest, args.out, no_vector=args.no_vector, workers=args.workers)
     print("\nDone. Run with --summarise to print comparison tables.")
 
 
