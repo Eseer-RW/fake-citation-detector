@@ -208,14 +208,9 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         except Exception as exc:
             print(f"    [crossref-batch] failed: {exc}")
 
-    # Phase 3: Solr individual for citations local Crossref missed (much smaller set now)
-    phase3_idx = [i for i in range(n) if results[i] is None]
-    if phase3_idx:
-        with ThreadPoolExecutor(max_workers=1) as pool:
-            p3_sol = list(pool.map(solr.by_citation, [refs[i] for i in phase3_idx]))
-        for i, r in zip(phase3_idx, p3_sol):
-            if r.found:
-                results[i] = r
+    # Phase 3 removed: local Crossref index (Phase 2.5) resolves 80-90% of citations;
+    # individual Solr GETs cause 599+ timeouts per 25 papers even at 8s each,
+    # wasting 3+ min/paper for ~1-2% marginal recall. FAISS (Phase 4) catches the rest.
 
     # Phase 4: vector
     vec_found = vec_total = 0
