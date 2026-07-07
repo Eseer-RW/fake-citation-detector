@@ -121,6 +121,7 @@ class SolrLookup:
         params = {
             "q": f'doi:"{doi}"',
             "defType": "lucene",
+            "fq": "publication_year:[* TO *]",   # override handler default (2000+)
             "fl": "id,title,doi,publication_year,cited_by_count,type",
             "rows": "1",
             "wt": "json",
@@ -150,7 +151,7 @@ class SolrLookup:
         if year:
             params["fq"] = f"publication_year:[{year - 1} TO {year + 1}]"
         else:
-            params["fq"] = ""      # include all years
+            params["fq"] = "publication_year:[* TO *]"   # override handler default (2000+)
 
         try:
             data = _solr_get(params)
@@ -251,6 +252,7 @@ class SolrLookup:
             params = {
                 "q":       q,
                 "defType": "lucene",
+                "fq":      "publication_year:[* TO *]",   # override handler default (2000+)
                 "fl":      "id,title,doi,publication_year,primary_location",
                 "rows":    str(rows),
                 "wt":      "json",
