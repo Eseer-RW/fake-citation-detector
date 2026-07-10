@@ -41,6 +41,8 @@ class MatchMethod(str, Enum):
     XREF_TITLE_ONLY = "xref_title_only"
     # Vector re-ranking fallback (Phase 4: semantic similarity via sentence-transformers)
     VECTOR          = "vector"
+    # Exact bibliographic metadata match: journal + year + volume + page + author
+    META_MATCH      = "meta_match"
 
 
 @dataclass

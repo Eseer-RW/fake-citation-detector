@@ -14,3 +14,16 @@ grobid/**/out/
 
 # Runtime logs
 *.log
+
+# Editing backups (created during in-place edits)
+*.bak
+*.bak_*
+*.py.bak*
+*.md.bak*
+
+# Large local data / index artifacts (not for GitHub)
+index/
+grobid/**/tei_diverse/
+grobid/**/tei_diverse_flat/
+grobid/**/out_diverse/
+eval/mismatch_injection/

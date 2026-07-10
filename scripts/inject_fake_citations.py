@@ -190,12 +190,16 @@ def inject_mismatches(
     out_dir.mkdir(parents=True, exist_ok=True)
     citations = json.loads(json_path.read_text())
 
-    # Require a distinctive title (≥30 chars) so title-only Solr lookup can find it.
-    # Require year so there is something to shift.
+    # Require a long, well-formed title (≥50 chars, starts uppercase) so:
+    #   - title-only Solr lookup can find it after the year shift breaks title+year
+    #   - GROBID sentence fragments (lowercase start) are excluded
+    # Require a plausible 4-digit year so there is something meaningful to shift.
     candidates = [
         (i, c) for i, c in enumerate(citations)
-        if len((c.get("title") or "").strip()) >= 30
-        and c.get("year") not in (None, "", "—")
+        if len((c.get("title") or "").strip()) >= 50
+        and (c.get("title") or "")[:1].isupper()
+        and str(c.get("year", "")).strip().isdigit()
+        and 1950 <= int(str(c.get("year", "0")).strip()) <= 2030
     ]
 
     picks = random.sample(candidates, min(per_paper, len(candidates)))

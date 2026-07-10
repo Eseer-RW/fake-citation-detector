@@ -22,7 +22,7 @@ from __future__ import annotations
 import argparse, json, pathlib, random, sys, time
 import requests
 
-EMAIL = "rwang@university.edu"
+EMAIL = "rwang@insilicom.com"
 
 # ── Journals to sample ────────────────────────────────────────────────────────
 JOURNALS = [
@@ -96,13 +96,27 @@ def fetch_sample(journal: dict, year: int, n: int,
             "mailto":   EMAIL,
         }
 
-        try:
-            r = requests.get("https://api.openalex.org/works", params=params, timeout=30)
-            r.raise_for_status()
-            data = r.json()
-            results = data.get("results", [])
-        except Exception as e:
-            print(f"    ⚠  OpenAlex request failed (page {page}): {e}", file=sys.stderr)
+        for attempt in range(5):
+            try:
+                r = requests.get("https://api.openalex.org/works", params=params, timeout=30)
+                if r.status_code == 429:
+                    wait = 2 ** attempt * 10
+                    print(f"    ⏳ 429 rate-limited, waiting {wait}s…", file=sys.stderr)
+                    time.sleep(wait)
+                    continue
+                r.raise_for_status()
+                data = r.json()
+                results = data.get("results", [])
+                break
+            except Exception as e:
+                if attempt == 4:
+                    print(f"    ⚠  OpenAlex request failed (page {page}): {e}", file=sys.stderr)
+                    results = None
+                    break
+                time.sleep(2 ** attempt * 5)
+        else:
+            results = None
+        if results is None:
             break
 
         if not results:

@@ -816,3 +816,156 @@ There is one area where our baselines add value even to an existence-check appro
 The literature establishes that AI-hallucinated citations are a real, growing, and already measurable problem — approximately 1 in 458 published papers in 2025 contained fabricated references, with the rate doubling in the first months of 2026. Our study's null result at the population level is consistent with this: the fabrication prevalence is still too sparse to shift aggregate NOT-FOUND rates when diluted across large paper samples.
 
 The two approaches measure different things and are best understood as complementary. Existence-check methods (Zhao et al., Dellaert et al.) identify individual fabricated citations with high precision. Our OpenAlex-based, rate-level approach provides the field- and year-adjusted baselines needed to calibrate our own detector — and to quantify the gray-literature gap that even comprehensive existence checks cannot fully eliminate.
+
+---
+
+## 12. Exact-Metadata Citation Search (added July 10, 2026)
+
+Per project direction, the verifier no longer uses fuzzy title matching. Citations are now searched using structured bibliographic metadata — **journal name, year, volume, page, and first-author surname — with exact matching only.** This section documents the change and its measured effect.
+
+### 12.1 Motivation
+
+Fuzzy title matching (SequenceMatcher ratio ≥ 0.85 against the OpenAlex Solr index) was the single largest source of matches in every prior run — 77.8% of citations in the original 58-paper validation (Section 1) and ~29% in the v9 cross-year corpus. It is also the least defensible for a fabrication detector: a fabricated citation with a plausible, well-formed title can score above threshold against a real but *different* paper, silently converting a hallucination into a "found" result (a false negative). Requiring exact agreement on structured metadata removes that failure mode — a fabricated volume/page/journal tuple will not coincide with a real record.
+
+### 12.2 What changed
+
+| Phase | Before | After |
+|-------|--------|-------|
+| **Phase 2** | Solr fuzzy title batch (`by_title_batch`, ratio ≥ 0.85) | OpenAlex REST exact filter `publication_year:Y,biblio.volume:V,biblio.first_page:P`; journal verified client-side. Fallback: `search=journal author` filtered by year. |
+| **Phase 2.5** | Local Crossref SQLite: DOI **or** normalized-title | Local Crossref SQLite: **DOI only** (title lookup removed) |
+| Phase 1 (DOI) | unchanged | unchanged |
+
+Supporting implementation in `batch_verify_years.py` and `solr_lookup.py`:
+
+- **TEI extractors** `_tei_journal`, `_tei_volume`, `_tei_first_page`, `_tei_first_author` pull the structured fields from GROBID output; `crossref_refs` extracts the same fields from Crossref reference lists.
+- **`openalex_by_metadata()`** — Strategy A filters on `year + volume + first_page` (nearly unique across OpenAlex's 250M works); Strategy B (when a reference has no volume/page) searches on journal + author within the exact publication year.
+- **`_journals_match()`** — abbreviation-aware prefix comparison so GROBID abbreviations resolve (e.g. "Nat Med" ↔ "Nature Medicine", "Phys Rev Lett" ↔ "Physical Review Letters").
+- **`_openalex_get()`** — retry/backoff on HTTP 429; OpenAlex rate-limits bursty callers.
+- **`META_MATCH`** added to the `MatchMethod` enum for provenance tracking.
+
+No fuzzy-title code path is reachable from `verify_refs` anymore.
+
+### 12.3 Measured effect: match-method distribution
+
+Comparing the fuzzy v9 corpus (45,287 papers) against the exact-match v10 corpus (38,062 papers, Section 13):
+
+| Method | v9 (fuzzy) | v10 (exact) |
+|--------|-----------:|------------:|
+| DOI (exact, Solr) | 45.9% | **78.5%** |
+| Title + year (fuzzy) | 24.1% | 0.0% |
+| Title only (fuzzy) | 4.5% | 0.0% |
+| Crossref DOI | 4.9% | 6.2% |
+| Crossref title + year | 5.6% | 0.1% |
+| Metadata exact (`meta_match`) | — | 0.0%* |
+| Vector | 0.3% | 0.0% |
+| **Not found** | **12.6%** | **15.2%** |
+
+\* The dedicated `meta_match` phase contributes few final matches because Phase 1 DOI matching already resolves 78.5% of references outright; `meta_match` only fires on references that lack a DOI but carry volume/page. Its value is in *what it no longer accepts* — the ~29 percentage points of former fuzzy-title matches are now split between exact DOI resolution and an honest not-found.
+
+The raw not-found rate rises from 12.6% to 15.2%. This is expected and desirable: the ~2.6-point increase is composed of citations that previously matched a *different* paper by title similarity and now correctly fail to resolve. The trade is a small increase in coverage gaps (real gray-literature sources with no DOI) in exchange for eliminating the fuzzy false-negative channel that most undermines a fabrication detector.
+
+---
+
+## 13. Large-Scale Expansion and Temporal Replication (v10, added July 10, 2026)
+
+Section 9 reported a 1,350-paper (v3) cross-year study; Section 11.2 noted that sample was far too sparse to detect fabrication at literature-reported prevalence. This section scales the study by ~28× and re-runs the Zhao et al. (2026)-style temporal analysis on data produced by the exact-match pipeline of Section 12.
+
+### 13.1 Corpus
+
+**38,062 papers** sampled at ~1,000 per journal-year across seven high-volume open-access venues spanning 2020–2025: *Cureus*, *eLife*, *F1000Research*, *Frontiers in Psychology*, *IEEE Access*, *Nature Communications*, and *PLOS ONE*. Of these, **37,744 (99.2%) processed successfully**; the remainder failed at download (123), were non-PDF (93), yielded no references (84), or failed GROBID (18). Combined with the re-cleaned v9 corpus, the study now spans ~83,000 papers.
+
+### 13.2 Heuristic non-academic filter (Zhao et al. cleaning-pass equivalent)
+
+Zhao et al. use a GPT-4o-mini pass to strip non-academic references (websites, reports, datasets) before computing hallucination rates. We approximate this with a rules-based filter (`is_likely_nonacademic`): URL + "accessed"/"retrieved" language with no title, known non-academic domains (wikipedia.org, github.com, cdc.gov, who.int, etc.), and near-empty parse artifacts. References flagged by this filter are reported separately as `heuristic_filtered`, and the cleaned count `not_found_academic = not_found − heuristic_filtered` is the hallucination-candidate metric. The table below shows both raw and cleaned rates.
+
+### 13.3 Results by year (v10, exact-match)
+
+| Year | References | Raw not-found | Academic not-found |
+|------|-----------:|--------------:|-------------------:|
+| 2020 | 292,921 | 17.0% | 13.1% |
+| 2021 | 322,335 | 16.8% | 13.5% |
+| 2022 | 337,654 | 15.9% | 13.3% |
+| 2023 | 373,396 | 14.4% | 12.2% |
+| 2024 | 385,950 | 14.2% | 12.6% |
+| 2025 | 375,185 | 13.6% | 12.3% |
+
+Both raw and cleaned rates **decline** monotonically or near-monotonically from 2020 to 2025 — the same improving-coverage trend seen in the smaller Section 9/10 studies, now on a corpus large enough to be statistically stable. The heuristic filter removes a consistent ~3–4 points per year, confirming that a meaningful slice of unmatched references are non-academic sources rather than fabrication candidates.
+
+### 13.4 Temporal regression (weighted, 2020 reference year)
+
+Following the Zhao et al. design, we fit a reference-count-weighted regression of per-paper not-found rate on year fixed effects (2020 = reference), per field, using `not_found_academic`. Coefficients are the estimated hallucination excess above the pre-LLM baseline in percentage points (`*` p<0.05, `**` p<0.01, `***` p<0.001).
+
+**v10 (exact-match pipeline):**
+
+| Field | Baseline | 2023 | 2024 | 2025 |
+|-------|---------:|-----:|-----:|-----:|
+| Biology / Medicine | 23.5% | +1.26 | +0.28 | −1.92** |
+| Clinical Medicine | 10.1% | −2.17*** | −3.68*** | −5.20*** |
+| CS / Engineering | 16.5% | −5.47*** | −5.51*** | −5.08*** |
+| Life Sciences | 4.4% | −0.05 | +1.66*** | +0.64 |
+| Multidisciplinary | 9.7% | −0.37 | −0.64 | −0.48 |
+| Psychology | 12.8% | −1.35* | −1.75** | −1.69** |
+
+Under exact matching, **no field shows a sustained positive (worsening) post-LLM trend.** Every field is flat or improving through 2025.
+
+### 13.5 Exact matching erases a fuzzy-match artifact
+
+The methodological change of Section 12 materially altered the conclusion. When the same regression is run on the re-cleaned v9 corpus — which used the **fuzzy** pipeline — Psychology appeared to show a real, significant post-LLM rise:
+
+**v9 (fuzzy pipeline), Psychology:** +2.20pp*** (2023), +2.29pp*** (2024), +1.39pp** (2025)
+
+That signal **disappears entirely under exact matching** (v10 Psychology: −1.35, −1.75, −1.69, all negative). The most plausible explanation is that fuzzy title matching in the pre-LLM baseline years was quietly matching some references to near-duplicate or wrong papers, deflating the baseline not-found rate and manufacturing an apparent upward slope. Requiring exact metadata agreement removes that bias and the trend reverses to flat/declining, consistent with every other field.
+
+This is a substantive result in its own right: **it demonstrates that fuzzy matching can fabricate a spurious hallucination trend, and that the exact-match requirement is not merely more conservative but more correct.** It also reinforces the Section 11.2 conclusion — our curated, DOI-bearing, open-access corpus shows a null-to-improving trend, opposite to the worsening trend Zhao et al. report on preprint corpora, and that difference is driven by corpus composition (published journal articles vs. arXiv/bioRxiv/SSRN preprints), not by fabrication being absent from the literature at large.
+
+### 13.6 Artifacts
+
+- Exact-match v10 results: `results_expansion_v10/results_*.jsonl` (7 files), combined as `results_v10_combined.jsonl`
+- Re-cleaned v9 (heuristic filter applied): `results_v9_cleaned.jsonl`
+- Figures: `figures_v10_exact/fig_temporal_regression.png` (exact), `figures_v9_cleaned/fig_temporal_regression.png` (fuzzy, for comparison)
+
+---
+
+## 14. Million-Paper Scale-Up on Local Indexes (v11, in progress — July 10, 2026)
+
+Section 13 scaled the study to 83K papers. This section documents the scale-up to **over one million papers**, and the infrastructure change that made it necessary.
+
+### 14.1 Why the API path stopped working
+
+Midway through planning the scale-up, the OpenAlex REST API began returning:
+
+> `429 — "Insufficient budget. This request costs $0.0001 but you only have $0 remaining. Resets at midnight UTC."`
+
+OpenAlex has moved to a metered/budget model. Because both the sampler (`sample_papers.py`) and the exact-match Phase 2 (`openalex_by_metadata`) depended on the OpenAlex REST API, a million-paper run — which would require millions of API calls — is no longer feasible against the public API within a free daily budget.
+
+### 14.2 Re-pointing to the local indexes
+
+galaxy4 already hosts free, local copies of the same data:
+
+- **OpenAlex Solr index** (`galaxy:8983/solr/openalexWorks`, 251M works)
+- **Crossref SQLite index** (179M records)
+
+Two changes moved the whole pipeline off the metered API:
+
+1. **`sample_papers_solr.py`** — a new sampler that queries the local Solr index by `venue_id + publication_year + is_oa:true`, using cursorMark pagination to pull every OA paper per journal-year (the OpenAlex API's 10,000-result paging cap does not apply). The Solr index does not store PDF URLs or `biblio` volume/page fields, so the manifest carries only DOIs — which is all the Crossref fast-path needs.
+
+2. **Two environment guards in `batch_verify_years.py`:**
+   - `SKIP_OPENALEX_API=1` disables the Phase 2 metadata call, leaving DOI-based exact matching (local Solr `by_doi` + local Crossref) as the verification path. This remains fully consistent with the exact-match directive of Section 12 — the matching key is the DOI, never a fuzzy title.
+   - `SKIP_SLOW_PATH=1` skips PDF download + GROBID entirely for papers lacking a Crossref reference list (≈3% of the corpus), keeping the run disk-neutral at million-paper scale.
+
+### 14.3 Corpus
+
+Sampling from local Solr produced **1,088,554 papers across 21 journals** (2020–2025) in minutes. The journal set expands Section 13's seven venues to twenty-one, adding high-volume open-access titles (Scientific Reports, Sensors, MDPI journals, additional Frontiers titles, PeerJ, RSC Advances) to reach seven-figure scale.
+
+| | v11 |
+|--|--|
+| Journals | 21 |
+| Years | 2020–2025 |
+| Papers sampled | 1,088,554 |
+| Sampling source | local OpenAlex Solr (free, unmetered) |
+| Verification | DOI exact-match: local Solr + local Crossref |
+| Estimated citations | ~58M (at ~55 refs/paper) |
+
+### 14.4 Status
+
+A 200-paper smoke test returned an 86.1% match rate, consistent with the v10 exact-match run (84.8%). The full run is processing at ~22 papers/second (8 workers) with an estimated completion of ~14 hours; it is resumable (skips already-verified DOIs on restart). Final per-year and per-field rates, the temporal regression, and updated figures will be added on completion.

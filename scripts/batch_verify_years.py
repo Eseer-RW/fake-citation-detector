@@ -34,10 +34,14 @@ import numpy as np
 import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
-GROBID_URL     = "http://localhost:8070/api/processFulltextDocument"
-DOWNLOAD_DIR   = pathlib.Path("/home/rwang/cross_year_study/pdfs")
-GROBID_TIMEOUT = 120
+GROBID_URL       = "http://localhost:8070/api/processFulltextDocument"
+DOWNLOAD_DIR     = pathlib.Path("/home/rwang/cross_year_study/pdfs")
+GROBID_TIMEOUT   = 120
 DOWNLOAD_TIMEOUT = 60
+CROSSREF_API     = "https://api.crossref.org/works"
+CROSSREF_EMAIL   = "rwang@insilicom.com"
+CROSSREF_TIMEOUT = 15
+OPENALEX_API     = "https://api.openalex.org/works"
 
 _NS = {"tei": "http://www.tei-c.org/ns/1.0"}
 _DOI_RE  = re.compile(r'(?:https?://(?:dx\.)?doi\.org/|doi:\s*)?(10\.\d{4,}/[^\s,;)\]>]+)', re.I)
@@ -82,6 +86,34 @@ def _tei_title(ref):
             return t
     return None
 
+
+def _tei_journal(ref):
+    """Extract journal name from monogr > title[@level='j']."""
+    t = _tei_text(ref, ".//tei:monogr/tei:title[@level='j']")
+    return t if t and len(t) > 2 else None
+
+def _tei_volume(ref):
+    """Extract volume number."""
+    vol = ref.find(".//tei:monogr/tei:imprint/tei:biblScope[@unit='volume']", _NS)
+    return (vol.text or "").strip() or None if vol is not None else None
+
+def _tei_first_page(ref):
+    """Extract first page from @from attribute or element text."""
+    page = ref.find(".//tei:monogr/tei:imprint/tei:biblScope[@unit='page']", _NS)
+    if page is not None:
+        fp = page.get("from") or (page.text or "").strip()
+        return fp.replace("–", "-").split("-")[0].strip() or None
+    return None
+
+def _tei_first_author(ref):
+    """Extract first author's last name."""
+    for xpath in (".//tei:analytic/tei:author/tei:persName/tei:surname",
+                  ".//tei:monogr/tei:author/tei:persName/tei:surname"):
+        s = _tei_text(ref, xpath)
+        if s:
+            return s
+    return None
+
 def parse_tei_refs(tei_xml: str) -> list:
     try:
         root = ET.fromstring(tei_xml)
@@ -92,9 +124,13 @@ def parse_tei_refs(tei_xml: str) -> list:
         obj = types.SimpleNamespace()
         raw_note = bib.find(".//tei:note[@type='raw_reference']", _NS)
         obj.raw   = raw_note.text.strip() if raw_note is not None and raw_note.text else ""
-        obj.doi   = _tei_doi(bib)
-        obj.year  = _tei_year(bib)
-        obj.title = _tei_title(bib)
+        obj.doi          = _tei_doi(bib)
+        obj.year         = _tei_year(bib)
+        obj.title        = _tei_title(bib)
+        obj.journal      = _tei_journal(bib)
+        obj.volume       = _tei_volume(bib)
+        obj.first_page   = _tei_first_page(bib)
+        obj.first_author = _tei_first_author(bib)
         if not obj.doi and obj.raw:
             m = _DOI_RE.search(obj.raw)
             if m: obj.doi = m.group(1).rstrip(".,;)").lower()
@@ -153,6 +189,63 @@ def download_pdf(doi: str, url: str, dest: pathlib.Path) -> Optional[pathlib.Pat
     return None
 
 
+# ── Crossref reference-list fetch (fast path — replaces GROBID when available) ─
+
+def crossref_refs(doi: str) -> list | None:
+    """Fetch the source paper's reference list from Crossref.
+
+    Returns a list of SimpleNamespace(doi, title, year, raw) — same shape
+    as parse_tei_refs() — or None if Crossref has no reference list for this DOI.
+    """
+    try:
+        r = requests.get(
+            f"{CROSSREF_API}/{doi}",
+            params={"mailto": CROSSREF_EMAIL},
+            timeout=CROSSREF_TIMEOUT,
+        )
+        if r.status_code != 200:
+            return None
+        raw_refs = r.json().get("message", {}).get("reference", [])
+        if not raw_refs:
+            return None
+
+        refs = []
+        for ref in raw_refs:
+            obj = types.SimpleNamespace()
+            # DOI
+            doi_raw = (ref.get("DOI") or "").strip().lower()
+            doi_raw = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi_raw)
+            obj.doi = doi_raw.rstrip(".,;)") or None
+            # Raw string
+            obj.raw = ref.get("unstructured", "")
+            # Extract DOI from unstructured if structured field missing
+            if not obj.doi and obj.raw:
+                m = _DOI_RE.search(obj.raw)
+                if m:
+                    obj.doi = m.group(1).rstrip(".,;)").lower()
+            # Title
+            title = ref.get("article-title") or ref.get("volume-title") or ""
+            obj.title = title.strip() or None
+            # Year
+            obj.year = None
+            year_str = str(ref.get("year", ""))
+            m = _YEAR_RE.search(year_str)
+            if m:
+                obj.year = int(m.group(1))
+            # Bibliographic metadata for exact-match search (Phase 2)
+            obj.journal    = (ref.get("journal-title") or "").strip() or None
+            obj.volume     = str(ref.get("volume", "") or "").strip() or None
+            _fp_raw        = str(ref.get("first-page", "") or ref.get("page", "") or "")
+            obj.first_page = _fp_raw.split("-")[0].strip() or None
+            _auth_raw      = ref.get("author", "") or ""
+            obj.first_author = _auth_raw.split(",")[0].strip() or None
+            refs.append(obj)
+
+        return refs or None
+    except Exception:
+        return None
+
+
 # ── GROBID ───────────────────────────────────────────────────────────────────
 
 def grobid_process(pdf_path: pathlib.Path) -> Optional[str]:
@@ -174,6 +267,170 @@ def grobid_process(pdf_path: pathlib.Path) -> Optional[str]:
 
 # ── Verification ─────────────────────────────────────────────────────────────
 
+# ── Heuristic non-academic reference filter ───────────────────────────────────
+# Implements the equivalent of Zhao et al.'s (2026) GPT-4o-mini cleaning pass
+# using rule-based patterns.  These patterns identify non-academic sources
+# (websites, reports, gray literature) that cause false positives in the
+# unmatched-citation count.
+
+_H_URL_RE = re.compile(r'https?://\S{10,}', re.I)
+_H_ACCESS_RE = re.compile(
+    r'\b(accessed|retrieved|last\s+visited|last\s+access|available\s+at'
+    r'|available\s+from|online\s+at|available\s+online)\b',
+    re.I,
+)
+_H_NONACAD_RE = re.compile(
+    r'\b(wikipedia\.org|github\.com|github\.io|stackoverflow\.com'
+    r'|medium\.com|twitter\.com|youtube\.com|reddit\.com'
+    r'|cdc\.gov|who\.int|fda\.gov|cms\.gov|hhs\.gov'
+    r'|ourworldindata\.org|statista\.com)\b',
+    re.I,
+)
+
+
+def is_likely_nonacademic(ref) -> bool:
+    """Return True if this unmatched reference is likely a non-academic source.
+
+    Conservative: only fires on clear, unambiguous signals so that genuine
+    academic references with URLs (e.g. arXiv links) pass through if they
+    carry a DOI or a GROBID-extracted title.
+    """
+    if ref.doi:        # DOI-bearing refs are always academic
+        return False
+    raw = ref.raw or ""
+    if _H_URL_RE.search(raw) and _H_ACCESS_RE.search(raw) and not ref.title:   # "accessed" + URL, no title
+        return True
+    if _H_NONACAD_RE.search(raw):                             # known non-academic site
+        return True
+    if _H_ACCESS_RE.search(raw) and not ref.title:            # "available at" with no title
+        return True
+    if len(raw.strip()) < 15 and not ref.title:               # near-empty parse artifact
+        return True
+    return False
+
+
+
+def _journals_match(query: str, result: str) -> bool:
+    """Return True if query and result journal names likely refer to the same journal.
+
+    Handles common GROBID abbreviations via prefix matching:
+      "Nat" matches "Nature"; "Med" matches "Medicine"; "Phys" matches "Physics".
+    If either side is empty, returns True (don't reject on missing data).
+    """
+    if not query or not result:
+        return True
+    import re as _re
+    def _words(s):
+        return [w for w in _re.sub(r'[^\w]', ' ', s.lower()).split() if len(w) >= 3]
+    qwords = _words(query)
+    rwords = _words(result)
+    if not qwords or not rwords:
+        return True
+    # prefix match: "nat" matches "nature", "med" matches "medicine"
+    for qw in qwords:
+        for rw in rwords:
+            if rw.startswith(qw) or qw.startswith(rw):
+                return True
+    return False
+
+
+def _openalex_get(params: dict, headers: dict, max_retries: int = 3) -> list:
+    """GET OpenAlex /works with automatic retry on 429 (rate-limit) responses."""
+    import time as _time
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(
+                OPENALEX_API, params=params, headers=headers,
+                timeout=CROSSREF_TIMEOUT,
+            )
+            if resp.status_code == 200:
+                return resp.json().get("results", [])
+            if resp.status_code == 429:
+                wait = int(resp.headers.get("Retry-After", 2 * (attempt + 1)))
+                _time.sleep(wait)
+                continue
+        except Exception:
+            pass
+        break
+    return []
+
+
+def openalex_by_metadata(refs: list) -> list:
+    """Phase 2: exact-field citation lookup via OpenAlex API.
+
+    Strategy A (most precise): filter on year + volume + first_page.
+      OpenAlex indexed these as exact integer fields; the combination is nearly
+      unique across 250M works.  Journal name verified client-side.
+
+    Strategy B (fallback when no volume/page): search query on journal+author
+      filtered by year, then verify journal name client-side.
+
+    No fuzzy title matching.  Boss instruction: exact match only.
+    """
+    from solr_lookup import MatchMethod, SolrResult
+    _OA_HEADERS = {"User-Agent": f"FakeCitationDetector/1.0 (mailto:{CROSSREF_EMAIL})"}
+    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+
+    for i, ref in enumerate(refs):
+        journal      = getattr(ref, 'journal',      None)
+        year         = getattr(ref, 'year',         None)
+        volume       = getattr(ref, 'volume',       None)
+        first_page   = getattr(ref, 'first_page',   None)
+        first_author = getattr(ref, 'first_author', None)
+
+        if not year:
+            continue
+
+        matched = False
+
+        # ── Strategy A: exact filter on year + volume + first_page ───────────
+        if volume and first_page and not matched:
+            filt = f"publication_year:{year},biblio.volume:{volume},biblio.first_page:{first_page}"
+            items = _openalex_get(
+                {"filter": filt, "per-page": "10", "mailto": CROSSREF_EMAIL},
+                _OA_HEADERS,
+            )
+            for item in items:
+                item_j = ((item.get("primary_location") or {})
+                          .get("source") or {}).get("display_name", "")
+                if _journals_match(journal, item_j):
+                    results[i] = SolrResult(
+                        found=True, method=MatchMethod.META_MATCH,
+                        record=item, confidence=1.0,
+                    )
+                    matched = True
+                    break
+
+        # ── Strategy B: search by journal + author, filter by year ───────────
+        if not matched and journal:
+            q_parts = [journal]
+            if first_author:
+                q_parts.append(first_author)
+            items = _openalex_get(
+                {"search": " ".join(q_parts),
+                 "filter": f"publication_year:{year}",
+                 "per-page": "5",
+                 "mailto": CROSSREF_EMAIL},
+                _OA_HEADERS,
+            )
+            for item in items:
+                if first_page:
+                    item_fp = (item.get("biblio") or {}).get("first_page", "")
+                    if item_fp and str(item_fp) != str(first_page):
+                        continue
+                item_j = ((item.get("primary_location") or {})
+                          .get("source") or {}).get("display_name", "")
+                if _journals_match(journal, item_j):
+                    results[i] = SolrResult(
+                        found=True, method=MatchMethod.META_MATCH,
+                        record=item, confidence=1.0,
+                    )
+                    matched = True
+                    break
+
+    return results
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     """Run 4-phase verification; return summary counts dict."""
     from solr_lookup import MatchMethod, SolrResult
@@ -187,22 +444,32 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
             r = solr.by_doi(ref.doi)
             if r.found: results[i] = r
 
-    # Phase 2: batch title
-    not_yet = [i for i in range(n) if results[i] is None]
-    titled  = [i for i in not_yet if refs[i].title]
-    if titled:
-        batch_out = solr.by_title_batch([refs[i] for i in titled])
-        for j, r in enumerate(batch_out):
-            if r.found: results[titled[j]] = r
+    # Phase 2: exact bibliographic metadata search (journal+year+volume+page+author)
+    # Boss instruction: no fuzzy title matching; use structured metadata with exact match.
+    not_yet  = [i for i in range(n) if results[i] is None]
+    meta_idx = [i for i in not_yet
+                if getattr(refs[i], 'year', None) and (
+                    getattr(refs[i], 'journal', None) or
+                    (getattr(refs[i], 'volume', None) and getattr(refs[i], 'first_page', None))
+                )]
+    # SKIP_OPENALEX_API=1 disables the metered OpenAlex REST API (Phase 2 metadata
+    # search) for local-only large-scale runs; DOI matching (Solr + local Crossref)
+    # still provides exact, no-fuzzy-title verification.
+    import os as _os
+    if meta_idx and _os.environ.get('SKIP_OPENALEX_API') != '1':
+        meta_out = openalex_by_metadata([refs[i] for i in meta_idx])
+        for j, r in zip(meta_idx, meta_out):
+            if r.found:
+                results[j] = r
 
-    # Phase 2.5: local Crossref index first (179M records, SQLite, no Solr load)
-    # batch_crossref tries local DB (DOI then title) before falling back to API
-    local_idx = [i for i in range(n) if results[i] is None and (refs[i].doi or refs[i].title)]
-    if local_idx:
+    # Phase 2.5: local Crossref SQLite DOI lookup (DOI-only; no title matching)
+    # Boss instruction: no fuzzy title matching — title lookup removed from this phase.
+    doi_idx = [i for i in range(n) if results[i] is None and refs[i].doi]
+    if doi_idx:
         try:
             from crossref_lookup import batch_crossref
-            xr_results = batch_crossref([refs[i] for i in local_idx])
-            for i, r in zip(local_idx, xr_results):
+            xr_results = batch_crossref([refs[i] for i in doi_idx])
+            for i, r in zip(doi_idx, xr_results):
                 if r.found:
                     results[i] = r
         except Exception as exc:
@@ -223,6 +490,14 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                 results[i] = r
                 vec_found += 1
 
+    # Phase 5: Heuristic non-academic filter (Zhao et al. 2026 cleaning step)
+    # Count unmatched refs that are clearly non-academic (websites, reports, etc.).
+    # These are false positives — not hallucinations — so we track them separately.
+    heuristic_filtered = sum(
+        1 for i in range(n)
+        if results[i] is None and is_likely_nonacademic(refs[i])
+    )
+
     not_found_sentinel = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
     final = [results[i] or not_found_sentinel for i in range(n)]
 
@@ -232,13 +507,16 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         k = r.method.value
         by_method[k] = by_method.get(k, 0) + 1
 
+    not_found_count = n - found
     return {
-        "total":      n,
-        "found":      found,
-        "not_found":  n - found,
-        "vec_tried":  vec_total,
-        "vec_found":  vec_found,
-        "by_method":  by_method,
+        "total":               n,
+        "found":               found,
+        "not_found":           not_found_count,
+        "heuristic_filtered":  heuristic_filtered,
+        "not_found_academic":  not_found_count - heuristic_filtered,
+        "vec_tried":           vec_total,
+        "vec_found":           vec_found,
+        "by_method":           by_method,
     }
 
 
@@ -282,34 +560,52 @@ def run_pipeline(manifest_path: str, out_path: str, no_vector: bool = False, wor
 
         print(f"[{idx}/{total}] {paper['journal_name']} {year}  {doi[:50]}", flush=True)
 
-        safe_doi = doi.replace("/", "_").replace(".", "_")
-        dest = DOWNLOAD_DIR / field / str(year) / safe_doi
-        dest.parent.mkdir(parents=True, exist_ok=True)
+        # Fast path: Crossref reference list (~300ms, no PDF needed)
+        refs = crossref_refs(doi)
+        ref_source = "crossref"
 
-        pdf_path = download_pdf(doi, url, dest)
-        if pdf_path is None:
-            print(f"  ✗ download failed")
-            return {**paper, "status": "download_failed", "total": 0, "found": 0, "not_found": 0}
+        if refs is None:
+            # SKIP_SLOW_PATH=1 (or empty oa_url): skip PDF download + GROBID entirely.
+            # Used for local-only large-scale runs where only DOIs are sampled.
+            import os as _os
+            if _os.environ.get('SKIP_SLOW_PATH') == '1' or not url:
+                return {**paper, "status": "skipped_no_refs", "total": 0,
+                        "found": 0, "not_found": 0, "ref_source": "none"}
+            # Slow path: download PDF and run GROBID (~15-20s)
+            ref_source = "grobid"
+            safe_doi = doi.replace("/", "_").replace(".", "_")
+            dest = DOWNLOAD_DIR / field / str(year) / safe_doi
+            dest.parent.mkdir(parents=True, exist_ok=True)
 
-        if pdf_path.suffix != ".pdf":
-            print(f"  ✗ not a PDF ({pdf_path.suffix}) — skipping GROBID")
-            return {**paper, "status": "not_pdf", "total": 0, "found": 0, "not_found": 0}
+            pdf_path = download_pdf(doi, url, dest)
+            if pdf_path is None:
+                print(f"  ✗ download failed")
+                return {**paper, "status": "download_failed", "total": 0, "found": 0,
+                        "not_found": 0, "ref_source": ref_source}
 
-        tei = grobid_process(pdf_path)
-        if not tei:
-            print(f"  ✗ GROBID failed")
-            return {**paper, "status": "grobid_failed", "total": 0, "found": 0, "not_found": 0}
+            if pdf_path.suffix != ".pdf":
+                print(f"  ✗ not a PDF ({pdf_path.suffix}) — skipping GROBID")
+                return {**paper, "status": "not_pdf", "total": 0, "found": 0,
+                        "not_found": 0, "ref_source": ref_source}
 
-        refs = parse_tei_refs(tei)
+            tei = grobid_process(pdf_path)
+            if not tei:
+                print(f"  ✗ GROBID failed")
+                return {**paper, "status": "grobid_failed", "total": 0, "found": 0,
+                        "not_found": 0, "ref_source": ref_source}
+
+            refs = parse_tei_refs(tei)
+
         if not refs:
             print(f"  ✗ no references extracted")
-            return {**paper, "status": "no_refs", "total": 0, "found": 0, "not_found": 0}
+            return {**paper, "status": "no_refs", "total": 0, "found": 0,
+                    "not_found": 0, "ref_source": ref_source}
 
         counts = verify_refs(refs, solr, vector_lookup)
         pct = 100 * counts["found"] / counts["total"] if counts["total"] else 0
-        print(f"  ✓ {counts['total']} refs  found={counts['found']} ({pct:.0f}%)  "
+        print(f"  ✓ [{ref_source}] {counts['total']} refs  found={counts['found']} ({pct:.0f}%)  "
               f"not_found={counts['not_found']}")
-        return {**paper, "status": "ok", **counts}
+        return {**paper, "status": "ok", **counts, "ref_source": ref_source}
 
     with out_file.open("a") as out_fh:
         if workers == 1:
@@ -330,9 +626,10 @@ def summarise(results_path: str):
 
     # Aggregate by year and field
     from collections import defaultdict
-    by_year:  dict = defaultdict(lambda: {"papers": 0, "total": 0, "not_found": 0})
-    by_field: dict = defaultdict(lambda: {"papers": 0, "total": 0, "not_found": 0})
-    matrix:   dict = defaultdict(lambda: {"papers": 0, "total": 0, "not_found": 0})
+    def _zero(): return {"papers": 0, "total": 0, "not_found": 0, "not_found_academic": 0, "heuristic_filtered": 0}
+    by_year:  dict = defaultdict(_zero)
+    by_field: dict = defaultdict(_zero)
+    matrix:   dict = defaultdict(_zero)
 
     for r in rows:
         year  = r["year"]
@@ -340,19 +637,26 @@ def summarise(results_path: str):
         total = r["total"]
         nf    = r["not_found"]
 
+        nfa = r.get("not_found_academic", nf)  # fallback for pre-filter results
+        hf  = r.get("heuristic_filtered", 0)
         for d in (by_year[year], by_field[field], matrix[(year, field)]):
-            d["papers"] += 1; d["total"] += total; d["not_found"] += nf
+            d["papers"] += 1; d["total"] += total
+            d["not_found"] += nf
+            d["not_found_academic"] += nfa
+            d["heuristic_filtered"] += hf
 
     # ── By year ──
     print("\n" + "=" * 60)
     print("NOT-FOUND RATE BY YEAR (all fields combined)")
     print("=" * 60)
-    print(f"  {'Year':<6} {'Papers':>7} {'Citations':>10} {'Not found':>10} {'Rate':>7}")
-    print("  " + "-" * 45)
+    print(f"  {'Year':<6} {'Papers':>7} {'Citations':>10} {'Not found':>10} {'Rate':>7} {'Acad-only':>10} {'Acad rate':>10}")
+    print("  " + "-" * 65)
     for year in sorted(by_year):
         d = by_year[year]
-        rate = 100 * d["not_found"] / d["total"] if d["total"] else 0
-        print(f"  {year:<6} {d['papers']:>7} {d['total']:>10,} {d['not_found']:>10,} {rate:>6.1f}%")
+        rate  = 100 * d["not_found"] / d["total"] if d["total"] else 0
+        arate = 100 * d["not_found_academic"] / d["total"] if d["total"] else 0
+        print(f"  {year:<6} {d['papers']:>7} {d['total']:>10,} {d['not_found']:>10,} {rate:>6.1f}%"
+              f"  {d['not_found_academic']:>9,} {arate:>9.1f}%  (filtered {d['heuristic_filtered']:,})")
 
     # ── By field ──
     print("\n" + "=" * 60)
