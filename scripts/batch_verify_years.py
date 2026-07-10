@@ -319,6 +319,14 @@ def _journals_match(query: str, result: str) -> bool:
     """
     if not query or not result:
         return True
+    # Primary: local journal authority (ISSN-based resolution of canonical names,
+    # ISO-4 abbreviations, alternate titles, and acronyms).
+    try:
+        from journal_authority import same_journal
+        return same_journal(query, result)
+    except Exception:
+        pass
+    # Fallback: simple prefix heuristic if the authority DB is unavailable.
     import re as _re
     def _words(s):
         return [w for w in _re.sub(r'[^\w]', ' ', s.lower()).split() if len(w) >= 3]
@@ -326,7 +334,6 @@ def _journals_match(query: str, result: str) -> bool:
     rwords = _words(result)
     if not qwords or not rwords:
         return True
-    # prefix match: "nat" matches "nature", "med" matches "medicine"
     for qw in qwords:
         for rw in rwords:
             if rw.startswith(qw) or qw.startswith(rw):
