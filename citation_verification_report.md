@@ -1039,6 +1039,8 @@ Crossref and OpenAlex, and they fall into this same bucket. The genuine fabricat
 rate is therefore *below* this figure — consistent with the null-to-improving temporal
 trend of Sections 13–14.
 
+Figure: `figures_v11/fig_notfound_validation.png` — left: decomposition of the "not found" bucket (validated on 8,000 references); right: the same slices as a share of all 54.7M citations, showing the candidate true-not-found rate at ~4.8%.
+
 ### 15.4 Skipped papers
 
 Separately, of the 58,190 papers skipped for lacking a Crossref reference list, a sample of
