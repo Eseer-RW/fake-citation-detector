@@ -33,9 +33,10 @@ FIELD_LABELS = {
     "life_sciences":     "Life Sciences",
     "multidisciplinary": "Multidisciplinary",
     "psychology":        "Psychology",
+    "chemistry":         "Chemistry",
 }
 
-COLORS = ["#2C3E70", "#3D6FAB", "#5B9BD5", "#4CAF50", "#E67E22", "#9B59B6"]
+COLORS = ["#2C3E70", "#3D6FAB", "#5B9BD5", "#4CAF50", "#E67E22", "#9B59B6", "#C9A227", "#16A085"]
 
 
 def ols_year_effects(papers, years):

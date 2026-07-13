@@ -1043,6 +1043,10 @@ trend of Sections 13–14.
 
 *Left: decomposition of the "not found" bucket (validated on 8,000 references); right: the same slices as a share of all 54.7M citations — the candidate true-not-found rate is ~4.8%.*
 
+![Not-found citation rate by year](figures/fig13_notfound_by_year.png)
+
+*Not-found rate by year across the full corpus. The raw rate declines from 17.4% (2020) to 14.2% (2025); the navy line removes non-academic sources; the red band applies the validated 30.7% candidate share, leaving an estimated true-not-found rate of ~4.4-5.3% that itself declines over time.*
+
 ### 15.4 Skipped papers
 
 Separately, of the 58,190 papers skipped for lacking a Crossref reference list, a sample of
