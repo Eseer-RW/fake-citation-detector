@@ -953,19 +953,37 @@ Two changes moved the whole pipeline off the metered API:
    - `SKIP_OPENALEX_API=1` disables the Phase 2 metadata call, leaving DOI-based exact matching (local Solr `by_doi` + local Crossref) as the verification path. This remains fully consistent with the exact-match directive of Section 12 — the matching key is the DOI, never a fuzzy title.
    - `SKIP_SLOW_PATH=1` skips PDF download + GROBID entirely for papers lacking a Crossref reference list (≈3% of the corpus), keeping the run disk-neutral at million-paper scale.
 
-### 14.3 Corpus
+### 14.3 Corpus and results
 
-Sampling from local Solr produced **1,088,554 papers across 21 journals** (2020–2025) in minutes. The journal set expands Section 13's seven venues to twenty-one, adding high-volume open-access titles (Scientific Reports, Sensors, MDPI journals, additional Frontiers titles, PeerJ, RSC Advances) to reach seven-figure scale.
+Sampling from local Solr produced **1,088,554 papers across 21 journals** (2020–2025) in minutes. The journal set expands Section 13's seven venues to twenty-one, adding high-volume open-access titles (Scientific Reports, Sensors, MDPI journals, additional Frontiers titles, PeerJ, RSC Advances) to reach seven-figure scale. The full verification run completed on the entire corpus.
 
-| | v11 |
+| | v11 (final) |
 |--|--|
 | Journals | 21 |
 | Years | 2020–2025 |
 | Papers sampled | 1,088,554 |
-| Sampling source | local OpenAlex Solr (free, unmetered) |
-| Verification | DOI exact-match: local Solr + local Crossref |
-| Estimated citations | ~58M (at ~55 refs/paper) |
+| Papers with references | 1,030,364 (58,190 skipped — no Crossref reference list, 5.3%) |
+| **Citations verified** | **54,732,797** |
+| **Found (matched)** | **46,131,694 (84.3%)** |
+| Not found | 8,601,103 (15.7%) |
+| Sampling + verification | local OpenAlex Solr + local Crossref (free, unmetered) |
 
-### 14.4 Status
+Match breakdown: DOI via local Solr 74.5%, DOI via local Crossref 9.7%, residual title 0.1%, not found 15.7%. The 84.3% match rate is consistent with the API-enabled v10 run (84.8%), confirming that dropping the metered OpenAlex API cost essentially nothing — in v10 the API's exact-metadata phase matched only 41 of ~2M citations, because citations resolve overwhelmingly by DOI, which is done locally.
 
-A 200-paper smoke test returned an 86.1% match rate, consistent with the v10 exact-match run (84.8%). The full run is processing at ~22 papers/second (8 workers) with an estimated completion of ~14 hours; it is resumable (skips already-verified DOIs on restart). Final per-year and per-field rates, the temporal regression, and updated figures will be added on completion.
+### 14.4 Temporal regression on one million papers
+
+Weighted year-fixed-effects regression (1,021,543 papers with ≥5 references, 2020 reference year), reported as percentage-point excess above the 2020 baseline (`*` p<0.05, `**` p<0.01, `***` p<0.001):
+
+| Field | Baseline | 2023 | 2024 | 2025 |
+|-------|---------:|-----:|-----:|-----:|
+| Biology / Medicine | 10.8% | −1.55*** | −0.15 | −1.00*** |
+| Chemistry | 3.0% | +0.31* | +0.22 | +0.23 |
+| Clinical Medicine | 15.9% | −5.04*** | −7.73*** | −8.02*** |
+| CS / Engineering | 16.8% | −4.07*** | −5.56*** | −5.03*** |
+| Life Sciences | 3.6% | +0.57*** | +0.06 | +0.58*** |
+| Multidisciplinary | 14.8% | +0.47*** | −2.30*** | −2.60*** |
+| Psychology | 12.9% | −0.71* | −1.17*** | −1.42*** |
+
+At one million papers the picture is unambiguous: **no field shows a sustained post-LLM increase** in the unmatched rate. Most fields decline (Clinical Medicine −8pp, CS/Engineering −5pp by 2025); the two small positives (Chemistry, Life Sciences) are well under one point. Critically, **Psychology is now decisively negative** (−1.4pp by 2025) — the same field that showed an apparent +2.2pp rise under the fuzzy pipeline (v9) and lost it under exact matching (v10). At million-paper scale it is clearly an improvement, not a rise, which confirms that the earlier signal was a fuzzy-matching artifact (Section 13.5).
+
+Figure: `figures_v11/fig_temporal_regression.png`.
