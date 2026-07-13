@@ -986,7 +986,7 @@ Weighted year-fixed-effects regression (1,021,543 papers with ≥5 references, 2
 
 At one million papers the picture is unambiguous: **no field shows a sustained post-LLM increase** in the unmatched rate. Most fields decline (Clinical Medicine −8pp, CS/Engineering −5pp by 2025); the two small positives (Chemistry, Life Sciences) are well under one point. Critically, **Psychology is now decisively negative** (−1.4pp by 2025) — the same field that showed an apparent +2.2pp rise under the fuzzy pipeline (v9) and lost it under exact matching (v10). At million-paper scale it is clearly an improvement, not a rise, which confirms that the earlier signal was a fuzzy-matching artifact (Section 13.5).
 
-Figure: `figures_v11/fig_temporal_regression.png`.
+![Estimated hallucination excess by field — 1.02M papers (v11)](figures/fig11_temporal_v11_1M.png)
 
 
 ---
@@ -1039,7 +1039,9 @@ Crossref and OpenAlex, and they fall into this same bucket. The genuine fabricat
 rate is therefore *below* this figure — consistent with the null-to-improving temporal
 trend of Sections 13–14.
 
-Figure: `figures_v11/fig_notfound_validation.png` — left: decomposition of the "not found" bucket (validated on 8,000 references); right: the same slices as a share of all 54.7M citations, showing the candidate true-not-found rate at ~4.8%.
+![Validation of the not-found citations](figures/fig12_notfound_validation.png)
+
+*Left: decomposition of the "not found" bucket (validated on 8,000 references); right: the same slices as a share of all 54.7M citations — the candidate true-not-found rate is ~4.8%.*
 
 ### 15.4 Skipped papers
 
