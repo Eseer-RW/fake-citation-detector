@@ -1055,3 +1055,58 @@ references**, which then match at **80.6%** — in line with the main corpus. Th
 either had no accessible open-access PDF or were genuinely reference-less documents
 (editorials, corrections, case images). Skipping these papers causes a small undercount of
 the corpus but does not bias the match-rate or trend findings.
+
+
+---
+
+## 16. Validation: URL Citations and Journal-Name Synonyms (added July 13, 2026)
+
+Two further checks quantify how well the pipeline handles the non-paper and
+abbreviated-name citations that make up much of the "not found" bucket (Section 15).
+
+### 16.1 URL-bearing citations resolve to live web resources
+
+Many "not found" citations are not journal articles but references to websites,
+reports, datasets, or standards that carry a URL. A citation whose URL resolves is a
+real web source, not a fabrication. We check liveness with a lightweight HTTP probe
+(`url_check.website_exists`): a HEAD request (GET fallback for servers that reject
+HEAD), treating any status **< 500** as "exists" — 200 (ok), 301/302 (redirect),
+401/403 (restricted), and 404 (page gone but server present) all prove a real server,
+while 500+ and connection failures do not.
+
+On a random **2,000 DOI-less URL citations** drawn from the not-found set:
+
+| Result | Share |
+|--------|------:|
+| **Live (HTTP < 500)** | **91.3%** |
+| Dead / unreachable | 8.7% |
+
+**91.3% point to a live web resource** — confirming that the non-academic slice of the
+not-found bucket is overwhelmingly composed of real references, not fabrications. This
+corroborates the heuristic non-academic filter with direct evidence.
+
+### 16.2 Journal-name synonym matching
+
+Citations name journals inconsistently — full titles, ISO-4 abbreviations, acronyms,
+and alternate/translated names. The authority (Section 12; 283,286 journals and
+359,631 name aliases built from the OpenAlex sources snapshot) resolves these to a
+single identity (ISSN-L), and `same_journal()` compares two names exactly. We validated
+it comprehensively against every documented variant:
+
+| Test | Result |
+|------|-------|
+| **Recall** — known variant → canonical (n = 44,787) | **87.9%** correctly matched |
+| **Precision** — variant of A vs different journal B (n = 29,997) | **99.1%** (0.88% false positives) |
+| resolve() coverage on real citation journal names (n = 8,020) | 15.1% resolve to an identity directly |
+
+**For a fabrication detector, the 99.1% precision is the property that matters** — the
+system almost never declares two *different* journals identical, which is what would
+let a fabricated citation slip through. The ~12% recall misses were examined directly
+and are **not fixable by string methods**: they are dominated by cross-language and
+translated titles (e.g. an English title and its Turkish equivalent, linked only by a
+shared ISSN), non-derivable acronyms (JIPS, ESJ, GOSOS), and transliteration variants.
+A Unicode/diacritic-folding pass was implemented and tested; it did not improve
+aggregate recall (the affected cases are a small fraction and folding can itself raise
+ambiguity), so it was not retained. Recall of ~88% at ~99% precision is therefore the
+practical ceiling for string-based journal-name matching, with the residual being
+genuinely unmatchable without an external ISSN crosswalk.
