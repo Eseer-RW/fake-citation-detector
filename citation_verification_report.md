@@ -987,3 +987,63 @@ Weighted year-fixed-effects regression (1,021,543 papers with ≥5 references, 2
 At one million papers the picture is unambiguous: **no field shows a sustained post-LLM increase** in the unmatched rate. Most fields decline (Clinical Medicine −8pp, CS/Engineering −5pp by 2025); the two small positives (Chemistry, Life Sciences) are well under one point. Critically, **Psychology is now decisively negative** (−1.4pp by 2025) — the same field that showed an apparent +2.2pp rise under the fuzzy pipeline (v9) and lost it under exact matching (v10). At million-paper scale it is clearly an improvement, not a rise, which confirms that the earlier signal was a fuzzy-matching artifact (Section 13.5).
 
 Figure: `figures_v11/fig_temporal_regression.png`.
+
+
+---
+
+## 15. Validation: Are the "Not Found" Citations Actually Not Found? (added July 13, 2026)
+
+The v11 run leaves 15.7% of citations unmatched. A raw unmatched rate conflates several
+very different things, so this section quantifies what the "not found" bucket actually
+contains, using a random sample of **8,000 not-found references** drawn from
+879 papers.
+
+### 15.1 Method
+
+For each sampled reference that the production pipeline failed to match by DOI, we test
+whether the cited work **exists at all**, without using the (metered) OpenAlex API:
+
+1. **Local Crossref exact-title** — the 179M-record Crossref title index (fast, free).
+2. **Crossref API fuzzy-title** — free polite-pool `query.bibliographic` search
+   (SequenceMatcher ≥ 0.90) for references the local index misses (2,748 checks).
+3. References flagged by the heuristic non-academic filter, or carrying no title at all,
+   are tallied separately — they are data/dataset/standard/book/website citations, not
+   journal articles, and cannot be (and should not be) matched as papers.
+
+### 15.2 What the "not found" bucket contains
+
+| Category | Share | Interpretation |
+|----------|------:|----------------|
+| No title at all | 30.6% | data / dataset / standard / book citations — not journal articles |
+| Non-academic (heuristic) | 18.9% | websites, reports, gray literature |
+| Confirmed to exist elsewhere | 16.1% (local) + 3.7% (API) | real papers, missing only a DOI — **false** not-founds |
+| Title, no match anywhere | 30.7% | candidate true not-found |
+| Unresolved (API budget) | 0.0% | title-bearing, could not be checked |
+
+Among references we could **fully assess** (has a title and was checked): **39.2% exist**
+and **60.8% have no match anywhere**.
+
+### 15.3 Interpretation
+
+- **~half of the "not found" bucket is not journal articles at all** — non-academic
+  sources plus title-less data/book/standard citations. These are expected in reference
+  lists and are not fabrication.
+- **A large share of the rest are real papers that simply lack a DOI** in our indexes
+  (confirmed to exist via Crossref) — false not-founds, not hallucinations.
+- Only the **"title, no match anywhere"** slice is a genuine candidate. Projected onto the
+  full corpus, this is on the order of **a few percent of all citations**, not 15.7%.
+
+Crucially, **"no match anywhere" is an upper bound on hallucination, not a hallucination
+rate.** Old, regional, and non-English journals are frequently real but absent from
+Crossref and OpenAlex, and they fall into this same bucket. The genuine fabricated-citation
+rate is therefore *below* this figure — consistent with the null-to-improving temporal
+trend of Sections 13–14.
+
+### 15.4 Skipped papers
+
+Separately, of the 58,190 papers skipped for lacking a Crossref reference list, a sample of
+600 was re-checked by fetching the PDF (Unpaywall) and running GROBID: **37% in fact have
+references**, which then match at **80.6%** — in line with the main corpus. The remainder
+either had no accessible open-access PDF or were genuinely reference-less documents
+(editorials, corrections, case images). Skipping these papers causes a small undercount of
+the corpus but does not bias the match-rate or trend findings.
