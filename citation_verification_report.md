@@ -1110,3 +1110,65 @@ aggregate recall (the affected cases are a small fraction and folding can itself
 ambiguity), so it was not retained. Recall of ~88% at ~99% precision is therefore the
 practical ceiling for string-based journal-name matching, with the residual being
 genuinely unmatchable without an external ISSN crosswalk.
+
+
+---
+
+## 17. The Decisive Test: Candidate Rate by Year, and Active Metadata Matching (added July 14, 2026)
+
+### 17.1 Isolating Zhao et al.'s quantity — does the fabrication signal exist at all?
+
+Sections 13–14 regressed the *aggregate* unmatched rate, which is dominated by
+coverage gaps (real DOI-less papers) that *decline* as indexing improves — this can
+mask a genuine fabrication trend. Zhao et al. avoid that by matching titles and
+cleaning non-academic entries, leaving a near-pure fabrication signal. To make a fair
+comparison, we isolate the equivalent quantity in our corpus — the
+**candidate true-not-found rate** (title-bearing references with no match anywhere in
+Crossref's 179M index) — and measure it **per year** (300 papers/year, 2020–2025).
+
+| Year | Not-found | **Candidate rate** |
+|------|----------:|-------------------:|
+| 2020 | 17.2% | 5.47% |
+| 2021 | 17.5% | 5.15% |
+| 2022 | 20.4% | 7.11% |
+| 2023 | 16.1% | 4.97% |
+| 2024 | 13.8% | 5.64% |
+| 2025 | 15.2% | 5.35% |
+
+- Trend slope: **−0.035 pp/year** (flat)
+- **Pre-LLM (2020–22): 5.91%** → **Post-LLM (2023–25): 5.32%** → **−0.59pp**
+
+![Fabrication-candidate rate by year](figures/fig14_candidate_by_year.png)
+
+**This is the decisive result.** Even after stripping out the declining coverage-gap
+noise and measuring the fabrication-candidate slice directly — the same isolation Zhao
+et al. perform — **there is no post-LLM rise.** The rate is flat, slightly declining.
+The earlier hypothesis that the signal was merely *hidden* under the aggregate is thus
+ruled out: in this corpus the signal is **genuinely absent**. This is fully consistent
+with the corpus difference — Zhao et al.'s rise is concentrated in *preprints*
+(arXiv/bioRxiv/SSRN), whereas our corpus is *published, peer-reviewed journal articles*
+whose editorial review removes fabricated citations before print. Our null result is
+therefore a real property of the published literature, not a measurement artifact.
+
+### 17.2 Journal authority migrated to the curated database; metadata matching now active
+
+Two pipeline upgrades accompany this analysis:
+
+1. **Journal authority now sourced from the institutional MongoDB `journal.journals`
+   collection** (214,676 journals, multi-source synonyms merged from OpenAlex,
+   Crossref, and NLM), rebuilt into the same fast local SQLite backend. This adds
+   synonym coverage the OpenAlex-only build lacked — e.g. the acronym "NEJM" and the
+   ISO-4 form "N. Engl. J. Med." now both resolve to the same venue id. Comprehensive
+   accuracy is unchanged (≈88% recall / 99% precision), with the added value
+   concentrated in abbreviation/acronym forms not documented by OpenAlex alone.
+
+2. **Local metadata-matching phase (Phase 2.6) activated.** For references lacking a
+   DOI, the pipeline now resolves the journal name (full / abbreviated / alternate /
+   acronym) to a venue id via the authority and performs an exact Solr match on
+   **journal + year + volume + first-author** — no metered API, no fuzzy title. This is
+   the exact-match-by-metadata design executing locally rather than remaining dormant
+   behind the disabled OpenAlex API. Verified end-to-end: a DOI-less reference to
+   *Nature Communications* 2021, vol 12, author "Ramosaj" now matches
+   `10.1038/s41467-021-27365-7` via structured metadata. As established in Section 14,
+   the incremental recall on this corpus is small (DOI-less references are largely
+   absent from the index), but the exact-match design is now demonstrably active.

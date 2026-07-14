@@ -438,6 +438,51 @@ def openalex_by_metadata(refs: list) -> list:
     return results
 
 
+def solr_by_metadata(refs: list, solr) -> list:
+    """Phase 2.6: LOCAL exact-match on journal + year + volume + first-author surname
+    against the OpenAlex Solr index. The journal name (full / ISO-4 abbreviation /
+    alternate / acronym) is resolved to venue_id(s) via the journal authority
+    (MongoDB-backed, multi-source), so shortened & alternate journal names match
+    exactly. No fuzzy title matching; uses only local indexes (no metered API)."""
+    from solr_lookup import MatchMethod, SolrResult, _solr_get
+    try:
+        from journal_authority import venue_ids_for
+    except Exception:
+        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+
+    def _esc(s):
+        return re.sub(r'([+\-!(){}\[\]^"~*?:\\/])', r'\\\1', str(s))
+
+    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    for i, ref in enumerate(refs):
+        year   = getattr(ref, "year", None)
+        volume = getattr(ref, "volume", None)
+        journal = getattr(ref, "journal", None)
+        author = getattr(ref, "first_author", None)
+        if not (year and volume and journal and author):
+            continue
+        vids = venue_ids_for(journal)
+        if not vids:
+            continue
+        vq = " OR ".join(vids)
+        params = {
+            "q":     f"venue_id:({vq})",
+            "fq":    [f"publication_year:{int(year)}",
+                      f'volume:"{_esc(volume)}"',
+                      f"author_names:{_esc(author)}"],
+            "fl":    "id,doi,volume,publication_year,author_names,title,venue_id",
+            "rows":  "3", "wt": "json", "facet": "false",
+        }
+        try:
+            docs = _solr_get(params)["response"]["docs"]
+        except Exception:
+            continue
+        if docs:
+            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
+                                    record=docs[0], confidence=1.0)
+    return results
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     """Run 4-phase verification; return summary counts dict."""
     from solr_lookup import MatchMethod, SolrResult
@@ -481,6 +526,19 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                     results[i] = r
         except Exception as exc:
             print(f"    [crossref-batch] failed: {exc}")
+
+    # Phase 2.6: local Solr metadata exact-match (journal+year+volume+author via the
+    # journal-synonym authority). Active for local runs — this is how the exact-match-
+    # by-metadata design executes once the metered OpenAlex API (Phase 2) is disabled.
+    if _os.environ.get("SKIP_OPENALEX_API") == "1" or _os.environ.get("USE_LOCAL_META") == "1":
+        lm_idx = [i for i in range(n) if results[i] is None
+                  and getattr(refs[i], "year", None) and getattr(refs[i], "volume", None)
+                  and getattr(refs[i], "journal", None) and getattr(refs[i], "first_author", None)]
+        if lm_idx:
+            lm_out = solr_by_metadata([refs[i] for i in lm_idx], solr)
+            for j, r in zip(lm_idx, lm_out):
+                if r.found:
+                    results[j] = r
 
     # Phase 3 removed: local Crossref index (Phase 2.5) resolves 80-90% of citations;
     # individual Solr GETs cause 599+ timeouts per 25 papers even at 8s each,

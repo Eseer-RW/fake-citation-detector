@@ -89,6 +89,21 @@ def resolve(name: str):
     return None
 
 
+def venue_ids_for(name: str):
+    """Resolve a journal name to its Solr venue_id(s) (OpenAlex source ids) via the
+    authority. Returns [] if the name does not resolve."""
+    ident = resolve(name)
+    if not ident:
+        return []
+    con = _con()
+    if con is None:
+        return []
+    rows = con.execute(
+        "SELECT DISTINCT venue_id FROM journal WHERE identity=?", (ident,)
+    ).fetchall()
+    return [r[0] for r in rows if r[0]]
+
+
 def same_journal(a: str, b: str) -> bool:
     """True if a and b refer to the same journal.
 
