@@ -474,12 +474,134 @@ def solr_by_metadata(refs: list, solr) -> list:
             "rows":  "3", "wt": "json", "facet": "false",
         }
         try:
-            docs = _solr_get(params)["response"]["docs"]
+            resp = _solr_get(params)["response"]
         except Exception:
             continue
-        if docs:
+        # Uniqueness guard: accept ONLY an unambiguous single hit. Multiple hits mean
+        # venue+year+volume+author is not unique (e.g. common surname in a high-volume
+        # journal) -> reject, to avoid a wrong-paper or fabricated-citation false match.
+        if resp.get("numFound") == 1 and resp.get("docs"):
             results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
-                                    record=docs[0], confidence=1.0)
+                                    record=resp["docs"][0], confidence=1.0)
+    return results
+
+
+def solr_by_metadata(refs: list, solr) -> list:
+    """Phase 2.6: LOCAL exact-match on journal + year + volume + first-author surname
+    against the OpenAlex Solr index. The journal name (full / ISO-4 abbreviation /
+    alternate / acronym) is resolved to venue_id(s) via the journal authority
+    (MongoDB-backed, multi-source), so shortened & alternate journal names match
+    exactly. No fuzzy title matching; uses only local indexes (no metered API)."""
+    from solr_lookup import MatchMethod, SolrResult, _solr_get
+    try:
+        from journal_authority import venue_ids_for
+    except Exception:
+        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+
+    def _esc(s):
+        return re.sub(r'([+\-!(){}\[\]^"~*?:\\/])', r'\\\1', str(s))
+
+    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    for i, ref in enumerate(refs):
+        year   = getattr(ref, "year", None)
+        volume = getattr(ref, "volume", None)
+        journal = getattr(ref, "journal", None)
+        author = getattr(ref, "first_author", None)
+        if not (year and volume and journal and author):
+            continue
+        vids = venue_ids_for(journal)
+        if not vids:
+            continue
+        vq = " OR ".join(vids)
+        params = {
+            "q":     f"venue_id:({vq})",
+            "fq":    [f"publication_year:{int(year)}",
+                      f'volume:"{_esc(volume)}"',
+                      f"author_names:{_esc(author)}"],
+            "fl":    "id,doi,volume,publication_year,author_names,title,venue_id",
+            "rows":  "3", "wt": "json", "facet": "false",
+        }
+        try:
+            resp = _solr_get(params)["response"]
+        except Exception:
+            continue
+        # Uniqueness guard: accept ONLY an unambiguous single hit. Multiple hits mean
+        # venue+year+volume+author is not unique (e.g. common surname in a high-volume
+        # journal) -> reject, to avoid a wrong-paper or fabricated-citation false match.
+        if resp.get("numFound") == 1 and resp.get("docs"):
+            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
+                                    record=resp["docs"][0], confidence=1.0)
+    return results
+
+
+def crossref_by_metadata(refs: list) -> list:
+    """Phase 3: exact bibliographic metadata match via the FREE Crossref API.
+
+    Matches journal + year + volume + page + first-author, ALL exact. Journal names
+    (full / ISO-4 abbreviation / alternate / acronym) are compared via the synonym
+    authority. No fuzzy title matching. Reached only after DOI matching is exhausted,
+    so it handles the DOI-less remainder. Uses the free polite-pool Crossref API (NOT
+    the metered OpenAlex API); rate-limited, so slower than local indexes at scale."""
+    from solr_lookup import MatchMethod, SolrResult
+    try:
+        from journal_authority import same_journal
+    except Exception:
+        def same_journal(a, b):
+            return True
+
+    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    for i, ref in enumerate(refs):
+        journal = getattr(ref, "journal", None)
+        year    = getattr(ref, "year", None)
+        volume  = getattr(ref, "volume", None)
+        page    = getattr(ref, "first_page", None)
+        author  = getattr(ref, "first_author", None)
+        # Need year + journal + author + at least one of (volume, page) to be discriminating.
+        if not (year and journal and author and (volume or page)):
+            continue
+        params = {
+            "query.bibliographic": f"{journal} {author}",
+            "filter": f"from-pub-date:{int(year)}-01-01,until-pub-date:{int(year)}-12-31",
+            "rows":   "20",
+            "select": "DOI,container-title,volume,page,author,published",
+        }
+        try:
+            resp = requests.get(
+                CROSSREF_API, params=params,
+                headers={"User-Agent": f"FakeCitationDetector/1.0 (mailto:{CROSSREF_EMAIL})"},
+                timeout=CROSSREF_TIMEOUT,
+            )
+            if resp.status_code != 200:
+                continue
+            items = resp.json().get("message", {}).get("items", [])
+        except Exception:
+            continue
+        for it in items:
+            # journal exact (via synonym authority) — candidate MUST carry a matching title
+            ct = it.get("container-title") or []
+            ic = ct[0] if ct else ""
+            if journal and (not ic or not same_journal(journal, ic)):
+                continue
+            # volume exact — if the citation has a volume, the candidate must match it
+            # (a candidate lacking a volume cannot be an exact volume match -> reject)
+            if volume:
+                iv = str(it.get("volume") or "").strip()
+                if iv != str(volume).strip():
+                    continue
+            # first page exact — same rule: missing candidate page -> reject
+            if page:
+                ip = str(it.get("page") or "").split("-")[0].strip()
+                if ip != str(page).strip():
+                    continue
+            # first-author surname must appear among the work's authors
+            authors = it.get("author") or []
+            names = " ".join(((a.get("family") or "") + " " + (a.get("given") or ""))
+                             for a in authors).lower()
+            if author.lower() not in names:
+                continue
+            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
+                                    record=it, confidence=1.0)
+            break
     return results
 
 
@@ -490,55 +612,43 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     n = len(refs)
     results = [None] * n
 
-    # Phase 1: DOI
+    # Phase 1: DOI via local OpenAlex Solr (251M works)
     for i, ref in enumerate(refs):
         if ref.doi:
             r = solr.by_doi(ref.doi)
             if r.found: results[i] = r
 
-    # Phase 2: exact bibliographic metadata search (journal+year+volume+page+author)
-    # Boss instruction: no fuzzy title matching; use structured metadata with exact match.
-    not_yet  = [i for i in range(n) if results[i] is None]
-    meta_idx = [i for i in not_yet
-                if getattr(refs[i], 'year', None) and (
-                    getattr(refs[i], 'journal', None) or
-                    (getattr(refs[i], 'volume', None) and getattr(refs[i], 'first_page', None))
-                )]
-    # SKIP_OPENALEX_API=1 disables the metered OpenAlex REST API (Phase 2 metadata
-    # search) for local-only large-scale runs; DOI matching (Solr + local Crossref)
-    # still provides exact, no-fuzzy-title verification.
-    import os as _os
-    if meta_idx and _os.environ.get('SKIP_OPENALEX_API') != '1':
-        meta_out = openalex_by_metadata([refs[i] for i in meta_idx])
-        for j, r in zip(meta_idx, meta_out):
-            if r.found:
-                results[j] = r
-
-    # Phase 2.5: local Crossref SQLite DOI lookup (DOI-only; no title matching)
-    # Boss instruction: no fuzzy title matching — title lookup removed from this phase.
+    # Phase 2: DOI via local Crossref (179M) — fallback across the second index.
+    # DOI is exact and authoritative, so BOTH DOI indexes are exhausted before any
+    # (weaker) metadata match is attempted.
     doi_idx = [i for i in range(n) if results[i] is None and refs[i].doi]
     if doi_idx:
         try:
             from crossref_lookup import batch_crossref
-            xr_results = batch_crossref([refs[i] for i in doi_idx])
-            for i, r in zip(doi_idx, xr_results):
+            for i, r in zip(doi_idx, batch_crossref([refs[i] for i in doi_idx])):
                 if r.found:
                     results[i] = r
         except Exception as exc:
-            print(f"    [crossref-batch] failed: {exc}")
+            print(f"    [crossref-doi] failed: {exc}")
 
-    # Phase 2.6: local Solr metadata exact-match (journal+year+volume+author via the
-    # journal-synonym authority). Active for local runs — this is how the exact-match-
-    # by-metadata design executes once the metered OpenAlex API (Phase 2) is disabled.
-    if _os.environ.get("SKIP_OPENALEX_API") == "1" or _os.environ.get("USE_LOCAL_META") == "1":
-        lm_idx = [i for i in range(n) if results[i] is None
-                  and getattr(refs[i], "year", None) and getattr(refs[i], "volume", None)
-                  and getattr(refs[i], "journal", None) and getattr(refs[i], "first_author", None)]
-        if lm_idx:
-            lm_out = solr_by_metadata([refs[i] for i in lm_idx], solr)
-            for j, r in zip(lm_idx, lm_out):
+    # Phase 3: exact metadata match via local OpenAlex Solr (venue+year+volume+author,
+    # journal resolved through the synonym authority) — reached only for references still
+    # unmatched after BOTH DOI phases. Exact fields only, no fuzzy title. A uniqueness
+    # guard (single-hit-only) protects precision. NOTE: Crossref's API cannot filter by
+    # volume/page (relevance search only), so it cannot do exact structured retrieval;
+    # OpenAlex is the only source that supports exact metadata queries. The local Solr
+    # index lacks a page field, so this is a 4-field match (page unavailable locally).
+    import os as _os
+    if _os.environ.get("DISABLE_META") != "1":
+        meta_idx = [i for i in range(n) if results[i] is None
+                    and getattr(refs[i], "year", None)
+                    and getattr(refs[i], "journal", None)
+                    and getattr(refs[i], "first_author", None)
+                    and getattr(refs[i], "volume", None)]
+        if meta_idx:
+            for i, r in zip(meta_idx, solr_by_metadata([refs[i] for i in meta_idx], solr)):
                 if r.found:
-                    results[j] = r
+                    results[i] = r
 
     # Phase 3 removed: local Crossref index (Phase 2.5) resolves 80-90% of citations;
     # individual Solr GETs cause 599+ timeouts per 25 papers even at 8s each,
