@@ -124,7 +124,7 @@ class SolrLookup:
             "q": f'doi:"{doi}"',
             "defType": "lucene",
             "fq": "publication_year:[* TO *]",   # override handler default (2000+)
-            "fl": "id,title,doi,publication_year,cited_by_count,type",
+            "fl": "id,title,doi,publication_year,cited_by_count,type,venue_name,volume,author_names",
             "rows": "1",
             "wt": "json",
         }
@@ -145,7 +145,7 @@ class SolrLookup:
             "q": title,
             "qf": "title^3 abstract",
             "defType": "edismax",
-            "fl": "id,title,doi,publication_year,cited_by_count,type",
+            "fl": "id,title,doi,publication_year,cited_by_count,type,venue_name,volume,author_names",
             "rows": str(candidates),
             "wt": "json",
             "boost": "",           # disable recency boost

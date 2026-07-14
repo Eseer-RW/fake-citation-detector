@@ -605,6 +605,74 @@ def crossref_by_metadata(refs: list) -> list:
     return results
 
 
+def validate_metadata(ref, record) -> list:
+    """Compare a citation's metadata against its matched record; return a list of
+    per-field discrepancy strings (cited vs actual). A reference that resolves to a
+    real paper but carries wrong year / journal / volume / author is FOUND_MISMATCH
+    -- a common hallucination signature (real DOI, garbled surrounding metadata)."""
+    if not record:
+        return []
+    def _first(v):
+        if isinstance(v, list):
+            return v[0] if v else None
+        return v
+    issues = []
+    # Year: exact, with +/-1 tolerance (online-first vs print)
+    cy = getattr(ref, "year", None)
+    ry = _first(record.get("publication_year")) or _first(record.get("year"))
+    if cy and ry:
+        try:
+            d = abs(int(cy) - int(ry))
+            if d > 1:
+                issues.append(f"year: cited {cy}, actual {ry} (off by {d})")
+        except (ValueError, TypeError):
+            pass
+    # Journal: compared via the synonym authority (not fuzzy)
+    cj = getattr(ref, "journal", None)
+    rj = (_first(record.get("venue_name")) or _first(record.get("container-title"))
+          or _first(record.get("journal")))
+    if cj and rj:
+        # Flag ONLY when confident the journals differ (both resolve to DIFFERENT
+        # identities). If either name does not resolve (ambiguous abbreviation), give
+        # the benefit of the doubt -- do not raise a false mismatch.
+        try:
+            from journal_authority import resolve as _jresolve
+            _rc, _rr = _jresolve(cj), _jresolve(rj)
+            if _rc and _rr and _rc != _rr:
+                issues.append(f"journal: cited '{cj}', actual '{rj}'")
+        except Exception:
+            pass
+    # Volume: exact
+    cv = getattr(ref, "volume", None)
+    rv = _first(record.get("volume"))
+    def _vnorm(v):
+        m = re.match(r"\s*([0-9A-Za-z]+)", str(v))
+        return (m.group(1).lower() if m else str(v).strip().lower())
+    if cv and rv and _vnorm(cv) != _vnorm(rv):
+        issues.append(f"volume: cited '{cv}', actual '{rv}'")
+    # First-author surname must appear among the paper's authors. Cited names vary
+    # ("AV Raveendran", "Raveendran AV", "Raveendran, A"), so extract the surname as
+    # the longest alphabetic token and token-match it against the actual authors
+    # (diacritic-folded). Lenient by design: only flag when the surname is clearly absent.
+    ca = getattr(ref, "first_author", None)
+    ra = record.get("author_names") or record.get("author") or []
+    if ca and ra:
+        import unicodedata as _ud
+        def _fold(x): return "".join(c for c in _ud.normalize("NFKD", str(x).lower()) if not _ud.combining(c))
+        actual_tokens = set()
+        for a in (ra if isinstance(ra, list) else [ra]):
+            a = ((a.get("family") or "") + " " + (a.get("given") or "")) if isinstance(a, dict) else str(a)
+            for t in re.split(r"[^A-Za-z]+", _fold(a)):
+                if len(t) >= 3:
+                    actual_tokens.add(t)
+        ca_tokens = [t for t in re.split(r"[^A-Za-z]+", _fold(ca)) if len(t) >= 3]
+        surname = max(ca_tokens, key=len) if ca_tokens else None
+        if surname and actual_tokens and surname not in actual_tokens:
+            issues.append(f"author: cited first-author '{ca}' not among actual authors")
+
+    return issues
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     """Run 4-phase verification; return summary counts dict."""
     from solr_lookup import MatchMethod, SolrResult
@@ -682,6 +750,18 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         k = r.method.value
         by_method[k] = by_method.get(k, 0) + 1
 
+    # Metadata mismatch detection: for each matched reference, diff the cited metadata
+    # against the matched record. Flags real-paper-but-wrong-metadata (FOUND_MISMATCH).
+    mismatches = []
+    for _i in range(n):
+        _r = results[_i]
+        if _r is None or not _r.found or not getattr(_r, "record", None):
+            continue
+        _iss = validate_metadata(refs[_i], _r.record)
+        if _iss:
+            mismatches.append({"cited_doi": getattr(refs[_i], "doi", None),
+                               "method": _r.method.value, "issues": _iss})
+
     not_found_count = n - found
     return {
         "total":               n,
@@ -692,6 +772,8 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         "vec_tried":           vec_total,
         "vec_found":           vec_found,
         "by_method":           by_method,
+        "found_mismatch":      len(mismatches),
+        "mismatches":          mismatches,
     }
 
 
