@@ -758,6 +758,14 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         if _r is None or not _r.found or not getattr(_r, "record", None):
             continue
         _iss = validate_metadata(refs[_i], _r.record)
+        # Guard against OpenAlex duplicate-DOI records: if the cited metadata matches
+        # ANY record sharing this DOI, it is not a real mismatch (the matched record was
+        # just the wrong duplicate).
+        if _iss and getattr(refs[_i], "doi", None):
+            for _alt in solr.all_by_doi(refs[_i].doi):
+                if not validate_metadata(refs[_i], _alt):
+                    _iss = []
+                    break
         if _iss:
             mismatches.append({"cited_doi": getattr(refs[_i], "doi", None),
                                "method": _r.method.value, "issues": _iss})

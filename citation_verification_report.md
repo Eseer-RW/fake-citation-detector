@@ -1172,3 +1172,72 @@ Two pipeline upgrades accompany this analysis:
    `10.1038/s41467-021-27365-7` via structured metadata. As established in Section 14,
    the incremental recall on this corpus is small (DOI-less references are largely
    absent from the index), but the exact-match design is now demonstrably active.
+
+
+---
+
+## 18. Metadata-Mismatch Detection (FOUND_MISMATCH) (added July 14, 2026)
+
+Existence checking asks "does the cited paper exist?" This section adds a second,
+orthogonal check: "does the citation's *metadata* match the paper its DOI points to?"
+A reference that resolves to a real paper but reports the wrong year, journal, volume,
+or author is a distinct integrity problem — and a known hallucination signature
+(a real DOI wrapped in fabricated or garbled bibliographic details).
+
+### 18.1 How it works
+
+For every reference matched to a record, the pipeline diffs the **cited** fields against
+the **actual** record and returns per-field discrepancies. Each reference becomes
+**FOUND**, **FOUND_MISMATCH** (with the specific fields), or **NOT_FOUND**. Checks are
+deliberately conservative to avoid false alarms:
+
+| Field | Check | False-alarm protection |
+|-------|-------|------------------------|
+| Year | exact | ±1 tolerance (online-first vs print) |
+| Journal | resolve both via the ISSN authority; flag only if both resolve to **different** ISSNs | abbreviations that don't resolve are not flagged |
+| Volume | exact | leading-token normalization ("579" == "579 (7798)") |
+| First author | surname token match | longest-token extraction + diacritic folding ("AV Raveendran" == "Aravind Raveendran") |
+
+Output per paper: `found_mismatch` count and a `mismatches` list of
+`{cited_doi, method, issues:[...]}`. Example:
+`{"cited_doi": "10.3389/fped.2019.00451", "issues": ["journal: cited 'Sci Immunol', actual 'Frontiers in Pediatrics'"]}`.
+
+### 18.2 A data-quality discovery: duplicate DOI records in OpenAlex
+
+Running this over the corpus immediately surfaced a problem — **not** in the citations,
+but in the index. Many apparent mismatches were DOIs for mainstream journals resolving
+to obscure, unrelated venues. Verification against Crossref showed the *citations were
+correct*: **the OpenAlex Solr index contains duplicate records for the same DOI with
+conflicting metadata.** For example, DOI `10.1016/s0143416002001240` appears twice — once
+correctly as *Cell Calcium* (2002) and once wrongly as *Pedagogische Studiën* (2014) —
+and a naive `by_doi` returns the wrong duplicate. This affects any metadata-level analysis
+on the index (it does **not** affect existence/match rates, since the DOI is present
+either way). A duplicate guard was added: a mismatch is only reported if the cited
+metadata disagrees with **all** records sharing the DOI.
+
+### 18.3 Corpus prevalence and honest interpretation
+
+On a 500-paper sample (25,939 references, 21,835 matched):
+
+| | value |
+|--|--|
+| FOUND_MISMATCH (after duplicate guard) | 731 (**3.35%** of matched) |
+| — field occurrences | journal 222, author 221, volume 162, year 160 |
+| Multi-field (≥2) mismatches | 26 (~0.12% of matched) |
+
+**The 3.35% is not a hallucination rate.** Spot-checking against Crossref shows it is a
+mixture:
+- **Genuine mismatches** — a citation whose DOI points to a wholly different journal
+  (e.g. an *Archives of Family Medicine* DOI cited as *Br. J. Gen. Pract.*; a *Frontiers
+  in Pediatrics* DOI cited as *Sci. Immunol.*), or clear year errors. These are real
+  integrity problems (wrong DOI, or fabricated metadata around a real DOI).
+- **Artifacts** — residual index duplicates, journal-sibling ISSN differences (*Frontiers
+  in Bioscience* vs its *-Elite* edition), and volume-format edge cases.
+
+The **multi-field mismatches (~0.12%)** are the high-confidence signal — spot-checking
+found roughly two-thirds genuine. The single-field flags are noisier and dominated by
+data-quality edge cases. **The capability is therefore best used as a review-assist that
+surfaces candidate integrity problems for human adjudication, not as an automated
+mismatch-rate estimator.** Its most valuable output is the specific, pinpointed cases —
+"this DOI belongs to a different journal than cited" — which no existence check would
+catch.

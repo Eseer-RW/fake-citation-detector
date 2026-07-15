@@ -138,6 +138,19 @@ class SolrLookup:
             print(f"Solr DOI lookup failed: {e}")
         return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
 
+    def all_by_doi(self, doi: str) -> list:
+        """Return ALL records sharing a DOI (OpenAlex has duplicate DOI records with
+        conflicting metadata; callers verifying metadata must consider all of them)."""
+        doi = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi.strip(), flags=re.I).lower()
+        params = {"q": f'doi:"{doi}"', "defType": "lucene",
+                  "fq": "publication_year:[* TO *]",
+                  "fl": "id,title,doi,publication_year,venue_name,volume,author_names",
+                  "rows": "10", "wt": "json"}
+        try:
+            return _solr_get(params)["response"]["docs"]
+        except Exception:
+            return []
+
     def by_title(self, title: str, year: Optional[int] = None,
                  candidates: int = 5) -> SolrResult:
         """Keyword title search with optional year filter."""
