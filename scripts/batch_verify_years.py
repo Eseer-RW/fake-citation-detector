@@ -725,15 +725,21 @@ def biblio_by_metadata(refs: list) -> list:
             for nm in norms:
                 try:
                     cand += con.execute(
-                        "SELECT doi,first_page,author1 FROM biblio "
+                        "SELECT doi,first_page,article_num,author1 FROM biblio "
                         "WHERE journal_norm=? AND year=? AND volume=?",
                         (nm, int(year), str(volume).strip())).fetchall()
                 except Exception:
                     pass
+            def _pn(x):
+                x = str(x or "").strip().lower()
+                return x[1:] if (x[:1] == "e" and x[1:].isdigit()) else x
+            cp = _pn(page) if page else None
             matches = []
-            for doi, fp, a1 in cand:
+            for doi, fp, art, a1 in cand:
                 if page:
-                    if fp and str(page).strip() == fp.strip() and (not author or _biblio_surname_match(author, a1)):
+                    # modern journals use ARTICLE NUMBERS (Crossref article-number),
+                    # not page ranges; match the cited page against page OR article-number
+                    if cp and (cp == _pn(fp) or cp == _pn(art)) and (not author or _biblio_surname_match(author, a1)):
                         matches.append((doi, fp, a1))
                 elif author and _biblio_surname_match(author, a1):
                     matches.append((doi, fp, a1))

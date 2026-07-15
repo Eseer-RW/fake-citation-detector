@@ -62,9 +62,10 @@ def process_file(path):
                 if not (year and vol):
                     continue   # only index metadata-searchable records
                 pg = str(r.get('page') or '').split('-')[0].strip()
+                art = str(r.get('article-number') or '').strip()
                 authors = r.get('author') or []
                 a1 = (authors[0].get('family') or '').strip().lower() if authors else ''
-                rows.append((doi, jn, year, vol, pg, a1))
+                rows.append((doi, jn, year, vol, pg, art, a1))
     except Exception:
         pass
     return (str(path), rows)
@@ -75,7 +76,7 @@ def main():
     con.execute('PRAGMA synchronous=OFF')
     con.execute('PRAGMA cache_size=-2000000')
     con.execute('CREATE TABLE IF NOT EXISTS biblio(doi TEXT, journal_norm TEXT, '
-                'year INTEGER, volume TEXT, first_page TEXT, author1 TEXT)')
+                'year INTEGER, volume TEXT, first_page TEXT, article_num TEXT, author1 TEXT)')
     con.execute('CREATE TABLE IF NOT EXISTS _done(filename TEXT PRIMARY KEY)')
     con.commit()
     done = {r[0] for r in con.execute('SELECT filename FROM _done')}
@@ -86,7 +87,7 @@ def main():
     with multiprocessing.Pool(WORKERS) as pool:
         for i, (path, rows) in enumerate(pool.imap_unordered(process_file, files), 1):
             if rows:
-                con.executemany('INSERT INTO biblio VALUES(?,?,?,?,?,?)', rows)
+                con.executemany('INSERT INTO biblio VALUES(?,?,?,?,?,?,?)', rows)
                 nrows += len(rows)
             con.execute('INSERT OR IGNORE INTO _done VALUES(?)', (path,))
             if i % 200 == 0:
