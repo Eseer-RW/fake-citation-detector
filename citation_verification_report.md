@@ -1241,3 +1241,68 @@ surfaces candidate integrity problems for human adjudication, not as an automate
 mismatch-rate estimator.** Its most valuable output is the specific, pinpointed cases —
 "this DOI belongs to a different journal than cited" — which no existence check would
 catch.
+
+
+---
+
+## 19. Full 5-Field Exact Match with Page, and Data-Quality Findings (added July 15, 2026)
+
+### 19.1 The page field — a local Crossref bibliographic index
+
+The exact-metadata match previously omitted **page**: OpenAlex Solr has no page field, and
+Crossref's REST API cannot *query* by volume/page (relevance search only, so the target
+paper is not retrievable). The only path to the boss's full five-field design was to build
+a locally queryable index. From the March-2026 Crossref public data dump (416 GB on disk),
+we built **`biblio_index.db`: 115,753,621 records** carrying journal + year + volume +
+**page** + first-author + DOI, keyed on `(journal_norm, year, volume)`.
+
+Phase 3 now performs the complete **exact match on journal + year + volume + page +
+first-author** — journal names resolved to canonical form via the synonym authority, all
+fields exact, no fuzzy title, entirely local and free. Validated end to end: a DOI-less
+reference to *Nature* 2020, vol 579, page 270, Zhou resolves to the exact paper
+`10.1038/s41586-020-2012-7` (uniquely, among 230 same-volume candidates); wrong page or
+volume are correctly rejected.
+
+**93% of eligible DOI-less references carry a page**, so the field is usable. Recovery is
+marginally higher than the page-less four-field match (6.1% vs 5.8% of eligible references),
+but the principal gain is **precision**: page makes a match near-unique, closing the
+common-surname false-match hole (Section 17). Absolute recovery stays small because DOI-less
+references are predominantly old or niche works absent from the index. This completes the
+exact five-field design, now executing locally without the metered API.
+
+### 19.2 A confirmed data-quality defect in OpenAlex: duplicate DOIs
+
+Building mismatch detection surfaced a defect in the index, not the citations. On 19,941
+real cited DOIs, **1.40% (280) have duplicate records with conflicting metadata**, and this
+was **confirmed upstream** — the OpenAlex API itself returns two distinct work IDs for one
+DOI, one carrying wrong metadata (e.g. `10.1128/aac.02283-13` is returned as both
+*Antimicrobial Agents and Chemotherapy* 2014 and *The Pan-Pacific Entomologist* 1950).
+Extrapolated to the 251M-work index this implies millions of affected DOIs. It does not
+affect existence/match rates (the DOI is present either way), but it pollutes any
+metadata-level lookup; a duplicate guard (verify against all records sharing the DOI) was
+added.
+
+### 19.3 The null result, with statistical rigor
+
+The per-year fabrication-candidate rate (Section 17) tested formally: pre-LLM (2020–22)
+**5.91%** vs post-LLM (2023–25) **5.32%**, a difference of **−0.59pp (95% CI [−0.88,
+−0.30])**. The interval lies entirely below zero — a Zhao-style post-LLM *rise* is ruled out
+with significance; the candidate rate in fact significantly *declined*.
+
+### 19.4 Not-found rate by field and journal
+
+Large, systematic variation reflecting citation practice:
+
+| Field | not-found | | Journal (high/low) | not-found |
+|-------|----------:|--|--------------------|----------:|
+| CS / Engineering | 21.7% | | Materials | 52.6% |
+| Psychology | 19.0% | | Sustainability | 30.1% |
+| Clinical Medicine | 18.8% | | PLOS ONE | 25.2% |
+| Multidisciplinary | 16.3% | | … | … |
+| Biology / Medicine | 12.2% | | eLife | 4.0% |
+| Chemistry | 7.0% | | Frontiers in Immunology | 2.6% |
+| Life Sciences | 4.7% | | | |
+
+Fields that cite conference proceedings and gray literature heavily (CS/Engineering) have
+the highest unmatched rates; those citing well-indexed journal articles (Life Sciences) the
+lowest — coverage-gap composition, not fabrication.

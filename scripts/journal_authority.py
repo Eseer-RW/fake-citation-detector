@@ -89,6 +89,20 @@ def resolve(name: str):
     return None
 
 
+def canonical_name(name: str):
+    """Return the canonical display_name for a journal name (resolved via the
+    authority), or None. Used to normalize abbreviations to the full name that the
+    Crossref bibliographic index is keyed on."""
+    ident = resolve(name)
+    if not ident:
+        return None
+    con = _con()
+    if con is None:
+        return None
+    row = con.execute("SELECT display_name FROM journal WHERE identity=?", (ident,)).fetchone()
+    return row[0] if row else None
+
+
 def venue_ids_for(name: str):
     """Resolve a journal name to its Solr venue_id(s) (OpenAlex source ids) via the
     authority. Returns [] if the name does not resolve."""

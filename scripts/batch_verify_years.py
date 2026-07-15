@@ -673,6 +673,80 @@ def validate_metadata(ref, record) -> list:
     return issues
 
 
+BIBLIO_DB = "/home/rwang/crossref/biblio_index.db"
+
+def _biblio_surname_match(cited, actual) -> bool:
+    import unicodedata as _ud
+    def _fold(x): return "".join(c for c in _ud.normalize("NFKD", str(x).lower()) if not _ud.combining(c))
+    ct = [t for t in re.split(r"[^A-Za-z]+", _fold(cited)) if len(t) >= 3]
+    if not ct:
+        return True
+    surname = max(ct, key=len)
+    at = set(t for t in re.split(r"[^A-Za-z]+", _fold(actual)) if len(t) >= 3)
+    return (not at) or (surname in at)
+
+
+def biblio_by_metadata(refs: list) -> list:
+    """Phase 3 (full 5-field): exact match on journal + year + volume + page + first-
+    author against the local Crossref bibliographic index (115M records WITH page).
+    Journal names are resolved to canonical form via the synonym authority. No fuzzy
+    title. Local & free, and includes the page field OpenAlex Solr lacks / Crossref's
+    API cannot query. When the citation carries a page, page uniquely discriminates;
+    without a page, an author match must be unique to be accepted (precision guard)."""
+    from solr_lookup import MatchMethod, SolrResult
+    import os, sqlite3
+    try:
+        from journal_authority import _norm as _jn, canonical_name
+    except Exception:
+        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    if not os.path.exists(BIBLIO_DB):
+        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    con = sqlite3.connect(f"file:{BIBLIO_DB}?mode=ro", uri=True, check_same_thread=False)
+    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
+    try:
+        for i, ref in enumerate(refs):
+            journal = getattr(ref, "journal", None)
+            year    = getattr(ref, "year", None)
+            volume  = getattr(ref, "volume", None)
+            page    = getattr(ref, "first_page", None)
+            author  = getattr(ref, "first_author", None)
+            if not (year and volume and journal and (page or author)):
+                continue
+            norms = set()
+            k = _jn(journal)
+            if k:
+                norms.add(k)
+            cn = canonical_name(journal)
+            if cn:
+                ck = _jn(cn)
+                if ck:
+                    norms.add(ck)
+            cand = []
+            for nm in norms:
+                try:
+                    cand += con.execute(
+                        "SELECT doi,first_page,author1 FROM biblio "
+                        "WHERE journal_norm=? AND year=? AND volume=?",
+                        (nm, int(year), str(volume).strip())).fetchall()
+                except Exception:
+                    pass
+            matches = []
+            for doi, fp, a1 in cand:
+                if page:
+                    if fp and str(page).strip() == fp.strip() and (not author or _biblio_surname_match(author, a1)):
+                        matches.append((doi, fp, a1))
+                elif author and _biblio_surname_match(author, a1):
+                    matches.append((doi, fp, a1))
+            uniq = set(m[0] for m in matches)
+            if matches and (page or len(uniq) == 1):
+                d, fp, a1 = matches[0]
+                results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
+                                        record={"doi": d, "first_page": fp, "author1": a1}, confidence=1.0)
+    finally:
+        con.close()
+    return results
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     """Run 4-phase verification; return summary counts dict."""
     from solr_lookup import MatchMethod, SolrResult
@@ -711,10 +785,10 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         meta_idx = [i for i in range(n) if results[i] is None
                     and getattr(refs[i], "year", None)
                     and getattr(refs[i], "journal", None)
-                    and getattr(refs[i], "first_author", None)
-                    and getattr(refs[i], "volume", None)]
+                    and getattr(refs[i], "volume", None)
+                    and (getattr(refs[i], "first_page", None) or getattr(refs[i], "first_author", None))]
         if meta_idx:
-            for i, r in zip(meta_idx, solr_by_metadata([refs[i] for i in meta_idx], solr)):
+            for i, r in zip(meta_idx, biblio_by_metadata([refs[i] for i in meta_idx])):
                 if r.found:
                     results[i] = r
 
