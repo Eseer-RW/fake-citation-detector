@@ -43,6 +43,8 @@ class MatchMethod(str, Enum):
     VECTOR          = "vector"
     # Exact bibliographic metadata match: journal + year + volume + page + author
     META_MATCH      = "meta_match"
+    # Exact NORMALIZED title match (case/punct/space folded; not fuzzy)
+    TITLE_EXACT     = "title_exact"
 
 
 @dataclass
