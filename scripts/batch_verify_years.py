@@ -747,6 +747,15 @@ def biblio_by_metadata(refs: list) -> list:
     return results
 
 
+_TITLE_XR = None
+def _get_title_xr():
+    global _TITLE_XR
+    if _TITLE_XR is None:
+        from crossref_lookup import CrossrefLookup
+        _TITLE_XR = CrossrefLookup()
+    return _TITLE_XR
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     """Run 4-phase verification; return summary counts dict."""
     from solr_lookup import MatchMethod, SolrResult
@@ -815,6 +824,33 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         if results[i] is None and is_likely_nonacademic(refs[i])
     )
 
+    # Phase 6: title CONFIRMATION (diagnostic, NOT a match). For references still
+    # unmatched that carry a title and are not non-academic, check the local Crossref
+    # title index (fast, ~1ms/lookup). This never marks a reference 'found' -- the
+    # no-fuzzy-title matching rule is preserved -- it only labels an unmatched reference
+    # as 'title_confirmed' (a real paper with that title exists => very likely a real
+    # citation, low review priority) versus a true candidate not-found.
+    title_confirmed = 0
+    tc_detail = []
+    if _os.environ.get("ENABLE_TITLE_CONFIRM") == "1":
+        try:
+            _txr = _get_title_xr()
+            for _ti in range(n):
+                if results[_ti] is not None:
+                    continue
+                _tr = refs[_ti]
+                _tt = getattr(_tr, "title", None)
+                if not _tt or is_likely_nonacademic(_tr):
+                    continue
+                _hit = _txr.by_title(_tt, getattr(_tr, "year", None))
+                if _hit and _hit.found:
+                    title_confirmed += 1
+                    _rec = _hit.record or {}
+                    tc_detail.append({"title": _tt[:120],
+                                      "matched_doi": _rec.get("doi") or _rec.get("DOI")})
+        except Exception:
+            pass
+
     not_found_sentinel = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
     final = [results[i] or not_found_sentinel for i in range(n)]
 
@@ -856,6 +892,8 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         "by_method":           by_method,
         "found_mismatch":      len(mismatches),
         "mismatches":          mismatches,
+        "title_confirmed":     title_confirmed,
+        "title_confirmed_detail": tc_detail,
     }
 
 
