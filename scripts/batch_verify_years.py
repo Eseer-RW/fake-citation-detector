@@ -755,11 +755,27 @@ def biblio_by_metadata(refs: list) -> list:
 
 _TITLE_XR = None
 def _get_title_xr():
+    """Exact-title backend: MongoLookup over the crossref.title_norm index (fast, indexed,
+    ~1500 lookups/sec) with a local-Crossref SQLite fallback if Mongo is unreachable."""
     global _TITLE_XR
     if _TITLE_XR is None:
-        from crossref_lookup import CrossrefLookup
-        _TITLE_XR = CrossrefLookup()
+        try:
+            from mongo_lookup import MongoLookup
+            _TITLE_XR = MongoLookup()
+        except Exception:
+            from crossref_lookup import CrossrefLookup
+            _TITLE_XR = CrossrefLookup()
     return _TITLE_XR
+
+
+_INTEGRATED = None
+def _get_integrated(solr):
+    """Federated Crossref+OpenAlex accessor, reusing the pipeline's SolrLookup."""
+    global _INTEGRATED
+    if _INTEGRATED is None:
+        from integrated_lookup import IntegratedLookup
+        _INTEGRATED = IntegratedLookup(solr=solr)
+    return _INTEGRATED
 
 
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
@@ -769,24 +785,14 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     n = len(refs)
     results = [None] * n
 
-    # Phase 1: DOI via local OpenAlex Solr (251M works)
-    for i, ref in enumerate(refs):
-        if ref.doi:
-            r = solr.by_doi(ref.doi)
-            if r.found: results[i] = r
-
-    # Phase 2: DOI via local Crossref (179M) — fallback across the second index.
-    # DOI is exact and authoritative, so BOTH DOI indexes are exhausted before any
-    # (weaker) metadata match is attempted.
-    doi_idx = [i for i in range(n) if results[i] is None and refs[i].doi]
-    if doi_idx:
-        try:
-            from crossref_lookup import batch_crossref
-            for i, r in zip(doi_idx, batch_crossref([refs[i] for i in doi_idx])):
-                if r.found:
-                    results[i] = r
-        except Exception as exc:
-            print(f"    [crossref-doi] failed: {exc}")
+    # Phases 1-2 (DOI): single federated accessor across BOTH corpora (OpenAlex Solr +
+    # Crossref), via IntegratedLookup. Preserves the original ordering (exhaust both DOI
+    # indexes before any weaker metadata/title match), the batched Crossref lookup, and the
+    # SolrResult contract. DOI is exact/authoritative, so this runs first.
+    integrated = _get_integrated(solr)
+    for i, r in enumerate(integrated.verify_dois(refs)):
+        if r is not None and r.found:
+            results[i] = r
 
     # Phase 3: exact metadata match via local OpenAlex Solr (venue+year+volume+author,
     # journal resolved through the synonym authority) — reached only for references still
@@ -804,6 +810,13 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                     and (getattr(refs[i], "first_page", None) or getattr(refs[i], "first_author", None))]
         if meta_idx:
             for i, r in zip(meta_idx, biblio_by_metadata([refs[i] for i in meta_idx])):
+                if r.found:
+                    results[i] = r
+            # OpenAlex metadata fallback (federated) for meta-eligible refs the Crossref
+            # biblio index did not resolve: venue_id + volume + first_page + year, asserted
+            # only on a unique hit. Recovers OpenAlex-only works with structured metadata.
+            for i in [k for k in meta_idx if results[k] is None]:
+                r = integrated.oa_by_metadata(refs[i])
                 if r.found:
                     results[i] = r
 
@@ -840,7 +853,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     if _os.environ.get("DISABLE_TITLE_MATCH") != "1":
         try:
             from solr_lookup import MatchMethod as _MM, SolrResult as _SR
-            _txr = _get_title_xr()
+            _txr = integrated  # federated Crossref title_norm + OpenAlex title_exact
             for _ti in range(n):
                 if results[_ti] is not None:
                     continue
@@ -848,7 +861,14 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                 _tt = getattr(_tr, "title", None)
                 if not _tt or is_likely_nonacademic(_tr):
                     continue
-                _hit = _txr.by_title(_tt, getattr(_tr, "year", None))
+                if hasattr(_txr, "by_title_exact"):
+                    _hit = _txr.by_title_exact(
+                        _tt, year=getattr(_tr, "year", None),
+                        journal=getattr(_tr, "journal", None),
+                        author=getattr(_tr, "first_author", None)
+                                or getattr(_tr, "author", None))
+                else:
+                    _hit = _txr.by_title(_tt, getattr(_tr, "year", None))
                 if _hit and _hit.found:
                     results[_ti] = _SR(found=True, method=_MM.TITLE_EXACT,
                                        record=_hit.record, confidence=_hit.confidence)

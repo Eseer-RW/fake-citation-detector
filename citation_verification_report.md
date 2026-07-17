@@ -1306,3 +1306,107 @@ Large, systematic variation reflecting citation practice:
 Fields that cite conference proceedings and gray literature heavily (CS/Engineering) have
 the highest unmatched rates; those citing well-indexed journal articles (Life Sciences) the
 lowest — coverage-gap composition, not fabrication.
+
+## 20. Federated Crossref + OpenAlex Verification (added July 17, 2026)
+
+Every match path now checks **both** corpora — Crossref (`crs.crossref`, MongoDB, 179M) and
+OpenAlex (`openalexWorks` Solr, 368M) — joined on DOI at query time. The two are
+complementary, not redundant, and combining them raises recall without weakening the
+exact-match discipline.
+
+### 20.1 Why both — corpus vs. claim
+
+A sample of 70 Crossref DOIs (35 published 2024–25, 35 ≤2023) were **all** present in
+OpenAlex: at the corpus level OpenAlex effectively supersets Crossref (it ingests Crossref
+and adds MAG/PubMed-only works). So Crossref is **not** kept for coverage. It is kept for two
+things OpenAlex structurally lacks:
+
+1. **The raw reference list.** OpenAlex stores only resolved `referenced_works` (OpenAlex
+   IDs) — it discards the raw cited strings and drops any citation it could not resolve,
+   which is precisely the signal fake-detection needs. Crossref's `reference[]` preserves the
+   claim (title/author/journal/year/volume/page + asserted DOI) including the DOI-less ones.
+   Dereferencing `referenced_works` recovers only the *resolved* works, and a coverage scan
+   showed the losses concentrate on DOI-less references (the suspicious bucket).
+2. **Authoritative, clean bibliographic fields** for exact matching (structured
+   author family/given, volume, page, article-number), where OpenAlex's re-parsed metadata
+   is occasionally garbled.
+
+### 20.2 The federated layer (`integrated_lookup.py`)
+
+Rather than physically merge the two (hundreds of GB, stale on every update), integration is
+a **DOI-keyed join layer**. `IntegratedLookup.by_doi()` returns one unified record —
+OpenAlex corpus/graph fields + Crossref `reference[]`/`title_norm`/authoritative biblio —
+with per-field **provenance** and `in_crossref`/`in_openalex` flags; `references()` returns
+the raw claim list. The layer is wired into `batch_verify_years` as the single accessor.
+
+### 20.3 The three federated match paths
+
+- **DOI** (`verify_dois`): OpenAlex Solr and Crossref in one call; a DOI in *either* verifies.
+- **Title** (`by_title_exact`): Crossref `title_norm` first, then OpenAlex `title_exact`.
+  The boss's `title_norm` normalization was reverse-engineered and reproduced exactly
+  (strip tags → HTML-unescape → lowercase → NFKD + drop combining marks → collapse Unicode
+  `\W`; 40/40 round-trip), running ~1,440 lookups/sec. OpenAlex `title_exact` is
+  case-insensitive but **punctuation-sensitive** (unlike the punct-collapsing `title_norm`),
+  so it receives the *raw* title and disambiguates multi-hit titles with a year filter. The
+  two normalizations miss different references, so the union wins: on btz070 each corpus
+  alone matched 15/17 by title, the **union 16/17** — OpenAlex recovered a workshop
+  proceeding absent from Crossref.
+- **Metadata** (`oa_by_metadata`): OpenAlex `venue_name_exact` (journal-string variants like
+  "Database (Oxford)" fail) and `author_names_exact` (holds full names; citations carry
+  surnames) proved unreliable as keys. The reliable key is **`venue_id` — resolved from the
+  cited journal through the synonym authority — + volume + first_page + year**, asserted only
+  on a unique hit (precision guard): **13/15 correct** on btz070. This mirrors the Crossref
+  biblio match against the OpenAlex corpus.
+
+### 20.4 Net effect
+
+On the btz070 PDF the pipeline improved **14 → 15/17** (OpenAlex title recovered an
+OpenAlex-only proceeding; OpenAlex metadata caught two references the Crossref biblio index
+missed). The larger, systematic gain is a **reduction in false "not found"** — real
+citations present in only one corpus are no longer flagged as candidate fabrications, which
+tightens the hallucination upper bound. The one residual is `title_exact` punctuation
+sensitivity (e.g. a cited colon vs. a stored dash), closable only by adding a
+punctuation-collapsed `title_norm` field to the OpenAlex index.
+
+## 21. ScienceDirect / Elsevier Reference-Parsing Fix (added July 17, 2026)
+
+A class of documents verified almost nothing not because of the verify backend but because
+of **reference parsing** upstream of it. Bibliographies pasted from an Elsevier /
+ScienceDirect HTML export use a format the parser did not understand:
+
+```
+Author1 ∙ Author2 ∙ Author3 … Title  Journal. YEAR;<nbsp>VOL:PAGES  <link badges>
+```
+
+Authors are separated by the bullet operator `∙` (U+2219), middle authors elided with `…`,
+the last author glued directly to the title, and every entry trails link badges (`Full
+Text | Scopus (N) | PubMed | Crossref | Google Scholar`). The generic strategies understood
+none of this and scattered author fragments into the `title`/`journal` columns — so an exact
+title match saw garbage like `∙ Organe, S` and failed. On a real 78-reference document this
+produced **1/78 verified**.
+
+**The fix** (`parser.py`, "Strategy 0"): `_is_sciencedirect` detects the bullet/badge
+signature; `_parse_sciencedirect` strips the badge tail, anchors on the `. YEAR;VOL:PAGES`
+tail for volume/pages, peels the trailing capitalised run as the journal, splits authors on
+the bullet, and separates the glued last-author from the title at the eliding ellipsis or the
+`Surname, I.I.` boundary. It returns `{}` and falls through to the generic strategies unless
+it isolates a title, so it can never worsen a non-ScienceDirect citation. Two smaller
+robustness tweaks shipped alongside: publication-year contexts are now tried before the
+generic first-year fallback (a year embedded in a title, "…deaths to 2030", no longer beats
+the real publication year), and the list-number stripper handles the tight PMC form
+"2.Von Hoff DD" without eating decimals like "19.5%".
+
+**Results.** The real document went **1/78 → 67/78** (68/78 after re-parsing its already
+stored references). Validated here end to end: a ScienceDirect reference parses to the
+correct title ("Chemical inhibition of acetyl-CoA carboxylase induces growth arrest…") and
+verifies through the federation with the DOI back-filled; a 10-reference synthetic
+ScienceDirect bibliography parsed and verified **10/10**; the existing 27-citation
+regression suite still passes **27/27** unchanged. The ~11 residual misses on the real
+document are **not** parsing bugs — ~4 are titles whose final word is capitalised (the
+journal-run heuristic swallows it, unfixable without a journal dictionary) and ~7 are genuine
+corpus/normalization misses (dropped hyphens, `Na(+)/H(+)`, an un-decoded HTML entity, a 1924
+German paper).
+
+**Operational note.** Parsing happens once, at upload/detection time; the verify stage reads
+the stored fields. Documents uploaded before this fix keep their garbage fields until
+re-parsed (re-upload or re-run detection); re-running verify alone does not re-parse.

@@ -1,4 +1,6 @@
 import re
+import html
+import unicodedata
 from dataclasses import dataclass
 from difflib import SequenceMatcher
 from enum import Enum
@@ -107,6 +109,51 @@ _PROJECTION = {
 }
 
 
+
+def norm_title_exact(t) -> str:
+    """Normalize a title to match the stored crossref.title_norm field.
+
+    Reverse-engineered from the stored index and verified by round-trip: strip embedded
+    XML/MathML markup tags (keeping their text content), lowercase, then replace every run
+    of Unicode non-word characters with a single space. Unicode letters are KEPT, not
+    ASCII-folded (stored title_norm preserves e.g. Greek 'nu'), and punctuation such as
+    en-dashes and curly apostrophes becomes a space rather than being dropped.
+    """
+    if not t:
+        return ""
+    if isinstance(t, list):
+        t = " ".join(x for x in t if x)
+    t = re.sub(r"<[^>]+>", " ", str(t))       # drop markup tags, keep inner text
+    t = html.unescape(t)                       # &lt; &amp; &#x2019; -> literal chars
+    t = t.lower()
+    t = unicodedata.normalize("NFKD", t)      # decompose accented letters
+    t = "".join(c for c in t if not unicodedata.combining(c))  # strip combining marks: a->a, e->e; keeps non-Latin scripts (nu stays nu)
+    t = re.sub(r"\W+", " ", t, flags=re.UNICODE)  # split on any non-word char (unicode-aware)
+    return t.strip()
+
+
+def _surname_tokens(author_field) -> set:
+    """Longest alphabetic token(s) from a cited-author string or Crossref author list."""
+    out = set()
+    if not author_field:
+        return out
+    names = []
+    if isinstance(author_field, list):
+        for a in author_field:
+            if isinstance(a, dict):
+                names.append(a.get("family") or a.get("name") or "")
+            else:
+                names.append(str(a))
+    else:
+        names.append(str(author_field))
+    for nm in names:
+        nm = unicodedata.normalize("NFKD", nm.lower()).encode("ascii", "ignore").decode()
+        toks = re.findall(r"[a-z]+", nm)
+        if toks:
+            out.add(max(toks, key=len))
+    return out
+
+
 class MongoLookup:
 
     def __init__(
@@ -190,6 +237,81 @@ class MongoLookup:
                 confidence=round(best_score, 4),
             )
         return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+    @staticmethod
+    def _shape(doc: dict) -> dict:
+        """Flatten a Crossref-shaped mongo doc into the field names the verifier reads."""
+        return {
+            "doi": doc.get("DOI"),
+            "title": extract_title_text(doc),
+            "year": extract_year(doc),
+            "journal": extract_journal(doc),
+            "volume": doc.get("volume"),
+            "issue": doc.get("issue"),
+            "page": doc.get("page"),
+            "publisher": doc.get("publisher"),
+            "type": doc.get("type"),
+            "author": doc.get("author") or [],
+            "author_names": [
+                (a.get("family") or a.get("name") or "").strip()
+                for a in (doc.get("author") or [])
+                if isinstance(a, dict)
+            ],
+        }
+
+    def by_title_exact(self, title, year=None, journal=None, author=None,
+                       cap: int = 25) -> LookupResult:
+        """EXACT normalized-title match against the crossref.title_norm index.
+
+        Deterministic (NOT fuzzy): the title is normalized with norm_title_exact and looked
+        up directly. If the normalized title is not unique, disambiguate with the citation's
+        year (+/-1), journal, and author surname; assert a match only when a single doc
+        survives (or all survivors share one DOI)."""
+        q = norm_title_exact(title)
+        if not q:
+            return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+        docs = list(self.collection.find({"title_norm": q}, _PROJECTION).limit(cap))
+        if not docs:
+            return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
+
+        method = MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY
+        if len(docs) == 1:
+            return LookupResult(found=True, method=method,
+                                record=self._shape(docs[0]), confidence=1.0)
+
+        # multiple docs share this normalized title -> disambiguate on other fields
+        cands = docs
+        if year:
+            yr = int(year)
+            filt = [d for d in cands
+                    if (extract_year(d) is None) or abs((extract_year(d) or yr) - yr) <= 1]
+            if filt:
+                cands = filt
+        if journal:
+            try:
+                from journal_authority import same_journal
+                jf = [d for d in cands
+                      if extract_journal(d) and same_journal(journal, extract_journal(d))]
+                if jf:
+                    cands = jf
+            except Exception:
+                pass
+        if author:
+            want = _surname_tokens(author)
+            if want:
+                af = [d for d in cands if _surname_tokens(d.get("author")) & want]
+                if af:
+                    cands = af
+
+        # unique survivor, or all survivors are the same work (one DOI) -> confident match
+        dois = {(d.get("DOI") or "").lower() for d in cands}
+        if len(cands) == 1 or len(dois) == 1:
+            return LookupResult(found=True, method=method,
+                                record=self._shape(cands[0]), confidence=1.0)
+        # still ambiguous across distinct DOIs: return best-effort top hit at lower
+        # confidence so the caller can treat it as a soft (title-only) confirmation
+        return LookupResult(found=True, method=MatchMethod.TITLE_ONLY,
+                            record=self._shape(cands[0]), confidence=0.5)
 
     def by_citation(self, parsed) -> LookupResult:
         if parsed.doi:

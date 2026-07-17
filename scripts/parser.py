@@ -39,12 +39,24 @@ _DOI_RE      = re.compile(
 # 10.1016/S0140-6736(13)60103-8 match in full while a trailing ) from
 # "(see doi:10.1016/xxx)" is excluded.
 _YEAR_RE     = re.compile(r'\b((?:19|20)\d{2})[a-z]?\b')
+# Publication-year contexts, tried before the generic first-year fallback. A
+# year embedded in a title (e.g. "...deaths to 2030:") matches none of these, so
+# it no longer wins over the real publication year that follows the journal.
+_PUB_YEAR_RES = (
+    re.compile(r'\b((?:19|20)\d{2})[a-z]?\s*;'),         # Vancouver  "2014;74:..."
+    re.compile(r'\(((?:19|20)\d{2})[a-z]?\)'),           # APA/NLM/Nature/Chicago  "(2014)"
+    re.compile(r'(?<![(\d])\.\s+((?:19|20)\d{2})\.(?=\s)'),  # eLife bare  ". 2014. "
+)
 _PAGES_RE    = re.compile(r'(?:pp?\.\s*)?(\d+)\s*[–—-]\s*(\d+)')
 _VOL_RE      = re.compile(r'\bvol(?:ume)?\.?\s*(\d+)', re.IGNORECASE)
 _ISSUE_RE    = re.compile(r'\bno\.?\s*(\d+)', re.IGNORECASE)
 _QUOTED_RE   = re.compile(r'[""“](.+?)[""”]')
 _BRACKET_RE  = re.compile(r'\s*\[[^\]]+\]')        # [DOI], [PubMed], etc.
-_LIST_NUM_RE = re.compile(r'^\s*(?:\[\d+\]|\d+[.):])[ \t]+')  # 1. or [1] prefix
+# Leading list number to strip from a single citation: "1.", "[1]", "1)".
+# `[ \t]*(?=\D)` (not `[ \t]+`) so the tight PMC form "2.Von Hoff DD" is stripped
+# too; the `(?=\D)` guard keeps it from eating into a leading number that is part
+# of the citation body.
+_LIST_NUM_RE = re.compile(r'^\s*(?:\[\d+\]|\d+[.):])[ \t]*(?=\D)')  # 1. or [1] prefix
 
 
 def _doi(text: str) -> Optional[str]:
@@ -52,6 +64,10 @@ def _doi(text: str) -> Optional[str]:
     return m.group(0).rstrip('.,;') if m else None
 
 def _year(text: str) -> Optional[int]:
+    for rx in _PUB_YEAR_RES:
+        m = rx.search(text)
+        if m:
+            return int(m.group(1))
     m = _YEAR_RE.search(text)
     return int(m.group(1)) if m else None
 
@@ -137,6 +153,96 @@ def _split_authors(text: str) -> list[str]:
     return parts
 
 
+# ── Elsevier / ScienceDirect HTML export ──────────────────────────────────
+# Format:  Author1 ∙ Author2 ∙ Author3 [… elided]  Title  Journal. YEAR;<nbsp>VOL:PAGES
+#          <badges: Full Text | Scopus (N) | PubMed | Crossref | Google Scholar>
+# The author list is BULLET-delimited (U+2219) and every entry trails a run of
+# link badges. The generic strategies understand neither, so they scatter author
+# fragments across the title/journal fields and title verification then fails.
+_SD_BADGE = (
+    r'(?:Full\s+Text(?:\s*\(PDF\))?|Abstract|Cross\s*[Rr]ef'
+    r'|Scopus(?:\s*\(\d[\d,]*\))?|PubMed(?:\s+Central)?|PMC(?:\s+free\s+article)?'
+    r'|Google\s+Scholar|View\s+in\s+Article|Download\s+PDF|PDF|ScienceDirect)'
+)
+_SD_BADGE_TAIL_RE = re.compile(r'(?:\s*' + _SD_BADGE + r')+\s*[.,]?\s*$', re.IGNORECASE)
+_SD_BULLET_RE   = re.compile(r'[∙·•]')             # U+2219 / U+00B7 / U+2022 author sep
+# Elided middle authors: a run of 2+ dots (whitespace-preceded so it can't latch
+# onto a preceding initial's period, "M.A. ..."), or the unicode ellipsis.
+_SD_ELLIPSIS_RE = re.compile(r'(?<=\s)\.{2,}|…')
+# Journal. YEAR;<nbsp>VOL(:ISSUE):PAGES  — the reliable structural anchor. \s
+# matches the non-breaking space Elsevier puts after the semicolon.
+_SD_TAIL_RE = re.compile(
+    r'\.\s+((?:19|20)\d{2})[a-z]?\s*;\s*(\d+)(?:\s*\((\d+)\))?'
+    r'\s*:\s*([\dA-Za-z]+(?:\s*[–—-]\s*[\dA-Za-z]+)?)'
+)
+# Journal name = the trailing run of Capitalised tokens (incl. abbreviations
+# like "J. Clin. Oncol.") right before that tail; the title's final words are
+# lower-case here, so the run stops at the title/journal boundary.
+_SD_JOURNAL_RE = re.compile(r'((?:[A-Z][A-Za-z]*\.?\s+)*[A-Z][A-Za-z]*\.?)\s*$')
+# "Surname, I.I." at the head of the final bullet chunk (last author glued to
+# the title when there is no eliding ellipsis).
+_SD_LAST_AUTHOR_RE = re.compile(
+    r"^([A-ZÀ-ɏ][\w'’.\-]*,\s+(?:[A-ZÀ-ɏ]\.\s*-?\s*)+)\s+(.+)$"
+)
+
+
+def _is_sciencedirect(clean: str) -> bool:
+    return bool(_SD_BULLET_RE.search(clean) or _SD_BADGE_TAIL_RE.search(clean))
+
+
+def _parse_sciencedirect(clean: str) -> dict:
+    """Parse an Elsevier/ScienceDirect reference into fields. Returns {} (so the
+    caller falls through to the generic strategies) unless a title is isolated."""
+    result: dict = {}
+    body = _SD_BADGE_TAIL_RE.sub('', clean).strip()
+
+    tm = _SD_TAIL_RE.search(body)
+    if tm:
+        result['volume'] = tm.group(2)
+        if tm.group(3):
+            result['issue'] = tm.group(3)
+        result['pages'] = re.sub(r'\s*[–—-]\s*', '-', tm.group(4))
+        before_tail = body[:tm.start()].strip()
+    else:
+        before_tail = body
+
+    # Journal: trailing Capitalised run right before the ". YEAR;" tail.
+    before_journal = before_tail
+    if tm:
+        jm = _SD_JOURNAL_RE.search(before_tail)
+        if jm:
+            result['journal'] = jm.group(1).strip().rstrip('.')
+            before_journal = before_tail[:jm.start()].strip()
+
+    # Authors (bullet-delimited) vs title. The final bullet chunk still holds the
+    # last author glued to the title: split on the elided-authors ellipsis if
+    # present, else at the "Surname, I.I." boundary.
+    chunks = [c.strip() for c in _SD_BULLET_RE.split(before_journal) if c.strip()]
+    authors: list[str] = []
+    title = None
+    if chunks:
+        *lead, last = chunks
+        authors.extend(a.rstrip('.,') for a in lead)
+        em = _SD_ELLIPSIS_RE.search(last)
+        if em:
+            head = last[:em.start()].strip().rstrip('.,')
+            if head:
+                authors.append(head)
+            title = last[em.end():].strip()
+        else:
+            nm = _SD_LAST_AUTHOR_RE.match(last)
+            if nm:
+                authors.append(nm.group(1).strip().rstrip('.,'))
+                title = nm.group(2).strip()
+            else:
+                title = last.strip()
+    if authors:
+        result['authors'] = authors
+    if title:
+        result['title'] = title.strip().rstrip('.,')
+    return result
+
+
 # ── universal parser ──────────────────────────────────────────────────────
 
 def _parse_universal(citation: str) -> dict:
@@ -154,6 +260,12 @@ def _parse_universal(citation: str) -> dict:
     # Pre-process: strip [DOI], [PubMed] tags and leading list numbers
     clean = _BRACKET_RE.sub('', citation).strip()
     clean = _LIST_NUM_RE.sub('', clean).strip()
+
+    # ── Strategy 0: Elsevier / ScienceDirect (bullet authors + badge tail) ─
+    if _is_sciencedirect(clean):
+        sd = _parse_sciencedirect(clean)
+        if sd.get('title'):
+            return sd
 
     # ── Strategy 1: quoted title (IEEE / MLA / Chicago) ──────────────────
     qm = _QUOTED_RE.search(clean)
@@ -520,7 +632,19 @@ def parse_citation(citation: str) -> ParsedCitation:
 # Matches [1], [ABC+94], [DL+ 94], 1., 1) at line start.
 # Note: colon (:) is intentionally excluded from the separator class — "Vol:pages"
 # patterns like "365: 488-492" would otherwise be falsely detected as ref #365.
-_NUM_MARKER_RE = re.compile(r'(?m)^[ \t]*(?:\[[\w+\-][\w+\-\s]*\]|\d{1,3}[.)])[ \t]+')
+# Trailing `[ \t]*(?!\d)` (not `[ \t]+`) so PMC's tight "1.Rahib L" form is caught;
+# the `(?!\d)` guard avoids mis-firing on decimals like "19.5%". Mirrors
+# ref_isolation._NUM_ENTRY_RE — keep the two in sync.
+_NUM_MARKER_RE = re.compile(r'(?m)^[ \t]*(?:\[[\w+\-][\w+\-\s]*\]|\d{1,3}[.)])[ \t]*(?!\d)')
+
+# PMC/PubMed HTML-export link badges that trail each reference. Stripped before
+# splitting so they can't be mistaken for entry-start markers. Mirrors
+# ref_isolation._LINK_BADGE_RE.
+_LINK_BADGE_RE = re.compile(
+    r'\[(?:DOI|PubMed|PubMed\s+Central|PMC(?:\s+free\s+article)?|Free\s+PMC\s+article'
+    r'|Google\s+Scholar|CrossRef|Web\s+of\s+Science|Full\s+Text|Abstract)\]',
+    re.IGNORECASE,
+)
 
 # Blocks that should be silently discarded — they are PDF noise, not citations.
 #   • eLife section labels that survived the parse_refs strip (leading indent, multi-line)
@@ -566,7 +690,7 @@ def split_citations(text: str) -> list[str]:
       2. Blank-line — paragraphs separated by empty lines
       3. Per-line   — each non-empty line is one citation
     """
-    text = text.strip()
+    text = _LINK_BADGE_RE.sub('', text).strip()
     if not text:
         return []
 
