@@ -198,6 +198,32 @@ class IntegratedLookup:
                "volume": d.get("volume")}
         return SolrResult(found=True, method=MatchMethod.META_MATCH, record=rec, confidence=1.0)
 
+    def _oa_title_phrase(self, title, year=None):
+        """Punctuation-INSENSITIVE OpenAlex title match: a phrase query on the analyzed
+        `title` field (tokenization already strips punctuation, so a cited colon matches a
+        stored dash), then keep ONLY an exact canonical-key match — stays exact, not fuzzy.
+        Closes the title_exact punctuation gap for OpenAlex-only works. Runs as a fallback,
+        anchored on a multi-token title + year filter so it stays fast and selective."""
+        from title_normalize import normalize_title_key
+        key = normalize_title_key(title)
+        if not key or len(key.split()) < 4:      # too-generic phrase -> skip
+            return None
+        params = {"q": 'title:"%s"' % key.replace('"', " "),
+                  "fq": ("publication_year:[%d TO %d]" % (int(year) - 1, int(year) + 1)
+                         if year else ""),
+                  "facet": "false", "hl": "false", "wt": "json", "rows": 10,
+                  "fl": "id,title,doi,publication_year,venue_name,author_names"}
+        try:
+            docs = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]["docs"]
+        except Exception:
+            return None
+        for d in docs:
+            tt = d.get("title")
+            tt = tt[0] if isinstance(tt, list) and tt else tt
+            if normalize_title_key(tt or "") == key:
+                return d
+        return None
+
     def by_title_exact(self, title, year=None, journal=None, author=None):
         """Federated exact-title match: Crossref `title_norm` first (punctuation-collapsed,
         robust), then OpenAlex `title_exact` (broader corpus). Returns a LookupResult so it
@@ -207,6 +233,8 @@ class IntegratedLookup:
         if hit and hit.found:
             return hit
         d = self._oa_title_exact(title, year=year)
+        if not d:                                  # punctuation-variant fallback
+            d = self._oa_title_phrase(title, year=year)
         if d:
             t = d.get("title")
             t = t[0] if isinstance(t, list) and t else t

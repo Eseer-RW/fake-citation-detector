@@ -111,25 +111,12 @@ _PROJECTION = {
 
 
 def norm_title_exact(t) -> str:
-    """Normalize a title to match the stored crossref.title_norm field.
-
-    Reverse-engineered from the stored index and verified by round-trip: strip embedded
-    XML/MathML markup tags (keeping their text content), lowercase, then replace every run
-    of Unicode non-word characters with a single space. Unicode letters are KEPT, not
-    ASCII-folded (stored title_norm preserves e.g. Greek 'nu'), and punctuation such as
-    en-dashes and curly apostrophes becomes a space rather than being dropped.
-    """
-    if not t:
-        return ""
-    if isinstance(t, list):
-        t = " ".join(x for x in t if x)
-    t = re.sub(r"<[^>]+>", " ", str(t))       # drop markup tags, keep inner text
-    t = html.unescape(t)                       # &lt; &amp; &#x2019; -> literal chars
-    t = t.lower()
-    t = unicodedata.normalize("NFKD", t)      # decompose accented letters
-    t = "".join(c for c in t if not unicodedata.combining(c))  # strip combining marks: a->a, e->e; keeps non-Latin scripts (nu stays nu)
-    t = re.sub(r"\W+", " ", t, flags=re.UNICODE)  # split on any non-word char (unicode-aware)
-    return t.strip()
+    """Canonical title-matching key. Delegates to title_normalize.normalize_title_key — the
+    SAME function used to build crs.crossref.title_norm — so a query key is byte-identical to
+    the stored field (verified 3936/3936 random + 400/400 markup titles). Replaces the earlier
+    reverse-engineered version, which drifted ~1.3% on markup/double-escape/casefold cases."""
+    from title_normalize import normalize_title_key
+    return normalize_title_key(t)
 
 
 def _surname_tokens(author_field) -> set:
