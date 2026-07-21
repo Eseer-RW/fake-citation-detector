@@ -15,8 +15,8 @@ Schema:
 import gzip, json, multiprocessing, re, sqlite3, time
 from pathlib import Path
 
-DUMP_DIR = Path('/home/rwang/crossref/data/March_2026_Public_Data_File_from_Crossref')
-DB_PATH  = Path('/home/rwang/crossref/biblio_index.db')
+DUMP_DIR = Path.home() / 'crossref' / 'data' / 'March_2026_Public_Data_File_from_Crossref'
+DB_PATH  = Path.home() / 'crossref' / 'biblio_index.db'
 WORKERS  = 16
 
 _PUNCT = re.compile(r'[^\w\s]', re.U)

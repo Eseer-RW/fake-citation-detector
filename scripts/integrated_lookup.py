@@ -263,12 +263,13 @@ class IntegratedLookup:
                 found=True,
                 method=MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY,
                 record=rec, confidence=1.0)
-        if not _repaired:                         # PDF ligature-mojibake fallback
-            from text_repair import repair_pdf_ligatures
-            rt = repair_pdf_ligatures(title)
-            if rt != title:
-                return self.by_title_exact(rt, year=year, journal=journal,
-                                           author=author, _repaired=True)
+        if not _repaired:                         # retry with cleaned title variants
+            from text_repair import title_repair_variants  # ligature / author-strip / greek
+            for _variant in title_repair_variants(title):
+                _r = self.by_title_exact(_variant, year=year, journal=journal,
+                                         author=author, _repaired=True)
+                if _r.found:
+                    return _r
         return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
 
     def references(self, doi: str) -> list:

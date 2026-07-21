@@ -19,7 +19,7 @@ from mongo_lookup import MongoLookup, MatchMethod, extract_title_text, extract_y
 
 # config
 
-TAR_PATH = "/home/rwang/crossref/data/March_2026_Public_Data_File_from_Crossref.tar"
+TAR_PATH = str(__import__("pathlib").Path.home() / "crossref" / "data" / "March_2026_Public_Data_File_from_Crossref.tar")
 
 TEST_FILES = [
     "March_2026_Public_Data_File_from_Crossref/222.jsonl.gz",

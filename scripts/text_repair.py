@@ -1,33 +1,24 @@
 """text_repair.py — repair PDF text-extraction artifacts in reference titles.
 
-Old (Adobe/Times-encoded) PDFs export the fi/fl ligatures and some dashes as the wrong
-glyphs, so GROBID hands us titles like `modi®ed` (modified), `in¯uenza` (influenza),
-`®rst` (first), `¯uorescent` (fluorescent), `WorkshopÐMay` (Workshop—May). Those normalize
-to garbage and fail exact title matching even though the paper is real. This restores the
-intended characters BEFORE normalization.
-
-Kept conservative — only the glyph substitutions actually observed in the corpus. The fi/fl
-ligature mojibake is applied wherever the glyph is FOLLOWED by a letter (fi/fl always begin a
-syllable), which catches mid-word (`modi®ed`) and word-initial (`®rst`) cases while leaving a
-word-final trademark `®` ("Brand® ") or a stand-alone macron untouched.
+Old (Adobe/Times-encoded) PDFs export fi/fl ligatures and some dashes as the wrong glyphs,
+so GROBID hands us titles like `modi®ed`, `in¯uenza`, `®rst`, `WorkshopÐMay`. GROBID also
+sometimes leaks a leading consortium/author string into the title (`The BAC Resource
+Consortium. Integration of…`) or spells a Greek letter as a word (`beta`, `lambda`). Any of
+these makes the normalized title fail exact matching even though the paper is real. These
+helpers restore/clean the title BEFORE normalization; `title_repair_variants` yields the
+distinct cleaned candidates to retry.
 """
 import re
 
-# Proper Unicode ligature codepoints (NFKD also handles these; included for completeness).
-_LIGATURES = {
-    "ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi",
-    "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st",
-}
-# Legacy-encoding mojibake: fi/fl ligatures mis-mapped to these glyphs.
+# ── ligature / dash mojibake ───────────────────────────────────────────────
+_LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st"}
 _MOJIBAKE_LIG = {"®": "fi", "¯": "fl"}
-# followed-by-a-letter guard: catches modi®ed AND ®rst / ¯uorescent, spares "Brand® ".
 _LIG_RE = {bad: re.compile(re.escape(bad) + r"(?=[A-Za-z])") for bad in _MOJIBAKE_LIG}
-# Dash mangled by the same encoding (appears between/around words, applied globally).
 _MOJIBAKE_DASH = {"Ð": "-"}
 
 
 def repair_pdf_ligatures(s):
-    """Return s with observed PDF ligature/dash mojibake restored; idempotent."""
+    """Restore observed PDF ligature/dash mojibake; idempotent."""
     if not s:
         return s
     for lig, rep in _LIGATURES.items():
@@ -42,7 +33,54 @@ def repair_pdf_ligatures(s):
     return s
 
 
-# arXiv identifiers in reference text -> the arXiv-assigned DOI (indexed by OpenAlex).
+# ── leaked consortium/author prefix ────────────────────────────────────────
+_LEAD_CONSORTIUM_RE = re.compile(
+    r"^\s*(?:The\s+)?[A-Z][\w&'./-]*(?:\s+[\w&'./-]+){0,8}?\s+"
+    r"(?:Consortium|Collaboration|Working\s+Group|Study\s+Group|Group|Project|Team"
+    r"|Initiative|Network|Investigators|Committee)\.?\s+(?=[A-Z0-9])")
+_LEAD_INITIAL_RE = re.compile(r"^\s*(?:[A-Z]\.\s*){1,3}(?=[A-Z][a-z])")
+
+
+def strip_leading_author(title):
+    """Remove a leaked leading consortium/group name or orphan initials from a title."""
+    if not title:
+        return title
+    t = _LEAD_CONSORTIUM_RE.sub("", title, count=1)
+    t = _LEAD_INITIAL_RE.sub("", t, count=1)
+    return t.strip()
+
+
+# ── Greek letter spelled as a word ↔ symbol (conservative, last-resort) ─────
+_GREEK = {"alpha": "α", "beta": "β", "gamma": "γ", "delta": "δ", "epsilon": "ε",
+          "zeta": "ζ", "eta": "η", "theta": "θ", "iota": "ι", "kappa": "κ",
+          "lambda": "λ", "sigma": "σ", "tau": "τ", "upsilon": "υ", "phi": "φ",
+          "chi": "χ", "psi": "ψ", "omega": "ω", "mu": "μ", "nu": "ν", "pi": "π"}
+_GREEK_RE = re.compile(r"\b(" + "|".join(_GREEK) + r")\b", re.IGNORECASE)
+
+
+def greek_words_to_symbols(title):
+    """Convert spelled-out Greek letter words to their symbols (beta→β, lambda→λ)."""
+    if not title:
+        return title
+    return _GREEK_RE.sub(lambda m: _GREEK[m.group(0).lower()], title)
+
+
+def title_repair_variants(title):
+    """Yield distinct cleaned title variants (!= original) to retry exact matching,
+    applied cumulatively: ligature-repair → +author-strip → +greek-symbols."""
+    if not title:
+        return
+    seen = {title}
+    lig = repair_pdf_ligatures(title)
+    au = strip_leading_author(lig)
+    gk = greek_words_to_symbols(au)
+    for v in (lig, au, gk):
+        if v and v not in seen:
+            seen.add(v)
+            yield v
+
+
+# ── arXiv id → DOI ─────────────────────────────────────────────────────────
 _ARXIV_NEW = re.compile(r'arxiv[:\s]\s*(\d{4}\.\d{4,5})(?:v\d+)?', re.IGNORECASE)
 _ARXIV_OLD = re.compile(
     r'\b((?:cond-mat|hep-th|hep-ph|hep-ex|hep-lat|gr-qc|quant-ph|astro-ph|nucl-th'

@@ -36,7 +36,7 @@ import requests
 # ── Config ────────────────────────────────────────────────────────────────────
 GROBID_URL       = "http://localhost:8070/api/processFulltextDocument"
 DOWNLOAD_DIR     = pathlib.Path.home() / "cross_year_study" / "pdfs"
-GROBID_TIMEOUT   = 120
+GROBID_TIMEOUT   = 240
 DOWNLOAD_TIMEOUT = 60
 CROSSREF_API     = "https://api.crossref.org/works"
 CROSSREF_EMAIL   = "rwang@insilicom.com"
@@ -249,19 +249,22 @@ def crossref_refs(doi: str) -> list | None:
 # ── GROBID ───────────────────────────────────────────────────────────────────
 
 def grobid_process(pdf_path: pathlib.Path) -> Optional[str]:
-    try:
-        with pdf_path.open("rb") as fh:
-            resp = requests.post(
-                GROBID_URL,
-                files={"input": (pdf_path.name, fh, "application/pdf")},
-                data={"consolidateHeader": "0", "consolidateCitations": "0",
-                      "includeRawCitations": "1"},
-                timeout=GROBID_TIMEOUT,
-            )
-        if resp.status_code == 200:
-            return resp.text
-    except Exception:
-        pass
+    import time as _t
+    for _attempt in range(3):          # retry transient GROBID timeouts / 5xx / resets
+        try:
+            with pdf_path.open("rb") as fh:
+                resp = requests.post(
+                    GROBID_URL,
+                    files={"input": (pdf_path.name, fh, "application/pdf")},
+                    data={"consolidateHeader": "0", "consolidateCitations": "0",
+                          "includeRawCitations": "1"},
+                    timeout=GROBID_TIMEOUT,
+                )
+            if resp.status_code == 200:
+                return resp.text
+        except Exception:
+            pass
+        _t.sleep(3)
     return None
 
 
@@ -288,6 +291,19 @@ _H_NONACAD_RE = re.compile(
 )
 
 
+# Author/affiliation fragments that GROBID over-segments out of consortium author
+# lists or address blocks (no title, no year) -- noise, not citations.
+_H_AFFIL_RE = re.compile(
+    r"\([^)]*\b(?:University|Universit[e\u00e9]|Institut\w*|College|Hospital|Laborator"
+    r"|Department|Ministry|Organi[sz]ation|Collaboration|Cent(?:er|re)\w*|School|Foundation"
+    r"|Council|Agency|Consortium|Group)\b", re.IGNORECASE)
+_H_ADDRESS_RE = re.compile(
+    r"\b(?:Drive|Street|Road|Avenue|Ave\.|Boulevard|Blvd|Lane)\b[^.]*\b[A-Z]{2}\b\s*\d{5}"
+    r"|\b\d{5}(?:-\d{4})?\b[^.]*\bUSA\b", re.IGNORECASE)
+_H_NAMEAFFIL_RE = re.compile(r"^[A-Z][\w.'-]+(?:\s+[A-Z][\w.'-]*){1,4}\s*\([^)]*\)\s*\*?\s*;?\s*$")
+_H_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
+
+
 def is_likely_nonacademic(ref) -> bool:
     """Return True if this unmatched reference is likely a non-academic source.
 
@@ -305,6 +321,10 @@ def is_likely_nonacademic(ref) -> bool:
     if _H_ACCESS_RE.search(raw) and not ref.title:            # "available at" with no title
         return True
     if len(raw.strip()) < 15 and not ref.title:               # near-empty parse artifact
+        return True
+    # Author/affiliation fragment: no title, no year, institution parenthetical or address.
+    if (not ref.title and not _H_YEAR_RE.search(raw)
+            and (_H_AFFIL_RE.search(raw) or _H_ADDRESS_RE.search(raw))):
         return True
     return False
 
