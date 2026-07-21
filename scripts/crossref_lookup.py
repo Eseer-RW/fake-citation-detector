@@ -27,7 +27,7 @@ from solr_lookup import SolrResult, MatchMethod
 
 CROSSREF_API         = "https://api.crossref.org/works"
 SIMILARITY_THRESHOLD = 0.85
-LOCAL_DB_PATH        = Path('/home/rwang/crossref/crossref_index.db')
+LOCAL_DB_PATH        = Path.home() / 'crossref' / 'crossref_index.db'
 
 # Global rate limiter — shared across ALL threads and jobs in this process.
 # Caps total Crossref API throughput at 45 req/s, staying under polite-pool limit (50/s)

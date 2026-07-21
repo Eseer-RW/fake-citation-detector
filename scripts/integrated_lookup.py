@@ -80,6 +80,21 @@ class IntegratedLookup:
                             out[i] = r
                     except Exception:
                         pass
+        # arXiv fallback: no DOI but an arXiv id in the raw text -> 10.48550/arXiv.<id>
+        if self.solr is not None:
+            from text_repair import arxiv_doi_from_text
+            for i in range(n):
+                if out[i] is not None or getattr(refs[i], "doi", None):
+                    continue
+                adoi = arxiv_doi_from_text(getattr(refs[i], "raw", None)
+                                           or getattr(refs[i], "title", None))
+                if adoi:
+                    try:
+                        r = self.solr.by_doi(adoi)
+                        if r.found:
+                            out[i] = r
+                    except Exception:
+                        pass
         rem = [i for i in range(n) if out[i] is None and getattr(refs[i], "doi", None)]
         if rem:
             try:
@@ -224,7 +239,7 @@ class IntegratedLookup:
                 return d
         return None
 
-    def by_title_exact(self, title, year=None, journal=None, author=None):
+    def by_title_exact(self, title, year=None, journal=None, author=None, _repaired=False):
         """Federated exact-title match: Crossref `title_norm` first (punctuation-collapsed,
         robust), then OpenAlex `title_exact` (broader corpus). Returns a LookupResult so it
         is a drop-in for the pipeline's Phase 3.9."""
@@ -248,6 +263,12 @@ class IntegratedLookup:
                 found=True,
                 method=MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY,
                 record=rec, confidence=1.0)
+        if not _repaired:                         # PDF ligature-mojibake fallback
+            from text_repair import repair_pdf_ligatures
+            rt = repair_pdf_ligatures(title)
+            if rt != title:
+                return self.by_title_exact(rt, year=year, journal=journal,
+                                           author=author, _repaired=True)
         return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
 
     def references(self, doi: str) -> list:

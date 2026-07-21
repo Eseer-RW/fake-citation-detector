@@ -35,7 +35,7 @@ import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 GROBID_URL       = "http://localhost:8070/api/processFulltextDocument"
-DOWNLOAD_DIR     = pathlib.Path("/home/rwang/cross_year_study/pdfs")
+DOWNLOAD_DIR     = pathlib.Path.home() / "cross_year_study" / "pdfs"
 GROBID_TIMEOUT   = 120
 DOWNLOAD_TIMEOUT = 60
 CROSSREF_API     = "https://api.crossref.org/works"
@@ -673,7 +673,7 @@ def validate_metadata(ref, record) -> list:
     return issues
 
 
-BIBLIO_DB = "/home/rwang/crossref/biblio_index.db"
+BIBLIO_DB = str(pathlib.Path.home() / "crossref" / "biblio_index.db")
 
 def _biblio_surname_match(cited, actual) -> bool:
     import unicodedata as _ud

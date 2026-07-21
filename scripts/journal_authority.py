@@ -14,7 +14,7 @@ import os, re, sqlite3, threading
 
 _DB_PATH = os.environ.get(
     "JOURNAL_AUTHORITY_DB",
-    "/home/rwang/journal_authority/journal_authority.sqlite",
+    str(__import__("pathlib").Path.home() / "journal_authority" / "journal_authority.sqlite"),
 )
 
 _STOP = {"of","the","and","for","in","on","at","to","a","an","&","de","la","le",
