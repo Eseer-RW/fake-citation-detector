@@ -82,10 +82,20 @@ class IntegratedLookup:
                         pass
         # arXiv fallback: no DOI but an arXiv id in the raw text -> 10.48550/arXiv.<id>
         if self.solr is not None:
-            from text_repair import arxiv_doi_from_text
+            from text_repair import arxiv_doi_from_text, preprint_doi_from_text
             for i in range(n):
                 if out[i] is not None or getattr(refs[i], "doi", None):
                     continue
+                _raw = getattr(refs[i], "raw", None) or getattr(refs[i], "title", None)
+                for _idf in (arxiv_doi_from_text(_raw), preprint_doi_from_text(_raw)):
+                    if _idf and out[i] is None:
+                        try:
+                            r = self.solr.by_doi(_idf)
+                            if r.found:
+                                out[i] = r
+                        except Exception:
+                            pass
+                continue
                 adoi = arxiv_doi_from_text(getattr(refs[i], "raw", None)
                                            or getattr(refs[i], "title", None))
                 if adoi:

@@ -1410,3 +1410,46 @@ German paper).
 **Operational note.** Parsing happens once, at upload/detection time; the verify stage reads
 the stored fields. Documents uploaded before this fix keep their garbage fields until
 re-parsed (re-upload or re-run detection); re-running verify alone does not re-parse.
+
+## 22. Precision Validation, Preprint IDs, and Fabrication-Likelihood Scoring (added July 22, 2026)
+
+### 22.1 Does the detector actually catch fakes? (precision)
+
+All prior sections measured *recall* on real citations. The detector's actual job is to flag
+*fabricated* ones, which had never been measured directly. A controlled test: 16 plausible
+but wholly invented citations (real journals, plausible authors/years/volumes, LLM-style
+hallucinated titles) and 10 known-real controls, run through exact matching.
+
+| set | result |
+|-----|--------|
+| **16 fabricated** | **16/16 correctly flagged** (none verified) |
+| **10 real controls** | **10/10 correctly verified** |
+
+Zero fakes slipped through and zero real citations were false-flagged. This confirms the
+ligature / author-strip / Greek recall additions did **not** make the matcher permissive —
+the failure mode of adding recall is fakes starting to pass, and they do not, because the
+matching stays exact. (Metadata-collision fakes — a real journal+volume+page with a
+fabricated title, which should trip `FOUND_MISMATCH` — are the remaining precision sub-test,
+pending OpenAlex availability.)
+
+### 22.2 Identifier-based recall: PMID, bioRxiv, medRxiv
+
+Beyond arXiv (Section 21-era), references frequently carry a **PMID** or a **bioRxiv/medRxiv**
+id but no journal DOI — a large share of the `no_title`/`no_journal_or_vol` misses in
+physics and biomedicine. `text_repair` now extracts these (`pmid_from_text`,
+`preprint_doi_from_text`), and `verify_dois` resolves them: preprint ids become the
+`10.1101/<id>` DOI. Note bioRxiv/medRxiv DOIs are **absent from the Crossref dump** — they
+resolve through OpenAlex, so this recall (like PMID) is validated once the OpenAlex index is
+reachable; the extraction and wiring are in place.
+
+### 22.3 Fabrication-likelihood scoring
+
+A "not found" verdict is not proof of fabrication — real but poorly-indexed works (books,
+proceedings, old or non-English papers) also fail to match (the not-found validation put the
+candidate-true-not-found fraction at ~30% of not-founds). `fabrication_scoring.py` assigns
+each unmatched reference a prior in [0,1] so a reviewer can triage. Fabrications look *clean*
+— a title-bearing article in a real, major journal with complete and recent metadata —
+whereas real-but-uncovered works skew title-less, older, or in venues the authority can't
+resolve. On the controlled set the two classes separate with no overlap: fabricated
+citations score **0.70–0.95 (high)**, real-but-uncovered ones **0.05–0.35 (low)**. This turns
+the flat not-found list into a ranked review queue.

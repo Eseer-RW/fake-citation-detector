@@ -94,3 +94,25 @@ def arxiv_doi_from_text(text):
         return None
     m = _ARXIV_NEW.search(text) or _ARXIV_OLD.search(text)
     return ("10.48550/arxiv." + m.group(1).lower()) if m else None
+
+
+# ── PMID / bioRxiv / medRxiv identifiers ───────────────────────────────────
+_PMID_RE = re.compile(r'\bPMID:?\s*(\d{6,9})\b', re.IGNORECASE)
+_PREPRINT_RE = re.compile(
+    r'\b(?:bio|med)Rxiv\b[^0-9]{0,25}?(\d{4}\.\d{2}\.\d{2}\.\d{6,8}|\d{6,7})', re.IGNORECASE)
+
+
+def pmid_from_text(text):
+    """Return a PubMed ID string found in the reference text, else None (resolve via OpenAlex)."""
+    if not text:
+        return None
+    m = _PMID_RE.search(text)
+    return m.group(1) if m else None
+
+
+def preprint_doi_from_text(text):
+    """Return the bioRxiv/medRxiv DOI (10.1101/<id>) for a preprint id in the text, else None."""
+    if not text:
+        return None
+    m = _PREPRINT_RE.search(text)
+    return ("10.1101/" + m.group(1)) if m else None
