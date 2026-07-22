@@ -116,3 +116,21 @@ def preprint_doi_from_text(text):
         return None
     m = _PREPRINT_RE.search(text)
     return ("10.1101/" + m.group(1)) if m else None
+
+
+# ── corrupted-DOI recovery ─────────────────────────────────────────────────
+_DOI_TRAIL_RE = re.compile(r"\.(?:ac-?cessed|accessed|retrieved|available)\b.*$", re.IGNORECASE)
+
+
+def clean_doi_variants(doi):
+    """Yield cleaned candidates for a possibly-corrupted extracted DOI: a trailing
+    reference-number (".183") or 'accessed' text appended, or a leading digit error
+    ("110." -> "10."). Only well-formed 10.x/ DOIs are yielded; the caller accepts a
+    variant only if it actually resolves, so cleaning cannot introduce false matches."""
+    d = (doi or "").strip().lower()
+    seen = set()
+    for c in (d, _DOI_TRAIL_RE.sub("", d), re.sub(r"^1(10\.\d{4})", r"\1", d),
+              re.sub(r"\.\d{1,4}$", "", d)):
+        c = c.strip().rstrip(".")
+        if c and c not in seen and re.match(r"^10\.\d{4,9}/", c):
+            seen.add(c); yield c

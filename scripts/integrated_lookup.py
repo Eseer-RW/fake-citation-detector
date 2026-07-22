@@ -116,6 +116,24 @@ class IntegratedLookup:
                             out[i] = r
                     except Exception:
                         pass
+        # corrupted-DOI recovery: a ref whose DOI did not resolve may have a ref-number
+        # or 'accessed' suffix appended by extraction; retry cleaned variants (accept only
+        # a variant that resolves, so this cannot introduce false matches).
+        if self.solr is not None:
+            from text_repair import clean_doi_variants
+            for i in range(n):
+                if out[i] is not None or not getattr(refs[i], "doi", None):
+                    continue
+                _orig = (refs[i].doi or "").strip().lower()
+                for _cv in clean_doi_variants(refs[i].doi):
+                    if _cv == _orig:
+                        continue
+                    try:
+                        r = self.solr.by_doi(_cv)
+                        if r.found:
+                            out[i] = r; break
+                    except Exception:
+                        pass
         rem = [i for i in range(n) if out[i] is None and getattr(refs[i], "doi", None)]
         if rem:
             try:
