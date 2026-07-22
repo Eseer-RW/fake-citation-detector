@@ -49,6 +49,17 @@ _PUB_YEAR_RES = (
 )
 _PAGES_RE    = re.compile(r'(?:pp?\.\s*)?(\d+)\s*[–—-]\s*(\d+)')
 _VOL_RE      = re.compile(r'\bvol(?:ume)?\.?\s*(\d+)', re.IGNORECASE)
+# "Journal, Vol, Pages." — comma-delimited alternative to the "Journal Vol:Pages"
+# colon form (Strategy 2 below), used by some journals' own house reference
+# style (e.g. Bioinformatics/Database (Oxford): "BMC Bioinformatics, 13, 161.",
+# "Database (Oxford), 2014, bau074." -- the latter uses the year in the volume
+# slot and an alphanumeric article id in the pages slot, both handled as-is
+# since neither field is validated beyond its shape here).
+_CVP_RE      = re.compile(
+    r'\.\s+([A-Z][\w.()]*(?:\s+[\w.()]+)*),\s*'
+    r'(\d+(?:\s*\(Suppl\.?\s*\d+\))?),\s*'
+    r'([\w][\w–—-]*)\s*\.?\s*$'
+)
 _ISSUE_RE    = re.compile(r'\bno\.?\s*(\d+)', re.IGNORECASE)
 _QUOTED_RE   = re.compile(r'[""“](.+?)[""”]')
 _BRACKET_RE  = re.compile(r'\s*\[[^\]]+\]')        # [DOI], [PubMed], etc.
@@ -327,9 +338,16 @@ def _parse_universal(citation: str) -> dict:
             else:
                 result['title'] = before_vol.strip()
         else:
-            # No vol:pages — first sentence is the title
-            sm = re.match(r'^(.+?)\.(?:\s|$)', after)
-            result['title'] = sm.group(1).strip() if sm else after.strip().rstrip('.')
+            cvp_m = _CVP_RE.search(after)
+            if cvp_m:
+                result['title']   = after[:cvp_m.start()].strip().rstrip('.')
+                result['journal'] = cvp_m.group(1).strip()
+                result['volume']  = cvp_m.group(2).strip()
+                result['pages']   = cvp_m.group(3).strip()
+            else:
+                # No vol:pages / comma form — first sentence is the title
+                sm = re.match(r'^(.+?)\.(?:\s|$)', after)
+                result['title'] = sm.group(1).strip() if sm else after.strip().rstrip('.')
         return result
 
     # ── Strategy 3: (YEAR). with period — APA-like ───────────────────────
