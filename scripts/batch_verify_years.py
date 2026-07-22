@@ -690,6 +690,20 @@ def validate_metadata(ref, record) -> list:
         if surname and actual_tokens and surname not in actual_tokens:
             issues.append(f"author: cited first-author '{ca}' not among actual authors")
 
+    # Title: flag only when cited and actual titles CLEARLY differ (low word overlap) --
+    # catches a fabricated title matched to a real paper by DOI/coordinates, while
+    # tolerating subtitle/punctuation variation.
+    ct = getattr(ref, "title", None)
+    rt = _first(record.get("title"))
+    if ct and rt:
+        try:
+            from title_normalize import normalize_title_key
+            cw = set(normalize_title_key(ct).split()); rw = set(normalize_title_key(rt).split())
+            if cw and rw and len(cw & rw) / len(cw | rw) < 0.3:
+                issues.append(f"title: cited '{ct[:60]}' differs from actual '{rt[:60]}'")
+        except Exception:
+            pass
+
     return issues
 
 

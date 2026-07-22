@@ -82,11 +82,22 @@ class IntegratedLookup:
                         pass
         # arXiv fallback: no DOI but an arXiv id in the raw text -> 10.48550/arXiv.<id>
         if self.solr is not None:
-            from text_repair import arxiv_doi_from_text, preprint_doi_from_text
+            from text_repair import arxiv_doi_from_text, preprint_doi_from_text, pmid_from_text
             for i in range(n):
                 if out[i] is not None or getattr(refs[i], "doi", None):
                     continue
                 _raw = getattr(refs[i], "raw", None) or getattr(refs[i], "title", None)
+                _pm = pmid_from_text(_raw)
+                if _pm and out[i] is None:
+                    try:
+                        _pd = requests.get(_OA_SOLR, params={"q": "pmid:" + _pm, "fq": "",
+                              "rows": 1, "wt": "json", "fl": "doi"}, timeout=12).json()["response"]["docs"]
+                        if _pd and _pd[0].get("doi"):
+                            _r = self.solr.by_doi(_pd[0]["doi"])
+                            if _r.found:
+                                out[i] = _r
+                    except Exception:
+                        pass
                 for _idf in (arxiv_doi_from_text(_raw), preprint_doi_from_text(_raw)):
                     if _idf and out[i] is None:
                         try:
@@ -207,7 +218,7 @@ class IntegratedLookup:
         params = {"q": " AND ".join(clauses),
                   "fq": "publication_year:[%d TO %d]" % (int(yr) - 1, int(yr) + 1),
                   "facet": "false", "hl": "false", "wt": "json", "rows": 2,
-                  "fl": "id,title,doi,publication_year,venue_name,volume"}
+                  "fl": "id,title,doi,publication_year,venue_name,volume,author_names"}
         try:
             resp = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]
         except Exception:
