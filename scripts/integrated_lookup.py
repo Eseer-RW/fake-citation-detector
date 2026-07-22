@@ -213,43 +213,49 @@ class IntegratedLookup:
         return docs[0]
 
     def oa_by_metadata(self, ref):
-        """OpenAlex structured match: venue_id (resolved from the cited journal via the
-        journal authority) + volume + first_page, year-filtered. Asserted ONLY when it
-        uniquely identifies one work (numFound==1) — precision guard, since without the
-        venue_id or with plain numeric pages the triple can collide. Mirrors the Crossref
-        biblio match against the OpenAlex corpus. Returns a solr_lookup.SolrResult."""
+        """OpenAlex structured match: venue_id (from the cited journal via the journal
+        authority) + volume + year, plus a discriminator that is either first_page OR
+        first_author -- page mirrors the Crossref biblio match, author mirrors the boss's
+        SolrMetaVerifier. Asserted ONLY on a unique single hit (numFound==1) for precision."""
         from solr_lookup import SolrResult, MatchMethod
-        nf_result = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+        nf = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
         vol = getattr(ref, "volume", None); pg = getattr(ref, "first_page", None)
-        yr = getattr(ref, "year", None); j = getattr(ref, "journal", None)
-        if not (vol and pg and yr):
-            return nf_result
+        au = getattr(ref, "first_author", None); yr = getattr(ref, "year", None)
+        j = getattr(ref, "journal", None)
+        if not (vol and yr and (pg or au)):
+            return nf
         try:
             from journal_authority import venue_ids_for
             vids = venue_ids_for(j) if j else []
         except Exception:
             vids = []
-        clauses = ['volume:"%s"' % _solr_esc(vol), 'first_page:"%s"' % _solr_esc(pg)]
+        base = []
         if vids:
-            vc = " OR ".join('venue_id:"%s"' % str(v).rsplit("/", 1)[-1] for v in vids)
-            clauses.insert(0, "(%s)" % vc)
-        params = {"q": " AND ".join(clauses),
-                  "fq": "publication_year:[%d TO %d]" % (int(yr) - 1, int(yr) + 1),
-                  "facet": "false", "hl": "false", "wt": "json", "rows": 2,
-                  "fl": "id,title,doi,publication_year,venue_name,volume,author_names"}
-        try:
-            resp = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]
-        except Exception:
-            return nf_result
-        if resp.get("numFound") != 1:            # uniqueness guard
-            return nf_result
-        d = resp["docs"][0]
+            base.append("(%s)" % " OR ".join('venue_id:"%s"' % str(v).rsplit("/", 1)[-1] for v in vids))
+        base.append('volume:"%s"' % _solr_esc(vol))
+        fq = "publication_year:[%d TO %d]" % (int(yr) - 1, int(yr) + 1)
+
+        def _unique(extra):
+            params = {"q": " AND ".join(base + [extra]), "fq": fq, "facet": "false",
+                      "hl": "false", "wt": "json", "rows": 2,
+                      "fl": "id,title,doi,publication_year,venue_name,volume,author_names"}
+            try:
+                resp = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]
+            except Exception:
+                return None
+            return resp["docs"][0] if resp.get("numFound") == 1 else None
+
+        d = _unique('first_page:"%s"' % _solr_esc(pg)) if pg else None
+        if d is None and au:
+            d = _unique('author_names:"%s"' % _solr_esc(au))
+        if d is None:
+            return nf
         t = d.get("title"); t = t[0] if isinstance(t, list) and t else t
         rec = {"doi": (d.get("doi") or "").replace("https://doi.org/", "") or None,
                "openalex_id": d.get("id"), "title": t,
                "year": d.get("publication_year"), "publication_year": d.get("publication_year"),
                "journal": d.get("venue_name"), "venue_name": d.get("venue_name"),
-               "volume": d.get("volume")}
+               "volume": d.get("volume"), "author_names": d.get("author_names") or []}
         return SolrResult(found=True, method=MatchMethod.META_MATCH, record=rec, confidence=1.0)
 
     def _oa_title_phrase(self, title, year=None):
