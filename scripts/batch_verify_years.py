@@ -282,6 +282,11 @@ _H_ACCESS_RE = re.compile(
     r'|available\s+from|online\s+at|available\s+online)\b',
     re.I,
 )
+_H_POSTCODE_RE = re.compile(r"^\s*[A-Z]{1,2}\d{1,2}[A-Z]?\s+\d[A-Z]{2}\s*$")
+_H_BAREADDR_RE = re.compile(
+    r"^\s*(?:Present\s+address|Mail\s+code|Room\s+\d)|"
+    r"\b(?:\d+\s+[A-Za-z][\w ]*\b(?:Drive|Street|Road|Avenue|Boulevard|Expressway|Cedex)"
+    r"|Building\s+\d|Suite\s+\d|Station\s+d)", re.IGNORECASE)
 _H_NONACAD_RE = re.compile(
     r'\b(wikipedia\.org|github\.com|github\.io|stackoverflow\.com'
     r'|medium\.com|twitter\.com|youtube\.com|reddit\.com'
@@ -325,6 +330,10 @@ def is_likely_nonacademic(ref) -> bool:
     # Author/affiliation fragment: no title, no year, institution parenthetical or address.
     if (not ref.title and not _H_YEAR_RE.search(raw)
             and (_H_AFFIL_RE.search(raw) or _H_ADDRESS_RE.search(raw))):
+        return True
+    # Bare postal/address fragment (GROBID often puts the address in the title field).
+    _t = (getattr(ref, 'title', None) or raw)
+    if not _H_YEAR_RE.search(raw) and (_H_POSTCODE_RE.match(_t.strip()) or _H_BAREADDR_RE.search(_t)):
         return True
     return False
 

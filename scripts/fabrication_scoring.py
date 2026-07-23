@@ -12,7 +12,7 @@ Score in [0,1]; band low(<0.45) / medium / high(>=0.7). Applies only to unmatche
 from journal_authority import resolve as _resolve
 
 
-def fabrication_likelihood(ref, is_nonacademic=None):
+def fabrication_likelihood(ref, is_nonacademic=None, fuzzy_exists=None):
     reasons = []
     title = getattr(ref, "title", None)
     if (is_nonacademic and is_nonacademic(ref)) or not title:
@@ -39,6 +39,36 @@ def fabrication_likelihood(ref, is_nonacademic=None):
     except Exception:
         pass
 
+    if fuzzy_exists is not None and title:
+        # CLASSIFICATION signal only (never used to VERIFY a citation as real, so
+        # it honors the no-fuzzy-MATCHING directive): a not-found title that matches
+        # nothing even fuzzily is a strong fabrication signal; one that fuzzy-matches
+        # a real paper is a real citation with a variance, not a fabrication.
+        if fuzzy_exists(title, getattr(ref, 'year', None)):
+            score = min(score, 0.30); reasons.append('title fuzzy-matches a real paper (likely variance, not fabricated)')
+        else:
+            score = min(1.0, score + 0.25); reasons.append('title matches nothing even fuzzily (strong fabrication signal)')
     score = max(0.0, min(1.0, score))
     band = "high" if score >= 0.70 else ("medium" if score >= 0.45 else "low")
     return round(score, 2), band, reasons
+
+
+def crossref_fuzzy_exists(title, year=None, threshold=0.85):
+    """True if a closely-matching title exists in Crossref. CLASSIFICATION signal for
+    fabrication scoring ONLY -- never used to verify a citation as real."""
+    import requests
+    from difflib import SequenceMatcher
+    if not title:
+        return False
+    try:
+        items = requests.get("https://api.crossref.org/works",
+            params={"query.bibliographic": title, "rows": 3, "select": "title"},
+            headers={"User-Agent": "FakeCitationValidator/1.0 (mailto:rwang@insilicom.com)"},
+            timeout=12).json()["message"]["items"]
+        for x in items:
+            c = (x.get("title") or [""])[0]
+            if c and SequenceMatcher(None, title.lower(), c.lower()).ratio() >= threshold:
+                return True
+    except Exception:
+        pass
+    return False

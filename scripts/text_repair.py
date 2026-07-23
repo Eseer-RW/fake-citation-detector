@@ -39,6 +39,10 @@ _LEAD_CONSORTIUM_RE = re.compile(
     r"(?:Consortium|Collaboration|Working\s+Group|Study\s+Group|Group|Project|Team"
     r"|Initiative|Network|Investigators|Committee)\.?\s+(?=[A-Z0-9])")
 _LEAD_INITIAL_RE = re.compile(r"^\s*(?:[A-Z]\.\s*){1,3}(?=[A-Z][a-z])")
+# Leaked first-author "Surname, I.[I.] [et al.] " glued to the title.
+_LEAD_SURNAME_RE = re.compile(
+    r"^\s*[A-Z\u00c0-\u024f][A-Za-z\u00c0-\u024f'\u2019.-]+,\s+"
+    r"(?:[A-Z]\.\s*){1,4}(?:et\s+al\.?\s*)?(?=[A-Za-z0-9])")
 
 
 def strip_leading_author(title):
@@ -46,6 +50,7 @@ def strip_leading_author(title):
     if not title:
         return title
     t = _LEAD_CONSORTIUM_RE.sub("", title, count=1)
+    t = _LEAD_SURNAME_RE.sub("", t, count=1)
     t = _LEAD_INITIAL_RE.sub("", t, count=1)
     return t.strip()
 
@@ -65,6 +70,31 @@ def greek_words_to_symbols(title):
     return _GREEK_RE.sub(lambda m: _GREEK[m.group(0).lower()], title)
 
 
+_MERGE_SUFFIX_RE = re.compile(
+    r"(?<=[a-z]{3})(specific|associated|related|dependent|independent|mediated|induced"
+    r"|derived|labell?ed|based|wide|scale|resolution|throughput|dimensional|coding"
+    r"|binding|encoded|containing|deficient|positive|negative|driven|enriched|enhanced"
+    r"|regulated|activated|targeted|dependant|density|level|type|like)\b", re.IGNORECASE)
+_MERGE_PREFIX_RE = re.compile(
+    r"\b(two|three|four|high|low|single|multi|multiple|non|pre|post|self|well|cross"
+    r"|inter|intra|sub|super|over|under|whole|full|genome|cell|cancer|tissue|dye|long"
+    r"|short|large|small|real|wild)(?=[a-z]{4})", re.IGNORECASE)
+
+
+def demerge_words(title):
+    """Yield title variants with a space inserted at common dropped-hyphen compound
+    boundaries (dyelabeled -> dye labeled, highthroughput -> high throughput,
+    twodimensional -> two dimensional). Only-if-it-matches keeps this safe."""
+    if not title:
+        return
+    v1 = _MERGE_SUFFIX_RE.sub(lambda m: " " + m.group(1), title)
+    v2 = _MERGE_PREFIX_RE.sub(lambda m: m.group(1) + " ", title)
+    v3 = _MERGE_PREFIX_RE.sub(lambda m: m.group(1) + " ", v1)
+    for v in (v1, v2, v3):
+        if v != title:
+            yield v
+
+
 def title_repair_variants(title):
     """Yield distinct cleaned title variants (!= original) to retry exact matching,
     applied cumulatively: ligature-repair → +author-strip → +greek-symbols."""
@@ -74,7 +104,10 @@ def title_repair_variants(title):
     lig = repair_pdf_ligatures(title)
     au = strip_leading_author(lig)
     gk = greek_words_to_symbols(au)
-    for v in (lig, au, gk):
+    variants = [lig, au, gk]
+    for base in (title, lig, au):
+        variants.extend(demerge_words(base))
+    for v in variants:
         if v and v not in seen:
             seen.add(v)
             yield v
