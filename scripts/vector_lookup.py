@@ -220,8 +220,6 @@ def _faiss_by_title(title: str, year: int | None = None) -> "SolrResult":
 # Solr-rerank fallback (original implementation)
 # ---------------------------------------------------------------------------
 
-def _cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
-    return float(np.dot(a, b))
 
 
 def _get_title_str(doc: dict) -> str:

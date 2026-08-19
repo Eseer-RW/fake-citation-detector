@@ -64,6 +64,8 @@ arxiv_sweep.py --tei-source <TEI> --start YYMM --end YYMM --k K --workers 1
   └─ outputs months_S_E_kK.csv + refs_S_E_kK.jsonl
 ```
 
+Directory layout:  = the 30 live modules;  = index builders (biblio, FAISS, journal authority);  = 79 superseded one-off analyses and applied patch scripts, kept for the paper trail (their results live in the report and the memory notebook).
+
 Key modules:
 - `integrated_lookup.py` — matching backends (oa_local first, Solr fallback)
 - `oa_local.py` — sqlite backend; `OA_LOCAL_INDEX` env points it at tmpfs copy for big runs

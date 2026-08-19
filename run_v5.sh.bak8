@@ -1,0 +1,46 @@
+#!/bin/bash
+# run_v5.sh — VERIFY-ONLY rerun = the clean all-fixes baseline.
+#
+# Reuses v4's TEI cache (/space/rwang/tei_cache, 3599 processFulltextDocument files) so
+# GROBID is SKIPPED (cache hits) and only verification re-runs, now with every fix
+# deployed 2026-08-05:
+#   - unbounded-year title fallback      (integrated_lookup, .bak_unboundedyear)
+#   - mojibake repair + journal demotion (text_repair/.bak_moji345, bvy/.bak_demote345)
+#   - fq-cache metadata query            (integrated_lookup, .bak_fqcache)
+#   - curated OpenAlex index + hybrid works-fallback (env default; .bak_curated/.bak_hybrid)
+# Nested sampling is seeded, so v5 samples the SAME papers as v4 -> ~100% cache hits ->
+# GROBID essentially never called. Compare v5 vs v4 to isolate the fixes' aggregate effect.
+set -u
+cd /space/rwang/fake-citation-detector || exit 1
+source .venv/bin/activate
+
+OUT=/space/rwang/fake-citation-detector/results/arxiv_sweep_v5
+mkdir -p "$OUT"
+echo "V5_START $(date '+%F %T')  (verify-only, curated+hybrid, all fixes)"
+echo "SOLR primary : $(python3 -c 'import sys;sys.path.insert(0,"scripts");import solr_lookup;print(solr_lookup.SOLR_URL)')"
+echo "SOLR fallback: $(python3 -c 'import sys;sys.path.insert(0,"scripts");import integrated_lookup;print(integrated_lookup._OA_FALLBACK)')"
+
+# reuse whatever GROBID containers are already up (cache should make them idle)
+HOSTS=""
+for p in 8070 8071 8072 8073 8074 8075; do
+  [ "$(curl -s -m 5 http://localhost:$p/api/isalive)" = "true" ] && \
+    HOSTS="${HOSTS:+$HOSTS,}http://localhost:$p"
+done
+echo "grobid pool (fallback for any cache miss): ${HOSTS:-none}"
+
+python3 -u scripts/arxiv_sweep.py \
+  --start 1901 --end 2606 --k 40 \
+  --workers 32 --solr-workers 8 \
+  --grobid-hosts "${HOSTS:-http://localhost:8070}" \
+  --endpoint processFulltextDocument --grobid-timeout 300 \
+  --tei-cache /space/rwang/tei_cache \
+  --outdir "$OUT"
+echo "V5_SWEEP_DONE $(date '+%F %T')"
+
+echo; echo "################ V5 ANALYSIS ################"
+R="$OUT/refs_1901_2606_k40.jsonl"
+for s in refquality.py stratify_citedyear.py mismatch_bymethod.py analyze_power.py; do
+  echo; echo "--- $s ---"
+  python3 -u "scripts/$s" "$R" 2>&1 | head -220 || echo "(failed)"   # head-220: capture the power summary (v4 lost it at head-60)
+done
+echo "V5_ALL_DONE $(date '+%F %T')"

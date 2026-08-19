@@ -538,151 +538,8 @@ def _openalex_get(params: dict, headers: dict, max_retries: int = 3) -> list:
     return []
 
 
-def openalex_by_metadata(refs: list) -> list:
-    """Phase 2: exact-field citation lookup via OpenAlex API.
-
-    Strategy A (most precise): filter on year + volume + first_page.
-      OpenAlex indexed these as exact integer fields; the combination is nearly
-      unique across 250M works.  Journal name verified client-side.
-
-    Strategy B (fallback when no volume/page): search query on journal+author
-      filtered by year, then verify journal name client-side.
-
-    No fuzzy title matching.  Boss instruction: exact match only.
-    """
-    from solr_lookup import MatchMethod, SolrResult
-    _OA_HEADERS = {"User-Agent": f"FakeCitationDetector/1.0 (mailto:{CROSSREF_EMAIL})"}
-    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-
-    for i, ref in enumerate(refs):
-        journal      = getattr(ref, 'journal',      None)
-        year         = getattr(ref, 'year',         None)
-        volume       = getattr(ref, 'volume',       None)
-        first_page   = getattr(ref, 'first_page',   None)
-        first_author = getattr(ref, 'first_author', None)
-
-        if not year:
-            continue
-
-        matched = False
-
-        # ── Strategy A: exact filter on year + volume + first_page ───────────
-        if volume and first_page and not matched:
-            filt = f"publication_year:{year},biblio.volume:{volume},biblio.first_page:{first_page}"
-            items = _openalex_get(
-                {"filter": filt, "per-page": "10", "mailto": CROSSREF_EMAIL},
-                _OA_HEADERS,
-            )
-            for item in items:
-                item_j = ((item.get("primary_location") or {})
-                          .get("source") or {}).get("display_name", "")
-                if _journals_match(journal, item_j):
-                    results[i] = SolrResult(
-                        found=True, method=MatchMethod.META_MATCH,
-                        record=item, confidence=1.0,
-                    )
-                    matched = True
-                    break
-
-        # ── Strategy B: search by journal + author, filter by year ───────────
-        if not matched and journal:
-            q_parts = [journal]
-            if first_author:
-                q_parts.append(first_author)
-            items = _openalex_get(
-                {"search": " ".join(q_parts),
-                 "filter": f"publication_year:{year}",
-                 "per-page": "5",
-                 "mailto": CROSSREF_EMAIL},
-                _OA_HEADERS,
-            )
-            for item in items:
-                if first_page:
-                    item_fp = (item.get("biblio") or {}).get("first_page", "")
-                    if item_fp and str(item_fp) != str(first_page):
-                        continue
-                item_j = ((item.get("primary_location") or {})
-                          .get("source") or {}).get("display_name", "")
-                if _journals_match(journal, item_j):
-                    results[i] = SolrResult(
-                        found=True, method=MatchMethod.META_MATCH,
-                        record=item, confidence=1.0,
-                    )
-                    matched = True
-                    break
-
-    return results
 
 
-def crossref_by_metadata(refs: list) -> list:
-    """Phase 3: exact bibliographic metadata match via the FREE Crossref API.
-
-    Matches journal + year + volume + page + first-author, ALL exact. Journal names
-    (full / ISO-4 abbreviation / alternate / acronym) are compared via the synonym
-    authority. No fuzzy title matching. Reached only after DOI matching is exhausted,
-    so it handles the DOI-less remainder. Uses the free polite-pool Crossref API (NOT
-    the metered OpenAlex API); rate-limited, so slower than local indexes at scale."""
-    from solr_lookup import MatchMethod, SolrResult
-    try:
-        from journal_authority import same_journal
-    except Exception:
-        def same_journal(a, b):
-            return True
-
-    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-    for i, ref in enumerate(refs):
-        journal = getattr(ref, "journal", None)
-        year    = getattr(ref, "year", None)
-        volume  = getattr(ref, "volume", None)
-        page    = getattr(ref, "first_page", None)
-        author  = getattr(ref, "first_author", None)
-        # Need year + journal + author + at least one of (volume, page) to be discriminating.
-        if not (year and journal and author and (volume or page)):
-            continue
-        params = {
-            "query.bibliographic": f"{journal} {author}",
-            "filter": f"from-pub-date:{int(year)}-01-01,until-pub-date:{int(year)}-12-31",
-            "rows":   "20",
-            "select": "DOI,container-title,volume,page,author,published",
-        }
-        try:
-            resp = requests.get(
-                CROSSREF_API, params=params,
-                headers={"User-Agent": f"FakeCitationDetector/1.0 (mailto:{CROSSREF_EMAIL})"},
-                timeout=CROSSREF_TIMEOUT,
-            )
-            if resp.status_code != 200:
-                continue
-            items = resp.json().get("message", {}).get("items", [])
-        except Exception:
-            continue
-        for it in items:
-            # journal exact (via synonym authority) — candidate MUST carry a matching title
-            ct = it.get("container-title") or []
-            ic = ct[0] if ct else ""
-            if journal and (not ic or not same_journal(journal, ic)):
-                continue
-            # volume exact — if the citation has a volume, the candidate must match it
-            # (a candidate lacking a volume cannot be an exact volume match -> reject)
-            if volume:
-                iv = str(it.get("volume") or "").strip()
-                if iv != str(volume).strip():
-                    continue
-            # first page exact — same rule: missing candidate page -> reject
-            if page:
-                ip = str(it.get("page") or "").split("-")[0].strip()
-                if ip != str(page).strip():
-                    continue
-            # first-author surname must appear among the work's authors
-            authors = it.get("author") or []
-            names = " ".join(((a.get("family") or "") + " " + (a.get("given") or ""))
-                             for a in authors).lower()
-            if author.lower() not in names:
-                continue
-            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
-                                    record=it, confidence=1.0)
-            break
-    return results
 
 
 def validate_metadata(ref, record) -> list:
@@ -864,18 +721,6 @@ def biblio_by_metadata(refs: list) -> list:
 
 
 _TITLE_XR = None
-def _get_title_xr():
-    """Exact-title backend: MongoLookup over the crossref.title_norm index (fast, indexed,
-    ~1500 lookups/sec) with a local-Crossref SQLite fallback if Mongo is unreachable."""
-    global _TITLE_XR
-    if _TITLE_XR is None:
-        try:
-            from mongo_lookup import MongoLookup
-            _TITLE_XR = MongoLookup()
-        except Exception:
-            from crossref_lookup import CrossrefLookup
-            _TITLE_XR = CrossrefLookup()
-    return _TITLE_XR
 
 
 _INTEGRATED = None
@@ -983,31 +828,6 @@ def _per_ref_rows(refs: list, final: list, issues_by_i: dict = None) -> list:
     return rows
 
 
-def _doi_title_hijack(cited_title, result):
-    """True if a DOI-resolved record's title strongly disagrees with the cited title
-    (identifier hijacking). Skips journal-like cited titles; containment metric so a cited
-    short-title that is a SUBSET of the record title is not flagged."""
-    import re as _re
-    if not cited_title:
-        return False
-    rec = getattr(result, "record", None)
-    rt = rec.get("title") if hasattr(rec, "get") else None
-    if isinstance(rt, list):
-        rt = rt[0] if rt else None
-    if not rt:
-        return False
-    try:
-        from journal_authority import canonical_name as _cn
-        if _cn(cited_title):
-            return False
-    except Exception:
-        pass
-    def _tk(s):
-        return set(w for w in _re.sub(r"[^a-z0-9]+", " ", str(s).lower()).split() if len(w) > 1)
-    a = _tk(cited_title); b = _tk(rt)
-    if len(a) < 3 or not b:
-        return False
-    return (len(a & b) / min(len(a), len(b))) < 0.34
 
 
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
