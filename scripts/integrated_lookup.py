@@ -17,7 +17,35 @@ from mongo_lookup import (MongoLookup, extract_title_text, extract_year,
 _DOI_PREFIX = re.compile(r'^(?:https?://(?:dx\.)?doi\.org/|doi:)', re.I)
 
 
-_OA_SOLR = "http://galaxy:8983/solr/openalexWorks/select"
+import os as _os  # SOLR_OPENALEX_URL override (boss: curated is faster)
+_OA_SOLR = _os.environ.get("SOLR_OPENALEX_URL",
+    "http://galaxy:8983/solr/openalexWorksCurated/select")
+_OA_FALLBACK = _os.environ.get("SOLR_OPENALEX_FALLBACK_URL",
+    "http://galaxy:8983/solr/openalexWorks/select")
+
+
+def _oa_resp(params, timeout=20):
+    """Curated-first OpenAlex query with a full-index fallback. Curated (140M) is ~10x
+    faster but drops some real works (conference proceedings, reports, older venues --
+    measured: XGBoost/KDD and WHO reports are absent), which inflates our FPR. Query
+    curated first; ONLY when it returns no hit, retry the full openalexWorks (367M) to
+    restore coverage on the not-found tail. Preserves the numFound==1 uniqueness guard
+    (a >1 fallback result is returned as-is and correctly rejected upstream). Set
+    SOLR_OPENALEX_FALLBACK_URL='' to disable."""
+    try:
+        r = requests.get(_OA_SOLR, params=params, timeout=timeout).json()["response"]
+    except Exception:
+        if _OA_FALLBACK and _OA_FALLBACK != _OA_SOLR:
+            return requests.get(_OA_FALLBACK, params=params, timeout=timeout).json()["response"]
+        raise
+    if r.get("numFound", 0) == 0 and _OA_FALLBACK and _OA_FALLBACK != _OA_SOLR:
+        try:
+            r2 = requests.get(_OA_FALLBACK, params=params, timeout=timeout).json()["response"]
+            if r2.get("numFound", 0) > 0:
+                return r2
+        except Exception:
+            pass
+    return r
 
 
 def _solr_esc(v):
@@ -88,7 +116,11 @@ class IntegratedLookup:
                     continue
                 _raw = getattr(refs[i], "raw", None) or getattr(refs[i], "title", None)
                 _pm = pmid_from_text(_raw)
-                if _pm and out[i] is None:
+                try:
+                    _localon = __import__("oa_local").available()
+                except Exception:
+                    _localon = False
+                if _pm and out[i] is None and not _localon:
                     try:
                         _pd = requests.get(_OA_SOLR, params={"q": "pmid:" + _pm, "fq": "",
                               "rows": 1, "wt": "json", "fl": "doi"}, timeout=12).json()["response"]["docs"]
@@ -198,13 +230,20 @@ class IntegratedLookup:
         preferred. `fq=""` clears the handler's default publication_year filter."""
         if not title:
             return None
+        try:
+            import oa_local
+            if oa_local.available():
+                from title_normalize import normalize_title_key as _nk
+                return oa_local.by_title(_nk(title), year)
+        except Exception:
+            pass
         params = {"q": 'title_exact:"%s"' % str(title).replace('"', " "),
                   "fq": "", "facet": "false", "hl": "false", "wt": "json", "rows": 10,
                   "fl": "id,title,doi,publication_year,venue_name,author_names"}
         if year:
             params["fq"] = "publication_year:[%d TO %d]" % (int(year) - 1, int(year) + 1)
         try:
-            docs = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]["docs"]
+            docs = _oa_resp(params)["docs"]
         except Exception:
             return None
         if not docs:
@@ -225,29 +264,69 @@ class IntegratedLookup:
         if not (vol and yr and (pg or au)):
             return nf
         try:
+            import oa_local
+            if oa_local.available():
+                from journal_authority import _norm as _jn, canonical_name as _cn
+                _norms = set()
+                for _cand in (j, (_cn(j) if j else None)):
+                    if _cand:
+                        _k = _jn(_cand)
+                        if _k:
+                            _norms.add(_k)
+                _d = oa_local.by_metadata(_norms, yr, vol, pg, au)
+                if _d:
+                    return SolrResult(found=True, method=MatchMethod.META_MATCH, record=_d, confidence=1.0)
+                return nf
+        except Exception:
+            pass
+        try:
             from journal_authority import venue_ids_for
             vids = venue_ids_for(j) if j else []
         except Exception:
             vids = []
-        base = []
+        base_fq = []
         if vids:
-            base.append("(%s)" % " OR ".join('venue_id:"%s"' % str(v).rsplit("/", 1)[-1] for v in vids))
-        base.append('volume:"%s"' % _solr_esc(vol))
-        fq = "publication_year:[%d TO %d]" % (int(yr) - 1, int(yr) + 1)
+            base_fq.append("(%s)" % " OR ".join('venue_id:"%s"' % str(v).rsplit("/", 1)[-1] for v in vids))
+        base_fq.append('volume:"%s"' % _solr_esc(vol))
+        base_fq.append("publication_year:[%d TO %d]" % (int(yr) - 1, int(yr) + 1))
 
         def _unique(extra):
-            params = {"q": " AND ".join(base + [extra]), "fq": fq, "facet": "false",
+            # Everything is a FILTER (fq) with q=*:*, so Solr's filterCache reuses the
+            # venue_id / volume / year bitsets across the ~47%% of metadata lookups that
+            # share a journal issue (measured on v4 refs). Only the discriminator
+            # (first_page / author) varies per ref. Result-equivalent to ANDing the
+            # constraints in q under the numFound==1 guard (verified 53/53) -- just
+            # cacheable and unscored.
+            params = {"q": "*:*", "fq": base_fq + [extra], "facet": "false",
                       "hl": "false", "wt": "json", "rows": 2,
                       "fl": "id,title,doi,publication_year,venue_name,volume,author_names"}
             try:
-                resp = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]
+                resp = _oa_resp(params)
             except Exception:
                 return None
             return resp["docs"][0] if resp.get("numFound") == 1 else None
 
-        d = _unique('first_page:"%s"' % _solr_esc(pg)) if pg else None
+        # first_page: strip the trailing article-type suffix physics journals attach
+        # ("Phys. Rev. C 77, 032801(R)"), which never matches the indexed value.
+        if pg:
+            _pg = re.sub(r"\s*\([A-Za-z]{1,3}\)\s*$", "", str(pg)).strip() or str(pg)
+            d = _unique('first_page:"%s"' % _solr_esc(_pg))
+        else:
+            d = None
         if d is None and au:
-            d = _unique('author_names:"%s"' % _solr_esc(au))
+            # SURNAME token, not the full cited string. The index stores full given
+            # names ("Stefano Gandolfi") while citations carry initials ("S. Gandolfi"),
+            # so an exact phrase match on the cited form returns 0 -- measured on
+            # S. Gandolfi, A. Gezerlis and others. Note validate_metadata already
+            # compares authors leniently by surname; this makes the MATCHER consistent
+            # with the VALIDATOR instead of stricter than it. Precision is still held by
+            # the caller's numFound==1 rule plus venue+volume+year.
+            _toks = [t for t in re.split(r"[^A-Za-z]+", str(au)) if len(t) >= 3]
+            _surname = max(_toks, key=len) if _toks else None
+            if _surname:
+                d = _unique('author_names:%s' % _solr_esc(_surname))
+            if d is None:
+                d = _unique('author_names:"%s"' % _solr_esc(au))
         if d is None:
             return nf
         t = d.get("title"); t = t[0] if isinstance(t, list) and t else t
@@ -266,6 +345,12 @@ class IntegratedLookup:
         anchored on a multi-token title + year filter so it stays fast and selective."""
         from title_normalize import normalize_title_key
         key = normalize_title_key(title)
+        try:
+            import oa_local
+            if oa_local.available():
+                return oa_local.by_title(key, year)
+        except Exception:
+            pass
         if not key or len(key.split()) < 4:      # too-generic phrase -> skip
             return None
         params = {"q": 'title:"%s"' % key.replace('"', " "),
@@ -274,7 +359,7 @@ class IntegratedLookup:
                   "facet": "false", "hl": "false", "wt": "json", "rows": 10,
                   "fl": "id,title,doi,publication_year,venue_name,author_names"}
         try:
-            docs = requests.get(_OA_SOLR, params=params, timeout=20).json()["response"]["docs"]
+            docs = _oa_resp(params)["docs"]
         except Exception:
             return None
         for d in docs:
@@ -315,6 +400,47 @@ class IntegratedLookup:
                                          author=author, _repaired=True)
                 if _r.found:
                     return _r
+        # UNBOUNDED-YEAR FALLBACK. Every attempt above is gated by a +-1-year window, so a
+        # real paper whose cited year is off by >=2 (preprint->published drift, or a plain
+        # citation-year error) is reported not-found even though its EXACT title sits in the
+        # index. Retry the exact normalized-key match with NO year gate. This stays EXACT
+        # (title_norm / normalize_title_key equality -- no fuzzy similarity anywhere); year
+        # is only ever a disambiguator, never a gate. A real paper cited with the wrong year
+        # is FOUND (correct: it is not a fabrication); the year discrepancy is recorded
+        # downstream as a mismatch. Injected fabrications carry hallucinated titles that
+        # match no real key at ANY year, so recall is unchanged (gate: 114/114 held).
+        if year is not None:
+            hit = self.xr.by_title_exact(title, year=None, journal=journal, author=author)
+            if hit and hit.found:
+                return hit
+            d = self._oa_title_phrase(title, year=None)
+            if d:
+                t = d.get("title")
+                t = t[0] if isinstance(t, list) and t else t
+                rec = {"doi": (d.get("doi") or "").replace("https://doi.org/", "") or None,
+                       "openalex_id": d.get("id"), "title": t,
+                       "year": d.get("publication_year"),
+                       "publication_year": d.get("publication_year"),
+                       "journal": d.get("venue_name"), "venue_name": d.get("venue_name"),
+                       "author_names": d.get("author_names") or []}
+                return LookupResult(found=True, method=MatchMethod.TITLE_ONLY,
+                                    record=rec, confidence=1.0)
+        # arXiv-authority fallback: the OpenAlex/Crossref title index holds WRONG titles
+        # for some arXiv DOIs, so a correctly-cited arXiv paper can miss every attempt
+        # above. arXiv's own title authority maps the EXACT normalized title back to an
+        # arXiv id (no fuzzy similarity -- a hallucinated title matches no real arXiv key).
+        try:
+            import arxiv_authority
+            _aids = arxiv_authority.id_by_title_norm(title)
+            if _aids:
+                return LookupResult(found=True,
+                    method=MatchMethod.TITLE_YEAR if year else MatchMethod.TITLE_ONLY,
+                    record={"doi": "10.48550/arxiv." + _aids[0], "openalex_id": None,
+                            "title": title, "year": year, "publication_year": year,
+                            "journal": "arXiv", "venue_name": "arXiv", "author_names": []},
+                    confidence=1.0)
+        except Exception:
+            pass
         return LookupResult(found=False, method=MatchMethod.NOT_FOUND)
 
     def references(self, doi: str) -> list:

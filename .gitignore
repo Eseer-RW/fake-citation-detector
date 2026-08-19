@@ -27,3 +27,8 @@ grobid/**/tei_diverse/
 grobid/**/tei_diverse_flat/
 grobid/**/out_diverse/
 eval/mismatch_injection/
+
+# Large run outputs (regenerable; 60GB+)
+scripts/arxiv_sweep_v*/
+results/
+*.out

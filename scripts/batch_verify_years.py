@@ -20,10 +20,12 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import itertools
 import json
 import pathlib
 import re
 import sys
+import threading
 import time
 import types
 import xml.etree.ElementTree as ET
@@ -34,7 +36,17 @@ import numpy as np
 import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
-GROBID_URL       = "http://localhost:8070/api/processFulltextDocument"
+# GROBID: a pool of container base-URLs, round-robined by grobid_process.
+# Defaults preserve the historical single-container / full-document behaviour, so
+# existing callers (batch path, verify_pdf, probes) are unaffected. Callers that
+# only need the reference list — e.g. arxiv_sweep — should override at runtime:
+#     bvy.GROBID_HOSTS    = ["http://localhost:8070", "http://localhost:8071", ...]
+#     bvy.GROBID_ENDPOINT = "processReferences"   # ~4.9x faster than full document
+# processReferences skips body/figure/table parsing; parse_tei_refs consumes its
+# TEI unchanged (verified byte-identical ref counts on a 6-paper sample).
+GROBID_HOSTS     = ["http://localhost:8070"]
+GROBID_ENDPOINT  = "processFulltextDocument"
+GROBID_URL       = "http://localhost:8070/api/processFulltextDocument"  # back-compat
 DOWNLOAD_DIR     = pathlib.Path.home() / "cross_year_study" / "pdfs"
 GROBID_TIMEOUT   = 240
 DOWNLOAD_TIMEOUT = 60
@@ -134,8 +146,74 @@ def parse_tei_refs(tei_xml: str) -> list:
         if not obj.doi and obj.raw:
             m = _DOI_RE.search(obj.raw)
             if m: obj.doi = m.group(1).rstrip(".,;)").lower()
+        _demote_journal_in_title_slot(obj)
         refs.append(obj)
     return refs
+
+
+def _demote_journal_in_title_slot(obj) -> None:
+    """Stop the JOURNAL name masquerading as the article title.
+
+    _tei_title falls through to monogr/title[@level='j'] -- the JOURNAL title -- when a
+    citation carries no article title. That is the norm in physics ("Phys. Rev. D 14,
+    2460 (1976)" has no title at all), and _tei_journal reads the very same xpath, so
+    the journal name lands in BOTH fields. Two measured consequences:
+      * a title that can never match anything, wasting the exact-title phase, and
+      * the title-mismatch check is suppressed -- only 21% of DOI-matched refs were
+        ever eligible to raise one, 52% failing purely because their "title" was a
+        journal name too short or too journal-like to check.
+    Absent an article title the correct value is None, not a fabricated one.
+
+    Also promotes the string into `journal` when that field is empty, which makes the
+    reference eligible for the exact-metadata phase it was previously locked out of.
+    """
+    t = getattr(obj, "title", None)
+    if not t:
+        return
+    j = getattr(obj, "journal", None)
+    try:
+        from title_normalize import normalize_title_key as _nk
+    except Exception:
+        _nk = lambda s: (s or "").strip().lower()
+
+    # case 1: title is literally the journal string GROBID also put in `journal`
+    if j and _nk(t) == _nk(j):
+        obj.title = None
+        return
+
+    # case 2: no journal recorded, but the "title" resolves as a journal name. Try
+    # the string as-is, then with a trailing volume number stripped ("Proc. IEEE
+    # 91" -> "Proc. IEEE"), then splitting a trailing ". Journal" the parser glued
+    # on ("...claims data. Epidemiology"). Only a split the authority confirms is
+    # accepted, so a genuine article title is never truncated.
+    if not j:
+        try:
+            from journal_authority import resolve as _jr
+        except Exception:
+            _jr = None
+        if _jr:
+            probes = [t]
+            _novol = re.sub(r"[\s,]+\d+\s*$", "", t).strip()
+            if _novol and _novol != t:
+                probes.append(_novol)
+            for _probe in probes:
+                try:
+                    if _jr(_probe):
+                        obj.journal = _probe
+                        obj.title = None
+                        return
+                except Exception:
+                    pass
+            m = re.match(r"^(.*\S)\.\s+([A-Z][A-Za-z.&'\- ]{2,40})$", t)
+            if m and len(m.group(1).split()) >= 3:
+                _head, _tail = m.group(1).strip(), m.group(2).strip()
+                try:
+                    if _jr(_tail):
+                        obj.journal = _tail
+                        obj.title = _head
+                        return
+                except Exception:
+                    pass
 
 
 # ── Download ─────────────────────────────────────────────────────────────────
@@ -248,13 +326,34 @@ def crossref_refs(doi: str) -> list | None:
 
 # ── GROBID ───────────────────────────────────────────────────────────────────
 
+_grobid_lock = threading.Lock()
+_grobid_rr = None
+_grobid_rr_key: Optional[tuple] = None
+
+
+def _grobid_next_url() -> str:
+    """Round-robin one GROBID endpoint URL from GROBID_HOSTS (thread-safe).
+
+    The cycle is rebuilt whenever GROBID_HOSTS changes, so callers can retarget
+    the pool at runtime without re-importing.
+    """
+    global _grobid_rr, _grobid_rr_key
+    with _grobid_lock:
+        key = tuple(GROBID_HOSTS)
+        if key != _grobid_rr_key:
+            _grobid_rr, _grobid_rr_key = itertools.cycle(key), key
+        base = next(_grobid_rr)
+    return f"{base.rstrip('/')}/api/{GROBID_ENDPOINT}"
+
+
 def grobid_process(pdf_path: pathlib.Path) -> Optional[str]:
     import time as _t
     for _attempt in range(3):          # retry transient GROBID timeouts / 5xx / resets
-        try:
+        url = _grobid_next_url()       # rotate host per attempt: a wedged container
+        try:                           # can't consume all three tries
             with pdf_path.open("rb") as fh:
                 resp = requests.post(
-                    GROBID_URL,
+                    url,
                     files={"input": (pdf_path.name, fh, "application/pdf")},
                     data={"consolidateHeader": "0", "consolidateCitations": "0",
                           "includeRawCitations": "1"},
@@ -266,6 +365,37 @@ def grobid_process(pdf_path: pathlib.Path) -> Optional[str]:
             pass
         _t.sleep(3)
     return None
+
+
+def grobid_warmup(pdf_path: pathlib.Path, hosts=None, attempts: int = 6) -> dict:
+    """POST a real document to each host until it answers 200.
+
+    /api/isalive returns true while GROBID is still loading models, and requests
+    sent during that window fail. Every observed cold-start failure in the arXiv
+    sweep traced back to trusting isalive. Returns {host: ok_bool}.
+    """
+    import time as _t
+    status = {}
+    for base in (hosts if hosts is not None else GROBID_HOSTS):
+        url = f"{base.rstrip('/')}/api/{GROBID_ENDPOINT}"
+        status[base] = False
+        for _ in range(attempts):
+            try:
+                with pdf_path.open("rb") as fh:
+                    r = requests.post(
+                        url,
+                        files={"input": (pdf_path.name, fh, "application/pdf")},
+                        data={"consolidateHeader": "0", "consolidateCitations": "0",
+                              "includeRawCitations": "1"},
+                        timeout=GROBID_TIMEOUT,
+                    )
+                if r.status_code == 200:
+                    status[base] = True
+                    break
+            except Exception:
+                pass
+            _t.sleep(10)
+    return status
 
 
 # ── Verification ─────────────────────────────────────────────────────────────
@@ -311,6 +441,23 @@ _H_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 
 def is_likely_nonacademic(ref) -> bool:
     """Return True if this unmatched reference is likely a non-academic source.
+
+    Delegates to nonacad_v2. Measured on 120 hand-labelled references: the rules below
+    (kept as _is_likely_nonacademic_v1) caught 1 of 32 non-articles = 3.1% recall,
+    because five of their six conditions require `not ref.title` -- so a website or
+    book that GROBID gave a title to passed straight through. v2 reaches 65.6% recall
+    at 95.5% precision, and critically flags ZERO of the 114 injected fabrications, so
+    it cannot hide one from the numerator.
+    """
+    try:
+        from nonacad_v2 import is_likely_nonacademic_v2 as _v2
+        return _v2(ref)
+    except Exception:
+        return _is_likely_nonacademic_v1(ref)
+
+
+def _is_likely_nonacademic_v1(ref) -> bool:
+    """Original rules, retained for comparison and as an import-failure fallback.
 
     Conservative: only fires on clear, unambiguous signals so that genuine
     academic references with URLs (e.g. arXiv links) pass through if they
@@ -467,102 +614,6 @@ def openalex_by_metadata(refs: list) -> list:
     return results
 
 
-def solr_by_metadata(refs: list, solr) -> list:
-    """Phase 2.6: LOCAL exact-match on journal + year + volume + first-author surname
-    against the OpenAlex Solr index. The journal name (full / ISO-4 abbreviation /
-    alternate / acronym) is resolved to venue_id(s) via the journal authority
-    (MongoDB-backed, multi-source), so shortened & alternate journal names match
-    exactly. No fuzzy title matching; uses only local indexes (no metered API)."""
-    from solr_lookup import MatchMethod, SolrResult, _solr_get
-    try:
-        from journal_authority import venue_ids_for
-    except Exception:
-        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-
-    def _esc(s):
-        return re.sub(r'([+\-!(){}\[\]^"~*?:\\/])', r'\\\1', str(s))
-
-    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-    for i, ref in enumerate(refs):
-        year   = getattr(ref, "year", None)
-        volume = getattr(ref, "volume", None)
-        journal = getattr(ref, "journal", None)
-        author = getattr(ref, "first_author", None)
-        if not (year and volume and journal and author):
-            continue
-        vids = venue_ids_for(journal)
-        if not vids:
-            continue
-        vq = " OR ".join(vids)
-        params = {
-            "q":     f"venue_id:({vq})",
-            "fq":    [f"publication_year:{int(year)}",
-                      f'volume:"{_esc(volume)}"',
-                      f"author_names:{_esc(author)}"],
-            "fl":    "id,doi,volume,publication_year,author_names,title,venue_id",
-            "rows":  "3", "wt": "json", "facet": "false",
-        }
-        try:
-            resp = _solr_get(params)["response"]
-        except Exception:
-            continue
-        # Uniqueness guard: accept ONLY an unambiguous single hit. Multiple hits mean
-        # venue+year+volume+author is not unique (e.g. common surname in a high-volume
-        # journal) -> reject, to avoid a wrong-paper or fabricated-citation false match.
-        if resp.get("numFound") == 1 and resp.get("docs"):
-            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
-                                    record=resp["docs"][0], confidence=1.0)
-    return results
-
-
-def solr_by_metadata(refs: list, solr) -> list:
-    """Phase 2.6: LOCAL exact-match on journal + year + volume + first-author surname
-    against the OpenAlex Solr index. The journal name (full / ISO-4 abbreviation /
-    alternate / acronym) is resolved to venue_id(s) via the journal authority
-    (MongoDB-backed, multi-source), so shortened & alternate journal names match
-    exactly. No fuzzy title matching; uses only local indexes (no metered API)."""
-    from solr_lookup import MatchMethod, SolrResult, _solr_get
-    try:
-        from journal_authority import venue_ids_for
-    except Exception:
-        return [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-
-    def _esc(s):
-        return re.sub(r'([+\-!(){}\[\]^"~*?:\\/])', r'\\\1', str(s))
-
-    results = [SolrResult(found=False, method=MatchMethod.NOT_FOUND) for _ in refs]
-    for i, ref in enumerate(refs):
-        year   = getattr(ref, "year", None)
-        volume = getattr(ref, "volume", None)
-        journal = getattr(ref, "journal", None)
-        author = getattr(ref, "first_author", None)
-        if not (year and volume and journal and author):
-            continue
-        vids = venue_ids_for(journal)
-        if not vids:
-            continue
-        vq = " OR ".join(vids)
-        params = {
-            "q":     f"venue_id:({vq})",
-            "fq":    [f"publication_year:{int(year)}",
-                      f'volume:"{_esc(volume)}"',
-                      f"author_names:{_esc(author)}"],
-            "fl":    "id,doi,volume,publication_year,author_names,title,venue_id",
-            "rows":  "3", "wt": "json", "facet": "false",
-        }
-        try:
-            resp = _solr_get(params)["response"]
-        except Exception:
-            continue
-        # Uniqueness guard: accept ONLY an unambiguous single hit. Multiple hits mean
-        # venue+year+volume+author is not unique (e.g. common surname in a high-volume
-        # journal) -> reject, to avoid a wrong-paper or fabricated-citation false match.
-        if resp.get("numFound") == 1 and resp.get("docs"):
-            results[i] = SolrResult(found=True, method=MatchMethod.META_MATCH,
-                                    record=resp["docs"][0], confidence=1.0)
-    return results
-
-
 def crossref_by_metadata(refs: list) -> list:
     """Phase 3: exact bibliographic metadata match via the FREE Crossref API.
 
@@ -696,7 +747,7 @@ def validate_metadata(ref, record) -> list:
                     actual_tokens.add(t)
         ca_tokens = [t for t in re.split(r"[^A-Za-z]+", _fold(ca)) if len(t) >= 3]
         surname = max(ca_tokens, key=len) if ca_tokens else None
-        if surname and actual_tokens and surname not in actual_tokens:
+        if surname and len(actual_tokens) >= 2 and surname not in actual_tokens:
             issues.append(f"author: cited first-author '{ca}' not among actual authors")
 
     # Title: flag only when cited and actual titles CLEARLY differ (low word overlap) --
@@ -707,8 +758,21 @@ def validate_metadata(ref, record) -> list:
     if ct and rt:
         try:
             from title_normalize import normalize_title_key
-            cw = set(normalize_title_key(ct).split()); rw = set(normalize_title_key(rt).split())
-            if cw and rw and len(cw & rw) / len(cw | rw) < 0.3:
+            from text_repair import repair_pdf_ligatures, demerge_words
+            ct_rep = demerge_words(repair_pdf_ligatures(ct))
+            cw = set(normalize_title_key(ct_rep).split()); rw = set(normalize_title_key(rt).split())
+            # Guard: skip when the cited "title" is not really a title -- a journal
+            # abbreviation or a title-less citation (common in physics). Either would
+            # falsely disagree with the matched record's real title. Flag only on a
+            # substantive (>=4-token), non-journal cited title, repaired for
+            # ligature/merge mojibake first (same repair the matcher uses).
+            _journalish = False
+            try:
+                from journal_authority import resolve as _jr
+                _journalish = bool(_jr(ct))
+            except Exception:
+                pass
+            if len(cw) >= 4 and not _journalish and rw and len(cw & rw) / len(cw | rw) < 0.3:
                 issues.append(f"title: cited '{ct[:60]}' differs from actual '{rt[:60]}'")
         except Exception:
             pass
@@ -716,7 +780,7 @@ def validate_metadata(ref, record) -> list:
     return issues
 
 
-BIBLIO_DB = str(pathlib.Path.home() / "crossref" / "biblio_index.db")
+BIBLIO_DB = __import__("os").environ.get("BIBLIO_DB", str(pathlib.Path.home() / "crossref" / "biblio_index.db"))
 
 def _biblio_surname_match(cited, actual) -> bool:
     import unicodedata as _ud
@@ -775,7 +839,10 @@ def biblio_by_metadata(refs: list) -> list:
                     pass
             def _pn(x):
                 x = str(x or "").strip().lower()
-                return x[1:] if (x[:1] == "e" and x[1:].isdigit()) else x
+                if x[:1] == "e" and x[1:].isdigit():
+                    x = x[1:]
+                xs = x.lstrip("0")
+                return xs if xs else ("0" if x else "")
             cp = _pn(page) if page else None
             matches = []
             for doi, fp, art, a1 in cand:
@@ -821,9 +888,136 @@ def _get_integrated(solr):
     return _INTEGRATED
 
 
+def _rec_get(record, *keys):
+    """First present, non-empty value among `keys` in a Solr/Crossref record."""
+    if not isinstance(record, dict):
+        return None
+    for k in keys:
+        v = record.get(k)
+        if isinstance(v, list):
+            v = v[0] if v else None
+        if v not in (None, "", []):
+            return v
+    return None
+
+
+def _per_ref_rows(refs: list, final: list, issues_by_i: dict = None) -> list:
+    """Compact per-reference outcome rows (one dict per reference).
+
+    `cited_year` is the year as printed in the citing paper's reference list;
+    `actual_year` is the year of the work we matched it to. Stratifying on
+    `cited_year` is what separates a genuine post-2022 excess from indexing lag
+    and from shifts in the vintage mix of what authors cite.
+
+    `mismatch` / `issue_types` carry the OTHER fabrication channel. A fabricated
+    title attached to a real, resolvable DOI is counted FOUND, so it never enters
+    not_found -- it surfaces only as a mismatch. Recording it per reference (with
+    `method`) is what allows the analysis to be restricted to DOI-matched refs,
+    where the signature is unambiguous and parse quality is not a confound.
+    `issue_types` separates the hallucination signature (title disagreement) from
+    the benign majority (year off-by-one/two from preprint->published, author order).
+    """
+    issues_by_i = issues_by_i or {}
+    rows = []
+    for i, (r, res) in enumerate(zip(refs, final)):
+        rec = getattr(res, "record", None)
+        iss = issues_by_i.get(i) or []
+        rows.append({
+            "i":           i,
+            "found":       bool(res.found),
+            "method":      getattr(res.method, "value", str(res.method)),
+            "cited_year":  getattr(r, "year", None),
+            "actual_year": _rec_get(rec, "publication_year", "year"),
+            "has_doi":     bool(getattr(r, "doi", None)),
+            "has_title":   bool(getattr(r, "title", None)),
+            "nonacademic": bool(is_likely_nonacademic(r)),
+            "matched_id":  _rec_get(rec, "openalex_id", "id", "doi", "DOI"),
+            "mismatch":    bool(iss),
+            # field names only ("year", "title", "author", ...), not the full strings
+            "issue_types": sorted({str(s).split(":", 1)[0].strip() for s in iss}),
+            # ---- the EXTRACTED METADATA itself ----------------------------------
+            # Previously discarded with the TEI, which left every downstream question
+            # ("classify this reference", "why did it fail", "dedupe these") needing a
+            # fresh GROBID pass. Three separate analyses stalled on exactly that. The
+            # verdict is cheap to recompute; the extraction is not -- so persist the
+            # inputs, not just the outcomes. ~300 B/ref, i.e. ~125 MB per 90-month run.
+            "raw":          (getattr(r, "raw", None) or "")[:500] or None,
+            "ref_title":    getattr(r, "title", None),
+            "ref_journal":  getattr(r, "journal", None),
+            "ref_volume":   getattr(r, "volume", None),
+            "ref_page":     getattr(r, "first_page", None),
+            "ref_author":   getattr(r, "first_author", None),
+            "ref_doi":      getattr(r, "doi", None),
+            # the record we matched to, so spurious matches are auditable after the
+            # fact -- this is how the MPG.PuRe journal-title false matches were found
+            "matched_title": _rec_get(rec, "title", "display_name"),
+            "matched_venue": _rec_get(rec, "venue_name", "container-title", "journal"),
+        })
+        # ---- classification layers (ref_classify; validated on GPTZero ground truth) --
+        # not_found is not one thing: split benign causes (parse junk, no-title physics
+        # refs, foreign-language, DataCite preprints) from fab_candidate. And a FOUND ref
+        # can still be a fabrication (real title + invented authors) -- the author check
+        # is the only channel that sees those. fab_flag is the combined verdict.
+        row = rows[-1]
+        try:
+            import ref_classify as _rc
+            if row["found"]:
+                row["author_hijack"] = _rc.author_hijack(
+                    row["raw"], row["matched_title"], row["ref_doi"], row["has_doi"])
+                row["not_found_reason"] = None
+            else:
+                row["author_hijack"] = None
+                row["not_found_reason"] = (None if row["nonacademic"] else
+                    _rc.not_found_reason(row["raw"], row["ref_title"],
+                                         row["ref_doi"], row["has_title"]))
+            _title_hijack = (bool(row["mismatch"]) and ("title" in (row["issue_types"] or []))) or (
+                row["found"] and _rc.title_hijack(row["ref_title"], row["matched_title"]))
+            row["fab_flag"] = ("author_hijack" if row.get("author_hijack") is True else
+                               "title_hijack" if _title_hijack else
+                               "not_found_candidate" if row.get("not_found_reason") == "fab_candidate" else
+                               None)
+        except Exception:
+            row.setdefault("author_hijack", None)
+            row.setdefault("not_found_reason", None)
+            row.setdefault("fab_flag", None)
+    return rows
+
+
+def _doi_title_hijack(cited_title, result):
+    """True if a DOI-resolved record's title strongly disagrees with the cited title
+    (identifier hijacking). Skips journal-like cited titles; containment metric so a cited
+    short-title that is a SUBSET of the record title is not flagged."""
+    import re as _re
+    if not cited_title:
+        return False
+    rec = getattr(result, "record", None)
+    rt = rec.get("title") if hasattr(rec, "get") else None
+    if isinstance(rt, list):
+        rt = rt[0] if rt else None
+    if not rt:
+        return False
+    try:
+        from journal_authority import canonical_name as _cn
+        if _cn(cited_title):
+            return False
+    except Exception:
+        pass
+    def _tk(s):
+        return set(w for w in _re.sub(r"[^a-z0-9]+", " ", str(s).lower()).split() if len(w) > 1)
+    a = _tk(cited_title); b = _tk(rt)
+    if len(a) < 3 or not b:
+        return False
+    return (len(a & b) / min(len(a), len(b))) < 0.34
+
+
 def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
-    """Run 4-phase verification; return summary counts dict."""
+    """Run 4-phase verification; return summary counts dict (plus `per_ref`)."""
     from solr_lookup import MatchMethod, SolrResult
+    try:
+        from solr_lookup import solr_error_snapshot as _errsnap
+        _err_before = _errsnap()
+    except Exception:                      # older solr_lookup without the tally
+        _errsnap, _err_before = None, None
 
     n = len(refs)
     results = [None] * n
@@ -862,6 +1056,20 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                 r = integrated.oa_by_metadata(refs[i])
                 if r.found:
                     results[i] = r
+            for _mi in meta_idx:
+                _rr = results[_mi]
+                if _rr is None or not getattr(_rr, "record", None):
+                    continue
+                _ct = getattr(refs[_mi], "title", None)
+                _rt = _rr.record.get("title") if hasattr(_rr.record, "get") else None
+                if isinstance(_rt, list):
+                    _rt = _rt[0] if _rt else None
+                if _ct and _rt:
+                    import re as _remc
+                    _a = set(_remc.sub(r"[^a-z0-9]+", " ", str(_ct).lower()).split())
+                    _b = set(_remc.sub(r"[^a-z0-9]+", " ", str(_rt).lower()).split())
+                    if _a and _b and len(_a & _b) / len(_a | _b) < 0.4:
+                        results[_mi] = None
 
     # Phase 3 removed: local Crossref index (Phase 2.5) resolves 80-90% of citations;
     # individual Solr GETs cause 599+ timeouts per 25 papers even at 8s each,
@@ -878,10 +1086,12 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                 results[i] = r
                 vec_found += 1
 
-    # Phase 5: Heuristic non-academic filter (Zhao et al. 2026 cleaning step)
-    # Count unmatched refs that are clearly non-academic (websites, reports, etc.).
-    # These are false positives — not hallucinations — so we track them separately.
-    heuristic_filtered = sum(
+    # Snapshot of the old (buggy) filter position, kept only to quantify the drift.
+    # It was computed HERE, before Phase 3.9 could still match some of these refs,
+    # while not_found_academic subtracts it from the FINAL not_found count -- so any
+    # ref that looked non-academic, was unmatched at this point, and was then matched
+    # by the exact-title phase got subtracted without ever being in the numerator.
+    heuristic_filtered_pre_title = sum(
         1 for i in range(n)
         if results[i] is None and is_likely_nonacademic(refs[i])
     )
@@ -893,30 +1103,77 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     # resort after DOI and structured metadata. Enabled by default; set
     # DISABLE_TITLE_MATCH=1 for fast bulk runs (the Crossref index is on network storage,
     # ~11 lookups/sec, so at corpus scale move it to SSD or disable this phase).
+    # FAILURE ISOLATION: the try/except used to wrap the WHOLE loop, so a single
+    # exception (an NFS hiccup on the network-mounted Crossref index, say) aborted the
+    # phase and silently left every remaining reference unmatched -- indistinguishable
+    # from a genuine absence. Since this phase resolves 20-31 refs/paper, that made a
+    # transient storage failure look exactly like a hallucination spike. The guard is
+    # now PER REFERENCE and failures are counted, so measurement error is visible
+    # instead of being folded into not_found.
+    title_phase_errors = 0
+    title_phase_attempted = 0
     if _os.environ.get("DISABLE_TITLE_MATCH") != "1":
         try:
             from solr_lookup import MatchMethod as _MM, SolrResult as _SR
             _txr = integrated  # federated Crossref title_norm + OpenAlex title_exact
+        except Exception:
+            _txr = None
+        if _txr is not None:
             for _ti in range(n):
                 if results[_ti] is not None:
                     continue
                 _tr = refs[_ti]
                 _tt = getattr(_tr, "title", None)
-                if not _tt or is_likely_nonacademic(_tr):
+                # DELIBERATELY NOT gated on is_likely_nonacademic. That gate was
+                # harmless when the filter caught 3% of references; once it reached 81%
+                # recall it suppressed the title lookup for 58 GENUINE citations in the
+                # eval set and pushed the false-positive rate 7.4% -> 9.9%. The
+                # non-academic flag belongs in the DENOMINATOR (excluded from
+                # not_found_academic), not in the matching path -- refusing to look
+                # something up because it looks non-academic can only lose information,
+                # and a reference that does match was evidently worth looking up.
+                if not _tt:
                     continue
-                if hasattr(_txr, "by_title_exact"):
-                    _hit = _txr.by_title_exact(
-                        _tt, year=getattr(_tr, "year", None),
-                        journal=getattr(_tr, "journal", None),
-                        author=getattr(_tr, "first_author", None)
-                                or getattr(_tr, "author", None))
-                else:
-                    _hit = _txr.by_title(_tt, getattr(_tr, "year", None))
+                title_phase_attempted += 1
+                try:
+                    if hasattr(_txr, "by_title_exact"):
+                        _hit = _txr.by_title_exact(
+                            _tt, year=getattr(_tr, "year", None),
+                            journal=getattr(_tr, "journal", None),
+                            author=getattr(_tr, "first_author", None)
+                                    or getattr(_tr, "author", None))
+                    else:
+                        _hit = _txr.by_title(_tt, getattr(_tr, "year", None))
+                except Exception:
+                    title_phase_errors += 1      # this ref is UNVERIFIED, not absent
+                    continue
                 if _hit and _hit.found:
                     results[_ti] = _SR(found=True, method=_MM.TITLE_EXACT,
                                        record=_hit.record, confidence=_hit.confidence)
-        except Exception:
-            pass
+
+    # Phase 5 (moved): heuristic non-academic filter (Zhao et al. 2026 cleaning step).
+    # Must run AFTER every matching phase, over refs that are still unmatched, so that
+    # not_found_academic = not_found - heuristic_filtered is a coherent subtraction.
+    heuristic_filtered = sum(
+        1 for i in range(n)
+        if results[i] is None and is_likely_nonacademic(refs[i])
+    )
+
+    # Matcher-precision guard (#2): a metadata match (venue+vol+year) to a WRONG-TITLED
+    # record is a collision. If the cited ref carries a title and the matched record has a
+    # title that does not corroborate it, REJECT the match (demote to not-found).
+    for _mi in range(n):
+        _mr = results[_mi]
+        if _mr is not None and getattr(_mr, "found", False) and getattr(_mr, "method", None) == MatchMethod.META_MATCH:
+            _rec = getattr(_mr, "record", None)
+            _rt = _rec.get("title") if isinstance(_rec, dict) else None
+            if isinstance(_rt, list): _rt = _rt[0] if _rt else None
+            _ct = getattr(refs[_mi], "title", None)
+            if _ct and _rt:
+                _a = set(re.sub(r"[^a-z0-9]+", " ", _ct.lower()).split())
+                _b = set(re.sub(r"[^a-z0-9]+", " ", str(_rt).lower()).split())
+                if (_a | _b) and (len(_a & _b) / len(_a | _b)) < 0.3:
+                    results[_mi] = None
 
     not_found_sentinel = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
     final = [results[i] or not_found_sentinel for i in range(n)]
@@ -930,6 +1187,7 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
     # Metadata mismatch detection: for each matched reference, diff the cited metadata
     # against the matched record. Flags real-paper-but-wrong-metadata (FOUND_MISMATCH).
     mismatches = []
+    _issues_by_i: dict = {}
     for _i in range(n):
         _r = results[_i]
         if _r is None or not _r.found or not getattr(_r, "record", None):
@@ -943,9 +1201,12 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
                 if not validate_metadata(refs[_i], _alt):
                     _iss = []
                     break
-        if _iss:
+        _strong=[x for x in _iss if not str(x).startswith("year:")]
+        if _strong or len(_iss)>=2:
             mismatches.append({"cited_doi": getattr(refs[_i], "doi", None),
                                "method": _r.method.value, "issues": _iss})
+            # keep the per-index view so per_ref can carry it (see below)
+            _issues_by_i[_i] = _iss
 
     not_found_count = n - found
     return {
@@ -954,11 +1215,31 @@ def verify_refs(refs: list, solr, vector_lookup=None) -> dict:
         "not_found":           not_found_count,
         "heuristic_filtered":  heuristic_filtered,
         "not_found_academic":  not_found_count - heuristic_filtered,
+        # Drift introduced by the old filter position; expected 0 when the exact-title
+        # phase rescues nothing that looked non-academic. Positive => the old code
+        # UNDER-reported not_found_academic by this many refs.
+        "heuristic_filter_drift": heuristic_filtered_pre_title - heuristic_filtered,
+        # Solr lookups that FAILED rather than returned "absent". Any non-zero value
+        # means some share of this paper's not_found count is measurement error, not
+        # missing works -- treat the paper's unmatched rate as unreliable.
+        "solr_errors": (dict(_errsnap() - _err_before)
+                        if _errsnap is not None else {}),
+        # Exact-title lookups that FAILED rather than returned "no match". Non-zero
+        # means that many refs are UNVERIFIED, not absent -- their contribution to
+        # not_found is measurement error. Compare against title_phase_attempted.
+        "title_phase_errors": title_phase_errors,
+        "title_phase_attempted": title_phase_attempted,
         "vec_tried":           vec_total,
         "vec_found":           vec_found,
         "by_method":           by_method,
         "found_mismatch":      len(mismatches),
         "mismatches":          mismatches,
+        # Additive: per-reference outcomes, so downstream analysis can re-slice
+        # without re-running GROBID. Required for the cited-year stratification
+        # (unmatched rate restricted to refs whose CITED work predates the LLM
+        # era, which separates real excess from indexing lag / vintage mix).
+        # Existing readers that only touch the aggregate keys are unaffected.
+        "per_ref":             _per_ref_rows(refs, final, _issues_by_i),
     }
 
 

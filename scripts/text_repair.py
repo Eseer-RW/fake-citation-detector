@@ -30,6 +30,10 @@ def repair_pdf_ligatures(s):
     for bad, good in _MOJIBAKE_DASH.items():
         if bad in s:
             s = s.replace(bad, good)
+    # digit-U+00B1-digit: a font-encoded en-dash in a page range / year span
+    # ("163\u00b1169", "1909\u00b11962"), not a real plus/minus. Targeted & safe.
+    if "\u00b1" in s:
+        s = re.sub(r"(?<=\d)\u00b1(?=\d)", "-", s)
     return s
 
 
@@ -95,16 +99,34 @@ def demerge_words(title):
             yield v
 
 
+_MOJI_UTF8_SIG = re.compile(
+    "\u00c3[\u0080-\u00bf]|\u00e2\u0080[\u0080-\u00bf]|\u00c2[\u00a0-\u00bf]")
+
+
+def fix_utf8_mojibake(s):
+    """Repair UTF-8 that was decoded as Latin-1 (\u00c3\u00a9 -> e-acute). Re-encode
+    Latin-1 then decode UTF-8; guarded by a mojibake signature and a clean round-trip
+    so well-formed text is never altered. Returns s unchanged when not applicable."""
+    if not s or not _MOJI_UTF8_SIG.search(s):
+        return s
+    try:
+        fixed = s.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return s
+    return fixed if fixed != s else s
+
+
 def title_repair_variants(title):
     """Yield distinct cleaned title variants (!= original) to retry exact matching,
     applied cumulatively: ligature-repair → +author-strip → +greek-symbols."""
     if not title:
         return
     seen = {title}
-    lig = repair_pdf_ligatures(title)
+    mj = fix_utf8_mojibake(title)
+    lig = repair_pdf_ligatures(mj)
     au = strip_leading_author(lig)
     gk = greek_words_to_symbols(au)
-    variants = [lig, au, gk]
+    variants = [mj, lig, au, gk]
     for base in (title, lig, au):
         variants.extend(demerge_words(base))
     for v in variants:

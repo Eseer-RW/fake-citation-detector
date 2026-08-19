@@ -16,7 +16,9 @@ Usage as a module:
 Usage standalone (test):
     python3 solr_lookup.py
 """
+import collections
 import re
+import threading
 import types
 from dataclasses import dataclass
 from difflib import SequenceMatcher
@@ -26,8 +28,39 @@ from urllib.parse import urlencode, quote
 
 import requests
 
-SOLR_URL = "http://galaxy:8983/solr/openalexWorks/select"
+import os as _os  # SOLR_OPENALEX_URL override (boss: curated is faster)
+SOLR_URL = _os.environ.get("SOLR_OPENALEX_URL",
+    "http://galaxy:8983/solr/openalexWorksCurated/select")
+_FALLBACK_URL = _os.environ.get("SOLR_OPENALEX_FALLBACK_URL",
+    "http://galaxy:8983/solr/openalexWorks/select")
 SIMILARITY_THRESHOLD = 0.85
+
+# Default GET timeout. Left at the historical 8s so production behaviour is
+# unchanged; callers that run against a COLD index should raise it. Measured cold
+# latency is 7.99s at 8-way concurrency and 10.8s at 16-way, i.e. right at or past
+# this limit -- and because callers swallow lookup exceptions, a timed-out query
+# is silently recorded as NOT FOUND. That makes the unmatched rate a function of
+# system load, which is fatal for a study whose headline IS the unmatched rate.
+#   import solr_lookup; solr_lookup.SOLR_TIMEOUT = 60
+SOLR_TIMEOUT = 8
+
+# Per-thread error tally so callers can tell "genuinely absent from the index"
+# apart from "we failed to ask". Thread-local because verify_refs runs concurrently
+# and a global counter could not be attributed to a single paper.
+_err_tls = threading.local()
+
+
+def _note_solr_error(kind: str) -> None:
+    d = getattr(_err_tls, "errs", None)
+    if d is None:
+        d = _err_tls.errs = collections.Counter()
+    d[kind] += 1
+
+
+def solr_error_snapshot() -> "collections.Counter":
+    """Copy of this thread's Solr error tally (timeout / conn / http / other)."""
+    d = getattr(_err_tls, "errs", None)
+    return collections.Counter(d) if d else collections.Counter()
 
 
 class MatchMethod(str, Enum):
@@ -68,13 +101,44 @@ def _get_title(doc: dict) -> Optional[str]:
     return None
 
 
-def _solr_get(params: dict, timeout: int = 8) -> dict:
-    """Fire a GET request to Solr and return the parsed JSON response."""
+def _solr_get(params: dict, timeout: Optional[int] = None) -> dict:
+    """Fire a GET request to Solr and return the parsed JSON response.
+
+    Errors are tallied (see solr_error_snapshot) and then re-raised unchanged, so
+    existing callers keep their current control flow while the failure stops being
+    invisible.
+    """
     # Always disable facets — the collection has expensive default facets
     params.setdefault("facet", "false")
-    resp = requests.get(SOLR_URL, params=params, timeout=timeout)
-    resp.raise_for_status()
-    return resp.json()
+    params.setdefault("hl", "false")      # highlighting is on by default here
+    _to = timeout if timeout is not None else SOLR_TIMEOUT
+    try:
+        resp = requests.get(SOLR_URL, params=params, timeout=_to)
+        resp.raise_for_status()
+        data = resp.json()
+        # HYBRID FALLBACK: curated (SOLR_URL) is smaller & faster but drops real
+        # works (arXiv/preprint/proceedings DOIs, e.g. XGBoost). On a zero-hit, retry
+        # the full index so coverage matches works. Only fires on misses; keeps the
+        # numFound==1 guards intact (a >1 fallback result is returned as-is).
+        if (_FALLBACK_URL and _FALLBACK_URL != SOLR_URL
+                and data.get("response", {}).get("numFound", 0) == 0):
+            try:
+                r2 = requests.get(_FALLBACK_URL, params=params, timeout=_to)
+                r2.raise_for_status()
+                d2 = r2.json()
+                if d2.get("response", {}).get("numFound", 0) > 0:
+                    return d2
+            except Exception:
+                pass
+        return data
+    except requests.exceptions.Timeout:
+        _note_solr_error("timeout"); raise
+    except requests.exceptions.ConnectionError:
+        _note_solr_error("conn"); raise
+    except requests.exceptions.HTTPError:
+        _note_solr_error("http"); raise
+    except Exception:
+        _note_solr_error("other"); raise
 
 
 def _solr_post(params: dict, timeout: int = 60) -> dict:
@@ -118,27 +182,55 @@ class SolrLookup:
             ) from None
 
     def by_doi(self, doi: str) -> SolrResult:
-        """Exact DOI lookup."""
+        """Exact DOI lookup. For arXiv DataCite DOIs (10.48550/arXiv.<id>) the OpenAlex
+        record's title is unreliable (misattributed to a different work, or missing where
+        a published version exists), so the AUTHORITATIVE arXiv title overrides it."""
         # strip protocol prefix if present
         doi = re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi.strip(), flags=re.I)
         doi = doi.lower()
-        params = {
-            "q": f'doi:"{doi}"',
-            "defType": "lucene",
-            "fq": "publication_year:[* TO *]",   # override handler default (2000+)
-            "fl": "id,title,doi,publication_year,cited_by_count,type,venue_name,volume,author_names",
-            "rows": "1",
-            "wt": "json",
-        }
+        res = SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+        _used_local = False
         try:
-            data = _solr_get(params)
-            docs = data["response"]["docs"]
-            if docs:
-                return SolrResult(found=True, method=MatchMethod.DOI,
-                                  record=docs[0], confidence=1.0)
-        except Exception as e:
-            print(f"Solr DOI lookup failed: {e}")
-        return SolrResult(found=False, method=MatchMethod.NOT_FOUND)
+            import oa_local
+            if oa_local.available():
+                _used_local = True
+                _d = oa_local.by_doi(doi)
+                if _d:
+                    res = SolrResult(found=True, method=MatchMethod.DOI, record=_d, confidence=1.0)
+        except Exception:
+            _used_local = False
+        if not _used_local:
+            params = {
+                "q": f'doi:"{doi}"',
+                "defType": "lucene",
+                "fq": "publication_year:[* TO *]",   # override handler default (2000+)
+                "fl": "id,title,doi,publication_year,cited_by_count,type,venue_name,volume,author_names",
+                "rows": "1",
+                "wt": "json",
+            }
+            try:
+                data = _solr_get(params)
+                docs = data["response"]["docs"]
+                if docs:
+                    res = SolrResult(found=True, method=MatchMethod.DOI,
+                                     record=docs[0], confidence=1.0)
+            except Exception as e:
+                print(f"Solr DOI lookup failed: {e}")
+        # --- arXiv authority override: OpenAlex titles for arXiv DOIs are unreliable ---
+        _am = re.match(r'10\.48550/arxiv\.(.+)$', doi)
+        if _am:
+            try:
+                import arxiv_authority
+                _auth = arxiv_authority.title_by_id(_am.group(1))
+                if _auth:
+                    if res.found and isinstance(getattr(res, "record", None), dict):
+                        res.record["title"] = _auth
+                    else:
+                        res = SolrResult(found=True, method=MatchMethod.DOI,
+                                         record={"doi": doi, "title": _auth}, confidence=1.0)
+            except Exception:
+                pass
+        return res
 
     def all_by_doi(self, doi: str) -> list:
         """Return ALL records sharing a DOI (OpenAlex has duplicate DOI records with

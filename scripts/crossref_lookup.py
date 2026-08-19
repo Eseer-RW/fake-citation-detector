@@ -193,6 +193,9 @@ class CrossrefLookup:
     # ── HTTP helper ───────────────────────────────────────────────────────────
 
     def _get(self, url: str, params: Optional[dict] = None) -> Optional[dict]:
+        import os as _os
+        if _os.environ.get("SKIP_CROSSREF_API") == "1":
+            return None
         # Global rate limit first (shared across all threads), then per-instance jitter
         _global_rate_limit()
         elapsed = time.monotonic() - self._last_req
